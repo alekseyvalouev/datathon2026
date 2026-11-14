@@ -1,0 +1,531 @@
+occp,official_title,soc_major_prefix,occ_class,rule,bay_n_unw_2019_23,bay_w_2019_23,bay_n_unw_2024,bay_w_2024
+0010,MGR-Chief Executives And Legislators,MGR,MANAGEMENT,prefix MGR,2973,56037.0,648,56893.0
+0020,MGR-General And Operations Managers,MGR,MANAGEMENT,prefix MGR,1653,33902.0,369,39894.0
+0040,MGR-Advertising And Promotions Managers,MGR,MANAGEMENT,prefix MGR,93,1815.0,13,1245.0
+0051,MGR-Marketing Managers,MGR,MANAGEMENT,prefix MGR,1584,30952.0,302,28369.0
+0052,MGR-Sales Managers,MGR,MANAGEMENT,prefix MGR,820,16066.0,141,15130.0
+0060,MGR-Public Relations And Fundraising Managers,MGR,MANAGEMENT,prefix MGR,246,4908.0,55,4971.0
+0101,MGR-Administrative Services Managers,MGR,MANAGEMENT,prefix MGR,95,2048.0,19,1862.0
+0102,MGR-Facilities Managers,MGR,MANAGEMENT,prefix MGR,215,4457.0,49,4237.0
+0110,MGR-Computer And Information Systems Managers,MGR,MANAGEMENT,prefix MGR,1650,30039.0,337,29165.0
+0120,MGR-Financial Managers,MGR,MANAGEMENT,prefix MGR,2174,42615.0,388,35250.0
+0135,MGR-Compensation And Benefits Managers,MGR,MANAGEMENT,prefix MGR,36,589.0,7,680.0
+0136,MGR-Human Resources Managers,MGR,MANAGEMENT,prefix MGR,463,9553.0,79,7095.0
+0137,MGR-Training And Development Managers,MGR,MANAGEMENT,prefix MGR,97,1944.0,10,1203.0
+0140,MGR-Industrial Production Managers,MGR,MANAGEMENT,prefix MGR,381,7386.0,103,8870.0
+0150,MGR-Purchasing Managers,MGR,MANAGEMENT,prefix MGR,300,6383.0,73,7080.0
+0160,"MGR-Transportation, Storage, And Distribution Managers",MGR,MANAGEMENT,prefix MGR,291,5951.0,67,7190.0
+0205,"MGR-Farmers, Ranchers, And Other Agricultural Managers",MGR,MANAGEMENT,prefix MGR,231,4278.0,58,5011.0
+0220,MGR-Construction Managers,MGR,MANAGEMENT,prefix MGR,1310,27864.0,255,24314.0
+0230,MGR-Education And Childcare Administrators,MGR,MANAGEMENT,prefix MGR,1268,25358.0,319,31137.0
+0300,MGR-Architectural And Engineering Managers,MGR,MANAGEMENT,prefix MGR,1122,21042.0,239,19113.0
+0310,MGR-Food Service Managers,MGR,MANAGEMENT,prefix MGR,838,20406.0,157,19078.0
+0335,MGR-Entertainment and Recreation Managers,MGR,MANAGEMENT,prefix MGR,40,771.0,16,1741.0
+0340,MGR-Lodging Managers,MGR,MANAGEMENT,prefix MGR,134,2584.0,31,4151.0
+0350,MGR-Medical And Health Services Managers,MGR,MANAGEMENT,prefix MGR,799,15827.0,180,16965.0
+0360,MGR-Natural Sciences Managers,MGR,MANAGEMENT,prefix MGR,96,1589.0,26,2212.0
+0410,"MGR-Property, Real Estate, And Community Association Managers",MGR,MANAGEMENT,prefix MGR,935,19503.0,180,19474.0
+0420,MGR-Social And Community Service Managers,MGR,MANAGEMENT,prefix MGR,756,15598.0,179,18505.0
+0425,MGR-Emergency Management Directors,MGR,MANAGEMENT,prefix MGR,13,203.0,6,517.0
+0440,MGR-Other Managers,MGR,MANAGEMENT,prefix MGR,7859,155514.0,1600,150235.0
+0500,"BUS-Agents And Business Managers Of Artists, Performers, And Athletes",BUS,SALES_BIZ,prefix BUS,62,1357.0,17,1292.0
+0510,"BUS-Buyers And Purchasing Agents, Farm Products",BUS,SALES_BIZ,prefix BUS,6,101.0,3,268.0
+0520,"BUS-Wholesale And Retail Buyers, Except Farm Products",BUS,SALES_BIZ,prefix BUS,226,4619.0,47,4970.0
+0530,"BUS-Purchasing Agents, Except Wholesale, Retail, And Farm Products",BUS,SALES_BIZ,prefix BUS,334,6636.0,61,5711.0
+0540,"BUS-Claims Adjusters, Appraisers, Examiners, And Investigators",BUS,PROF_EXPOSED,"override: claims adjusters, compliance, HR/training, marketing research, legal support, graphic designers, writers/editors/PR/translators/reporters, proofreaders",227,5024.0,45,4837.0
+0565,BUS-Compliance Officers,BUS,PROF_EXPOSED,"override: claims adjusters, compliance, HR/training, marketing research, legal support, graphic designers, writers/editors/PR/translators/reporters, proofreaders",383,7400.0,88,8360.0
+0600,BUS-Cost Estimators,BUS,SALES_BIZ,prefix BUS,188,3811.0,37,4235.0
+0630,BUS-Human Resources Workers,BUS,PROF_EXPOSED,"override: claims adjusters, compliance, HR/training, marketing research, legal support, graphic designers, writers/editors/PR/translators/reporters, proofreaders",1501,31334.0,294,26009.0
+0640,"BUS-Compensation, Benefits, And Job Analysis Specialists",BUS,PROF_EXPOSED,"override: claims adjusters, compliance, HR/training, marketing research, legal support, graphic designers, writers/editors/PR/translators/reporters, proofreaders",100,2034.0,13,1124.0
+0650,BUS-Training And Development Specialists,BUS,PROF_EXPOSED,"override: claims adjusters, compliance, HR/training, marketing research, legal support, graphic designers, writers/editors/PR/translators/reporters, proofreaders",165,3068.0,23,2655.0
+0700,BUS-Logisticians,BUS,SALES_BIZ,prefix BUS,190,4310.0,23,2191.0
+0705,BUS-Project Management Specialists,BUS,PRODUCT_DESIGN,override: project management specialists = closest separable proxy for product/program managers (JUDGMENT),1517,29228.0,306,29641.0
+0710,BUS-Management Analysts,BUS,SALES_BIZ,prefix BUS,1973,36690.0,438,41723.0
+0725,"BUS-Meeting, Convention, And Event Planners",BUS,SALES_BIZ,prefix BUS,272,5399.0,45,4571.0
+0726,BUS-Fundraisers,BUS,SALES_BIZ,prefix BUS,148,2977.0,38,3043.0
+0735,BUS-Market Research Analysts And Marketing Specialists,BUS,PROF_EXPOSED,"override: claims adjusters, compliance, HR/training, marketing research, legal support, graphic designers, writers/editors/PR/translators/reporters, proofreaders",1007,20383.0,276,25511.0
+0750,"BUS-Business Operations Specialists, All Other",BUS,SALES_BIZ,prefix BUS,794,15999.0,217,20824.0
+0800,FIN-Accountants And Auditors,FIN,PROF_EXPOSED,prefix FIN,2894,55517.0,565,51813.0
+0810,FIN-Property Appraisers and Assessors,FIN,PROF_EXPOSED,prefix FIN,113,2035.0,22,2094.0
+0820,FIN-Budget Analysts,FIN,PROF_EXPOSED,prefix FIN,77,1545.0,15,1508.0
+0830,FIN-Credit Analysts,FIN,PROF_EXPOSED,prefix FIN,29,653.0,5,410.0
+0845,FIN-Financial And Investment Analysts,FIN,PROF_EXPOSED,prefix FIN,797,16014.0,165,15691.0
+0850,FIN-Personal Financial Advisors,FIN,SALES_BIZ,override: personal financial advisors (sales-type); telemarketers (sales),667,13193.0,159,15527.0
+0860,FIN-Insurance Underwriters,FIN,PROF_EXPOSED,prefix FIN,106,1968.0,16,1981.0
+0900,FIN-Financial Examiners,FIN,PROF_EXPOSED,prefix FIN,25,558.0,2,178.0
+0910,FIN-Credit Counselors And Loan Officers,FIN,PROF_EXPOSED,prefix FIN,298,5660.0,52,5212.0
+0930,"FIN-Tax Examiners And Collectors, And Revenue Agents",FIN,PROF_EXPOSED,prefix FIN,71,1453.0,14,1271.0
+0940,FIN-Tax Preparers,FIN,PROF_EXPOSED,prefix FIN,180,3777.0,34,3056.0
+0960,FIN-Other Financial Specialists,FIN,PROF_EXPOSED,prefix FIN,164,2842.0,17,2311.0
+1005,CMM-Computer And Information Research Scientists,CMM,AI_PRODUCER,override: CS research scientists; 1240 holds data scientists/statisticians/mathematicians (SOCP-checked),172,3136.0,34,3188.0
+1006,CMM-Computer Systems Analysts,CMM,SOFTWARE_ENG,prefix CMM,995,18415.0,216,20689.0
+1007,CMM-Information Security Analysts,CMM,SOFTWARE_ENG,prefix CMM,232,4535.0,42,4244.0
+1010,CMM-Computer Programmers,CMM,SOFTWARE_ENG,prefix CMM,557,10953.0,92,8315.0
+1021,CMM-Software Developers,CMM,SOFTWARE_ENG,prefix CMM,11254,220288.0,2645,255540.0
+1022,CMM-Software Quality Assurance Analysts and Testers,CMM,SOFTWARE_ENG,prefix CMM,286,5123.0,72,6801.0
+1031,CMM-Web Developers,CMM,SOFTWARE_ENG,prefix CMM,191,3734.0,33,3936.0
+1032,CMM-Web And Digital Interface Designers,CMM,PRODUCT_DESIGN,override: web/digital interface (UX) and non-graphic designers,178,3517.0,48,5188.0
+1050,CMM-Computer Support Specialists,CMM,CUSTOMER_SUPPORT,override: computer support specialists (per spec),899,17527.0,189,17911.0
+1065,CMM-Database Administrators and Architects,CMM,SOFTWARE_ENG,prefix CMM,287,5296.0,57,4521.0
+1105,CMM-Network And Computer Systems Administrators,CMM,SOFTWARE_ENG,prefix CMM,300,6023.0,66,5768.0
+1106,CMM-Computer Network Architects,CMM,SOFTWARE_ENG,prefix CMM,201,3664.0,47,4274.0
+1108,"CMM-Computer Occupations, All Other",CMM,SOFTWARE_ENG,prefix CMM,908,18986.0,252,25130.0
+1200,CMM-Actuaries,CMM,DATA_ENG_ANALYTICS,override: actuaries; operations research analysts,40,660.0,8,923.0
+1220,CMM-Operations Research Analysts,CMM,DATA_ENG_ANALYTICS,override: actuaries; operations research analysts,279,4665.0,68,6862.0
+1240,CMM-Other Mathematical Science Occupations,CMM,AI_PRODUCER,override: CS research scientists; 1240 holds data scientists/statisticians/mathematicians (SOCP-checked),1022,18909.0,244,22211.0
+1305,"ENG-Architects, Except Landscape And Naval",ENG,OTHER_ENGINEERING,prefix ENG,549,9686.0,118,9661.0
+1306,ENG-Landscape Architects,ENG,OTHER_ENGINEERING,prefix ENG,113,2121.0,24,2149.0
+1310,"ENG-Surveyors, Cartographers, And Photogrammetrists",ENG,OTHER_ENGINEERING,prefix ENG,41,761.0,6,323.0
+1320,ENG-Aerospace Engineers,ENG,OTHER_ENGINEERING,prefix ENG,155,2773.0,36,2925.0
+1340,ENG-Biomedical And Agricultural Engineers,ENG,OTHER_ENGINEERING,prefix ENG,77,1818.0,13,1315.0
+1350,ENG-Chemical Engineers,ENG,OTHER_ENGINEERING,prefix ENG,129,2471.0,40,2933.0
+1360,ENG-Civil Engineers,ENG,OTHER_ENGINEERING,prefix ENG,915,17382.0,194,17814.0
+1400,ENG-Computer Hardware Engineers,ENG,OTHER_ENGINEERING,prefix ENG,414,7976.0,88,8129.0
+1410,ENG-Electrical And Electronics Engineers,ENG,OTHER_ENGINEERING,prefix ENG,1000,18964.0,252,22145.0
+1420,ENG-Environmental Engineers,ENG,OTHER_ENGINEERING,prefix ENG,78,1380.0,26,2269.0
+1430,"ENG-Industrial Engineers, Including Health And Safety",ENG,OTHER_ENGINEERING,prefix ENG,638,11942.0,147,14258.0
+1440,ENG-Marine Engineers And Naval Architects,ENG,OTHER_ENGINEERING,prefix ENG,13,190.0,2,152.0
+1450,ENG-Materials Engineers,ENG,OTHER_ENGINEERING,prefix ENG,152,2827.0,28,2894.0
+1460,ENG-Mechanical Engineers,ENG,OTHER_ENGINEERING,prefix ENG,653,11792.0,154,14548.0
+1520,"ENG-Petroleum, Mining And Geological Engineers, Including Mining Safety Engineers",ENG,OTHER_ENGINEERING,prefix ENG,4,53.0,2,105.0
+1530,ENG-Other Engineers,ENG,OTHER_ENGINEERING,prefix ENG,2950,56157.0,603,56204.0
+1541,ENG-Architectural And Civil Drafters,ENG,OTHER_ENGINEERING,prefix ENG,62,984.0,10,865.0
+1545,ENG-Other Drafters,ENG,OTHER_ENGINEERING,prefix ENG,91,1926.0,17,2244.0
+1551,ENG-Electrical And Electronic Engineering Technologists And Technicians,ENG,OTHER_ENGINEERING,prefix ENG,145,2743.0,28,1877.0
+1555,"ENG-Other Engineering Technologists And Technicians, Except Drafters",ENG,OTHER_ENGINEERING,prefix ENG,675,13160.0,166,15472.0
+1560,ENG-Surveying And Mapping Technicians,ENG,OTHER_ENGINEERING,prefix ENG,40,885.0,10,751.0
+1600,SCI-Agricultural And Food Scientists,SCI,OTHER,prefix SCI,61,977.0,5,314.0
+1610,SCI-Biological Scientists,SCI,OTHER,prefix SCI,241,4430.0,46,4572.0
+1640,SCI-Conservation Scientists And Foresters,SCI,OTHER,prefix SCI,19,427.0,2,90.0
+1650,SCI-Other Life Scientists,SCI,OTHER,prefix SCI,603,11329.0,137,12213.0
+1700,SCI-Astronomers And Physicists,SCI,OTHER,prefix SCI,92,1421.0,13,915.0
+1710,SCI-Atmospheric And Space Scientists,SCI,OTHER,prefix SCI,13,304.0,1,115.0
+1720,SCI-Chemists And Materials Scientists,SCI,OTHER,prefix SCI,239,4288.0,36,3485.0
+1745,"SCI-Environmental Scientists And Specialists, Including Health",SCI,OTHER,prefix SCI,68,1344.0,15,1161.0
+1750,"SCI-Geoscientists And Hydrologists, Except Geographers",SCI,OTHER,prefix SCI,76,1353.0,12,906.0
+1760,"SCI-Physical Scientists, All Other",SCI,OTHER,prefix SCI,1795,32238.0,440,40240.0
+1800,SCI-Economists,SCI,OTHER,prefix SCI,61,1046.0,12,908.0
+1821,SCI-Clinical And Counseling Psychologists,SCI,OTHER,prefix SCI,92,1514.0,25,2026.0
+1822,SCI-School Psychologists,SCI,OTHER,prefix SCI,80,1550.0,21,1778.0
+1825,SCI-Other Psychologists,SCI,OTHER,prefix SCI,527,9092.0,88,7431.0
+1840,SCI-Urban And Regional Planners,SCI,OTHER,prefix SCI,116,2306.0,29,1922.0
+1860,SCI-Other Social Scientists,SCI,OTHER,prefix SCI,110,2195.0,21,1864.0
+1900,SCI-Agricultural And Food Science Technicians,SCI,OTHER,prefix SCI,48,927.0,6,508.0
+1910,SCI-Biological Technicians,SCI,OTHER,prefix SCI,79,1802.0,14,1219.0
+1920,SCI-Chemical Technicians,SCI,OTHER,prefix SCI,57,1116.0,12,961.0
+1935,"SCI-Environmental Science and Geoscience Technicians, And Nuclear Technicians",SCI,OTHER,prefix SCI,19,325.0,6,676.0
+1970,"SCI-Other Life, Physical, And Social Science Technicians",SCI,OTHER,prefix SCI,367,7547.0,122,11684.0
+1980,SCI-Occupational Health And Safety Specialists and Technicians,SCI,OTHER,prefix SCI,99,1843.0,17,1551.0
+2001,CMS-Substance Abuse And Behavioral Disorder Counselors,CMS,OTHER,prefix CMS,140,3020.0,43,5842.0
+2002,"CMS-Educational, Guidance, And Career Counselors And Advisors",CMS,OTHER,prefix CMS,416,7960.0,86,8207.0
+2003,CMS-Marriage And Family Therapists,CMS,OTHER,prefix CMS,157,2788.0,37,3837.0
+2004,CMS-Mental Health Counselors,CMS,OTHER,prefix CMS,166,3835.0,36,3055.0
+2005,CMS-Rehabilitation Counselors,CMS,OTHER,prefix CMS,20,320.0,5,324.0
+2006,"CMS-Counselors, All Other",CMS,OTHER,prefix CMS,216,4530.0,53,4975.0
+2011,"CMS-Child, Family, And School Social Workers",CMS,OTHER,prefix CMS,48,1194.0,4,249.0
+2012,CMS-Healthcare Social Workers,CMS,OTHER,prefix CMS,104,2002.0,26,3002.0
+2013,CMS-Mental Health And Substance Abuse Social Workers,CMS,OTHER,prefix CMS,61,1030.0,17,2271.0
+2014,"CMS-Social Workers, All Other",CMS,OTHER,prefix CMS,587,12708.0,118,11361.0
+2015,CMS-Probation Officers And Correctional Treatment Specialists,CMS,OTHER,prefix CMS,101,2570.0,14,1348.0
+2016,CMS-Social And Human Service Assistants,CMS,OTHER,prefix CMS,283,6099.0,56,7576.0
+2025,CMS-Other Community and Social Service Specialists,CMS,OTHER,prefix CMS,172,3152.0,35,3274.0
+2040,CMS-Clergy,CMS,OTHER,prefix CMS,442,6811.0,81,5859.0
+2050,"CMS-Directors, Religious Activities And Education",CMS,OTHER,prefix CMS,67,1072.0,14,1447.0
+2060,"CMS-Religious Workers, All Other",CMS,OTHER,prefix CMS,104,1751.0,37,3063.0
+2100,"LGL-Lawyers, And Judges, Magistrates, And Other Judicial Workers",LGL,OTHER,prefix LGL,2538,45958.0,502,45217.0
+2105,LGL-Judicial Law Clerks,LGL,PROF_EXPOSED,"override: claims adjusters, compliance, HR/training, marketing research, legal support, graphic designers, writers/editors/PR/translators/reporters, proofreaders",28,634.0,8,792.0
+2145,LGL-Paralegals And Legal Assistants,LGL,PROF_EXPOSED,"override: claims adjusters, compliance, HR/training, marketing research, legal support, graphic designers, writers/editors/PR/translators/reporters, proofreaders",566,11261.0,130,12350.0
+2170,"LGL-Title Examiners, Abstractors, and Searchers",LGL,PROF_EXPOSED,"override: claims adjusters, compliance, HR/training, marketing research, legal support, graphic designers, writers/editors/PR/translators/reporters, proofreaders",71,1328.0,15,1051.0
+2180,"LGL-Legal Support Workers, All Other",LGL,PROF_EXPOSED,"override: claims adjusters, compliance, HR/training, marketing research, legal support, graphic designers, writers/editors/PR/translators/reporters, proofreaders",81,1620.0,15,1230.0
+2205,EDU-Postsecondary Teachers,EDU,EDUCATION,prefix EDU,2288,43061.0,392,33278.0
+2300,EDU-Preschool And Kindergarten Teachers,EDU,EDUCATION,prefix EDU,953,18533.0,220,21061.0
+2310,EDU-Elementary And Middle School Teachers,EDU,EDUCATION,prefix EDU,2970,57281.0,638,59649.0
+2320,EDU-Secondary School Teachers,EDU,EDUCATION,prefix EDU,1390,26270.0,286,26115.0
+2330,EDU-Special Education Teachers,EDU,EDUCATION,prefix EDU,377,7255.0,79,6993.0
+2350,EDU-Tutors,EDU,EDUCATION,prefix EDU,398,7535.0,114,10716.0
+2360,EDU-Other Teachers and Instructors,EDU,EDUCATION,prefix EDU,1195,22589.0,228,22742.0
+2400,"EDU-Archivists, Curators, And Museum Technicians",EDU,EDUCATION,prefix EDU,121,2552.0,29,3383.0
+2435,EDU-Librarians And Media Collections Specialists,EDU,EDUCATION,prefix EDU,263,4925.0,56,5001.0
+2440,EDU-Library Technicians,EDU,EDUCATION,prefix EDU,95,1852.0,16,1479.0
+2545,EDU-Teaching Assistants,EDU,EDUCATION,prefix EDU,1326,27033.0,301,29730.0
+2555,EDU-Other Educational Instruction And Library Workers,EDU,EDUCATION,prefix EDU,181,3444.0,33,2469.0
+2600,ENT-Artists And Related Workers,ENT,OTHER,prefix ENT,560,11086.0,117,10782.0
+2631,ENT-Commercial And Industrial Designers,ENT,PRODUCT_DESIGN,override: web/digital interface (UX) and non-graphic designers,43,798.0,18,1644.0
+2632,ENT-Fashion Designers,ENT,PRODUCT_DESIGN,override: web/digital interface (UX) and non-graphic designers,57,1245.0,6,675.0
+2633,ENT-Floral Designers,ENT,FRONTLINE_SERVICE,override: retail/cashier/counter/promoter/vendor sales; floral designers & merchandise displayers (retail),55,957.0,13,813.0
+2634,ENT-Graphic Designers,ENT,PROF_EXPOSED,"override: claims adjusters, compliance, HR/training, marketing research, legal support, graphic designers, writers/editors/PR/translators/reporters, proofreaders",539,10956.0,107,8683.0
+2635,ENT-Interior Designers,ENT,PRODUCT_DESIGN,override: web/digital interface (UX) and non-graphic designers,218,4115.0,42,3556.0
+2636,ENT-Merchandise Displayers And Window Trimmers,ENT,FRONTLINE_SERVICE,override: retail/cashier/counter/promoter/vendor sales; floral designers & merchandise displayers (retail),31,760.0,8,736.0
+2640,ENT-Other Designers,ENT,PRODUCT_DESIGN,override: web/digital interface (UX) and non-graphic designers,952,19004.0,210,20126.0
+2700,ENT-Actors,ENT,OTHER,prefix ENT,41,846.0,6,409.0
+2710,ENT-Producers And Directors,ENT,OTHER,prefix ENT,328,6775.0,74,6425.0
+2721,ENT-Athletes and Sports Competitors,ENT,OTHER,prefix ENT,42,810.0,15,2287.0
+2722,ENT-Coaches and Scouts,ENT,OTHER,prefix ENT,404,8359.0,113,10726.0
+2723,"ENT-Umpires, Referees, And Other Sports Officials",ENT,OTHER,prefix ENT,32,691.0,11,1271.0
+2740,ENT-Dancers And Choreographers,ENT,OTHER,prefix ENT,26,690.0,3,310.0
+2751,ENT-Music Directors and Composers,ENT,OTHER,prefix ENT,49,1008.0,8,501.0
+2752,ENT-Musicians and Singers,ENT,OTHER,prefix ENT,223,4115.0,43,3550.0
+2755,"ENT-Disc Jockeys, Except Radio",ENT,OTHER,prefix ENT,10,246.0,1,40.0
+2770,"ENT-Entertainers And Performers, Sports and Related Workers, All Other",ENT,OTHER,prefix ENT,38,789.0,14,1051.0
+2805,ENT-Broadcast Announcers And Radio Disc Jockeys,ENT,OTHER,prefix ENT,18,295.0,4,197.0
+2810,"ENT-News Analysts, Reporters, And Journalists",ENT,PROF_EXPOSED,"override: claims adjusters, compliance, HR/training, marketing research, legal support, graphic designers, writers/editors/PR/translators/reporters, proofreaders",131,2653.0,27,2999.0
+2825,ENT-Public Relations Specialists,ENT,PROF_EXPOSED,"override: claims adjusters, compliance, HR/training, marketing research, legal support, graphic designers, writers/editors/PR/translators/reporters, proofreaders",226,4497.0,53,4744.0
+2830,ENT-Editors,ENT,PROF_EXPOSED,"override: claims adjusters, compliance, HR/training, marketing research, legal support, graphic designers, writers/editors/PR/translators/reporters, proofreaders",250,4478.0,31,2514.0
+2840,ENT-Technical Writers,ENT,PROF_EXPOSED,"override: claims adjusters, compliance, HR/training, marketing research, legal support, graphic designers, writers/editors/PR/translators/reporters, proofreaders",211,4083.0,31,2653.0
+2850,ENT-Writers And Authors,ENT,PROF_EXPOSED,"override: claims adjusters, compliance, HR/training, marketing research, legal support, graphic designers, writers/editors/PR/translators/reporters, proofreaders",440,8054.0,75,7025.0
+2861,ENT-Interpreters and Translators,ENT,PROF_EXPOSED,"override: claims adjusters, compliance, HR/training, marketing research, legal support, graphic designers, writers/editors/PR/translators/reporters, proofreaders",151,2731.0,33,2934.0
+2862,ENT-Court Reporters and Simultaneous Captioners,ENT,PROF_EXPOSED,"override: claims adjusters, compliance, HR/training, marketing research, legal support, graphic designers, writers/editors/PR/translators/reporters, proofreaders",38,930.0,7,674.0
+2865,"ENT-Media And Communication Workers, All Other",ENT,OTHER,prefix ENT,47,1325.0,4,510.0
+2905,ENT-Other Media And Communication Equipment Workers,ENT,OTHER,prefix ENT,180,3345.0,36,3119.0
+2910,ENT-Photographers,ENT,OTHER,prefix ENT,248,4773.0,46,4402.0
+2920,"ENT-Television, Video, And Film Camera Operators And Editors",ENT,OTHER,prefix ENT,171,3775.0,32,2964.0
+3000,MED-Chiropractors,MED,HEALTH_CLINICAL,prefix MED,86,1927.0,18,1980.0
+3010,MED-Dentists,MED,HEALTH_CLINICAL,prefix MED,376,6893.0,74,5334.0
+3030,MED-Dietitians And Nutritionists,MED,HEALTH_CLINICAL,prefix MED,134,2587.0,45,3545.0
+3040,MED-Optometrists,MED,HEALTH_CLINICAL,prefix MED,94,1477.0,23,1944.0
+3050,MED-Pharmacists,MED,HEALTH_CLINICAL,prefix MED,462,8119.0,104,9370.0
+3090,MED-Physicians,MED,HEALTH_CLINICAL,prefix MED,1713,31320.0,396,31995.0
+3100,MED-Surgeons,MED,HEALTH_CLINICAL,prefix MED,95,1452.0,28,2109.0
+3110,MED-Physician Assistants,MED,HEALTH_CLINICAL,prefix MED,130,2503.0,32,2522.0
+3120,MED-Podiatrists,MED,HEALTH_CLINICAL,prefix MED,19,284.0,5,330.0
+3140,MED-Audiologists,MED,HEALTH_CLINICAL,prefix MED,23,394.0,6,469.0
+3150,MED-Occupational Therapists,MED,HEALTH_CLINICAL,prefix MED,146,2949.0,37,3767.0
+3160,MED-Physical Therapists,MED,HEALTH_CLINICAL,prefix MED,326,5798.0,73,6524.0
+3200,MED-Radiation Therapists,MED,HEALTH_CLINICAL,prefix MED,12,239.0,4,255.0
+3210,MED-Recreational Therapists,MED,HEALTH_CLINICAL,prefix MED,14,439.0,1,59.0
+3220,MED-Respiratory Therapists,MED,HEALTH_CLINICAL,prefix MED,116,2478.0,22,1985.0
+3230,MED-Speech-Language Pathologists,MED,HEALTH_CLINICAL,prefix MED,179,3117.0,48,4499.0
+3245,MED-Other Therapists,MED,HEALTH_CLINICAL,prefix MED,310,5537.0,59,5130.0
+3250,MED-Veterinarians,MED,HEALTH_CLINICAL,prefix MED,131,2239.0,31,2543.0
+3255,MED-Registered Nurses,MED,HEALTH_CLINICAL,prefix MED,3512,70491.0,816,80406.0
+3256,MED-Nurse Anesthetists,MED,HEALTH_CLINICAL,prefix MED,26,536.0,8,722.0
+3258,"MED-Nurse Practitioners, And Nurse Midwives",MED,HEALTH_CLINICAL,prefix MED,233,4247.0,59,5716.0
+3261,MED-Acupuncturists,MED,HEALTH_CLINICAL,prefix MED,78,1400.0,15,1537.0
+3270,"MED-Healthcare Diagnosing Or Treating Practitioners, All Other",MED,HEALTH_CLINICAL,prefix MED,28,459.0,2,119.0
+3300,MED-Clinical Laboratory Technologists And Technicians,MED,HEALTH_CLINICAL,prefix MED,313,6111.0,67,6956.0
+3310,MED-Dental Hygienists,MED,HEALTH_CLINICAL,prefix MED,197,3839.0,49,3926.0
+3321,MED-Cardiovascular Technologists and Technicians,MED,HEALTH_CLINICAL,prefix MED,59,1190.0,14,1381.0
+3322,MED-Diagnostic Medical Sonographers,MED,HEALTH_CLINICAL,prefix MED,73,1446.0,20,1806.0
+3323,MED-Radiologic Technologists And Technicians,MED,HEALTH_CLINICAL,prefix MED,217,4642.0,27,2850.0
+3324,MED-Magnetic Resonance Imaging Technologists,MED,HEALTH_CLINICAL,prefix MED,54,1247.0,14,1464.0
+3330,MED-Nuclear Medicine Technologists and Medical Dosimetrists,MED,HEALTH_CLINICAL,prefix MED,52,995.0,10,648.0
+3401,MED-Emergency Medical Technicians,MED,HEALTH_CLINICAL,prefix MED,149,3675.0,26,2807.0
+3402,MED-Paramedics,MED,HEALTH_CLINICAL,prefix MED,60,1445.0,19,3216.0
+3421,MED-Pharmacy Technicians,MED,HEALTH_CLINICAL,prefix MED,273,6277.0,58,5489.0
+3422,MED-Psychiatric Technicians,MED,HEALTH_CLINICAL,prefix MED,167,3339.0,39,3295.0
+3423,MED-Surgical Technologists,MED,HEALTH_CLINICAL,prefix MED,77,2156.0,17,1485.0
+3424,MED-Veterinary Technologists and Technicians,MED,HEALTH_CLINICAL,prefix MED,107,2356.0,25,3085.0
+3430,MED-Dietetic Technicians And Ophthalmic Medical Technicians,MED,HEALTH_CLINICAL,prefix MED,36,670.0,6,469.0
+3500,MED-Licensed Practical And Licensed Vocational Nurses,MED,HEALTH_CLINICAL,prefix MED,419,9948.0,80,7959.0
+3515,MED-Medical Records Specialists,MED,CLERICAL_ADMIN,"override: medical records specialists; medical transcriptionists (clerical content, not hands-on care)",100,2110.0,13,1059.0
+3520,"MED-Opticians, Dispensing",MED,HEALTH_CLINICAL,prefix MED,73,1455.0,17,1861.0
+3545,MED-Miscellaneous Health Technologists and Technicians,MED,HEALTH_CLINICAL,prefix MED,136,3331.0,23,1818.0
+3550,MED-Other Healthcare Practitioners and Technical Occupations,MED,HEALTH_CLINICAL,prefix MED,106,1979.0,27,2431.0
+3601,HLS-Home Health Aides,HLS,HEALTH_CLINICAL,prefix HLS,325,7212.0,59,6411.0
+3602,HLS-Personal Care Aides,HLS,HEALTH_CLINICAL,prefix HLS,2702,59164.0,615,67794.0
+3603,HLS-Nursing Assistants,HLS,HEALTH_CLINICAL,prefix HLS,769,18543.0,183,19956.0
+3605,HLS-Orderlies and Psychiatric Aides,HLS,HEALTH_CLINICAL,prefix HLS,36,952.0,17,1659.0
+3610,HLS-Occupational Therapy Assistants And Aides,HLS,HEALTH_CLINICAL,prefix HLS,28,643.0,4,354.0
+3620,HLS-Physical Therapist Assistants And Aides,HLS,HEALTH_CLINICAL,prefix HLS,82,1907.0,23,2165.0
+3630,HLS-Massage Therapists,HLS,HEALTH_CLINICAL,prefix HLS,253,5530.0,46,4262.0
+3640,HLS-Dental Assistants,HLS,HEALTH_CLINICAL,prefix HLS,396,8949.0,86,8663.0
+3645,HLS-Medical Assistants,HLS,HEALTH_CLINICAL,prefix HLS,703,17309.0,140,15419.0
+3646,HLS-Medical Transcriptionists,HLS,CLERICAL_ADMIN,"override: medical records specialists; medical transcriptionists (clerical content, not hands-on care)",37,630.0,7,512.0
+3647,HLS-Pharmacy Aides,HLS,HEALTH_CLINICAL,prefix HLS,41,1066.0,12,1258.0
+3648,HLS-Veterinary Assistants And Laboratory Animal Caretakers,HLS,HEALTH_CLINICAL,prefix HLS,51,1336.0,14,1454.0
+3649,HLS-Phlebotomists,HLS,HEALTH_CLINICAL,prefix HLS,100,2066.0,22,2995.0
+3655,HLS-Other Healthcare Support Workers,HLS,HEALTH_CLINICAL,prefix HLS,181,3524.0,40,4778.0
+3700,PRT-First-Line Supervisors Of Correctional Officers,PRT,FRONTLINE_SERVICE,prefix PRT,17,481.0,0,0.0
+3710,PRT-First-Line Supervisors Of Police And Detectives,PRT,FRONTLINE_SERVICE,prefix PRT,88,1856.0,13,1483.0
+3720,PRT-First-Line Supervisors Of Firefighting And Prevention Workers,PRT,FRONTLINE_SERVICE,prefix PRT,49,950.0,6,619.0
+3725,"PRT-Miscellaneous First-Line Supervisors, Protective Service Workers",PRT,FRONTLINE_SERVICE,prefix PRT,88,1699.0,17,2227.0
+3740,PRT-Firefighters,PRT,FRONTLINE_SERVICE,prefix PRT,238,4757.0,50,5487.0
+3750,PRT-Fire Inspectors,PRT,FRONTLINE_SERVICE,prefix PRT,38,771.0,8,575.0
+3801,PRT-Bailiffs,PRT,FRONTLINE_SERVICE,prefix PRT,9,269.0,1,47.0
+3802,PRT-Correctional Officers and Jailers,PRT,FRONTLINE_SERVICE,prefix PRT,114,2816.0,20,2051.0
+3820,PRT-Detectives And Criminal Investigators,PRT,FRONTLINE_SERVICE,prefix PRT,102,2130.0,13,1329.0
+3840,PRT-Fish And Game Wardens And Parking Enforcement Officers,PRT,FRONTLINE_SERVICE,prefix PRT,35,946.0,7,630.0
+3870,PRT-Police Officers,PRT,FRONTLINE_SERVICE,prefix PRT,602,13232.0,149,18567.0
+3900,PRT-Animal Control Workers,PRT,FRONTLINE_SERVICE,prefix PRT,6,108.0,3,248.0
+3910,PRT-Private Detectives And Investigators,PRT,FRONTLINE_SERVICE,prefix PRT,87,1822.0,22,2353.0
+3930,PRT-Security Guards And Gambling Surveillance Officers,PRT,FRONTLINE_SERVICE,prefix PRT,1118,27091.0,258,32467.0
+3940,PRT-Crossing Guards And Flaggers,PRT,FRONTLINE_SERVICE,prefix PRT,65,1296.0,13,1046.0
+3945,PRT-Transportation Security Screeners,PRT,FRONTLINE_SERVICE,prefix PRT,59,1172.0,12,854.0
+3946,PRT-School Bus Monitors,PRT,FRONTLINE_SERVICE,prefix PRT,1,21.0,1,94.0
+3960,PRT-Other Protective Service Workers,PRT,FRONTLINE_SERVICE,prefix PRT,183,3951.0,30,2491.0
+4000,EAT-Chefs And Head Cooks,EAT,FRONTLINE_SERVICE,prefix EAT,675,15527.0,133,14877.0
+4010,EAT-First-Line Supervisors Of Food Preparation And Serving Workers,EAT,FRONTLINE_SERVICE,prefix EAT,403,9386.0,81,9930.0
+4020,EAT-Cooks,EAT,FRONTLINE_SERVICE,prefix EAT,1613,43323.0,329,40573.0
+4030,EAT-Food Preparation Workers,EAT,FRONTLINE_SERVICE,prefix EAT,849,21297.0,179,20260.0
+4040,EAT-Bartenders,EAT,FRONTLINE_SERVICE,prefix EAT,326,7207.0,54,6173.0
+4055,EAT-Fast Food And Counter Workers,EAT,FRONTLINE_SERVICE,prefix EAT,910,19565.0,206,24480.0
+4110,EAT-Waiters And Waitresses,EAT,FRONTLINE_SERVICE,prefix EAT,1791,42201.0,320,36646.0
+4120,"EAT-Food Servers, Nonrestaurant",EAT,FRONTLINE_SERVICE,prefix EAT,160,3419.0,41,3631.0
+4130,EAT-Dining Room And Cafeteria Attendants And Bartender Helpers,EAT,FRONTLINE_SERVICE,prefix EAT,250,6284.0,54,6140.0
+4140,EAT-Dishwashers,EAT,FRONTLINE_SERVICE,prefix EAT,217,5530.0,45,5704.0
+4150,"EAT-Hosts And Hostesses, Restaurant, Lounge, And Coffee Shop",EAT,FRONTLINE_SERVICE,prefix EAT,234,5809.0,46,5548.0
+4160,"EAT-Food Preparation and Serving Related Workers, All Other",EAT,FRONTLINE_SERVICE,prefix EAT,11,327.0,2,119.0
+4200,CLN-First-Line Supervisors Of Housekeeping And Janitorial Workers,CLN,FRONTLINE_SERVICE,prefix CLN,185,4793.0,36,5015.0
+4210,"CLN-First-Line Supervisors Of Landscaping, Lawn Service, And Groundskeeping Workers",CLN,FRONTLINE_SERVICE,prefix CLN,118,2633.0,17,1580.0
+4220,CLN-Janitors And Building Cleaners,CLN,FRONTLINE_SERVICE,prefix CLN,1844,47035.0,403,50984.0
+4230,CLN-Maids And Housekeeping Cleaners,CLN,FRONTLINE_SERVICE,prefix CLN,1282,34689.0,272,35293.0
+4240,CLN-Pest Control Workers,CLN,FRONTLINE_SERVICE,prefix CLN,49,819.0,20,2505.0
+4251,CLN-Landscaping And Groundskeeping Workers,CLN,FRONTLINE_SERVICE,prefix CLN,1057,29585.0,181,25073.0
+4252,CLN-Tree Trimmers and Pruners,CLN,FRONTLINE_SERVICE,prefix CLN,61,1696.0,25,3264.0
+4255,CLN-Other Grounds Maintenance Workers,CLN,FRONTLINE_SERVICE,prefix CLN,24,374.0,1,231.0
+4330,PRS-Supervisors Of Personal Care And Service Workers,PRS,FRONTLINE_SERVICE,prefix PRS,53,1072.0,6,748.0
+4340,PRS-Animal Trainers,PRS,FRONTLINE_SERVICE,prefix PRS,61,1144.0,14,1240.0
+4350,PRS-Animal Caretakers,PRS,FRONTLINE_SERVICE,prefix PRS,312,7230.0,72,7280.0
+4400,PRS-Gambling Services Workers,PRS,FRONTLINE_SERVICE,prefix PRS,127,2674.0,38,4222.0
+4420,"PRS-Ushers, Lobby Attendants, And Ticket Takers",PRS,FRONTLINE_SERVICE,prefix PRS,57,1012.0,11,1271.0
+4435,PRS-Other Entertainment Attendants And Related Workers,PRS,FRONTLINE_SERVICE,prefix PRS,253,4907.0,71,7992.0
+4461,"PRS-Embalmers, Crematory Operators And Funeral Attendants",PRS,FRONTLINE_SERVICE,prefix PRS,11,173.0,3,316.0
+4465,"PRS-Morticians, Undertakers, And Funeral Arrangers",PRS,FRONTLINE_SERVICE,prefix PRS,21,417.0,4,292.0
+4500,PRS-Barbers,PRS,FRONTLINE_SERVICE,prefix PRS,75,2219.0,19,2747.0
+4510,"PRS-Hairdressers, Hairstylists, And Cosmetologists",PRS,FRONTLINE_SERVICE,prefix PRS,698,16274.0,157,17713.0
+4521,PRS-Manicurists And Pedicurists,PRS,FRONTLINE_SERVICE,prefix PRS,393,8236.0,69,7059.0
+4522,PRS-Skincare Specialists,PRS,FRONTLINE_SERVICE,prefix PRS,144,3066.0,40,3812.0
+4525,PRS-Other Personal Appearance Workers,PRS,FRONTLINE_SERVICE,prefix PRS,30,716.0,3,436.0
+4530,"PRS-Baggage Porters, Bellhops, And Concierges",PRS,FRONTLINE_SERVICE,prefix PRS,106,2386.0,14,1245.0
+4540,PRS-Tour And Travel Guides,PRS,FRONTLINE_SERVICE,prefix PRS,74,1323.0,24,1697.0
+4600,PRS-Childcare Workers,PRS,FRONTLINE_SERVICE,prefix PRS,1164,26383.0,277,31230.0
+4621,PRS-Exercise Trainers And Group Fitness Instructors,PRS,FRONTLINE_SERVICE,prefix PRS,444,8766.0,91,8984.0
+4622,PRS-Recreation Workers,PRS,FRONTLINE_SERVICE,prefix PRS,222,4843.0,35,3468.0
+4640,PRS-Residential Advisors,PRS,FRONTLINE_SERVICE,prefix PRS,59,914.0,17,1851.0
+4655,"PRS-Personal Care and Service Workers, All Other",PRS,FRONTLINE_SERVICE,prefix PRS,146,3154.0,33,3366.0
+4700,SAL-First-Line Supervisors Of Retail Sales Workers,SAL,FRONTLINE_SERVICE,override: retail/cashier/counter/promoter/vendor sales; floral designers & merchandise displayers (retail),2539,55684.0,483,49853.0
+4710,SAL-First-Line Supervisors Of Non-Retail Sales Workers,SAL,SALES_BIZ,prefix SAL,1014,21313.0,208,19786.0
+4720,SAL-Cashiers,SAL,FRONTLINE_SERVICE,override: retail/cashier/counter/promoter/vendor sales; floral designers & merchandise displayers (retail),2695,65163.0,475,53953.0
+4740,SAL-Counter And Rental Clerks,SAL,FRONTLINE_SERVICE,override: retail/cashier/counter/promoter/vendor sales; floral designers & merchandise displayers (retail),56,1163.0,12,1467.0
+4750,SAL-Parts Salespersons,SAL,FRONTLINE_SERVICE,override: retail/cashier/counter/promoter/vendor sales; floral designers & merchandise displayers (retail),70,1618.0,24,2508.0
+4760,SAL-Retail Salespersons,SAL,FRONTLINE_SERVICE,override: retail/cashier/counter/promoter/vendor sales; floral designers & merchandise displayers (retail),2978,66536.0,578,62988.0
+4800,SAL-Advertising Sales Agents,SAL,SALES_BIZ,prefix SAL,148,2940.0,21,2046.0
+4810,SAL-Insurance Sales Agents,SAL,SALES_BIZ,prefix SAL,436,9019.0,88,7644.0
+4820,"SAL-Securities, Commodities, And Financial Services Sales Agents",SAL,SALES_BIZ,prefix SAL,325,6896.0,70,6167.0
+4830,SAL-Travel Agents,SAL,SALES_BIZ,prefix SAL,79,1419.0,11,956.0
+4840,"SAL-Sales Representatives Of Services, Except Advertising, Insurance, Financial Services, And Travel",SAL,SALES_BIZ,prefix SAL,1044,21449.0,192,19902.0
+4850,"SAL-Sales Representatives, Wholesale And Manufacturing",SAL,SALES_BIZ,prefix SAL,1235,24840.0,243,24625.0
+4900,"SAL-Models, Demonstrators, And Product Promoters",SAL,FRONTLINE_SERVICE,override: retail/cashier/counter/promoter/vendor sales; floral designers & merchandise displayers (retail),65,1108.0,8,693.0
+4920,SAL-Real Estate Brokers And Sales Agents,SAL,SALES_BIZ,prefix SAL,1326,26622.0,262,25379.0
+4930,SAL-Sales Engineers,SAL,SALES_BIZ,prefix SAL,120,2366.0,25,1907.0
+4940,SAL-Telemarketers,SAL,SALES_BIZ,override: personal financial advisors (sales-type); telemarketers (sales),9,302.0,2,359.0
+4950,"SAL-Door-To-Door Sales Workers, News And Street Vendors, And Related Workers",SAL,FRONTLINE_SERVICE,override: retail/cashier/counter/promoter/vendor sales; floral designers & merchandise displayers (retail),77,1678.0,13,1174.0
+4965,"SAL-Sales And Related Workers, All Other",SAL,SALES_BIZ,prefix SAL,470,10631.0,77,7488.0
+5000,OFF-First-Line Supervisors Of Office And Administrative Support Workers,OFF,CLERICAL_ADMIN,prefix OFF,1201,24327.0,233,23015.0
+5010,"OFF-Switchboard Operators, Including Answering Service",OFF,CUSTOMER_SUPPORT,"override: switchboard/telephone ops, tellers, CSRs, hotel desk, reservation agents, dispatchers/telecommunicators",19,331.0,4,545.0
+5020,OFF-Telephone Operators,OFF,CUSTOMER_SUPPORT,"override: switchboard/telephone ops, tellers, CSRs, hotel desk, reservation agents, dispatchers/telecommunicators",18,437.0,2,187.0
+5040,"OFF-Communications Equipment Operators, All Other",OFF,CUSTOMER_SUPPORT,"override: switchboard/telephone ops, tellers, CSRs, hotel desk, reservation agents, dispatchers/telecommunicators",14,250.0,1,75.0
+5100,OFF-Bill And Account Collectors,OFF,CLERICAL_ADMIN,prefix OFF,59,1463.0,7,936.0
+5110,OFF-Billing And Posting Clerks,OFF,CLERICAL_ADMIN,prefix OFF,286,6574.0,61,6158.0
+5120,"OFF-Bookkeeping, Accounting, And Auditing Clerks",OFF,CLERICAL_ADMIN,prefix OFF,1270,23908.0,302,27140.0
+5140,OFF-Payroll And Timekeeping Clerks,OFF,CLERICAL_ADMIN,prefix OFF,202,4332.0,35,3490.0
+5150,OFF-Procurement Clerks,OFF,CLERICAL_ADMIN,prefix OFF,72,1336.0,12,1002.0
+5160,OFF-Tellers,OFF,CUSTOMER_SUPPORT,"override: switchboard/telephone ops, tellers, CSRs, hotel desk, reservation agents, dispatchers/telecommunicators",180,4446.0,23,3026.0
+5165,OFF-Other Financial Clerks,OFF,CLERICAL_ADMIN,prefix OFF,162,3849.0,42,5012.0
+5220,"OFF-Court, Municipal, And License Clerks",OFF,CLERICAL_ADMIN,prefix OFF,79,1497.0,11,1236.0
+5230,"OFF-Credit Authorizers, Checkers, And Clerks",OFF,CLERICAL_ADMIN,prefix OFF,13,267.0,6,751.0
+5240,OFF-Customer Service Representatives,OFF,CUSTOMER_SUPPORT,"override: switchboard/telephone ops, tellers, CSRs, hotel desk, reservation agents, dispatchers/telecommunicators",2424,55481.0,518,54120.0
+5250,"OFF-Eligibility Interviewers, Government Programs",OFF,CLERICAL_ADMIN,prefix OFF,165,3526.0,27,2889.0
+5260,OFF-File Clerks,OFF,CLERICAL_ADMIN,prefix OFF,177,3288.0,37,3441.0
+5300,"OFF-Hotel, Motel, And Resort Desk Clerks",OFF,CUSTOMER_SUPPORT,"override: switchboard/telephone ops, tellers, CSRs, hotel desk, reservation agents, dispatchers/telecommunicators",137,3417.0,20,2123.0
+5310,"OFF-Interviewers, Except Eligibility And Loan",OFF,CLERICAL_ADMIN,prefix OFF,123,2924.0,36,4909.0
+5320,"OFF-Library Assistants, Clerical",OFF,CLERICAL_ADMIN,prefix OFF,143,2599.0,34,3157.0
+5330,OFF-Loan Interviewers And Clerks,OFF,CLERICAL_ADMIN,prefix OFF,72,1543.0,9,598.0
+5340,OFF-New Accounts Clerks,OFF,CLERICAL_ADMIN,prefix OFF,4,154.0,0,0.0
+5350,OFF-Correspondence Clerks And Order Clerks,OFF,CLERICAL_ADMIN,prefix OFF,88,1875.0,16,1706.0
+5360,"OFF-Human Resources Assistants, Except Payroll And Timekeeping",OFF,CLERICAL_ADMIN,prefix OFF,88,1769.0,27,2660.0
+5400,OFF-Receptionists And Information Clerks,OFF,CLERICAL_ADMIN,prefix OFF,1068,24451.0,208,21828.0
+5410,OFF-Reservation And Transportation Ticket Agents And Travel Clerks,OFF,CUSTOMER_SUPPORT,"override: switchboard/telephone ops, tellers, CSRs, hotel desk, reservation agents, dispatchers/telecommunicators",133,2779.0,38,3782.0
+5420,OFF-Other Information And Records Clerks,OFF,CLERICAL_ADMIN,prefix OFF,117,2335.0,28,2948.0
+5500,OFF-Cargo And Freight Agents,OFF,CLERICAL_ADMIN,prefix OFF,33,694.0,6,414.0
+5510,OFF-Couriers And Messengers,OFF,FRONTLINE_SERVICE,"override: couriers, meter readers, mail carriers/postal sorters, shipping-receiving & weigher clerks = physical logistics, not screen-based clerical (JUDGMENT; see robustness)",602,13803.0,96,10433.0
+5521,OFF-Public Safety Telecommunicators,OFF,CUSTOMER_SUPPORT,"override: switchboard/telephone ops, tellers, CSRs, hotel desk, reservation agents, dispatchers/telecommunicators",65,1380.0,14,1098.0
+5522,"OFF-Dispatchers, Except Police, Fire, And Ambulance",OFF,CUSTOMER_SUPPORT,"override: switchboard/telephone ops, tellers, CSRs, hotel desk, reservation agents, dispatchers/telecommunicators",130,3312.0,26,2671.0
+5530,"OFF-Meter Readers, Utilities",OFF,FRONTLINE_SERVICE,"override: couriers, meter readers, mail carriers/postal sorters, shipping-receiving & weigher clerks = physical logistics, not screen-based clerical (JUDGMENT; see robustness)",5,85.0,0,0.0
+5540,OFF-Postal Service Clerks,OFF,CLERICAL_ADMIN,prefix OFF,153,2942.0,25,2171.0
+5550,OFF-Postal Service Mail Carriers,OFF,FRONTLINE_SERVICE,"override: couriers, meter readers, mail carriers/postal sorters, shipping-receiving & weigher clerks = physical logistics, not screen-based clerical (JUDGMENT; see robustness)",341,6867.0,68,6730.0
+5560,"OFF-Postal Service Mail Sorters, Processors, And Processing Machine Operators",OFF,FRONTLINE_SERVICE,"override: couriers, meter readers, mail carriers/postal sorters, shipping-receiving & weigher clerks = physical logistics, not screen-based clerical (JUDGMENT; see robustness)",72,1454.0,6,378.0
+5600,"OFF-Production, Planning, And Expediting Clerks",OFF,CLERICAL_ADMIN,prefix OFF,331,6231.0,64,6406.0
+5610,"OFF-Shipping, Receiving, And Inventory Clerks",OFF,FRONTLINE_SERVICE,"override: couriers, meter readers, mail carriers/postal sorters, shipping-receiving & weigher clerks = physical logistics, not screen-based clerical (JUDGMENT; see robustness)",467,10424.0,74,7486.0
+5630,"OFF-Weighers, Measurers, Checkers, And Samplers, Recordkeeping",OFF,FRONTLINE_SERVICE,"override: couriers, meter readers, mail carriers/postal sorters, shipping-receiving & weigher clerks = physical logistics, not screen-based clerical (JUDGMENT; see robustness)",48,1050.0,10,656.0
+5710,OFF-Executive Secretaries And Executive Administrative Assistants,OFF,CLERICAL_ADMIN,prefix OFF,642,11929.0,118,10591.0
+5720,OFF-Legal Secretaries and Administrative Assistants,OFF,CLERICAL_ADMIN,prefix OFF,129,2780.0,32,3032.0
+5730,OFF-Medical Secretaries and Administrative Assistants,OFF,CLERICAL_ADMIN,prefix OFF,74,1704.0,14,1495.0
+5740,"OFF-Secretaries And Administrative Assistants, Except Legal, Medical, And Executive",OFF,CLERICAL_ADMIN,prefix OFF,2106,41400.0,407,38419.0
+5810,OFF-Data Entry Keyers,OFF,CLERICAL_ADMIN,prefix OFF,258,5057.0,50,5496.0
+5820,OFF-Word Processors And Typists,OFF,CLERICAL_ADMIN,prefix OFF,23,615.0,6,690.0
+5840,OFF-Insurance Claims And Policy Processing Clerks,OFF,CLERICAL_ADMIN,prefix OFF,100,1954.0,21,1740.0
+5850,"OFF-Mail Clerks And Mail Machine Operators, Except Postal Service",OFF,CLERICAL_ADMIN,prefix OFF,60,1248.0,4,463.0
+5860,"OFF-Office Clerks, General",OFF,CLERICAL_ADMIN,prefix OFF,1513,32223.0,340,33859.0
+5900,"OFF-Office Machine Operators, Except Computer",OFF,CLERICAL_ADMIN,prefix OFF,31,730.0,6,408.0
+5910,OFF-Proofreaders And Copy Markers,OFF,PROF_EXPOSED,"override: claims adjusters, compliance, HR/training, marketing research, legal support, graphic designers, writers/editors/PR/translators/reporters, proofreaders",16,301.0,4,452.0
+5920,OFF-Statistical Assistants,OFF,CLERICAL_ADMIN,prefix OFF,53,1163.0,16,1492.0
+5940,OFF-Other Office And Administrative Support Workers,OFF,CLERICAL_ADMIN,prefix OFF,686,14111.0,199,20279.0
+6005,"FFF-First-Line Supervisors Of Farming, Fishing, And Forestry Workers",FFF,OTHER,prefix FFF,46,903.0,10,1125.0
+6010,FFF-Agricultural Inspectors,FFF,OTHER,prefix FFF,10,314.0,0,0.0
+6040,"FFF-Graders And Sorters, Agricultural Products",FFF,OTHER,prefix FFF,34,962.0,17,1855.0
+6050,FFF-Other Agricultural Workers,FFF,OTHER,prefix FFF,556,13876.0,109,14603.0
+6115,FFF-Fishing And Hunting Workers,FFF,OTHER,prefix FFF,16,242.0,2,248.0
+6120,FFF-Forest And Conservation Workers,FFF,OTHER,prefix FFF,21,462.0,4,495.0
+6130,FFF-Logging Workers,FFF,OTHER,prefix FFF,10,180.0,2,239.0
+6200,CON-First-Line Supervisors Of Construction Trades And Extraction Workers,CON,SKILLED_TRADE,prefix CON,485,12167.0,86,9713.0
+6210,CON-Boilermakers,CON,SKILLED_TRADE,prefix CON,8,209.0,0,0.0
+6220,"CON-Brickmasons, Blockmasons, Stonemasons, And Reinforcing Iron And Rebar Workers",CON,SKILLED_TRADE,prefix CON,40,1140.0,10,704.0
+6230,CON-Carpenters,CON,SKILLED_TRADE,prefix CON,997,27435.0,186,26221.0
+6240,"CON-Carpet, Floor, And Tile Installers And Finishers",CON,SKILLED_TRADE,prefix CON,141,3823.0,14,1725.0
+6250,"CON-Cement Masons, Concrete Finishers, And Terrazzo Workers",CON,SKILLED_TRADE,prefix CON,43,1139.0,10,1282.0
+6260,CON-Construction Laborers,CON,SKILLED_TRADE,prefix CON,1518,42781.0,305,43380.0
+6305,CON-Construction Equipment Operators,CON,SKILLED_TRADE,prefix CON,144,3643.0,31,4174.0
+6330,"CON-Drywall Installers, Ceiling Tile Installers, And Tapers",CON,SKILLED_TRADE,prefix CON,103,2785.0,17,2290.0
+6355,CON-Electricians,CON,SKILLED_TRADE,prefix CON,719,17194.0,152,16027.0
+6360,CON-Glaziers,CON,SKILLED_TRADE,prefix CON,54,1372.0,13,1056.0
+6400,CON-Insulation Workers,CON,SKILLED_TRADE,prefix CON,27,603.0,3,315.0
+6410,CON-Painters and Paperhangers,CON,SKILLED_TRADE,prefix CON,493,13876.0,83,10753.0
+6441,CON-Pipelayers,CON,SKILLED_TRADE,prefix CON,27,585.0,2,343.0
+6442,"CON-Plumbers, Pipefitters, And Steamfitters",CON,SKILLED_TRADE,prefix CON,464,12058.0,98,12061.0
+6460,CON-Plasterers And Stucco Masons,CON,SKILLED_TRADE,prefix CON,29,706.0,4,369.0
+6515,CON-Roofers,CON,SKILLED_TRADE,prefix CON,106,3283.0,35,4899.0
+6520,CON-Sheet Metal Workers,CON,SKILLED_TRADE,prefix CON,94,2238.0,22,2626.0
+6530,CON-Structural Iron And Steel Workers,CON,SKILLED_TRADE,prefix CON,57,1662.0,7,893.0
+6540,CON-Solar Photovoltaic Installers,CON,SKILLED_TRADE,prefix CON,26,615.0,6,722.0
+6600,"CON-Helpers, Construction Trades",CON,SKILLED_TRADE,prefix CON,31,1069.0,4,167.0
+6660,CON-Construction And Building Inspectors,CON,SKILLED_TRADE,prefix CON,131,3040.0,29,2523.0
+6700,CON-Elevator and Escalator Installers And Repairers,CON,SKILLED_TRADE,prefix CON,48,938.0,4,650.0
+6710,CON-Fence Erectors,CON,SKILLED_TRADE,prefix CON,12,517.0,1,58.0
+6720,CON-Hazardous Materials Removal Workers,CON,SKILLED_TRADE,prefix CON,31,771.0,7,667.0
+6730,CON-Highway Maintenance Workers,CON,SKILLED_TRADE,prefix CON,27,558.0,5,753.0
+6740,CON-Rail-Track Laying And Maintenance Equipment Operators,CON,SKILLED_TRADE,prefix CON,6,109.0,0,0.0
+6765,CON-Other Construction And Related Workers,CON,SKILLED_TRADE,prefix CON,37,850.0,6,1042.0
+6800,"EXT-Derrick, Rotary Drill, And Service Unit Operators, And Roustabouts, Oil And Gas",EXT,SKILLED_TRADE,prefix EXT,4,140.0,0,0.0
+6825,EXT-Surface Mining Machine Operators And Earth Drillers,EXT,SKILLED_TRADE,prefix EXT,12,259.0,1,72.0
+6835,"EXT-Explosives Workers, Ordnance Handling Experts, and Blasters",EXT,SKILLED_TRADE,prefix EXT,6,114.0,0,0.0
+6850,EXT-Underground Mining Machine Operators,EXT,SKILLED_TRADE,prefix EXT,3,54.0,2,211.0
+6950,EXT-Other Extraction Workers,EXT,SKILLED_TRADE,prefix EXT,7,180.0,2,459.0
+7000,"RPR-First-Line Supervisors Of Mechanics, Installers, And Repairers",RPR,SKILLED_TRADE,prefix RPR,146,3311.0,45,5548.0
+7010,"RPR-Computer, Automated Teller, And Office Machine Repairers",RPR,SKILLED_TRADE,prefix RPR,172,3555.0,38,3461.0
+7020,RPR-Radio And Telecommunications Equipment Installers And Repairers,RPR,SKILLED_TRADE,prefix RPR,145,3391.0,18,2715.0
+7030,RPR-Avionics Technicians,RPR,SKILLED_TRADE,prefix RPR,7,76.0,3,231.0
+7040,"RPR-Electric Motor, Power Tool, And Related Repairers",RPR,SKILLED_TRADE,prefix RPR,13,275.0,5,648.0
+7100,"RPR-Other Electrical And Electronic Equipment Mechanics, Installers, And Repairers",RPR,SKILLED_TRADE,prefix RPR,16,383.0,1,116.0
+7120,RPR-Audiovisual Equipment Installers And Repairers,RPR,SKILLED_TRADE,prefix RPR,40,850.0,9,1468.0
+7130,RPR-Security And Fire Alarm Systems Installers,RPR,SKILLED_TRADE,prefix RPR,44,942.0,15,1637.0
+7140,RPR-Aircraft Mechanics And Service Technicians,RPR,SKILLED_TRADE,prefix RPR,155,2917.0,49,3977.0
+7150,RPR-Automotive Body And Related Repairers,RPR,SKILLED_TRADE,prefix RPR,76,1835.0,25,3203.0
+7160,RPR-Automotive Glass Installers And Repairers,RPR,SKILLED_TRADE,prefix RPR,20,502.0,4,829.0
+7200,RPR-Automotive Service Technicians And Mechanics,RPR,SKILLED_TRADE,prefix RPR,708,17414.0,173,19612.0
+7210,RPR-Bus And Truck Mechanics And Diesel Engine Specialists,RPR,SKILLED_TRADE,prefix RPR,134,3201.0,25,3148.0
+7220,RPR-Heavy Vehicle And Mobile Equipment Service Technicians And Mechanics,RPR,SKILLED_TRADE,prefix RPR,84,1922.0,10,1093.0
+7240,RPR-Small Engine Mechanics,RPR,SKILLED_TRADE,prefix RPR,13,203.0,0,0.0
+7260,"RPR-Miscellaneous Vehicle And Mobile Equipment Mechanics, Installers, And Repairers",RPR,SKILLED_TRADE,prefix RPR,89,2136.0,28,4296.0
+7300,RPR-Control And Valve Installers And Repairers,RPR,SKILLED_TRADE,prefix RPR,18,314.0,4,365.0
+7315,"RPR-Heating, Air Conditioning, And Refrigeration Mechanics And Installers",RPR,SKILLED_TRADE,prefix RPR,225,5766.0,59,6837.0
+7320,RPR-Home Appliance Repairers,RPR,SKILLED_TRADE,prefix RPR,45,884.0,7,337.0
+7330,RPR-Industrial And Refractory Machinery Mechanics,RPR,SKILLED_TRADE,prefix RPR,186,4188.0,33,3272.0
+7340,"RPR-Maintenance And Repair Workers, General",RPR,SKILLED_TRADE,prefix RPR,513,11968.0,114,13215.0
+7350,"RPR-Maintenance Workers, Machinery",RPR,SKILLED_TRADE,prefix RPR,7,132.0,1,239.0
+7360,RPR-Millwrights,RPR,SKILLED_TRADE,prefix RPR,19,432.0,5,640.0
+7410,RPR-Electrical Power-Line Installers And Repairers,RPR,SKILLED_TRADE,prefix RPR,31,830.0,8,581.0
+7420,RPR-Telecommunications Line Installers And Repairers,RPR,SKILLED_TRADE,prefix RPR,90,1729.0,17,2499.0
+7430,RPR-Precision Instrument And Equipment Repairers,RPR,SKILLED_TRADE,prefix RPR,63,1404.0,14,938.0
+7510,"RPR-Coin, Vending, And Amusement Machine Servicers And Repairers",RPR,SKILLED_TRADE,prefix RPR,15,531.0,1,176.0
+7540,RPR-Locksmiths And Safe Repairers,RPR,SKILLED_TRADE,prefix RPR,27,714.0,7,699.0
+7560,RPR-Riggers,RPR,SKILLED_TRADE,prefix RPR,8,180.0,1,166.0
+7610,"RPR-Helpers--Installation, Maintenance, And Repair Workers",RPR,SKILLED_TRADE,prefix RPR,20,446.0,1,140.0
+7640,"RPR-Other Installation, Maintenance, And Repair Workers",RPR,SKILLED_TRADE,prefix RPR,173,3842.0,34,4164.0
+7700,PRD-First-Line Supervisors Of Production And Operating Workers,PRD,SKILLED_TRADE,prefix PRD,467,9457.0,93,9790.0
+7720,"PRD-Electrical, Electronics, And Electromechanical Assemblers",PRD,SKILLED_TRADE,prefix PRD,302,6065.0,52,4885.0
+7730,PRD-Engine And Other Machine Assemblers,PRD,SKILLED_TRADE,prefix PRD,3,38.0,1,52.0
+7740,PRD-Structural Metal Fabricators And Fitters,PRD,SKILLED_TRADE,prefix PRD,12,537.0,3,379.0
+7750,PRD-Other Assemblers And Fabricators,PRD,SKILLED_TRADE,prefix PRD,819,17589.0,148,13191.0
+7800,PRD-Bakers,PRD,SKILLED_TRADE,prefix PRD,289,7331.0,61,7173.0
+7810,"PRD-Butchers And Other Meat, Poultry, And Fish Processing Workers",PRD,SKILLED_TRADE,prefix PRD,159,3765.0,24,3256.0
+7830,"PRD-Food And Tobacco Roasting, Baking, And Drying Machine Operators And Tenders",PRD,SKILLED_TRADE,prefix PRD,12,317.0,2,218.0
+7840,PRD-Food Batchmakers,PRD,SKILLED_TRADE,prefix PRD,63,1519.0,12,1159.0
+7850,PRD-Food Cooking Machine Operators And Tenders,PRD,SKILLED_TRADE,prefix PRD,6,206.0,2,214.0
+7855,"PRD-Food Processing Workers, All Other",PRD,SKILLED_TRADE,prefix PRD,79,1669.0,11,1779.0
+7905,PRD-Computer Numerically Controlled Tool Operators And Programmers,PRD,SKILLED_TRADE,prefix PRD,61,1096.0,4,518.0
+7925,"PRD-Forming Machine Setters, Operators, And Tenders, Metal And Plastic",PRD,SKILLED_TRADE,prefix PRD,8,101.0,1,57.0
+7950,"PRD-Cutting, Punching, And Press Machine Setters, Operators, And Tenders, Metal And Plastic",PRD,SKILLED_TRADE,prefix PRD,11,336.0,2,199.0
+8000,"PRD-Grinding, Lapping, Polishing, And Buffing Machine Tool Setters, Operators, And Tenders, Metal And Plastic",PRD,SKILLED_TRADE,prefix PRD,23,386.0,3,469.0
+8025,"PRD-Other Machine Tool Setters, Operators, And Tenders, Metal and Plastic",PRD,SKILLED_TRADE,prefix PRD,8,229.0,2,165.0
+8030,PRD-Machinists,PRD,SKILLED_TRADE,prefix PRD,225,4626.0,27,2775.0
+8040,"PRD-Metal Furnace Operators, Tenders, Pourers, And Casters",PRD,SKILLED_TRADE,prefix PRD,4,66.0,2,225.0
+8100,"PRD-Model Makers, Patternmakers, And Molding Machine Setters, Metal And Plastic",PRD,SKILLED_TRADE,prefix PRD,18,329.0,1,112.0
+8130,PRD-Tool And Die Makers,PRD,SKILLED_TRADE,prefix PRD,12,153.0,2,122.0
+8140,"PRD-Welding, Soldering, And Brazing Workers",PRD,SKILLED_TRADE,prefix PRD,204,5091.0,43,4407.0
+8225,PRD-Other Metal Workers And Plastic Workers,PRD,SKILLED_TRADE,prefix PRD,208,4381.0,46,4665.0
+8250,PRD-Prepress Technicians And Workers,PRD,SKILLED_TRADE,prefix PRD,17,436.0,0,0.0
+8255,PRD-Printing Press Operators,PRD,SKILLED_TRADE,prefix PRD,109,2291.0,18,1569.0
+8256,PRD-Print Binding And Finishing Workers,PRD,SKILLED_TRADE,prefix PRD,3,40.0,2,103.0
+8300,PRD-Laundry And Dry-Cleaning Workers,PRD,SKILLED_TRADE,prefix PRD,109,2655.0,11,1124.0
+8310,"PRD-Pressers, Textile, Garment, And Related Materials",PRD,SKILLED_TRADE,prefix PRD,14,231.0,1,77.0
+8320,PRD-Sewing Machine Operators,PRD,SKILLED_TRADE,prefix PRD,76,1604.0,11,1115.0
+8335,PRD-Shoe And Leather Workers,PRD,SKILLED_TRADE,prefix PRD,6,87.0,3,371.0
+8350,"PRD-Tailors, Dressmakers, And Sewers",PRD,SKILLED_TRADE,prefix PRD,65,1533.0,14,831.0
+8365,"PRD-Textile Machine Setters, Operators, And Tenders",PRD,SKILLED_TRADE,prefix PRD,5,115.0,1,56.0
+8450,PRD-Upholsterers,PRD,SKILLED_TRADE,prefix PRD,17,351.0,2,158.0
+8465,"PRD-Other Textile, Apparel, And Furnishings Workers",PRD,SKILLED_TRADE,prefix PRD,8,170.0,2,314.0
+8500,PRD-Cabinetmakers And Bench Carpenters,PRD,SKILLED_TRADE,prefix PRD,32,630.0,11,1057.0
+8510,PRD-Furniture Finishers,PRD,SKILLED_TRADE,prefix PRD,7,131.0,1,103.0
+8530,"PRD-Sawing Machine Setters, Operators, And Tenders, Wood",PRD,SKILLED_TRADE,prefix PRD,2,17.0,0,0.0
+8540,"PRD-Woodworking Machine Setters, Operators, And Tenders, Except Sawing",PRD,SKILLED_TRADE,prefix PRD,1,10.0,0,0.0
+8555,PRD-Other Woodworkers,PRD,SKILLED_TRADE,prefix PRD,22,390.0,6,302.0
+8600,"PRD-Power Plant Operators, Distributors, And Dispatchers",PRD,SKILLED_TRADE,prefix PRD,18,279.0,4,531.0
+8610,PRD-Stationary Engineers And Boiler Operators,PRD,SKILLED_TRADE,prefix PRD,183,4028.0,37,3594.0
+8620,PRD-Water And Wastewater Treatment Plant And System Operators,PRD,SKILLED_TRADE,prefix PRD,64,1456.0,11,1596.0
+8630,PRD-Miscellaneous Plant And System Operators,PRD,SKILLED_TRADE,prefix PRD,52,1086.0,10,1102.0
+8640,"PRD-Chemical Processing Machine Setters, Operators, And Tenders",PRD,SKILLED_TRADE,prefix PRD,193,3932.0,34,2657.0
+8650,"PRD-Crushing, Grinding, Polishing, Mixing, And Blending Workers",PRD,SKILLED_TRADE,prefix PRD,27,590.0,9,1142.0
+8710,PRD-Cutting Workers,PRD,SKILLED_TRADE,prefix PRD,13,450.0,5,1015.0
+8720,"PRD-Extruding, Forming, Pressing, And Compacting Machine Setters, Operators, And Tenders",PRD,SKILLED_TRADE,prefix PRD,5,103.0,1,365.0
+8730,"PRD-Furnace, Kiln, Oven, Drier, And Kettle Operators And Tenders",PRD,SKILLED_TRADE,prefix PRD,2,42.0,0,0.0
+8740,"PRD-Inspectors, Testers, Sorters, Samplers, And Weighers",PRD,SKILLED_TRADE,prefix PRD,889,17740.0,162,16422.0
+8750,PRD-Jewelers And Precious Stone And Metal Workers,PRD,SKILLED_TRADE,prefix PRD,59,1228.0,7,454.0
+8760,PRD-Dental And Ophthalmic Laboratory Technicians And Medical Appliance Technicians,PRD,SKILLED_TRADE,prefix PRD,66,1766.0,18,2087.0
+8800,PRD-Packaging And Filling Machine Operators And Tenders,PRD,SKILLED_TRADE,prefix PRD,181,4439.0,27,3384.0
+8810,PRD-Painting Workers,PRD,SKILLED_TRADE,prefix PRD,87,2561.0,17,2312.0
+8830,PRD-Photographic Process Workers And Processing Machine Operators,PRD,SKILLED_TRADE,prefix PRD,43,810.0,19,1464.0
+8850,PRD-Adhesive Bonding Machine Operators And Tenders,PRD,SKILLED_TRADE,prefix PRD,6,110.0,0,0.0
+8910,PRD-Etchers And Engravers,PRD,SKILLED_TRADE,prefix PRD,3,63.0,6,529.0
+8920,"PRD-Molders, Shapers, And Casters, Except Metal And Plastic",PRD,SKILLED_TRADE,prefix PRD,24,437.0,2,201.0
+8930,"PRD-Paper Goods Machine Setters, Operators, And Tenders",PRD,SKILLED_TRADE,prefix PRD,7,223.0,2,130.0
+8940,PRD-Tire Builders,PRD,SKILLED_TRADE,prefix PRD,1,9.0,0,0.0
+8950,PRD-Helpers--Production Workers,PRD,SKILLED_TRADE,prefix PRD,59,1371.0,10,694.0
+8990,"PRD-Miscellaneous Production Workers, Including Equipment Operators And Tenders",PRD,SKILLED_TRADE,prefix PRD,672,14681.0,182,20847.0
+9005,TRN-Supervisors Of Transportation And Material Moving Workers,TRN,FRONTLINE_SERVICE,prefix TRN,225,4981.0,45,4677.0
+9030,TRN-Aircraft Pilots And Flight Engineers,TRN,FRONTLINE_SERVICE,prefix TRN,113,2393.0,25,2315.0
+9040,TRN-Air Traffic Controllers And Airfield Operations Specialists,TRN,FRONTLINE_SERVICE,prefix TRN,39,827.0,10,860.0
+9050,TRN-Flight Attendants,TRN,FRONTLINE_SERVICE,prefix TRN,128,2706.0,37,4058.0
+9110,"TRN-Ambulance Drivers And Attendants, Except Emergency Medical Technicians",TRN,FRONTLINE_SERVICE,prefix TRN,1,25.0,0,0.0
+9121,"TRN-Bus Drivers, School",TRN,FRONTLINE_SERVICE,prefix TRN,90,1979.0,12,808.0
+9122,"TRN-Bus Drivers, Transit And Intercity",TRN,FRONTLINE_SERVICE,prefix TRN,309,7129.0,51,5763.0
+9130,TRN-Driver/Sales Workers And Truck Drivers,TRN,FRONTLINE_SERVICE,prefix TRN,2109,53954.0,470,56408.0
+9141,TRN-Shuttle Drivers And Chauffeurs,TRN,FRONTLINE_SERVICE,prefix TRN,91,1746.0,19,1884.0
+9142,TRN-Taxi Drivers,TRN,FRONTLINE_SERVICE,prefix TRN,612,16360.0,122,14163.0
+9150,"TRN-Motor Vehicle Operators, All Other",TRN,FRONTLINE_SERVICE,prefix TRN,132,3164.0,23,1913.0
+9210,TRN-Locomotive Engineers And Operators,TRN,FRONTLINE_SERVICE,prefix TRN,18,298.0,7,793.0
+9240,TRN-Railroad Conductors And Yardmasters,TRN,FRONTLINE_SERVICE,prefix TRN,10,213.0,2,139.0
+9265,TRN-Other Rail Transportation Workers,TRN,FRONTLINE_SERVICE,prefix TRN,21,561.0,5,501.0
+9300,"TRN-Sailors And Marine Oilers, And Ship Engineers",TRN,FRONTLINE_SERVICE,prefix TRN,30,590.0,7,693.0
+9310,TRN-Ship And Boat Captains And Operators,TRN,FRONTLINE_SERVICE,prefix TRN,29,559.0,9,952.0
+9350,TRN-Parking Attendants,TRN,FRONTLINE_SERVICE,prefix TRN,56,1313.0,17,1376.0
+9365,TRN-Transportation Service Attendants,TRN,FRONTLINE_SERVICE,prefix TRN,68,1586.0,15,2409.0
+9410,TRN-Transportation Inspectors,TRN,FRONTLINE_SERVICE,prefix TRN,46,940.0,6,394.0
+9415,TRN-Passenger Attendants,TRN,FRONTLINE_SERVICE,prefix TRN,13,240.0,2,224.0
+9430,TRN-Other Transportation Workers,TRN,FRONTLINE_SERVICE,prefix TRN,45,959.0,15,1506.0
+9510,TRN-Crane And Tower Operators,TRN,FRONTLINE_SERVICE,prefix TRN,22,470.0,3,301.0
+9570,"TRN-Conveyor, Dredge, And Hoist and Winch Operators",TRN,FRONTLINE_SERVICE,prefix TRN,4,60.0,0,0.0
+9600,TRN-Industrial Truck And Tractor Operators,TRN,FRONTLINE_SERVICE,prefix TRN,281,7324.0,60,6825.0
+9610,TRN-Cleaners Of Vehicles And Equipment,TRN,FRONTLINE_SERVICE,prefix TRN,254,6379.0,47,5349.0
+9620,"TRN-Laborers And Freight, Stock, And Material Movers, Hand",TRN,FRONTLINE_SERVICE,prefix TRN,1658,38605.0,324,41518.0
+9630,TRN-Machine Feeders And Offbearers,TRN,FRONTLINE_SERVICE,prefix TRN,19,398.0,2,124.0
+9640,"TRN-Packers And Packagers, Hand",TRN,FRONTLINE_SERVICE,prefix TRN,352,8813.0,65,7749.0
+9645,TRN-Stockers And Order Fillers,TRN,FRONTLINE_SERVICE,prefix TRN,1263,29079.0,230,25685.0
+9650,TRN-Pumping Station Operators,TRN,FRONTLINE_SERVICE,prefix TRN,15,314.0,2,122.0
+9720,TRN-Refuse And Recyclable Material Collectors,TRN,FRONTLINE_SERVICE,prefix TRN,70,1689.0,21,1753.0
+9760,TRN-Other Material Moving Workers,TRN,FRONTLINE_SERVICE,prefix TRN,34,746.0,4,418.0
+9800,MIL-Military Officer Special And Tactical Operations Leaders,MIL,OTHER,prefix MIL,22,496.0,5,247.0
+9810,MIL-First-Line Enlisted Military Supervisors,MIL,OTHER,prefix MIL,23,345.0,6,486.0
+9825,MIL-Military Enlisted Tactical Operations And Air/Weapons Specialists And Crew Members,MIL,OTHER,prefix MIL,46,1026.0,19,1672.0
+9830,"MIL-Military, Rank Not Specified",MIL,OTHER,prefix MIL,141,3642.0,30,3241.0
+9920,"Unemployed, With No Work Experience In The Last 5 Years Or Earlier Or Never Worked","Unemployed, With No Work Experience In The Last 5 Years Or Earlier Or Never Worked",OTHER,not an occupation (N/A/never worked),0,0.0,0,0.0

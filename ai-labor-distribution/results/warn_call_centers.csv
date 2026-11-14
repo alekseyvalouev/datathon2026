@@ -1,0 +1,2 @@
+county,notice_date,received_date,effective_date,company,ltype,address,source_file,employees,company_norm,fiscal_year
+Los Angeles,2023-02-27,2023-03-02,2023-05-01,American General Life Insurance Company,Layoff Permanent,21650 Oxnard Street  Woodland Hills CA 91367,warn_report1.xlsx,163,americangenerallifeinsurance,FY2022-23

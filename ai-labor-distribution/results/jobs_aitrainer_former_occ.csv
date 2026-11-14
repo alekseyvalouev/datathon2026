@@ -1,0 +1,44 @@
+sample,key,n,level
+CA,SOFTWARE_ENG,84,bucket
+CA,AI_PRODUCER,67,bucket
+CA,TECH_like,32,bucket
+CA,PROF_EXPOSED,31,bucket
+CA,OTHER_ENGINEERING,31,bucket
+CA,CLERICAL_ADMIN,28,bucket
+CA,QUANT_stat,23,bucket
+CA,UNMAPPED,23,bucket
+CA,EXPOSED_like_analyst,21,bucket
+CA,SCIENCE_research,18,bucket
+CA,EDUCATION,14,bucket
+CA,PRODUCT_DESIGN,11,bucket
+CA,DATA_ENG_ANALYTICS,8,bucket
+CA,MANAGEMENT,7,bucket
+CA,FINANCE_SALES,7,bucket
+CA,CUSTOMER_SUPPORT,5,bucket
+CA,HEALTH_CLINICAL,5,bucket
+CA,AI_DATA_WORK,1,bucket
+CA,SALES_BIZ,1,bucket
+CA,AI_POSITIONED(+tech-like),191,top
+CA,"OTHER (engineering, science, education, finance/sales, mgmt, design)",118,top
+CA,EXPOSED(clerical/support/prof/legal + analyst-like),85,top
+CA,"QUANT_stat (technical-quant, ambiguous)",23,top
+Bay,SOFTWARE_ENG,25,bucket
+Bay,AI_PRODUCER,22,bucket
+Bay,EXPOSED_like_analyst,11,bucket
+Bay,TECH_like,11,bucket
+Bay,CLERICAL_ADMIN,9,bucket
+Bay,OTHER_ENGINEERING,9,bucket
+Bay,QUANT_stat,8,bucket
+Bay,PROF_EXPOSED,6,bucket
+Bay,EDUCATION,5,bucket
+Bay,SCIENCE_research,5,bucket
+Bay,UNMAPPED,4,bucket
+Bay,PRODUCT_DESIGN,3,bucket
+Bay,MANAGEMENT,2,bucket
+Bay,HEALTH_CLINICAL,2,bucket
+Bay,DATA_ENG_ANALYTICS,2,bucket
+Bay,SALES_BIZ,1,bucket
+Bay,AI_POSITIONED(+tech-like),60,top
+Bay,"OTHER (engineering, science, education, finance/sales, mgmt, design)",31,top
+Bay,EXPOSED(clerical/support/prof/legal + analyst-like),26,top
+Bay,"QUANT_stat (technical-quant, ambiguous)",8,top

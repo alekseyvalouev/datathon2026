@@ -1,0 +1,24 @@
+# Bulk data — rebuild with each workstream's code/
+*.parquet
+*.zip
+*.xlsx
+*.pdf
+
+# Large source/intermediate datasets
+**/data/
+indeed_job_listings*.csv
+reddit_posts*.csv
+zillow*.csv
+glassdoor_reviews.csv
+google_maps*.csv
+warn_ca.csv
+psam_*.csv
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
