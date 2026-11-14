@@ -1,0 +1,31 @@
+city,county,zipcode,homeStatus,latitude,longitude,GEOID,tract_county,join,county_match
+Alameda,Alameda,94502,RECENTLY_SOLD,37.73,-122.231,6001428301,Alameda,within,True
+Discovery Bay,Contra Costa,94505,FOR_SALE,37.909,-121.613,6013304005,Contra Costa,within,True
+Pleasanton,Alameda,94588,FOR_RENT,37.655,-121.911,6001450601,Alameda,within,True
+San Francisco,San Francisco,94109,FOR_RENT,37.786,-122.419,6075012202,San Francisco,within,True
+Fremont,Alameda,94538,FOR_RENT,37.546,-121.971,6001441921,Alameda,within,True
+Saratoga,Santa Clara,95070,FOR_RENT,37.272,-122.002,6085507301,Santa Clara,within,True
+San Jose,Santa Clara,95122,FOR_RENT,37.314,-121.841,6085503118,Santa Clara,within,True
+Vacaville,Solano,95688,FOR_RENT,38.393,-121.933,6095252904,Solano,within,True
+Hayward,Alameda,94545,FOR_RENT,37.637,-122.113,6001437200,Alameda,within,True
+Daly City,San Mateo,94015,FOR_RENT,37.703,-122.475,6081600800,San Mateo,within,True
+Livermore,Alameda,94550,FOR_RENT,37.682,-121.772,6001451602,Alameda,within,True
+Oakland,Alameda,94608,FOR_RENT,37.825,-122.284,6001401700,Alameda,within,True
+Oakland,Alameda,94610,FOR_RENT,37.812,-122.256,6001403600,Alameda,within,True
+San Jose,Santa Clara,95129,FOR_RENT,37.319,-121.976,6085506203,Santa Clara,within,True
+San Francisco,San Francisco,94134,FOR_SALE,37.712,-122.389,6075061000,San Francisco,within,True
+San Jose,Santa Clara,95112,FOR_RENT,37.35,-121.893,6085501101,Santa Clara,within,True
+Vacaville,Solano,95688,RECENTLY_SOLD,38.373,-122.009,6095253201,Solano,within,True
+Hayward,Alameda,94544,FOR_RENT,37.662,-122.078,6001436500,Alameda,within,True
+Napa,Napa,94558,RECENTLY_SOLD,38.608,-122.278,6055201800,Napa,within,True
+San Francisco,San Francisco,94103,FOR_RENT,37.773,-122.42,6075020100,San Francisco,within,True
+Menlo Park,San Mateo,94025,FOR_RENT,37.467,-122.206,6081610601,San Mateo,within,True
+San Francisco,San Francisco,94118,RECENTLY_SOLD,37.783,-122.452,6075015400,San Francisco,within,True
+Livermore,Alameda,94550,FOR_RENT,37.681,-121.727,6001451506,Alameda,within,True
+Vacaville,Solano,95687,FOR_RENT,38.355,-121.969,6095253105,Solano,within,True
+Morgan Hill,Santa Clara,95037,RECENTLY_SOLD,37.1,-121.647,6085512307,Santa Clara,within,True
+Pleasanton,Alameda,94588,RECENTLY_SOLD,37.687,-121.925,6001450602,Alameda,within,True
+San Francisco,San Francisco,94103,FOR_RENT,37.773,-122.421,6075020100,San Francisco,within,True
+Concord,Contra Costa,94518,RECENTLY_SOLD,37.944,-122.032,6013338102,Contra Costa,within,True
+Concord,Contra Costa,94521,FOR_RENT,37.953,-121.963,6013334004,Contra Costa,within,True
+Mountain View,Santa Clara,94043,FOR_RENT,37.392,-122.064,6085509109,Santa Clara,within,True
