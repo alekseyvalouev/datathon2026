@@ -1,0 +1,152 @@
+################ PART 1: affordable share and approval
+share histogram (projects with 0<share<0.5):
+sh
+(0.0, 0.1]        12
+(0.1, 0.115]       7
+(0.115, 0.125]    24
+(0.125, 0.14]     14
+(0.14, 0.155]     31
+(0.155, 0.17]     13
+(0.17, 0.19]       9
+(0.19, 0.21]      13
+(0.21, 0.26]      14
+(0.26, 0.5]        8
+               n  median_units  approved  disapproved  mean_hearings  share_3plus_hearings  mean_opp  mean_sup  opp_share  bonus
+bucket                                                                                                                          
+0 on site  164.0          38.0      0.91         0.01           2.12                  0.27      1.13      4.66       0.19   0.01
+1-20%      120.0          62.0      0.96         0.00           2.40                  0.34      4.28      9.41       0.31   0.30
+21-99%      27.0          57.0      0.96         0.04           1.89                  0.11     13.81     18.63       0.43   0.67
+100%        28.0          79.0      0.93         0.00           2.04                  0.21      2.75      6.57       0.30   0.00
+
+by density bonus / HOME-SF use (10+ units):
+           n  median_units  approved  disapproved  mean_hearings  share_3plus_hearings  mean_opp  mean_sup  opp_share  bonus
+bonus                                                                                                                       
+False  284.0          51.0      0.94         0.01           2.12                  0.27      2.13      5.35       0.28    NaN
+True    55.0          53.0      0.93         0.00           2.56                  0.33      9.87     19.27       0.34    NaN
+bonus use by era: {Interval(2004, 2012, closed='right'): {'mean': 0.0, 'sum': 0, 'size': 102}, Interval(2012, 2016, closed='right'): {'mean': 0.01, 'sum': 1, 'size': 93}, Interval(2016, 2019, closed='right'): {'mean': 0.19, 'sum': 11, 'size': 59}, Interval(2019, 2026, closed='right'): {'mean': 0.51, 'sum': 43, 'size': 85}}
+bonus projects affordable share: median 0.158 | zero recorded 1 of 55
+
+size-matched (25-200 units, 2012+, not 100% affordable):
+                 n  median_units  approved  disapproved  mean_hearings  share_3plus_hearings  mean_opp  mean_sup  opp_share  bonus
+sh                                                                                                                                
+0 on site     58.0          45.5      0.93         0.02           1.66                  0.16      0.81      3.59       0.18   0.02
+some on site  88.0          65.0      0.98         0.01           2.40                  0.34      5.47      9.52       0.36   0.39
+n 311
+3+ hearings (log-odds, 95% bootstrap): {'has_onsite': (0.13, [-0.43, 0.74]), 'bonus': (0.6, [-0.23, 1.41]), 'log_units': (0.24, [-0.01, 0.51]), 'year': (-0.06, [-0.12, 0.0]), 'low_price': (-0.16, [-0.66, 0.35])}
+approved (log-odds): {'has_onsite': (1.48, [0.31, 8.29]), 'bonus': (-0.94, [-7.56, 1.26]), 'log_units': (0.25, [-0.22, 0.8]), 'year': (-0.01, [-0.13, 0.1]), 'low_price': (-1.18, [-2.49, -0.32])}
+opposing comments (count): {'has_onsite': (2.07, [-0.13, 5.31]), 'bonus': (5.6, [0.92, 10.09]), 'log_units': (0.94, [-0.28, 2.77]), 'year': (0.13, [0.01, 0.27]), 'low_price': (-0.44, [-2.75, 1.86])}
+
+################ PART 2: the unaffiliated
+unaffiliated comments 10706 | unique commenter ids 6220 | no id 2076 | anonymous flag 731 | email 2329 | campaign email 644
+                    n  support  share
+freq                                 
+no id/anonymous  2076    0.526  0.194
+1 comment ever   3947    0.597  0.369
+2                1335    0.580  0.125
+3-5              1284    0.554  0.120
+6-20             1175    0.681  0.110
+21+               889    0.641  0.083
+people who commented on exactly one project: 0.865 | on 5+ projects: 94
+unaffiliated with any text 9715
+       self-description in note    n  share  support
+        neighbor / lives nearby 2615  0.269    0.538
+tenant / renter of the building  372  0.038    0.315
+     property owner / homeowner  412  0.042    0.350
+      business owner / merchant  320  0.033    0.631
+       worker / union / builder  199  0.020    0.583
+       family / senior / parent 1238  0.127    0.582
+             speaks for a group  619  0.064    0.396
+none of these cues: 0.657 support among them 0.614
+
+unaffiliated support by project kind:
+                                     n  support
+kind                                           
+10+ units: 100% affordable         209    0.656
+10+ units: mixed-income           2110    0.695
+10+ units: no affordable mention  1200    0.758
+DR (mostly houses)                2198    0.491
+small non-DR (<10 or unknown)     4989    0.543
+by channel: {'email': {'size': 2329, 'mean': 0.553}, 'spoken': {'size': 8377, 'mean': 0.599}}
+campaign vs not (email): {0.0: {'size': 1685, 'mean': 0.427}, 1.0: {'size': 644, 'mean': 0.882}}
+by era: {Interval(2004, 2010, closed='right'): {'size': 1721, 'mean': 0.56}, Interval(2010, 2015, closed='right'): {'size': 1162, 'mean': 0.751}, Interval(2015, 2019, closed='right'): {'size': 3500, 'mean': 0.592}, Interval(2019, 2026, closed='right'): {'size': 3907, 'mean': 0.558}}
+10+ unit projects by price tercile: {'high $/sqft': {'size': 775, 'mean': 0.782}, 'low $/sqft': {'size': 1707, 'mean': 0.617}, 'mid': {'size': 1343, 'mean': 0.687}}
+share of unaffiliated comments on projects with 20+ such comments: 0.479 | projects: 123 of 1423
+top 8 projects by unaffiliated comments:
+
+################ PART 3: DR team and how affiliation relates to stance
+DR Team comments 563 | support 0.023 | on DR-calendar projects 0.687 | role_source {'case_role': 563}
+
+stance relative to everyone else on the SAME project (projects with 5+ comments):
+                                          n  raw_support  project_avg  gap_vs_same_project
+role2                                                                                     
+DR Team                               318.0        0.028        0.357               -0.329
+Neighborhood Association              397.0        0.229        0.481               -0.252
+Anti-displacement / identity groups   113.0        0.292        0.440               -0.148
+Tenant Association                    100.0        0.410        0.465               -0.055
+Unaffiliated                         9503.0        0.569        0.579               -0.010
+Construction                          212.0        0.849        0.699                0.150
+Pro-housing / YIMBY / SPUR            238.0        0.924        0.719                0.205
+Project Team                          606.0        0.970        0.572                0.398
+
+support share by role x size (cells with <15 comments blanked)
+size                                 10-49 units  50+ units  <10 / unknown  DR case
+role2                                                                              
+Anti-displacement / identity groups          NaN       0.38           0.27     0.21
+Construction                                0.94       0.90           0.89     0.65
+DR Team                                      NaN        NaN           0.01     0.03
+Neighborhood Association                    0.36       0.31           0.22     0.20
+Pro-housing / YIMBY / SPUR                  0.98       0.97           0.81     0.87
+Project Team                                0.99       0.97           0.98     0.98
+Tenant Association                          0.36        NaN           0.16     0.60
+Unaffiliated                                0.74       0.69           0.54     0.49
+
+support share by role x affk (cells with <15 comments blanked)
+affk                                 (small)  100% affordable  mixed/inclusionary or bonus  no affordability mention
+role2                                                                                                               
+Anti-displacement / identity groups     0.41              NaN                         0.14                      0.31
+Construction                            0.86             0.75                         0.88                      0.88
+DR Team                                 0.02              NaN                          NaN                       NaN
+Neighborhood Association                0.22              NaN                         0.17                      0.43
+Pro-housing / YIMBY / SPUR              0.85              NaN                         0.95                      0.97
+Project Team                            0.98             0.94                         0.98                      0.98
+Tenant Association                      0.42              NaN                         0.41                       NaN
+Unaffiliated                            0.54             0.66                         0.65                      0.72
+
+support share by role x terc (cells with <15 comments blanked)
+terc                                 high $/sqft  low $/sqft   mid
+role2                                                             
+Anti-displacement / identity groups          NaN        0.37  0.19
+Construction                                0.87        0.84  0.87
+DR Team                                     0.03        0.02  0.02
+Neighborhood Association                    0.16        0.28  0.33
+Pro-housing / YIMBY / SPUR                  0.92        0.93  0.92
+Project Team                                0.98        0.98  0.97
+Tenant Association                          0.37        0.61  0.22
+Unaffiliated                                0.56        0.59  0.61
+
+support share by role x demo (cells with <15 comments blanked)
+demo                                 False  True 
+role2                                            
+Anti-displacement / identity groups   0.31   0.28
+Construction                          0.78   0.92
+DR Team                               0.03   0.00
+Neighborhood Association              0.29   0.22
+Pro-housing / YIMBY / SPUR            0.92   0.93
+Project Team                          0.97   0.98
+Tenant Association                    0.52   0.27
+Unaffiliated                          0.58   0.60
+
+repeat commenters (5+ comments on these projects) by modal role:
+type                                 always oppose  always support  mixed    n
+role                                                                          
+Unaffiliated                                    19              63     59  141
+Project Team                                     0              22      8   30
+Neighborhood Association                         8               1     12   21
+Construction                                     0               6      7   13
+Pro-housing / YIMBY / SPUR                       0              11      2   13
+Anti-displacement / identity groups              0               0      6    6
+Tenant Association                               2               1      2    5
+Social Services                                  1               1      1    3
+Legal                                            0               0      2    2
+
+people with an org label on some comments and none on others: 298 | support when labelled 0.493 | when unlabelled 0.587

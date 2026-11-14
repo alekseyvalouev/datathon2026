@@ -1,0 +1,110 @@
+items w/ proposed-for-continuance note in text 2267
+projects 3439 | housing 2249 | DR 567 | with comments 3439 | units known 2513 | zillow 2719
+train 2074 test 1365
+
+### y_notdecided: train rate 0.192, test rate 0.229 (test n 1365, pos 313)
+  baseline LR staff rec+type        AUC 0.745  PR-AUC 0.537
+  GBM base+size                    AUC 0.772  PR-AUC 0.621
+  GBM base+size+comments           AUC 0.799  PR-AUC 0.647
+  GBM all +zillow                  AUC 0.790  PR-AUC 0.630
+  GBM comments only                AUC 0.668  PR-AUC 0.373
+  AUC gain from comments over base+size: 95% CI [-0.000, +0.054]
+  AUC gain of full model over LR baseline: 95% CI [+0.023, +0.086]
+  top features: rec_num 0.167, opp_share 0.038, n_projteam 0.011, units 0.008, is_dr 0.007, n_drteam 0.007, n_opp 0.002
+
+### y_slow: train rate 0.161, test rate 0.200 (test n 1365, pos 273)
+  baseline LR staff rec+type        AUC 0.773  PR-AUC 0.543
+  GBM base+size                    AUC 0.798  PR-AUC 0.623
+  GBM base+size+comments           AUC 0.801  PR-AUC 0.587
+  GBM all +zillow                  AUC 0.798  PR-AUC 0.581
+  GBM comments only                AUC 0.668  PR-AUC 0.335
+  AUC gain from comments over base+size: 95% CI [-0.023, +0.030]
+  AUC gain of full model over LR baseline: 95% CI [-0.006, +0.061]
+  top features: rec_num 0.173, opp_share 0.016, n_projteam 0.011, z_ppsf 0.007, n_neu 0.004, is_dr 0.003, n_sup 0.003
+
+### y_prolonged: train rate 0.097, test rate 0.115 (test n 1365, pos 157)
+  baseline LR staff rec+type        AUC 0.619  PR-AUC 0.232
+  GBM base+size                    AUC 0.613  PR-AUC 0.224
+  GBM base+size+comments           AUC 0.695  PR-AUC 0.281
+  GBM all +zillow                  AUC 0.694  PR-AUC 0.283
+  GBM comments only                AUC 0.659  PR-AUC 0.230
+  AUC gain from comments over base+size: 95% CI [+0.051, +0.114]
+  AUC gain of full model over LR baseline: 95% CI [+0.035, +0.119]
+  top features: n_orgs 0.025, rec_num 0.024, opp_share 0.023, units 0.022, net_opp 0.013, n_projteam 0.013, n_items0 0.010
+
+### y_nofinal: train rate 0.084, test rate 0.103 (test n 1365, pos 140)
+  baseline LR staff rec+type        AUC 0.791  PR-AUC 0.361
+  GBM base+size                    AUC 0.841  PR-AUC 0.453
+  GBM base+size+comments           AUC 0.842  PR-AUC 0.440
+  GBM all +zillow                  AUC 0.819  PR-AUC 0.410
+  GBM comments only                AUC 0.653  PR-AUC 0.169
+  AUC gain from comments over base+size: 95% CI [-0.022, +0.025]
+  AUC gain of full model over LR baseline: 95% CI [+0.013, +0.090]
+  top features: rec_num 0.191, n_drteam 0.011, rt_DRP 0.008, opp_share 0.005, n_projteam 0.003, n_comments 0.002, net_opp 0.002
+
+### y_modified: train rate 0.336, test rate 0.344 (test n 1365, pos 470)
+  baseline LR staff rec+type        AUC 0.702  PR-AUC 0.584
+  GBM base+size                    AUC 0.726  PR-AUC 0.622
+  GBM base+size+comments           AUC 0.716  PR-AUC 0.579
+  GBM all +zillow                  AUC 0.714  PR-AUC 0.577
+  GBM comments only                AUC 0.575  PR-AUC 0.393
+  AUC gain from comments over base+size: 95% CI [-0.040, +0.016]
+  AUC gain of full model over LR baseline: 95% CI [-0.016, +0.043]
+  top features: rec_num 0.057, rec_dr 0.022, rt_PCA 0.018, n_drteam 0.017, n_comments 0.014, n_neu 0.011, z_ppsf 0.010
+
+### y_tookdr: train rate 0.382, test rate 0.405 (test n 363, pos 147)
+  baseline LR staff rec+type        AUC 0.700  PR-AUC 0.600
+  GBM base+size                    AUC 0.689  PR-AUC 0.630
+  GBM base+size+comments           AUC 0.699  PR-AUC 0.627
+  GBM all +zillow                  AUC 0.679  PR-AUC 0.636
+  GBM comments only                AUC 0.566  PR-AUC 0.460
+  AUC gain from comments over base+size: 95% CI [-0.039, +0.060]
+  AUC gain of full model over LR baseline: 95% CI [-0.047, +0.043]
+  top features: rec_dr 0.135, n_drteam 0.018, n_comments 0.009, n_sup 0.007, rec_num 0.006, rt_DRM 0.004, units 0.003
+
+### y_disapprove: train rate 0.031, test rate 0.034 (test n 1365, pos 47)
+  baseline LR staff rec+type        AUC 0.721  PR-AUC 0.221
+  GBM base+size                    AUC 0.752  PR-AUC 0.255
+  GBM base+size+comments           AUC 0.803  PR-AUC 0.287
+  GBM all +zillow                  AUC 0.788  PR-AUC 0.265
+  GBM comments only                AUC 0.667  PR-AUC 0.058
+  AUC gain from comments over base+size: 95% CI [-0.007, +0.107]
+  AUC gain of full model over LR baseline: 95% CI [+0.021, +0.148]
+  top features: rec_num 0.112, rt_CUA 0.039, units 0.031, net_opp 0.010, n_items0 0.007, n_opp 0.003, n_drteam 0.003
+
+subgroups for y_slow by terc
+                 n   rate    AUC  flag_rate  recall@top20%  mean_pred
+terc                                                                 
+low $/sqft   338.0  0.160  0.786      0.154          0.444      0.162
+mid          338.0  0.198  0.785      0.133          0.388      0.159
+high $/sqft  338.0  0.183  0.777      0.133          0.258      0.155
+
+subgroups for y_slow by kind
+                    n   rate    AUC  flag_rate  recall@top20%  mean_pred
+kind                                                                    
+DR              363.0  0.182  0.621      0.157          0.167      0.175
+housing non-DR  604.0  0.184  0.793      0.217          0.577      0.205
+non-housing     398.0  0.241  0.901      0.216          0.656      0.205
+
+subgroups for y_slow by oppg
+           n   rate    AUC  flag_rate  recall@top20%  mean_pred
+oppg                                                           
+0 opp  611.0  0.193  0.868      0.144          0.576      0.173
+1-5    526.0  0.184  0.737      0.160          0.340      0.179
+6+     228.0  0.254  0.678      0.447          0.638      0.302
+
+subgroups for y_slow by sizeg
+                   n   rate    AUC  flag_rate  recall@top20%  mean_pred
+sizeg                                                                  
+10+ units      184.0  0.261  0.813      0.261          0.646      0.246
+<10 units      746.0  0.178  0.812      0.119          0.338      0.146
+units unknown  435.0  0.211  0.793      0.315          0.674      0.263
+
+rates by opposition (all years): 
+      y_notdecided  y_slow  y_prolonged  y_nofinal  y_modified  y_disapprove     n
+oppg                                                                              
+0            0.180   0.158        0.090      0.084       0.298         0.025  2055
+1-2          0.226   0.187        0.103      0.108       0.358         0.023   766
+3-5          0.217   0.173        0.112      0.071       0.464         0.034   295
+6-10         0.333   0.257        0.197      0.115       0.459         0.077   183
+11+          0.307   0.293        0.179      0.129       0.429         0.136   140

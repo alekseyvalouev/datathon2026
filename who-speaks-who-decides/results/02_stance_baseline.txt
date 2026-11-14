@@ -1,0 +1,57 @@
+n 30935 dup-text share 0.373
+train 21376 test 7387
+{'support': 0.53, 'oppose': 0.407, 'neutral': 0.063}
+majority                               acc 0.530  macroF1 0.231
+keyword rule                           acc 0.586  macroF1 0.324
+tfidf+LR full text                     acc 0.645  macroF1 0.549
+              precision    recall  f1-score   support
+
+     neutral      0.162     0.607     0.255       466
+      oppose      0.794     0.505     0.617      3006
+     support      0.796     0.757     0.776      3915
+
+    accuracy                          0.645      7387
+   macro avg      0.584     0.623     0.549      7387
+weighted avg      0.755     0.645     0.678      7387
+
+tfidf+LR stance words stripped         acc 0.623  macroF1 0.529
+test rows with explicit stance word 0.196
+
+by len
+           n    acc  macroF1  opp_share
+len                                    
+1-2   2387.0  0.752    0.640      0.336
+3-5   2910.0  0.614    0.527      0.367
+6-15  1998.0  0.572    0.473      0.545
+
+by section_group
+                           n    acc  macroF1  opp_share
+section_group                                          
+Discretionary Review   923.0  0.767    0.627      0.605
+Other                  325.0  0.600    0.498      0.348
+Regular Calendar      6093.0  0.629    0.532      0.380
+
+by housing_kw
+                 n    acc  macroF1  opp_share
+housing_kw                                   
+0           2193.0  0.652    0.538      0.335
+1           5194.0  0.642    0.552      0.437
+
+by year
+           n    acc  macroF1  opp_share
+year                                   
+2021  1921.0  0.689    0.558      0.435
+2022  1336.0  0.646    0.560      0.395
+2023  1606.0  0.661    0.576      0.386
+2024  1072.0  0.632    0.527      0.324
+2025  1326.0  0.566    0.502      0.471
+LONG(>=6w) majority                    acc 0.398  macroF1 0.190
+LONG keyword                           acc 0.451  macroF1 0.262
+LONG tfidf+LR                          acc 0.567  macroF1 0.469
+LONG stripped                          acc 0.540  macroF1 0.454
+
+email (non-campaign) n 5877 agreement with LLM label acc 0.811 macroF1 0.54
+col_0     neutral  oppose  support
+position                          
+oppose         15    2727      531
+support         2     562     2040

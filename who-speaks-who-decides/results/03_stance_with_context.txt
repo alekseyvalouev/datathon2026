@@ -1,0 +1,36 @@
+train 21376 test 7387
+majority                                       acc 0.530  macroF1 0.231
+comment text only (previous model)             acc 0.645  macroF1 0.549
++ speaker role, calendar section, case type    acc 0.643  macroF1 0.551
++ project description text, length, order      acc 0.658  macroF1 0.561
+context only, NO comment text                  acc 0.512  macroF1 0.415
+role + section + case type only                acc 0.420  macroF1 0.383
+
+by sec
+                           n    acc  macroF1
+sec                                         
+Regular Calendar      6093.0  0.633    0.532
+Discretionary Review   923.0  0.833    0.689
+Other                  325.0  0.634    0.545
+
+by role
+                                    n    acc  macroF1
+role                                                 
+none                           4793.0  0.616    0.492
+Project Team                    805.0  0.986    0.331
+Neighborhood Association        461.0  0.458    0.437
+DR Team                         207.0  0.961    0.327
+Construction                    158.0  0.848    0.511
+Pro-Housing Advocacy            126.0  0.730    0.384
+City Agency                     121.0  0.529    0.452
+Tenant Association              105.0  0.400    0.316
+Race/Immigration/LGBTQ Groups   105.0  0.562    0.473
+Mayor's Office                   84.0  0.750    0.493
+                n  acc_text_only  acc_full
+len                                       
+1-2 words  2387.0          0.752     0.766
+3-5        2910.0          0.614     0.628
+6-15       1998.0          0.572     0.580
+16+          92.0          0.457     0.533
+
+support vs oppose only: n 6921 acc 0.793 macroF1 0.78 | majority acc 0.566

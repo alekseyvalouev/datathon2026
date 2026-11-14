@@ -1,0 +1,107 @@
+items with a recorded vote 10952 | split 0.137 | vote patterns top: {'6-0': 3779, '7-0': 2989, '5-0': 1911, '4-0': 655, '5-1': 348, '6-1': 255, '4-2': 247, '5-2': 220}
+decided regular+DR items with votes 4206 split rate 0.223
+
+split-vote rate by year:
+year     2005     2006     2007     2008     2009     2010     2011     2012    2013     2014     2015     2016     2017     2018     2019     2020     2021     2022     2023     2024     2025    2026
+size  266.000  184.000  123.000  232.000  183.000  188.000  143.000  161.000  217.00  202.000  198.000  273.000  267.000  299.000  239.000  223.000  202.000  142.000  186.000  131.000  116.000  31.000
+mean    0.248    0.185    0.276    0.228    0.317    0.271    0.217    0.217    0.23    0.178    0.157    0.223    0.202    0.147    0.226    0.188    0.262    0.254    0.188    0.252    0.345   0.258
+
+split rate by opposing comments:
+         n  split  two_plus_nays  disapproved
+oppb                                         
+0     2805  0.185          0.081        0.017
+1-2    753  0.234          0.089        0.027
+3-5    335  0.331          0.131        0.033
+6-10   174  0.385          0.218        0.086
+11+    139  0.482          0.302        0.158
+supb     0   1-2   3-5  6-10   11+
+oppb                              
+0     0.20  0.16  0.15  0.23  0.26
+1-2   0.27  0.19  0.27  0.25  0.27
+3-5   0.19  0.32  0.39  0.48  0.16
+6-10  0.23  0.40  0.30  0.52  0.41
+11+   0.38  0.39  0.57  0.39  0.53
+
+split rate by case type:
+             size   mean
+record_type             
+DRM           506  0.316
+PCA           433  0.284
+SHD            70  0.229
+MAP           157  0.217
+CUA          1148  0.202
+PPA            71  0.197
+GPA            91  0.176
+DRP           235  0.170
+DPA           105  0.133
+ENV           205  0.127
+VAR            97  0.113
+housing_kw {0: {'size': 1523, 'mean': 0.202}, 1: {'size': 2683, 'mean': 0.236}}
+demo_kw {0: {'size': 3324, 'mean': 0.218}, 1: {'size': 882, 'mean': 0.243}}
+new_construction_kw {0: {'size': 4000, 'mean': 0.222}, 1: {'size': 206, 'mean': 0.238}}
+adu_kw {0: {'size': 4144, 'mean': 0.222}, 1: {'size': 62, 'mean': 0.306}}
+density bonus: {False: {'size': 4120, 'mean': 0.218}, True: {'size': 86, 'mean': 0.465}}
+staff rec vs split: {'NA': {'size': 219, 'mean': 0.164}, 'approve': {'size': 1617, 'mean': 0.205}, 'approve with conditions': {'size': 2270, 'mean': 0.23}, 'continuance': {'size': 12, 'mean': 0.333}, 'disapprove': {'size': 79, 'mean': 0.544}, 'no action': {'size': 9, 'mean': 0.111}}
+
+predict split vote: train 2637 test 1569 (test rate 0.220, n pos 345)
+  base (staff rec + type)    AUC 0.575  PR-AUC 0.284
+  base + comments            AUC 0.671  PR-AUC 0.381
+  comments only              AUC 0.616  PR-AUC 0.315
+  AUC gain from comments 95% CI [0.056 0.133]
+
+commissioners with 150+ recorded votes (public officials, official votes):
+           votes  first  last  dissent_rate  split_items  pro_project_share_on_split_votes
+name                                                                                      
+Imperial     968   2020  2026         0.142          237                             0.380
+Moore       3432   2006  2026         0.120          804                             0.451
+Williams     217   2024  2026         0.189           75                             0.453
+Olague      1183   2005  2011         0.119          309                             0.508
+Sugaya      1212   2006  2014         0.097          315                             0.594
+Ruiz         217   2022  2024         0.074           44                             0.636
+Wu           832   2012  2016         0.056          166                             0.687
+Chan         243   2020  2022         0.025           47                             0.723
+Richards    1191   2014  2019         0.045          230                             0.730
+Antonini    2138   2005  2016         0.068          496                             0.736
+Hughes       287   2005  2006         0.049           70                             0.743
+Melgar       773   2016  2020         0.036          160                             0.769
+Fung         633   2019  2022         0.054          154                             0.792
+Alexander    398   2005  2008         0.055          114                             0.807
+S. Lee       492   2005  2008         0.039          122                             0.820
+Mcgarry      175   2024  2026         0.029           63                             0.825
+So           219   2024  2026         0.027           76                             0.829
+Johnson     1244   2014  2020         0.025          251                             0.837
+W. Lee       435   2005  2008         0.021          114                             0.860
+Lee          451   2005  2010         0.031          126                             0.865
+Fong        1446   2010  2019         0.019          283                             0.873
+Campbell     186   2024  2026         0.048           66                             0.879
+Koppel      1663   2016  2024         0.023          334                             0.880
+Hillis      1389   2012  2019         0.019          288                             0.885
+Miguel       650   2008  2012         0.023          177                             0.887
+Braun        501   2022  2026         0.008          120                             0.900
+Borden       917   2008  2014         0.013          241                             0.905
+Tanner       543   2020  2024         0.022          123                             0.919
+Diamond      850   2019  2024         0.015          188                             0.926
+
+== agenda position and meeting length
+                  n  continued  disapproved  dr_share  mean_comments
+q                                                                   
+first quarter  1197      0.138        0.018     0.032          6.465
+second         1519      0.181        0.022     0.076          5.321
+third          1356      0.188        0.024     0.177          5.137
+last quarter   1627      0.185        0.018     0.229          4.922
+regular calendar only:
+                  n  continued  mean_comments
+q                                            
+first quarter  1159      0.138          6.527
+second         1404      0.176          5.306
+third          1116      0.170          5.153
+last quarter   1255      0.171          4.831
+meeting length known for 642 of 1252 | median hours 5.15 | by period: {Interval(2004, 2009, closed='right'): {'count': 31, 'median': 5.62, 'mean': 5.4}, Interval(2009, 2014, closed='right'): {'count': 20, 'median': 6.92, 'mean': 6.53}, Interval(2014, 2019, closed='right'): {'count': 206, 'median': 6.29, 'mean': 6.2}, Interval(2019, 2022, closed='right'): {'count': 117, 'median': 4.13, 'mean': 4.13}, Interval(2022, 2026, closed='right'): {'count': 120, 'median': 3.61, 'mean': 3.71}}
+         n  continued  disapproved
+long                              
+<4h    555      0.103        0.009
+4-6h   952      0.141        0.019
+6-8h  1086      0.163        0.025
+8h+    864      0.177        0.030
+last-quarter items by meeting length: {'<4h': {'size': 165, 'mean': 0.127}, '4-6h': {'size': 274, 'mean': 0.168}, '6-8h': {'size': 304, 'mean': 0.161}, '8h+': {'size': 243, 'mean': 0.193}}
+continuance logit OR: {'rel': (1.15, [0.91, 1.45]), 'log_com': (0.65, [0.6, 0.71]), 'is_dr': (2.26, [1.84, 2.75]), 'hrs': (1.03, [0.99, 1.07]), 'year': (0.93, [0.92, 0.94])}

@@ -1,0 +1,133 @@
+final                      approved  continued indefinitely  continued, never returned  deadlocked vote, no decision  disapproved  no action recorded  withdrawn   All
+final_old                                                                                                                                                             
+approved                       1527                       0                          0                             2            0                   0         15  1544
+continued indefinitely            1                      33                          0                             0            1                   0          0    35
+continued, never returned        71                       0                         23                             1            4                   0          0    99
+disapproved                       0                       0                          0                             0           63                   0          0    63
+no action recorded               22                       0                         18                             0            1                   8          0    49
+withdrawn                         2                       0                          0                             0            0                   0         11    13
+All                            1623                      33                         41                             3           69                   8         26  1803
+
+revised distribution:
+                                                n  share
+final                                                   
+approved                                     1623  0.900
+disapproved                                    69  0.038
+continued, never returned                      41  0.023
+continued indefinitely                         33  0.018
+withdrawn                                      21  0.012
+no action recorded                              8  0.004
+review request withdrawn (project proceeds)     5  0.003
+deadlocked vote, no decision                    3  0.002
+
+soft-killed projects in same-day near-identical batches (size>=3): 15 | batches: 8
+
+random 0 soft-killed, for hand check:
+
+== revised classifier, all projects (n=1803, soft-killed=98)
+       group  projects  soft-killed  soft %  absent %  disapproved %  absent dis %
+      tenant        57           13    22.8       4.9           14.0           3.5
+    antidisp        34            3     8.8       5.4            8.8           3.7
+construction        94            3     3.2       5.6            2.1           3.9
+       nhood       201            8     4.0       5.6            6.0           3.6
+  prohousing       131            6     4.6       5.5            1.5           4.0
+      drteam       337           11     3.3       5.9            4.5           3.7
+    projteam       758           22     2.9       7.3            4.4           3.4
+
+== revised classifier, one project per batch (n=1541, soft-killed=85)
+       group  projects  soft-killed  soft %  absent %  disapproved %  absent dis %
+      tenant        35            7    20.0       5.2           20.0           3.3
+    antidisp        33            3     9.1       5.4            9.1           3.5
+construction        88            2     2.3       5.7            2.3           3.7
+       nhood       176            8     4.5       5.6            6.2           3.3
+  prohousing       116            6     5.2       5.5            1.7           3.8
+      drteam       259           10     3.9       5.9            3.9           3.6
+    projteam       659           20     3.0       7.4            4.2           3.2
+
+== by the group's own stance (deduplicated)
+       group          stance  projects  soft-killed  soft %  disapproved %  mean hearings  other opposition
+      tenant   group opposed        21            3    14.3           28.6           3.67               8.6
+      tenant group supported        14            4    28.6            7.1           2.79               4.3
+    antidisp   group opposed        23            3    13.0           13.0           3.00              10.0
+    antidisp group supported        10            0     0.0            0.0           2.20               1.4
+construction   group opposed        11            0     0.0            9.1           2.36               7.5
+construction group supported        77            2     2.6            1.3           2.13               3.5
+       nhood   group opposed       119            7     5.9            8.4           2.70               5.5
+       nhood group supported        57            1     1.8            1.8           2.28               0.8
+  prohousing   group opposed         7            2    28.6           14.3           3.71              10.3
+  prohousing group supported       109            4     3.7            0.9           2.13               4.0
+
+== adjusted odds ratios, soft-killed, deduplicated (events 85)
+                 OR    lo     hi
+tenant         3.58  1.05  10.13
+antidisp       1.21  0.10   5.28
+construction   0.56  0.06   1.69
+nhood          0.66  0.27   1.16
+prohousing     1.28  0.37   3.01
+drteam         0.48  0.20   1.01
+projteam       0.31  0.17   0.54
+log_opp_unaff  1.61  1.21   2.07
+log_sup_unaff  0.43  0.27   0.66
+is_dr          0.74  0.33   1.33
+log_units      1.00  0.84   1.13
+units_missing  1.30  0.61   2.49
+demo           0.54  0.28   0.95
+year           1.05  1.00   1.10
+
+== adjusted odds ratios, disapproved (events 56)
+                 OR    lo     hi
+tenant         9.62  2.12  32.28
+antidisp       1.61  0.17   6.76
+construction   0.71  0.09   3.13
+nhood          1.80  0.71   3.83
+prohousing     0.35  0.04   1.39
+drteam         0.53  0.20   1.18
+projteam       1.22  0.65   2.19
+log_opp_unaff  2.43  1.65   3.50
+log_sup_unaff  0.64  0.41   1.04
+
+== adjusted odds ratios, 3+ hearings (events 388)
+                 OR    lo    hi
+tenant         2.86  1.24  6.54
+antidisp       1.05  0.44  2.30
+construction   1.03  0.60  1.68
+nhood          1.51  1.05  2.17
+prohousing     0.74  0.45  1.19
+drteam         0.82  0.52  1.20
+projteam       0.70  0.55  0.89
+log_opp_unaff  1.56  1.32  1.84
+log_sup_unaff  0.79  0.64  0.94
+        n   soft    dis
+oppb                   
+0     987  0.037  0.027
+1-2   320  0.091  0.031
+3-5   127  0.079  0.071
+6+    107  0.084  0.093
+
+#### tenant: soft-killed after dedup = 7
+ - 2007.1074 | continued indefinitely | tenant {'support': 2} | other opp 0 | request for conditional use authorization , pursuant to planning code sections 209.2, 303 and 317 for the conversion of residential units to student housing. the project  || LAST: continued indefinitely
+ - 75-777 | continued indefinitely | tenant {'support': 2} | other opp 0 | request for discretionary review of building permit application no. 2016.12.21.5574, proposing to construct additions to the existing two-family residential building. wor || LAST: continued indefinitely
+ - 26-4336 | continued, never returned | tenant {'support': 1} | other opp 13 | request for a variance from the zoning administrator, pursuant to planning code section 140 to construct a one-story vertical addition to the existing three-story residen || LAST: za closed the ph and took the matter under advisement
+ - 2007.0604 | continued indefinitely | tenant {'oppose': 1} | other opp 7 | request for large project authorization, pursuant to planning code section 329, to allow new construction of a six-story, 65-foot tall, mixed-use building (approximately  || LAST: continued indefinitely
+ - 2018-009487 | withdrawn | tenant {'support': 1} | other opp 2 | request for the commission, upon recommendation from the recreation and park commission, to make a determination that the shadow impact on mission playground will not be  || LAST: withdrawn
+ - 2016-000302 | continued indefinitely | tenant {'oppose': 1} | other opp 0 | request for discretionary review of building permit no. 2019.0402.6906 for extensive interior alteration of the existing two (2)-dwelling unit residence, building recladd || LAST: continued indefinitely
+ - 2019-020031 | continued indefinitely | tenant {'oppose': 1} | other opp 0 | request for conditional use authorization pursuant to planning code section(s) 303, 317, 207(c)(4), and 207.7 for a significant modification to the project approved by mo || LAST: za continued indefinitely
+
+#### antidisp: soft-killed after dedup = 3
+ - 15-1633 | continued indefinitely | antidisp {'oppose': 1} | other opp 7 | request for discretionary review of building permit application nos. 2015.02.27.9626 & 9627 proposing alterations to the existing vacant buildings including the reconfigu || LAST: za after hearing and closing public comment; continued indefinitely
+ - 2007.0604 | continued indefinitely | antidisp {'oppose': 1} | other opp 7 | request for large project authorization, pursuant to planning code section 329, to allow new construction of a six-story, 65-foot tall, mixed-use building (approximately  || LAST: continued indefinitely
+ - 2020-005514 | deadlocked vote, no decision | antidisp {'oppose': 3} | other opp 8 | request for conditional use authorization pursuant to planning code sections 124(f) and 303 to allow for additional square footage above the base floor area ratio limit,  || LAST: after a motion to continue to november 17, 2022 failed +2 -3 (ruiz, imperial, moore against); a motion to disa
+
+#### construction: soft-killed after dedup = 2
+ - 2015-003768 | continued indefinitely | construction {'support': 1} | other opp 1 | request for discretionary review of building permit application no. 2015.03.25.1848, proposing a three-story addition, interior alterations, and the addition of a rooftop || LAST: continued indefinitely
+ - 2016-007062DRP | continued, never returned | construction {'support': 1} | other opp 0 | request for discretionary review of building permit application no. 2015.07.17.1767 proposing a two-story vertical addition and one-story horizontal rear addition to an e || LAST: continued to july 6, 2017
+
+how stalls end: {'ended on continuance calendar (scheduled postponement)': 47, 'continued/withdrawn from regular calendar without recorded hearing': 28, 'heard, then continued': 10}
+stalled by kind: {'small non-DR (<10 or unknown)': 53, 'DR (mostly houses)': 15, '10+ units: no affordable mention': 11, '10+ units: mixed-income': 6}
+all by kind: {'small non-DR (<10 or unknown)': 875, 'DR (mostly houses)': 316, '10+ units: no affordable mention': 181, '10+ units: mixed-income': 143, '10+ units: 100% affordable': 26}
+stall rate by kind: {'10+ units: 100% affordable': 0.0, '10+ units: mixed-income': 0.042, '10+ units: no affordable mention': 0.061, 'DR (mostly houses)': 0.047, 'small non-DR (<10 or unknown)': 0.061}
+disapproval by kind: {'10+ units: 100% affordable': 0.0, '10+ units: mixed-income': 0.007, '10+ units: no affordable mention': 0.0, 'DR (mostly houses)': 0.028, 'small non-DR (<10 or unknown)': 0.053}
+unit merger/removal/conversion | n 263 | stall 0.049 vs 0.056 | disapproved 0.091 vs 0.025 | tenant present 0.042 vs 0.019
+demolition | n 513 | stall 0.039 vs 0.063 | disapproved 0.014 vs 0.048 | tenant present 0.027 vs 0.02
+new construction | n 315 | stall 0.051 vs 0.056 | disapproved 0.016 vs 0.042 | tenant present 0.016 vs 0.024
+tenant-present projects final: {'approved': 19, 'disapproved': 7, 'continued indefinitely': 5, 'no action recorded': 1, 'review request withdrawn (project proceeds)': 1, 'continued, never returned': 1, 'withdrawn': 1} | DR share 0.26
