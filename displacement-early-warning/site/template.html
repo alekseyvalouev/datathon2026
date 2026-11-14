@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bay Area Displacement Early Warning</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: one narrow reading column; charts and the map break out into wider panels. Single dark theme by choice. */
+:root{
+  color-scheme:dark;
+  --bg:#111316; --panel:#191c20; --line:#2b2f36; --ink:#eceae4; --ink2:#b9b6ac; --ink3:#8a877e;
+  --blue:#3987e5; --orange:#d95926; --aqua:#199e70; --none:#2b3037;
+  --display:"Bricolage Grotesque","Arial Narrow",Arial,sans-serif;
+  --body:"Source Serif 4",Georgia,serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55}
+main{max-width:1040px;margin:0 auto;padding:0 20px 80px}
+.col{max-width:660px;margin:0 auto}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3)}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(40px,7.4vw,76px);line-height:.98;letter-spacing:-.02em;margin:14px 0 22px;text-wrap:balance}
+h1 em{font-style:normal;color:#f0764a}
+h2{font-family:var(--display);font-weight:700;font-size:clamp(27px,4vw,38px);line-height:1.08;letter-spacing:-.01em;margin:10px 0 18px;text-wrap:balance}
+h3{font-family:var(--display);font-weight:700;font-size:15px;margin:0 0 2px}
+p{margin:0 0 14px}
+.lede{font-size:19px}
+.dim{color:var(--ink2)}
+header{padding:64px 0 8px}
+section{padding-top:72px}
+section .col>.eyebrow{display:block;border-top:1px solid var(--ink);padding-top:12px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink);margin-top:30px}
+.stats div{padding:14px 14px 4px 0;border-right:1px solid var(--line)}
+.stats div+div{padding-left:14px}
+.stats div:last-child{border-right:0}
+.stats b{display:block;font-family:var(--display);font-weight:800;font-size:clamp(24px,3.2vw,32px);font-variant-numeric:tabular-nums;line-height:1.1}
+.stats span{display:block;font-size:13.5px;line-height:1.35;color:var(--ink2);margin-top:6px}
+.stats small,.src{font-family:var(--mono);font-size:10.5px;color:var(--ink3);line-height:1.5}
+.stats small{display:block;margin-top:8px}
+nav{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:22px;font-family:var(--mono);font-size:12px}
+nav a{color:var(--ink2);text-decoration:none;border-bottom:1px solid var(--line)}
+nav a:hover,nav a:focus-visible{color:var(--ink);border-color:var(--ink)}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:18px 18px 14px;margin:26px 0}
+.panel>p.sub{font-size:13.5px;color:var(--ink2);margin:0 0 12px;line-height:1.4;font-family:var(--display);font-weight:500}
+.panel .src{border-top:1px solid var(--line);margin-top:14px;padding-top:10px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.two .panel{margin:0}
+.wrap2{margin:26px 0}
+.legend{display:flex;flex-wrap:wrap;gap:4px 16px;font-family:var(--display);font-size:12.5px;color:var(--ink2);margin:0 0 10px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.r{display:grid;grid-template-columns:minmax(120px,34%) 1fr;gap:10px;align-items:center;padding:5px 0;border-top:1px solid #22262b}
+.r:first-of-type{border-top:0}
+.rl{font-family:var(--display);font-size:13px;line-height:1.25}
+.rl small{display:block;font-family:var(--mono);font-size:10px;color:var(--ink3);margin-top:1px}
+.rb{position:relative;display:grid;gap:2px}
+.tk{position:relative;display:flex;align-items:center;gap:7px;height:14px}
+.tk i{display:block;height:10px;border-radius:0 4px 4px 0;min-width:1px}
+.tk b{font-family:var(--mono);font-weight:500;font-size:11.5px;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}
+.tk u{position:absolute;top:6px;height:2px;background:var(--ink);opacity:.85}
+.ref{position:absolute;top:-5px;bottom:-5px;width:0;border-left:1px dashed var(--ink3)}
+.refl{font-family:var(--mono);font-size:10px;color:var(--ink3);margin:6px 0 0}
+.mapbar{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 12px}
+.mapbar button{font-family:var(--display);font-size:12.5px;font-weight:500;color:var(--ink2);background:transparent;border:1px solid var(--line);border-radius:999px;padding:6px 12px;cursor:pointer}
+.mapbar button:hover{color:var(--ink);border-color:var(--ink3)}
+.mapbar button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+button:focus-visible,a:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.mapgrid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(200px,1fr);gap:20px;align-items:start}
+#map{width:100%;height:auto;display:block}
+#map path{stroke:var(--panel);stroke-width:.5;vector-effect:non-scaling-stroke}
+#map path:hover{stroke:var(--ink);stroke-width:1.5}
+#map text{font-family:var(--display);font-size:20px;font-weight:700;fill:var(--ink);paint-order:stroke;stroke:#111316;stroke-width:5px;stroke-linejoin:round;pointer-events:none}
+#mapnote h3{margin-bottom:6px}
+#mapnote p{font-size:14.5px;color:var(--ink2);line-height:1.45}
+.ramp{height:10px;border-radius:2px;background:linear-gradient(90deg,#24282e,#a8451f,#ffb38f);margin:8px 0 3px}
+.rampl{display:flex;justify-content:space-between;font-family:var(--mono);font-size:10.5px;color:var(--ink3)}
+#tip{position:fixed;z-index:9;pointer-events:none;background:#0b0c0e;border:1px solid var(--ink3);border-radius:4px;padding:7px 9px;font-family:var(--display);font-size:12.5px;line-height:1.35;max-width:260px;display:none}
+#tip small{display:block;color:var(--ink2);font-size:11.5px}
+.call{border-left:3px solid var(--orange);padding:2px 0 2px 16px;margin:26px 0;font-family:var(--display);font-weight:700;font-size:17px;line-height:1.35}
+.tw{overflow-x:auto;margin:22px 0}
+table{border-collapse:collapse;width:100%;font-family:var(--display);font-size:13px;line-height:1.35}
+th{text-align:left;font-family:var(--mono);font-weight:400;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);padding:6px 10px 6px 0;border-bottom:1px solid var(--ink)}
+td{padding:8px 10px 8px 0;border-bottom:1px solid var(--line);vertical-align:top}
+td.m{font-family:var(--mono);font-size:11.5px;color:var(--ink2);white-space:nowrap}
+.pill{display:inline-block;font-family:var(--mono);font-size:10.5px;border:1px solid var(--line);border-radius:999px;padding:1px 8px;white-space:nowrap}
+.pill.ok::before{content:"✓ ";color:var(--aqua)}
+.pill.miss::before{content:"▲ ";color:var(--orange)}
+.pill.fa::before{content:"● ";color:var(--blue)}
+ul.lim{columns:2;column-gap:36px;padding-left:18px;font-size:14.5px;color:var(--ink2);line-height:1.45}
+ul.lim li{break-inside:avoid;margin-bottom:9px}
+footer{border-top:1px solid var(--line);margin-top:60px;padding-top:14px}
+@media (max-width:760px){
+  .stats{grid-template-columns:1fr 1fr}.stats div{border-bottom:1px solid var(--line)}.stats div:nth-child(2){border-right:0}.stats div:nth-child(3){padding-left:0}
+  .two,.mapgrid{grid-template-columns:1fr}.two{gap:26px}ul.lim{columns:1}
+  .r{grid-template-columns:minmax(96px,38%) 1fr}
+}
+</style>
+</head>
+<body>
+<main>
+<header class="col">
+  <span class="eyebrow">San Francisco Bay Area · 1,550 census tracts · 1990–2026</span>
+  <h1>Displacement pressure is predictable. It is <em>not one thing.</em></h1>
+  <p class="lede">A simple model trained on year-2000 census data picks out the neighborhoods that went on to lose low-income households far better than the published vulnerability rule. Since 2019 the pressure has split: house flipping stayed in lower-income neighborhoods while price and rent growth moved to affluent ones. A single risk score hides that, and every model here is weakest for some of the people it is meant to protect.</p>
+  <div class="stats">
+    <div><b>0.78 vs 0.52</b><span>Test AUC for predicting loss of low-income households by 2018: fitted model against the UDP vulnerability flag</span><small>E2 · 388 held-out tracts</small></div>
+    <div><b>0.80 vs 0.64</b><span>Test AUC for predicting flipping hot spots after 2018: census plus Zillow model against the UDP 2018 flag</span><small>E5 · 320 held-out tracts</small></div>
+    <div><b>72% vs 21%</b><span>Share of real losses the model catches in majority-renter tracts against majority-owner tracts</span><small>E3 · one regional threshold</small></div>
+    <div><b>51–62% vs 29%</b><span>Asking rent as a share of tract income in low-income typologies against exclusive tracts</span><small>E10 · 982 tracts, 2018 incomes</small></div>
+  </div>
+  <nav aria-label="Sections"><a href="#loss">1 The loss</a><a href="#backtest">2 The backtest</a><a href="#split">3 The split</a><a href="#rent">4 The rent</a><a href="#blind">5 The blind spots</a><a href="#methods">Methods</a></nav>
+</header>
+
+<section id="loss">
+  <div class="col">
+    <span class="eyebrow">1 · Following the households</span>
+    <h2>One in five tracts lost low-income households while the region gained them</h2>
+    <p>Between 2000 and 2018 the nine counties gained a net 228,345 low-income households. Yet 292 of 1,550 tracts ended the period with fewer than they started with, and those tracts lost 24,521 between them. The loss is concentrated in San Francisco and Alameda County.</p>
+    <p class="dim">The outcome used throughout is the Urban Displacement Project (UDP) count of households under 80% of area median income. It is a proxy: it cannot see anyone move, and it also falls when incomes rise in place.</p>
+  </div>
+  <div class="panel">
+    <h3>The Bay Area, tract by tract</h3>
+    <p class="sub">Choose a layer. Hover or tap a tract for its numbers.</p>
+    <div class="mapbar" id="mapbar" role="group" aria-label="Map layer"></div>
+    <div class="mapgrid">
+      <svg id="map" role="img" aria-label="Map of Bay Area census tracts colored by the selected layer"></svg>
+      <div id="mapnote"></div>
+    </div>
+    <p class="src">Sources: UDP typology file (E1, E2, E3); Zillow price histories joined to 2010 census tracts (E4, E5); current asking rents (E10). Risk scores come from a model that never saw the tract's own county. Tract shapes are simplified for display.</p>
+  </div>
+  <div class="panel">
+    <h3>Share of tracts that lost low-income households, 2000–2018</h3>
+    <p class="sub">By county. Tract counts under each name.</p>
+    <div id="c-county"></div>
+    <p class="src">Source: E1, UDP typology file, 1,550 tracts.</p>
+  </div>
+</section>
+
+<section id="backtest">
+  <div class="col">
+    <span class="eyebrow">2 · Testing the early-warning idea on history</span>
+    <h2>Conditions in 2000 predicted the loss. The published rule did not.</h2>
+    <p>We gave three models 19 census measures from 1990 and 2000 and asked which tracts would lose low-income households by 2018. A quarter of the tracts were set aside before any modelling and never used for tuning.</p>
+    <p>All three models land between 0.78 and 0.79 and cannot be told apart on 388 test tracts. The UDP vulnerability flag for 2000 scores 0.52, barely better than a coin flip. The flag was built to describe neighborhood stages, so this shows what a fitted model adds, not a fault in the typology.</p>
+  </div>
+  <div class="panel">
+    <h3>How well each approach ranks the test tracts</h3>
+    <p class="sub">AUC on 388 held-out tracts, 73 of which lost households. White lines show 95% intervals.</p>
+    <div id="c-auc"></div>
+    <p class="src">Source: E2. Logistic regression was chosen by county-held-out cross-validation on the other 1,162 tracts and is used in the rest of the page. After recalibration the riskiest fifth of test tracts was predicted at 52% and observed at 46%.</p>
+  </div>
+  <div class="col">
+    <p>The strongest signals in 2000 were a high share of low-income households in places that were already expensive and well educated. Losing low-income households in the 1990s told us nothing about the next two decades.</p>
+    <p><strong>Does the result survive a stricter definition?</strong> The base label counts a tract that lost a single household. We retrained on two tougher versions with the same test tracts. The model holds up or improves, and the gap to the rule stays.</p>
+  </div>
+  <div class="panel">
+    <h3>Same test, three definitions of loss</h3>
+    <p class="sub">Test AUC for the logistic model and for the UDP flag under each label.</p>
+    <div id="c-labels"></div>
+    <p class="src">Source: E2b. Half of the 292 base-label tracts (147) lost at least 10% of their low-income households; 128 tracts saw the low-income share fall by five points or more.</p>
+  </div>
+</section>
+
+<section id="split">
+  <div class="col">
+    <span class="eyebrow">3 · Following the market after 2018</span>
+    <h2>After 2018 the pressure split in two</h2>
+    <p>The census cannot yet tell us who was displaced after 2018, so the forward test predicts market pressure instead: where flipping, price appreciation and rent growth were highest in 2019 to 2026. These are signals that can lead to displacement. They are not displacement.</p>
+    <p>Zillow price histories for 144,661 homes were placed into tracts to build those outcomes. Features come from 2012 and 2018 census data plus Zillow events dated before 2019, and whole map blocks were held out for testing.</p>
+  </div>
+  <div class="panel">
+    <h3>Predicting the top quarter of tracts on three kinds of pressure</h3>
+    <p class="sub">Test AUC on spatially held-out tracts.</p>
+    <div id="c-fwd"></div>
+    <p class="src">Source: E5. Adding Zillow history gives a gain that is statistically detectable for flipping only (+0.029, interval 0.005 to 0.057). For rent growth an earlier draw of the test blocks gave a different answer, so read that row as no reliable gain.</p>
+  </div>
+  <div class="col">
+    <p>The UDP flag points the right way for flipping and the wrong way for the other two: tracts it marks as vulnerable were less likely than others to see the fastest price or rent growth. Across tracts the three outcomes barely move together.</p>
+  </div>
+  <div class="two wrap2">
+    <div class="panel">
+      <h3>Flips as a share of resales, 2019–2026</h3>
+      <p class="sub">Resold within 18 months at a 20% or higher markup. White lines span nine alternative definitions.</p>
+      <div id="c-flip"></div>
+      <p class="src">Source: E7, 57,552 resales. At-risk tracts rank first under every definition.</p>
+    </div>
+    <div class="panel">
+      <h3>Price growth per year, before and after 2019</h3>
+      <p class="sub">Change in median sale price per square foot.</p>
+      <div id="c-traj"></div>
+      <p class="src">Source: E9. Across zip codes the correlation between the two periods is −0.24 with non-overlapping windows.</p>
+    </div>
+  </div>
+  <div class="col">
+    <p>The neighborhoods that rose fastest before 2019 cooled the most. Oakland's 94606 went from +23% a year to −2%. Growth since then is led by Atherton, Saratoga and Los Altos. A model that treats rising prices as the displacement signal would now point at the wrong places.</p>
+  </div>
+</section>
+
+<section id="rent">
+  <div class="col">
+    <span class="eyebrow">4 · Following the rent</span>
+    <h2>Rents are furthest out of reach where incomes are lowest</h2>
+    <p>In tracts UDP classes as ongoing displacement or at risk of gentrification, the median asking rent today equals about 60% of the tract's median household income. In exclusive tracts it is 29%. Incomes are in 2018 dollars and rents are current, so the ratios overstate the burden by an unknown amount. If every income had risen 30%, rent would still pass the 30% guideline in nine of ten low-income tracts.</p>
+  </div>
+  <div class="two wrap2">
+    <div class="panel">
+      <h3>Asking rent as a share of tract income</h3>
+      <p class="sub">Median across tracts with at least five current listings.</p>
+      <div id="c-burden"></div>
+      <p class="src">Source: E10, 70,920 listings in 982 tracts; UDP household income, 2018 dollars.</p>
+    </div>
+    <div class="panel">
+      <h3>Re-listings that rose more than 10% a year</h3>
+      <p class="sub">Same listing advertised again one to six years later.</p>
+      <div id="c-turn"></div>
+      <p class="src">Source: E8, 36,320 listing pairs. For houses, condos and townhomes alone the regional share is 8.1%; apartment listings can cover a whole building.</p>
+    </div>
+  </div>
+  <div class="col">
+    <p>California's AB 1482 caps increases for a sitting tenant at 5% plus inflation, to a maximum of 10%, and sets no limit on the rent of a vacant unit. A jump above 10% between listings is therefore legal. It measures what a household would pay to rent back into the same home.</p>
+  </div>
+</section>
+
+<section id="blind">
+  <div class="col">
+    <span class="eyebrow">5 · Following the errors</span>
+    <h2>The models are weakest where the stakes are highest</h2>
+    <p>With one regional threshold, the backtest model finds most losses in renter-heavy tracts near rail and misses most of them in owner-heavy suburbs. It caught none of the seven loss tracts in Solano County and none of the eight in Napa. Renter tracts also carry the false alarms.</p>
+  </div>
+  <div class="panel">
+    <h3>Backtest model: who gets caught and who gets a false alarm</h3>
+    <p class="sub">Test set. Losses caught is the share of real loss tracts the model flagged; false alarms is the share of other tracts it flagged.</p>
+    <div id="c-sub"></div>
+    <p class="src">Source: E3, 388 test tracts. The gap by race is small and disappears under leave-one-county-out (48% and 51%).</p>
+  </div>
+  <div class="panel">
+    <h3>Flipping model: sharpest where it matters least</h3>
+    <p class="sub">Spatial test set. AUC inside each group is shown under its name.</p>
+    <div id="c-sub6"></div>
+    <p class="src">Source: E6, 320 test tracts. A flip outcome could be computed for 72% of low-income-typology tracts and 90% of high-income ones: Zillow sales data sees renter-heavy places least.</p>
+  </div>
+  <div class="col">
+    <p class="call">A tool built on these scores would send help to San Francisco and Oakland renters, raise false alarms in the same places, and miss low-income households in owner-heavy suburbs. Results need to be reported by group before anyone acts on them.</p>
+    <p>Eight of the 17 tracts we examined by hand:</p>
+  </div>
+  <div class="tw"><table>
+    <thead><tr><th>Tract</th><th>Place</th><th>Model said</th><th>What happened</th><th>Likely reason</th></tr></thead>
+    <tbody>
+      <tr><td class="m">06081601700</td><td>South San Francisco</td><td><span class="pill miss">missed</span> 6% risk</td><td>Lost 14 of 338 low-income households</td><td>16% renters; an owner-suburb profile the model rarely flags</td></tr>
+      <tr><td class="m">06001442100</td><td>Fremont</td><td><span class="pill miss">missed</span> 6% risk</td><td>Lost 17 of 217</td><td>High income and 11% renters in 2000</td></tr>
+      <tr><td class="m">06001402800</td><td>Oakland</td><td><span class="pill fa">false alarm</span> 66% risk</td><td>Gained 379</td><td>Housing was added; low-income share fell from 90% to 57% but the count rose</td></tr>
+      <tr><td class="m">06085511609</td><td>Palo Alto</td><td><span class="pill fa">false alarm</span> 66% risk</td><td>Gained 423</td><td>99% renters with very low incomes; looks like student housing</td></tr>
+      <tr><td class="m">06001433104</td><td>San Leandro</td><td><span class="pill miss">missed</span> bottom 9% for flipping</td><td>3 flips in 16 resales</td><td>Few sales; the outcome rests on three events</td></tr>
+      <tr><td class="m">06013346102</td><td>Alamo</td><td><span class="pill miss">missed</span> bottom 19%</td><td>8 flips in 77 resales</td><td>Affluent; the model learned flips happen where college share is low</td></tr>
+      <tr><td class="m">06001408700</td><td>Oakland</td><td><span class="pill fa">false alarm</span> top 1%</td><td>2 flips in 41 resales</td><td>Heavy flipping before 2019 that has since cooled</td></tr>
+      <tr><td class="m">06085504102</td><td>San Jose</td><td><span class="pill fa">false alarm</span> top 5%</td><td>2 flips in 26 resales</td><td>Profile matched the pattern; the outcome did not</td></tr>
+    </tbody></table></div>
+</section>
+
+<section id="methods">
+  <div class="col">
+    <span class="eyebrow">Methods</span>
+    <h2>Eleven experiments, one script each</h2>
+    <p>Every number on this page comes from a script in the project's <code>analysis</code> folder. The whole pipeline was re-run from the raw Zillow files and the UDP repository: all 21 result tables for E4 to E10 came back identical, and E1 to E3 matched.</p>
+  </div>
+  <div class="tw"><table>
+    <thead><tr><th>#</th><th>Question</th><th>Data</th><th>Main result</th></tr></thead>
+    <tbody>
+      <tr><td class="m">E1</td><td>What does the UDP landscape look like?</td><td>UDP typology file, 1,550 tracts</td><td>18.8% of tracts lost low-income households (San Francisco 41.9%, Solano 7.4%)</td></tr>
+      <tr><td class="m">E2</td><td>Can 1990 and 2000 data predict loss by 2018?</td><td>19 census features; 1,162 development and 388 test tracts</td><td>Test AUC 0.777 to 0.794 for three models; UDP flag 0.520</td></tr>
+      <tr><td class="m">E2b</td><td>Does that hold under stricter labels?</td><td>Same split and features</td><td>AUC 0.796 for losses of 10% or more; 0.818 for a five-point fall in share</td></tr>
+      <tr><td class="m">E3</td><td>For whom does the backtest fail?</td><td>E2 predictions</td><td>Catches 72% of losses in renter tracts, 21% in owner tracts; none in Solano or Napa</td></tr>
+      <tr><td class="m">E4</td><td>Can Zillow homes be placed in tracts?</td><td>148,005 properties; census tract shapes</td><td>99.5% matched; 30 of 30 in a hand check</td></tr>
+      <tr><td class="m">E5</td><td>Do 2018 conditions predict later pressure?</td><td>22 census and 14 pre-2019 Zillow features</td><td>Flipping 0.769 to 0.798 with Zillow; no reliable gain for prices or rents</td></tr>
+      <tr><td class="m">E6</td><td>For whom does the forward model fail?</td><td>E5 predictions</td><td>AUC 0.68 inside low-income typologies, 0.83 in moderate ones</td></tr>
+      <tr><td class="m">E7</td><td>Is the flipping pattern robust?</td><td>57,552 resales, 2019–2026</td><td>5.8% flips; at-risk tracts highest under all nine definitions</td></tr>
+      <tr><td class="m">E8</td><td>How much does rent jump at re-listing?</td><td>36,320 listing pairs</td><td>Median +3.0% a year; 16.2% above 10% (San Francisco 36.6%)</td></tr>
+      <tr><td class="m">E9</td><td>Did fast-rising areas keep rising?</td><td>Sales with price per square foot; 204 zip codes</td><td>No. At-risk tracts went from 16.7% a year to 2.7%</td></tr>
+      <tr><td class="m">E10</td><td>How affordable are asking rents?</td><td>70,920 listings in 982 tracts</td><td>51% to 62% of income in low-income typologies; 29% in exclusive tracts</td></tr>
+    </tbody></table></div>
+  <div class="col"><h3 style="margin-top:34px">Advanced Track checklist</h3></div>
+  <div class="tw"><table>
+    <thead><tr><th>Requirement</th><th>Status</th><th>Where</th></tr></thead>
+    <tbody>
+      <tr><td>Train a predictive model</td><td><span class="pill ok">done</span> Logistic regression, random forest and gradient boosting on two tasks</td><td class="m">E2, E5</td></tr>
+      <tr><td>Compare with a baseline or published rule</td><td><span class="pill ok">done</span> UDP flags and typology groups, one-variable and persistence baselines</td><td class="m">E2, E5</td></tr>
+      <tr><td>Metrics on a held-out test set</td><td><span class="pill ok">done</span> 25% stratified test and spatial-block test; one disclosed redraw of the E5 split</td><td class="m">E2, E5</td></tr>
+      <tr><td>Three or more subgroups, with failures</td><td><span class="pill ok">done</span> Income, race, tenure, rail, county, typology; 17 named tracts</td><td class="m">E3, E6</td></tr>
+      <tr><td>Explain labels, cleaning and joins; hand check</td><td><span class="pill ok">done</span> Join documented and checked; label tested three ways</td><td class="m">E2b, E4</td></tr>
+      <tr><td>Code runs from raw data to results</td><td><span class="pill ok">done</span> Full re-run reproduced every table</td><td class="m">run_all.sh</td></tr>
+    </tbody></table></div>
+  <div class="col"><h3 style="margin-top:34px">Limits</h3></div>
+  <ul class="lim">
+    <li>The outcome counts low-income households. Rising incomes, students, new construction and tract growth all move it, and it does not observe anyone moving out.</li>
+    <li>The backtest covers one 18-year period. It shows what was predictable then, not that the same relationships hold now.</li>
+    <li>The forward test predicts market pressure. Whether that pressure displaced anyone needs newer census data.</li>
+    <li>Zillow histories exist only for homes listed or sold recently. Features dated before 2019 describe the past of today's market sample.</li>
+    <li>Rents are asking rents, not signed leases, and most rental events date from 2024 to 2026.</li>
+    <li>A flip is defined from price and timing alone. Renovation, new construction and family transfers cannot be separated out.</li>
+    <li>Several groups have fewer than ten positive cases, including San Francisco in the flipping test set. Read those rows as indications.</li>
+    <li>The first draw of the E5 test blocks contained no San Francisco tract and was redrawn after results had been seen. Flipping results held on both draws.</li>
+    <li>Race is recorded only as a non-white share, so the comparison is people of color against white.</li>
+    <li>Tree-based models differ in the fourth decimal between machines; the logistic results reproduce exactly.</li>
+  </ul>
+  <footer class="col">
+    <p class="src">8th Annual Datathon for Social Good. Data: Zillow property listings via Bright Data (The Bright Initiative); Urban Displacement Project typology output, codebook and tract shapes (github.com/urban-displacement/displacement-typologies); U.S. Census Bureau cartographic boundary file as shipped in that repository; City and County of San Francisco summary of AB 1482. Results are shown at tract, zip code or city level. No addresses are shown.</p>
+  </footer>
+</section>
+</main>
+<div id="tip" role="status"></div>
+<script>
+/*__DATA__*/
+const $=s=>document.querySelector(s), tip=$('#tip');
+function showTip(e,html){tip.innerHTML=html;tip.style.display='block';const w=tip.offsetWidth,h=tip.offsetHeight;let x=e.clientX+14,y=e.clientY+14;if(x+w>innerWidth-8)x=e.clientX-w-12;if(y+h>innerHeight-8)y=e.clientY-h-12;tip.style.left=Math.max(6,x)+'px';tip.style.top=Math.max(6,y)+'px'}
+function hideTip(){tip.style.display='none'}
+document.addEventListener('mousemove',e=>{const t=e.target.closest('[data-tip]');t?showTip(e,t.dataset.tip):(e.target.closest('#map')||hideTip())});
+document.addEventListener('touchstart',e=>{const t=e.target.closest('[data-tip]');if(t){const p=e.touches[0];showTip(p,t.dataset.tip)}else if(!e.target.closest('#map'))hideTip()},{passive:true});
+
+function hbar(id,rows,o){
+  const el=$(id),S=o.series,W=86,pc=v=>Math.max(0,v)/o.max*W;
+  let h='';
+  if(o.legend)h+='<div class="legend">'+o.legend.map(l=>`<span><i style="background:${l[1]}"></i>${l[0]}</span>`).join('')+'</div>';
+  rows.forEach(r=>{
+    let tk='',tp=`<b>${r.l}</b>`+(r.n?`<small>${typeof r.n==='number'?r.n.toLocaleString()+' '+(o.unit||''):r.n}</small>`:'');
+    S.forEach(s=>{const v=r[s[0]];if(v==null)return;const col=o.color?o.color(r):s[2];
+      tk+=`<div class="tk"><i style="width:${pc(v)}%;background:${col}"></i>${o.ci&&r.lo!=null?`<u style="left:${pc(r.lo)}%;width:${pc(r.hi)-pc(r.lo)}%"></u>`:''}<b${o.ci&&r.lo!=null?` style="position:absolute;left:calc(${pc(r.hi)}% + 7px)"`:''}>${o.fmt(v)}</b></div>`;
+      tp+=`<small>${s[1]}: ${o.fmt(v)}${o.ci&&r.lo!=null?` (${o.fmt(r.lo)} to ${o.fmt(r.hi)})`:''}</small>`});
+    if(r.auc)tp+=`<small>AUC inside group: ${r.auc}</small>`;
+    h+=`<div class="r" data-tip="${tp.replace(/"/g,'&quot;')}"><div class="rl">${r.l}${r.n?`<small>${typeof r.n==='number'?r.n.toLocaleString()+' '+(o.unit||''):r.n}${r.auc?' · AUC '+r.auc:''}</small>`:''}</div><div class="rb">${o.ref?`<span class="ref" style="left:${pc(o.ref[0])}%"></span>`:''}${tk}</div></div>`});
+  if(o.ref)h+=`<p class="refl">Dashed line: ${o.ref[1]}</p>`;
+  el.innerHTML=h;
+}
+const B='var(--blue)',O='var(--orange)',A='var(--aqua)',pct=v=>v+'%',f3=v=>v.toFixed(2);
+hbar('#c-county',D.county,{series:[['v','Tracts that lost households',O]],max:45,fmt:pct,unit:'tracts'});
+hbar('#c-auc',D.auc,{series:[['v','Test AUC',B]],max:1,fmt:v=>v.toFixed(3),ci:true,color:r=>r.s?O:B,ref:[.5,'0.5, a coin flip'],legend:[['Fitted models',B],['Rules and single-variable baselines',O]]});
+hbar('#c-labels',D.labels,{series:[['a','Logistic model',B],['b','UDP vulnerability flag',O]],max:1,fmt:f3,ref:[.5,'0.5, a coin flip'],legend:[['Logistic model',B],['UDP vulnerability flag',O]]});
+hbar('#c-fwd',D.fwd,{series:[['a','Census only',B],['b','Census + Zillow history',A],['c','UDP vulnerability flag, 2018',O]],max:1,fmt:f3,ref:[.5,'0.5, a coin flip. Below it, the flag ranks tracts backwards.'],legend:[['Census only',B],['Census + Zillow history',A],['UDP vulnerability flag, 2018',O]]});
+hbar('#c-flip',D.flip,{series:[['v','Flip share',O]],max:14,fmt:pct,ci:true,unit:'resales'});
+hbar('#c-traj',D.traj,{series:[['a','2012–14 to 2017–19',B],['b','2017–19 to 2025–26',O]],max:18,fmt:v=>(v>0?'+':'')+v+'%',legend:[['2012–14 to 2017–19',B],['2017–19 to 2025–26',O]]});
+hbar('#c-burden',D.burden,{series:[['v','Rent ÷ income',O]],max:70,fmt:pct,unit:'tracts',ref:[30,'30% of income, the usual affordability guideline']});
+hbar('#c-turn',D.turn,{series:[['v','Share above 10% a year',O]],max:40,fmt:pct,unit:'pairs'});
+hbar('#c-sub',D.sub,{series:[['a','Losses caught',B],['b','False alarms',O]],max:100,fmt:pct,legend:[['Losses caught',B],['False alarms',O]]});
+hbar('#c-sub6',D.sub6,{series:[['a','Hot spots caught',B],['b','False alarms',O]],max:100,fmt:pct,legend:[['Hot spots caught',B],['False alarms',O]]});
+
+// ---- map
+const NS='http://www.w3.org/2000/svg',svg=$('#map'),NONE='#2b3037',NODATA='#15171a';
+svg.setAttribute('viewBox',`0 0 ${D.geo.w} ${D.geo.h}`);
+function ramp(t){t=Math.max(0,Math.min(1,t));const a=[[36,40,46],[168,69,31],[255,179,143]],i=t<.5?0:1,u=t<.5?t*2:(t-.5)*2;return 'rgb('+a[i].map((c,k)=>Math.round(c+(a[i+1][k]-c)*u)).join(',')+')'}
+const C=['#d95926','#3987e5','#199e70'];
+const hc=D.hm_counts;
+const L={
+ loss:{name:'Loss 2000–18',title:'Where low-income households were lost',text:'292 tracts ended 2018 with fewer low-income households than in 2000. In 147 of them the loss was at least 10%.',
+   col:r=>[NONE,'#a8451f','#ffb38f'][r[4]],val:r=>['No net loss','Lost under 10% of low-income households','Lost 10% or more'][r[4]],key:[['No net loss',NONE],['Lost under 10%','#a8451f'],['Lost 10% or more','#ffb38f']]},
+ risk:{name:'Risk predicted from 2000',title:'What the model would have said in 2000',text:'Each tract is scored by a model trained on the other eight counties, then ranked. Brighter tracts were ranked riskier. Compare with the loss layer.',
+   col:r=>ramp(r[3]/100),val:r=>'Ranked riskier than '+r[3]+'% of tracts',ends:['Lowest risk','Highest risk']},
+ hm:{name:'Hits and misses',title:'Where the warning worked and where it did not',text:`Flagging the 292 highest-scored tracts catches ${hc[1]} real losses, misses ${hc[2]} and raises ${hc[3]} false alarms. Misses spread through the suburbs; false alarms cluster in the urban core.`,
+   col:r=>[NONE,C[1],C[0],C[2]][r[5]],val:r=>['Not flagged, no loss','Flagged and lost households','Missed: lost households, not flagged','False alarm: flagged, no loss'][r[5]],key:[['Caught',C[1]],['Missed',C[0]],['False alarm',C[2]],['Neither',NONE]]},
+ flip:{name:'Flipping 2019–26',title:'Where homes are bought and quickly resold',text:'Share of resales that were flips. Shown for the 1,319 tracts with at least 15 resales; the rest are left dark, and most of those are renter-heavy.',
+   col:r=>r[6]==null?NODATA:ramp(r[6]/20),val:r=>r[6]==null?'Too few resales to measure':r[6]+'% of resales were flips',ends:['0%','20% or more']},
+ rent:{name:'Rent vs income',title:'Where asking rents outrun local incomes',text:'Median asking rent as a share of tract household income (2018 dollars). Shown for the 982 tracts with at least five current listings.',
+   col:r=>r[7]==null?NODATA:ramp((r[7]-20)/60),val:r=>r[7]==null?'Too few listings to measure':'Asking rent is '+r[7]+'% of tract income',ends:['20%','80% or more']},
+ typ:{name:'UDP typology',title:'How UDP classified each tract in 2018',text:'The nine UDP typologies grouped by income level. Low-income groups include susceptible, at-risk and ongoing-displacement tracts.',
+   col:r=>[C[0],C[1],C[2],NONE][r[8]],val:r=>r[2],key:[['Low-income typologies',C[0]],['Moderate / mixed',C[1]],['High-income / exclusive',C[2]]]}
+};
+let cur='loss';const paths=[];
+for(const g in D.geo.tracts){const p=document.createElementNS(NS,'path');p.setAttribute('d',D.geo.tracts[g].map(r=>'M'+r.map(q=>q.join(',')).join('L')+'Z').join(''));p.dataset.g=g;svg.appendChild(p);paths.push(p)}
+for(const k in D.geo.labels){const t=document.createElementNS(NS,'text');t.setAttribute('x',D.geo.labels[k][0]);t.setAttribute('y',D.geo.labels[k][1]);t.setAttribute('text-anchor','middle');t.textContent=k;svg.appendChild(t)}
+function paint(){const l=L[cur];paths.forEach(p=>p.setAttribute('fill',l.col(D.tracts[p.dataset.g])));
+  $('#mapnote').innerHTML=`<h3>${l.title}</h3><p>${l.text}</p>`+(l.key?'<div class="legend" style="flex-direction:column">'+l.key.map(k=>`<span><i style="background:${k[1]}"></i>${k[0]}</span>`).join('')+'</div>':`<div class="ramp"></div><div class="rampl"><span>${l.ends[0]}</span><span>${l.ends[1]}</span></div>`);
+  document.querySelectorAll('#mapbar button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.k===cur))}
+$('#mapbar').innerHTML=Object.keys(L).map(k=>`<button type="button" id="layer-${k}" data-k="${k}">${L[k].name}</button>`).join('');
+$('#mapbar').addEventListener('click',e=>{const b=e.target.closest('button');if(b){cur=b.dataset.k;paint()}});
+function tractTip(e,p){const r=D.tracts[p.dataset.g];showTip(e,`<b>${r[0]||'Unincorporated'}, ${r[1]} County</b><small>Tract ${p.dataset.g} · ${r[2]}</small>${L[cur].val(r)}`)}
+svg.addEventListener('mousemove',e=>{e.target.tagName==='path'?tractTip(e,e.target):hideTip()});
+svg.addEventListener('mouseleave',hideTip);
+svg.addEventListener('touchstart',e=>{const t=e.target;if(t.tagName==='path')tractTip(e.touches[0],t)},{passive:true});
+paint();
+</script>
+</body>
+</html>
