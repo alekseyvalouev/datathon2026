@@ -1,0 +1,129 @@
+site-specific housing-keyword projects 2915
+kind
+small non-DR (<10 or unknown)       1924
+DR (mostly houses)                   505
+10+ units: no affordable mention     267
+10+ units: mixed-income              183
+10+ units: 100% affordable            36
+Name: count, dtype: int64
+  text mentions density bonus                       51 projects  (46 with 10+ units)
+  text mentions home-sf                             17 projects  (17 with 10+ units)
+  text mentions inclusionary/bmr                    38 projects  (25 with 10+ units)
+  text mentions in-lieu / fee                       32 projects  (19 with 10+ units)
+  text mentions mohcd/tax credit/public funding      6 projects  (1 with 10+ units)
+  text mentions development agreement               11 projects  (4 with 10+ units)
+  text mentions senior                              42 projects  (18 with 10+ units)
+  text mentions student                             16 projects  (9 with 10+ units)
+  text mentions group housing/sro                   71 projects  (30 with 10+ units)
+  text mentions demolition                         810 projects  (264 with 10+ units)
+  text mentions condo conversion                    92 projects  (1 with 10+ units)
+  text mentions merger                             199 projects  (47 with 10+ units)
+
+10+ unit projects 513 | total units proposed (text/prj max) 63441
+                               n    units  median_units  aff_units_prj  unit_share
+aff                                                                               
+100% affordable               37   4667.0          94.0         2880.0       0.074
+mixed/inclusionary or bonus  189  20221.0          62.0         2475.0       0.319
+no affordability mention     287  38553.0          49.0           -5.0       0.608
+
+comments with support/oppose on these projects 13413 | with any role label 0.233
+
+== position by project kind
+                                     n  support
+kind                                           
+small non-DR (<10 or unknown)     6029    0.578
+DR (mostly houses)                3097    0.462
+10+ units: mixed-income           2527    0.704
+10+ units: no affordable mention  1484    0.774
+10+ units: 100% affordable         276    0.703
+
+== position by speaker role (all site-specific housing)
+                                   n  support  share_of_comments
+role                                                            
+(no affiliation recorded)      10290    0.592              0.767
+Project Team                    1227    0.980              0.091
+DR Team                          561    0.023              0.042
+Neighborhood Association         431    0.255              0.032
+Construction                     229    0.860              0.017
+Pro-Housing Advocacy             137    0.964              0.010
+Tenant Association               136    0.434              0.010
+YIMBY                             96    0.906              0.007
+Race/Immigration/LGBTQ Groups     59    0.254              0.004
+Anti-Displacement                 55    0.291              0.004
+Legal                             33    0.879              0.002
+Social Services                   30    0.667              0.002
+Affordable Housing Developer      21    0.238              0.002
+SPUR                              18    0.944              0.001
+Religious                         15    0.733              0.001
+City Agency                       14    0.500              0.001
+Commercial Association            13    0.692              0.001
+Mayor's Office                    13    0.462              0.001
+Supervisor's Office               10    0.700              0.001
+Slow Growth                        9    0.222              0.001
+Historic Preservation              7    0.000              0.001
+Labor                              6    0.667              0.000
+Community Benefit District         1    0.000              0.000
+Anti-Development                   1    0.000              0.000
+
+== 10+ unit projects: support share by role x affordability
+                               100% affordabl_sup  mixed/inclusio_sup  no affordabili_sup  100% affordabl_n  mixed/inclusio_n  no affordabili_n       n
+role                                                                                                                                                   
+(no affiliation recorded)                    0.66                0.65                0.73             214.0            2310.0            1263.0  3787.0
+Project Team                                 0.94                0.99                0.98              17.0             114.0             121.0   252.0
+Neighborhood Association                     0.67                0.17                0.43               9.0              78.0              89.0   176.0
+Construction                                 0.75                0.89                0.89              16.0              70.0              53.0   139.0
+Pro-Housing Advocacy                         1.00                0.97                0.98               6.0              73.0              42.0   121.0
+YIMBY                                        1.00                0.92                0.92               2.0              40.0              13.0    55.0
+Tenant Association                           1.00                0.41                0.54               1.0              32.0              13.0    46.0
+Race/Immigration/LGBTQ Groups                1.00                0.08                0.22               1.0              24.0              18.0    43.0
+Anti-Displacement                            1.00                0.20                0.20               2.0              20.0              10.0    32.0
+Social Services                              1.00                0.56                0.38               6.0               9.0               8.0    23.0
+Affordable Housing Developer                 1.00                0.07                0.00               2.0              15.0               1.0    18.0
+DR Team                                      0.33                0.00                0.00               3.0               5.0               5.0    13.0
+SPUR                                          NaN                1.00                1.00               NaN               7.0               6.0    13.0
+Legal                                         NaN                0.60                1.00               NaN               5.0               7.0    12.0
+Religious                                     NaN                1.00                0.50               NaN               6.0               2.0     8.0
+Commercial Association                        NaN                0.00                0.86               NaN               1.0               7.0     8.0
+City Agency                                  1.00                0.00                0.50               1.0               2.0               2.0     5.0
+Mayor's Office                               1.00                1.00                1.00               1.0               1.0               2.0     4.0
+
+== outcomes by kind
+                                     n  mean_hearings  mean_opp  mean_sup  approved  disapproved
+kind                                                                                            
+10+ units: 100% affordable          36           1.89      2.28      5.39      0.92         0.00
+10+ units: mixed-income            183           2.28      4.09      9.72      0.92         0.02
+10+ units: no affordable mention   267           2.23      1.26      4.30      0.89         0.00
+DR (mostly houses)                 505           1.84      3.30      2.83      0.86         0.01
+small non-DR (<10 or unknown)     1924           1.66      1.32      1.81      0.86         0.02
+
+== themes in comment text (share of comments with text; n oppose 3971 support 5833 )
+                            theme  in_oppose  in_support
+    affordability / who it is for      0.137       0.150
+displacement / tenants / eviction      0.088       0.076
+            height / bulk / scale      0.182       0.159
+ light / shadow / views / privacy      0.260       0.185
+                parking / traffic      0.156       0.134
+neighborhood character / historic      0.191       0.196
+      process / notice / outreach      0.123       0.052
+            housing need / supply      0.029       0.136
+             jobs / labor / union      0.023       0.045
+          local business / retail      0.059       0.057
+
+== where 10+ unit projects are (by neighbourhood price tercile of ALL site-specific projects)
+terc                         low $/sqft  mid  high $/sqft  All
+aff                                                           
+100% affordable                      24    6            4   34
+mixed/inclusionary or bonus         105   58           22  185
+no affordability mention            122   85           69  276
+All                                 251  149           95  495
+               n    units  opp_share  mean_hearings
+terc                                               
+low $/sqft   251  31183.0      0.367          2.199
+mid          149  15483.0      0.306          2.362
+high $/sqft   95  14372.0      0.215          2.305
+                                     n                    opp_share                  
+terc                        low $/sqft   mid high $/sqft low $/sqft   mid high $/sqft
+aff                                                                                  
+100% affordable                   24.0   6.0         4.0       0.38  0.06        0.09
+mixed/inclusionary or bonus      105.0  58.0        22.0       0.39  0.30        0.27
+no affordability mention         122.0  85.0        69.0       0.31  0.33        0.18

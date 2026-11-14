@@ -1,0 +1,31 @@
+all rows 69581
+county
+Santa Clara County      18130
+Alameda County          16228
+Contra Costa County      9192
+San Francisco County     7410
+San Mateo County         6358
+Sonoma County            4855
+Solano County            3976
+Marin County             2095
+Napa County              1337
+Name: count, dtype: int64
+homeStatus
+FOR_RENT         34776
+RECENTLY_SOLD    29086
+FOR_SALE          5719
+Name: count, dtype: int64
+SF rows 7410
+homeStatus
+FOR_RENT         3677
+RECENTLY_SOLD    3359
+FOR_SALE          374
+Name: count, dtype: int64
+                count       mean        std  ...        50%        75%          max
+price          7410.0  1033210.0  2099833.0  ...   210000.0  1509750.0   56000000.0
+zestimate      3424.0  2191007.0  3253854.0  ...  1634750.0  2406125.0  131454900.0
+rentZestimate  3455.0     6195.0     2169.0  ...     6119.0     7430.0      57277.0
+livingArea     3981.0     1890.0     2311.0  ...     1406.0     2210.0      57747.0
+
+[4 rows x 8 columns]
+{'zpid': 1.0, 'city': 1.0, 'homeStatus': 1.0, 'bedrooms': 0.97, 'price': 1.0, 'zipcode': 1.0, 'longitude': 1.0, 'latitude': 1.0, 'livingArea': 0.54, 'homeType': 1.0, 'zestimate': 0.46, 'rentZestimate': 0.47, 'county': 1.0}

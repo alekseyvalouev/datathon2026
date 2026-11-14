@@ -1,0 +1,57 @@
+split votes since March 2020: 235
+                                         size   mean
+grp                                                 
+Board-President appointees (3 verified)   530  0.383
+Mayoral appointees (7 named in sources)   768  0.895
+other/unverified                          218  0.794
+split items where both groups voted: 235 | groups on opposite sides (all Board appointees vs all mayoral): 98 | Board group less pro-project than mayoral: 0.817
+
+responsiveness by era: split-vote rate and "took review / disapproved" by opposition
+          mean                size          
+ob           0    1-5     6+     0  1-5   6+
+era                                         
+2005-17  0.194  0.310  0.443  2043  497   97
+2018-23  0.141  0.217  0.380   616  488  187
+2024-26  0.233  0.262  0.690   146  103   29
+ob           0    1-5     6+
+era                         
+2005-17  0.020  0.042  0.155
+2018-23  0.011  0.014  0.091
+2024-26  0.014  0.029  0.172
+review taken by era: {'2014-17': {'size': 219, 'mean': 0.539}, '2018-19': {'size': 97, 'mean': 0.557}, '2020-23': {'size': 150, 'mean': 0.393}, '2024-26': {'size': 37, 'mean': 0.351}}
+review taken by era x opposition>=3:          mean        size      
+opp     False True  False True 
+era                            
+2014-17  0.50  0.72   183    36
+2018-19  0.51  0.60    47    50
+2020-23  0.38  0.41    71    79
+2024-26  0.38  0.33    16    21
+
+volume: site-specific agenda activity by half-year (regular+DR calendar items with a decision; housing 10+ unit projects first heard)
+        items  meetings  housing_items  dr_items  big_housing_first_heard  cua_317_items
+half                                                                                    
+2021Q1     84        11             51        14                       10             28
+2021Q2     75        11             42        17                        8             25
+2021Q3     65         8             42         2                        9             26
+2021Q4     76         9             50        13                        8             26
+2022Q1     64        10             37        21                        6             14
+2022Q2     76        11             40        20                        5             14
+2022Q3     55         7             32        15                        4             11
+2022Q4     56         9             33        12                        2             14
+2023Q1     99        13             58        27                       11             29
+2023Q2     53         6             30        11                        7             14
+2023Q3     36         6             23         6                        1             12
+2023Q4     70         8             48        12                        4             20
+2024Q1     56        11             34        13                        3             15
+2024Q2     47         9             26         7                        3             12
+2024Q3     31         6             19         3                        1              8
+2024Q4     52         8             32         1                        4             13
+2025Q1     45         9             28         3                        1             10
+2025Q2     55        10             31         7                        2              6
+2025Q3     37         6             18         1                        0             10
+2025Q4     37         8             22         8                        3              7
+2026Q1     52         8             36         9                        0              8
+2018-01..2020-02 in person           meetings  86 | comments/meeting  70.7 | comments per commented item  7.3 | unnamed 12.6% | first-ever 48.9% | support 57.4% | org-affiliated 26.0%
+2020-04..2022-03 remote              meetings  80 | comments/meeting  54.7 | comments per commented item  7.4 | unnamed 31.7% | first-ever 43.0% | support 58.0% | org-affiliated 32.3%
+2022-04..2023-12 hybrid              meetings  62 | comments/meeting  44.0 | comments per commented item  6.5 | unnamed 29.0% | first-ever 41.8% | support 56.4% | org-affiliated 38.2%
+2024-01..2026-03 no remote comment   meetings  77 | comments/meeting  35.9 | comments per commented item  6.6 | unnamed 24.9% | first-ever 49.5% | support 57.1% | org-affiliated 39.7%

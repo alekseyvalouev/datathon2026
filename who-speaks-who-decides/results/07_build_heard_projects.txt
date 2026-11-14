@@ -1,0 +1,94 @@
+site-specific projects with testimony, first heard <=2023: 1803
+                              n  share
+final                                 
+approved                   1544  0.856
+continued, never returned    99  0.055
+disapproved                  63  0.035
+no action recorded           49  0.027
+continued indefinitely       35  0.019
+withdrawn                    13  0.007
+city record status for soft-killed: {'Closed': 97, 'no match': 31, 'Withdrawn': 9, 'On Hold': 4, 'Under Review': 2, 'Application Accepted': 1}
+  for approved: {'Closed': 1203, 'no match': 287, 'Under Review': 22, 'Closed - Approval Ltr Issued': 7, 'Withdrawn': 6}
+
+== soft-kill and not-approved rates by who spoke at the FIRST hearing with testimony
+group present  projects  soft-kill %  absent soft-kill %  disapproved %  absent disapproved %  mean hearings  absent hearings
+       drteam       337          5.6                 8.7            4.5                   3.3            1.7              2.0
+        nhood       201          7.5                 8.2            5.5                   3.2            2.4              1.9
+     antidisp        34         20.6                 7.9            5.9                   3.4            2.7              1.9
+       tenant        57         22.8                 7.7           10.5                   3.3            3.0              1.9
+ construction        94         10.6                 8.0            2.1                   3.6            2.1              1.9
+   prohousing       131          6.1                 8.3            1.5                   3.6            2.2              1.9
+     projteam       758          5.5                10.0            3.8                   3.3            1.8              2.1
+    nhood_opp       142          9.9                 8.0            7.0                   3.2            2.5              1.9
+
+by unaffiliated opposition at first hearing:
+         n   soft  disapproved
+oppb                          
+0     1147  0.070        0.024
+1-2    384  0.083        0.034
+3-5    143  0.126        0.063
+6+     129  0.132        0.101
+
+within non-DR vs DR cases (soft-kill rate, present vs absent):
+  non-DR n 1400 base soft 0.078 {'drteam': (131, np.float64(0.023), np.float64(0.084)), 'nhood': (162, np.float64(0.074), np.float64(0.078)), 'antidisp': (28, np.float64(0.214), np.float64(0.075)), 'tenant': (35, np.float64(0.2), np.float64(0.075)), 'construction': (81, np.float64(0.099), np.float64(0.077)), 'prohousing': (115, np.float64(0.07), np.float64(0.079))}
+  DR n 403 base soft 0.094 {'drteam': (206, np.float64(0.078), np.float64(0.112)), 'nhood': (39, np.float64(0.077), np.float64(0.096)), 'antidisp': (6, np.float64(0.167), np.float64(0.093)), 'tenant': (22, np.float64(0.273), np.float64(0.084)), 'construction': (13, np.float64(0.154), np.float64(0.092)), 'prohousing': (16, np.float64(0.0), np.float64(0.098))}
+
+== adjusted odds ratios, outcome = soft-killed (n=1803, events=147)
+               odds_ratio    lo    hi
+drteam               0.45  0.26  0.75
+nhood                0.64  0.34  1.10
+antidisp             2.86  0.73  8.25
+tenant               3.39  1.56  6.57
+construction         1.80  0.73  3.35
+prohousing           0.45  0.15  1.04
+projteam             0.49  0.32  0.71
+log_opp_unaff        1.47  1.16  1.86
+log_sup_unaff        0.71  0.53  0.95
+is_dr                1.39  0.90  2.04
+log_units            1.00  0.88  1.12
+units_missing        1.00  0.60  1.71
+demo                 1.01  0.66  1.49
+year                 1.01  0.98  1.05
+
+== adjusted odds ratios, outcome = 3+ hearings (events=417)
+               odds_ratio    lo    hi
+drteam               0.64  0.43  0.91
+nhood                1.35  0.94  1.85
+antidisp             1.12  0.41  2.48
+tenant               5.07  2.64  9.74
+construction         1.05  0.60  1.70
+prohousing           0.92  0.60  1.42
+projteam             0.68  0.54  0.88
+log_opp_unaff        1.48  1.26  1.75
+log_sup_unaff        0.78  0.65  0.94
+is_dr                1.53  1.13  2.16
+log_units            1.17  1.09  1.27
+units_missing        1.14  0.81  1.62
+demo                 1.70  1.31  2.18
+year                 0.96  0.94  0.98
+
+################ frequency of review requestors and neighbourhood associations
+
+review requestors: comments 563 | projects 405 of 1897 with comments | distinct people 416 | comments/project median 1.0 max 6
+   people by number of projects: {'1': 380, '2': 25, '3-4': 7, '5-9': 3, '10+': 1} | share of comments from people on 3+ projects 0.098
+   projects per period: {Interval(2004, 2009, closed='right'): 110, Interval(2009, 2014, closed='right'): 72, Interval(2014, 2019, closed='right'): 123, Interval(2019, 2026, closed='right'): 100}
+   by project kind: {'10+ units: 100% affordable': 1, '10+ units: mixed-income': 1, '10+ units: no affordable mention': 1, 'DR (mostly houses)': 256, 'small non-DR (<10 or unknown)': 146}
+
+neighbourhood associations: comments 467 | projects 292 of 1897 with comments | distinct people 82 | comments/project median 1.0 max 8
+   people by number of projects: {'1': 33, '2': 19, '3-4': 13, '5-9': 10, '10+': 7} | share of comments from people on 3+ projects 0.842
+   projects per period: {Interval(2004, 2009, closed='right'): 44, Interval(2009, 2014, closed='right'): 41, Interval(2014, 2019, closed='right'): 99, Interval(2019, 2026, closed='right'): 97}
+   by project kind: {'10+ units: 100% affordable': 8, '10+ units: mixed-income': 39, '10+ units: no affordable mention': 48, 'DR (mostly houses)': 63, 'small non-DR (<10 or unknown)': 134}
+
+most frequent organisations (neighbourhood assoc. label):
+                                       comments  projects  support
+organization                                                      
+Telegraph Hill Dwellers                       2         2      0.5
+Hayes Valley Neighborhood Association         2         2      1.0
+Balboa Terrace Homes Association              1         1      1.0
+Discretionary Review requestors               1         1      0.0
+Dogpatch Neighborhood Association             1         1      1.0
+Food not Bombs                                1         1      0.0
+East Mission Improvement Association          1         1      0.0
+Telegraph Hills                               1         1      0.0
+Victorian Alliance                            1         1      0.0
+share of nhood-labelled comments with organization name 0.02

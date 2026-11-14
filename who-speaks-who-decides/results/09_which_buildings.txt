@@ -1,0 +1,95 @@
+projects 1541 | DR-calendar 316 | any DR-team speaker 293 | any nhood assoc 235 | any opposition 775 | 6+ opposing 204
+
+== by zoning
+                              projects  dr_case  nhood_assoc  any_opposition  six_plus_opp  mean_opp  soft_kill
+zone                                                                                                           
+RH-1 (one-family)                  280    0.382        0.114           0.657         0.125     2.500      0.054
+RH-2 (two-family)                  343    0.300        0.143           0.569         0.163     3.134      0.076
+RH-3 (three-family)                157    0.236        0.166           0.529         0.115     2.745      0.057
+RM/RTO/RC (multi-family)           262    0.118        0.126           0.424         0.145     2.489      0.069
+not stated                          68    0.118        0.147           0.368         0.059     1.632      0.059
+NC (neighborhood commercial)       234    0.085        0.175           0.432         0.124     3.620      0.038
+Downtown / mixed-use / other       197    0.051        0.223           0.386         0.122     2.477      0.020
+
+== by size
+               projects  dr_case  nhood_assoc  any_opposition  six_plus_opp  mean_opp  soft_kill
+size                                                                                            
+1-2 units           809    0.245        0.110           0.528         0.122     2.478      0.053
+3-9                 124    0.129        0.161           0.524         0.161     4.234      0.081
+10-49               163    0.092        0.252           0.423         0.166     2.933      0.049
+50+                 207    0.024        0.251           0.454         0.145     3.952      0.043
+units unknown       238    0.345        0.139           0.504         0.118     2.008      0.063
+
+== by neighbourhood price tercile
+             projects  dr_case  nhood_assoc  any_opposition  six_plus_opp  mean_opp  soft_kill
+terc                                                                                          
+high $/sqft       490    0.271        0.145           0.524         0.145     2.784      0.061
+low $/sqft        513    0.111        0.158           0.456         0.111     2.600      0.064
+mid               489    0.231        0.155           0.538         0.137     3.043      0.043
+
+== by supervisor district
+          projects  dr_case  nhood_assoc  any_opposition  six_plus_opp  mean_opp  soft_kill
+district                                                                                   
+1.0             41    0.317        0.122           0.585         0.122     3.390      0.073
+2.0             65    0.538        0.169           0.569         0.185     3.615      0.031
+3.0             70    0.229        0.200           0.571         0.229     5.786      0.143
+4.0             22    0.318        0.273           0.636         0.227     4.864      0.045
+5.0             65    0.231        0.092           0.615         0.231     4.108      0.077
+6.0             81    0.037        0.235           0.519         0.136     3.272      0.025
+7.0             28    0.536        0.107           0.821         0.250     3.964      0.000
+8.0            125    0.376        0.280           0.712         0.312     5.608      0.096
+9.0             84    0.274        0.274           0.595         0.274     6.298      0.083
+10.0            48    0.250        0.188           0.667         0.125     3.729      0.083
+11.0            20    0.300        0.100           0.650         0.250     5.400      0.100
+13.0             3    0.000        0.000           1.000         0.333     7.000      0.000
+14.0             1    1.000        0.000           0.000         0.000     0.000      0.000
+15.0             2    0.500        0.000           1.000         0.000     4.000      0.000
+
+== by scope of work
+feature in project description  projects  DR case %  (without) DR %  nhood assoc %  (without) nhood %  6+ opp %  (without) 6+ opp %  mean opp
+             vertical addition       176       51.7            16.5           17.6               14.9      17.0                12.7       3.5
+    horizontal / rear addition       634       26.7            16.2           18.6               12.9      15.9                11.4       3.5
+              new construction       373       13.9            22.6           25.2               12.1      21.4                10.6       3.7
+                     roof deck        97       50.5            18.5            9.3               15.7      11.3                13.4       3.0
+                    demolition       513       11.5            25.0           21.6               12.1      16.8                11.5       3.4
+   single-family home involved       486       32.5            15.0           13.8               15.9      15.8                12.0       3.0
+                           ADU        55       41.8            19.7           27.3               14.8      27.3                12.7       6.3
+         unit merger / removal       174        9.2            21.9           16.7               15.1      10.9                13.5       2.2
+       density bonus / HOME-SF        56        0.0            21.3           35.7               14.5      39.3                12.3       8.0
+   formula retail / commercial       129        5.4            21.9           21.7               14.7      13.2                13.2       4.5
+              garage / parking       668       14.5            25.1           19.0               12.4      14.8                12.0       3.2
+
+== adjusted odds ratios (only those whose 95% interval excludes 1)
+-- is a DR case (events 316 )
+                               OR    lo    hi
+vertical addition            2.73  1.79  3.89
+roof deck                    2.69  1.72  4.48
+RH-1 (one-family)            2.56  1.29  8.11
+horizontal / rear addition   1.54  1.08  2.07
+year                         1.17  1.13  1.20
+log_units                    0.82  0.69  0.96
+demolition                   0.57  0.38  0.94
+low_price                    0.56  0.38  0.83
+unit merger / removal        0.42  0.20  0.74
+formula retail / commercial  0.34  0.12  0.72
+density bonus / HOME-SF      0.03  0.02  0.05
+-- neighbourhood association spoke (events 235 )
+                               OR    lo    hi
+new construction             1.91  1.32  2.64
+vertical addition            1.71  1.05  2.57
+formula retail / commercial  1.61  1.01  2.55
+log_units                    1.18  1.06  1.32
+year                         1.04  1.01  1.07
+roof deck                    0.48  0.18  0.99
+-- 6+ opposing comments (events 204 )
+                            OR    lo    hi
+density bonus / HOME-SF   2.98  1.45  5.96
+RM/RTO/RC (multi-family)  2.98  1.31  8.42
+RH-2 (two-family)         2.91  1.23  8.11
+RH-3 (three-family)       2.64  1.02  7.89
+new construction          2.33  1.56  3.58
+year                      1.11  1.07  1.15
+
+median Zillow $/sqft near project: DR cases 1127.0 | other 1038.0 | nhood assoc present 1040.0 | absent 1069.0
+DR cases: units median 1.0 | share 1-2 units or unknown 0.89 | outcome {'approved': 0.908, 'continued, never returned': 0.028, 'disapproved': 0.028, 'continued indefinitely': 0.019, 'review request withdrawn (project proceeds)': 0.016}
+DR cases: mean supporters 3.1 opponents 3.8 | share where requestor side outnumbers support 0.37

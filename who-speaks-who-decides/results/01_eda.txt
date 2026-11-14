@@ -1,0 +1,78 @@
+(73002, 41) ['comment_id', 'channel', 'meeting_date', 'item_id', 'id_parent', 'record_id', 'name_clean', 'position', 'position_source', 'role_long', 'role_group', 'role_source', 'text', 'anon_gender', 'body', 'campaign', 'comment', 'form_name', 'is_anonymous', 'is_campaign', 'is_commissioner', 'is_form', 'is_staff', 'item_heard_as_calendared', 'item_lag_days', 'item_num', 'method', 'name_raw', 'name_single', 'organization', 'role_title', 'section', 'sender_id', 'sign', 'sign_imputed', 'sign_prob', 'sign_source', 'speaker_order', 'subject', 'title', 'commenter_id']
+(25560, 75) ['item_id', 'meeting_date', 'meeting_type', 'file', 'source_url', 'section_letter', 'section', 'section_group', 'item_num', 'record_id', 'record_type', 'id_parent', 'item_text', 'prelim_rec', 'SPEAKERS', 'ACTION', 'AYES', 'NAYES', 'ABSENT', 'RECUSED', 'EXCUSED', 'MOTION', 'RESOLUTION', 'rec_clean', 'rec_dr', 'rec_conditions', 'rec_final', 'rec_num', 'action_clean', 'action_dr', 'action_conditions', 'action_final', 'action_num', 'rec_action_diff', 'housing_kw', 'office_kw', 'commercial_kw', 'demo_kw', 'new_construction_kw', 'adu_kw', 'prj_record_id', 'prj_record_status', 'prj_project_name', 'prj_project_address', 'prj_block', 'prj_lot', 'prj_open_date', 'prj_close_date', 'prj_number_of_units_net', 'prj_number_of_affordable_units', 'prj_number_of_units_exist', 'prj_number_of_units_prop', 'prj_change_of_use', 'prj_additions', 'prj_new_construction', 'prj_demolition', 'prj_adu', 'prj_legalization', 'prj_residential_exist', 'prj_residential_prop', 'prj_retail_commercial_exist', 'prj_retail_commercial_prop', 'prj_office_exist', 'prj_office_prop', 'prj_industrial_pdr_exist', 'prj_industrial_pdr_prop', 'prj_medical_exist', 'prj_medical_prop', 'prj_cie_exist', 'prj_cie_prop', 'prj_parking_spaces_prop', 'site_address', 'latitude', 'longitude', 'geo_source']
+position                    NA  neutral  oppose  support    All
+channel position_source                                        
+email   llm                  0        0    4670     5597  10267
+spoken  NA               18150        0       0        0  18150
+        model                0      344    3248     2527   6119
+        role                 0        0     211      643    854
+        stenographer         0     5742   11646    20224  37612
+All                      18150     6086   19775    28991  73002
+year    1998  1999  2000  2001  2002  2003  2004  2005  2006  2007  2008  2009  2010  2011  2012  2013  2014  2015  2016  2017  2018  2019  2020  2021  2022  2023  2024  2025  2026
+n       2045  1708  2230  1949  1486  4188  3663  2380  1426  1033  2070  2033  2331  2388  1981  1934  1732  1952  2375  3194  4057  3610  4042  4053  5294  3527  2365  1750   206
+signed     1     1  1524  1756  1393  2107  1671   900    47    39   691   591  1444   776    32   564  1268  1346  1894  2246  3038  2691  2489  2270  1655  2021  1352  1618   187
+spoken has text 48848 / 62735 words q10/50/90/99 [1.0, 5.0, 52.0, 245.0]
+email has text 10267 / 10267 words q10/50/90/99 [88.0, 276.0, 548.0, 2045.7000000000007]
+stenographer w/ text 34491 {'support': 0.531, 'oppose': 0.306, 'neutral': 0.163}
+emails campaign share 0.4275835200155839 unique texts 10094 years 2017 2024
+
+ITEMS
+section_group
+Regular Calendar                  9471
+Items Proposed for Continuance    5658
+Administrative                    3646
+Discretionary Review              2116
+Public Comment                    1978
+Consent Calendar                  1850
+General Public Comment             407
+Other                              406
+Findings                            17
+Closed Session                       8
+Name: count, dtype: int64
+action_final
+NaN                        7400
+continuance                6557
+approve                    5623
+approve with conditions    4457
+no action                  1085
+disapprove                  287
+withdraw                    151
+Name: count, dtype: int64
+rec_final
+NaN                        12176
+approve with conditions     6939
+approve                     4758
+no action                    766
+continuance                  585
+disapprove                   334
+withdraw                       2
+Name: count, dtype: int64
+housing items 12089
+action_final
+continuance                4495
+approve                    2933
+approve with conditions    2666
+NaN                        1233
+no action                   498
+disapprove                  159
+withdraw                    105
+Name: count, dtype: int64
+coords 16326 record_type top {'CUA': 5392, 'DRM': 3267, 'ENV': 1443, 'VAR': 1114, 'PCA': 1048, 'DRP': 735, 'MAP': 439, 'DPA': 375, 'OFA': 269, 'SHD': 269}
+items with >=1 comment 9383  >=5 3785
+commented items w/ action 8141
+action_final
+approve with conditions    0.369
+approve                    0.335
+continuance                0.167
+no action                  0.102
+disapprove                 0.025
+withdraw                   0.002
+Name: proportion, dtype: float64
+action_final             approve  approve with conditions  continuance  disapprove  no action  withdraw
+rec_final                                                                                              
+NA                           561                      335          241          47        244         3
+approve                     1391                      502          352          11         14         7
+approve with conditions      713                     2122          653          83          4         4
+continuance                    7                        7           37           4          0         0
+disapprove                    21                       30           67          59          0         0
+no action                     36                        5           10           1        570         0
