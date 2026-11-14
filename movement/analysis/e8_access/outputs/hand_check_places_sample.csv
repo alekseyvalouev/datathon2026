@@ -1,0 +1,31 @@
+place_id,svc,name,category,all_categories,rating,reviews_count
+ChIJ83UV3fUyjoARvUmspUixADE,grocery,Lee's Supermarket,Asian grocery store,"[""Asian grocery store"",""Supermarket""]",3.8,547
+ChIJBWRDUyl-j4ARbqKZH9F4ezA,grocery,Trader Joe's,Grocery store,"[""Grocery store"",""Cheese shop"",""Health food store"",""Liquor store"",""Natural goods store"",""Organic food store"",""Produce market"",""Supermarket"",""Wine store""]",4.6,2323
+ChIJsUzXZQq7j4ARGmwli3WIslI,grocery,Garden Market,Grocery store,"[""Grocery store""]",4.4,132
+ChIJuUssgvSAhYARLAnuInD-ThM,grocery,May Sun Market,Asian grocery store,"[""Asian grocery store""]",3.9,17
+ChIJJ0jYofOAhYARFZxdHlcyesA,grocery,Fruit Garden,Asian grocery store,"[""Asian grocery store""]",4.0,1
+ChIJ5RJoTy6Hj4ARxaEL2kmoQqY,grocery,Mi Carnal Market,Produce market,"[""Produce market""]",4.5,38
+ChIJ0SO78jPpj4ARmopLd9LLqsI,clinic,"Melissa Johnson, M.D.-Sutter East Bay Medical Foundation",Medical clinic,"[""Medical clinic"",""Doctor""]",,0
+ChIJrzSfiOJHhIARy-ttd9liGPE,clinic,Edington Medical Group,Medical clinic,"[""Medical clinic""]",,0
+ChIJux8lFXGej4ARzJ49Hd_bAQA,clinic,African-American Community Health Advisory Committee: Mills Health Center,Community health center,"[""Community health center""]",,0
+ChIJBZtdPpbnj4ARrZwJHMvcUo4,clinic,Tri-Valley Family Medicine: Tan Lorena MD,Family practice physician,"[""Family practice physician""]",3.7,49
+ChIJ72rH3FSij4AReB-jZ2NK3Xc,clinic,Redwood City Medical Center,Medical Center,"[""Medical Center"",""Hospital""]",4.6,1374
+ChIJX4Lk0soMhYAR-ovZULFK3WU,clinic,Gastroenterology: Vallejo Care Center: Sutter Medical Foundation,Medical clinic,"[""Medical clinic""]",,0
+ChIJoTtlvrp_j4ARJ9GqTGv-bZQ,pharmacy,FuzeRx,Pharmacy,"[""Pharmacy""]",4.0,1059
+ChIJ37OgGZjnj4ARHosA2C6SjLg,pharmacy,COVID-19 Drive-Thru Testing at Walgreens,Pharmacy,"[""Pharmacy""]",,0
+ChIJV92oAUy3j4ARDy76mLwx2hQ,pharmacy,Safeway Pharmacy,Pharmacy,"[""Pharmacy"",""Drug store"",""Vitamin & supplements store""]",3.5,38
+ChIJBcl2apu6j4AREejma1zJcnU,pharmacy,Yee Freddie W,Pharmacy,"[""Pharmacy""]",,0
+ChIJZaZ3rPl9hYARFlwB29ZVTTw,pharmacy,Khajavi Sharmin,Pharmacy,"[""Pharmacy""]",,0
+ChIJ63mK6_h9hYARjwbxedpd7MU,pharmacy,Pharmacy | Kaiser Permanente Oakland Medical Center (Main Building),Pharmacy,"[""Pharmacy"",""Urology clinic""]",3.9,168
+ChIJy7VI-_VKhIARJ_ggYvgdSDs,transit,East Cotati Ave & Windmill Farms Dr,Bus stop,"[""Bus stop""]",,0
+ChIJJWlZpvJ-hYARU-3arecKQnQ,transit,San Pablo Av & Parker St,Bus stop,"[""Bus stop""]",,0
+ChIJTYCs4fCZhYARtpkoBP-pqfA,transit,Lincoln Ave & Mission Ave,Bus stop,"[""Bus stop""]",,0
+ChIJkQSfc5-QhYARMm6e1dh4IJw,transit,Magnolia Ave & Bon Air Rd,Bus stop,"[""Bus stop""]",,0
+ChIJTf8VEQAzjoARffeFbQwcqt0,foodbank,Tacos al vapor,Soup kitchen,"[""Soup kitchen""]",,0
+ChIJ10bVlI-AhYARzVdLxlcsT1c,foodbank,Glide Memorial Church - Food Distribution Center,Food bank,"[""Food bank""]",4.2,38
+ChIJtWyTBi5-j4ARwCuCSsUBDtU,foodbank,Martin de Porres House of Hospitality,Soup kitchen,"[""Soup kitchen""]",4.7,189
+ChIJpaaDRQm0hYARqcsR5L_7l4A,foodbank,Vintage Chateau Apartments - Food Distribution Center,Food bank,"[""Food bank""]",,0
+ChIJbYKzTSSBhYARxGxUhcC6Uho,foodbank,San Francisco-Marin Food Bank,Food bank,"[""Food bank""]",,0
+ChIJZV8c2uDGj4ARfA4tJID5JD0,bank,Wells Fargo Bank,Bank,"[""Bank"",""ATM""]",2.5,28
+ChIJHbQLK-QyjoARBvhzhZ8PAQw,afs,Western Union,Money transfer service,"[""Money transfer service""]",2.5,8
+ChIJCbS7vXxXhYARBFilEQ0NyL0,bank,Wells Fargo Bank,Bank,"[""Bank"",""ATM""]",3.4,49

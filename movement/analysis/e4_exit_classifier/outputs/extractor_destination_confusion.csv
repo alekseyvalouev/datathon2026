@@ -1,0 +1,6 @@
+dest_bucket,abroad,other_bay_county,other_ca,out_of_state,sacramento_central_valley,unknown
+abroad,4,0,0,1,0,1
+other_ca,0,1,2,0,0,0
+out_of_state,0,4,3,70,0,8
+sacramento_central_valley,0,0,0,0,6,1
+unknown,1,3,3,4,0,24

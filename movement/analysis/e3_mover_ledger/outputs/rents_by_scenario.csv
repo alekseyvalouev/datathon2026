@@ -1,0 +1,35 @@
+origin,scenario,group,beds,rent,zori
+Bay Area,Stay (in-place),Bay,1,2895.0,
+Bay Area,Stay +1y at AB1482 max (+8%),Bay,1,3126.6000000000004,
+Bay Area,Re-rent in Bay (turnover),Bay,1,3186.270839997912,
+San Francisco,Stay (in-place),Bay,1,3891.5,
+San Francisco,Stay +1y at AB1482 max (+8%),Bay,1,4202.820000000001,
+San Francisco,Re-rent in Bay (turnover),Bay,1,4932.8016567677405,
+dest,Sacramento,CA inland,1,1905.6103107719068,2269.0925723424857
+dest,Stockton,CA inland,1,2041.8613764193376,2431.3326060401937
+dest,Modesto,CA inland,1,1736.761010231796,2068.0364112086845
+dest,Fresno,CA inland,1,1723.2682644004824,2051.970015485869
+dest,Phoenix,Out of state,1,1444.6901135168466,1720.2549689132522
+dest,Las Vegas,Out of state,1,1454.3292105727357,1731.732658454482
+dest,Reno,Out of state,1,1737.7436338543932,2069.2064636327505
+dest,Boise,Out of state,1,1615.6439797877842,1923.8171274384567
+dest,Dallas,Out of state,1,1393.5085888082854,1659.310914978995
+dest,Houston,Out of state,1,1375.2867414527898,1637.613373642768
+dest,Portland,Out of state,1,1514.1031474339136,1802.908068969776
+Bay Area,Stay (in-place),Bay,2,3431.0,
+Bay Area,Stay +1y at AB1482 max (+8%),Bay,2,3705.48,
+Bay Area,Re-rent in Bay (turnover),Bay,2,3776.1987053654007,
+San Francisco,Stay (in-place),Bay,2,5334.0,
+San Francisco,Stay +1y at AB1482 max (+8%),Bay,2,5760.72,
+San Francisco,Re-rent in Bay (turnover),Bay,2,6761.29102844639,
+dest,Sacramento,CA inland,2,2298.3221349861615,2269.0925723424857
+dest,Stockton,CA inland,2,2462.65208131506,2431.3326060401937
+dest,Modesto,CA inland,2,2094.6760470559007,2068.0364112086845
+dest,Fresno,CA inland,2,2078.4026903100043,2051.970015485869
+dest,Phoenix,Out of state,2,1742.4146203042203,1720.2549689132522
+dest,Las Vegas,Out of state,2,1754.040160951015,1731.732658454482
+dest,Reno,Out of state,2,2095.861171637464,2069.2064636327505
+dest,Boise,Out of state,2,1948.598986903709,1923.8171274384567
+dest,Dallas,Out of state,2,1680.685508913981,1659.310914978995
+dest,Houston,Out of state,2,1658.7084683402918,1637.613373642768
+dest,Portland,Out of state,2,1826.1324252543404,1802.908068969776

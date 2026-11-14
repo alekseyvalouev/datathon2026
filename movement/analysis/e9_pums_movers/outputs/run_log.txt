@@ -1,0 +1,77 @@
+=== 01_download_extract.py
+have 2022
+have 2023
+have 2024
+=== 02_build.py
+analysis frame (136151, 120)
+                     n        wN
+group                           
+left_ca           2739    314473
+left_othca        1521    157669
+left_saccv        1156    134607
+stay_moved_bay   12174   1355985
+stay_same       118561  11991888
+=== 03_estimate.py
+            group  n_unweighted  weighted_persons  weighted_per_year
+0         left_ca          2739            314473       1.048243e+05
+1      left_othca          1521            157669       5.255633e+04
+2      left_saccv          1156            134607       4.486900e+04
+3  stay_moved_bay         12174           1355985       4.519950e+05
+4       stay_same        118561          11991888       3.997296e+06
+all left_any {'n_treat': 5416, 'n_ctrl': 130735, 'wN_treat': 606749.0, 'wN_ctrl': 13347873.0, 'ess_ctrl': 42339.298072136604, 'max_ps': 0.40236213625780076}
+all left_ca {'n_treat': 2739, 'n_ctrl': 130735, 'wN_treat': 314473.0, 'wN_ctrl': 13347873.0, 'ess_ctrl': 42184.5892961936, 'max_ps': 0.21862173365472784}
+all left_saccv {'n_treat': 1156, 'n_ctrl': 130735, 'wN_treat': 134607.0, 'wN_ctrl': 13347873.0, 'ess_ctrl': 44861.527614598555, 'max_ps': 0.08192182539778216}
+all left_othca {'n_treat': 1521, 'n_ctrl': 130735, 'wN_treat': 157669.0, 'wN_ctrl': 13347873.0, 'ess_ctrl': 22417.279400102347, 'max_ps': 0.29877440196747046}
+lowinc_pov200 left_any {'n_treat': 1338, 'n_ctrl': 17643, 'wN_treat': 164393.0, 'wN_ctrl': 2104766.0, 'ess_ctrl': 3971.0422797900546, 'max_ps': 0.5194421886133971}
+lowinc_pov200 left_ca {'n_treat': 577, 'n_ctrl': 17643, 'wN_treat': 73959.0, 'wN_ctrl': 2104766.0, 'ess_ctrl': 4246.793216027017, 'max_ps': 0.3392381841409639}
+lowinc_pov200 left_saccv {'n_treat': 312, 'n_ctrl': 17643, 'wN_treat': 38933.0, 'wN_ctrl': 2104766.0, 'ess_ctrl': 4176.797901859386, 'max_ps': 0.23583071388674554}
+lowinc_pov200 left_othca {'n_treat': 449, 'n_ctrl': 17643, 'wN_treat': 51501.0, 'wN_ctrl': 2104766.0, 'ess_ctrl': 1757.7139946111718, 'max_ps': 0.4857138667984682}
+noBA left_any {'n_treat': 2210, 'n_ctrl': 58133, 'wN_treat': 260499.0, 'wN_ctrl': 6584332.0, 'ess_ctrl': 15499.968141190055, 'max_ps': 0.48834805686578336}
+noBA left_ca {'n_treat': 903, 'n_ctrl': 58133, 'wN_treat': 113543.0, 'wN_ctrl': 6584332.0, 'ess_ctrl': 16074.735969772177, 'max_ps': 0.29237784185175064}
+noBA left_saccv {'n_treat': 650, 'n_ctrl': 58133, 'wN_treat': 76053.0, 'wN_ctrl': 6584332.0, 'ess_ctrl': 19017.41799129624, 'max_ps': 0.10123030769217697}
+noBA left_othca {'n_treat': 657, 'n_ctrl': 58133, 'wN_treat': 70903.0, 'wN_ctrl': 6584332.0, 'ess_ctrl': 5591.045938355949, 'max_ps': 0.5459688340551763}
+householders left_any {'n_treat': 2583, 'n_ctrl': 58698, 'wN_treat': 297446.0, 'wN_ctrl': 5951988.0, 'ess_ctrl': 14416.653352156785, 'max_ps': 0.46090921331139684}
+householders left_ca {'n_treat': 1386, 'n_ctrl': 58698, 'wN_treat': 162877.0, 'wN_ctrl': 5951988.0, 'ess_ctrl': 14957.053374932288, 'max_ps': 0.276544159293496}
+householders left_saccv {'n_treat': 506, 'n_ctrl': 58698, 'wN_treat': 60376.0, 'wN_ctrl': 5951988.0, 'ess_ctrl': 12759.143570946544, 'max_ps': 0.16873248688697115}
+householders left_othca {'n_treat': 691, 'n_ctrl': 58698, 'wN_treat': 74193.0, 'wN_ctrl': 5951988.0, 'ess_ctrl': 8580.7721811446, 'max_ps': 0.2892221544953962}
+race_eth Asian/PI 1251
+race_eth Black 212
+race_eth Latino 1025
+race_eth Other/Multi 461
+race_eth White 2467
+educ <HS 259
+educ BA+ 3206
+educ HS/GED 720
+educ Some college/AA 1231
+=== 04_exit_model.py
+       n  n_pos  prevalence  roc_auc  pr_auc   brier  mean_pred               model   weighting  flag_rate  recall_top10  precision_top10
+0  40846   1625      0.0398   0.5000  0.0398  0.0382     0.0435  baseline_base_rate  unweighted        NaN           NaN              NaN
+1  40846   1625      0.0433   0.5000  0.0433  0.0415     0.0435  baseline_base_rate    weighted        NaN           NaN              NaN
+2  40846   1625      0.0398   0.6905  0.1100  0.0371     0.0417            logistic  unweighted     0.1000        0.2985           0.1187
+3  40846   1625      0.0433   0.6919  0.1195  0.0401     0.0434            logistic    weighted     0.1124        0.3243           0.1250
+4  40846   1625      0.0398   0.7059  0.1363  0.0365     0.0412   gradient_boosting  unweighted     0.1000        0.3089           0.1229
+5  40846   1625      0.0433   0.7127  0.1503  0.0394     0.0429   gradient_boosting    weighted     0.1075        0.3347           0.1349
+{'auc_logistic': [0.67921846343977, 0.7025433789329486], 'auc_gbm': [0.6939895800906731, 0.7178379386226456], 'prauc_logistic': [0.10035092155731862, 0.12229628817669959], 'prauc_gbm': [0.12196922435898884, 0.1517572597999586], 'auc_gbm_minus_logistic': [0.008111414567504993, 0.02350233782305327]}
+        n  n_pos  prevalence  roc_auc  pr_auc  brier  mean_pred  flag_rate  recall_top10  precision_top10              model subgroup_var            level  calib_ratio
+14  13977    382       0.032    0.724   0.136  0.029      0.033      0.053         0.252            0.152  gradient_boosting     race_eth         Asian/PI        1.043
+15   1449     71       0.049    0.657   0.147  0.046      0.044      0.107         0.258            0.118  gradient_boosting     race_eth            Black        0.900
+16   8813    307       0.035    0.710   0.133  0.033      0.036      0.076         0.276            0.127  gradient_boosting     race_eth           Latino        1.031
+17   2296    138       0.063    0.716   0.253  0.055      0.051      0.099         0.368            0.234  gradient_boosting     race_eth      Other/Multi        0.807
+18  14311    727       0.056    0.675   0.162  0.050      0.055      0.183         0.411            0.125  gradient_boosting     race_eth            White        0.988
+19   3286     82       0.024    0.658   0.098  0.023      0.021      0.012         0.052            0.105  gradient_boosting         educ              <HS        0.902
+20  22769   1007       0.051    0.692   0.121  0.047      0.047      0.139         0.333            0.123  gradient_boosting         educ              BA+        0.909
+21   5873    191       0.033    0.687   0.148  0.030      0.040      0.070         0.254            0.121  gradient_boosting         educ           HS/GED        1.194
+22   8918    345       0.041    0.751   0.231  0.036      0.046      0.104         0.453            0.179  gradient_boosting         educ  Some college/AA        1.111
+23   4136    303       0.075    0.789   0.328  0.059      0.074      0.247         0.688            0.207  gradient_boosting      age_grp            18-24        0.994
+24   8878    552       0.066    0.649   0.131  0.061      0.065      0.296         0.483            0.108  gradient_boosting      age_grp            25-34        0.974
+25   9537    327       0.036    0.669   0.074  0.035      0.037      0.036         0.108            0.110  gradient_boosting      age_grp            35-44        1.018
+26   9003    216       0.025    0.662   0.053  0.025      0.026      0.006         0.023            0.098  gradient_boosting      age_grp            45-54        1.027
+27   9292    227       0.026    0.628   0.044  0.025      0.024      0.002         0.004            0.054  gradient_boosting      age_grp            55-64        0.939
+=== 05_figures.py
+figures written
+=== 06_verify.py
+Hand verification: homeownership share among out-of-state Bay leavers (18-64, household pop.)
+  DuckDB SQL from raw extracts: n=2739, weighted N=314,473, share=0.4348, replicate SE=0.0136
+  Pipeline (03_estimate.py):    n=2739, share=0.4348, SE=0.0136
+  Match: True
+  Formula: share = sum(PWGTP*own)/sum(PWGTP); SE = sqrt(4/80 * sum_r (share_r - share)^2), r = PWGTP1..80

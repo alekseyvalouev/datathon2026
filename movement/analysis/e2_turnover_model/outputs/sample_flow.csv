@@ -1,0 +1,7 @@
+step,n_pairs
+all consecutive listing pairs (turn),86293
+1 <= start_gap_y <= 6 (drop same-vacancy relists & very old pairs),37752
+0.5 <= next_first/last_p <= 2.0 (drop typos/unit swaps),37506
+residential homeType (drop LOT/MANUFACTURED/UNKNOWN),37493
+has lat/lon/zipcode,37137
+dedupe identical histories at same location (floor-plan duplicate zpids),23306

@@ -1,0 +1,28 @@
+by,level,n,share_concession,med_weeks_if_any,med_ask
+rent_tier,<0.8x ZIP median,11498,0.1863,4.3333,2075.0
+rent_tier,0.8-1.0x,25913,0.2675,4.3333,2779.0
+rent_tier,1.0-1.25x,23217,0.3149,4.3333,3359.0
+rent_tier,>1.25x,13715,0.2947,4.3333,4655.0
+bldg_age,<=1979,6103,0.1722,4.3333,2799.0
+bldg_age,1980-99,4143,0.132,4.3333,3007.0
+bldg_age,2000-14,4017,0.1576,4.3333,3670.0
+bldg_age,2015+,6088,0.3891,4.3333,3578.5
+mgmt,0,9910,0.052,4.3333,3200.0
+mgmt,1,64433,0.309,4.3333,3100.0
+htype,APARTMENT,70073,0.2905,4.3333,3079.0
+htype,CONDO,53,0.0,,5700.0
+htype,MANUFACTURED,1,0.0,,3400.0
+htype,MULTI_FAMILY,10,0.0,,2875.0
+htype,SINGLE_FAMILY,3530,0.0184,4.3333,4000.0
+htype,TOWNHOUSE,676,0.0059,2.1667,3750.0
+county,Alameda County,20773,0.3765,6.0,2698.0
+county,Contra Costa County,7159,0.2749,4.3333,2539.0
+county,Marin County,949,0.177,4.3333,3405.0
+county,Napa County,922,0.2993,4.3333,2650.0
+county,San Francisco County,7707,0.1523,4.0,3958.0
+county,San Mateo County,6967,0.1345,4.0,3753.0
+county,Santa Clara County,23268,0.2691,4.3333,3500.0
+county,Solano County,3213,0.2291,4.3333,2300.0
+county,Sonoma County,3385,0.3205,6.0,2558.0
+luxury,0,59542,0.2612,4.3333,3021.0
+luxury,1,14801,0.3295,4.3333,3413.0

@@ -1,0 +1,8 @@
+Santa Clara (06085), TY2021 (file 2122), domestic movers (row 97/000):
+  in : n1=45074 n2=66899 agi=8297899 -> $184095/return, 1.484 persons/return
+  out: n1=57531 n2=99937 agi=14131374 -> $245631/return, 1.737 persons/return
+  replacement ratio (domestic, per return) = 0.7495
+  pipeline: in $184095, out $245631, ratio 0.7495
+California TY2021 (gross file 2122inmigall.csv, all AGI classes): inflow returns under 26 + 26-34, share of inflow:
+  inflow n1 all=254427, <26=57085, 26-34=99986 -> under-35 share 0.6174
+  pipeline: in_share_under35 = 0.6174

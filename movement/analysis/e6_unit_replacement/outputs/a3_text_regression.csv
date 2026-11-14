@@ -1,0 +1,15 @@
+model,term,coef,se,p,n,share_flag
+r_pct ~ flags + ZIP FE,remodel,-0.047,0.283,0.8681,7752,0.1752
+r_pct ~ flags + ZIP FE,luxury,0.5973,0.3173,0.0597,7752,0.1509
+r_pct ~ flags + ZIP FE,concession,0.7143,0.469,0.1277,7752,0.1369
+r_pct ~ flags + ZIP FE,mgmt,1.1298,0.3485,0.0012,7752,0.5993
+r_pct ~ remodel only + ZIP FE,remodel,-0.0585,0.2873,0.8387,7752,0.1752
+r_pct ~ remodel only + ZIP FE,mgmt,1.2234,0.3356,0.0003,7752,0.5993
+"r_pct ~ flags, SFR/condo/TH only",remodel,0.4179,0.3849,0.2776,1235,0.3126
+"r_pct ~ flags, SFR/condo/TH only",luxury,1.9722,0.9417,0.0362,1235,0.1182
+"r_pct ~ flags, SFR/condo/TH only",concession,3.2276,2.1629,0.1356,1235,0.0032
+"r_pct ~ flags, SFR/condo/TH only",mgmt,-1.5804,1.3229,0.2322,1235,0.0065
+over_cap (LPM) ~ flags + ZIP FE,remodel,-0.0017,0.0153,0.9132,7752,0.1752
+over_cap (LPM) ~ flags + ZIP FE,luxury,0.0231,0.0186,0.2139,7752,0.1509
+over_cap (LPM) ~ flags + ZIP FE,concession,0.0609,0.0296,0.0395,7752,0.1369
+over_cap (LPM) ~ flags + ZIP FE,mgmt,0.0755,0.019,0.0001,7752,0.5993

@@ -1,0 +1,7 @@
+model,key,cv_macro_f1_dev,C,test_macro_f1,test_acc,test_LEFT_precision,test_LEFT_recall,test_LEFT_f1-score,test_CONSIDERING_precision,test_CONSIDERING_recall,test_CONSIDERING_f1-score,test_OTHER_precision,test_OTHER_recall,test_OTHER_f1-score,test_binary_exit_f1
+majority,majority,0.307,,0.307,0.856,0.0,0.0,0.0,0.0,0.0,0.0,0.856,1.0,0.922,0.0
+naive_regex,naive_regex,0.386,,0.442,0.695,0.308,0.381,0.34,0.1,0.5,0.167,0.908,0.744,0.818,0.361
+tfidf_lr,tfidf,0.415,0.3,0.519,0.888,0.619,0.619,0.619,0.0,0.0,0.0,0.922,0.956,0.939,0.583
+minilm_emb_lr,emb_minilm,0.436,3.0,0.405,0.642,0.208,0.476,0.29,0.095,0.333,0.148,0.915,0.675,0.777,0.354
+mpnet_emb_lr,emb_mpnet,0.428,3.0,0.5,0.775,0.324,0.524,0.4,0.167,0.333,0.222,0.936,0.825,0.877,0.493
+hybrid_tfidf+minilm+rx_lr,hybrid,0.506,1.0,0.528,0.765,0.341,0.714,0.462,0.222,0.333,0.267,0.94,0.788,0.857,0.475

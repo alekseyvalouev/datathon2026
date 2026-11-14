@@ -1,0 +1,90 @@
+occ,metro,n_all,med_with_imputed,n_pay,med_mid,med_low
+caregiver,Bay Area,417.0,22.0,393,22.0,20.5
+caregiver,Fresno,16.0,18.860792393504347,15,18.35,17.0
+caregiver,Modesto,13.0,18.0,13,18.0,17.5
+caregiver,Other CA,611.0,20.0,552,19.975,19.0
+caregiver,Sacramento,83.0,19.8,76,19.5,19.0
+caregiver,Stockton,17.0,18.5,17,18.5,17.0
+caregiver,Unknown,4.0,19.0,4,19.0,19.0
+cashier,Bay Area,1050.0,20.0,907,19.59,18.45
+cashier,Fresno,112.0,17.8625,107,17.52,17.0
+cashier,Modesto,97.0,17.45,90,17.45,16.9
+cashier,Other CA,3106.0,18.5,2729,18.45,17.0
+cashier,Sacramento,264.0,17.95,222,18.0,17.0
+cashier,Stockton,85.0,18.013379269010827,76,17.8625,17.0
+cashier,Unknown,8.0,24.475,6,21.475,18.71
+cna,Bay Area,78.0,26.0675,73,26.134999999999998,25.0
+cna,Fresno,6.0,26.75,6,26.75,25.0
+cna,Modesto,4.0,22.8475,3,22.695,20.69
+cna,Other CA,303.0,23.725,269,23.75,22.0
+cna,Sacramento,18.0,23.5,17,23.0,21.0
+cna,Stockton,6.0,28.25,5,28.5,25.0
+cna,Unknown,3.0,23.448317307692307,3,23.448317307692307,17.81298076923077
+cook,Bay Area,442.0,24.5,396,24.5,23.0
+cook,Fresno,30.0,21.433814909607484,25,22.0,21.0
+cook,Modesto,25.0,23.5,23,23.5,22.0
+cook,Other CA,1044.0,21.34194319002667,904,21.5,20.0
+cook,Sacramento,96.0,23.5,94,23.5,22.0
+cook,Stockton,30.0,23.025160253905547,26,23.5,22.0
+crew,Bay Area,698.0,20.5,608,20.25,20.0
+crew,Fresno,100.0,20.0,87,20.0,20.0
+crew,Modesto,53.0,20.0,48,20.0,20.0
+crew,Other CA,2423.0,20.0,1926,20.0,20.0
+crew,Sacramento,188.0,20.0,175,20.0,20.0
+crew,Stockton,45.0,20.0,37,20.0,20.0
+crew,Unknown,8.0,22.75,7,25.0,24.0
+driver,Bay Area,340.0,24.0,266,24.0,22.990000000000002
+driver,Fresno,24.0,19.32668080420895,14,21.4675,18.75
+driver,Modesto,18.0,22.757089403040517,10,21.25,20.5
+driver,Other CA,665.0,21.94054261871614,491,21.5,20.0
+driver,Sacramento,73.0,22.0,58,21.5,20.0
+driver,Stockton,26.0,22.46,21,22.42,20.5
+driver,Unknown,15.0,34.49206144106128,4,23.265,23.221153846153847
+janitor,Bay Area,435.0,21.897318388275398,407,21.5,20.0
+janitor,Fresno,34.0,19.53935219979265,23,19.0,17.0
+janitor,Modesto,18.0,17.4,18,17.4,17.0
+janitor,Other CA,1079.0,20.0,982,20.0,19.0
+janitor,Sacramento,110.0,19.3421085342109,96,19.45,18.0
+janitor,Stockton,30.0,18.0325,26,18.0,17.0
+janitor,Unknown,9.0,25.5,9,25.5,20.31
+med_asst,Bay Area,117.0,28.21,97,27.725,25.0
+med_asst,Fresno,27.0,26.305,27,26.305,23.0
+med_asst,Modesto,4.0,22.4075,3,22.265,22.0
+med_asst,Other CA,431.0,24.5,403,24.5,23.0
+med_asst,Sacramento,23.0,33.125,22,33.125,28.825
+med_asst,Stockton,11.0,27.28,11,27.28,25.0
+med_asst,Unknown,5.0,30.989423076923075,3,30.989423076923075,26.198076923076922
+security,Bay Area,122.0,25.0,113,24.57,24.0
+security,Fresno,6.0,19.375,6,19.375,18.39
+security,Modesto,7.0,23.5,7,23.5,21.45
+security,Other CA,323.0,22.0,286,21.5,20.86
+security,Sacramento,30.0,24.01,24,24.01,23.0
+security,Stockton,7.0,23.5,7,23.5,20.0
+security,Unknown,8.0,23.960951923076923,6,23.960951923076923,23.960951923076923
+warehouse,Bay Area,436.0,23.0,375,22.6,21.0
+warehouse,Fresno,57.0,21.357690579227384,47,21.0,17.5
+warehouse,Modesto,39.0,22.5,32,22.744999999999997,21.925
+warehouse,Other CA,1326.0,21.865459516826416,1123,22.0,19.25
+warehouse,Sacramento,151.0,22.5,128,22.5,19.19
+warehouse,Stockton,89.0,22.5,71,22.5,21.0
+warehouse,Unknown,4.0,19.55,4,19.55,19.5
+caregiver,San Francisco,,,37,23.0,21.64
+cashier,San Francisco,,,67,21.0,20.0
+cna,San Francisco,,,9,26.39,25.0
+cook,San Francisco,,,30,24.84,24.0
+crew,San Francisco,,,65,20.5,20.25
+driver,San Francisco,,,35,24.785,23.6
+janitor,San Francisco,,,68,27.3,25.16
+med_asst,San Francisco,,,10,29.75,27.5
+security,San Francisco,,,22,26.5,26.0
+warehouse,San Francisco,,,23,22.6,22.0
+caregiver,Central Valley pooled,,,45,18.25,17.0
+cashier,Central Valley pooled,,,273,17.75,16.9
+cna,Central Valley pooled,,,14,27.9775,25.0
+cook,Central Valley pooled,,,74,23.0,21.5
+crew,Central Valley pooled,,,172,20.0,20.0
+driver,Central Valley pooled,,,45,22.0,20.0
+janitor,Central Valley pooled,,,67,17.53,17.0
+med_asst,Central Valley pooled,,,41,26.278846153846153,23.0
+security,Central Valley pooled,,,20,21.225,20.0
+warehouse,Central Valley pooled,,,150,22.5,20.01

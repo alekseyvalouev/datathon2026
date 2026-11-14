@@ -1,0 +1,34 @@
+{
+ "zori_month": "2026-09-30",
+ "bedroom_factor": {
+  "1": 0.8398116207328906,
+  "2": 1.0128816087099968
+ },
+ "bay_zori_weighted": 3481.97715523403,
+ "bay_turnover_premium": 1.1006116891184496,
+ "sf_turnover_premium": 1.267583619881213,
+ "bay_turnover_overall": [
+  {
+   "n": 25052,
+   "jump": 1.09265944645006,
+   "gap": 1.5989048596851472,
+   "jump_per_year": 0.05123708020065476
+  }
+ ],
+ "turnover_all_years": [
+  {
+   "n": 37752,
+   "jump": 1.0791666666666666
+  }
+ ],
+ "rent_bay": {
+  "2": 3431.0,
+  "1": 2895.0
+ },
+ "rent_sf": {
+  "1": 3891.5,
+  "2": 5334.0
+ },
+ "ab1482_cap_assumed": 0.08,
+ "hours_per_month": 173
+}

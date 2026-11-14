@@ -1,0 +1,419 @@
+=== zpid 2098824244 APARTMENT Alameda County | pair ep2->3: 2021-01-21 last_p=1495 -> 2023-12-14 next_first=1495 r=0.000
+   2019-09-17  R  Listed for rent  1650
+   2019-11-21  R  Price change     1595
+   2020-01-07  R  Price change     1550
+   2020-02-09  R  Listing removed  1495
+   2021-01-21  R  Listed for rent  1495
+   2021-02-10  R  Listing removed  None
+   2023-12-14  R  Listed for rent  1495
+   2024-05-08  R  Listing removed  None
+   2024-06-14  R  Listed for rent  1495
+   2024-11-23  R  Listing removed  1495
+   2025-02-07  R  Listed for rent  1700
+   2025-04-18  R  Price change     1595
+   2025-07-07  R  Price change     1500
+   2025-09-05  R  Price change     1450
+=== zpid 18451872 APARTMENT Contra Costa County | pair ep3->4: 2021-04-04 last_p=1750 -> 2023-01-30 next_first=1850 r=0.031
+   2005-10-21  S  Sold             275000
+   2017-10-19  S  Sold             273500
+   2017-11-16  S  Listed for sale  329900
+   2017-11-28  S  Pending sale     329900
+   2017-12-08  S  Sold             340000
+   2017-12-24  R  Listed for rent  1800
+   2018-01-11  R  Price change     1750
+   2018-01-15  R  Listing removed  1750
+   2019-01-04  R  Listed for rent  1795
+   2019-02-06  R  Price change     1750
+   2019-03-31  R  Listing removed  1750
+   2021-04-04  R  Listed for rent  1750
+   2021-04-27  R  Listing removed  None
+   2023-01-30  R  Listed for rent  1850
+   2023-02-10  R  Listing removed  None
+   2023-05-17  R  Listed for rent  1850
+   2023-05-28  R  Listing removed  None
+   2024-04-30  R  Listed for rent  1850
+   2024-05-06  R  Listing removed  None
+   2026-09-27  R  Listed for rent  1900
+=== zpid 2078329446 APARTMENT Santa Clara County | pair ep1->2: 2023-04-27 last_p=3032 -> 2026-03-08 next_first=3306 r=0.031
+   2023-04-27  R  Listed for rent  3032
+   2023-05-03  R  Listing removed  None
+   2026-03-08  R  Listed for rent  3306
+   2026-03-10  R  Price change     3631
+   2026-04-01  R  Price change     3649
+   2026-04-03  R  Price change     3632
+=== zpid 2067349682 APARTMENT Alameda County | pair ep4->5: 2023-12-17 last_p=3700 -> 2026-03-03 next_first=3780 r=0.010
+   2021-12-07  R  Listed for rent  4162
+   2022-07-08  R  Listing removed  None
+   2022-07-20  R  Listed for rent  4162
+   2022-10-26  R  Price change     4024
+   2022-11-16  R  Price change     3625
+   2022-12-30  R  Listing removed  None
+   2023-03-27  R  Listed for rent  4162
+   2023-03-29  R  Listing removed  None
+   2023-12-17  R  Listed for rent  3700
+   2024-01-03  R  Listing removed  None
+   2026-03-03  R  Listed for rent  3780
+   2026-03-10  R  Price change     3710
+=== zpid 2070938950 APARTMENT Alameda County | pair ep2->3: 2025-02-02 last_p=2325 -> 2026-05-29 next_first=2697 r=0.119
+   2022-06-26  R  Listed for rent  2435
+   2022-06-27  R  Price change     2400
+   2022-06-28  R  Listing removed  None
+   2025-02-02  R  Listed for rent  2345
+   2025-02-04  R  Price change     2330
+   2025-02-06  R  Price change     2325
+   2025-02-07  R  Listing removed  2325
+   2026-05-29  R  Listed for rent  2697
+   2026-05-31  R  Price change     2680
+   2026-06-01  R  Price change     2693
+   2026-06-02  R  Price change     2692
+   2026-06-04  R  Price change     2681
+   2026-06-07  R  Price change     2673
+   2026-06-08  R  Price change     2669
+   2026-06-10  R  Price change     2677
+   2026-06-11  R  Price change     2631
+   2026-06-13  R  Price change     2622
+   2026-06-17  R  Price change     2644
+   2026-06-19  R  Price change     2622
+   2026-06-26  R  Price change     2629
+   2026-06-28  R  Price change     2642
+   2026-06-30  R  Price change     2634
+   2026-07-01  R  Price change     2619
+   2026-07-12  R  Price change     2604
+   2026-07-13  R  Price change     2591
+=== zpid 2079225480 APARTMENT Alameda County | pair ep1->2: 2023-06-28 last_p=2465 -> 2025-01-11 next_first=2512 r=0.012
+   2023-06-28  R  Listed for rent  2474
+   2023-07-01  R  Price change     2426
+   2023-07-03  R  Price change     2390
+   2023-07-06  R  Price change     2344
+   2023-07-07  R  Price change     2465
+   2023-07-19  R  Listing removed  None
+   2025-01-11  R  Listed for rent  2512
+   2025-01-17  R  Price change     2515
+   2025-01-24  R  Price change     2475
+   2025-01-31  R  Price change     2457
+   2025-02-02  R  Price change     2465
+   2025-02-05  R  Price change     2425
+   2025-02-06  R  Price change     2457
+   2025-02-08  R  Price change     2414
+   2025-02-09  R  Price change     2392
+   2025-02-11  R  Price change     2349
+   2025-02-12  R  Price change     2328
+   2025-02-13  R  Price change     2306
+   2025-02-15  R  Price change     2263
+   2025-02-17  R  Price change     2220
+   2025-02-18  R  Price change     2457
+   2025-02-21  R  Price change     2317
+   2025-02-25  R  Listing removed  2317
+   2026-04-18  R  Listed for rent  2591
+   2026-04-25  R  Price change     2616
+=== zpid 347329456 APARTMENT San Mateo County | pair ep1->2: 2024-04-08 last_p=3625 -> 2026-09-12 next_first=4421 r=0.085
+   2024-04-08  R  Listed for rent  3650
+   2024-04-13  R  Price change     3725
+   2024-04-16  R  Price change     3650
+   2024-08-22  R  Price change     3625
+   2024-08-31  R  Listing removed  3525
+   2026-09-12  R  Listed for rent  4421
+   2026-09-25  R  Price change     4422
+   2026-10-01  R  Price change     4377
+   2026-10-03  R  Price change     4332
+=== zpid 24821200 APARTMENT Alameda County | pair ep2->3: 2022-08-05 last_p=3900 -> 2026-08-01 next_first=4200 r=0.019
+   2015-02-20  S  Listed for sale  600000
+   2015-03-10  S  Sold             754000
+   2018-08-27  R  Listed for rent  3600
+   2018-08-29  R  Listing removed  3600
+   2022-08-05  R  Listed for rent  3900
+   2022-08-18  R  Listing removed  None
+   2026-08-01  R  Listed for rent  4200
+   2026-08-10  R  Price change     4250
+   2026-09-14  R  Price change     4000
+   2026-09-19  R  Price change     3950
+   2026-09-22  R  Price change     3999
+=== zpid 2053541568 APARTMENT San Francisco County | pair ep1->2: 2024-01-03 last_p=4650 -> 2026-05-28 next_first=3150 r=-0.150
+   2024-01-03  R  Listed for rent  4650
+   2024-01-05  R  Listing removed  None
+   2026-05-28  R  Listed for rent  3150
+   2026-06-02  R  Listing removed  3150
+   2026-07-16  R  Listed for rent  3150
+=== zpid 2059843796 APARTMENT Alameda County | pair ep2->3: 2023-05-12 last_p=3595 -> 2026-09-03 next_first=3595 r=0.000
+   2023-02-16  R  Listed for rent  4395
+   2023-03-09  R  Price change     3995
+   2023-05-03  R  Price change     3750
+   2023-05-09  R  Listing removed  None
+   2023-05-12  R  Listed for rent  3750
+   2023-06-12  R  Price change     3595
+   2023-07-20  R  Listing removed  None
+   2026-09-03  R  Listed for rent  3595
+=== zpid 2085139243 APARTMENT San Francisco County | pair ep1->2: 2019-04-01 last_p=4830 -> 2020-11-19 next_first=2995 r=-0.253
+   2019-04-01  R  Listed for rent  5600
+   2019-05-28  R  Price change     5170
+   2019-07-11  R  Price change     4830
+   2019-07-19  R  Listing removed  4830
+   2020-11-19  R  Listed for rent  2995
+   2020-12-01  R  Listing removed  2995
+   2026-03-11  R  Listed for rent  5700
+   2026-03-13  R  Price change     5800
+=== zpid 439200585 APARTMENT Sonoma County | pair ep1->2: 2024-08-19 last_p=2250 -> 2025-09-11 next_first=2250 r=0.000
+   2024-08-19  R  Listed for rent  2250
+   2024-08-28  R  Listing removed  2250
+   2025-09-11  R  Listed for rent  2250
+   2025-10-29  R  Listing removed  2250
+   2026-11-07  R  Listed for rent  2250
+=== zpid 2084979225 APARTMENT Contra Costa County | pair ep4->5: 2025-04-23 last_p=1900 -> 2026-08-04 next_first=1950 r=0.020
+   2019-04-10  R  Listed for rent  1700
+   2019-04-19  R  Price change     1650
+   2019-05-07  R  Listing removed  1650
+   2019-11-19  R  Listed for rent  1725
+   2019-11-28  R  Listing removed  1725
+   2020-03-10  R  Listed for rent  1725
+   2020-05-09  R  Listing removed  1725
+   2025-04-23  R  Listed for rent  1900
+   2025-05-05  R  Listing removed  1900
+   2026-08-04  R  Listed for rent  1950
+=== zpid 2115433959 APARTMENT Alameda County | pair ep1->2: 2025-04-01 last_p=1750 -> 2026-09-05 next_first=1750 r=0.000
+   2025-04-01  R  Listed for rent  1750
+   2025-04-25  R  Listing removed  1750
+   2026-09-05  R  Listed for rent  1750
+=== zpid 2095928910 APARTMENT Santa Clara County | pair ep2->3: 2019-10-20 last_p=2600 -> 2022-10-23 next_first=2700 r=0.013
+   2017-02-04  R  Listed for rent  2045
+   2017-02-12  R  Listing removed  2045
+   2019-10-20  R  Listed for rent  2600
+   2019-11-02  R  Listing removed  2600
+   2021-03-24  R  Listing removed  None
+   2022-10-23  R  Listed for rent  2700
+   2022-12-03  R  Price change     2600
+   2025-05-23  R  Price change     3000
+   2025-06-02  R  Listing removed  3000
+   2025-10-13  R  Listed for rent  3000
+=== zpid 19650996 SINGLE_FAMILY Santa Clara County | pair ep1->2: 2023-01-23 last_p=4700 -> 2024-05-30 next_first=5500 r=0.124
+   2022-08-20  S  Listed for sale  1499000
+   2022-08-30  S  Sold             1300000
+   2022-09-02  S  Listed for sale  1648000
+   2022-09-29  S  Contingent       1575000
+   2022-09-29  S  Price change     1575000
+   2022-11-15  S  Sold             1510000
+   2023-01-23  R  Listed for rent  4700
+   2023-01-26  R  Listing removed  None
+   2024-05-30  R  Listed for rent  5500
+   2024-06-13  R  Listing removed  None
+   2025-06-07  R  Listed for rent  5800
+   2025-06-23  R  Listing removed  5800
+   2026-09-25  S  Listed for sale  2199999
+=== zpid 15740053 SINGLE_FAMILY Solano County | pair ep2->3: 2018-06-06 last_p=1800 -> 2021-10-21 next_first=2300 r=0.075
+   1993-12-30  S  Sold             141500
+   2014-02-01  R  Listed for rent  1450
+   2014-04-08  R  Listing removed  1450
+   2018-06-06  R  Listed for rent  1800
+   2018-07-28  R  Listing removed  1800
+   2021-10-21  R  Listed for rent  2300
+   2021-11-02  R  Listing removed  None
+   2021-12-03  R  Listed for rent  2400
+   2021-12-14  R  Listing removed  None
+   2026-08-25  R  Listed for rent  2850
+=== zpid 15856224 SINGLE_FAMILY Sonoma County | pair ep1->2: 2013-07-06 last_p=2400 -> 2017-09-19 next_first=2800 r=0.037
+   2005-12-02  S  Sold             612000
+   2010-04-15  S  Sold             310000
+   2010-08-31  S  Sold             372000
+   2013-07-06  R  Listed for rent  2400
+   2013-07-09  R  Listing removed  2400
+   2017-09-19  R  Listed for rent  2800
+   2017-09-25  R  Listing removed  2800
+   2021-03-21  R  Listing removed  None
+   2023-09-13  S  Listed for sale  699000
+   2023-09-19  S  Pending sale     699000
+   2023-10-13  S  Sold             760000
+   2026-10-27  S  Listed for sale  780000
+=== zpid 24811992 SINGLE_FAMILY Alameda County | pair ep1->2: 2017-10-14 last_p=4500 -> 2020-02-09 next_first=4500 r=0.000
+   1994-09-01  S  Sold             300000
+   2000-08-22  S  Sold             499000
+   2003-12-24  S  Sold             650000
+   2017-10-14  R  Listed for rent  4500
+   2017-10-26  R  Listing removed  4500
+   2020-02-09  R  Listed for rent  4500
+   2020-03-01  R  Listing removed  4500
+   2021-03-24  R  Listing removed  None
+   2025-08-21  S  Listed for sale  1095000
+   2025-12-09  S  Listing removed  1095000
+   2026-01-29  S  Listed for sale  1095000
+   2026-03-19  S  Pending sale     1095000
+   2026-04-03  S  Sold             1095000
+=== zpid 111710903 CONDO San Francisco County | pair ep1->2: 2018-01-04 last_p=4200 -> 2019-06-01 next_first=4495 r=0.050
+   2016-02-18  S  Listed for sale  1100000
+   2016-03-22  S  Pending sale     1100000
+   2016-05-23  S  Sold             1050000
+   2018-01-04  R  Listed for rent  4600
+   2018-02-06  R  Price change     4200
+   2018-03-06  R  Listing removed  4200
+   2019-06-01  R  Listed for rent  4495
+   2019-06-28  R  Listing removed  4495
+   2020-10-21  R  Listed for rent  3300
+   2020-11-06  R  Listing removed  3300
+   2026-02-23  S  Listed for sale  725000
+   2026-06-04  S  Price change     695000
+   2026-09-04  S  Pending sale     695000
+   2026-10-02  S  Sold             660000
+=== zpid 19580875 SINGLE_FAMILY Santa Clara County | pair ep2->3: 2024-11-01 last_p=12250 -> 2025-11-03 next_first=13000 r=0.061
+   2005-02-02  S  Sold             680000
+   2022-11-07  R  Listed for rent  12500
+   2023-01-30  R  Price change     12000
+   2023-02-10  R  Price change     11750
+   2023-02-21  R  Price change     11500
+   2023-03-20  R  Listing removed  None
+   2024-04-10  S  Sold             1440909
+   2024-11-01  R  Listed for rent  12250
+   2024-11-23  R  Listing removed  12250
+   2025-11-03  R  Listed for rent  13000
+   2026-01-06  R  Price change     12250
+   2026-03-05  R  Price change     10500
+   2026-03-13  R  Price change     9995
+   2026-05-19  R  Listing removed  9995
+   2026-09-02  R  Listed for rent  13995
+=== zpid 243210774 SINGLE_FAMILY Santa Clara County | pair ep1->2: 2022-10-12 last_p=3950 -> 2026-07-30 next_first=4500 r=0.035
+   2018-02-28  S  Sold             751000
+   2018-08-09  S  Listed for sale  839000
+   2018-08-21  S  Price change     815000
+   2018-09-05  S  Price change     795000
+   2018-09-10  S  Price change     749000
+   2018-10-12  S  Sold             760000
+   2022-10-12  R  Listed for rent  4100
+   2022-11-04  R  Price change     3950
+   2026-06-03  S  Listed for sale  960000
+   2026-06-27  S  Pending sale     960000
+   2026-07-24  S  Sold             988888
+   2026-07-30  R  Listed for rent  4500
+   2026-08-11  R  Listing removed  4500
+=== zpid 2112421739 SINGLE_FAMILY Alameda County | pair ep1->2: 2013-06-08 last_p=1900 -> 2019-04-16 next_first=2850 r=0.072
+   2013-06-08  R  Listed for rent  1900
+   2013-06-20  R  Listing removed  1900
+   2019-04-16  R  Listed for rent  2850
+   2019-05-23  R  Price change     2750
+   2019-05-28  R  Listing removed  2750
+   2023-10-06  S  Listed for sale  789000
+   2023-10-19  S  Pending sale     789000
+   2023-11-20  S  Sold             955000
+   2026-06-18  S  Listed for sale  828000
+   2026-07-10  S  Pending sale     828000
+   2026-07-21  S  Sold             875000
+=== zpid 19673282 SINGLE_FAMILY Santa Clara County | pair ep1->2: 2017-08-28 last_p=3295 -> 2021-07-21 next_first=3500 r=0.016
+   1993-12-01  S  Sold             132000
+   1994-06-06  S  Sold             172000
+   1999-12-30  S  Sold             300000
+   2002-01-16  S  Sold             27000
+   2004-07-14  S  Sold             489000
+   2017-08-28  R  Listed for rent  3295
+   2017-11-16  R  Listing removed  3295
+   2021-07-21  R  Listed for rent  3500
+   2021-08-05  R  Listing removed  None
+   2026-09-25  R  Listed for rent  4200
+   2026-10-13  R  Price change     4099
+=== zpid 24774183 SINGLE_FAMILY Alameda County | pair ep1->2: 2017-12-09 last_p=4900 -> 2021-04-04 next_first=5500 r=0.035
+   2016-03-02  S  Listed for sale  699950
+   2016-03-11  S  Pending sale     699950
+   2016-03-24  S  Sold             770000
+   2017-12-09  R  Listed for rent  5500
+   2018-01-10  R  Price change     4900
+   2018-01-18  R  Listing removed  4900
+   2021-03-24  R  Listing removed  None
+   2021-04-04  R  Listed for rent  5500
+   2021-05-04  R  Listing removed  None
+   2022-08-19  R  Listed for rent  5800
+   2022-08-27  R  Price change     5500
+   2022-10-04  R  Price change     4975
+   2022-10-20  R  Listing removed  None
+   2023-10-29  R  Listed for rent  5000
+   2023-11-19  R  Listing removed  None
+   2024-02-07  R  Listed for rent  5500
+   2024-03-08  R  Listing removed  None
+   2024-04-25  S  Listed for sale  1049000
+   2024-06-06  S  Listing removed  None
+   2024-06-07  R  Listed for rent  5500
+   2024-06-18  R  Price change     5300
+   2024-07-07  R  Listing removed  None
+   2026-03-23  S  Sold             1100000
+=== zpid 15640780 CONDO San Mateo County | pair ep2->3: 2020-08-07 last_p=2300 -> 2022-12-08 next_first=2200 r=-0.019
+   2011-08-02  S  Sold             203000
+   2017-03-13  R  Listed for rent  2300
+   2017-04-13  R  Listing removed  2300
+   2020-08-07  R  Listed for rent  2300
+   2020-08-15  R  Listing removed  2300
+   2022-12-08  R  Listed for rent  2200
+   2022-12-13  R  Listing removed  None
+   2026-01-29  S  Listed for sale  579000
+   2026-02-12  S  Price change     565000
+   2026-02-25  S  Price change     559000
+   2026-03-12  S  Price change     549000
+   2026-03-19  S  Price change     535000
+   2026-03-30  S  Price change     529000
+   2026-04-10  S  Price change     515000
+   2026-04-15  S  Price change     499000
+   2026-05-27  S  Price change     485000
+   2026-05-28  R  Listed for rent  2700
+   2026-06-15  R  Listing removed  2700
+   2026-06-15  S  Pending sale     485000
+   2026-07-02  S  Sold             477500
+=== zpid 118259306 SINGLE_FAMILY Contra Costa County | pair ep2->3: 2019-03-30 last_p=3300 -> 2022-08-27 next_first=3595 r=0.025
+   2013-12-06  S  Sold             689900
+   2017-03-04  R  Listed for rent  3250
+   2017-04-07  R  Price change     3150
+   2017-04-25  R  Listing removed  3150
+   2019-03-30  R  Listed for rent  3300
+   2019-04-18  R  Listing removed  3300
+   2021-02-16  R  Listing removed  None
+   2022-08-27  R  Listed for rent  3595
+   2022-09-21  R  Listing removed  None
+   2025-06-27  R  Listed for rent  3800
+   2025-08-14  R  Price change     3700
+   2025-08-25  R  Listing removed  3700
+   2026-08-26  R  Listed for rent  3900
+=== zpid 2095886874 TOWNHOUSE Alameda County | pair ep2->3: 2023-03-21 last_p=2500 -> 2026-05-20 next_first=2700 r=0.025
+   2017-02-25  R  Listed for rent  1950
+   2017-03-07  R  Listing removed  1950
+   2023-03-21  R  Listed for rent  2500
+   2023-05-26  R  Listing removed  None
+   2026-05-20  R  Listed for rent  2700
+=== zpid 18281200 SINGLE_FAMILY Contra Costa County | pair ep4->5: 2021-12-23 last_p=2925 -> 2026-07-17 next_first=3460 r=0.037
+   1995-04-14  S  Sold             179000
+   2011-07-21  S  Sold             145000
+   2012-08-14  R  Listed for rent  2019
+   2013-02-13  R  Listing removed  2019
+   2015-01-30  S  Sold             322000
+   2015-05-11  R  Listed for rent  2007
+   2015-05-12  R  Price change     1950
+   2015-05-16  R  Listing removed  1950
+   2018-09-05  R  Listed for rent  2875
+   2018-10-01  R  Price change     2745
+   2018-10-11  R  Price change     2645
+   2018-11-06  R  Price change     2475
+   2018-11-20  R  Price change     2425
+   2018-12-05  R  Price change     2375
+   2018-12-23  R  Listing removed  2375
+   2021-12-23  R  Listed for rent  3345
+   2021-12-29  R  Price change     3295
+   2022-01-10  R  Price change     3245
+   2022-01-20  R  Price change     3095
+   2022-01-28  R  Price change     2995
+   2022-02-08  R  Price change     2925
+   2022-02-16  R  Listing removed  None
+   2026-07-17  R  Listed for rent  3460
+   2026-08-18  R  Listing removed  3460
+   2026-08-28  R  Listed for rent  3460
+=== zpid 18493903 SINGLE_FAMILY Contra Costa County | pair ep1->2: 2023-09-18 last_p=3500 -> 2025-07-23 next_first=3500 r=0.000
+   1995-10-17  S  Sold             120903
+   1996-03-29  S  Sold             60000
+   1996-06-28  S  Sold             93000
+   2014-02-04  S  Listed for sale  None
+   2014-02-25  S  Listing removed  None
+   2023-09-18  R  Listed for rent  3500
+   2023-10-09  R  Listing removed  None
+   2025-07-23  R  Listed for rent  3500
+   2025-08-13  R  Listing removed  3500
+   2025-08-19  R  Listed for rent  3500
+   2025-09-09  R  Listing removed  3500
+   2025-10-20  S  Listed for sale  580000
+   2025-11-20  S  Price change     570000
+   2025-12-16  S  Pending sale     570000
+   2025-12-19  S  Listed for sale  570000
+   2025-12-24  S  Listing removed  570000
+   2026-01-02  S  Listed for sale  570000
+   2026-01-14  S  Price change     559000
+   2026-02-16  S  Pending sale     559000
+   2026-03-05  S  Sold             565000

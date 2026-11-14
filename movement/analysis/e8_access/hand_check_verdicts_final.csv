@@ -1,0 +1,31 @@
+place_id,svc,correct,strict_ok,note
+ChIJ83UV3fUyjoARvUmspUixADE,grocery,1,1,full-size Asian supermarket (547 reviews)
+ChIJBWRDUyl-j4ARbqKZH9F4ezA,grocery,1,1,Trader Joe's
+ChIJsUzXZQq7j4ARGmwli3WIslI,grocery,1,0,independent grocery; size unknown so not confirmed as USDA-type supermarket
+ChIJuUssgvSAhYARLAnuInD-ThM,grocery,1,0,small ethnic grocery (17 reviews)
+ChIJJ0jYofOAhYARFZxdHlcyesA,grocery,1,0,fruit/produce shop; sells fresh food but not a full-line grocery
+ChIJ5RJoTy6Hj4ARxaEL2kmoQqY,grocery,1,0,produce market; small
+ChIJ0SO78jPpj4ARmopLd9LLqsI,clinic,1,0,physician listing inside a large medical foundation; specialty not stated
+ChIJrzSfiOJHhIARy-ttd9liGPE,clinic,1,0,medical group practice; specialty not stated
+ChIJux8lFXGej4ARzJ49Hd_bAQA,clinic,1,1,county community health center
+ChIJBZtdPpbnj4ARrZwJHMvcUo4,clinic,1,1,family medicine practice
+ChIJ72rH3FSij4AReB-jZ2NK3Xc,clinic,1,1,hospital / medical center (health-plan members)
+ChIJX4Lk0soMhYAR-ovZULFK3WU,clinic,1,0,gastroenterology specialty office of a health system
+ChIJoTtlvrp_j4ARJ9GqTGv-bZQ,pharmacy,1,1,retail pharmacy (1k reviews)
+ChIJ37OgGZjnj4ARHosA2C6SjLg,pharmacy,1,1,testing-site entry at a Walgreens store (store pharmacy co-located)
+ChIJV92oAUy3j4ARDy76mLwx2hQ,pharmacy,1,1,Safeway pharmacy
+ChIJBcl2apu6j4AREejma1zJcnU,pharmacy,0,0,personal-name pharmacist record (0 reviews); cannot confirm a walk-in pharmacy
+ChIJZaZ3rPl9hYARFlwB29ZVTTw,pharmacy,0,0,personal-name pharmacist record (0 reviews); cannot confirm a walk-in pharmacy
+ChIJ63mK6_h9hYARjwbxedpd7MU,pharmacy,1,1,Kaiser medical-center pharmacy (members)
+ChIJy7VI-_VKhIARJ_ggYvgdSDs,transit,1,1,bus stop
+ChIJJWlZpvJ-hYARU-3arecKQnQ,transit,1,1,bus stop
+ChIJTYCs4fCZhYARtpkoBP-pqfA,transit,1,1,bus stop
+ChIJkQSfc5-QhYARMm6e1dh4IJw,transit,1,1,bus stop
+ChIJTf8VEQAzjoARffeFbQwcqt0,foodbank,0,0,taco restaurant mis-tagged Soup kitchen
+ChIJ10bVlI-AhYARzVdLxlcsT1c,foodbank,1,1,church food distribution (public meals/pantry)
+ChIJtWyTBi5-j4ARwCuCSsUBDtU,foodbank,1,1,free-meal soup kitchen
+ChIJpaaDRQm0hYARqcsR5L_7l4A,foodbank,1,0,distribution site at an apartment complex; likely residents-only
+ChIJbYKzTSSBhYARxGxUhcC6Uho,foodbank,1,0,regional food bank warehouse/HQ; public pantries are elsewhere
+ChIJZV8c2uDGj4ARfA4tJID5JD0,bank,1,1,bank branch
+ChIJHbQLK-QyjoARBvhzhZ8PAQw,afs,1,1,remittance agent
+ChIJCbS7vXxXhYARBFilEQ0NyL0,bank,1,1,bank branch

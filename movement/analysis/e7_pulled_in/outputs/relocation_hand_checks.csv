@@ -1,0 +1,81 @@
+round,check_set,jobid,title,region,source,flag_round1,agent_verdict,note
+round1_dev,hit,927b6904e0d0fb77,Head of Supercomputing,Bay Area,description,1,offer,
+round1_dev,hit,d0094d8264e3954e,Senior Data Engineer,Rest of CA,description,1,offer,
+round1_dev,hit,b9343bbe6fd2a393,Founding Enterprise Account Manager,Bay Area,description,1,offer,
+round1_dev,hit,979c7dbe193601ee,"Software Engineer, Collective Communication",Bay Area,description,1,offer,
+round1_dev,hit,bf0977aa8bc842c8,Accelerator Software Engineer,Bay Area,description,1,offer,
+round1_dev,hit,7c6eccb650078083,"Urology Physician Assistant | Sacramento, California | 160-190k",Unknown,description,1,offer,
+round1_dev,hit,53b644d03c7e409c,Mechanical Project Engineer,Rest of CA,description,1,offer,
+round1_dev,hit,6826547df412a8d6,Cyber Sys Secur Engr Sr,Rest of CA,description,1,offer,
+round1_dev,hit,c0dc38835625e773,"Engineering Manager, Enterprise Applied AI",Bay Area,description,1,offer,
+round1_dev,hit,39240e546d04d5ff,Flight Software Engineer,Bay Area,description,1,offer,
+round1_dev,hit,f9a1064aa8b8c4c9,"Software Engineer, Infrastructure - Analytics Platform",Bay Area,description,1,offer,
+round1_dev,hit,ed236088403a0e9d,Sterile Processing Service (SPS) Nurse Educator,Bay Area,description,1,no_offer,field-style negation split by newline (Relocation expenses reimbursed / No); fixed
+round1_dev,hit,7c8322d508eb5bc0,"Scientist 3, Immunology Discovery",Bay Area,description,1,offer,
+round1_dev,hit,3491d9e071a47630,Strategic Project Lead,Bay Area,description,1,offer,
+round1_dev,hit,71e50bd1eeb5cb11,"Machine Learning Engineer, Distributed Data Systems - Robotics",Bay Area,description,1,offer,
+round1_dev,hit,569958ade496c8a5,Data Platform Architect,Bay Area,description,1,offer,
+round1_dev,hit,59ba3cfef1a6d355,Speech-Language Pathologist Assistant,Bay Area,description,1,offer,
+round1_dev,hit,d75ee4c4fe0bda44,"iOS Software Engineer, AI Engineering",Rest of CA,description,1,offer,
+round1_dev,hit,b9cb5d2574d29fce,BCBA,Bay Area,benefits_tag,1,offer,
+round1_dev,hit,b9397bd94eb75d10,Physical Therapist Assistant ( Full Time),Rest of CA,benefits_tag,1,offer,
+round1_dev,hit,67847567f1119e44,Electrical Design Engineer Level 2 / 3,Bay Area,benefits_tag,1,offer,
+round1_dev,hit,fb28565d810239e4,Justice Alliance Manager,Rest of CA,benefits_tag,1,offer,
+round1_dev,hit,d2877c202a500d6d,Embedded Software Engineer,Rest of CA,benefits_tag,1,offer,
+round1_dev,hit,88ddd11e09e6de12,Electrician Helper Apprentice,Rest of CA,benefits_tag,1,offer,
+round1_dev,hit,cc77912a350fe220,Physical Therapist ( Full Time),Rest of CA,benefits_tag,1,offer,
+round1_dev,hit,3c18da708275b999,Physical Therapist Assistant,Rest of CA,benefits_tag,1,offer,
+round1_dev,hit,b50af3e649b3fb62,"Physical Therapist Assistant (PTA) | Relocation $10,000 | Santa Maria,",Rest of CA,benefits_tag,1,offer,
+round1_dev,hit,ed9a8b04859db415,"General Manager, Golf Retail",Rest of CA,benefits_tag,1,offer,
+round1_dev,hit,f2c40cfebca6f887,Principal / Senior Principal Software Engineer - Simulink,Rest of CA,benefits_tag,1,offer,
+round1_dev,hit,40fb6a7d3c649424,Program Supervisor,Bay Area,benefits_tag,1,offer,
+round1_dev,nonhit_mention,999e408d2095ba31,Manufacturing Design Engineer (MDE) - Packaging,Bay Area,,0,offer,"Apple boilerplate ""might be eligible ... as well as relocation""; added pattern"
+round1_dev,nonhit_mention,02c76d8a5ce1aa7a,Maintenance Technician,Rest of CA,,0,no_offer,"Indeed screening question ""Ability to relocate"" (asks the worker to move, no help offered)"
+round1_dev,nonhit_mention,c4592cda648252f2,Dental Hygienist Wanted for Positive Supportive Team! Tuesday and Thur,Bay Area,,0,no_offer,"Indeed screening question ""Ability to relocate"" (asks the worker to move, no help offered)"
+round1_dev,nonhit_mention,742da1c7ff0ab5b3,"Room Attendant, On-Call",Bay Area,,0,no_offer,"Indeed screening question ""Ability to relocate"" (asks the worker to move, no help offered)"
+round1_dev,nonhit_mention,9bab67d9e15dbcf1,Lead Montessori Teacher,Bay Area,,0,no_offer,"Indeed screening question ""Ability to relocate"" (asks the worker to move, no help offered)"
+round1_dev,nonhit_mention,01f24e131323fb36,Head Grower,Rest of CA,,0,no_offer,physical relocation of goods
+round1_dev,nonhit_mention,f69fce02e8ebf57d,Caregiver - $300 Sign on Bonus,Bay Area,,0,no_offer,"Indeed screening question ""Ability to relocate"" (asks the worker to move, no help offered)"
+round1_dev,nonhit_mention,f4b9ee5a4c1bea71,HR Consultant,Rest of CA,,0,no_offer,"Indeed screening question ""Ability to relocate"" (asks the worker to move, no help offered)"
+round1_dev,nonhit_mention,620faf31395015c3,Staff Auditor,Rest of CA,,0,no_offer,"Indeed screening question ""Ability to relocate"" (asks the worker to move, no help offered)"
+round1_dev,nonhit_mention,5d655ca8bcb9d528,"Director, Supply Chain Analytics",Bay Area,,0,offer,"""Relocation or living-out allowance""; added pattern"
+round1_dev,nonhit_mention,855724bc8565d98b,Material Handler,Rest of CA,,0,no_offer,physical relocation of goods
+round1_dev,nonhit_mention,e4814b8e90ef7116,Forward Deployed Operations,Bay Area,,0,no_offer,"""willing to relocate"" requirement, no help offered"
+round1_dev,nonhit_mention,d3b0d75911fcd68e,Administrative Business Partner,Bay Area,,0,no_offer,"explicit ""not available / no relocation"""
+round1_dev,nonhit_mention,38d2379431523c53,Multifamily Maintenance and Renovation Sales Representative,Rest of CA,,0,no_offer,"Indeed screening question ""Ability to relocate"" (asks the worker to move, no help offered)"
+round1_dev,nonhit_mention,a1f174be89cd1068,Software Engineer - Evaluation Engineering,Bay Area,,0,offer,"Apple boilerplate ""might be eligible ... as well as relocation""; added pattern"
+round1_dev,nonhit_mention,a149a3330aaaf3f8,Display Optical Engineer,Bay Area,,0,offer,"Apple boilerplate ""might be eligible ... as well as relocation""; added pattern"
+round1_dev,nonhit_mention,8abc0f8a892ad825,Camera SIPI Engineer,Rest of CA,,0,offer,"Apple boilerplate ""might be eligible ... as well as relocation""; added pattern"
+round1_dev,nonhit_mention,57c84b1ba931c2c4,Assistant Manager / Supervisor,Bay Area,,0,no_offer,"Indeed screening question ""Ability to relocate"" (asks the worker to move, no help offered)"
+round1_dev,nonhit_mention,84fe134fa5bd384c,"Principal Software Engineer, Early Clinical Development (ECD)",Bay Area,,0,no_offer,"explicit ""not available / no relocation"""
+round1_dev,nonhit_mention,8fc04841caeb9c87,Sales Operations Manager,Rest of CA,,0,no_offer,"explicit ""not available / no relocation"""
+round2_final_heldout,final_hit_sample,4afeacc5bf44c779,"Software Development Engineer in Test - Apps, Identity Management Serv",Bay Area,description,1,offer,conditional; Apple boilerplate
+round2_final_heldout,final_hit_sample,4d35ff899b29c2a0,"Rad Tech, Neurosurgery",Rest of CA,benefits_tag,1,offer,firm offer
+round2_final_heldout,final_hit_sample,4b38f51e0e92ebfd,2026 Jr Software and Data Engineer,Rest of CA,benefits_tag,1,offer,firm offer
+round2_final_heldout,final_hit_sample,02b39a34edc3ebe6,"Product Marketing Manager, Science",Bay Area,description,1,offer,firm offer
+round2_final_heldout,final_hit_sample,b80c0324055bf897,Systems Engineer - TRMC IFC (Principal or Senior Principal),Rest of CA,benefits_tag,1,offer,conditional wording (may/might/considered)
+round2_final_heldout,final_hit_sample,03aa373ab2a476db,"Salesforce Technical Architect, Sales Engineering",Bay Area,description,1,offer,conditional; Apple boilerplate
+round2_final_heldout,final_hit_sample,1eac5f28db6fb4e9,"Software Engineering Manager, Health",Bay Area,description,1,offer,conditional; Apple boilerplate
+round2_final_heldout,final_hit_sample,3417b833db562200,Senior Credit & Collections,Bay Area,description,1,offer,firm offer
+round2_final_heldout,final_hit_sample,03aa98307d0cdb21,3D Game Artist - Platform Architecture,Bay Area,description,1,offer,conditional; Apple boilerplate
+round2_final_heldout,final_hit_sample,2c76146c76d4e81a,"AIML - Sr Machine Learning Engineer, Evaluation",Bay Area,description,1,offer,conditional; Apple boilerplate
+round2_final_heldout,final_hit_sample,06f30cde23505d16,SENIOR EMBEDDED ENGINEERS - 1524 - 1489,Rest of CA,benefits_tag,1,offer,firm offer
+round2_final_heldout,final_hit_sample,fe34928d6fdf1dac,Litigation Associate,Bay Area,benefits_tag,1,offer,firm offer
+round2_final_heldout,final_hit_sample,f5f3e7a9ce71b513,"Head of Series Production, Apple TV",Rest of CA,description,1,offer,conditional; Apple boilerplate
+round2_final_heldout,final_hit_sample,4855803e3e58dd4a,"Engineering Manager, Applied AI",Bay Area,benefits_tag,1,offer,firm offer
+round2_final_heldout,final_hit_sample,437de72c208080a8,Non-CDL Box Truck driver,Bay Area,benefits_tag,1,offer,firm offer
+round2_final_heldout,final_hit_sample,9cf8dd6f01a849b1,Physical Therapist [SCAL Posting],Rest of CA,benefits_tag,1,offer,firm offer
+round2_final_heldout,final_hit_sample,ecadd0f368b589af,"Sr. Content Support Engineer, ASE",Bay Area,description,1,offer,conditional; Apple boilerplate
+round2_final_heldout,final_hit_sample,6c7e7a7f6b6908fe,Physician Assistant (2 years' experience required),Bay Area,benefits_tag,1,offer,firm offer
+round2_final_heldout,final_hit_sample,d30d09056247870b,Wireless RTL Design Engineer,Bay Area,description,1,offer,conditional; Apple boilerplate
+round2_final_heldout,final_hit_sample,bbaa9e6198ac4312,Engineer/Principal Engineer - Survivability (California),Rest of CA,benefits_tag,1,offer,conditional wording (may/might/considered)
+round2_final_heldout,final_hit_sample,ebb2462346a869d7,"Software Performance Engineer, Vision Products Group",Bay Area,description,1,offer,conditional; Apple boilerplate
+round2_final_heldout,final_hit_sample,c832897a2636248b,Display Algorithm Engineer / Machine Learning Engineer,Bay Area,description,1,offer,conditional; Apple boilerplate
+round2_final_heldout,final_hit_sample,75b4ab47d9acbadb,Calibration Algorithm Architect,Bay Area,description,1,offer,conditional; Apple boilerplate
+round2_final_heldout,final_hit_sample,9e0fd3cb4e1fadf2,CAM Technician,Rest of CA,benefits_tag,1,offer,conditional wording (may/might/considered)
+round2_final_heldout,final_hit_sample,08176cd46d9c3761,Primary Care Physician - Family Medicine,Unknown,description,1,offer,firm offer
+round2_final_heldout,final_hit_sample,a9af9d06a5b80512,Senior Project Geotechnical Engineer,Rest of CA,description,1,offer,conditional wording (may/might/considered)
+round2_final_heldout,final_hit_sample,4c2a655375d6bde9,Flight Controls Tools and Software Engineer,Rest of CA,benefits_tag,1,offer,firm offer
+round2_final_heldout,final_hit_sample,0e4190d72b6d6083,BCBA (Remote),Bay Area,benefits_tag,1,offer,firm offer
+round2_final_heldout,final_hit_sample,d8deb6be891bebdd,"Early Intervention Specialist-Bilingual (Hiring/Relocation $2,000)",Rest of CA,description,1,offer,firm offer
+round2_final_heldout,final_hit_sample,807769c28a476023,Principal/Sr. Principal Scientist - Development,Bay Area,description,1,offer,firm offer

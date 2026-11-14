@@ -1,0 +1,40 @@
+{
+ "val_mae_lgb_recent": 0.03962085332701654,
+ "val_mae_ridge_recent": 0.041798072998030435,
+ "val_ap_lgb_recent": 0.402360224534626,
+ "val_ap_logit_recent": 0.3691753702931825,
+ "lgb_reg": {
+  "objective": "l1",
+  "num_leaves": 63,
+  "min_child_samples": 100,
+  "learning_rate": 0.03,
+  "n_estimators": 1058,
+  "subsample": 0.8,
+  "subsample_freq": 1,
+  "colsample_bytree": 0.8,
+  "reg_lambda": 1.0,
+  "verbose": -1,
+  "random_state": 42,
+  "deterministic": true,
+  "force_row_wise": true,
+  "n_jobs": 4
+ },
+ "lgb_clf": {
+  "objective": "binary",
+  "num_leaves": 15,
+  "min_child_samples": 20,
+  "learning_rate": 0.03,
+  "n_estimators": 160,
+  "subsample": 0.8,
+  "subsample_freq": 1,
+  "colsample_bytree": 0.8,
+  "reg_lambda": 1.0,
+  "verbose": -1,
+  "random_state": 42,
+  "deterministic": true,
+  "force_row_wise": true,
+  "n_jobs": 4
+ },
+ "ridge_alpha": 1000,
+ "logit_C": 1
+}

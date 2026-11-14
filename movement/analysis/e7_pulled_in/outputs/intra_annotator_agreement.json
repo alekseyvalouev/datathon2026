@@ -1,0 +1,7 @@
+{
+ "n": 80,
+ "raw_agreement_4class": 0.9375,
+ "kappa_4class": 0.9036608863198459,
+ "raw_agreement_arrival_vs_not": 0.95,
+ "kappa_arrival_vs_not": 0.8813056379821959
+}

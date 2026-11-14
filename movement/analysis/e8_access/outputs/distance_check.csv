@@ -1,0 +1,4 @@
+service,n_checked,max_abs_diff_m
+grocery,300,4.547473508864641e-13
+clinic,300,9.094947017729282e-13
+transit,300,4.547473508864641e-13

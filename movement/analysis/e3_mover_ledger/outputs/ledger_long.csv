@@ -1,0 +1,829 @@
+origin,occ,occupation,beds,scenario,group,wage_source,hourly,indeed_n,indeed_wage_from,gross_monthly,rent,residual,rent_burden
+Bay Area,cna,CNA / nursing assistant,1,Stay (in-place),Bay,OEWS median,26.96,,,4664.08,2895.0,1769.08,0.6207011886588566
+Bay Area,cna,CNA / nursing assistant,1,Stay (in-place),Bay,Indeed posted median,26.134999999999998,73.0,Bay Area,4521.355,2895.0,1626.3549999999996,0.6402947788881873
+Bay Area,cna,CNA / nursing assistant,1,Stay +1y at AB1482 max (+8%),Bay,OEWS median,26.96,,,4664.08,3126.6000000000004,1537.4799999999996,0.6703572837515652
+Bay Area,cna,CNA / nursing assistant,1,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,26.134999999999998,73.0,Bay Area,4521.355,3126.6000000000004,1394.7549999999992,0.6915183611992424
+Bay Area,cna,CNA / nursing assistant,1,Re-rent in Bay (turnover),Bay,OEWS median,26.96,,,4664.08,3186.270839997912,1477.809160002088,0.6831509836876537
+Bay Area,cna,CNA / nursing assistant,1,Re-rent in Bay (turnover),Bay,Indeed posted median,26.134999999999998,73.0,Bay Area,4521.355,3186.270839997912,1335.0841600020876,0.7047159181258521
+Bay Area,cna,CNA / nursing assistant,1,Sacramento,CA inland,OEWS median,22.84,,,3951.32,1905.6103107719068,2045.7096892280933,0.4822718258131224
+Bay Area,cna,CNA / nursing assistant,1,Sacramento,CA inland,Indeed posted median,23.0,17.0,Sacramento,3979.0,1905.6103107719068,2073.389689228093,0.4789168913726833
+Bay Area,cna,CNA / nursing assistant,1,Stockton,CA inland,OEWS median,22.37,,,3870.01,2041.8613764193376,1828.1486235806626,0.5276113954277476
+Bay Area,cna,CNA / nursing assistant,1,Modesto,CA inland,OEWS median,22.38,,,3871.74,1736.761010231796,2134.978989768204,0.4485737705093307
+Bay Area,cna,CNA / nursing assistant,1,Fresno,CA inland,OEWS median,21.5,,,3719.5,1723.2682644004824,1996.2317355995176,0.46330642946645584
+Bay Area,cna,CNA / nursing assistant,1,Phoenix,Out of state,OEWS median,21.77,,,3766.21,1444.6901135168466,2321.5198864831536,0.38359255419024607
+Bay Area,cna,CNA / nursing assistant,1,Las Vegas,Out of state,OEWS median,21.81,,,3773.1299999999997,1454.3292105727357,2318.800789427264,0.3854437060405382
+Bay Area,cna,CNA / nursing assistant,1,Reno,Out of state,OEWS median,22.48,,,3889.04,1737.7436338543932,2151.296366145607,0.4468310004151136
+Bay Area,cna,CNA / nursing assistant,1,Boise,Out of state,OEWS median,18.85,,,3261.05,1615.6439797877842,1645.406020212216,0.4954367396353273
+Bay Area,cna,CNA / nursing assistant,1,Dallas,Out of state,OEWS median,18.53,,,3205.69,1393.5085888082854,1812.1814111917147,0.43469848575760145
+Bay Area,cna,CNA / nursing assistant,1,Houston,Out of state,OEWS median,18.26,,,3158.9800000000005,1375.2867414527898,1783.6932585472107,0.43535785014555
+Bay Area,cna,CNA / nursing assistant,1,Portland,Out of state,OEWS median,24.21,,,4188.33,1514.1031474339136,2674.2268525660866,0.36150521745753406
+Bay Area,cna,CNA / nursing assistant,2,Stay (in-place),Bay,OEWS median,26.96,,,4664.08,3431.0,1233.08,0.735622030496904
+Bay Area,cna,CNA / nursing assistant,2,Stay (in-place),Bay,Indeed posted median,26.134999999999998,73.0,Bay Area,4521.355,3431.0,1090.3549999999996,0.7588433113524596
+Bay Area,cna,CNA / nursing assistant,2,Stay +1y at AB1482 max (+8%),Bay,OEWS median,26.96,,,4664.08,3705.48,958.5999999999999,0.7944717929366564
+Bay Area,cna,CNA / nursing assistant,2,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,26.134999999999998,73.0,Bay Area,4521.355,3705.48,815.8749999999995,0.8195507762606564
+Bay Area,cna,CNA / nursing assistant,2,Re-rent in Bay (turnover),Bay,OEWS median,26.96,,,4664.08,3776.1987053654007,887.8812946345993,0.8096342055379412
+Bay Area,cna,CNA / nursing assistant,2,Re-rent in Bay (turnover),Bay,Indeed posted median,26.134999999999998,73.0,Bay Area,4521.355,3776.1987053654007,745.1562946345989,0.8351918186838683
+Bay Area,cna,CNA / nursing assistant,2,Sacramento,CA inland,OEWS median,22.84,,,3951.32,2298.3221349861615,1652.9978650138387,0.5816593277654458
+Bay Area,cna,CNA / nursing assistant,2,Sacramento,CA inland,Indeed posted median,23.0,17.0,Sacramento,3979.0,2298.3221349861615,1680.6778650138385,0.5776130020070775
+Bay Area,cna,CNA / nursing assistant,2,Stockton,CA inland,OEWS median,22.37,,,3870.01,2462.65208131506,1407.3579186849402,0.6363425627621272
+Bay Area,cna,CNA / nursing assistant,2,Modesto,CA inland,OEWS median,22.38,,,3871.74,2094.6760470559007,1777.0639529440991,0.5410167126552663
+Bay Area,cna,CNA / nursing assistant,2,Fresno,CA inland,OEWS median,21.5,,,3719.5,2078.4026903100043,1641.0973096899957,0.5587855061997592
+Bay Area,cna,CNA / nursing assistant,2,Phoenix,Out of state,OEWS median,21.77,,,3766.21,1742.4146203042203,2023.7953796957797,0.46264404276559734
+Bay Area,cna,CNA / nursing assistant,2,Las Vegas,Out of state,OEWS median,21.81,,,3773.1299999999997,1754.040160951015,2019.0898390489847,0.4648766835362193
+Bay Area,cna,CNA / nursing assistant,2,Reno,Out of state,OEWS median,22.48,,,3889.04,2095.861171637464,1793.178828362536,0.5389147891606834
+Bay Area,cna,CNA / nursing assistant,2,Boise,Out of state,OEWS median,18.85,,,3261.05,1948.598986903709,1312.4510130962913,0.5975372922536326
+Bay Area,cna,CNA / nursing assistant,2,Dallas,Out of state,OEWS median,18.53,,,3205.69,1680.685508913981,1525.004491086019,0.5242819826352457
+Bay Area,cna,CNA / nursing assistant,2,Houston,Out of state,OEWS median,18.26,,,3158.9800000000005,1658.7084683402918,1500.2715316597087,0.5250772300996814
+Bay Area,cna,CNA / nursing assistant,2,Portland,Out of state,OEWS median,24.21,,,4188.33,1826.1324252543404,2362.1975747456595,0.436004905357109
+Bay Area,caregiver,Caregiver / home health aide,1,Stay (in-place),Bay,OEWS median,17.28,,,2989.44,2895.0,94.44000000000005,0.9684087989723827
+Bay Area,caregiver,Caregiver / home health aide,1,Stay (in-place),Bay,Indeed posted median,22.0,393.0,Bay Area,3806.0,2895.0,911.0,0.7606410930110352
+Bay Area,caregiver,Caregiver / home health aide,1,Stay +1y at AB1482 max (+8%),Bay,OEWS median,17.28,,,2989.44,3126.6000000000004,-137.1600000000003,1.0458815028901736
+Bay Area,caregiver,Caregiver / home health aide,1,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,22.0,393.0,Bay Area,3806.0,3126.6000000000004,679.3999999999996,0.8214923804519181
+Bay Area,caregiver,Caregiver / home health aide,1,Re-rent in Bay (turnover),Bay,OEWS median,17.28,,,2989.44,3186.270839997912,-196.83083999791188,1.0658420439941634
+Bay Area,caregiver,Caregiver / home health aide,1,Re-rent in Bay (turnover),Bay,Indeed posted median,22.0,393.0,Bay Area,3806.0,3186.270839997912,619.7291600020881,0.8371704781917793
+Bay Area,caregiver,Caregiver / home health aide,1,Sacramento,CA inland,OEWS median,16.5,,,2854.5,1905.6103107719068,948.8896892280932,0.6675811213073767
+Bay Area,caregiver,Caregiver / home health aide,1,Sacramento,CA inland,Indeed posted median,19.5,76.0,Sacramento,3373.5,1905.6103107719068,1467.8896892280932,0.5648763334139342
+Bay Area,caregiver,Caregiver / home health aide,1,Stockton,CA inland,OEWS median,16.5,,,2854.5,2041.8613764193376,812.6386235806624,0.7153131464071948
+Bay Area,caregiver,Caregiver / home health aide,1,Stockton,CA inland,Indeed posted median,18.5,17.0,Stockton,3200.5,2041.8613764193376,1158.6386235806624,0.6379819954442548
+Bay Area,caregiver,Caregiver / home health aide,1,Modesto,CA inland,OEWS median,16.5,,,2854.5,1736.761010231796,1117.738989768204,0.608429150545383
+Bay Area,caregiver,Caregiver / home health aide,1,Modesto,CA inland,Indeed posted median,18.25,45.0,Central Valley pooled (fallback),3157.25,1736.761010231796,1420.488989768204,0.5500866292602093
+Bay Area,caregiver,Caregiver / home health aide,1,Fresno,CA inland,OEWS median,16.5,,,2854.5,1723.2682644004824,1131.2317355995176,0.6037023171835636
+Bay Area,caregiver,Caregiver / home health aide,1,Fresno,CA inland,Indeed posted median,18.35,15.0,Fresno,3174.55,1723.2682644004824,1451.2817355995178,0.5428385958326322
+Bay Area,caregiver,Caregiver / home health aide,1,Phoenix,Out of state,OEWS median,17.75,,,3070.75,1444.6901135168466,1626.0598864831534,0.4704681636462905
+Bay Area,caregiver,Caregiver / home health aide,1,Las Vegas,Out of state,OEWS median,16.17,,,2797.4100000000003,1454.3292105727357,1343.0807894272646,0.5198841823589447
+Bay Area,caregiver,Caregiver / home health aide,1,Reno,Out of state,OEWS median,17.05,,,2949.65,1737.7436338543932,1211.9063661456069,0.5891355360311878
+Bay Area,caregiver,Caregiver / home health aide,1,Boise,Out of state,OEWS median,17.24,,,2982.5199999999995,1615.6439797877842,1366.8760202122153,0.5417043237892066
+Bay Area,caregiver,Caregiver / home health aide,1,Dallas,Out of state,OEWS median,12.93,,,2236.89,1393.5085888082854,843.3814111917145,0.6229669714685503
+Bay Area,caregiver,Caregiver / home health aide,1,Houston,Out of state,OEWS median,11.27,,,1949.71,1375.2867414527898,574.4232585472103,0.7053801547167475
+Bay Area,caregiver,Caregiver / home health aide,1,Portland,Out of state,OEWS median,21.91,,,3790.43,1514.1031474339136,2276.326852566086,0.3994541905361433
+Bay Area,caregiver,Caregiver / home health aide,2,Stay (in-place),Bay,OEWS median,17.28,,,2989.44,3431.0,-441.55999999999995,1.147706593877114
+Bay Area,caregiver,Caregiver / home health aide,2,Stay (in-place),Bay,Indeed posted median,22.0,393.0,Bay Area,3806.0,3431.0,375.0,0.9014713610089332
+Bay Area,caregiver,Caregiver / home health aide,2,Stay +1y at AB1482 max (+8%),Bay,OEWS median,17.28,,,2989.44,3705.48,-716.04,1.2395231213872833
+Bay Area,caregiver,Caregiver / home health aide,2,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,22.0,393.0,Bay Area,3806.0,3705.48,100.51999999999998,0.9735890698896479
+Bay Area,caregiver,Caregiver / home health aide,2,Re-rent in Bay (turnover),Bay,OEWS median,17.28,,,2989.44,3776.1987053654007,-786.7587053654006,1.263179292899473
+Bay Area,caregiver,Caregiver / home health aide,2,Re-rent in Bay (turnover),Bay,Indeed posted median,22.0,393.0,Bay Area,3806.0,3776.1987053654007,29.801294634599344,0.9921699173319497
+Bay Area,caregiver,Caregiver / home health aide,2,Sacramento,CA inland,OEWS median,16.5,,,2854.5,2298.3221349861615,556.1778650138385,0.8051575179492596
+Bay Area,caregiver,Caregiver / home health aide,2,Sacramento,CA inland,Indeed posted median,19.5,76.0,Sacramento,3373.5,2298.3221349861615,1075.1778650138385,0.6812871305724504
+Bay Area,caregiver,Caregiver / home health aide,2,Stockton,CA inland,OEWS median,16.5,,,2854.5,2462.65208131506,391.84791868493994,0.8627262502417447
+Bay Area,caregiver,Caregiver / home health aide,2,Stockton,CA inland,Indeed posted median,18.5,17.0,Stockton,3200.5,2462.65208131506,737.8479186849399,0.7694585475129074
+Bay Area,caregiver,Caregiver / home health aide,2,Modesto,CA inland,OEWS median,16.5,,,2854.5,2094.6760470559007,759.8239529440993,0.7338153957105975
+Bay Area,caregiver,Caregiver / home health aide,2,Modesto,CA inland,Indeed posted median,18.25,45.0,Central Valley pooled (fallback),3157.25,2094.6760470559007,1062.5739529440993,0.6634495358479375
+Bay Area,caregiver,Caregiver / home health aide,2,Fresno,CA inland,OEWS median,16.5,,,2854.5,2078.4026903100043,776.0973096899957,0.7281144474724135
+Bay Area,caregiver,Caregiver / home health aide,2,Fresno,CA inland,Indeed posted median,18.35,15.0,Fresno,3174.55,2078.4026903100043,1096.1473096899958,0.6547078138035325
+Bay Area,caregiver,Caregiver / home health aide,2,Phoenix,Out of state,OEWS median,17.75,,,3070.75,1742.4146203042203,1328.3353796957797,0.5674231442820875
+Bay Area,caregiver,Caregiver / home health aide,2,Las Vegas,Out of state,OEWS median,16.17,,,2797.4100000000003,1754.040160951015,1043.3698390489853,0.627022910817869
+Bay Area,caregiver,Caregiver / home health aide,2,Reno,Out of state,OEWS median,17.05,,,2949.65,2095.861171637464,853.7888283625362,0.7105457161485138
+Bay Area,caregiver,Caregiver / home health aide,2,Boise,Out of state,OEWS median,17.24,,,2982.5199999999995,1948.598986903709,1033.9210130962906,0.653339788804001
+Bay Area,caregiver,Caregiver / home health aide,2,Dallas,Out of state,OEWS median,12.93,,,2236.89,1680.685508913981,556.2044910860188,0.7513491986257622
+Bay Area,caregiver,Caregiver / home health aide,2,Houston,Out of state,OEWS median,11.27,,,1949.71,1658.7084683402918,291.00153165970823,0.8507462485909657
+Bay Area,caregiver,Caregiver / home health aide,2,Portland,Out of state,OEWS median,21.91,,,3790.43,1826.1324252543404,1964.2975747456594,0.48177447552239205
+Bay Area,med_asst,Medical assistant,1,Stay (in-place),Bay,OEWS median,28.75,,,4973.75,2895.0,2078.75,0.5820557929127922
+Bay Area,med_asst,Medical assistant,1,Stay (in-place),Bay,Indeed posted median,27.725,97.0,Bay Area,4796.425,2895.0,1901.4250000000002,0.6035745372855824
+Bay Area,med_asst,Medical assistant,1,Stay +1y at AB1482 max (+8%),Bay,OEWS median,28.75,,,4973.75,3126.6000000000004,1847.1499999999996,0.6286202563458156
+Bay Area,med_asst,Medical assistant,1,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,27.725,97.0,Bay Area,4796.425,3126.6000000000004,1669.8249999999998,0.6518605002684291
+Bay Area,med_asst,Medical assistant,1,Re-rent in Bay (turnover),Bay,OEWS median,28.75,,,4973.75,3186.270839997912,1787.479160002088,0.6406174093989268
+Bay Area,med_asst,Medical assistant,1,Re-rent in Bay (turnover),Bay,Indeed posted median,27.725,97.0,Bay Area,4796.425,3186.270839997912,1610.1541600020882,0.6643011909907717
+Bay Area,med_asst,Medical assistant,1,Sacramento,CA inland,OEWS median,29.79,,,5153.67,1905.6103107719068,3248.0596892280932,0.3697579221742771
+Bay Area,med_asst,Medical assistant,1,Sacramento,CA inland,Indeed posted median,33.125,22.0,Sacramento,5730.625,1905.6103107719068,3825.014689228093,0.3325309736323537
+Bay Area,med_asst,Medical assistant,1,Stockton,CA inland,OEWS median,23.0,,,3979.0,2041.8613764193376,1937.1386235806624,0.513159431118205
+Bay Area,med_asst,Medical assistant,1,Stockton,CA inland,Indeed posted median,26.278846153846153,41.0,Central Valley pooled (fallback),4546.240384615385,2041.8613764193376,2504.379008196047,0.449131854824276
+Bay Area,med_asst,Medical assistant,1,Modesto,CA inland,OEWS median,24.04,,,4158.92,1736.761010231796,2422.1589897682043,0.4175990425956248
+Bay Area,med_asst,Medical assistant,1,Modesto,CA inland,Indeed posted median,26.278846153846153,41.0,Central Valley pooled (fallback),4546.240384615385,1736.761010231796,2809.479374383589,0.38202137663222735
+Bay Area,med_asst,Medical assistant,1,Fresno,CA inland,OEWS median,22.36,,,3868.2799999999997,1723.2682644004824,2145.011735599517,0.4454869514100537
+Bay Area,med_asst,Medical assistant,1,Fresno,CA inland,Indeed posted median,26.305,27.0,Fresno,4550.765,1723.2682644004824,2827.4967355995177,0.37867661028431093
+Bay Area,med_asst,Medical assistant,1,Phoenix,Out of state,OEWS median,22.51,,,3894.2300000000005,1444.6901135168466,2449.539886483154,0.37098222588723484
+Bay Area,med_asst,Medical assistant,1,Las Vegas,Out of state,OEWS median,21.26,,,3677.9800000000005,1454.3292105727357,2223.6507894272645,0.39541520360979004
+Bay Area,med_asst,Medical assistant,1,Reno,Out of state,OEWS median,22.6,,,3909.8,1737.7436338543932,2172.056366145607,0.4444584464306085
+Bay Area,med_asst,Medical assistant,1,Boise,Out of state,OEWS median,22.26,,,3850.9800000000005,1615.6439797877842,2235.336020212216,0.41954099470466844
+Bay Area,med_asst,Medical assistant,1,Dallas,Out of state,OEWS median,20.72,,,3584.56,1393.5085888082854,2191.0514111917146,0.3887530376973144
+Bay Area,med_asst,Medical assistant,1,Houston,Out of state,OEWS median,20.25,,,3503.25,1375.2867414527898,2127.96325854721,0.39257453548927135
+Bay Area,med_asst,Medical assistant,1,Portland,Out of state,OEWS median,27.04,,,4677.92,1514.1031474339136,3163.8168525660867,0.3236701669617936
+Bay Area,med_asst,Medical assistant,2,Stay (in-place),Bay,OEWS median,28.75,,,4973.75,3431.0,1542.75,0.6898215632068359
+Bay Area,med_asst,Medical assistant,2,Stay (in-place),Bay,Indeed posted median,27.725,97.0,Bay Area,4796.425,3431.0,1365.4250000000002,0.7153244343443294
+Bay Area,med_asst,Medical assistant,2,Stay +1y at AB1482 max (+8%),Bay,OEWS median,28.75,,,4973.75,3705.48,1268.27,0.7450072882633828
+Bay Area,med_asst,Medical assistant,2,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,27.725,97.0,Bay Area,4796.425,3705.48,1090.9450000000002,0.7725503890918757
+Bay Area,med_asst,Medical assistant,2,Re-rent in Bay (turnover),Bay,OEWS median,28.75,,,4973.75,3776.1987053654007,1197.5512946345993,0.759225675871405
+Bay Area,med_asst,Medical assistant,2,Re-rent in Bay (turnover),Bay,Indeed posted median,27.725,97.0,Bay Area,4796.425,3776.1987053654007,1020.2262946345995,0.7872944339514119
+Bay Area,med_asst,Medical assistant,2,Sacramento,CA inland,OEWS median,29.79,,,5153.67,2298.3221349861615,2855.3478650138386,0.4459583432750179
+Bay Area,med_asst,Medical assistant,2,Sacramento,CA inland,Indeed posted median,33.125,22.0,Sacramento,5730.625,2298.3221349861615,3432.3028650138385,0.40105959384642365
+Bay Area,med_asst,Medical assistant,2,Stockton,CA inland,OEWS median,23.0,,,3979.0,2462.65208131506,1516.34791868494,0.6189123099560342
+Bay Area,med_asst,Medical assistant,2,Stockton,CA inland,Indeed posted median,26.278846153846153,41.0,Central Valley pooled (fallback),4546.240384615385,2462.65208131506,2083.5883033003247,0.5416898080551898
+Bay Area,med_asst,Medical assistant,2,Modesto,CA inland,OEWS median,24.04,,,4158.92,2094.6760470559007,2064.2439529440994,0.5036586534619326
+Bay Area,med_asst,Medical assistant,2,Modesto,CA inland,Indeed posted median,26.278846153846153,41.0,Central Valley pooled (fallback),4546.240384615385,2094.6760470559007,2451.564337559484,0.4607490739258636
+Bay Area,med_asst,Medical assistant,2,Fresno,CA inland,OEWS median,22.36,,,3868.2799999999997,2078.4026903100043,1789.8773096899954,0.5372937559613069
+Bay Area,med_asst,Medical assistant,2,Fresno,CA inland,Indeed posted median,26.305,27.0,Fresno,4550.765,2078.4026903100043,2472.362309689996,0.45671501172000845
+Bay Area,med_asst,Medical assistant,2,Phoenix,Out of state,OEWS median,22.51,,,3894.2300000000005,1742.4146203042203,2151.8153796957804,0.4474349538430499
+Bay Area,med_asst,Medical assistant,2,Las Vegas,Out of state,OEWS median,21.26,,,3677.9800000000005,1754.040160951015,1923.9398390489855,0.47690312643108845
+Bay Area,med_asst,Medical assistant,2,Reno,Out of state,OEWS median,22.6,,,3909.8,2095.861171637464,1813.9388283625362,0.5360532947049629
+Bay Area,med_asst,Medical assistant,2,Boise,Out of state,OEWS median,22.26,,,3850.9800000000005,1948.598986903709,1902.3810130962916,0.5060008067826134
+Bay Area,med_asst,Medical assistant,2,Dallas,Out of state,OEWS median,20.72,,,3584.56,1680.685508913981,1903.874491086019,0.46886800860188727
+Bay Area,med_asst,Medical assistant,2,Houston,Out of state,OEWS median,20.25,,,3503.25,1658.7084683402918,1844.5415316597082,0.4734770479812436
+Bay Area,med_asst,Medical assistant,2,Portland,Out of state,OEWS median,27.04,,,4677.92,1826.1324252543404,2851.7875747456596,0.3903727351588613
+Bay Area,warehouse,Warehouse / material handler,1,Stay (in-place),Bay,OEWS median,23.27,,,4025.71,2895.0,1130.71,0.719127806026763
+Bay Area,warehouse,Warehouse / material handler,1,Stay (in-place),Bay,Indeed posted median,22.6,375.0,Bay Area,3909.8,2895.0,1014.8000000000002,0.7404470816921581
+Bay Area,warehouse,Warehouse / material handler,1,Stay +1y at AB1482 max (+8%),Bay,OEWS median,23.27,,,4025.71,3126.6000000000004,899.1099999999997,0.7766580305089041
+Bay Area,warehouse,Warehouse / material handler,1,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,22.6,375.0,Bay Area,3909.8,3126.6000000000004,783.1999999999998,0.7996828482275309
+Bay Area,warehouse,Warehouse / material handler,1,Re-rent in Bay (turnover),Bay,OEWS median,23.27,,,4025.71,3186.270839997912,839.4391600020881,0.7914804692831605
+Bay Area,warehouse,Warehouse / material handler,1,Re-rent in Bay (turnover),Bay,Indeed posted median,22.6,375.0,Bay Area,3909.8,3186.270839997912,723.5291600020882,0.8149447132840328
+Bay Area,warehouse,Warehouse / material handler,1,Sacramento,CA inland,OEWS median,22.08,,,3819.8399999999997,1905.6103107719068,1914.2296892280929,0.49887176184654514
+Bay Area,warehouse,Warehouse / material handler,1,Sacramento,CA inland,Indeed posted median,22.5,128.0,Sacramento,3892.5,1905.6103107719068,1986.8896892280932,0.4895594889587429
+Bay Area,warehouse,Warehouse / material handler,1,Stockton,CA inland,OEWS median,22.75,,,3935.75,2041.8613764193376,1893.8886235806624,0.5187985457458776
+Bay Area,warehouse,Warehouse / material handler,1,Stockton,CA inland,Indeed posted median,22.5,71.0,Stockton,3892.5,2041.8613764193376,1850.6386235806624,0.5245629740319429
+Bay Area,warehouse,Warehouse / material handler,1,Modesto,CA inland,OEWS median,22.42,,,3878.6600000000003,1736.761010231796,2141.898989768204,0.4477734604816601
+Bay Area,warehouse,Warehouse / material handler,1,Modesto,CA inland,Indeed posted median,22.744999999999997,32.0,Modesto,3934.8849999999998,1736.761010231796,2198.1239897682035,0.4413752905693041
+Bay Area,warehouse,Warehouse / material handler,1,Fresno,CA inland,OEWS median,18.9,,,3269.7,1723.2682644004824,1546.4317355995174,0.5270417054777143
+Bay Area,warehouse,Warehouse / material handler,1,Fresno,CA inland,Indeed posted median,21.0,47.0,Fresno,3633.0,1723.2682644004824,1909.7317355995176,0.47433753492994285
+Bay Area,warehouse,Warehouse / material handler,1,Phoenix,Out of state,OEWS median,21.61,,,3738.5299999999997,1444.6901135168466,2293.8398864831534,0.38643266565116413
+Bay Area,warehouse,Warehouse / material handler,1,Las Vegas,Out of state,OEWS median,18.72,,,3238.56,1454.3292105727357,1784.2307894272642,0.44906662546710135
+Bay Area,warehouse,Warehouse / material handler,1,Reno,Out of state,OEWS median,21.15,,,3658.95,1737.7436338543932,1921.2063661456066,0.47492959287620584
+Bay Area,warehouse,Warehouse / material handler,1,Boise,Out of state,OEWS median,21.39,,,3700.4700000000003,1615.6439797877842,2084.826020212216,0.43660507443318936
+Bay Area,warehouse,Warehouse / material handler,1,Dallas,Out of state,OEWS median,18.52,,,3203.96,1393.5085888082854,1810.4514111917147,0.43493320416243814
+Bay Area,warehouse,Warehouse / material handler,1,Houston,Out of state,OEWS median,18.27,,,3160.71,1375.2867414527898,1785.4232585472103,0.43511955903983274
+Bay Area,warehouse,Warehouse / material handler,1,Portland,Out of state,OEWS median,22.17,,,3835.4100000000003,1514.1031474339136,2321.3068525660865,0.39476956764307164
+Bay Area,warehouse,Warehouse / material handler,2,Stay (in-place),Bay,OEWS median,23.27,,,4025.71,3431.0,594.71,0.8522720215812862
+Bay Area,warehouse,Warehouse / material handler,2,Stay (in-place),Bay,Indeed posted median,22.6,375.0,Bay Area,3909.8,3431.0,478.8000000000002,0.8775384930175456
+Bay Area,warehouse,Warehouse / material handler,2,Stay +1y at AB1482 max (+8%),Bay,OEWS median,23.27,,,4025.71,3705.48,320.23,0.9204537833077892
+Bay Area,warehouse,Warehouse / material handler,2,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,22.6,375.0,Bay Area,3909.8,3705.48,204.32000000000016,0.9477415724589493
+Bay Area,warehouse,Warehouse / material handler,2,Re-rent in Bay (turnover),Bay,OEWS median,23.27,,,4025.71,3776.1987053654007,249.51129463459938,0.9380205492609752
+Bay Area,warehouse,Warehouse / material handler,2,Re-rent in Bay (turnover),Bay,Indeed posted median,22.6,375.0,Bay Area,3909.8,3776.1987053654007,133.60129463459953,0.9658291230664997
+Bay Area,warehouse,Warehouse / material handler,2,Sacramento,CA inland,OEWS median,22.08,,,3819.8399999999997,2298.3221349861615,1521.5178650138382,0.6016802104240392
+Bay Area,warehouse,Warehouse / material handler,2,Sacramento,CA inland,Indeed posted median,22.5,128.0,Sacramento,3892.5,2298.3221349861615,1594.1778650138385,0.5904488464961237
+Bay Area,warehouse,Warehouse / material handler,2,Stockton,CA inland,OEWS median,22.75,,,3935.75,2462.65208131506,1473.09791868494,0.6257135441313753
+Bay Area,warehouse,Warehouse / material handler,2,Stockton,CA inland,Indeed posted median,22.5,71.0,Stockton,3892.5,2462.65208131506,1429.84791868494,0.632665916843946
+Bay Area,warehouse,Warehouse / material handler,2,Modesto,CA inland,OEWS median,22.42,,,3878.6600000000003,2094.6760470559007,1783.9839529440997,0.5400514732036066
+Bay Area,warehouse,Warehouse / material handler,2,Modesto,CA inland,Indeed posted median,22.744999999999997,32.0,Modesto,3934.8849999999998,2094.6760470559007,1840.208952944099,0.5323347561760765
+Bay Area,warehouse,Warehouse / material handler,2,Fresno,CA inland,OEWS median,18.9,,,3269.7,2078.4026903100043,1191.2973096899955,0.6356554700155991
+Bay Area,warehouse,Warehouse / material handler,2,Fresno,CA inland,Indeed posted median,21.0,47.0,Fresno,3633.0,2078.4026903100043,1554.5973096899957,0.5720899230140392
+Bay Area,warehouse,Warehouse / material handler,2,Phoenix,Out of state,OEWS median,21.61,,,3738.5299999999997,1742.4146203042203,1996.1153796957794,0.4660694498383644
+Bay Area,warehouse,Warehouse / material handler,2,Las Vegas,Out of state,OEWS median,18.72,,,3238.56,1754.040160951015,1484.519839048985,0.5416111361071017
+Bay Area,warehouse,Warehouse / material handler,2,Reno,Out of state,OEWS median,21.15,,,3658.95,2095.861171637464,1563.0888283625359,0.5728039933963197
+Bay Area,warehouse,Warehouse / material handler,2,Boise,Out of state,OEWS median,21.39,,,3700.4700000000003,1948.598986903709,1751.8710130962913,0.5265814847583439
+Bay Area,warehouse,Warehouse / material handler,2,Dallas,Out of state,OEWS median,18.52,,,3203.96,1680.685508913981,1523.274491086019,0.524565072258699
+Bay Area,warehouse,Warehouse / material handler,2,Houston,Out of state,OEWS median,18.27,,,3160.71,1658.7084683402918,1502.0015316597082,0.5247898315063045
+Bay Area,warehouse,Warehouse / material handler,2,Portland,Out of state,OEWS median,22.17,,,3835.4100000000003,1826.1324252543404,2009.2775747456599,0.4761244365672354
+Bay Area,cashier,Cashier / retail sales,1,Stay (in-place),Bay,OEWS median,19.84,,,3432.32,2895.0,537.3200000000002,0.8434528249114301
+Bay Area,cashier,Cashier / retail sales,1,Stay (in-place),Bay,Indeed posted median,19.59,907.0,Bay Area,3389.07,2895.0,494.07000000000016,0.8542166435039701
+Bay Area,cashier,Cashier / retail sales,1,Stay +1y at AB1482 max (+8%),Bay,OEWS median,19.84,,,3432.32,3126.6000000000004,305.7199999999998,0.9109290509043446
+Bay Area,cashier,Cashier / retail sales,1,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,19.59,907.0,Bay Area,3389.07,3126.6000000000004,262.4699999999998,0.9225539749842878
+Bay Area,cashier,Cashier / retail sales,1,Re-rent in Bay (turnover),Bay,OEWS median,19.84,,,3432.32,3186.270839997912,246.04916000208823,0.9283140383174971
+Bay Area,cashier,Cashier / retail sales,1,Re-rent in Bay (turnover),Bay,Indeed posted median,19.59,907.0,Bay Area,3389.07,3186.270839997912,202.79916000208823,0.9401608228799971
+Bay Area,cashier,Cashier / retail sales,1,Sacramento,CA inland,OEWS median,17.69,,,3060.3700000000003,1905.6103107719068,1154.7596892280935,0.6226731770249697
+Bay Area,cashier,Cashier / retail sales,1,Sacramento,CA inland,Indeed posted median,18.0,222.0,Sacramento,3114.0,1905.6103107719068,1208.3896892280932,0.6119493611984287
+Bay Area,cashier,Cashier / retail sales,1,Stockton,CA inland,OEWS median,17.47,,,3022.31,2041.8613764193376,980.4486235806623,0.6755962745116608
+Bay Area,cashier,Cashier / retail sales,1,Stockton,CA inland,Indeed posted median,17.8625,76.0,Stockton,3090.2125,2041.8613764193376,1048.3511235806625,0.6607511219436649
+Bay Area,cashier,Cashier / retail sales,1,Modesto,CA inland,OEWS median,17.54,,,3034.42,1736.761010231796,1297.658989768204,0.5723535338653831
+Bay Area,cashier,Cashier / retail sales,1,Modesto,CA inland,Indeed posted median,17.45,90.0,Modesto,3018.85,1736.761010231796,1282.0889897682039,0.5753055005156917
+Bay Area,cashier,Cashier / retail sales,1,Fresno,CA inland,OEWS median,16.96,,,2934.08,1723.2682644004824,1210.8117355995175,0.5873283156561793
+Bay Area,cashier,Cashier / retail sales,1,Fresno,CA inland,Indeed posted median,17.52,107.0,Fresno,3030.96,1723.2682644004824,1307.6917355995176,0.5685552644708219
+Bay Area,cashier,Cashier / retail sales,1,Phoenix,Out of state,OEWS median,16.79,,,2904.67,1444.6901135168466,1459.9798864831535,0.4973680705611469
+Bay Area,cashier,Cashier / retail sales,1,Las Vegas,Out of state,OEWS median,14.11,,,2441.0299999999997,1454.3292105727357,986.700789427264,0.5957850622781105
+Bay Area,cashier,Cashier / retail sales,1,Reno,Out of state,OEWS median,15.0,,,2595.0,1737.7436338543932,857.2563661456068,0.6696507259554502
+Bay Area,cashier,Cashier / retail sales,1,Boise,Out of state,OEWS median,15.38,,,2660.7400000000002,1615.6439797877842,1045.096020212216,0.6072160300471989
+Bay Area,cashier,Cashier / retail sales,1,Dallas,Out of state,OEWS median,14.38,,,2487.7400000000002,1393.5085888082854,1094.2314111917149,0.5601504131493987
+Bay Area,cashier,Cashier / retail sales,1,Houston,Out of state,OEWS median,14.11,,,2441.0299999999997,1375.2867414527898,1065.74325854721,0.5634042766589472
+Bay Area,cashier,Cashier / retail sales,1,Portland,Out of state,OEWS median,17.58,,,3041.3399999999997,1514.1031474339136,1527.236852566086,0.49784080288093857
+Bay Area,cashier,Cashier / retail sales,2,Stay (in-place),Bay,OEWS median,19.84,,,3432.32,3431.0,1.3200000000001637,0.9996154204736155
+Bay Area,cashier,Cashier / retail sales,2,Stay (in-place),Bay,Indeed posted median,19.59,907.0,Bay Area,3389.07,3431.0,-41.929999999999836,1.0123721256863978
+Bay Area,cashier,Cashier / retail sales,2,Stay +1y at AB1482 max (+8%),Bay,OEWS median,19.84,,,3432.32,3705.48,-273.15999999999985,1.0795846541115046
+Bay Area,cashier,Cashier / retail sales,2,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,19.59,907.0,Bay Area,3389.07,3705.48,-316.40999999999985,1.0933618957413096
+Bay Area,cashier,Cashier / retail sales,2,Re-rent in Bay (turnover),Bay,OEWS median,19.84,,,3432.32,3776.1987053654007,-343.8787053654005,1.1001884163963151
+Bay Area,cashier,Cashier / retail sales,2,Re-rent in Bay (turnover),Bay,Indeed posted median,19.59,907.0,Bay Area,3389.07,3776.1987053654007,-387.1287053654005,1.1142285952681414
+Bay Area,cashier,Cashier / retail sales,2,Sacramento,CA inland,OEWS median,17.69,,,3060.3700000000003,2298.3221349861615,762.0478650138389,0.7509948584603042
+Bay Area,cashier,Cashier / retail sales,2,Sacramento,CA inland,Indeed posted median,18.0,222.0,Sacramento,3114.0,2298.3221349861615,815.6778650138385,0.7380610581201547
+Bay Area,cashier,Cashier / retail sales,2,Stockton,CA inland,OEWS median,17.47,,,3022.31,2462.65208131506,559.6579186849399,0.8148244492838458
+Bay Area,cashier,Cashier / retail sales,2,Stockton,CA inland,Indeed posted median,17.8625,76.0,Stockton,3090.2125,2462.65208131506,627.56041868494,0.7969199792296031
+Bay Area,cashier,Cashier / retail sales,2,Modesto,CA inland,OEWS median,17.54,,,3034.42,2094.6760470559007,939.7439529440994,0.6903052468201174
+Bay Area,cashier,Cashier / retail sales,2,Modesto,CA inland,Indeed posted median,17.45,90.0,Modesto,3018.85,2094.6760470559007,924.1739529440993,0.693865560414032
+Bay Area,cashier,Cashier / retail sales,2,Fresno,CA inland,OEWS median,16.96,,,2934.08,2078.4026903100043,855.6773096899956,0.7083660603357796
+Bay Area,cashier,Cashier / retail sales,2,Fresno,CA inland,Indeed posted median,17.52,107.0,Fresno,3030.96,2078.4026903100043,952.5573096899957,0.6857242227908004
+Bay Area,cashier,Cashier / retail sales,2,Phoenix,Out of state,OEWS median,16.79,,,2904.67,1742.4146203042203,1162.2553796957798,0.5998666355572992
+Bay Area,cashier,Cashier / retail sales,2,Las Vegas,Out of state,OEWS median,14.11,,,2441.0299999999997,1754.040160951015,686.9898390489848,0.7185655895056657
+Bay Area,cashier,Cashier / retail sales,2,Reno,Out of state,OEWS median,15.0,,,2595.0,2095.861171637464,499.13882836253606,0.8076536306888108
+Bay Area,cashier,Cashier / retail sales,2,Boise,Out of state,OEWS median,15.38,,,2660.7400000000002,1948.598986903709,712.1410130962913,0.7323522730156681
+Bay Area,cashier,Cashier / retail sales,2,Dallas,Out of state,OEWS median,14.38,,,2487.7400000000002,1680.685508913981,807.0544910860192,0.6755872836043882
+Bay Area,cashier,Cashier / retail sales,2,Houston,Out of state,OEWS median,14.11,,,2441.0299999999997,1658.7084683402918,782.321531659708,0.6795117095407643
+Bay Area,cashier,Cashier / retail sales,2,Portland,Out of state,OEWS median,17.58,,,3041.3399999999997,1826.1324252543404,1215.2075747456593,0.6004367894593635
+Bay Area,cook,Cook,1,Stay (in-place),Bay,OEWS median,22.13,,,3828.49,2895.0,933.4899999999998,0.756172799197595
+Bay Area,cook,Cook,1,Stay (in-place),Bay,Indeed posted median,24.5,396.0,Bay Area,4238.5,2895.0,1343.5,0.6830246549486847
+Bay Area,cook,Cook,1,Stay +1y at AB1482 max (+8%),Bay,OEWS median,22.13,,,3828.49,3126.6000000000004,701.8899999999994,0.8166666231334027
+Bay Area,cook,Cook,1,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,24.5,396.0,Bay Area,4238.5,3126.6000000000004,1111.8999999999996,0.7376666273445796
+Bay Area,cook,Cook,1,Re-rent in Bay (turnover),Bay,OEWS median,22.13,,,3828.49,3186.270839997912,642.2191600020878,0.8322526217902912
+Bay Area,cook,Cook,1,Re-rent in Bay (turnover),Bay,Indeed posted median,24.5,396.0,Bay Area,4238.5,3186.270839997912,1052.229160002088,0.7517449191926181
+Bay Area,cook,Cook,1,Sacramento,CA inland,OEWS median,21.27,,,3679.71,1905.6103107719068,1774.0996892280932,0.5178696991806166
+Bay Area,cook,Cook,1,Sacramento,CA inland,Indeed posted median,23.5,94.0,Sacramento,4065.5,1905.6103107719068,2159.889689228093,0.4687271702796475
+Bay Area,cook,Cook,1,Stockton,CA inland,OEWS median,19.79,,,3423.67,2041.8613764193376,1381.8086235806625,0.5963954985203999
+Bay Area,cook,Cook,1,Stockton,CA inland,Indeed posted median,23.5,26.0,Stockton,4065.5,2041.8613764193376,2023.6386235806624,0.5022411453497325
+Bay Area,cook,Cook,1,Modesto,CA inland,OEWS median,20.15,,,3485.95,1736.761010231796,1749.1889897682038,0.49821741856073554
+Bay Area,cook,Cook,1,Modesto,CA inland,Indeed posted median,23.5,23.0,Modesto,4065.5,1736.761010231796,2328.738989768204,0.42719493548931153
+Bay Area,cook,Cook,1,Fresno,CA inland,OEWS median,18.4,,,3183.2,1723.2682644004824,1459.9317355995174,0.5413634909526522
+Bay Area,cook,Cook,1,Fresno,CA inland,Indeed posted median,22.0,25.0,Fresno,3806.0,1723.2682644004824,2082.7317355995174,0.45277673788767275
+Bay Area,cook,Cook,1,Phoenix,Out of state,OEWS median,18.83,,,3257.5899999999997,1444.6901135168466,1812.899886483153,0.44348432845043323
+Bay Area,cook,Cook,1,Las Vegas,Out of state,OEWS median,18.65,,,3226.45,1454.3292105727357,1772.120789427264,0.4507521302275677
+Bay Area,cook,Cook,1,Reno,Out of state,OEWS median,18.72,,,3238.56,1737.7436338543932,1500.8163661456067,0.5365791073360979
+Bay Area,cook,Cook,1,Boise,Out of state,OEWS median,17.9,,,3096.7,1615.6439797877842,1481.0560202122156,0.5217308682751911
+Bay Area,cook,Cook,1,Dallas,Out of state,OEWS median,17.54,,,3034.42,1393.5085888082854,1640.9114111917147,0.45923391910423916
+Bay Area,cook,Cook,1,Houston,Out of state,OEWS median,16.85,,,2915.05,1375.2867414527898,1539.7632585472104,0.4717883883476406
+Bay Area,cook,Cook,1,Portland,Out of state,OEWS median,21.73,,,3759.29,1514.1031474339136,2245.1868525660866,0.4027630609593603
+Bay Area,cook,Cook,2,Stay (in-place),Bay,OEWS median,22.13,,,3828.49,3431.0,397.4899999999998,0.8961757768728664
+Bay Area,cook,Cook,2,Stay (in-place),Bay,Indeed posted median,24.5,396.0,Bay Area,4238.5,3431.0,807.5,0.8094844874365932
+Bay Area,cook,Cook,2,Stay +1y at AB1482 max (+8%),Bay,OEWS median,22.13,,,3828.49,3705.48,123.00999999999976,0.9678698390226957
+Bay Area,cook,Cook,2,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,24.5,396.0,Bay Area,4238.5,3705.48,533.02,0.8742432464315206
+Bay Area,cook,Cook,2,Re-rent in Bay (turnover),Bay,OEWS median,22.13,,,3828.49,3776.1987053654007,52.291294634599126,0.9863415355310843
+Bay Area,cook,Cook,2,Re-rent in Bay (turnover),Bay,Indeed posted median,24.5,396.0,Bay Area,4238.5,3776.1987053654007,462.30129463459934,0.8909280890327712
+Bay Area,cook,Cook,2,Sacramento,CA inland,OEWS median,21.27,,,3679.71,2298.3221349861615,1381.3878650138386,0.6245932790861675
+Bay Area,cook,Cook,2,Sacramento,CA inland,Indeed posted median,23.5,94.0,Sacramento,4065.5,2298.3221349861615,1767.1778650138385,0.5653233636665014
+Bay Area,cook,Cook,2,Stockton,CA inland,OEWS median,19.79,,,3423.67,2462.65208131506,961.01791868494,0.7193018256184328
+Bay Area,cook,Cook,2,Stockton,CA inland,Indeed posted median,23.5,26.0,Stockton,4065.5,2462.65208131506,1602.84791868494,0.605743962935693
+Bay Area,cook,Cook,2,Modesto,CA inland,OEWS median,20.15,,,3485.95,2094.6760470559007,1391.2739529440992,0.6008910188200923
+Bay Area,cook,Cook,2,Modesto,CA inland,Indeed posted median,23.5,23.0,Modesto,4065.5,2094.6760470559007,1970.8239529440993,0.515232086349994
+Bay Area,cook,Cook,2,Fresno,CA inland,OEWS median,18.4,,,3183.2,2078.4026903100043,1104.7973096899955,0.6529287164834143
+Bay Area,cook,Cook,2,Fresno,CA inland,Indeed posted median,22.0,25.0,Fresno,3806.0,2078.4026903100043,1727.5973096899957,0.5460858356043101
+Bay Area,cook,Cook,2,Phoenix,Out of state,OEWS median,18.83,,,3257.5899999999997,1742.4146203042203,1515.1753796957794,0.53487842862491
+Bay Area,cook,Cook,2,Las Vegas,Out of state,OEWS median,18.65,,,3226.45,1754.040160951015,1472.4098390489848,0.5436439929182275
+Bay Area,cook,Cook,2,Reno,Out of state,OEWS median,18.72,,,3238.56,2095.861171637464,1142.698828362536,0.6471583579237266
+Bay Area,cook,Cook,2,Boise,Out of state,OEWS median,17.9,,,3096.7,1948.598986903709,1148.101013096291,0.6292501653061998
+Bay Area,cook,Cook,2,Dallas,Out of state,OEWS median,17.54,,,3034.42,1680.685508913981,1353.734491086019,0.5538737250986946
+Bay Area,cook,Cook,2,Houston,Out of state,OEWS median,16.85,,,2915.05,1658.7084683402918,1256.3415316597084,0.5690154434195954
+Bay Area,cook,Cook,2,Portland,Out of state,OEWS median,21.73,,,3759.29,1826.1324252543404,1933.1575747456595,0.48576524430260515
+Bay Area,crew,Fast-food / restaurant crew,1,Stay (in-place),Bay,OEWS median,21.09,,,3648.57,2895.0,753.5700000000002,0.7934615479489224
+Bay Area,crew,Fast-food / restaurant crew,1,Stay (in-place),Bay,Indeed posted median,20.25,608.0,Bay Area,3503.25,2895.0,608.25,0.8263755084564333
+Bay Area,crew,Fast-food / restaurant crew,1,Stay +1y at AB1482 max (+8%),Bay,OEWS median,21.09,,,3648.57,3126.6000000000004,521.9699999999998,0.8569384717848363
+Bay Area,crew,Fast-food / restaurant crew,1,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,20.25,608.0,Bay Area,3503.25,3126.6000000000004,376.64999999999964,0.8924855491329481
+Bay Area,crew,Fast-food / restaurant crew,1,Re-rent in Bay (turnover),Bay,OEWS median,21.09,,,3648.57,3186.270839997912,462.29916000208823,0.8732930545386033
+Bay Area,crew,Fast-food / restaurant crew,1,Re-rent in Bay (turnover),Bay,Indeed posted median,20.25,608.0,Bay Area,3503.25,3186.270839997912,316.97916000208807,0.9095185442083528
+Bay Area,crew,Fast-food / restaurant crew,1,Sacramento,CA inland,OEWS median,20.61,,,3565.5299999999997,1905.6103107719068,1659.919689228093,0.5344535905663133
+Bay Area,crew,Fast-food / restaurant crew,1,Sacramento,CA inland,Indeed posted median,20.0,175.0,Sacramento,3460.0,1905.6103107719068,1554.3896892280932,0.5507544250785857
+Bay Area,crew,Fast-food / restaurant crew,1,Stockton,CA inland,OEWS median,20.07,,,3472.11,2041.8613764193376,1430.2486235806625,0.5880750829954516
+Bay Area,crew,Fast-food / restaurant crew,1,Stockton,CA inland,Indeed posted median,20.0,37.0,Stockton,3460.0,2041.8613764193376,1418.1386235806624,0.5901333457859357
+Bay Area,crew,Fast-food / restaurant crew,1,Modesto,CA inland,OEWS median,20.5,,,3546.5,1736.761010231796,1809.738989768204,0.4897112675121376
+Bay Area,crew,Fast-food / restaurant crew,1,Modesto,CA inland,Indeed posted median,20.0,48.0,Modesto,3460.0,1736.761010231796,1723.238989768204,0.501954049199941
+Bay Area,crew,Fast-food / restaurant crew,1,Fresno,CA inland,OEWS median,18.98,,,3283.54,1723.2682644004824,1560.2717355995176,0.5248202441269125
+Bay Area,crew,Fast-food / restaurant crew,1,Fresno,CA inland,Indeed posted median,20.0,87.0,Fresno,3460.0,1723.2682644004824,1736.7317355995176,0.49805441167644
+Bay Area,crew,Fast-food / restaurant crew,1,Phoenix,Out of state,OEWS median,16.61,,,2873.5299999999997,1444.6901135168466,1428.8398864831531,0.5027579713860119
+Bay Area,crew,Fast-food / restaurant crew,1,Las Vegas,Out of state,OEWS median,15.36,,,2657.2799999999997,1454.3292105727357,1202.950789427264,0.5472999497880299
+Bay Area,crew,Fast-food / restaurant crew,1,Reno,Out of state,OEWS median,15.16,,,2622.68,1737.7436338543932,884.9363661456066,0.6625831721195088
+Bay Area,crew,Fast-food / restaurant crew,1,Boise,Out of state,OEWS median,14.26,,,2466.98,1615.6439797877842,851.3360202122158,0.6549076116497841
+Bay Area,crew,Fast-food / restaurant crew,1,Dallas,Out of state,OEWS median,13.5,,,2335.5,1393.5085888082854,941.9914111917146,0.5966639215621004
+Bay Area,crew,Fast-food / restaurant crew,1,Houston,Out of state,OEWS median,13.25,,,2292.25,1375.2867414527898,916.9632585472102,0.5999724032949241
+Bay Area,crew,Fast-food / restaurant crew,1,Portland,Out of state,OEWS median,17.13,,,2963.49,1514.1031474339136,1449.3868525660862,0.5109189325538178
+Bay Area,crew,Fast-food / restaurant crew,2,Stay (in-place),Bay,OEWS median,21.09,,,3648.57,3431.0,217.57000000000016,0.9403684183118317
+Bay Area,crew,Fast-food / restaurant crew,2,Stay (in-place),Bay,Indeed posted median,20.25,608.0,Bay Area,3503.25,3431.0,72.25,0.979376293441804
+Bay Area,crew,Fast-food / restaurant crew,2,Stay +1y at AB1482 max (+8%),Bay,OEWS median,21.09,,,3648.57,3705.48,-56.909999999999854,1.0155978917767783
+Bay Area,crew,Fast-food / restaurant crew,2,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,20.25,608.0,Bay Area,3503.25,3705.48,-202.23000000000002,1.0577263969171484
+Bay Area,crew,Fast-food / restaurant crew,2,Re-rent in Bay (turnover),Bay,OEWS median,21.09,,,3648.57,3776.1987053654007,-127.62870536540049,1.03498047327183
+Bay Area,crew,Fast-food / restaurant crew,2,Re-rent in Bay (turnover),Bay,Indeed posted median,20.25,608.0,Bay Area,3503.25,3776.1987053654007,-272.94870536540066,1.0779129966075502
+Bay Area,crew,Fast-food / restaurant crew,2,Sacramento,CA inland,OEWS median,20.61,,,3565.5299999999997,2298.3221349861615,1267.2078650138383,0.6445948105852879
+Bay Area,crew,Fast-food / restaurant crew,2,Sacramento,CA inland,Indeed posted median,20.0,175.0,Sacramento,3460.0,2298.3221349861615,1161.6778650138385,0.6642549523081391
+Bay Area,crew,Fast-food / restaurant crew,2,Stockton,CA inland,OEWS median,20.07,,,3472.11,2462.65208131506,1009.4579186849401,0.709266722919222
+Bay Area,crew,Fast-food / restaurant crew,2,Stockton,CA inland,Indeed posted median,20.0,37.0,Stockton,3460.0,2462.65208131506,997.3479186849399,0.7117491564494394
+Bay Area,crew,Fast-food / restaurant crew,2,Modesto,CA inland,OEWS median,20.5,,,3546.5,2094.6760470559007,1451.8239529440993,0.5906319038646273
+Bay Area,crew,Fast-food / restaurant crew,2,Modesto,CA inland,Indeed posted median,20.0,48.0,Modesto,3460.0,2094.6760470559007,1365.3239529440993,0.6053977014612429
+Bay Area,crew,Fast-food / restaurant crew,2,Fresno,CA inland,OEWS median,18.98,,,3283.54,2078.4026903100043,1205.1373096899956,0.6329762056530465
+Bay Area,crew,Fast-food / restaurant crew,2,Fresno,CA inland,Indeed posted median,20.0,87.0,Fresno,3460.0,2078.4026903100043,1381.5973096899957,0.6006944191647411
+Bay Area,crew,Fast-food / restaurant crew,2,Phoenix,Out of state,OEWS median,16.61,,,2873.5299999999997,1742.4146203042203,1131.1153796957794,0.6063672974718275
+Bay Area,crew,Fast-food / restaurant crew,2,Las Vegas,Out of state,OEWS median,15.36,,,2657.2799999999997,1754.040160951015,903.2398390489848,0.6600885721305302
+Bay Area,crew,Fast-food / restaurant crew,2,Reno,Out of state,OEWS median,15.16,,,2622.68,2095.861171637464,526.8188283625359,0.7991295818161057
+Bay Area,crew,Fast-food / restaurant crew,2,Boise,Out of state,OEWS median,14.26,,,2466.98,1948.598986903709,518.3810130962911,0.7898722271375159
+Bay Area,crew,Fast-food / restaurant crew,2,Dallas,Out of state,OEWS median,13.5,,,2335.5,1680.685508913981,654.814491086019,0.7196255657948966
+Bay Area,crew,Fast-food / restaurant crew,2,Houston,Out of state,OEWS median,13.25,,,2292.25,1658.7084683402918,633.5415316597082,0.7236158657826554
+Bay Area,crew,Fast-food / restaurant crew,2,Portland,Out of state,OEWS median,17.13,,,2963.49,1826.1324252543404,1137.3575747456593,0.6162100851544431
+Bay Area,janitor,Janitor / custodian / housekeeper,1,Stay (in-place),Bay,OEWS median,21.24,,,3674.5199999999995,2895.0,779.5199999999995,0.7878580059436335
+Bay Area,janitor,Janitor / custodian / housekeeper,1,Stay (in-place),Bay,Indeed posted median,21.5,407.0,Bay Area,3719.5,2895.0,824.5,0.7783304207554779
+Bay Area,janitor,Janitor / custodian / housekeeper,1,Stay +1y at AB1482 max (+8%),Bay,OEWS median,21.24,,,3674.5199999999995,3126.6000000000004,547.9199999999992,0.8508866464191244
+Bay Area,janitor,Janitor / custodian / housekeeper,1,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,21.5,407.0,Bay Area,3719.5,3126.6000000000004,592.8999999999996,0.8405968544159163
+Bay Area,janitor,Janitor / custodian / housekeeper,1,Re-rent in Bay (turnover),Bay,OEWS median,21.24,,,3674.5199999999995,3186.270839997912,488.2491600020876,0.8671257307071161
+Bay Area,janitor,Janitor / custodian / housekeeper,1,Re-rent in Bay (turnover),Bay,Indeed posted median,21.5,407.0,Bay Area,3719.5,3186.270839997912,533.2291600020881,0.8566395590799601
+Bay Area,janitor,Janitor / custodian / housekeeper,1,Sacramento,CA inland,OEWS median,19.93,,,3447.89,1905.6103107719068,1542.279689228093,0.552688836004602
+Bay Area,janitor,Janitor / custodian / housekeeper,1,Sacramento,CA inland,Indeed posted median,19.45,96.0,Sacramento,3364.85,1905.6103107719068,1459.239689228093,0.5663284576643556
+Bay Area,janitor,Janitor / custodian / housekeeper,1,Stockton,CA inland,OEWS median,19.3,,,3338.9,2041.8613764193376,1297.0386235806625,0.6115371458921613
+Bay Area,janitor,Janitor / custodian / housekeeper,1,Stockton,CA inland,Indeed posted median,18.0,26.0,Stockton,3114.0,2041.8613764193376,1072.1386235806624,0.6557037175399286
+Bay Area,janitor,Janitor / custodian / housekeeper,1,Modesto,CA inland,OEWS median,19.82,,,3428.86,1736.761010231796,1692.098989768204,0.5065126631684571
+Bay Area,janitor,Janitor / custodian / housekeeper,1,Modesto,CA inland,Indeed posted median,17.4,18.0,Modesto,3010.2,1736.761010231796,1273.4389897682038,0.5769586772413116
+Bay Area,janitor,Janitor / custodian / housekeeper,1,Fresno,CA inland,OEWS median,18.26,,,3158.9800000000005,1723.2682644004824,1435.711735599518,0.5455141420333406
+Bay Area,janitor,Janitor / custodian / housekeeper,1,Fresno,CA inland,Indeed posted median,19.0,23.0,Fresno,3287.0,1723.2682644004824,1563.7317355995176,0.5242678017646737
+Bay Area,janitor,Janitor / custodian / housekeeper,1,Phoenix,Out of state,OEWS median,17.44,,,3017.1200000000003,1444.6901135168466,1572.4298864831537,0.4788308431606454
+Bay Area,janitor,Janitor / custodian / housekeeper,1,Las Vegas,Out of state,OEWS median,18.9,,,3269.7,1454.3292105727357,1815.370789427264,0.44478980046265276
+Bay Area,janitor,Janitor / custodian / housekeeper,1,Reno,Out of state,OEWS median,17.89,,,3094.9700000000003,1737.7436338543932,1357.226366145607,0.5614734985652181
+Bay Area,janitor,Janitor / custodian / housekeeper,1,Boise,Out of state,OEWS median,17.38,,,3006.74,1615.6439797877842,1391.0960202122155,0.5373407676712267
+Bay Area,janitor,Janitor / custodian / housekeeper,1,Dallas,Out of state,OEWS median,16.76,,,2899.4800000000005,1393.5085888082854,1505.971411191715,0.48060638073319534
+Bay Area,janitor,Janitor / custodian / housekeeper,1,Houston,Out of state,OEWS median,14.74,,,2550.02,1375.2867414527898,1174.7332585472102,0.5393239039116516
+Bay Area,janitor,Janitor / custodian / housekeeper,1,Portland,Out of state,OEWS median,19.79,,,3423.67,1514.1031474339136,1909.5668525660865,0.4422456450048964
+Bay Area,janitor,Janitor / custodian / housekeeper,2,Stay (in-place),Bay,OEWS median,21.24,,,3674.5199999999995,3431.0,243.51999999999953,0.9337273984084997
+Bay Area,janitor,Janitor / custodian / housekeeper,2,Stay (in-place),Bay,Indeed posted median,21.5,407.0,Bay Area,3719.5,3431.0,288.5,0.922435811264955
+Bay Area,janitor,Janitor / custodian / housekeeper,2,Stay +1y at AB1482 max (+8%),Bay,OEWS median,21.24,,,3674.5199999999995,3705.48,-30.96000000000049,1.0084255902811796
+Bay Area,janitor,Janitor / custodian / housekeeper,2,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,21.5,407.0,Bay Area,3719.5,3705.48,14.019999999999982,0.9962306761661514
+Bay Area,janitor,Janitor / custodian / housekeeper,2,Re-rent in Bay (turnover),Bay,OEWS median,21.24,,,3674.5199999999995,3776.1987053654007,-101.67870536540113,1.0276712891385544
+Bay Area,janitor,Janitor / custodian / housekeeper,2,Re-rent in Bay (turnover),Bay,Indeed posted median,21.5,407.0,Bay Area,3719.5,3776.1987053654007,-56.698705365400656,1.0152436363396695
+Bay Area,janitor,Janitor / custodian / housekeeper,2,Sacramento,CA inland,OEWS median,19.93,,,3447.89,2298.3221349861615,1149.5678650138384,0.6665880103443443
+Bay Area,janitor,Janitor / custodian / housekeeper,2,Sacramento,CA inland,Indeed posted median,19.45,96.0,Sacramento,3364.85,2298.3221349861615,1066.5278650138384,0.6830385113708372
+Bay Area,janitor,Janitor / custodian / housekeeper,2,Stockton,CA inland,OEWS median,19.3,,,3338.9,2462.65208131506,876.24791868494,0.7375638926937195
+Bay Area,janitor,Janitor / custodian / housekeeper,2,Stockton,CA inland,Indeed posted median,18.0,26.0,Stockton,3114.0,2462.65208131506,651.3479186849399,0.7908323960549326
+Bay Area,janitor,Janitor / custodian / housekeeper,2,Modesto,CA inland,OEWS median,19.82,,,3428.86,2094.6760470559007,1334.1839529440995,0.610895763331224
+Bay Area,janitor,Janitor / custodian / housekeeper,2,Modesto,CA inland,Indeed posted median,17.4,18.0,Modesto,3010.2,2094.6760470559007,915.5239529440992,0.695859426966946
+Bay Area,janitor,Janitor / custodian / housekeeper,2,Fresno,CA inland,OEWS median,18.26,,,3158.9800000000005,2078.4026903100043,1080.5773096899961,0.6579347416919398
+Bay Area,janitor,Janitor / custodian / housekeeper,2,Fresno,CA inland,Indeed posted median,19.0,23.0,Fresno,3287.0,2078.4026903100043,1208.5973096899957,0.6323099149102538
+Bay Area,janitor,Janitor / custodian / housekeeper,2,Phoenix,Out of state,OEWS median,17.44,,,3017.1200000000003,1742.4146203042203,1274.70537969578,0.5775092208146245
+Bay Area,janitor,Janitor / custodian / housekeeper,2,Las Vegas,Out of state,OEWS median,18.9,,,3269.7,1754.040160951015,1515.6598390489848,0.5364529348108436
+Bay Area,janitor,Janitor / custodian / housekeeper,2,Reno,Out of state,OEWS median,17.89,,,3094.9700000000003,2095.861171637464,999.1088283625363,0.6771830329978848
+Bay Area,janitor,Janitor / custodian / housekeeper,2,Boise,Out of state,OEWS median,17.38,,,3006.74,1948.598986903709,1058.1410130962909,0.6480769826801482
+Bay Area,janitor,Janitor / custodian / housekeeper,2,Dallas,Out of state,OEWS median,16.76,,,2899.4800000000005,1680.685508913981,1218.7944910860194,0.5796506645722614
+Bay Area,janitor,Janitor / custodian / housekeeper,2,Houston,Out of state,OEWS median,14.74,,,2550.02,1658.7084683402918,891.3115316597082,0.6504688074369188
+Bay Area,janitor,Janitor / custodian / housekeeper,2,Portland,Out of state,OEWS median,19.79,,,3423.67,1826.1324252543404,1597.5375747456596,0.5333844749214558
+Bay Area,security,Security guard,1,Stay (in-place),Bay,OEWS median,21.99,,,3804.2699999999995,2895.0,909.2699999999995,0.7609869961911222
+Bay Area,security,Security guard,1,Stay (in-place),Bay,Indeed posted median,24.57,113.0,Bay Area,4250.61,2895.0,1355.6099999999997,0.6810787157607967
+Bay Area,security,Security guard,1,Stay +1y at AB1482 max (+8%),Bay,OEWS median,21.99,,,3804.2699999999995,3126.6000000000004,677.6699999999992,0.8218659558864121
+Bay Area,security,Security guard,1,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,24.57,113.0,Bay Area,4250.61,3126.6000000000004,1124.0099999999993,0.7355650130216606
+Bay Area,security,Security guard,1,Re-rent in Bay (turnover),Bay,OEWS median,21.99,,,3804.2699999999995,3186.270839997912,617.9991600020876,0.8375511832750863
+Bay Area,security,Security guard,1,Re-rent in Bay (turnover),Bay,Indeed posted median,24.57,113.0,Bay Area,4250.61,3186.270839997912,1064.3391600020877,0.749603195776115
+Bay Area,security,Security guard,1,Sacramento,CA inland,OEWS median,18.97,,,3281.81,1905.6103107719068,1376.1996892280931,0.580658329023285
+Bay Area,security,Security guard,1,Sacramento,CA inland,Indeed posted median,24.01,24.0,Sacramento,4153.7300000000005,1905.6103107719068,2248.1196892280936,0.45877086637116676
+Bay Area,security,Security guard,1,Stockton,CA inland,OEWS median,18.52,,,3203.96,2041.8613764193376,1162.0986235806624,0.63729303000641
+Bay Area,security,Security guard,1,Stockton,CA inland,Indeed posted median,21.225,20.0,Central Valley pooled (fallback),3671.925,2041.8613764193376,1630.0636235806626,0.5560738240621302
+Bay Area,security,Security guard,1,Modesto,CA inland,OEWS median,18.74,,,3242.0199999999995,1736.761010231796,1505.2589897682035,0.5357033609391048
+Bay Area,security,Security guard,1,Modesto,CA inland,Indeed posted median,21.225,20.0,Central Valley pooled (fallback),3671.925,1736.761010231796,1935.1639897682041,0.47298379194340734
+Bay Area,security,Security guard,1,Fresno,CA inland,OEWS median,17.87,,,3091.51,1723.2682644004824,1368.2417355995178,0.557419598966357
+Bay Area,security,Security guard,1,Fresno,CA inland,Indeed posted median,21.225,20.0,Central Valley pooled (fallback),3671.925,1723.2682644004824,1948.6567355995178,0.4693092218388127
+Bay Area,security,Security guard,1,Phoenix,Out of state,OEWS median,18.41,,,3184.93,1444.6901135168466,1740.2398864831532,0.45360184164702105
+Bay Area,security,Security guard,1,Las Vegas,Out of state,OEWS median,17.89,,,3094.9700000000003,1454.3292105727357,1640.6407894272645,0.46990090714053306
+Bay Area,security,Security guard,1,Reno,Out of state,OEWS median,18.93,,,3274.89,1737.7436338543932,1537.1463661456066,0.5306265657333203
+Bay Area,security,Security guard,1,Boise,Out of state,OEWS median,17.97,,,3108.81,1615.6439797877842,1493.1660202122157,0.5196985276642138
+Bay Area,security,Security guard,1,Dallas,Out of state,OEWS median,17.63,,,3049.99,1393.5085888082854,1656.4814111917144,0.45688955990291297
+Bay Area,security,Security guard,1,Houston,Out of state,OEWS median,17.05,,,2949.65,1375.2867414527898,1574.3632585472103,0.4662542137042665
+Bay Area,security,Security guard,1,Portland,Out of state,OEWS median,22.51,,,3894.2300000000005,1514.1031474339136,2380.126852566087,0.3888068109572145
+Bay Area,security,Security guard,2,Stay (in-place),Bay,OEWS median,21.99,,,3804.2699999999995,3431.0,373.2699999999995,0.901881307057596
+Bay Area,security,Security guard,2,Stay (in-place),Bay,Indeed posted median,24.57,113.0,Bay Area,4250.61,3431.0,819.6099999999997,0.8071782638256627
+Bay Area,security,Security guard,2,Stay +1y at AB1482 max (+8%),Bay,OEWS median,21.99,,,3804.2699999999995,3705.48,98.78999999999951,0.9740318116222036
+Bay Area,security,Security guard,2,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,24.57,113.0,Bay Area,4250.61,3705.48,545.1299999999997,0.8717525249317157
+Bay Area,security,Security guard,2,Re-rent in Bay (turnover),Bay,OEWS median,21.99,,,3804.2699999999995,3776.1987053654007,28.07129463459887,0.9926211087450157
+Bay Area,security,Security guard,2,Re-rent in Bay (turnover),Bay,Indeed posted median,24.57,113.0,Bay Area,4250.61,3776.1987053654007,474.411294634599,0.8883898323688603
+Bay Area,security,Security guard,2,Sacramento,CA inland,OEWS median,18.97,,,3281.81,2298.3221349861615,983.4878650138385,0.7003215100771103
+Bay Area,security,Security guard,2,Sacramento,CA inland,Indeed posted median,24.01,24.0,Sacramento,4153.7300000000005,2298.3221349861615,1855.407865013839,0.5533152455711279
+Bay Area,security,Security guard,2,Stockton,CA inland,OEWS median,18.52,,,3203.96,2462.65208131506,741.30791868494,0.7686275987574939
+Bay Area,security,Security guard,2,Stockton,CA inland,Indeed posted median,21.225,20.0,Central Valley pooled (fallback),3671.925,2462.65208131506,1209.2729186849401,0.670670583226798
+Bay Area,security,Security guard,2,Modesto,CA inland,OEWS median,18.74,,,3242.0199999999995,2094.6760470559007,1147.3439529440989,0.6461021360312093
+Bay Area,security,Security guard,2,Modesto,CA inland,Indeed posted median,21.225,20.0,Central Valley pooled (fallback),3671.925,2094.6760470559007,1577.2489529440995,0.5704571980789097
+Bay Area,security,Security guard,2,Fresno,CA inland,OEWS median,17.87,,,3091.51,2078.4026903100043,1013.1073096899959,0.6722936980019486
+Bay Area,security,Security guard,2,Fresno,CA inland,Indeed posted median,21.225,20.0,Central Valley pooled (fallback),3671.925,2078.4026903100043,1593.5223096899958,0.5660253655262578
+Bay Area,security,Security guard,2,Phoenix,Out of state,OEWS median,18.41,,,3184.93,1742.4146203042203,1442.5153796957795,0.5470809783273793
+Bay Area,security,Security guard,2,Las Vegas,Out of state,OEWS median,17.89,,,3094.9700000000003,1754.040160951015,1340.9298390489853,0.5667389864686944
+Bay Area,security,Security guard,2,Reno,Out of state,OEWS median,18.93,,,3274.89,2095.861171637464,1179.028828362536,0.6399791051416884
+Bay Area,security,Security guard,2,Boise,Out of state,OEWS median,17.97,,,3108.81,1948.598986903709,1160.211013096291,0.6267989960479119
+Bay Area,security,Security guard,2,Dallas,Out of state,OEWS median,17.63,,,3049.99,1680.685508913981,1369.3044910860187,0.551046235861095
+Bay Area,security,Security guard,2,Houston,Out of state,OEWS median,17.05,,,2949.65,1658.7084683402918,1290.9415316597083,0.5623407754615943
+Bay Area,security,Security guard,2,Portland,Out of state,OEWS median,22.51,,,3894.2300000000005,1826.1324252543404,2068.09757474566,0.4689328635582234
+Bay Area,driver,Delivery driver,1,Stay (in-place),Bay,OEWS median,24.43,,,4226.39,2895.0,1331.3900000000003,0.6849817456505434
+Bay Area,driver,Delivery driver,1,Stay (in-place),Bay,Indeed posted median,24.0,266.0,Bay Area,4152.0,2895.0,1257.0,0.6972543352601156
+Bay Area,driver,Delivery driver,1,Stay +1y at AB1482 max (+8%),Bay,OEWS median,24.43,,,4226.39,3126.6000000000004,1099.79,0.7397802853025869
+Bay Area,driver,Delivery driver,1,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,24.0,266.0,Bay Area,4152.0,3126.6000000000004,1025.3999999999996,0.7530346820809249
+Bay Area,driver,Delivery driver,1,Re-rent in Bay (turnover),Bay,OEWS median,24.43,,,4226.39,3186.270839997912,1040.1191600020884,0.7538989160957488
+Bay Area,driver,Delivery driver,1,Re-rent in Bay (turnover),Bay,Indeed posted median,24.0,266.0,Bay Area,4152.0,3186.270839997912,965.7291600020881,0.7674062716757977
+Bay Area,driver,Delivery driver,1,Sacramento,CA inland,OEWS median,22.28,,,3854.44,1905.6103107719068,1948.8296892280932,0.4943935593165043
+Bay Area,driver,Delivery driver,1,Sacramento,CA inland,Indeed posted median,21.5,58.0,Sacramento,3719.5,1905.6103107719068,1813.8896892280932,0.5123296977475217
+Bay Area,driver,Delivery driver,1,Stockton,CA inland,OEWS median,22.39,,,3873.4700000000003,2041.8613764193376,1831.6086235806627,0.5271401034264722
+Bay Area,driver,Delivery driver,1,Stockton,CA inland,Indeed posted median,22.42,21.0,Stockton,3878.6600000000003,2041.8613764193376,1836.7986235806627,0.5264347420035108
+Bay Area,driver,Delivery driver,1,Modesto,CA inland,OEWS median,21.06,,,3643.3799999999997,1736.761010231796,1906.6189897682036,0.4766895054130495
+Bay Area,driver,Delivery driver,1,Modesto,CA inland,Indeed posted median,22.0,45.0,Central Valley pooled (fallback),3806.0,1736.761010231796,2069.238989768204,0.4563218629090373
+Bay Area,driver,Delivery driver,1,Fresno,CA inland,OEWS median,20.76,,,3591.4800000000005,1723.2682644004824,1868.211735599518,0.47982120585398835
+Bay Area,driver,Delivery driver,1,Fresno,CA inland,Indeed posted median,22.0,45.0,Central Valley pooled (fallback),3806.0,1723.2682644004824,2082.7317355995174,0.45277673788767275
+Bay Area,driver,Delivery driver,1,Phoenix,Out of state,OEWS median,22.01,,,3807.7300000000005,1444.6901135168466,2363.039886483154,0.37940980939216973
+Bay Area,driver,Delivery driver,1,Las Vegas,Out of state,OEWS median,20.75,,,3589.75,1454.3292105727357,2135.420789427264,0.40513384234911504
+Bay Area,driver,Delivery driver,1,Reno,Out of state,OEWS median,21.12,,,3653.76,1737.7436338543932,1916.016366145607,0.4756042087751777
+Bay Area,driver,Delivery driver,1,Boise,Out of state,OEWS median,21.34,,,3691.82,1615.6439797877842,2076.176020212216,0.4376280478971846
+Bay Area,driver,Delivery driver,1,Dallas,Out of state,OEWS median,21.18,,,3664.14,1393.5085888082854,2270.6314111917145,0.3803098650183359
+Bay Area,driver,Delivery driver,1,Houston,Out of state,OEWS median,21.12,,,3653.76,1375.2867414527898,2278.47325854721,0.37640314127167346
+Bay Area,driver,Delivery driver,1,Portland,Out of state,OEWS median,22.94,,,3968.6200000000003,1514.1031474339136,2454.5168525660865,0.38151880185906273
+Bay Area,driver,Delivery driver,2,Stay (in-place),Bay,OEWS median,24.43,,,4226.39,3431.0,795.3900000000003,0.811803927228675
+Bay Area,driver,Delivery driver,2,Stay (in-place),Bay,Indeed posted median,24.0,266.0,Bay Area,4152.0,3431.0,721.0,0.8263487475915221
+Bay Area,driver,Delivery driver,2,Stay +1y at AB1482 max (+8%),Bay,OEWS median,24.43,,,4226.39,3705.48,520.9100000000003,0.876748241406969
+Bay Area,driver,Delivery driver,2,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,24.0,266.0,Bay Area,4152.0,3705.48,446.52,0.8924566473988439
+Bay Area,driver,Delivery driver,2,Re-rent in Bay (turnover),Bay,OEWS median,24.43,,,4226.39,3776.1987053654007,450.19129463459967,0.893480891580143
+Bay Area,driver,Delivery driver,2,Re-rent in Bay (turnover),Bay,Indeed posted median,24.0,266.0,Bay Area,4152.0,3776.1987053654007,375.80129463459934,0.9094890908876205
+Bay Area,driver,Delivery driver,2,Sacramento,CA inland,OEWS median,22.28,,,3854.44,2298.3221349861615,1556.1178650138386,0.596279131335852
+Bay Area,driver,Delivery driver,2,Sacramento,CA inland,Indeed posted median,21.5,58.0,Sacramento,3719.5,2298.3221349861615,1421.1778650138385,0.617911583542455
+Bay Area,driver,Delivery driver,2,Stockton,CA inland,OEWS median,22.39,,,3873.4700000000003,2462.65208131506,1410.8179186849402,0.6357741460021789
+Bay Area,driver,Delivery driver,2,Stockton,CA inland,Indeed posted median,22.42,21.0,Stockton,3878.6600000000003,2462.65208131506,1416.0079186849403,0.6349234223456194
+Bay Area,driver,Delivery driver,2,Modesto,CA inland,OEWS median,21.06,,,3643.3799999999997,2094.6760470559007,1548.703952944099,0.5749265920809525
+Bay Area,driver,Delivery driver,2,Modesto,CA inland,Indeed posted median,22.0,45.0,Central Valley pooled (fallback),3806.0,2094.6760470559007,1711.3239529440993,0.5503615467829481
+Bay Area,driver,Delivery driver,2,Fresno,CA inland,OEWS median,20.76,,,3591.4800000000005,2078.4026903100043,1513.0773096899961,0.5787036793494615
+Bay Area,driver,Delivery driver,2,Fresno,CA inland,Indeed posted median,22.0,45.0,Central Valley pooled (fallback),3806.0,2078.4026903100043,1727.5973096899957,0.5460858356043101
+Bay Area,driver,Delivery driver,2,Phoenix,Out of state,OEWS median,22.01,,,3807.7300000000005,1742.4146203042203,2065.3153796957804,0.45759930990490927
+Bay Area,driver,Delivery driver,2,Las Vegas,Out of state,OEWS median,20.75,,,3589.75,1754.040160951015,1835.709839048985,0.4886246008638526
+Bay Area,driver,Delivery driver,2,Reno,Out of state,OEWS median,21.12,,,3653.76,2095.861171637464,1557.8988283625363,0.573617635432394
+Bay Area,driver,Delivery driver,2,Boise,Out of state,OEWS median,21.34,,,3691.82,1948.598986903709,1743.2210130962912,0.5278152745539352
+Bay Area,driver,Delivery driver,2,Dallas,Out of state,OEWS median,21.18,,,3664.14,1680.685508913981,1983.4544910860188,0.45868485071912674
+Bay Area,driver,Delivery driver,2,Houston,Out of state,OEWS median,21.12,,,3653.76,1658.7084683402918,1995.0515316597084,0.45397302185701627
+Bay Area,driver,Delivery driver,2,Portland,Out of state,OEWS median,22.94,,,3968.6200000000003,1826.1324252543404,2142.48757474566,0.4601429275804537
+San Francisco,cna,CNA / nursing assistant,1,Stay (in-place),Bay,OEWS median,26.96,,,4664.08,3891.5,772.5799999999999,0.8343553283820174
+San Francisco,cna,CNA / nursing assistant,1,Stay (in-place),Bay,Indeed posted median,26.134999999999998,73.0,Bay Area (fallback),4521.355,3891.5,629.8549999999996,0.8606933098595444
+San Francisco,cna,CNA / nursing assistant,1,Stay +1y at AB1482 max (+8%),Bay,OEWS median,26.96,,,4664.08,4202.820000000001,461.2599999999993,0.901103754652579
+San Francisco,cna,CNA / nursing assistant,1,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,26.134999999999998,73.0,Bay Area (fallback),4521.355,4202.820000000001,318.53499999999894,0.9295487746483081
+San Francisco,cna,CNA / nursing assistant,1,Re-rent in Bay (turnover),Bay,OEWS median,26.96,,,4664.08,4932.8016567677405,-268.72165676774057,1.0576151474176558
+San Francisco,cna,CNA / nursing assistant,1,Re-rent in Bay (turnover),Bay,Indeed posted median,26.134999999999998,73.0,Bay Area (fallback),4521.355,4932.8016567677405,-411.44665676774093,1.091000741319304
+San Francisco,cna,CNA / nursing assistant,1,Sacramento,CA inland,OEWS median,22.84,,,3951.32,1905.6103107719068,2045.7096892280933,0.4822718258131224
+San Francisco,cna,CNA / nursing assistant,1,Sacramento,CA inland,Indeed posted median,23.0,17.0,Sacramento,3979.0,1905.6103107719068,2073.389689228093,0.4789168913726833
+San Francisco,cna,CNA / nursing assistant,1,Stockton,CA inland,OEWS median,22.37,,,3870.01,2041.8613764193376,1828.1486235806626,0.5276113954277476
+San Francisco,cna,CNA / nursing assistant,1,Modesto,CA inland,OEWS median,22.38,,,3871.74,1736.761010231796,2134.978989768204,0.4485737705093307
+San Francisco,cna,CNA / nursing assistant,1,Fresno,CA inland,OEWS median,21.5,,,3719.5,1723.2682644004824,1996.2317355995176,0.46330642946645584
+San Francisco,cna,CNA / nursing assistant,1,Phoenix,Out of state,OEWS median,21.77,,,3766.21,1444.6901135168466,2321.5198864831536,0.38359255419024607
+San Francisco,cna,CNA / nursing assistant,1,Las Vegas,Out of state,OEWS median,21.81,,,3773.1299999999997,1454.3292105727357,2318.800789427264,0.3854437060405382
+San Francisco,cna,CNA / nursing assistant,1,Reno,Out of state,OEWS median,22.48,,,3889.04,1737.7436338543932,2151.296366145607,0.4468310004151136
+San Francisco,cna,CNA / nursing assistant,1,Boise,Out of state,OEWS median,18.85,,,3261.05,1615.6439797877842,1645.406020212216,0.4954367396353273
+San Francisco,cna,CNA / nursing assistant,1,Dallas,Out of state,OEWS median,18.53,,,3205.69,1393.5085888082854,1812.1814111917147,0.43469848575760145
+San Francisco,cna,CNA / nursing assistant,1,Houston,Out of state,OEWS median,18.26,,,3158.9800000000005,1375.2867414527898,1783.6932585472107,0.43535785014555
+San Francisco,cna,CNA / nursing assistant,1,Portland,Out of state,OEWS median,24.21,,,4188.33,1514.1031474339136,2674.2268525660866,0.36150521745753406
+San Francisco,cna,CNA / nursing assistant,2,Stay (in-place),Bay,OEWS median,26.96,,,4664.08,5334.0,-669.9200000000001,1.1436338999331057
+San Francisco,cna,CNA / nursing assistant,2,Stay (in-place),Bay,Indeed posted median,26.134999999999998,73.0,Bay Area (fallback),4521.355,5334.0,-812.6450000000004,1.1797348361276654
+San Francisco,cna,CNA / nursing assistant,2,Stay +1y at AB1482 max (+8%),Bay,OEWS median,26.96,,,4664.08,5760.72,-1096.6400000000003,1.2351246119277544
+San Francisco,cna,CNA / nursing assistant,2,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,26.134999999999998,73.0,Bay Area (fallback),4521.355,5760.72,-1239.3650000000007,1.2741136230178787
+San Francisco,cna,CNA / nursing assistant,2,Re-rent in Bay (turnover),Bay,OEWS median,26.96,,,4664.08,6761.29102844639,-2097.2110284463897,1.449651598696075
+San Francisco,cna,CNA / nursing assistant,2,Re-rent in Bay (turnover),Bay,Indeed posted median,26.134999999999998,73.0,Bay Area (fallback),4521.355,6761.29102844639,-2239.93602844639,1.4954125540786756
+San Francisco,cna,CNA / nursing assistant,2,Sacramento,CA inland,OEWS median,22.84,,,3951.32,2298.3221349861615,1652.9978650138387,0.5816593277654458
+San Francisco,cna,CNA / nursing assistant,2,Sacramento,CA inland,Indeed posted median,23.0,17.0,Sacramento,3979.0,2298.3221349861615,1680.6778650138385,0.5776130020070775
+San Francisco,cna,CNA / nursing assistant,2,Stockton,CA inland,OEWS median,22.37,,,3870.01,2462.65208131506,1407.3579186849402,0.6363425627621272
+San Francisco,cna,CNA / nursing assistant,2,Modesto,CA inland,OEWS median,22.38,,,3871.74,2094.6760470559007,1777.0639529440991,0.5410167126552663
+San Francisco,cna,CNA / nursing assistant,2,Fresno,CA inland,OEWS median,21.5,,,3719.5,2078.4026903100043,1641.0973096899957,0.5587855061997592
+San Francisco,cna,CNA / nursing assistant,2,Phoenix,Out of state,OEWS median,21.77,,,3766.21,1742.4146203042203,2023.7953796957797,0.46264404276559734
+San Francisco,cna,CNA / nursing assistant,2,Las Vegas,Out of state,OEWS median,21.81,,,3773.1299999999997,1754.040160951015,2019.0898390489847,0.4648766835362193
+San Francisco,cna,CNA / nursing assistant,2,Reno,Out of state,OEWS median,22.48,,,3889.04,2095.861171637464,1793.178828362536,0.5389147891606834
+San Francisco,cna,CNA / nursing assistant,2,Boise,Out of state,OEWS median,18.85,,,3261.05,1948.598986903709,1312.4510130962913,0.5975372922536326
+San Francisco,cna,CNA / nursing assistant,2,Dallas,Out of state,OEWS median,18.53,,,3205.69,1680.685508913981,1525.004491086019,0.5242819826352457
+San Francisco,cna,CNA / nursing assistant,2,Houston,Out of state,OEWS median,18.26,,,3158.9800000000005,1658.7084683402918,1500.2715316597087,0.5250772300996814
+San Francisco,cna,CNA / nursing assistant,2,Portland,Out of state,OEWS median,24.21,,,4188.33,1826.1324252543404,2362.1975747456595,0.436004905357109
+San Francisco,caregiver,Caregiver / home health aide,1,Stay (in-place),Bay,OEWS median,17.28,,,2989.44,3891.5,-902.06,1.3017488225219438
+San Francisco,caregiver,Caregiver / home health aide,1,Stay (in-place),Bay,Indeed posted median,23.0,37.0,San Francisco,3979.0,3891.5,87.5,0.9780095501382257
+San Francisco,caregiver,Caregiver / home health aide,1,Stay +1y at AB1482 max (+8%),Bay,OEWS median,17.28,,,2989.44,4202.820000000001,-1213.3800000000006,1.4058887283236996
+San Francisco,caregiver,Caregiver / home health aide,1,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,23.0,37.0,San Francisco,3979.0,4202.820000000001,-223.82000000000062,1.0562503141492838
+San Francisco,caregiver,Caregiver / home health aide,1,Re-rent in Bay (turnover),Bay,OEWS median,17.28,,,2989.44,4932.8016567677405,-1943.3616567677404,1.6500754846284724
+San Francisco,caregiver,Caregiver / home health aide,1,Re-rent in Bay (turnover),Bay,Indeed posted median,23.0,37.0,San Francisco,3979.0,4932.8016567677405,-953.8016567677405,1.2397088858426089
+San Francisco,caregiver,Caregiver / home health aide,1,Sacramento,CA inland,OEWS median,16.5,,,2854.5,1905.6103107719068,948.8896892280932,0.6675811213073767
+San Francisco,caregiver,Caregiver / home health aide,1,Sacramento,CA inland,Indeed posted median,19.5,76.0,Sacramento,3373.5,1905.6103107719068,1467.8896892280932,0.5648763334139342
+San Francisco,caregiver,Caregiver / home health aide,1,Stockton,CA inland,OEWS median,16.5,,,2854.5,2041.8613764193376,812.6386235806624,0.7153131464071948
+San Francisco,caregiver,Caregiver / home health aide,1,Stockton,CA inland,Indeed posted median,18.5,17.0,Stockton,3200.5,2041.8613764193376,1158.6386235806624,0.6379819954442548
+San Francisco,caregiver,Caregiver / home health aide,1,Modesto,CA inland,OEWS median,16.5,,,2854.5,1736.761010231796,1117.738989768204,0.608429150545383
+San Francisco,caregiver,Caregiver / home health aide,1,Modesto,CA inland,Indeed posted median,18.25,45.0,Central Valley pooled (fallback),3157.25,1736.761010231796,1420.488989768204,0.5500866292602093
+San Francisco,caregiver,Caregiver / home health aide,1,Fresno,CA inland,OEWS median,16.5,,,2854.5,1723.2682644004824,1131.2317355995176,0.6037023171835636
+San Francisco,caregiver,Caregiver / home health aide,1,Fresno,CA inland,Indeed posted median,18.35,15.0,Fresno,3174.55,1723.2682644004824,1451.2817355995178,0.5428385958326322
+San Francisco,caregiver,Caregiver / home health aide,1,Phoenix,Out of state,OEWS median,17.75,,,3070.75,1444.6901135168466,1626.0598864831534,0.4704681636462905
+San Francisco,caregiver,Caregiver / home health aide,1,Las Vegas,Out of state,OEWS median,16.17,,,2797.4100000000003,1454.3292105727357,1343.0807894272646,0.5198841823589447
+San Francisco,caregiver,Caregiver / home health aide,1,Reno,Out of state,OEWS median,17.05,,,2949.65,1737.7436338543932,1211.9063661456069,0.5891355360311878
+San Francisco,caregiver,Caregiver / home health aide,1,Boise,Out of state,OEWS median,17.24,,,2982.5199999999995,1615.6439797877842,1366.8760202122153,0.5417043237892066
+San Francisco,caregiver,Caregiver / home health aide,1,Dallas,Out of state,OEWS median,12.93,,,2236.89,1393.5085888082854,843.3814111917145,0.6229669714685503
+San Francisco,caregiver,Caregiver / home health aide,1,Houston,Out of state,OEWS median,11.27,,,1949.71,1375.2867414527898,574.4232585472103,0.7053801547167475
+San Francisco,caregiver,Caregiver / home health aide,1,Portland,Out of state,OEWS median,21.91,,,3790.43,1514.1031474339136,2276.326852566086,0.3994541905361433
+San Francisco,caregiver,Caregiver / home health aide,2,Stay (in-place),Bay,OEWS median,17.28,,,2989.44,5334.0,-2344.56,1.7842806679511882
+San Francisco,caregiver,Caregiver / home health aide,2,Stay (in-place),Bay,Indeed posted median,23.0,37.0,San Francisco,3979.0,5334.0,-1355.0,1.3405378235737622
+San Francisco,caregiver,Caregiver / home health aide,2,Stay +1y at AB1482 max (+8%),Bay,OEWS median,17.28,,,2989.44,5760.72,-2771.28,1.9270231213872833
+San Francisco,caregiver,Caregiver / home health aide,2,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,23.0,37.0,San Francisco,3979.0,5760.72,-1781.7200000000003,1.4477808494596633
+San Francisco,caregiver,Caregiver / home health aide,2,Re-rent in Bay (turnover),Bay,OEWS median,17.28,,,2989.44,6761.29102844639,-3771.8510284463896,2.2617249479656354
+San Francisco,caregiver,Caregiver / home health aide,2,Re-rent in Bay (turnover),Bay,Indeed posted median,23.0,37.0,San Francisco,3979.0,6761.29102844639,-2782.2910284463896,1.6992437869933124
+San Francisco,caregiver,Caregiver / home health aide,2,Sacramento,CA inland,OEWS median,16.5,,,2854.5,2298.3221349861615,556.1778650138385,0.8051575179492596
+San Francisco,caregiver,Caregiver / home health aide,2,Sacramento,CA inland,Indeed posted median,19.5,76.0,Sacramento,3373.5,2298.3221349861615,1075.1778650138385,0.6812871305724504
+San Francisco,caregiver,Caregiver / home health aide,2,Stockton,CA inland,OEWS median,16.5,,,2854.5,2462.65208131506,391.84791868493994,0.8627262502417447
+San Francisco,caregiver,Caregiver / home health aide,2,Stockton,CA inland,Indeed posted median,18.5,17.0,Stockton,3200.5,2462.65208131506,737.8479186849399,0.7694585475129074
+San Francisco,caregiver,Caregiver / home health aide,2,Modesto,CA inland,OEWS median,16.5,,,2854.5,2094.6760470559007,759.8239529440993,0.7338153957105975
+San Francisco,caregiver,Caregiver / home health aide,2,Modesto,CA inland,Indeed posted median,18.25,45.0,Central Valley pooled (fallback),3157.25,2094.6760470559007,1062.5739529440993,0.6634495358479375
+San Francisco,caregiver,Caregiver / home health aide,2,Fresno,CA inland,OEWS median,16.5,,,2854.5,2078.4026903100043,776.0973096899957,0.7281144474724135
+San Francisco,caregiver,Caregiver / home health aide,2,Fresno,CA inland,Indeed posted median,18.35,15.0,Fresno,3174.55,2078.4026903100043,1096.1473096899958,0.6547078138035325
+San Francisco,caregiver,Caregiver / home health aide,2,Phoenix,Out of state,OEWS median,17.75,,,3070.75,1742.4146203042203,1328.3353796957797,0.5674231442820875
+San Francisco,caregiver,Caregiver / home health aide,2,Las Vegas,Out of state,OEWS median,16.17,,,2797.4100000000003,1754.040160951015,1043.3698390489853,0.627022910817869
+San Francisco,caregiver,Caregiver / home health aide,2,Reno,Out of state,OEWS median,17.05,,,2949.65,2095.861171637464,853.7888283625362,0.7105457161485138
+San Francisco,caregiver,Caregiver / home health aide,2,Boise,Out of state,OEWS median,17.24,,,2982.5199999999995,1948.598986903709,1033.9210130962906,0.653339788804001
+San Francisco,caregiver,Caregiver / home health aide,2,Dallas,Out of state,OEWS median,12.93,,,2236.89,1680.685508913981,556.2044910860188,0.7513491986257622
+San Francisco,caregiver,Caregiver / home health aide,2,Houston,Out of state,OEWS median,11.27,,,1949.71,1658.7084683402918,291.00153165970823,0.8507462485909657
+San Francisco,caregiver,Caregiver / home health aide,2,Portland,Out of state,OEWS median,21.91,,,3790.43,1826.1324252543404,1964.2975747456594,0.48177447552239205
+San Francisco,med_asst,Medical assistant,1,Stay (in-place),Bay,OEWS median,28.75,,,4973.75,3891.5,1082.25,0.7824076401105805
+San Francisco,med_asst,Medical assistant,1,Stay (in-place),Bay,Indeed posted median,27.725,97.0,Bay Area (fallback),4796.425,3891.5,904.9250000000002,0.8113334410524505
+San Francisco,med_asst,Medical assistant,1,Stay +1y at AB1482 max (+8%),Bay,OEWS median,28.75,,,4973.75,4202.820000000001,770.9299999999994,0.8450002513194271
+San Francisco,med_asst,Medical assistant,1,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,27.725,97.0,Bay Area (fallback),4796.425,4202.820000000001,593.6049999999996,0.8762401163366467
+San Francisco,med_asst,Medical assistant,1,Re-rent in Bay (turnover),Bay,OEWS median,28.75,,,4973.75,4932.8016567677405,40.948343232259504,0.991767108674087
+San Francisco,med_asst,Medical assistant,1,Re-rent in Bay (turnover),Bay,Indeed posted median,27.725,97.0,Bay Area (fallback),4796.425,4932.8016567677405,-136.37665676774031,1.0284329801399459
+San Francisco,med_asst,Medical assistant,1,Sacramento,CA inland,OEWS median,29.79,,,5153.67,1905.6103107719068,3248.0596892280932,0.3697579221742771
+San Francisco,med_asst,Medical assistant,1,Sacramento,CA inland,Indeed posted median,33.125,22.0,Sacramento,5730.625,1905.6103107719068,3825.014689228093,0.3325309736323537
+San Francisco,med_asst,Medical assistant,1,Stockton,CA inland,OEWS median,23.0,,,3979.0,2041.8613764193376,1937.1386235806624,0.513159431118205
+San Francisco,med_asst,Medical assistant,1,Stockton,CA inland,Indeed posted median,26.278846153846153,41.0,Central Valley pooled (fallback),4546.240384615385,2041.8613764193376,2504.379008196047,0.449131854824276
+San Francisco,med_asst,Medical assistant,1,Modesto,CA inland,OEWS median,24.04,,,4158.92,1736.761010231796,2422.1589897682043,0.4175990425956248
+San Francisco,med_asst,Medical assistant,1,Modesto,CA inland,Indeed posted median,26.278846153846153,41.0,Central Valley pooled (fallback),4546.240384615385,1736.761010231796,2809.479374383589,0.38202137663222735
+San Francisco,med_asst,Medical assistant,1,Fresno,CA inland,OEWS median,22.36,,,3868.2799999999997,1723.2682644004824,2145.011735599517,0.4454869514100537
+San Francisco,med_asst,Medical assistant,1,Fresno,CA inland,Indeed posted median,26.305,27.0,Fresno,4550.765,1723.2682644004824,2827.4967355995177,0.37867661028431093
+San Francisco,med_asst,Medical assistant,1,Phoenix,Out of state,OEWS median,22.51,,,3894.2300000000005,1444.6901135168466,2449.539886483154,0.37098222588723484
+San Francisco,med_asst,Medical assistant,1,Las Vegas,Out of state,OEWS median,21.26,,,3677.9800000000005,1454.3292105727357,2223.6507894272645,0.39541520360979004
+San Francisco,med_asst,Medical assistant,1,Reno,Out of state,OEWS median,22.6,,,3909.8,1737.7436338543932,2172.056366145607,0.4444584464306085
+San Francisco,med_asst,Medical assistant,1,Boise,Out of state,OEWS median,22.26,,,3850.9800000000005,1615.6439797877842,2235.336020212216,0.41954099470466844
+San Francisco,med_asst,Medical assistant,1,Dallas,Out of state,OEWS median,20.72,,,3584.56,1393.5085888082854,2191.0514111917146,0.3887530376973144
+San Francisco,med_asst,Medical assistant,1,Houston,Out of state,OEWS median,20.25,,,3503.25,1375.2867414527898,2127.96325854721,0.39257453548927135
+San Francisco,med_asst,Medical assistant,1,Portland,Out of state,OEWS median,27.04,,,4677.92,1514.1031474339136,3163.8168525660867,0.3236701669617936
+San Francisco,med_asst,Medical assistant,2,Stay (in-place),Bay,OEWS median,28.75,,,4973.75,5334.0,-360.25,1.0724302588590098
+San Francisco,med_asst,Medical assistant,2,Stay (in-place),Bay,Indeed posted median,27.725,97.0,Bay Area (fallback),4796.425,5334.0,-537.5749999999998,1.112078266625664
+San Francisco,med_asst,Medical assistant,2,Stay +1y at AB1482 max (+8%),Bay,OEWS median,28.75,,,4973.75,5760.72,-786.9700000000003,1.1582246795677307
+San Francisco,med_asst,Medical assistant,2,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,27.725,97.0,Bay Area (fallback),4796.425,5760.72,-964.2950000000001,1.201044527955717
+San Francisco,med_asst,Medical assistant,2,Re-rent in Bay (turnover),Bay,OEWS median,28.75,,,4973.75,6761.29102844639,-1787.5410284463896,1.3593950295946498
+San Francisco,med_asst,Medical assistant,2,Re-rent in Bay (turnover),Bay,Indeed posted median,27.725,97.0,Bay Area (fallback),4796.425,6761.29102844639,-1964.8660284463895,1.4096521948005836
+San Francisco,med_asst,Medical assistant,2,Sacramento,CA inland,OEWS median,29.79,,,5153.67,2298.3221349861615,2855.3478650138386,0.4459583432750179
+San Francisco,med_asst,Medical assistant,2,Sacramento,CA inland,Indeed posted median,33.125,22.0,Sacramento,5730.625,2298.3221349861615,3432.3028650138385,0.40105959384642365
+San Francisco,med_asst,Medical assistant,2,Stockton,CA inland,OEWS median,23.0,,,3979.0,2462.65208131506,1516.34791868494,0.6189123099560342
+San Francisco,med_asst,Medical assistant,2,Stockton,CA inland,Indeed posted median,26.278846153846153,41.0,Central Valley pooled (fallback),4546.240384615385,2462.65208131506,2083.5883033003247,0.5416898080551898
+San Francisco,med_asst,Medical assistant,2,Modesto,CA inland,OEWS median,24.04,,,4158.92,2094.6760470559007,2064.2439529440994,0.5036586534619326
+San Francisco,med_asst,Medical assistant,2,Modesto,CA inland,Indeed posted median,26.278846153846153,41.0,Central Valley pooled (fallback),4546.240384615385,2094.6760470559007,2451.564337559484,0.4607490739258636
+San Francisco,med_asst,Medical assistant,2,Fresno,CA inland,OEWS median,22.36,,,3868.2799999999997,2078.4026903100043,1789.8773096899954,0.5372937559613069
+San Francisco,med_asst,Medical assistant,2,Fresno,CA inland,Indeed posted median,26.305,27.0,Fresno,4550.765,2078.4026903100043,2472.362309689996,0.45671501172000845
+San Francisco,med_asst,Medical assistant,2,Phoenix,Out of state,OEWS median,22.51,,,3894.2300000000005,1742.4146203042203,2151.8153796957804,0.4474349538430499
+San Francisco,med_asst,Medical assistant,2,Las Vegas,Out of state,OEWS median,21.26,,,3677.9800000000005,1754.040160951015,1923.9398390489855,0.47690312643108845
+San Francisco,med_asst,Medical assistant,2,Reno,Out of state,OEWS median,22.6,,,3909.8,2095.861171637464,1813.9388283625362,0.5360532947049629
+San Francisco,med_asst,Medical assistant,2,Boise,Out of state,OEWS median,22.26,,,3850.9800000000005,1948.598986903709,1902.3810130962916,0.5060008067826134
+San Francisco,med_asst,Medical assistant,2,Dallas,Out of state,OEWS median,20.72,,,3584.56,1680.685508913981,1903.874491086019,0.46886800860188727
+San Francisco,med_asst,Medical assistant,2,Houston,Out of state,OEWS median,20.25,,,3503.25,1658.7084683402918,1844.5415316597082,0.4734770479812436
+San Francisco,med_asst,Medical assistant,2,Portland,Out of state,OEWS median,27.04,,,4677.92,1826.1324252543404,2851.7875747456596,0.3903727351588613
+San Francisco,warehouse,Warehouse / material handler,1,Stay (in-place),Bay,OEWS median,23.27,,,4025.71,3891.5,134.21000000000004,0.9666617814000512
+San Francisco,warehouse,Warehouse / material handler,1,Stay (in-place),Bay,Indeed posted median,22.6,23.0,San Francisco,3909.8,3891.5,18.300000000000182,0.9953194536804951
+San Francisco,warehouse,Warehouse / material handler,1,Stay +1y at AB1482 max (+8%),Bay,OEWS median,23.27,,,4025.71,4202.820000000001,-177.11000000000058,1.0439947239120555
+San Francisco,warehouse,Warehouse / material handler,1,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,22.6,23.0,San Francisco,3909.8,4202.820000000001,-293.02000000000044,1.074945009974935
+San Francisco,warehouse,Warehouse / material handler,1,Re-rent in Bay (turnover),Bay,OEWS median,23.27,,,4025.71,4932.8016567677405,-907.0916567677405,1.2253246400678988
+San Francisco,warehouse,Warehouse / material handler,1,Re-rent in Bay (turnover),Bay,Indeed posted median,22.6,23.0,San Francisco,3909.8,4932.8016567677405,-1023.0016567677403,1.2616506360345134
+San Francisco,warehouse,Warehouse / material handler,1,Sacramento,CA inland,OEWS median,22.08,,,3819.8399999999997,1905.6103107719068,1914.2296892280929,0.49887176184654514
+San Francisco,warehouse,Warehouse / material handler,1,Sacramento,CA inland,Indeed posted median,22.5,128.0,Sacramento,3892.5,1905.6103107719068,1986.8896892280932,0.4895594889587429
+San Francisco,warehouse,Warehouse / material handler,1,Stockton,CA inland,OEWS median,22.75,,,3935.75,2041.8613764193376,1893.8886235806624,0.5187985457458776
+San Francisco,warehouse,Warehouse / material handler,1,Stockton,CA inland,Indeed posted median,22.5,71.0,Stockton,3892.5,2041.8613764193376,1850.6386235806624,0.5245629740319429
+San Francisco,warehouse,Warehouse / material handler,1,Modesto,CA inland,OEWS median,22.42,,,3878.6600000000003,1736.761010231796,2141.898989768204,0.4477734604816601
+San Francisco,warehouse,Warehouse / material handler,1,Modesto,CA inland,Indeed posted median,22.744999999999997,32.0,Modesto,3934.8849999999998,1736.761010231796,2198.1239897682035,0.4413752905693041
+San Francisco,warehouse,Warehouse / material handler,1,Fresno,CA inland,OEWS median,18.9,,,3269.7,1723.2682644004824,1546.4317355995174,0.5270417054777143
+San Francisco,warehouse,Warehouse / material handler,1,Fresno,CA inland,Indeed posted median,21.0,47.0,Fresno,3633.0,1723.2682644004824,1909.7317355995176,0.47433753492994285
+San Francisco,warehouse,Warehouse / material handler,1,Phoenix,Out of state,OEWS median,21.61,,,3738.5299999999997,1444.6901135168466,2293.8398864831534,0.38643266565116413
+San Francisco,warehouse,Warehouse / material handler,1,Las Vegas,Out of state,OEWS median,18.72,,,3238.56,1454.3292105727357,1784.2307894272642,0.44906662546710135
+San Francisco,warehouse,Warehouse / material handler,1,Reno,Out of state,OEWS median,21.15,,,3658.95,1737.7436338543932,1921.2063661456066,0.47492959287620584
+San Francisco,warehouse,Warehouse / material handler,1,Boise,Out of state,OEWS median,21.39,,,3700.4700000000003,1615.6439797877842,2084.826020212216,0.43660507443318936
+San Francisco,warehouse,Warehouse / material handler,1,Dallas,Out of state,OEWS median,18.52,,,3203.96,1393.5085888082854,1810.4514111917147,0.43493320416243814
+San Francisco,warehouse,Warehouse / material handler,1,Houston,Out of state,OEWS median,18.27,,,3160.71,1375.2867414527898,1785.4232585472103,0.43511955903983274
+San Francisco,warehouse,Warehouse / material handler,1,Portland,Out of state,OEWS median,22.17,,,3835.4100000000003,1514.1031474339136,2321.3068525660865,0.39476956764307164
+San Francisco,warehouse,Warehouse / material handler,2,Stay (in-place),Bay,OEWS median,23.27,,,4025.71,5334.0,-1308.29,1.3249836674772897
+San Francisco,warehouse,Warehouse / material handler,2,Stay (in-place),Bay,Indeed posted median,22.6,23.0,San Francisco,3909.8,5334.0,-1424.1999999999998,1.3642641567343599
+San Francisco,warehouse,Warehouse / material handler,2,Stay +1y at AB1482 max (+8%),Bay,OEWS median,23.27,,,4025.71,5760.72,-1735.0100000000002,1.430982360875473
+San Francisco,warehouse,Warehouse / material handler,2,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,22.6,23.0,San Francisco,3909.8,5760.72,-1850.92,1.4734052892731087
+San Francisco,warehouse,Warehouse / material handler,2,Re-rent in Bay (turnover),Bay,OEWS median,23.27,,,4025.71,6761.29102844639,-2735.5810284463896,1.679527593504348
+San Francisco,warehouse,Warehouse / material handler,2,Re-rent in Bay (turnover),Bay,Indeed posted median,22.6,23.0,San Francisco,3909.8,6761.29102844639,-2851.4910284463895,1.72931889826753
+San Francisco,warehouse,Warehouse / material handler,2,Sacramento,CA inland,OEWS median,22.08,,,3819.8399999999997,2298.3221349861615,1521.5178650138382,0.6016802104240392
+San Francisco,warehouse,Warehouse / material handler,2,Sacramento,CA inland,Indeed posted median,22.5,128.0,Sacramento,3892.5,2298.3221349861615,1594.1778650138385,0.5904488464961237
+San Francisco,warehouse,Warehouse / material handler,2,Stockton,CA inland,OEWS median,22.75,,,3935.75,2462.65208131506,1473.09791868494,0.6257135441313753
+San Francisco,warehouse,Warehouse / material handler,2,Stockton,CA inland,Indeed posted median,22.5,71.0,Stockton,3892.5,2462.65208131506,1429.84791868494,0.632665916843946
+San Francisco,warehouse,Warehouse / material handler,2,Modesto,CA inland,OEWS median,22.42,,,3878.6600000000003,2094.6760470559007,1783.9839529440997,0.5400514732036066
+San Francisco,warehouse,Warehouse / material handler,2,Modesto,CA inland,Indeed posted median,22.744999999999997,32.0,Modesto,3934.8849999999998,2094.6760470559007,1840.208952944099,0.5323347561760765
+San Francisco,warehouse,Warehouse / material handler,2,Fresno,CA inland,OEWS median,18.9,,,3269.7,2078.4026903100043,1191.2973096899955,0.6356554700155991
+San Francisco,warehouse,Warehouse / material handler,2,Fresno,CA inland,Indeed posted median,21.0,47.0,Fresno,3633.0,2078.4026903100043,1554.5973096899957,0.5720899230140392
+San Francisco,warehouse,Warehouse / material handler,2,Phoenix,Out of state,OEWS median,21.61,,,3738.5299999999997,1742.4146203042203,1996.1153796957794,0.4660694498383644
+San Francisco,warehouse,Warehouse / material handler,2,Las Vegas,Out of state,OEWS median,18.72,,,3238.56,1754.040160951015,1484.519839048985,0.5416111361071017
+San Francisco,warehouse,Warehouse / material handler,2,Reno,Out of state,OEWS median,21.15,,,3658.95,2095.861171637464,1563.0888283625359,0.5728039933963197
+San Francisco,warehouse,Warehouse / material handler,2,Boise,Out of state,OEWS median,21.39,,,3700.4700000000003,1948.598986903709,1751.8710130962913,0.5265814847583439
+San Francisco,warehouse,Warehouse / material handler,2,Dallas,Out of state,OEWS median,18.52,,,3203.96,1680.685508913981,1523.274491086019,0.524565072258699
+San Francisco,warehouse,Warehouse / material handler,2,Houston,Out of state,OEWS median,18.27,,,3160.71,1658.7084683402918,1502.0015316597082,0.5247898315063045
+San Francisco,warehouse,Warehouse / material handler,2,Portland,Out of state,OEWS median,22.17,,,3835.4100000000003,1826.1324252543404,2009.2775747456599,0.4761244365672354
+San Francisco,cashier,Cashier / retail sales,1,Stay (in-place),Bay,OEWS median,19.84,,,3432.32,3891.5,-459.17999999999984,1.1337812325191123
+San Francisco,cashier,Cashier / retail sales,1,Stay (in-place),Bay,Indeed posted median,21.0,67.0,San Francisco,3633.0,3891.5,-258.5,1.0711533168180567
+San Francisco,cashier,Cashier / retail sales,1,Stay +1y at AB1482 max (+8%),Bay,OEWS median,19.84,,,3432.32,4202.820000000001,-770.5000000000005,1.2244837311206416
+San Francisco,cashier,Cashier / retail sales,1,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,21.0,67.0,San Francisco,3633.0,4202.820000000001,-569.8200000000006,1.1568455821635013
+San Francisco,cashier,Cashier / retail sales,1,Re-rent in Bay (turnover),Bay,OEWS median,19.84,,,3432.32,4932.8016567677405,-1500.4816567677403,1.4371625188699597
+San Francisco,cashier,Cashier / retail sales,1,Re-rent in Bay (turnover),Bay,Indeed posted median,21.0,67.0,San Francisco,3633.0,4932.8016567677405,-1299.8016567677405,1.3577763987800002
+San Francisco,cashier,Cashier / retail sales,1,Sacramento,CA inland,OEWS median,17.69,,,3060.3700000000003,1905.6103107719068,1154.7596892280935,0.6226731770249697
+San Francisco,cashier,Cashier / retail sales,1,Sacramento,CA inland,Indeed posted median,18.0,222.0,Sacramento,3114.0,1905.6103107719068,1208.3896892280932,0.6119493611984287
+San Francisco,cashier,Cashier / retail sales,1,Stockton,CA inland,OEWS median,17.47,,,3022.31,2041.8613764193376,980.4486235806623,0.6755962745116608
+San Francisco,cashier,Cashier / retail sales,1,Stockton,CA inland,Indeed posted median,17.8625,76.0,Stockton,3090.2125,2041.8613764193376,1048.3511235806625,0.6607511219436649
+San Francisco,cashier,Cashier / retail sales,1,Modesto,CA inland,OEWS median,17.54,,,3034.42,1736.761010231796,1297.658989768204,0.5723535338653831
+San Francisco,cashier,Cashier / retail sales,1,Modesto,CA inland,Indeed posted median,17.45,90.0,Modesto,3018.85,1736.761010231796,1282.0889897682039,0.5753055005156917
+San Francisco,cashier,Cashier / retail sales,1,Fresno,CA inland,OEWS median,16.96,,,2934.08,1723.2682644004824,1210.8117355995175,0.5873283156561793
+San Francisco,cashier,Cashier / retail sales,1,Fresno,CA inland,Indeed posted median,17.52,107.0,Fresno,3030.96,1723.2682644004824,1307.6917355995176,0.5685552644708219
+San Francisco,cashier,Cashier / retail sales,1,Phoenix,Out of state,OEWS median,16.79,,,2904.67,1444.6901135168466,1459.9798864831535,0.4973680705611469
+San Francisco,cashier,Cashier / retail sales,1,Las Vegas,Out of state,OEWS median,14.11,,,2441.0299999999997,1454.3292105727357,986.700789427264,0.5957850622781105
+San Francisco,cashier,Cashier / retail sales,1,Reno,Out of state,OEWS median,15.0,,,2595.0,1737.7436338543932,857.2563661456068,0.6696507259554502
+San Francisco,cashier,Cashier / retail sales,1,Boise,Out of state,OEWS median,15.38,,,2660.7400000000002,1615.6439797877842,1045.096020212216,0.6072160300471989
+San Francisco,cashier,Cashier / retail sales,1,Dallas,Out of state,OEWS median,14.38,,,2487.7400000000002,1393.5085888082854,1094.2314111917149,0.5601504131493987
+San Francisco,cashier,Cashier / retail sales,1,Houston,Out of state,OEWS median,14.11,,,2441.0299999999997,1375.2867414527898,1065.74325854721,0.5634042766589472
+San Francisco,cashier,Cashier / retail sales,1,Portland,Out of state,OEWS median,17.58,,,3041.3399999999997,1514.1031474339136,1527.236852566086,0.49784080288093857
+San Francisco,cashier,Cashier / retail sales,2,Stay (in-place),Bay,OEWS median,19.84,,,3432.32,5334.0,-1901.6799999999998,1.5540509043445832
+San Francisco,cashier,Cashier / retail sales,2,Stay (in-place),Bay,Indeed posted median,21.0,67.0,San Francisco,3633.0,5334.0,-1701.0,1.4682080924855492
+San Francisco,cashier,Cashier / retail sales,2,Stay +1y at AB1482 max (+8%),Bay,OEWS median,19.84,,,3432.32,5760.72,-2328.4,1.6783749766921499
+San Francisco,cashier,Cashier / retail sales,2,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,21.0,67.0,San Francisco,3633.0,5760.72,-2127.7200000000003,1.585664739884393
+San Francisco,cashier,Cashier / retail sales,2,Re-rent in Bay (turnover),Bay,OEWS median,19.84,,,3432.32,6761.29102844639,-3328.9710284463895,1.9698894708087793
+San Francisco,cashier,Cashier / retail sales,2,Re-rent in Bay (turnover),Bay,Indeed posted median,21.0,67.0,San Francisco,3633.0,6761.29102844639,-3128.2910284463896,1.861076528611723
+San Francisco,cashier,Cashier / retail sales,2,Sacramento,CA inland,OEWS median,17.69,,,3060.3700000000003,2298.3221349861615,762.0478650138389,0.7509948584603042
+San Francisco,cashier,Cashier / retail sales,2,Sacramento,CA inland,Indeed posted median,18.0,222.0,Sacramento,3114.0,2298.3221349861615,815.6778650138385,0.7380610581201547
+San Francisco,cashier,Cashier / retail sales,2,Stockton,CA inland,OEWS median,17.47,,,3022.31,2462.65208131506,559.6579186849399,0.8148244492838458
+San Francisco,cashier,Cashier / retail sales,2,Stockton,CA inland,Indeed posted median,17.8625,76.0,Stockton,3090.2125,2462.65208131506,627.56041868494,0.7969199792296031
+San Francisco,cashier,Cashier / retail sales,2,Modesto,CA inland,OEWS median,17.54,,,3034.42,2094.6760470559007,939.7439529440994,0.6903052468201174
+San Francisco,cashier,Cashier / retail sales,2,Modesto,CA inland,Indeed posted median,17.45,90.0,Modesto,3018.85,2094.6760470559007,924.1739529440993,0.693865560414032
+San Francisco,cashier,Cashier / retail sales,2,Fresno,CA inland,OEWS median,16.96,,,2934.08,2078.4026903100043,855.6773096899956,0.7083660603357796
+San Francisco,cashier,Cashier / retail sales,2,Fresno,CA inland,Indeed posted median,17.52,107.0,Fresno,3030.96,2078.4026903100043,952.5573096899957,0.6857242227908004
+San Francisco,cashier,Cashier / retail sales,2,Phoenix,Out of state,OEWS median,16.79,,,2904.67,1742.4146203042203,1162.2553796957798,0.5998666355572992
+San Francisco,cashier,Cashier / retail sales,2,Las Vegas,Out of state,OEWS median,14.11,,,2441.0299999999997,1754.040160951015,686.9898390489848,0.7185655895056657
+San Francisco,cashier,Cashier / retail sales,2,Reno,Out of state,OEWS median,15.0,,,2595.0,2095.861171637464,499.13882836253606,0.8076536306888108
+San Francisco,cashier,Cashier / retail sales,2,Boise,Out of state,OEWS median,15.38,,,2660.7400000000002,1948.598986903709,712.1410130962913,0.7323522730156681
+San Francisco,cashier,Cashier / retail sales,2,Dallas,Out of state,OEWS median,14.38,,,2487.7400000000002,1680.685508913981,807.0544910860192,0.6755872836043882
+San Francisco,cashier,Cashier / retail sales,2,Houston,Out of state,OEWS median,14.11,,,2441.0299999999997,1658.7084683402918,782.321531659708,0.6795117095407643
+San Francisco,cashier,Cashier / retail sales,2,Portland,Out of state,OEWS median,17.58,,,3041.3399999999997,1826.1324252543404,1215.2075747456593,0.6004367894593635
+San Francisco,cook,Cook,1,Stay (in-place),Bay,OEWS median,22.13,,,3828.49,3891.5,-63.01000000000022,1.0164581858644008
+San Francisco,cook,Cook,1,Stay (in-place),Bay,Indeed posted median,24.84,30.0,San Francisco,4297.32,3891.5,405.8199999999997,0.905564398276135
+San Francisco,cook,Cook,1,Stay +1y at AB1482 max (+8%),Bay,OEWS median,22.13,,,3828.49,4202.820000000001,-374.33000000000084,1.0977748407335532
+San Francisco,cook,Cook,1,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,24.84,30.0,San Francisco,4297.32,4202.820000000001,94.49999999999909,0.9780095501382259
+San Francisco,cook,Cook,1,Re-rent in Bay (turnover),Bay,OEWS median,22.13,,,3828.49,4932.8016567677405,-1104.3116567677407,1.288445746695888
+San Francisco,cook,Cook,1,Re-rent in Bay (turnover),Bay,Indeed posted median,24.84,30.0,San Francisco,4297.32,4932.8016567677405,-635.4816567677408,1.1478785980024158
+San Francisco,cook,Cook,1,Sacramento,CA inland,OEWS median,21.27,,,3679.71,1905.6103107719068,1774.0996892280932,0.5178696991806166
+San Francisco,cook,Cook,1,Sacramento,CA inland,Indeed posted median,23.5,94.0,Sacramento,4065.5,1905.6103107719068,2159.889689228093,0.4687271702796475
+San Francisco,cook,Cook,1,Stockton,CA inland,OEWS median,19.79,,,3423.67,2041.8613764193376,1381.8086235806625,0.5963954985203999
+San Francisco,cook,Cook,1,Stockton,CA inland,Indeed posted median,23.5,26.0,Stockton,4065.5,2041.8613764193376,2023.6386235806624,0.5022411453497325
+San Francisco,cook,Cook,1,Modesto,CA inland,OEWS median,20.15,,,3485.95,1736.761010231796,1749.1889897682038,0.49821741856073554
+San Francisco,cook,Cook,1,Modesto,CA inland,Indeed posted median,23.5,23.0,Modesto,4065.5,1736.761010231796,2328.738989768204,0.42719493548931153
+San Francisco,cook,Cook,1,Fresno,CA inland,OEWS median,18.4,,,3183.2,1723.2682644004824,1459.9317355995174,0.5413634909526522
+San Francisco,cook,Cook,1,Fresno,CA inland,Indeed posted median,22.0,25.0,Fresno,3806.0,1723.2682644004824,2082.7317355995174,0.45277673788767275
+San Francisco,cook,Cook,1,Phoenix,Out of state,OEWS median,18.83,,,3257.5899999999997,1444.6901135168466,1812.899886483153,0.44348432845043323
+San Francisco,cook,Cook,1,Las Vegas,Out of state,OEWS median,18.65,,,3226.45,1454.3292105727357,1772.120789427264,0.4507521302275677
+San Francisco,cook,Cook,1,Reno,Out of state,OEWS median,18.72,,,3238.56,1737.7436338543932,1500.8163661456067,0.5365791073360979
+San Francisco,cook,Cook,1,Boise,Out of state,OEWS median,17.9,,,3096.7,1615.6439797877842,1481.0560202122156,0.5217308682751911
+San Francisco,cook,Cook,1,Dallas,Out of state,OEWS median,17.54,,,3034.42,1393.5085888082854,1640.9114111917147,0.45923391910423916
+San Francisco,cook,Cook,1,Houston,Out of state,OEWS median,16.85,,,2915.05,1375.2867414527898,1539.7632585472104,0.4717883883476406
+San Francisco,cook,Cook,1,Portland,Out of state,OEWS median,21.73,,,3759.29,1514.1031474339136,2245.1868525660866,0.4027630609593603
+San Francisco,cook,Cook,2,Stay (in-place),Bay,OEWS median,22.13,,,3828.49,5334.0,-1505.5100000000002,1.3932385875371232
+San Francisco,cook,Cook,2,Stay (in-place),Bay,Indeed posted median,24.84,30.0,San Francisco,4297.32,5334.0,-1036.6800000000003,1.2412387255312614
+San Francisco,cook,Cook,2,Stay +1y at AB1482 max (+8%),Bay,OEWS median,22.13,,,3828.49,5760.72,-1932.2300000000005,1.504697674540093
+San Francisco,cook,Cook,2,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,24.84,30.0,San Francisco,4297.32,5760.72,-1463.4000000000005,1.3405378235737624
+San Francisco,cook,Cook,2,Re-rent in Bay (turnover),Bay,OEWS median,22.13,,,3828.49,6761.29102844639,-2932.80102844639,1.7660464121484947
+San Francisco,cook,Cook,2,Re-rent in Bay (turnover),Bay,Indeed posted median,24.84,30.0,San Francisco,4297.32,6761.29102844639,-2463.97102844639,1.5733738768456595
+San Francisco,cook,Cook,2,Sacramento,CA inland,OEWS median,21.27,,,3679.71,2298.3221349861615,1381.3878650138386,0.6245932790861675
+San Francisco,cook,Cook,2,Sacramento,CA inland,Indeed posted median,23.5,94.0,Sacramento,4065.5,2298.3221349861615,1767.1778650138385,0.5653233636665014
+San Francisco,cook,Cook,2,Stockton,CA inland,OEWS median,19.79,,,3423.67,2462.65208131506,961.01791868494,0.7193018256184328
+San Francisco,cook,Cook,2,Stockton,CA inland,Indeed posted median,23.5,26.0,Stockton,4065.5,2462.65208131506,1602.84791868494,0.605743962935693
+San Francisco,cook,Cook,2,Modesto,CA inland,OEWS median,20.15,,,3485.95,2094.6760470559007,1391.2739529440992,0.6008910188200923
+San Francisco,cook,Cook,2,Modesto,CA inland,Indeed posted median,23.5,23.0,Modesto,4065.5,2094.6760470559007,1970.8239529440993,0.515232086349994
+San Francisco,cook,Cook,2,Fresno,CA inland,OEWS median,18.4,,,3183.2,2078.4026903100043,1104.7973096899955,0.6529287164834143
+San Francisco,cook,Cook,2,Fresno,CA inland,Indeed posted median,22.0,25.0,Fresno,3806.0,2078.4026903100043,1727.5973096899957,0.5460858356043101
+San Francisco,cook,Cook,2,Phoenix,Out of state,OEWS median,18.83,,,3257.5899999999997,1742.4146203042203,1515.1753796957794,0.53487842862491
+San Francisco,cook,Cook,2,Las Vegas,Out of state,OEWS median,18.65,,,3226.45,1754.040160951015,1472.4098390489848,0.5436439929182275
+San Francisco,cook,Cook,2,Reno,Out of state,OEWS median,18.72,,,3238.56,2095.861171637464,1142.698828362536,0.6471583579237266
+San Francisco,cook,Cook,2,Boise,Out of state,OEWS median,17.9,,,3096.7,1948.598986903709,1148.101013096291,0.6292501653061998
+San Francisco,cook,Cook,2,Dallas,Out of state,OEWS median,17.54,,,3034.42,1680.685508913981,1353.734491086019,0.5538737250986946
+San Francisco,cook,Cook,2,Houston,Out of state,OEWS median,16.85,,,2915.05,1658.7084683402918,1256.3415316597084,0.5690154434195954
+San Francisco,cook,Cook,2,Portland,Out of state,OEWS median,21.73,,,3759.29,1826.1324252543404,1933.1575747456595,0.48576524430260515
+San Francisco,crew,Fast-food / restaurant crew,1,Stay (in-place),Bay,OEWS median,21.09,,,3648.57,3891.5,-242.92999999999984,1.0665822500322044
+San Francisco,crew,Fast-food / restaurant crew,1,Stay (in-place),Bay,Indeed posted median,20.5,65.0,San Francisco,3546.5,3891.5,-345.0,1.0972790074721557
+San Francisco,crew,Fast-food / restaurant crew,1,Stay +1y at AB1482 max (+8%),Bay,OEWS median,21.09,,,3648.57,4202.820000000001,-554.2500000000005,1.1519088300347808
+San Francisco,crew,Fast-food / restaurant crew,1,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,20.5,65.0,San Francisco,3546.5,4202.820000000001,-656.3200000000006,1.1850613280699283
+San Francisco,crew,Fast-food / restaurant crew,1,Re-rent in Bay (turnover),Bay,OEWS median,21.09,,,3648.57,4932.8016567677405,-1284.2316567677403,1.3519821893968706
+San Francisco,crew,Fast-food / restaurant crew,1,Re-rent in Bay (turnover),Bay,Indeed posted median,20.5,65.0,San Francisco,3546.5,4932.8016567677405,-1386.3016567677405,1.3908928963112197
+San Francisco,crew,Fast-food / restaurant crew,1,Sacramento,CA inland,OEWS median,20.61,,,3565.5299999999997,1905.6103107719068,1659.919689228093,0.5344535905663133
+San Francisco,crew,Fast-food / restaurant crew,1,Sacramento,CA inland,Indeed posted median,20.0,175.0,Sacramento,3460.0,1905.6103107719068,1554.3896892280932,0.5507544250785857
+San Francisco,crew,Fast-food / restaurant crew,1,Stockton,CA inland,OEWS median,20.07,,,3472.11,2041.8613764193376,1430.2486235806625,0.5880750829954516
+San Francisco,crew,Fast-food / restaurant crew,1,Stockton,CA inland,Indeed posted median,20.0,37.0,Stockton,3460.0,2041.8613764193376,1418.1386235806624,0.5901333457859357
+San Francisco,crew,Fast-food / restaurant crew,1,Modesto,CA inland,OEWS median,20.5,,,3546.5,1736.761010231796,1809.738989768204,0.4897112675121376
+San Francisco,crew,Fast-food / restaurant crew,1,Modesto,CA inland,Indeed posted median,20.0,48.0,Modesto,3460.0,1736.761010231796,1723.238989768204,0.501954049199941
+San Francisco,crew,Fast-food / restaurant crew,1,Fresno,CA inland,OEWS median,18.98,,,3283.54,1723.2682644004824,1560.2717355995176,0.5248202441269125
+San Francisco,crew,Fast-food / restaurant crew,1,Fresno,CA inland,Indeed posted median,20.0,87.0,Fresno,3460.0,1723.2682644004824,1736.7317355995176,0.49805441167644
+San Francisco,crew,Fast-food / restaurant crew,1,Phoenix,Out of state,OEWS median,16.61,,,2873.5299999999997,1444.6901135168466,1428.8398864831531,0.5027579713860119
+San Francisco,crew,Fast-food / restaurant crew,1,Las Vegas,Out of state,OEWS median,15.36,,,2657.2799999999997,1454.3292105727357,1202.950789427264,0.5472999497880299
+San Francisco,crew,Fast-food / restaurant crew,1,Reno,Out of state,OEWS median,15.16,,,2622.68,1737.7436338543932,884.9363661456066,0.6625831721195088
+San Francisco,crew,Fast-food / restaurant crew,1,Boise,Out of state,OEWS median,14.26,,,2466.98,1615.6439797877842,851.3360202122158,0.6549076116497841
+San Francisco,crew,Fast-food / restaurant crew,1,Dallas,Out of state,OEWS median,13.5,,,2335.5,1393.5085888082854,941.9914111917146,0.5966639215621004
+San Francisco,crew,Fast-food / restaurant crew,1,Houston,Out of state,OEWS median,13.25,,,2292.25,1375.2867414527898,916.9632585472102,0.5999724032949241
+San Francisco,crew,Fast-food / restaurant crew,1,Portland,Out of state,OEWS median,17.13,,,2963.49,1514.1031474339136,1449.3868525660862,0.5109189325538178
+San Francisco,crew,Fast-food / restaurant crew,2,Stay (in-place),Bay,OEWS median,21.09,,,3648.57,5334.0,-1685.4299999999998,1.4619426240965638
+San Francisco,crew,Fast-food / restaurant crew,2,Stay (in-place),Bay,Indeed posted median,20.5,65.0,San Francisco,3546.5,5334.0,-1787.5,1.5040180459608063
+San Francisco,crew,Fast-food / restaurant crew,2,Stay +1y at AB1482 max (+8%),Bay,OEWS median,21.09,,,3648.57,5760.72,-2112.15,1.578898034024289
+San Francisco,crew,Fast-food / restaurant crew,2,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,20.5,65.0,San Francisco,3546.5,5760.72,-2214.2200000000003,1.624339489637671
+San Francisco,crew,Fast-food / restaurant crew,2,Re-rent in Bay (turnover),Bay,OEWS median,21.09,,,3648.57,6761.29102844639,-3112.7210284463895,1.8531345235109618
+San Francisco,crew,Fast-food / restaurant crew,2,Re-rent in Bay (turnover),Bay,Indeed posted median,20.5,65.0,San Francisco,3546.5,6761.29102844639,-3214.7910284463896,1.9064686390656675
+San Francisco,crew,Fast-food / restaurant crew,2,Sacramento,CA inland,OEWS median,20.61,,,3565.5299999999997,2298.3221349861615,1267.2078650138383,0.6445948105852879
+San Francisco,crew,Fast-food / restaurant crew,2,Sacramento,CA inland,Indeed posted median,20.0,175.0,Sacramento,3460.0,2298.3221349861615,1161.6778650138385,0.6642549523081391
+San Francisco,crew,Fast-food / restaurant crew,2,Stockton,CA inland,OEWS median,20.07,,,3472.11,2462.65208131506,1009.4579186849401,0.709266722919222
+San Francisco,crew,Fast-food / restaurant crew,2,Stockton,CA inland,Indeed posted median,20.0,37.0,Stockton,3460.0,2462.65208131506,997.3479186849399,0.7117491564494394
+San Francisco,crew,Fast-food / restaurant crew,2,Modesto,CA inland,OEWS median,20.5,,,3546.5,2094.6760470559007,1451.8239529440993,0.5906319038646273
+San Francisco,crew,Fast-food / restaurant crew,2,Modesto,CA inland,Indeed posted median,20.0,48.0,Modesto,3460.0,2094.6760470559007,1365.3239529440993,0.6053977014612429
+San Francisco,crew,Fast-food / restaurant crew,2,Fresno,CA inland,OEWS median,18.98,,,3283.54,2078.4026903100043,1205.1373096899956,0.6329762056530465
+San Francisco,crew,Fast-food / restaurant crew,2,Fresno,CA inland,Indeed posted median,20.0,87.0,Fresno,3460.0,2078.4026903100043,1381.5973096899957,0.6006944191647411
+San Francisco,crew,Fast-food / restaurant crew,2,Phoenix,Out of state,OEWS median,16.61,,,2873.5299999999997,1742.4146203042203,1131.1153796957794,0.6063672974718275
+San Francisco,crew,Fast-food / restaurant crew,2,Las Vegas,Out of state,OEWS median,15.36,,,2657.2799999999997,1754.040160951015,903.2398390489848,0.6600885721305302
+San Francisco,crew,Fast-food / restaurant crew,2,Reno,Out of state,OEWS median,15.16,,,2622.68,2095.861171637464,526.8188283625359,0.7991295818161057
+San Francisco,crew,Fast-food / restaurant crew,2,Boise,Out of state,OEWS median,14.26,,,2466.98,1948.598986903709,518.3810130962911,0.7898722271375159
+San Francisco,crew,Fast-food / restaurant crew,2,Dallas,Out of state,OEWS median,13.5,,,2335.5,1680.685508913981,654.814491086019,0.7196255657948966
+San Francisco,crew,Fast-food / restaurant crew,2,Houston,Out of state,OEWS median,13.25,,,2292.25,1658.7084683402918,633.5415316597082,0.7236158657826554
+San Francisco,crew,Fast-food / restaurant crew,2,Portland,Out of state,OEWS median,17.13,,,2963.49,1826.1324252543404,1137.3575747456593,0.6162100851544431
+San Francisco,janitor,Janitor / custodian / housekeeper,1,Stay (in-place),Bay,OEWS median,21.24,,,3674.5199999999995,3891.5,-216.98000000000047,1.0590498895093783
+San Francisco,janitor,Janitor / custodian / housekeeper,1,Stay (in-place),Bay,Indeed posted median,27.3,68.0,San Francisco,4722.900000000001,3891.5,831.4000000000005,0.8239640898600435
+San Francisco,janitor,Janitor / custodian / housekeeper,1,Stay +1y at AB1482 max (+8%),Bay,OEWS median,21.24,,,3674.5199999999995,4202.820000000001,-528.3000000000011,1.1437738806701288
+San Francisco,janitor,Janitor / custodian / housekeeper,1,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,27.3,68.0,San Francisco,4722.900000000001,4202.820000000001,520.0799999999999,0.8898812170488472
+San Francisco,janitor,Janitor / custodian / housekeeper,1,Re-rent in Bay (turnover),Bay,OEWS median,21.24,,,3674.5199999999995,4932.8016567677405,-1258.281656767741,1.3424342925790964
+San Francisco,janitor,Janitor / custodian / housekeeper,1,Re-rent in Bay (turnover),Bay,Indeed posted median,27.3,68.0,San Francisco,4722.900000000001,4932.8016567677405,-209.90165676773995,1.0444433836769231
+San Francisco,janitor,Janitor / custodian / housekeeper,1,Sacramento,CA inland,OEWS median,19.93,,,3447.89,1905.6103107719068,1542.279689228093,0.552688836004602
+San Francisco,janitor,Janitor / custodian / housekeeper,1,Sacramento,CA inland,Indeed posted median,19.45,96.0,Sacramento,3364.85,1905.6103107719068,1459.239689228093,0.5663284576643556
+San Francisco,janitor,Janitor / custodian / housekeeper,1,Stockton,CA inland,OEWS median,19.3,,,3338.9,2041.8613764193376,1297.0386235806625,0.6115371458921613
+San Francisco,janitor,Janitor / custodian / housekeeper,1,Stockton,CA inland,Indeed posted median,18.0,26.0,Stockton,3114.0,2041.8613764193376,1072.1386235806624,0.6557037175399286
+San Francisco,janitor,Janitor / custodian / housekeeper,1,Modesto,CA inland,OEWS median,19.82,,,3428.86,1736.761010231796,1692.098989768204,0.5065126631684571
+San Francisco,janitor,Janitor / custodian / housekeeper,1,Modesto,CA inland,Indeed posted median,17.4,18.0,Modesto,3010.2,1736.761010231796,1273.4389897682038,0.5769586772413116
+San Francisco,janitor,Janitor / custodian / housekeeper,1,Fresno,CA inland,OEWS median,18.26,,,3158.9800000000005,1723.2682644004824,1435.711735599518,0.5455141420333406
+San Francisco,janitor,Janitor / custodian / housekeeper,1,Fresno,CA inland,Indeed posted median,19.0,23.0,Fresno,3287.0,1723.2682644004824,1563.7317355995176,0.5242678017646737
+San Francisco,janitor,Janitor / custodian / housekeeper,1,Phoenix,Out of state,OEWS median,17.44,,,3017.1200000000003,1444.6901135168466,1572.4298864831537,0.4788308431606454
+San Francisco,janitor,Janitor / custodian / housekeeper,1,Las Vegas,Out of state,OEWS median,18.9,,,3269.7,1454.3292105727357,1815.370789427264,0.44478980046265276
+San Francisco,janitor,Janitor / custodian / housekeeper,1,Reno,Out of state,OEWS median,17.89,,,3094.9700000000003,1737.7436338543932,1357.226366145607,0.5614734985652181
+San Francisco,janitor,Janitor / custodian / housekeeper,1,Boise,Out of state,OEWS median,17.38,,,3006.74,1615.6439797877842,1391.0960202122155,0.5373407676712267
+San Francisco,janitor,Janitor / custodian / housekeeper,1,Dallas,Out of state,OEWS median,16.76,,,2899.4800000000005,1393.5085888082854,1505.971411191715,0.48060638073319534
+San Francisco,janitor,Janitor / custodian / housekeeper,1,Houston,Out of state,OEWS median,14.74,,,2550.02,1375.2867414527898,1174.7332585472102,0.5393239039116516
+San Francisco,janitor,Janitor / custodian / housekeeper,1,Portland,Out of state,OEWS median,19.79,,,3423.67,1514.1031474339136,1909.5668525660865,0.4422456450048964
+San Francisco,janitor,Janitor / custodian / housekeeper,2,Stay (in-place),Bay,OEWS median,21.24,,,3674.5199999999995,5334.0,-1659.4800000000005,1.45161817053656
+San Francisco,janitor,Janitor / custodian / housekeeper,2,Stay (in-place),Bay,Indeed posted median,27.3,68.0,San Francisco,4722.900000000001,5334.0,-611.0999999999995,1.1293908403734991
+San Francisco,janitor,Janitor / custodian / housekeeper,2,Stay +1y at AB1482 max (+8%),Bay,OEWS median,21.24,,,3674.5199999999995,5760.72,-2086.2000000000007,1.567747624179485
+San Francisco,janitor,Janitor / custodian / housekeeper,2,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,27.3,68.0,San Francisco,4722.900000000001,5760.72,-1037.8199999999997,1.2197421076033792
+San Francisco,janitor,Janitor / custodian / housekeeper,2,Re-rent in Bay (turnover),Bay,OEWS median,21.24,,,3674.5199999999995,6761.29102844639,-3086.77102844639,1.8400474152940767
+San Francisco,janitor,Janitor / custodian / housekeeper,2,Re-rent in Bay (turnover),Bay,Indeed posted median,27.3,68.0,San Francisco,4722.900000000001,6761.29102844639,-2038.391028446389,1.4315973297013251
+San Francisco,janitor,Janitor / custodian / housekeeper,2,Sacramento,CA inland,OEWS median,19.93,,,3447.89,2298.3221349861615,1149.5678650138384,0.6665880103443443
+San Francisco,janitor,Janitor / custodian / housekeeper,2,Sacramento,CA inland,Indeed posted median,19.45,96.0,Sacramento,3364.85,2298.3221349861615,1066.5278650138384,0.6830385113708372
+San Francisco,janitor,Janitor / custodian / housekeeper,2,Stockton,CA inland,OEWS median,19.3,,,3338.9,2462.65208131506,876.24791868494,0.7375638926937195
+San Francisco,janitor,Janitor / custodian / housekeeper,2,Stockton,CA inland,Indeed posted median,18.0,26.0,Stockton,3114.0,2462.65208131506,651.3479186849399,0.7908323960549326
+San Francisco,janitor,Janitor / custodian / housekeeper,2,Modesto,CA inland,OEWS median,19.82,,,3428.86,2094.6760470559007,1334.1839529440995,0.610895763331224
+San Francisco,janitor,Janitor / custodian / housekeeper,2,Modesto,CA inland,Indeed posted median,17.4,18.0,Modesto,3010.2,2094.6760470559007,915.5239529440992,0.695859426966946
+San Francisco,janitor,Janitor / custodian / housekeeper,2,Fresno,CA inland,OEWS median,18.26,,,3158.9800000000005,2078.4026903100043,1080.5773096899961,0.6579347416919398
+San Francisco,janitor,Janitor / custodian / housekeeper,2,Fresno,CA inland,Indeed posted median,19.0,23.0,Fresno,3287.0,2078.4026903100043,1208.5973096899957,0.6323099149102538
+San Francisco,janitor,Janitor / custodian / housekeeper,2,Phoenix,Out of state,OEWS median,17.44,,,3017.1200000000003,1742.4146203042203,1274.70537969578,0.5775092208146245
+San Francisco,janitor,Janitor / custodian / housekeeper,2,Las Vegas,Out of state,OEWS median,18.9,,,3269.7,1754.040160951015,1515.6598390489848,0.5364529348108436
+San Francisco,janitor,Janitor / custodian / housekeeper,2,Reno,Out of state,OEWS median,17.89,,,3094.9700000000003,2095.861171637464,999.1088283625363,0.6771830329978848
+San Francisco,janitor,Janitor / custodian / housekeeper,2,Boise,Out of state,OEWS median,17.38,,,3006.74,1948.598986903709,1058.1410130962909,0.6480769826801482
+San Francisco,janitor,Janitor / custodian / housekeeper,2,Dallas,Out of state,OEWS median,16.76,,,2899.4800000000005,1680.685508913981,1218.7944910860194,0.5796506645722614
+San Francisco,janitor,Janitor / custodian / housekeeper,2,Houston,Out of state,OEWS median,14.74,,,2550.02,1658.7084683402918,891.3115316597082,0.6504688074369188
+San Francisco,janitor,Janitor / custodian / housekeeper,2,Portland,Out of state,OEWS median,19.79,,,3423.67,1826.1324252543404,1597.5375747456596,0.5333844749214558
+San Francisco,security,Security guard,1,Stay (in-place),Bay,OEWS median,21.99,,,3804.2699999999995,3891.5,-87.23000000000047,1.0229294976434375
+San Francisco,security,Security guard,1,Stay (in-place),Bay,Indeed posted median,26.5,22.0,San Francisco,4584.5,3891.5,693.0,0.84883847747846
+San Francisco,security,Security guard,1,Stay +1y at AB1482 max (+8%),Bay,OEWS median,21.99,,,3804.2699999999995,4202.820000000001,-398.5500000000011,1.1047638574549128
+San Francisco,security,Security guard,1,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,26.5,22.0,San Francisco,4584.5,4202.820000000001,381.6799999999994,0.916745555676737
+San Francisco,security,Security guard,1,Re-rent in Bay (turnover),Bay,OEWS median,21.99,,,3804.2699999999995,4932.8016567677405,-1128.531656767741,1.2966486755061395
+San Francisco,security,Security guard,1,Re-rent in Bay (turnover),Bay,Indeed posted median,26.5,22.0,San Francisco,4584.5,4932.8016567677405,-348.3016567677405,1.0759737499766038
+San Francisco,security,Security guard,1,Sacramento,CA inland,OEWS median,18.97,,,3281.81,1905.6103107719068,1376.1996892280931,0.580658329023285
+San Francisco,security,Security guard,1,Sacramento,CA inland,Indeed posted median,24.01,24.0,Sacramento,4153.7300000000005,1905.6103107719068,2248.1196892280936,0.45877086637116676
+San Francisco,security,Security guard,1,Stockton,CA inland,OEWS median,18.52,,,3203.96,2041.8613764193376,1162.0986235806624,0.63729303000641
+San Francisco,security,Security guard,1,Stockton,CA inland,Indeed posted median,21.225,20.0,Central Valley pooled (fallback),3671.925,2041.8613764193376,1630.0636235806626,0.5560738240621302
+San Francisco,security,Security guard,1,Modesto,CA inland,OEWS median,18.74,,,3242.0199999999995,1736.761010231796,1505.2589897682035,0.5357033609391048
+San Francisco,security,Security guard,1,Modesto,CA inland,Indeed posted median,21.225,20.0,Central Valley pooled (fallback),3671.925,1736.761010231796,1935.1639897682041,0.47298379194340734
+San Francisco,security,Security guard,1,Fresno,CA inland,OEWS median,17.87,,,3091.51,1723.2682644004824,1368.2417355995178,0.557419598966357
+San Francisco,security,Security guard,1,Fresno,CA inland,Indeed posted median,21.225,20.0,Central Valley pooled (fallback),3671.925,1723.2682644004824,1948.6567355995178,0.4693092218388127
+San Francisco,security,Security guard,1,Phoenix,Out of state,OEWS median,18.41,,,3184.93,1444.6901135168466,1740.2398864831532,0.45360184164702105
+San Francisco,security,Security guard,1,Las Vegas,Out of state,OEWS median,17.89,,,3094.9700000000003,1454.3292105727357,1640.6407894272645,0.46990090714053306
+San Francisco,security,Security guard,1,Reno,Out of state,OEWS median,18.93,,,3274.89,1737.7436338543932,1537.1463661456066,0.5306265657333203
+San Francisco,security,Security guard,1,Boise,Out of state,OEWS median,17.97,,,3108.81,1615.6439797877842,1493.1660202122157,0.5196985276642138
+San Francisco,security,Security guard,1,Dallas,Out of state,OEWS median,17.63,,,3049.99,1393.5085888082854,1656.4814111917144,0.45688955990291297
+San Francisco,security,Security guard,1,Houston,Out of state,OEWS median,17.05,,,2949.65,1375.2867414527898,1574.3632585472103,0.4662542137042665
+San Francisco,security,Security guard,1,Portland,Out of state,OEWS median,22.51,,,3894.2300000000005,1514.1031474339136,2380.126852566087,0.3888068109572145
+San Francisco,security,Security guard,2,Stay (in-place),Bay,OEWS median,21.99,,,3804.2699999999995,5334.0,-1529.7300000000005,1.4021086831376324
+San Francisco,security,Security guard,2,Stay (in-place),Bay,Indeed posted median,26.5,22.0,San Francisco,4584.5,5334.0,-749.5,1.1634856581960955
+San Francisco,security,Security guard,2,Stay +1y at AB1482 max (+8%),Bay,OEWS median,21.99,,,3804.2699999999995,5760.72,-1956.4500000000007,1.514277377788643
+San Francisco,security,Security guard,2,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,26.5,22.0,San Francisco,4584.5,5760.72,-1176.2200000000003,1.2565645108517833
+San Francisco,security,Security guard,2,Re-rent in Bay (turnover),Bay,OEWS median,21.99,,,3804.2699999999995,6761.29102844639,-2957.02102844639,1.7772900000384806
+San Francisco,security,Security guard,2,Re-rent in Bay (turnover),Bay,Indeed posted median,26.5,22.0,San Francisco,4584.5,6761.29102844639,-2176.7910284463896,1.4748153622960825
+San Francisco,security,Security guard,2,Sacramento,CA inland,OEWS median,18.97,,,3281.81,2298.3221349861615,983.4878650138385,0.7003215100771103
+San Francisco,security,Security guard,2,Sacramento,CA inland,Indeed posted median,24.01,24.0,Sacramento,4153.7300000000005,2298.3221349861615,1855.407865013839,0.5533152455711279
+San Francisco,security,Security guard,2,Stockton,CA inland,OEWS median,18.52,,,3203.96,2462.65208131506,741.30791868494,0.7686275987574939
+San Francisco,security,Security guard,2,Stockton,CA inland,Indeed posted median,21.225,20.0,Central Valley pooled (fallback),3671.925,2462.65208131506,1209.2729186849401,0.670670583226798
+San Francisco,security,Security guard,2,Modesto,CA inland,OEWS median,18.74,,,3242.0199999999995,2094.6760470559007,1147.3439529440989,0.6461021360312093
+San Francisco,security,Security guard,2,Modesto,CA inland,Indeed posted median,21.225,20.0,Central Valley pooled (fallback),3671.925,2094.6760470559007,1577.2489529440995,0.5704571980789097
+San Francisco,security,Security guard,2,Fresno,CA inland,OEWS median,17.87,,,3091.51,2078.4026903100043,1013.1073096899959,0.6722936980019486
+San Francisco,security,Security guard,2,Fresno,CA inland,Indeed posted median,21.225,20.0,Central Valley pooled (fallback),3671.925,2078.4026903100043,1593.5223096899958,0.5660253655262578
+San Francisco,security,Security guard,2,Phoenix,Out of state,OEWS median,18.41,,,3184.93,1742.4146203042203,1442.5153796957795,0.5470809783273793
+San Francisco,security,Security guard,2,Las Vegas,Out of state,OEWS median,17.89,,,3094.9700000000003,1754.040160951015,1340.9298390489853,0.5667389864686944
+San Francisco,security,Security guard,2,Reno,Out of state,OEWS median,18.93,,,3274.89,2095.861171637464,1179.028828362536,0.6399791051416884
+San Francisco,security,Security guard,2,Boise,Out of state,OEWS median,17.97,,,3108.81,1948.598986903709,1160.211013096291,0.6267989960479119
+San Francisco,security,Security guard,2,Dallas,Out of state,OEWS median,17.63,,,3049.99,1680.685508913981,1369.3044910860187,0.551046235861095
+San Francisco,security,Security guard,2,Houston,Out of state,OEWS median,17.05,,,2949.65,1658.7084683402918,1290.9415316597083,0.5623407754615943
+San Francisco,security,Security guard,2,Portland,Out of state,OEWS median,22.51,,,3894.2300000000005,1826.1324252543404,2068.09757474566,0.4689328635582234
+San Francisco,driver,Delivery driver,1,Stay (in-place),Bay,OEWS median,24.43,,,4226.39,3891.5,334.8900000000003,0.9207621634539168
+San Francisco,driver,Delivery driver,1,Stay (in-place),Bay,Indeed posted median,24.785,35.0,San Francisco,4287.805,3891.5,396.3050000000003,0.9075739218551216
+San Francisco,driver,Delivery driver,1,Stay +1y at AB1482 max (+8%),Bay,OEWS median,24.43,,,4226.39,4202.820000000001,23.56999999999971,0.9944231365302304
+San Francisco,driver,Delivery driver,1,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,24.785,35.0,San Francisco,4287.805,4202.820000000001,84.98499999999967,0.9801798356035315
+San Francisco,driver,Delivery driver,1,Re-rent in Bay (turnover),Bay,OEWS median,24.43,,,4226.39,4932.8016567677405,-706.4116567677402,1.167143036200573
+San Francisco,driver,Delivery driver,1,Re-rent in Bay (turnover),Bay,Indeed posted median,24.785,35.0,San Francisco,4287.805,4932.8016567677405,-644.9966567677402,1.1504258371749043
+San Francisco,driver,Delivery driver,1,Sacramento,CA inland,OEWS median,22.28,,,3854.44,1905.6103107719068,1948.8296892280932,0.4943935593165043
+San Francisco,driver,Delivery driver,1,Sacramento,CA inland,Indeed posted median,21.5,58.0,Sacramento,3719.5,1905.6103107719068,1813.8896892280932,0.5123296977475217
+San Francisco,driver,Delivery driver,1,Stockton,CA inland,OEWS median,22.39,,,3873.4700000000003,2041.8613764193376,1831.6086235806627,0.5271401034264722
+San Francisco,driver,Delivery driver,1,Stockton,CA inland,Indeed posted median,22.42,21.0,Stockton,3878.6600000000003,2041.8613764193376,1836.7986235806627,0.5264347420035108
+San Francisco,driver,Delivery driver,1,Modesto,CA inland,OEWS median,21.06,,,3643.3799999999997,1736.761010231796,1906.6189897682036,0.4766895054130495
+San Francisco,driver,Delivery driver,1,Modesto,CA inland,Indeed posted median,22.0,45.0,Central Valley pooled (fallback),3806.0,1736.761010231796,2069.238989768204,0.4563218629090373
+San Francisco,driver,Delivery driver,1,Fresno,CA inland,OEWS median,20.76,,,3591.4800000000005,1723.2682644004824,1868.211735599518,0.47982120585398835
+San Francisco,driver,Delivery driver,1,Fresno,CA inland,Indeed posted median,22.0,45.0,Central Valley pooled (fallback),3806.0,1723.2682644004824,2082.7317355995174,0.45277673788767275
+San Francisco,driver,Delivery driver,1,Phoenix,Out of state,OEWS median,22.01,,,3807.7300000000005,1444.6901135168466,2363.039886483154,0.37940980939216973
+San Francisco,driver,Delivery driver,1,Las Vegas,Out of state,OEWS median,20.75,,,3589.75,1454.3292105727357,2135.420789427264,0.40513384234911504
+San Francisco,driver,Delivery driver,1,Reno,Out of state,OEWS median,21.12,,,3653.76,1737.7436338543932,1916.016366145607,0.4756042087751777
+San Francisco,driver,Delivery driver,1,Boise,Out of state,OEWS median,21.34,,,3691.82,1615.6439797877842,2076.176020212216,0.4376280478971846
+San Francisco,driver,Delivery driver,1,Dallas,Out of state,OEWS median,21.18,,,3664.14,1393.5085888082854,2270.6314111917145,0.3803098650183359
+San Francisco,driver,Delivery driver,1,Houston,Out of state,OEWS median,21.12,,,3653.76,1375.2867414527898,2278.47325854721,0.37640314127167346
+San Francisco,driver,Delivery driver,1,Portland,Out of state,OEWS median,22.94,,,3968.6200000000003,1514.1031474339136,2454.5168525660865,0.38151880185906273
+San Francisco,driver,Delivery driver,2,Stay (in-place),Bay,OEWS median,24.43,,,4226.39,5334.0,-1107.6099999999997,1.2620699935405866
+San Francisco,driver,Delivery driver,2,Stay (in-place),Bay,Indeed posted median,24.785,35.0,San Francisco,4287.805,5334.0,-1046.1949999999997,1.2439931386805136
+San Francisco,driver,Delivery driver,2,Stay +1y at AB1482 max (+8%),Bay,OEWS median,24.43,,,4226.39,5760.72,-1534.33,1.3630355930238336
+San Francisco,driver,Delivery driver,2,Stay +1y at AB1482 max (+8%),Bay,Indeed posted median,24.785,35.0,San Francisco,4287.805,5760.72,-1472.915,1.3435125897749547
+San Francisco,driver,Delivery driver,2,Re-rent in Bay (turnover),Bay,OEWS median,24.43,,,4226.39,6761.29102844639,-2534.9010284463893,1.5997792509556357
+San Francisco,driver,Delivery driver,2,Re-rent in Bay (turnover),Bay,Indeed posted median,24.785,35.0,San Francisco,4287.805,6761.29102844639,-2473.4860284463894,1.5768653258360372
+San Francisco,driver,Delivery driver,2,Sacramento,CA inland,OEWS median,22.28,,,3854.44,2298.3221349861615,1556.1178650138386,0.596279131335852
+San Francisco,driver,Delivery driver,2,Sacramento,CA inland,Indeed posted median,21.5,58.0,Sacramento,3719.5,2298.3221349861615,1421.1778650138385,0.617911583542455
+San Francisco,driver,Delivery driver,2,Stockton,CA inland,OEWS median,22.39,,,3873.4700000000003,2462.65208131506,1410.8179186849402,0.6357741460021789
+San Francisco,driver,Delivery driver,2,Stockton,CA inland,Indeed posted median,22.42,21.0,Stockton,3878.6600000000003,2462.65208131506,1416.0079186849403,0.6349234223456194
+San Francisco,driver,Delivery driver,2,Modesto,CA inland,OEWS median,21.06,,,3643.3799999999997,2094.6760470559007,1548.703952944099,0.5749265920809525
+San Francisco,driver,Delivery driver,2,Modesto,CA inland,Indeed posted median,22.0,45.0,Central Valley pooled (fallback),3806.0,2094.6760470559007,1711.3239529440993,0.5503615467829481
+San Francisco,driver,Delivery driver,2,Fresno,CA inland,OEWS median,20.76,,,3591.4800000000005,2078.4026903100043,1513.0773096899961,0.5787036793494615
+San Francisco,driver,Delivery driver,2,Fresno,CA inland,Indeed posted median,22.0,45.0,Central Valley pooled (fallback),3806.0,2078.4026903100043,1727.5973096899957,0.5460858356043101
+San Francisco,driver,Delivery driver,2,Phoenix,Out of state,OEWS median,22.01,,,3807.7300000000005,1742.4146203042203,2065.3153796957804,0.45759930990490927
+San Francisco,driver,Delivery driver,2,Las Vegas,Out of state,OEWS median,20.75,,,3589.75,1754.040160951015,1835.709839048985,0.4886246008638526
+San Francisco,driver,Delivery driver,2,Reno,Out of state,OEWS median,21.12,,,3653.76,2095.861171637464,1557.8988283625363,0.573617635432394
+San Francisco,driver,Delivery driver,2,Boise,Out of state,OEWS median,21.34,,,3691.82,1948.598986903709,1743.2210130962912,0.5278152745539352
+San Francisco,driver,Delivery driver,2,Dallas,Out of state,OEWS median,21.18,,,3664.14,1680.685508913981,1983.4544910860188,0.45868485071912674
+San Francisco,driver,Delivery driver,2,Houston,Out of state,OEWS median,21.12,,,3653.76,1658.7084683402918,1995.0515316597084,0.45397302185701627
+San Francisco,driver,Delivery driver,2,Portland,Out of state,OEWS median,22.94,,,3968.6200000000003,1826.1324252543404,2142.48757474566,0.4601429275804537

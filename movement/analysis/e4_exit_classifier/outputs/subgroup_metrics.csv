@@ -1,0 +1,17 @@
+subgroup_type,subgroup,n,n_pos,macro_f1,exit_f1,exit_recall,exit_precision,naive_exit_f1
+all,all (OOF),933,136,0.544,0.447,0.588,0.36,0.262
+group,bay_local,570,82,0.552,0.445,0.622,0.347,0.325
+group,finance_housing,163,30,0.548,0.471,0.533,0.421,0.167
+group,work_other,200,24,0.466,0.426,0.542,0.351,0.103
+kind,comment,572,101,0.527,0.445,0.604,0.353,0.274
+kind,post,361,35,0.584,0.452,0.543,0.388,0.232
+len_tertile,long,311,24,0.572,0.448,0.542,0.382,0.248
+len_tertile,medium,311,49,0.494,0.397,0.469,0.343,0.215
+len_tertile,short,311,63,0.55,0.478,0.698,0.364,0.313
+register,informal_top20pct,187,24,0.48,0.448,0.542,0.382,0.212
+register,standard,746,112,0.55,0.447,0.598,0.356,0.272
+group (test split only),bay_local,119,23,0.634,0.581,0.783,0.462,0.459
+group (test split only),finance_housing,28,1,0.387,0.25,1.0,0.143,0.0
+group (test split only),work_other,40,3,0.433,0.364,0.667,0.25,0.154
+kind (test split only),comment,126,20,0.585,0.508,0.75,0.385,0.4
+kind (test split only),post,61,7,0.61,0.545,0.857,0.4,0.261

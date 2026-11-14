@@ -1,0 +1,301 @@
+idx,label,reasons,household,era,origin,dest,occ,money,item_id,kind,sub,group,tier,date,sample_prob
+0,ARRIVED,,family_kids,recent,unknown,San Jose (downtown),unknown,,t3_1nl5yk8_c9,comment,bayarea,bay_local,B_newcomer_place,2025-09-19T18:08:15.069Z,0.4651162790697674
+1,ARRIVED,,unknown,long_ago,unknown,SF (SoMa),unknown,,t3_1v6yvrv_c4,comment,sanfrancisco,bay_local,A_first_person_move_to_bay,2026-07-27T04:22:44.180Z,0.1851851851851851
+2,ARRIVED,other_job,unknown,long_ago,unknown,SF,unknown,,t3_1m89qlx_c14,comment,sanfrancisco,bay_local,B_newcomer_implicit,2025-07-25T00:43:18.225Z,0.1674641148325359
+3,ARRIVED,,unknown,recent,unknown,Bay Area,unknown,,t3_1trl76x_c10,comment,SanFranciscoWeddings,bay_local,A_first_person_move_to_bay,2026-06-02T19:33:39.741Z,0.1851851851851851
+4,OTHER,,,,,,,,t3_1hs14g9,post,SanFranciscoSecrets,bay_local,A_first_person_move_to_bay,2025-01-02T18:50:43.144Z,0.1851851851851851
+5,OTHER,,,,,,,,t3_1s4fxc2_c10,comment,OaklandAthletics,work_other,C_offer_in_bay,2026-03-26T19:56:55.102Z,0.7407407407407407
+6,ARRIVED,,family_kids,long_ago,unknown,San Jose,unknown,,t3_1rc5twt_c2,comment,SanJose,bay_local,B_newcomer_implicit,2026-02-23T19:55:36.873Z,0.1674641148325359
+7,OTHER,,,,,,,,t3_1q5uln6_c17,comment,sanfrancisco,bay_local,B_newcomer_place,2026-01-07T06:23:57.288Z,0.4651162790697674
+8,OTHER,,,,,,,,t3_1rrdvvl_c3,comment,berkeleyca,bay_local,A_first_person_move_to_bay,2026-03-12T19:30:37.263Z,0.1851851851851851
+9,ARRIVED,,couple,long_ago,unknown,SF,unknown,,t3_1sdq7zx,post,sanfrancisco,bay_local,B_newcomer_implicit,2026-04-06T05:40:04.466Z,0.1674641148325359
+10,ARRIVED,,unknown,unknown,elsewhere_CA,SF,unknown,,t3_1np1eqs_c2,comment,sanfrancisco,bay_local,A_first_person_move_to_bay,2025-09-24T22:55:54.973Z,0.1851851851851851
+11,ARRIVED,,single,recent,elsewhere_CA,West Oakland,unknown,,t3_1rwmm0q,post,oakland,bay_local,B_newcomer_place,2026-03-17T23:04:10.433Z,0.4651162790697674
+12,OTHER,,,,,,,,1vwd49u_c6,comment,careerguidance,work_other,C_offer_in_bay,2026-08-24T09:35:39.546Z,0.7407407407407407
+13,PLANNING,school,single,recent,unknown,Berkeley,academic_student,,t3_1msqxnm,post,personalfinance,finance_housing,A_first_person_move_to_bay,2025-08-17T13:28:14.126Z,0.1851851851851851
+14,OTHER,,,,,,,,t3_1u168vg,post,HousingIreland,work_other,C_offer_in_bay,2026-06-09T14:15:59.297Z,0.7407407407407407
+15,ARRIVED,,unknown,unknown,other_US_state,Bay Area,unknown,,t3_1sfkxnl,post,bayarea,bay_local,B_newcomer_place,2026-04-08T06:24:05.550Z,0.4651162790697674
+16,ARRIVED,other_job,family_kids,recent,unknown,Bay Area,unknown,,t3_1ktlmw1_c5,comment,bayarea,bay_local,A_first_person_move_to_bay,2025-05-29T16:19:07.628Z,0.1851851851851851
+17,PLANNING,,couple,recent,other_US_state,San Jose,unknown,,t3_1tkrz7s_c9,comment,BayAreaRealEstate,bay_local,A_first_person_move_to_bay,2026-05-24T02:20:10.792Z,0.1851851851851851
+18,OTHER,,,,,,,,t3_1wn6b4n,post,irishpersonalfinance,work_other,C_offer_in_bay,2026-09-22T10:59:30.627Z,0.7407407407407407
+19,OTHER,,,,,,,,t3_1rufs6x_c4,comment,BayAreaRealEstate,bay_local,B_newcomer_implicit,2026-03-15T19:09:32.246Z,0.1674641148325359
+20,PLANNING,,single,recent,other_US_state,Oakland,unknown,,1v67cyh,post,oakland,bay_local,A_first_person_move_to_bay,2026-07-25T12:41:04.000Z,0.1851851851851851
+21,ARRIVED,,unknown,long_ago,unknown,Bay Area,unknown,,t3_1q25j9t_c3,comment,SanJose,bay_local,A_first_person_move_to_bay,2026-01-04T19:06:28.314Z,0.1851851851851851
+22,ARRIVED,,unknown,long_ago,unknown,SF,unknown,,t3_1shqjln_c17,comment,sanfrancisco,bay_local,B_newcomer_implicit,2026-04-10T16:08:58.973Z,0.1674641148325359
+23,OTHER,,,,,,,,t3_1so05so_c14,comment,bayarea,bay_local,C_offer_in_bay,2026-04-17T13:19:54.426Z,0.7407407407407407
+24,ARRIVED,,unknown,long_ago,unknown,Bay Area,unknown,,t3_1sxrr14_c16,comment,bayarea,bay_local,A_first_person_move_to_bay,2026-04-29T03:45:51.325Z,0.1851851851851851
+25,OTHER,,,,,,,,1wbi3ec_c11,comment,Germany_Jobs,work_other,C_offer_in_bay,2026-09-09T11:44:37.724Z,0.7407407407407407
+26,ARRIVED,,unknown,long_ago,unknown,San Jose,unknown,,t3_1tmgrwc_c11,comment,bayarea,bay_local,A_first_person_move_to_bay,2026-05-26T03:02:56.736Z,0.1851851851851851
+27,ARRIVED,,unknown,recent,elsewhere_CA,Oakland,unknown,,1v9n96u,post,OaklandCA,bay_local,A_first_person_move_to_bay,2026-07-29T05:52:14.000Z,0.1851851851851851
+28,ARRIVED,,unknown,recent,unknown,Oakland,unknown,,t3_1ks6b0d,post,OaklandFood,bay_local,A_first_person_move_to_bay,2025-05-21T19:11:14.318Z,0.1851851851851851
+29,ARRIVED,,unknown,long_ago,unknown,SF,unknown,,t3_1th6qcj_c18,comment,sanfrancisco,bay_local,A_first_person_move_to_bay,2026-05-19T19:46:22.642Z,0.1851851851851851
+30,OTHER,,,,,,,,t3_1tsxvym_c5,comment,BayAreaRealEstate,bay_local,A_first_person_move_to_bay,2026-05-31T19:01:54.017Z,0.1851851851851851
+31,OTHER,,,,,,,,t3_1sldfu7_c16,comment,bayarea,bay_local,A_first_person_move_to_bay,2026-04-14T17:28:27.997Z,0.1851851851851851
+32,OTHER,,,,,,,,t3_1r7mxx8_c3,comment,eastbay,bay_local,A_first_person_move_to_bay,2026-02-19T20:16:41.159Z,0.1851851851851851
+33,ARRIVED,school;partner_family,couple,unknown,unknown,Berkeley,academic_student,,t3_1sye3t8_c8,comment,berkeley,bay_local,B_newcomer_implicit,2026-04-28T23:07:03.496Z,0.1674641148325359
+34,ARRIVED,,single,long_ago,unknown,San Jose,unknown,,t3_1st85l1_c7,comment,bayarea,bay_local,B_newcomer_implicit,2026-04-24T04:12:40.356Z,0.1674641148325359
+35,PLANNING,tech_job,single,recent,abroad,SF (FiDi),tech,,t3_1q66vbe,post,SFBayHousing,bay_local,C_offer_in_bay,2026-01-07T05:25:46.992Z,0.7407407407407407
+36,WITHIN_BAY,,,,,,,,t3_1kp83pg_c7,comment,SanFranciscoSecrets,bay_local,A_first_person_move_to_bay,2025-05-18T02:30:28.857Z,0.1851851851851851
+37,ARRIVED,school,single,recent,unknown,Berkeley,academic_student,,t3_1wcnr1d,post,berkeley,bay_local,A_first_person_move_to_bay,2026-09-10T16:16:44.542Z,0.1851851851851851
+38,ARRIVED,,unknown,long_ago,unknown,SF,unknown,,t3_1rd3g0v_c6,comment,sanfrancisco,bay_local,A_first_person_move_to_bay,2026-02-24T17:49:53.254Z,0.1851851851851851
+39,ARRIVED,,unknown,recent,other_US_state,San Jose,unknown,,t3_1sdou3i_c6,comment,SanJose,bay_local,B_newcomer_implicit,2026-04-06T07:09:08.716Z,0.1674641148325359
+40,PLANNING,other_job,unknown,recent,other_US_state,Fremont (Ardenwood) / Menlo Park,unknown,rent 5000,t3_1uhrwk5,post,bayarea,bay_local,C_offer_in_bay,2026-06-28T08:35:15.981Z,0.7407407407407407
+41,ARRIVED,,unknown,recent,unknown,South Bay,unknown,,t3_1t38b15,post,BayAreaRealEstate,bay_local,B_newcomer_place,2026-05-04T05:14:55.238Z,0.4651162790697674
+42,OTHER,,,,,,,,t3_1urx8yt_c0,comment,bayarea,bay_local,C_offer_in_bay,2026-07-12T16:39:08.161Z,0.7407407407407407
+43,ARRIVED,,family_kids,recent,other_US_state,San Mateo,unknown,,t3_1otihsg_c1,comment,bayarea,bay_local,A_first_person_move_to_bay,2025-11-13T19:44:29.189Z,0.1851851851851851
+44,OTHER,,,,,,,,t3_1swr9kj,post,personalfinance,finance_housing,A_first_person_move_to_bay,2026-04-27T02:46:09.091Z,0.1851851851851851
+45,ARRIVED,,unknown,unknown,unknown,Oakland,unknown,,t3_1tq6p2y_c6,comment,OaklandCA,bay_local,B_newcomer_implicit,2026-05-28T16:46:46.885Z,0.1674641148325359
+46,PLANNING,tech_job;returning,single,recent,unknown,SF,tech,,t3_1w3378v,post,SFBayHousing,bay_local,A_first_person_move_to_bay,2026-08-31T04:25:32.270Z,0.1851851851851851
+47,ARRIVED,,couple,long_ago,other_US_state,Bay Area,unknown,hh 150k,1v1sbd0_c0,comment,bayarea,bay_local,B_newcomer_implicit,2026-07-25T00:08:10.942Z,0.1674641148325359
+48,OTHER,,,,,,,,t3_1osyjj2,post,sanfrancisco,bay_local,A_first_person_move_to_bay,2025-11-09T23:41:08.753Z,0.1851851851851851
+49,ARRIVED,,unknown,unknown,unknown,Berkeley,unknown,,t3_1nay6p2_c7,comment,berkeleyca,bay_local,B_newcomer_implicit,2025-09-07T19:19:11.224Z,0.1674641148325359
+50,PLANNING,other_job,unknown,recent,unknown,San Jose,service_trades_hourly,,t3_1tsh3j4,post,SanJose,bay_local,A_first_person_move_to_bay,2026-05-31T01:11:41.025Z,0.1851851851851851
+51,ARRIVED,,unknown,recent,unknown,SF,unknown,,t3_1uhavm8,post,sanfrancisco,bay_local,B_newcomer_place,2026-06-27T18:59:53.433Z,0.4651162790697674
+52,WITHIN_BAY,,,,,,,,t3_1s5yqcp_c12,comment,berkeleyca,bay_local,A_first_person_move_to_bay,2026-03-28T16:50:54.917Z,0.1851851851851851
+53,OTHER,,,,,,,,t3_1rpm44q_c5,comment,SanJose,bay_local,C_offer_in_bay,2026-03-10T21:21:47.139Z,0.7407407407407407
+54,OTHER,,,,,,,,t3_1vy79r9_c21,comment,jobs,work_other,C_offer_in_bay,2026-08-25T21:09:20.820Z,0.7407407407407407
+55,ARRIVED,,unknown,long_ago,unknown,Bay Area,unknown,,t3_1sm91gx_c22,comment,bayarea,bay_local,B_newcomer_implicit,2026-04-15T17:08:00.797Z,0.1674641148325359
+56,ARRIVED,,unknown,recent,unknown,SF,unknown,,t3_1tx954l,post,sanfrancisco,bay_local,B_newcomer_place,2026-06-05T03:16:16.047Z,0.4651162790697674
+57,ARRIVED,,couple,recent,unknown,East Bay,unknown,,t3_1lghy5s_c6,comment,berkeleyca,bay_local,B_newcomer_place,2025-06-22T05:03:05.013Z,0.4651162790697674
+58,ARRIVED,other_job,unknown,long_ago,unknown,Bay Area,unknown,sal 170k,t3_1sk2cxt_c11,comment,bayarea,bay_local,B_newcomer_implicit,2026-04-15T04:45:11.463Z,0.1674641148325359
+59,ARRIVED,,couple,recent,unknown,San Jose,unknown,,t3_1rccyae,post,SanJose,bay_local,B_newcomer_implicit,2026-02-23T09:28:12.458Z,0.1674641148325359
+60,PLANNING,other_job,unknown,recent,unknown,Oakland (Uptown),unknown,,1wun992,post,OaklandCA,bay_local,A_first_person_move_to_bay,2026-10-01T01:59:41.000Z,0.1851851851851851
+61,ARRIVED,,unknown,recent,unknown,Oakland (downtown),unknown,,t3_1tkq4nk,post,oakland,bay_local,B_newcomer_place,2026-05-22T17:40:27.519Z,0.4651162790697674
+62,PLANNING,other_job,family_kids,recent,other_US_state,Oakland,unknown,,t3_1sm960f,post,oakland,bay_local,C_offer_in_bay,2026-04-15T15:21:13.539Z,0.7407407407407407
+63,OTHER,,,,,,,,t3_1vlt58a_c2,comment,BayAreaRealEstate,bay_local,B_newcomer_place,2026-08-12T06:05:13.587Z,0.4651162790697674
+64,PLANNING,school,couple,recent,unknown,Berkeley,academic_student,rent 2000,t3_1skqarr,post,berkeleyca,bay_local,A_first_person_move_to_bay,2026-04-13T22:30:53.656Z,0.1851851851851851
+65,ARRIVED,other_job,unknown,recent,other_US_state,SF,unknown,,t3_1p2oati,post,sanfrancisco,bay_local,C_offer_in_bay,2025-11-21T03:40:27.114Z,0.7407407407407407
+66,ARRIVED,,couple,recent,unknown,East Bay,unknown,,t3_1vnlvpf,post,eastbay,bay_local,B_newcomer_implicit,2026-08-13T20:10:49.419Z,0.1674641148325359
+67,OTHER,,,,,,,,t3_1s3xkxb_c0,comment,oakland,bay_local,A_first_person_move_to_bay,2026-03-27T08:42:39.352Z,0.1851851851851851
+68,ARRIVED,,unknown,long_ago,other_US_state,SF,unknown,,t3_1sloomx_c6,comment,sanfrancisco,bay_local,A_first_person_move_to_bay,2026-04-15T05:16:28.547Z,0.1851851851851851
+69,WITHIN_BAY,,,,,,,,t3_1o658ro,post,berkeleyca,bay_local,A_first_person_move_to_bay,2025-10-14T03:47:50.460Z,0.1851851851851851
+70,PLANNING,other_job,unknown,recent,other_US_state,San Jose,unknown,,t3_1s39tcf,post,SanJose,bay_local,C_offer_in_bay,2026-03-25T12:50:26.604Z,0.7407407407407407
+71,ARRIVED,,unknown,recent,unknown,Bay Area,unknown,,t3_1v7pcww,post,bayarea,bay_local,B_newcomer_place,2026-07-27T03:52:18.691Z,0.4651162790697674
+72,OTHER,,,,,,,,t3_1s74kyt_c14,comment,BayAreaRealEstate,bay_local,A_first_person_move_to_bay,2026-03-29T23:10:08.644Z,0.1851851851851851
+73,OTHER,,,,,,,,t3_1ukpnj6,post,bayarea,bay_local,B_newcomer_implicit,2026-07-01T15:56:53.984Z,0.1674641148325359
+74,ARRIVED,other_job,unknown,long_ago,other_US_state,SF,unknown,,t3_1lvw75f,post,sanfrancisco,bay_local,A_first_person_move_to_bay,2025-07-09T22:22:01.589Z,0.1851851851851851
+75,WITHIN_BAY,,,,,,,,t3_1s878sl,post,SanJose,bay_local,B_newcomer_place,2026-03-30T23:41:32.259Z,0.4651162790697674
+76,ARRIVED,,unknown,unknown,other_US_state,SF,finance_law_prof,,t3_1p6v0w6_c14,comment,bayarea,bay_local,A_first_person_move_to_bay,2025-11-27T00:28:32.477Z,0.1851851851851851
+77,ARRIVED,,single,recent,unknown,Bay Area,unknown,rent 2000,1v1sbd0_c5,comment,bayarea,bay_local,A_first_person_move_to_bay,2026-07-21T20:40:25.664Z,0.1851851851851851
+78,ARRIVED,,couple,recent,abroad,Bay Area,unknown,,t3_1lxj9jw,post,bayarea,bay_local,A_first_person_move_to_bay,2025-07-11T21:41:45.900Z,0.1851851851851851
+79,ARRIVED,,unknown,recent,unknown,Bay Area,unknown,,t3_1o74rfq_c9,comment,bayareaclippercard,work_other,B_newcomer_place,2025-10-16T18:25:34.135Z,0.4651162790697674
+80,OTHER,,,,,,,,t3_1shqjln_c9,comment,sanfrancisco,bay_local,A_first_person_move_to_bay,2026-04-10T16:21:31.307Z,0.1851851851851851
+81,PLANNING,tech_job,single,recent,unknown,SF,tech,rent 1200-2000,t3_1th1b81,post,SFBayHousing,bay_local,A_first_person_move_to_bay,2026-05-18T21:07:33.680Z,0.1851851851851851
+82,WITHIN_BAY,,,,,,,,t3_1sgx6s7_c5,comment,eastbay,bay_local,A_first_person_move_to_bay,2026-04-10T14:32:19.750Z,0.1851851851851851
+83,PLANNING,other_job,family_kids,recent,unknown,Castro Valley / Dublin / Pleasanton,unknown,sal 135k,t3_1tbxi9v,post,bayarea,bay_local,A_first_person_move_to_bay,2026-05-13T12:00:06.908Z,0.1851851851851851
+84,ARRIVED,other_job,unknown,recent,unknown,Berkeley,unknown,,t3_1szk95l_c16,comment,berkeleyca,bay_local,B_newcomer_implicit,2026-04-30T03:38:09.068Z,0.1674641148325359
+85,ARRIVED,,unknown,recent,unknown,SF,unknown,,t3_1nglcox,post,sanfrancisco,bay_local,B_newcomer_place,2025-09-14T07:57:43.194Z,0.4651162790697674
+86,ARRIVED,,unknown,unknown,unknown,South Bay,unknown,,t3_1scihbw_c9,comment,BayAreaRealEstate,bay_local,A_first_person_move_to_bay,2026-04-05T18:02:30.506Z,0.1851851851851851
+87,ARRIVED,,unknown,unknown,unknown,SF,unknown,,t3_1tf3o52_c8,comment,sanfrancisco,bay_local,B_newcomer_implicit,2026-05-17T00:41:58.051Z,0.1674641148325359
+88,ARRIVED,,family_kids,long_ago,unknown,San Jose,unknown,,t3_1tonn5h_c11,comment,SanJose,bay_local,B_newcomer_implicit,2026-05-28T05:35:57.161Z,0.1674641148325359
+89,PLANNING,,couple,recent,unknown,Bay Area,unknown,rent 3000,t3_1tsi7jc,post,sanfrancisco,bay_local,A_first_person_move_to_bay,2026-05-31T02:05:47.518Z,0.1851851851851851
+90,ARRIVED,,unknown,unknown,elsewhere_CA,Oakland,unknown,,1w7aox2_c23,comment,OaklandCA,bay_local,A_first_person_move_to_bay,2026-09-05T05:26:22.390Z,0.1851851851851851
+91,ARRIVED,,unknown,recent,abroad,SF,service_trades_hourly,,t3_1rv28tz_c7,comment,SanFranciscoWeddings,bay_local,A_first_person_move_to_bay,2026-03-16T18:29:54.901Z,0.1851851851851851
+92,OTHER,,,,,,,,t3_1sabu55_c4,comment,SanJose,bay_local,A_first_person_move_to_bay,2026-04-03T05:14:48.875Z,0.1851851851851851
+93,ARRIVED,,unknown,recent,unknown,Bay Area,service_trades_hourly,,t3_1r9ogiu_c6,comment,SanFranciscoWeddings,bay_local,A_first_person_move_to_bay,2026-02-20T18:32:34.610Z,0.1851851851851851
+94,ARRIVED,,single,recent,unknown,San Jose,unknown,,t3_1vwy4hw,post,SanJose,bay_local,B_newcomer_place,2026-08-24T09:43:20.432Z,0.4651162790697674
+95,OTHER,,,,,,,,t3_1t12fu2,post,sanfrancisco,bay_local,B_newcomer_place,2026-05-01T18:55:26.854Z,0.4651162790697674
+96,ARRIVED,,unknown,recent,other_US_state,San Jose,unknown,,t3_1tp47nt_c15,comment,SanJose,bay_local,B_newcomer_implicit,2026-05-28T23:22:33.356Z,0.1674641148325359
+97,ARRIVED,,unknown,recent,unknown,Berkeley,unknown,,t3_1qn213o_c13,comment,berkeleyca,bay_local,B_newcomer_implicit,2026-05-07T23:35:13.138Z,0.1674641148325359
+98,ARRIVED,,unknown,recent,unknown,Bay Area,unknown,,t3_1t3x84i_c3,comment,sanfrancisco,bay_local,B_newcomer_place,2026-05-05T03:14:32.769Z,0.4651162790697674
+99,ARRIVED,,unknown,recent,unknown,San Jose,unknown,,t3_1lwki4q_c0,comment,SanJose,bay_local,A_first_person_move_to_bay,2025-07-26T02:27:35.985Z,0.1851851851851851
+100,ARRIVED,,unknown,recent,other_US_state,SF,unknown,,t3_1mfjzxy_c13,comment,sanfrancisco,bay_local,B_newcomer_implicit,2025-08-03T23:39:04.420Z,0.1674641148325359
+101,PLANNING,other_job,unknown,recent,other_US_state,Bay Area,finance_law_prof,,t3_1svfs31,post,bayarea,bay_local,A_first_person_move_to_bay,2026-04-25T15:51:32.419Z,0.1851851851851851
+102,ARRIVED,,unknown,unknown,unknown,Bay Area,unknown,,t3_1vv5u7v,post,BayAreaSinglesOver30,work_other,B_newcomer_place,2026-08-22T07:33:10.654Z,0.4651162790697674
+103,PLANNING,other_job,couple,recent,abroad,Bay Area,unknown,tc 300k,t3_1m2iavh,post,bayarea,bay_local,A_first_person_move_to_bay,2025-07-17T20:24:33.540Z,0.1851851851851851
+104,ARRIVED,,unknown,recent,unknown,SF,unknown,,t3_1s21e3w,post,SanFranciscoSecrets,bay_local,B_newcomer_place,2026-03-24T02:20:27.686Z,0.4651162790697674
+105,PLANNING,other_job,single,recent,other_US_state,South SF / San Bruno / San Mateo,unknown,,t3_1lbgouv,post,bayarea,bay_local,A_first_person_move_to_bay,2025-06-14T19:18:26.151Z,0.1851851851851851
+106,PLANNING,other_job,unknown,recent,abroad,SF,unknown,,t3_1nm5gqj,post,sanfrancisco,bay_local,C_offer_in_bay,2025-09-20T18:18:40.220Z,0.7407407407407407
+107,WITHIN_BAY,,,,,,,,t3_1t51pv8,post,BayAreaRealEstate,bay_local,A_first_person_move_to_bay,2026-05-06T03:46:13.372Z,0.1851851851851851
+108,OTHER,,,,,,,,t3_1kxu2kw,post,SanJose,bay_local,C_offer_in_bay,2025-05-28T22:07:30.477Z,0.7407407407407407
+109,PLANNING,other_job,unknown,recent,other_US_state,SF,tech,,t3_1vvxzcw_c9,comment,recruitinghell,work_other,A_first_person_move_to_bay,2026-08-23T15:35:50.839Z,0.1851851851851851
+110,ARRIVED,other_job,unknown,recent,other_US_state,Oakland (downtown),unknown,,t3_1nzn7i9,post,oakland,bay_local,A_first_person_move_to_bay,2025-10-06T16:03:58.900Z,0.1851851851851851
+111,OTHER,,,,,,,,t3_1kqz81z,post,bayarea,bay_local,C_offer_in_bay,2025-05-20T07:47:35.210Z,0.7407407407407407
+112,PLANNING,school,unknown,recent,unknown,Berkeley,academic_student,,t3_1ke4zoz,post,berkeley,bay_local,A_first_person_move_to_bay,2025-05-03T22:31:55.692Z,0.1851851851851851
+113,ARRIVED,,unknown,long_ago,unknown,SF,unknown,,t3_1tszwlr_c5,comment,sanfrancisco,bay_local,B_newcomer_implicit,2026-05-31T19:04:16.626Z,0.1674641148325359
+114,ARRIVED,,couple,recent,unknown,San Jose,unknown,,t3_1stl2xp,post,SanJose,bay_local,B_newcomer_implicit,2026-04-23T14:54:01.259Z,0.1674641148325359
+115,ARRIVED,,unknown,unknown,unknown,SF,unknown,,t3_1twjhcw_c6,comment,sanfrancisco,bay_local,B_newcomer_implicit,2026-06-04T11:48:00.559Z,0.1674641148325359
+116,ARRIVED,,unknown,recent,unknown,Bay Area,unknown,,t3_1mu0o9s_c1,comment,sanfrancisco,bay_local,A_first_person_move_to_bay,2025-08-19T23:56:48.528Z,0.1851851851851851
+117,OTHER,,,,,,,,t3_1mg6oy5,post,BayAreaRealEstate,bay_local,C_offer_in_bay,2025-08-03T01:20:32.272Z,0.7407407407407407
+118,PLANNING,,family_kids,recent,unknown,Hayward,unknown,,t3_1slcixq,post,bayarea,bay_local,A_first_person_move_to_bay,2026-04-14T15:47:19.820Z,0.1851851851851851
+119,OTHER,,,,,,,,t3_1k4fhif_c11,comment,bayarea,bay_local,A_first_person_move_to_bay,2025-04-22T11:53:58.611Z,0.1851851851851851
+120,OTHER,,,,,,,,t3_1vn0lb7_c17,comment,SFBayHousing,bay_local,A_first_person_move_to_bay,2026-08-13T04:46:02.353Z,0.1851851851851851
+121,ARRIVED,,unknown,long_ago,other_US_state,Oakland,unknown,,t3_1v67cyh_c9,comment,oakland,bay_local,A_first_person_move_to_bay,2026-07-27T04:57:51.704Z,0.1851851851851851
+122,WITHIN_BAY,,,,,,,,t3_1n2xcg5_c16,comment,sanfrancisco,bay_local,A_first_person_move_to_bay,2025-08-29T18:14:03.676Z,0.1851851851851851
+123,ARRIVED,,unknown,recent,unknown,Alameda,unknown,,t3_1tmwygj_c0,comment,oaklandballers,work_other,A_first_person_move_to_bay,2026-05-25T06:03:47.108Z,0.1851851851851851
+124,PLANNING,other_job,couple,recent,elsewhere_CA,San Mateo / Alameda / Burlingame,unknown,,t3_1w9y5mk,post,SFBayHousing,bay_local,C_offer_in_bay,2026-09-07T17:14:43.808Z,0.7407407407407407
+125,OTHER,,,,,,,,t3_1ieufmv,post,sanfrancisco,bay_local,A_first_person_move_to_bay,2025-02-01T00:54:43.801Z,0.1851851851851851
+126,ARRIVED,,couple,recent,other_US_state,Bay Area,unknown,,t3_1wognfr,post,bayarea,bay_local,B_newcomer_place,2026-09-23T20:03:58.289Z,0.4651162790697674
+127,ARRIVED,,unknown,recent,other_US_state,San Jose,unknown,,t3_1x0c0y9,post,SanJose,bay_local,B_newcomer_implicit,2026-10-07T23:43:44.912Z,0.1674641148325359
+128,ARRIVED,school,unknown,long_ago,unknown,Berkeley,academic_student,,t3_1s1zcfr_c2,comment,berkeleyca,bay_local,C_offer_in_bay,2026-03-26T17:41:21.323Z,0.7407407407407407
+129,ARRIVED,,unknown,recent,abroad,San Jose,unknown,,t3_1n9nq5x,post,SanJose,bay_local,B_newcomer_implicit,2025-09-06T02:09:12.907Z,0.1674641148325359
+130,OTHER,,,,,,,,t3_1nx8ypr,post,SanJose,bay_local,A_first_person_move_to_bay,2025-10-03T19:38:39.148Z,0.1851851851851851
+131,WITHIN_BAY,,,,,,,,t3_1vq24nr_c17,comment,bayarea,bay_local,A_first_person_move_to_bay,2026-08-16T19:07:16.768Z,0.1851851851851851
+132,ARRIVED,,unknown,long_ago,unknown,San Jose (downtown),unknown,,t3_1o3cayp_c1,comment,SanJose,bay_local,B_newcomer_implicit,2025-10-13T17:31:48.307Z,0.1674641148325359
+133,WITHIN_BAY,,,,,,,,t3_1w6xbul_c8,comment,sanfrancisco,bay_local,A_first_person_move_to_bay,2026-09-06T16:01:07.536Z,0.1851851851851851
+134,ARRIVED,,couple,recent,unknown,SF (Mission Bay),unknown,,t3_1rb1hyh_c17,comment,bayarea,bay_local,A_first_person_move_to_bay,2026-02-22T20:10:31.731Z,0.1851851851851851
+135,PLANNING,,couple,recent,unknown,South Berkeley / Temescal,unknown,,1wn7hxh,post,berkeleyca,bay_local,C_offer_in_bay,2026-09-22T11:59:43.000Z,0.7407407407407407
+136,WITHIN_BAY,,,,,,,,t3_1ry5b18_c1,comment,oakland,bay_local,A_first_person_move_to_bay,2026-03-20T07:02:30.594Z,0.1851851851851851
+137,ARRIVED,partner_family,couple,recent,other_US_state,Fremont,unknown,,t3_1vjcicl,post,berkeleyca,bay_local,A_first_person_move_to_bay,2026-08-09T01:16:07.075Z,0.1851851851851851
+138,WITHIN_BAY,,,,,,,,t3_1quybu1,post,eastbay,bay_local,A_first_person_move_to_bay,2026-02-03T17:31:47.124Z,0.1851851851851851
+139,PLANNING,other_job,family_kids,recent,abroad,Atherton / Los Altos,unknown,,t3_1rs58um,post,BayAreaRealEstate,bay_local,C_offer_in_bay,2026-03-12T22:21:03.737Z,0.7407407407407407
+140,ARRIVED,,unknown,recent,unknown,Berkeley,unknown,,t3_1ql5jre_c3,comment,berkeleyca,bay_local,B_newcomer_implicit,2026-01-26T18:24:05.232Z,0.1674641148325359
+141,ARRIVED,,unknown,recent,unknown,SF,healthcare,,t3_1vz9t5k,post,sanfrancisco,bay_local,B_newcomer_implicit,2026-08-26T21:05:59.663Z,0.1674641148325359
+142,ARRIVED,,unknown,recent,unknown,SF,unknown,,t3_1rzyt2t_c0,comment,sanfrancisco,bay_local,B_newcomer_implicit,2026-03-24T20:00:16.126Z,0.1674641148325359
+143,ARRIVED,,unknown,recent,other_US_state,Oakland,unknown,,t3_1t3lsqz_c13,comment,OaklandFood,bay_local,A_first_person_move_to_bay,2026-05-04T19:44:56.977Z,0.1851851851851851
+144,PLANNING,school,family_kids,recent,unknown,San Jose,academic_student,,t3_1tn179d,post,SanJose,bay_local,C_offer_in_bay,2026-05-25T06:56:16.931Z,0.7407407407407407
+145,ARRIVED,,unknown,recent,unknown,Oakland,unknown,,t3_1reyqat_c11,comment,oakland,bay_local,A_first_person_move_to_bay,2026-02-26T14:32:41.046Z,0.1851851851851851
+146,PLANNING,school,single,recent,other_US_state,North Berkeley,academic_student,,t3_1ueq6v1,post,berkeleyca,bay_local,A_first_person_move_to_bay,2026-06-24T21:14:12.534Z,0.1851851851851851
+147,OTHER,,,,,,,,1tobnxi_c8,comment,SouthSanFrancisco,bay_local,B_newcomer_implicit,2026-05-26T18:35:34.583Z,0.1674641148325359
+148,PLANNING,other_job,unknown,recent,elsewhere_CA,Bay Area,service_trades_hourly,,t3_1x3ot6g,post,bayarea,bay_local,A_first_person_move_to_bay,2026-10-12T01:14:40.978Z,0.1851851851851851
+149,ARRIVED,,unknown,unknown,unknown,Mountain View,unknown,,t3_1oa93bx_c19,comment,SanJose,bay_local,A_first_person_move_to_bay,2025-10-18T23:25:39.428Z,0.1851851851851851
+150,WITHIN_BAY,,,,,,,,t3_1py9b2t_c3,comment,BayAreaSinglesOver30,work_other,A_first_person_move_to_bay,2025-12-29T22:48:12.200Z,0.1851851851851851
+151,ARRIVED,,unknown,long_ago,unknown,Oakland,unknown,,t3_1tnqeb4_c10,comment,sanfrancisco,bay_local,A_first_person_move_to_bay,2026-05-26T00:23:09.721Z,0.1851851851851851
+152,ARRIVED,,unknown,recent,abroad,Bay Area,unknown,,t3_1vj9x1p_c4,comment,bayarea,bay_local,B_newcomer_implicit,2026-08-09T04:11:30.131Z,0.1674641148325359
+153,ARRIVED,,unknown,recent,elsewhere_CA,Bay Area,unknown,,t3_1qwq1er_c10,comment,BayAreaRealEstate,bay_local,B_newcomer_implicit,2026-02-06T00:26:51.484Z,0.1674641148325359
+154,ARRIVED,,single,recent,unknown,San Jose,unknown,,t3_1lwki4q_c2,comment,SanJose,bay_local,B_newcomer_implicit,2025-07-11T21:07:40.343Z,0.1674641148325359
+155,PLANNING,,unknown,recent,unknown,SF,unknown,,t3_1nrah7r_c0,comment,bayarea,bay_local,A_first_person_move_to_bay,2025-09-30T19:48:31.580Z,0.1851851851851851
+156,ARRIVED,,unknown,recent,other_US_state,Bay Area,unknown,,t3_1u1sv29_c8,comment,bayarea,bay_local,B_newcomer_implicit,2026-06-10T23:16:25.932Z,0.1674641148325359
+157,ARRIVED,,unknown,unknown,unknown,Oakland,unknown,,t3_1seo4qw_c14,comment,OaklandCA,bay_local,A_first_person_move_to_bay,2026-04-07T19:24:50.533Z,0.1851851851851851
+158,ARRIVED,,unknown,long_ago,unknown,San Jose,unknown,,t3_1isiw4m_c4,comment,SanJose,bay_local,B_newcomer_implicit,2025-02-20T02:58:20.313Z,0.1674641148325359
+159,ARRIVED,,unknown,long_ago,unknown,SF,unknown,,t3_1rol813_c11,comment,sanfrancisco,bay_local,B_newcomer_implicit,2026-03-10T15:19:43.484Z,0.1674641148325359
+160,OTHER,,,,,,,,t3_1rf80er_c11,comment,jobsearchhacks,work_other,A_first_person_move_to_bay,2026-02-26T12:17:34.162Z,0.1851851851851851
+161,PLANNING,other_job,single,recent,unknown,SF,healthcare,,t3_1htn5k2,post,sanfrancisco,bay_local,A_first_person_move_to_bay,2025-01-04T20:10:39.486Z,0.1851851851851851
+162,PLANNING,other_job;returning,single,recent,unknown,Bay Area,unknown,sal 380k; rent 3700,t3_1kur6qs,post,BayAreaRealEstate,bay_local,A_first_person_move_to_bay,2025-05-25T01:39:03.620Z,0.1851851851851851
+163,ARRIVED,,unknown,recent,unknown,SF,unknown,,t3_1t8h88t_c4,comment,sanfrancisco,bay_local,B_newcomer_place,2026-05-10T04:07:47.369Z,0.4651162790697674
+164,ARRIVED,lifestyle,couple,recent,unknown,Bay Area,unknown,,t3_1ti2j2l,post,sanfrancisco,bay_local,B_newcomer_implicit,2026-05-19T22:26:18.049Z,0.1674641148325359
+165,OTHER,,,,,,,,t3_1x7n3wk_c16,comment,BayAreaRealEstate,bay_local,A_first_person_move_to_bay,2026-10-16T20:55:28.680Z,0.1851851851851851
+166,OTHER,,,,,,,,t3_1xbnp57_c0,comment,irishpersonalfinance,work_other,A_first_person_move_to_bay,2026-10-22T09:38:48.122Z,0.1851851851851851
+167,PLANNING,other_job,single,recent,other_US_state,Bay Area,finance_law_prof,sal 79k,t3_1lzddfb,post,sanfrancisco,bay_local,C_offer_in_bay,2025-07-14T04:40:52.325Z,0.7407407407407407
+168,ARRIVED,,couple,unknown,unknown,Oakland,unknown,,t3_1rt4imp_c14,comment,oakland,bay_local,C_offer_in_bay,2026-03-14T02:33:58.191Z,0.7407407407407407
+169,PLANNING,other_job;returning;partner_family,unknown,recent,other_US_state,SF,unknown,sal 140k,t3_1m8hl3a,post,sanfrancisco,bay_local,C_offer_in_bay,2025-07-24T21:57:42.098Z,0.7407407407407407
+170,OTHER,,,,,,,,t3_1t3tv3g_c14,comment,bayarea,bay_local,B_newcomer_implicit,2026-05-04T21:15:27.386Z,0.1674641148325359
+171,PLANNING,other_job,unknown,recent,elsewhere_CA,SF,service_trades_hourly,,t3_1n5gj3v,post,jobs,work_other,C_offer_in_bay,2025-09-01T05:41:16.289Z,0.7407407407407407
+172,ARRIVED,,unknown,unknown,unknown,Oakland,unknown,,t3_1tontx7_c9,comment,oakland,bay_local,A_first_person_move_to_bay,2026-05-31T09:47:02.786Z,0.1851851851851851
+173,OTHER,,,,,,,,t3_1ntzi8h_c18,comment,bayarea,bay_local,B_newcomer_implicit,2025-09-30T01:20:20.477Z,0.1674641148325359
+174,OTHER,,,,,,,,t3_1th4bj5_c17,comment,SFBayHousing,bay_local,A_first_person_move_to_bay,2026-05-19T02:46:34.252Z,0.1851851851851851
+175,ARRIVED,,unknown,recent,unknown,Oakland,unknown,,t3_1spca3l,post,OaklandFood,bay_local,B_newcomer_place,2026-04-18T23:06:09.389Z,0.4651162790697674
+176,PLANNING,other_job,single,recent,other_US_state,Oakland,unknown,,t3_1v51m3t,post,OaklandCA,bay_local,A_first_person_move_to_bay,2026-07-24T05:03:01.450Z,0.1851851851851851
+177,OTHER,,,,,,,,t3_1sosf8c_c19,comment,bayarea,bay_local,C_offer_in_bay,2026-04-18T16:25:38.816Z,0.7407407407407407
+178,PLANNING,,unknown,recent,other_US_state,Berkeley,unknown,,t3_1qwskno,post,berkeleyca,bay_local,A_first_person_move_to_bay,2026-02-05T18:03:56.927Z,0.1851851851851851
+179,ARRIVED,other_job,unknown,recent,unknown,Oakland,unknown,,t3_1t3wbk7,post,oakland,bay_local,A_first_person_move_to_bay,2026-05-04T22:05:40.342Z,0.1851851851851851
+180,OTHER,,,,,,,,t3_1v6gx49_c20,comment,sanfrancisco,bay_local,B_newcomer_place,2026-07-25T21:21:07.495Z,0.4651162790697674
+181,ARRIVED,,unknown,unknown,unknown,SF,unknown,,t3_1np372v_c1,comment,bayarea,bay_local,A_first_person_move_to_bay,2025-10-12T23:20:52.611Z,0.1851851851851851
+182,ARRIVED,,couple,recent,abroad,East Bay,unknown,,t3_1qvm7lx_c7,comment,eastbay,bay_local,B_newcomer_place,2026-02-05T00:17:34.906Z,0.4651162790697674
+183,PLANNING,other_job,single,recent,unknown,South Berkeley / North Oakland,unknown,,t3_1kpbudp,post,bayarea,bay_local,A_first_person_move_to_bay,2025-05-18T04:40:04.581Z,0.1851851851851851
+184,ARRIVED,,unknown,recent,unknown,Berkeley (Solano),unknown,rent 2000,t3_1x0jho0,post,berkeley,bay_local,B_newcomer_implicit,2026-10-08T06:16:43.688Z,0.1674641148325359
+185,ARRIVED,other_job,unknown,long_ago,unknown,North Berkeley,academic_student,,1w9aywr_c16,comment,berkeleyca,bay_local,A_first_person_move_to_bay,2026-09-07T01:16:54.301Z,0.1851851851851851
+186,ARRIVED,,unknown,recent,unknown,SF (Dogpatch),unknown,,t3_1sqwd8m,post,sanfrancisco,bay_local,B_newcomer_place,2026-04-20T17:36:48.738Z,0.4651162790697674
+187,ARRIVED,,family_kids,unknown,other_US_state,Lafayette,unknown,,t3_1rxo8qx_c14,comment,eastbay,bay_local,A_first_person_move_to_bay,2026-03-19T06:07:16.433Z,0.1851851851851851
+188,OTHER,,,,,,,,t3_1x0qzyl_c7,comment,recruitinghell,work_other,A_first_person_move_to_bay,2026-10-08T17:00:08.690Z,0.1851851851851851
+189,ARRIVED,,unknown,unknown,unknown,SF,unknown,,t3_1mfjzxy_c19,comment,sanfrancisco,bay_local,B_newcomer_implicit,2025-08-03T16:52:52.729Z,0.1674641148325359
+190,ARRIVED,,unknown,long_ago,unknown,North Bay,unknown,,t3_1j4zl9f_c1,comment,bayarea,bay_local,B_newcomer_implicit,2025-06-22T01:24:34.844Z,0.1674641148325359
+191,ARRIVED,,unknown,recent,other_US_state,San Jose,unknown,,t3_1q55pjn,post,SanJose,bay_local,B_newcomer_implicit,2026-01-06T02:08:31.255Z,0.1674641148325359
+192,ARRIVED,other_job,roommates,recent,other_US_state,SF,unknown,,t3_1nvs296,post,berkeleyca,bay_local,A_first_person_move_to_bay,2025-10-02T02:35:53.528Z,0.1851851851851851
+193,ARRIVED,,unknown,unknown,unknown,SF,unknown,,t3_1s0n85g_c7,comment,sanfrancisco,bay_local,A_first_person_move_to_bay,2026-03-22T17:36:20.000Z,0.1851851851851851
+194,ARRIVED,other_job,unknown,recent,elsewhere_CA,SF,unknown,,t3_1tc79nm_c12,comment,SFBayHousing,bay_local,C_offer_in_bay,2026-05-14T08:40:22.838Z,0.7407407407407407
+195,ARRIVED,school,unknown,recent,other_US_state,Berkeley,academic_student,,t3_1spf6la_c14,comment,berkeley,bay_local,C_offer_in_bay,2026-04-19T13:47:56.235Z,0.7407407407407407
+196,OTHER,,,,,,,,t3_1miv6s7,post,sanfrancisco,bay_local,A_first_person_move_to_bay,2025-08-06T04:28:55.632Z,0.1851851851851851
+197,ARRIVED,,couple,recent,unknown,Peninsula,unknown,,t3_1ppi0nx,post,SanJose,bay_local,B_newcomer_implicit,2025-12-18T04:42:20.738Z,0.1674641148325359
+198,ARRIVED,,couple,recent,unknown,East Bay,unknown,,t3_1lghy5s_c4,comment,berkeleyca,bay_local,B_newcomer_place,2025-06-21T10:58:38.878Z,0.4651162790697674
+199,ARRIVED,,unknown,long_ago,other_US_state,Berkeley,unknown,,t3_1rtwoc6_c9,comment,bayarea,bay_local,A_first_person_move_to_bay,2026-03-14T22:42:44.465Z,0.1851851851851851
+200,OTHER,,,,,,,,t3_1s8pm3y_c17,comment,BayAreaRealEstate,bay_local,A_first_person_move_to_bay,2026-04-05T01:07:32.104Z,0.1851851851851851
+201,PLANNING,other_job,roommates,recent,unknown,Alameda / Piedmont,unknown,,t3_1sa6bl7,post,bayarea,bay_local,A_first_person_move_to_bay,2026-04-02T03:27:21.788Z,0.1851851851851851
+202,ARRIVED,returning,single,recent,unknown,Walnut Creek,unknown,,t3_1rv3koa,post,eastbay,bay_local,A_first_person_move_to_bay,2026-03-16T08:12:06.014Z,0.1851851851851851
+203,OTHER,,,,,,,,t3_1sm960f_c7,comment,oakland,bay_local,B_newcomer_implicit,2026-04-16T21:22:42.113Z,0.1674641148325359
+204,OTHER,,,,,,,,t3_1t2lflj_c5,comment,irelandjobs,work_other,A_first_person_move_to_bay,2026-05-05T16:57:57.377Z,0.1851851851851851
+205,ARRIVED,,unknown,recent,unknown,SF,unknown,,1v0ws13_c2,comment,BayAreaEnts,bay_local,A_first_person_move_to_bay,2026-07-22T21:18:05.977Z,0.1851851851851851
+206,ARRIVED,,couple,recent,unknown,Oakland,unknown,,t3_1ruit67,post,OaklandFood,bay_local,B_newcomer_place,2026-03-15T16:40:54.295Z,0.4651162790697674
+207,OTHER,,,,,,,,t3_1mwsgve_c0,comment,oakland,bay_local,B_newcomer_implicit,2025-08-23T01:55:38.581Z,0.1674641148325359
+208,OTHER,,,,,,,,t3_1soh4gp,post,berkeley,bay_local,C_offer_in_bay,2026-04-17T23:26:17.399Z,0.7407407407407407
+209,OTHER,,,,,,,,t3_1rntcxb,post,sanfrancisco,bay_local,A_first_person_move_to_bay,2026-03-08T02:57:59.679Z,0.1851851851851851
+210,WITHIN_BAY,,,,,,,,t3_1taem5p_c2,comment,bayarea,bay_local,B_newcomer_implicit,2026-05-11T22:24:17.664Z,0.1674641148325359
+211,ARRIVED,returning,unknown,unknown,other_US_state,Bay Area,unknown,,t3_1r08bjq_c1,comment,bayarea,bay_local,A_first_person_move_to_bay,2026-02-15T14:25:29.334Z,0.1851851851851851
+212,OTHER,,,,,,,,t3_1twvgty,post,HousingIreland,work_other,C_offer_in_bay,2026-06-04T18:03:31.279Z,0.7407407407407407
+213,ARRIVED,school,single,recent,unknown,Hayward (CSUEB),academic_student,,t3_1lghy5s,post,berkeleyca,bay_local,A_first_person_move_to_bay,2025-06-20T23:13:38.846Z,0.1851851851851851
+214,ARRIVED,,couple,recent,unknown,SF (Mission Bay),unknown,,t3_1rb1hyh,post,bayarea,bay_local,A_first_person_move_to_bay,2026-02-21T20:24:10.230Z,0.1851851851851851
+215,ARRIVED,other_job,couple,long_ago,unknown,Milpitas,unknown,,1w092ku_c12,comment,bayarea,bay_local,A_first_person_move_to_bay,2026-08-27T23:15:02.726Z,0.1851851851851851
+216,OTHER,,,,,,,,t3_1pd5jvu_c12,comment,SanJose,bay_local,A_first_person_move_to_bay,2025-12-04T02:22:21.808Z,0.1851851851851851
+217,PLANNING,,couple,recent,unknown,SF / Peninsula,unknown,hh 360k (30k/mo),t3_1tiq8ee,post,SFBayHousing,bay_local,A_first_person_move_to_bay,2026-05-20T16:07:20.390Z,0.1851851851851851
+218,ARRIVED,,unknown,unknown,other_US_state,San Jose,unknown,,t3_1rvqsns_c13,comment,SanJose,bay_local,A_first_person_move_to_bay,2026-03-17T06:36:28.204Z,0.1851851851851851
+219,ARRIVED,,unknown,recent,unknown,Oakland,unknown,,t3_1nwpqxj_c0,comment,BayAreaTalk,work_other,A_first_person_move_to_bay,2025-10-05T21:25:26.171Z,0.1851851851851851
+220,PLANNING,other_job,single,recent,other_US_state,San Leandro,service_trades_hourly,rent 1900,t3_1tj0jy2,post,bayarea,bay_local,A_first_person_move_to_bay,2026-05-20T22:01:00.392Z,0.1851851851851851
+221,WITHIN_BAY,,,,,,,,1w6keox,post,SouthSanFrancisco,bay_local,A_first_person_move_to_bay,2026-09-03T21:14:41.000Z,0.1851851851851851
+222,ARRIVED,,unknown,recent,other_US_state,Oakland (Fruitvale),unknown,,t3_1wd3frs_c19,comment,bayarea,bay_local,B_newcomer_place,2026-09-11T07:16:43.057Z,0.4651162790697674
+223,ARRIVED,,couple,unknown,unknown,Oakland,unknown,,t3_1r6ojur_c17,comment,eastbay,bay_local,A_first_person_move_to_bay,2026-02-16T23:48:17.980Z,0.1851851851851851
+224,OTHER,,,,,,,,t3_1swqkhi,post,AmItheAsshole,work_other,C_offer_in_bay,2026-04-27T02:13:10.778Z,0.7407407407407407
+225,OTHER,,,,,,,,t3_1mkkkdn_c4,comment,sanfrancisco,bay_local,A_first_person_move_to_bay,2025-08-08T20:26:23.444Z,0.1851851851851851
+226,ARRIVED,,family_kids,recent,other_US_state,Alameda,unknown,,t3_1scihbw_c1,comment,BayAreaRealEstate,bay_local,A_first_person_move_to_bay,2026-04-07T05:23:36.247Z,0.1851851851851851
+227,OTHER,,,,,,,,t3_1sgontu_c7,comment,irishpersonalfinance,work_other,A_first_person_move_to_bay,2026-04-11T16:46:39.305Z,0.1851851851851851
+228,ARRIVED,,unknown,recent,unknown,SF,unknown,,t3_1rc0myf,post,sanfrancisco,bay_local,A_first_person_move_to_bay,2026-02-22T23:04:27.869Z,0.1851851851851851
+229,WITHIN_BAY,,,,,,,,t3_1tc5wpi_c19,comment,oakland,bay_local,A_first_person_move_to_bay,2026-05-13T20:46:19.312Z,0.1851851851851851
+230,ARRIVED,,unknown,recent,unknown,Bay Area,unknown,,t3_1t89zbc_c4,comment,avesSFBayArea,bay_local,B_newcomer_implicit,2026-05-15T18:40:06.562Z,0.1674641148325359
+231,WITHIN_BAY,,,,,,,,t3_1tu2t49,post,oakland,bay_local,B_newcomer_implicit,2026-06-01T19:22:19.839Z,0.1674641148325359
+232,ARRIVED,other_job,single,recent,unknown,Sunnyvale,unknown,,t3_1sjqnna,post,bayarea,bay_local,B_newcomer_place,2026-04-12T21:07:16.163Z,0.4651162790697674
+233,OTHER,,,,,,,,t3_1vjelpu_c0,comment,bayarea,bay_local,A_first_person_move_to_bay,2026-08-10T05:50:39.638Z,0.1851851851851851
+234,WITHIN_BAY,,,,,,,,t3_1ln5rk4,post,SanFranciscoSecrets,bay_local,A_first_person_move_to_bay,2025-06-29T04:16:54.744Z,0.1851851851851851
+235,OTHER,,,,,,,,t3_1s6jvjk_c1,comment,sanfrancisco,bay_local,A_first_person_move_to_bay,2026-03-30T01:51:11.220Z,0.1851851851851851
+236,ARRIVED,other;returning,couple,recent,unknown,SF,unknown,,t3_1mkkkdn_c11,comment,sanfrancisco,bay_local,B_newcomer_implicit,2025-08-08T07:09:01.103Z,0.1674641148325359
+237,WITHIN_BAY,,,,,,,,t3_1s7uatc_c6,comment,oakland,bay_local,A_first_person_move_to_bay,2026-03-31T08:44:09.653Z,0.1851851851851851
+238,ARRIVED,,single,recent,unknown,Oakland,unknown,,t3_1sr8he0,post,OaklandFood,bay_local,A_first_person_move_to_bay,2026-04-21T00:45:15.116Z,0.1851851851851851
+239,ARRIVED,,unknown,long_ago,abroad,SF,unknown,,t3_1w7obv8_c6,comment,SanFranciscoSecrets,bay_local,B_newcomer_implicit,2026-09-07T21:36:09.761Z,0.1674641148325359
+240,ARRIVED,,unknown,long_ago,other_US_state,Peninsula,unknown,,t3_1ltly44_c3,comment,BayAreaRealEstate,bay_local,A_first_person_move_to_bay,2025-07-10T03:23:16.955Z,0.1851851851851851
+241,ARRIVED,,unknown,recent,unknown,SF,unknown,,t3_1m6zhjq,post,SanFranciscoSecrets,bay_local,B_newcomer_implicit,2025-07-23T04:08:14.591Z,0.1674641148325359
+242,ARRIVED,,unknown,recent,unknown,Oakland,unknown,,t3_1szgmkr_c3,comment,oakland,bay_local,B_newcomer_place,2026-04-30T07:47:45.136Z,0.4651162790697674
+243,PLANNING,other_job;returning,unknown,recent,elsewhere_CA,Bay Area,unknown,,t3_1m8hl3a_c11,comment,sanfrancisco,bay_local,A_first_person_move_to_bay,2025-09-13T06:48:06.477Z,0.1851851851851851
+244,ARRIVED,,unknown,recent,unknown,Bay Area,unknown,,t3_1s18f6u,post,bayarea,bay_local,B_newcomer_place,2026-03-23T05:36:50.677Z,0.4651162790697674
+245,ARRIVED,other_job,unknown,recent,other_US_state,Bay Area,tech,,t3_1rs02le,post,bayarea,bay_local,C_offer_in_bay,2026-03-12T19:11:56.237Z,0.7407407407407407
+246,OTHER,,,,,,,,t3_1levvnb,post,SanJose,bay_local,A_first_person_move_to_bay,2025-06-18T23:26:49.627Z,0.1851851851851851
+247,OTHER,,,,,,,,t3_1pfw797_c0,comment,OaklandFood,bay_local,B_newcomer_place,2026-02-12T02:36:45.473Z,0.4651162790697674
+248,PLANNING,partner_family;returning,single,recent,elsewhere_CA,East Bay (925),unknown,,t3_1s74kyt,post,BayAreaRealEstate,bay_local,A_first_person_move_to_bay,2026-03-29T19:33:23.857Z,0.1851851851851851
+249,PLANNING,other_job,unknown,recent,abroad,SF,unknown,sal 200k,t3_1suov9x,post,UKPersonalFinance,work_other,C_offer_in_bay,2026-04-24T19:00:27.232Z,0.7407407407407407
+250,OTHER,,,,,,,,1ufamt3,post,irelandjobs,work_other,A_first_person_move_to_bay,2026-06-25T13:50:59.000Z,0.1851851851851851
+251,ARRIVED,other_job,roommates,unknown,unknown,San Jose,unknown,,t3_1rvqsns_c6,comment,SanJose,bay_local,B_newcomer_implicit,2026-03-18T16:48:12.180Z,0.1674641148325359
+252,PLANNING,tech_job,single,recent,other_US_state,San Jose,tech,,t3_1wxet0q,post,SanJose,bay_local,A_first_person_move_to_bay,2026-10-04T12:43:38.662Z,0.1851851851851851
+253,PLANNING,,couple,recent,other_US_state,San Jose (North Park),unknown,,t3_1tk1enh,post,SanJose,bay_local,B_newcomer_place,2026-05-21T23:21:39.036Z,0.4651162790697674
+254,OTHER,,,,,,,,t3_1p5zlkf,post,SFBayHousing,bay_local,B_newcomer_implicit,2025-11-25T01:34:05.561Z,0.1674641148325359
+255,PLANNING,other_job,unknown,recent,other_US_state,SF / Palo Alto,unknown,,t3_1ng6t8j,post,bayarea,bay_local,A_first_person_move_to_bay,2025-09-13T19:43:10.588Z,0.1851851851851851
+256,PLANNING,other_job,family_kids,recent,unknown,Livermore / Dublin / Pleasanton,unknown,home 850k,t3_1slpcxu,post,bayarea,bay_local,C_offer_in_bay,2026-04-14T23:36:01.466Z,0.7407407407407407
+257,PLANNING,,family_kids,recent,unknown,San Jose,unknown,,t3_1pd5jvu_c8,comment,SanJose,bay_local,A_first_person_move_to_bay,2025-12-03T17:42:09.025Z,0.1851851851851851
+258,ARRIVED,,unknown,recent,unknown,Oakland,unknown,,t3_1t3wbk7_c6,comment,oakland,bay_local,B_newcomer_place,2026-05-05T03:51:52.688Z,0.4651162790697674
+259,ARRIVED,,unknown,recent,unknown,SF (FiDi),unknown,,t3_1m94e9a,post,sanfrancisco,bay_local,B_newcomer_place,2025-07-25T16:50:58.979Z,0.4651162790697674
+260,OTHER,,,,,,,,t3_1s64v9b_c2,comment,HousingIreland,work_other,C_offer_in_bay,2026-03-29T12:38:44.256Z,0.7407407407407407
+261,ARRIVED,,couple,recent,other_US_state,San Jose,unknown,,t3_1speso8_c15,comment,SanJose,bay_local,B_newcomer_implicit,2026-04-19T18:24:36.958Z,0.1674641148325359
+262,ARRIVED,,unknown,recent,unknown,Bay Area,unknown,,t3_1rghvua_c2,comment,bayarea,bay_local,B_newcomer_place,2026-03-06T17:40:49.237Z,0.4651162790697674
+263,PLANNING,other_job,single,recent,other_US_state,San Mateo / Redwood City / Palo Alto,unknown,,t3_1uqdgfp,post,bayarea,bay_local,A_first_person_move_to_bay,2026-07-08T00:39:19.764Z,0.1851851851851851
+264,OTHER,,,,,,,,t3_1v2k6u8_c10,comment,bayarea,bay_local,A_first_person_move_to_bay,2026-07-23T21:39:39.973Z,0.1851851851851851
+265,ARRIVED,other_job,unknown,recent,unknown,Santa Clara,unknown,,t3_1t5irlq,post,bayarea,bay_local,B_newcomer_place,2026-05-06T16:57:03.616Z,0.4651162790697674
+266,ARRIVED,tech_job,unknown,recent,unknown,SF,tech,,t3_1q7mtyp_c4,comment,sanfrancisco,bay_local,A_first_person_move_to_bay,2026-01-09T06:02:04.701Z,0.1851851851851851
+267,ARRIVED,,unknown,recent,other_US_state,SF (Union Square),service_trades_hourly,,t3_1xajvip_c1,comment,sanfrancisco,bay_local,B_newcomer_implicit,2026-10-20T14:20:50.686Z,0.1674641148325359
+268,ARRIVED,,couple,recent,unknown,Newark,unknown,home 1M+,t3_1qshdie,post,BayAreaRealEstate,bay_local,B_newcomer_place,2026-01-31T23:10:23.865Z,0.4651162790697674
+269,OTHER,,,,,,,,t3_1robsul,post,sanfrancisco,bay_local,C_offer_in_bay,2026-03-08T18:08:46.481Z,0.7407407407407407
+270,OTHER,,,,,,,,t3_1s9f7y7,post,oakland,bay_local,B_newcomer_implicit,2026-04-01T09:04:55.487Z,0.1674641148325359
+271,ARRIVED,school,unknown,long_ago,unknown,SF (Market St),healthcare,rent 1400 (2006),t3_1pfy52t_c18,comment,bayarea,bay_local,A_first_person_move_to_bay,2025-12-07T14:13:58.021Z,0.1851851851851851
+272,OTHER,,,,,,,,1mraq1s,post,bayarea,bay_local,C_offer_in_bay,2025-08-15T21:19:18.000Z,0.7407407407407407
+273,ARRIVED,,unknown,unknown,unknown,Oakland,unknown,,t3_1p0wou2_c4,comment,oakland,bay_local,A_first_person_move_to_bay,2025-11-19T17:42:38.835Z,0.1851851851851851
+274,ARRIVED,,unknown,recent,other_US_state,SF,unknown,,t3_1tkoqpv,post,sanfrancisco,bay_local,B_newcomer_implicit,2026-05-22T16:52:40.476Z,0.1674641148325359
+275,ARRIVED,,single,recent,unknown,South Bay,unknown,,t3_1wq3anx,post,bayarea,bay_local,B_newcomer_implicit,2026-09-25T18:02:29.705Z,0.1674641148325359
+276,ARRIVED,,unknown,recent,unknown,Bay Area,unknown,,t3_1og00ns,post,bayarea,bay_local,B_newcomer_place,2025-10-25T19:15:43.319Z,0.4651162790697674
+277,ARRIVED,,couple,recent,other_US_state,East Bay,unknown,,t3_1u0b3td,post,bayarea,bay_local,A_first_person_move_to_bay,2026-06-08T15:24:56.195Z,0.1851851851851851
+278,ARRIVED,,unknown,recent,unknown,West Oakland,unknown,,t3_1ri4v3s_c10,comment,OaklandCA,bay_local,B_newcomer_implicit,2026-03-01T23:01:21.032Z,0.1674641148325359
+279,ARRIVED,,unknown,long_ago,unknown,SF,service_trades_hourly,,t3_1tfd2lv_c3,comment,sanfrancisco,bay_local,B_newcomer_implicit,2026-05-17T17:35:15.706Z,0.1674641148325359
+280,ARRIVED,,unknown,long_ago,other_US_state,SF,unknown,,t3_1maukts_c9,comment,sanfrancisco,bay_local,B_newcomer_implicit,2025-07-27T22:32:14.052Z,0.1674641148325359
+281,ARRIVED,,unknown,recent,unknown,SF,unknown,,t3_1sv4o41_c6,comment,sanfrancisco,bay_local,A_first_person_move_to_bay,2026-04-25T11:02:41.921Z,0.1851851851851851
+282,OTHER,,,,,,,,t3_1tqq46r_c9,comment,bayarea,bay_local,C_offer_in_bay,2026-05-29T05:07:20.604Z,0.7407407407407407
+283,ARRIVED,returning,unknown,recent,unknown,Bay Area,unknown,,t3_1jjqwo4_c14,comment,BayAreaRealEstate,bay_local,A_first_person_move_to_bay,2025-03-29T13:59:37.214Z,0.1851851851851851
+284,ARRIVED,,couple,recent,unknown,Bay Area,unknown,,t3_1vu03v7,post,bayarea,bay_local,B_newcomer_place,2026-08-20T23:48:46.010Z,0.4651162790697674
+285,ARRIVED,school,unknown,recent,unknown,Berkeley,academic_student,,t3_1nsvnem,post,berkeley,bay_local,A_first_person_move_to_bay,2025-09-28T18:26:13.388Z,0.1851851851851851
+286,PLANNING,,family_kids,recent,other_US_state,Berkeley (Claremont),unknown,,1w62h97,post,berkeleyca,bay_local,A_first_person_move_to_bay,2026-09-03T09:29:40.000Z,0.1851851851851851
+287,PLANNING,other_job,unknown,recent,unknown,SF (Nob Hill),unknown,,t3_1ntzkdk,post,bayarea,bay_local,A_first_person_move_to_bay,2025-09-30T01:01:12.337Z,0.1851851851851851
+288,ARRIVED,tech_job,unknown,long_ago,unknown,SF,tech,,t3_1tojynq_c4,comment,sanfrancisco,bay_local,B_newcomer_implicit,2026-05-26T23:39:45.742Z,0.1674641148325359
+289,ARRIVED,,unknown,long_ago,unknown,Berkeley,unknown,,t3_1pf00gk_c5,comment,berkeleyca,bay_local,B_newcomer_implicit,2025-12-06T01:12:38.331Z,0.1674641148325359
+290,ARRIVED,,unknown,unknown,abroad,SF,unknown,,t3_1sinolq_c11,comment,sanfrancisco,bay_local,A_first_person_move_to_bay,2026-04-11T19:48:22.765Z,0.1851851851851851
+291,OTHER,,,,,,,,t3_1wxet0q_c15,comment,SanJose,bay_local,A_first_person_move_to_bay,2026-10-04T13:23:17.276Z,0.1851851851851851
+292,PLANNING,returning,couple,recent,elsewhere_CA,Berkeley / Oakland,unknown,rent 2600-3400,t3_1tlport_c9,comment,berkeley,bay_local,A_first_person_move_to_bay,2026-05-24T02:08:11.644Z,0.1851851851851851
+293,ARRIVED,,unknown,recent,unknown,San Jose,unknown,,t3_1lxtq2l_c0,comment,SanJose,bay_local,B_newcomer_implicit,2025-12-13T02:27:02.410Z,0.1674641148325359
+294,PLANNING,,family_kids,recent,other_US_state,Oakland (Lake Merritt / Temescal),unknown,,t3_1s7uatc,post,oakland,bay_local,A_first_person_move_to_bay,2026-03-30T15:47:08.002Z,0.1851851851851851
+295,ARRIVED,,single,recent,unknown,Oakland,unknown,,t3_1rdoso5,post,oakland,bay_local,B_newcomer_implicit,2026-02-24T18:46:13.929Z,0.1674641148325359
+296,PLANNING,other_job,roommates,recent,other_US_state,Belmont / Redwood City,unknown,rent 1400-1600,t3_1tbqhc9,post,bayarea,bay_local,A_first_person_move_to_bay,2026-05-13T05:40:05.627Z,0.1851851851851851
+297,PLANNING,school,unknown,recent,unknown,SF (SFSU),academic_student,,t3_1io9uc7,post,sanfrancisco,bay_local,A_first_person_move_to_bay,2025-02-13T03:22:17.121Z,0.1851851851851851
+298,ARRIVED,,unknown,recent,unknown,San Jose,unknown,,t3_1tl2z5l_c2,comment,SanJose,bay_local,B_newcomer_implicit,2026-05-23T17:03:41.491Z,0.1674641148325359
+299,ARRIVED,,unknown,long_ago,unknown,SF,unknown,,t3_1qd5vkw_c8,comment,sanfrancisco,bay_local,B_newcomer_implicit,2026-01-15T04:34:35.715Z,0.1674641148325359

@@ -1,0 +1,231 @@
+
+===== s04_effective_rent.py
+   split      n  ...  median_weeks  share_with_concession
+0   test   9159  ...      4.333333               0.107217
+1  train  12502  ...      4.333333               0.000240
+2    val   1645  ...      5.166667               0.052280
+
+[3 rows x 6 columns]
+                        subset     target     n  mean_r  median_r  over_cap_share                                     model     MAE    RMSE    bias     AUC  PR_AUC
+0                     all test     asking  9159  0.0653    0.0468          0.2267                                Legal rule  0.0609  0.0841  0.0107     NaN     NaN
+1                     all test     asking  9159  0.0653    0.0468          0.2267                      ZIP median (train r)  0.0593  0.0933 -0.0386     NaN     NaN
+2                     all test     asking  9159  0.0653    0.0468          0.2267                    Ridge (asking-trained)  0.0491  0.0773 -0.0215     NaN     NaN
+3                     all test     asking  9159  0.0653    0.0468          0.2267                 LightGBM (asking-trained)  0.0492  0.0788 -0.0273     NaN     NaN
+4                     all test     asking  9159  0.0653    0.0468          0.2267      LightGBM trained on effective target  0.0518  0.0825 -0.0337     NaN     NaN
+5                     all test     asking  9159  0.0653    0.0468          0.2267            LightGBM + concession features  0.0511  0.0806 -0.0303     NaN     NaN
+6                     all test     asking  9159  0.0653    0.0468          0.2267               Ridge + concession features  0.0533  0.0826 -0.0284     NaN     NaN
+7                     all test     asking  9159  0.0653    0.0468          0.2267  LightGBM asking pred x posted concession  0.0535  0.0851 -0.0338     NaN     NaN
+8                     all test     asking  9159  0.0653    0.0468          0.2267     Ridge asking pred x posted concession  0.0534  0.0836 -0.0281     NaN     NaN
+9                     all test     asking  9159  0.0653    0.0468          0.2267                         ZIP over-cap rate     NaN     NaN     NaN  0.6816  0.4144
+10                    all test     asking  9159  0.0653    0.0468          0.2267                 Logistic (asking-trained)     NaN     NaN     NaN  0.8137  0.6113
+11                    all test     asking  9159  0.0653    0.0468          0.2267             LightGBM clf (asking-trained)     NaN     NaN     NaN  0.8147  0.5917
+12                    all test     asking  9159  0.0653    0.0468          0.2267        LightGBM clf + concession features     NaN     NaN     NaN  0.8129  0.5953
+13                    all test     asking  9159  0.0653    0.0468          0.2267            Logistic + concession features     NaN     NaN     NaN  0.7623  0.5863
+14                    all test  effective  9159  0.0585    0.0425          0.2093                                Legal rule  0.0640  0.0875  0.0175     NaN     NaN
+15                    all test  effective  9159  0.0585    0.0425          0.2093                      ZIP median (train r)  0.0593  0.0924 -0.0318     NaN     NaN
+16                    all test  effective  9159  0.0585    0.0425          0.2093                    Ridge (asking-trained)  0.0501  0.0778 -0.0148     NaN     NaN
+17                    all test  effective  9159  0.0585    0.0425          0.2093                 LightGBM (asking-trained)  0.0499  0.0791 -0.0205     NaN     NaN
+18                    all test  effective  9159  0.0585    0.0425          0.2093      LightGBM trained on effective target  0.0515  0.0816 -0.0269     NaN     NaN
+19                    all test  effective  9159  0.0585    0.0425          0.2093            LightGBM + concession features  0.0480  0.0768 -0.0235     NaN     NaN
+20                    all test  effective  9159  0.0585    0.0425          0.2093               Ridge + concession features  0.0491  0.0771 -0.0217     NaN     NaN
+21                    all test  effective  9159  0.0585    0.0425          0.2093  LightGBM asking pred x posted concession  0.0488  0.0783 -0.0270     NaN     NaN
+22                    all test  effective  9159  0.0585    0.0425          0.2093     Ridge asking pred x posted concession  0.0487  0.0768 -0.0213     NaN     NaN
+23                    all test  effective  9159  0.0585    0.0425          0.2093                         ZIP over-cap rate     NaN     NaN     NaN  0.6895  0.3982
+24                    all test  effective  9159  0.0585    0.0425          0.2093                 Logistic (asking-trained)     NaN     NaN     NaN  0.8100  0.5869
+25                    all test  effective  9159  0.0585    0.0425          0.2093             LightGBM clf (asking-trained)     NaN     NaN     NaN  0.8135  0.5601
+26                    all test  effective  9159  0.0585    0.0425          0.2093        LightGBM clf + concession features     NaN     NaN     NaN  0.8141  0.5757
+27                    all test  effective  9159  0.0585    0.0425          0.2093            Logistic + concession features     NaN     NaN     NaN  0.8150  0.6126
+28  test pairs with concession     asking   982  0.0658    0.0560          0.2678                                Legal rule  0.0610  0.0787  0.0102     NaN     NaN
+29  test pairs with concession     asking   982  0.0658    0.0560          0.2678                      ZIP median (train r)  0.0656  0.0925 -0.0447     NaN     NaN
+30  test pairs with concession     asking   982  0.0658    0.0560          0.2678                    Ridge (asking-trained)  0.0576  0.0810 -0.0287     NaN     NaN
+31  test pairs with concession     asking   982  0.0658    0.0560          0.2678                 LightGBM (asking-trained)  0.0575  0.0797 -0.0310     NaN     NaN
+32  test pairs with concession     asking   982  0.0658    0.0560          0.2678      LightGBM trained on effective target  0.0627  0.0864 -0.0425     NaN     NaN
+33  test pairs with concession     asking   982  0.0658    0.0560          0.2678            LightGBM + concession features  0.0791  0.1009 -0.0701     NaN     NaN
+34  test pairs with concession     asking   982  0.0658    0.0560          0.2678               Ridge + concession features  0.0960  0.1194 -0.0901     NaN     NaN
+35  test pairs with concession     asking   982  0.0658    0.0560          0.2678  LightGBM asking pred x posted concession  0.0977  0.1264 -0.0917     NaN     NaN
+36  test pairs with concession     asking   982  0.0658    0.0560          0.2678     Ridge asking pred x posted concession  0.0974  0.1262 -0.0895     NaN     NaN
+37  test pairs with concession     asking   982  0.0658    0.0560          0.2678                         ZIP over-cap rate     NaN     NaN     NaN  0.6248  0.4138
+38  test pairs with concession     asking   982  0.0658    0.0560          0.2678                 Logistic (asking-trained)     NaN     NaN     NaN  0.7321  0.4887
+39  test pairs with concession     asking   982  0.0658    0.0560          0.2678             LightGBM clf (asking-trained)     NaN     NaN     NaN  0.7380  0.5218
+40  test pairs with concession     asking   982  0.0658    0.0560          0.2678        LightGBM clf + concession features     NaN     NaN     NaN  0.7332  0.5150
+41  test pairs with concession     asking   982  0.0658    0.0560          0.2678            Logistic + concession features     NaN     NaN     NaN  0.6150  0.4108
+42  test pairs with concession  effective   982  0.0029   -0.0036          0.1059                                Legal rule  0.0905  0.1080  0.0731     NaN     NaN
+43  test pairs with concession  effective   982  0.0029   -0.0036          0.1059                      ZIP median (train r)  0.0648  0.0831  0.0182     NaN     NaN
+44  test pairs with concession  effective   982  0.0029   -0.0036          0.1059                    Ridge (asking-trained)  0.0670  0.0853  0.0342     NaN     NaN
+45  test pairs with concession  effective   982  0.0029   -0.0036          0.1059                 LightGBM (asking-trained)  0.0641  0.0822  0.0319     NaN     NaN
+46  test pairs with concession  effective   982  0.0029   -0.0036          0.1059      LightGBM trained on effective target  0.0597  0.0778  0.0203     NaN     NaN
+47  test pairs with concession  effective   982  0.0029   -0.0036          0.1059            LightGBM + concession features  0.0505  0.0678 -0.0073     NaN     NaN
+48  test pairs with concession  effective   982  0.0029   -0.0036          0.1059               Ridge + concession features  0.0568  0.0772 -0.0272     NaN     NaN
+49  test pairs with concession  effective   982  0.0029   -0.0036          0.1059  LightGBM asking pred x posted concession  0.0538  0.0744 -0.0288     NaN     NaN
+50  test pairs with concession  effective   982  0.0029   -0.0036          0.1059     Ridge asking pred x posted concession  0.0540  0.0758 -0.0267     NaN     NaN
+51  test pairs with concession  effective   982  0.0029   -0.0036          0.1059                         ZIP over-cap rate     NaN     NaN     NaN  0.6567  0.2082
+52  test pairs with concession  effective   982  0.0029   -0.0036          0.1059                 Logistic (asking-trained)     NaN     NaN     NaN  0.6773  0.1981
+53  test pairs with concession  effective   982  0.0029   -0.0036          0.1059             LightGBM clf (asking-trained)     NaN     NaN     NaN  0.7146  0.2461
+54  test pairs with concession  effective   982  0.0029   -0.0036          0.1059        LightGBM clf + concession features     NaN     NaN     NaN  0.7142  0.3028
+55  test pairs with concession  effective   982  0.0029   -0.0036          0.1059            Logistic + concession features     NaN     NaN     NaN  0.7511  0.3512
+                                 0  ...                         3
+subset                    all test  ...  mgmt co, with concession
+n                             9159  ...                       876
+mean_r_ask                  0.0653  ...                    0.0657
+mean_r_eff                  0.0585  ...                    0.0004
+median_r_ask                0.0468  ...                    0.0575
+median_r_eff                0.0425  ...                   -0.0074
+mean_excess_over_cpi_ask    0.0393  ...                    0.0397
+mean_excess_over_cpi_eff    0.0325  ...                   -0.0256
+survival_excess_over_cpi    0.8285  ...                   -0.6456
+mean_premium_month_ask    262.4015  ...                  146.6744
+mean_premium_month_eff    231.8749  ...                 -147.4469
+median_premium_month_ask  117.7065  ...                  140.5943
+median_premium_month_eff   94.3037  ...                 -161.4175
+survival_mean_premium       0.8837  ...                   -1.0053
+over_cap_ask                0.2267  ...                    0.2717
+over_cap_eff                0.2093  ...                    0.1016
+
+[16 rows x 4 columns]
+   group_set                  group     n  share_next_current  share_concession  median_weeks  mean_r_ask  mean_r_eff  over_cap_ask  over_cap_eff  mean_premium_month_ask  mean_premium_month_eff  bias_lgb_vs_ask  bias_lgb_vs_eff  MAE_lgb_vs_ask  MAE_lgb_vs_eff  MAE_lgb_conc_vs_eff  MAE_lgb_adj_vs_eff  MAE_zipmed_vs_eff
+0       mgmt  individual / not mgmt  4165               0.752             0.025         4.167       0.059       0.058         0.181         0.178                 305.718                 300.449           -0.026           -0.025           0.046           0.046                0.045               0.046              0.054
+1       mgmt     management company  4994               0.891             0.175         4.333       0.071       0.059         0.265         0.235                 226.276                 174.684           -0.028           -0.017           0.052           0.053                0.050               0.051              0.064
+2   landlord          large mgmt co  3699               0.890             0.194         4.333       0.076       0.064         0.290         0.255                 260.501                 202.435           -0.031           -0.018           0.053           0.055                0.052               0.052              0.067
+3   landlord            not mgmt co  4165               0.752             0.025         4.167       0.059       0.058         0.181         0.178                 305.718                 300.449           -0.026           -0.025           0.046           0.046                0.045               0.046              0.054
+4   landlord          other mgmt co  1295               0.896             0.122         4.333       0.054       0.046         0.193         0.179                 128.514                  95.416           -0.021           -0.013           0.049           0.049                0.047               0.048              0.056
+5     county         Alameda County  2770               0.835             0.177         4.333       0.046       0.034         0.151         0.116                  61.601                   9.023           -0.019           -0.007           0.043           0.044                0.041               0.042              0.048
+6     county    Contra Costa County   990               0.792             0.086         4.333       0.036       0.031         0.094         0.082                  49.098                  25.404           -0.009           -0.003           0.035           0.037                0.035               0.035              0.041
+7     county           Marin County   175               0.771             0.023         6.167       0.052       0.050         0.154         0.154                 287.940                 278.814           -0.022           -0.020           0.048           0.049                0.049               0.048              0.051
+8     county            Napa County   152               0.770             0.145         4.333       0.014       0.004         0.046         0.046                 -65.611                -111.099            0.003            0.012           0.045           0.047                0.044               0.044              0.055
+9     county   San Francisco County  1052               0.833             0.050         4.000       0.171       0.167         0.709         0.693                1112.222                1088.832           -0.097           -0.093           0.109           0.109                0.106               0.109              0.149
+10    county       San Mateo County   932               0.841             0.052         2.000       0.083       0.081         0.342         0.334                 425.705                 412.737           -0.033           -0.031           0.052           0.052                0.051               0.051              0.067
+11    county     Santa Clara County  2245               0.840             0.100         2.000       0.061       0.057         0.184         0.173                 240.101                 217.002           -0.020           -0.016           0.040           0.040                0.040               0.040              0.044
+12    county          Solano County   425               0.793             0.071         4.333       0.025       0.020         0.031         0.031                  -2.812                 -17.336            0.001            0.006           0.029           0.030                0.029               0.029              0.036
+13    county          Sonoma County   418               0.840             0.062         4.333       0.039       0.034         0.096         0.096                  93.380                  76.001           -0.016           -0.011           0.038           0.040                0.039               0.037              0.042
+
+===== s05_spatial_holdout.py
+Alameda County {'MAE_lgb': 0.044, 'MAE_ridge': 0.0432, 'MAE_zipmed_heldout': 0.0459, 'MAE_cap': 0.0591, 'MAE_zipmed_incounty': 0.0485, 'MAE_lgb_temporal_only': 0.0431, 'AUC_clf': 0.7378, 'AUC_logit': 0.7593, 'AUC_clf_temporal_only': 0.7492}
+Contra Costa County {'MAE_lgb': 0.0378, 'MAE_ridge': 0.0395, 'MAE_zipmed_heldout': 0.0375, 'MAE_cap': 0.0574, 'MAE_zipmed_incounty': 0.0396, 'MAE_lgb_temporal_only': 0.0354, 'AUC_clf': 0.7149, 'AUC_logit': 0.7112, 'AUC_clf_temporal_only': 0.7392}
+Marin County {'MAE_lgb': 0.0495, 'MAE_ridge': 0.054, 'MAE_zipmed_heldout': 0.0498, 'MAE_cap': 0.0617, 'MAE_zipmed_incounty': 0.0498, 'MAE_lgb_temporal_only': 0.0481, 'AUC_clf': 0.618, 'AUC_logit': 0.4692, 'AUC_clf_temporal_only': 0.6789}
+Napa County {'MAE_lgb': 0.0457, 'MAE_ridge': 0.0481, 'MAE_zipmed_heldout': 0.0465, 'MAE_cap': 0.0785, 'MAE_zipmed_incounty': 0.0492, 'MAE_lgb_temporal_only': 0.0447, 'AUC_clf': 0.7054, 'AUC_logit': 0.4601, 'AUC_clf_temporal_only': 0.7724}
+San Francisco County {'MAE_lgb': 0.1425, 'MAE_ridge': 0.1233, 'MAE_zipmed_heldout': 0.1481, 'MAE_cap': 0.1113, 'MAE_zipmed_incounty': 0.1515, 'MAE_lgb_temporal_only': 0.1091, 'AUC_clf': 0.6718, 'AUC_logit': 0.738, 'AUC_clf_temporal_only': 0.7617}
+San Mateo County {'MAE_lgb': 0.0542, 'MAE_ridge': 0.0516, 'MAE_zipmed_heldout': 0.0663, 'MAE_cap': 0.0507, 'MAE_zipmed_incounty': 0.0674, 'MAE_lgb_temporal_only': 0.0516, 'AUC_clf': 0.7632, 'AUC_logit': 0.7507, 'AUC_clf_temporal_only': 0.7562}
+Santa Clara County {'MAE_lgb': 0.0427, 'MAE_ridge': 0.042, 'MAE_zipmed_heldout': 0.0475, 'MAE_cap': 0.045, 'MAE_zipmed_incounty': 0.0449, 'MAE_lgb_temporal_only': 0.0401, 'AUC_clf': 0.7218, 'AUC_logit': 0.6713, 'AUC_clf_temporal_only': 0.7412}
+Solano County {'MAE_lgb': 0.0352, 'MAE_ridge': 0.0386, 'MAE_zipmed_heldout': 0.0289, 'MAE_cap': 0.0575, 'MAE_zipmed_incounty': 0.0347, 'MAE_lgb_temporal_only': 0.0292, 'AUC_clf': 0.6385, 'AUC_logit': 0.5659, 'AUC_clf_temporal_only': 0.804}
+Sonoma County {'MAE_lgb': 0.0379, 'MAE_ridge': 0.0394, 'MAE_zipmed_heldout': 0.0377, 'MAE_cap': 0.0583, 'MAE_zipmed_incounty': 0.0388, 'MAE_lgb_temporal_only': 0.0375, 'AUC_clf': 0.6162, 'AUC_logit': 0.5241, 'AUC_clf_temporal_only': 0.693}
+                            scheme holdout     n  obs_mean_r  over_cap  MAE_lgb  bias_lgb  MAE_ridge  bias_ridge  MAE_zipmed_heldout  bias_zipmed_heldout  MAE_cap  bias_cap  MAE_zipmed_incounty  bias_zipmed_incounty  MAE_lgb_temporal_only  bias_lgb_temporal_only  AUC_clf  PRAUC_clf  AUC_logit  PRAUC_logit  AUC_clf_temporal_only  PRAUC_clf_temporal_only
+0  ZIP blocks (25 blocks, 5 folds)  fold 0  2797      0.0991    0.3851   0.0819   -0.0646     0.0730     -0.0530              0.0876              -0.0752   0.0748   -0.0231               0.0872               -0.0726                 0.0665                 -0.0478   0.7871     0.6267     0.8017       0.7249                 0.8632                   0.7772
+1  ZIP blocks (25 blocks, 5 folds)  fold 1   555      0.0277    0.0505   0.0348    0.0096     0.0366      0.0181              0.0335               0.0081   0.0568    0.0483               0.0356                0.0146                 0.0307                 -0.0005   0.6583     0.0871     0.6239       0.1018                 0.7753                   0.1360
+2  ZIP blocks (25 blocks, 5 folds)  fold 2  1058      0.0359    0.1096   0.0453   -0.0042     0.0471     -0.0129              0.0463              -0.0157   0.0680    0.0401               0.0475               -0.0158                 0.0440                 -0.0118   0.6831     0.2112     0.6484       0.2307                 0.7277                   0.2725
+3  ZIP blocks (25 blocks, 5 folds)  fold 3  2822      0.0536    0.1563   0.0394   -0.0148     0.0395     -0.0112              0.0440              -0.0253   0.0483    0.0224               0.0420               -0.0219                 0.0379                 -0.0158   0.7031     0.2936     0.7117       0.2781                 0.7504                   0.3928
+4  ZIP blocks (25 blocks, 5 folds)  fold 4  1927      0.0602    0.2148   0.0498   -0.0263     0.0487     -0.0188              0.0541              -0.0378   0.0563    0.0158               0.0576               -0.0414                 0.0489                 -0.0303   0.7118     0.4105     0.7104       0.3511                 0.7211                   0.3923
+5  ZIP blocks (25 blocks, 5 folds)  pooled  9159      0.0653    0.2267   0.0550   -0.0297     0.0524     -0.0240              0.0591              -0.0400   0.0609    0.0107               0.0593               -0.0386                 0.0492                 -0.0273   0.7220     0.4001     0.7512       0.4920                 0.8147                   0.5917
+
+===== s06_drift.py
+       rec_zip_r6  rec_zip_n6  rec_cnty_r6  rec_cnty_cap6
+split                                                    
+test        0.926         1.0        1.000          1.000
+train       0.473         1.0        0.971          0.971
+val         0.800         1.0        1.000          1.000
+{
+ "val_mae_lgb_recent": 0.03962085332701654,
+ "val_mae_ridge_recent": 0.041798072998030435,
+ "val_ap_lgb_recent": 0.402360224534626,
+ "val_ap_logit_recent": 0.3691753702931825,
+ "lgb_reg": {
+  "objective": "l1",
+  "num_leaves": 63,
+  "min_child_samples": 100,
+  "learning_rate": 0.03,
+  "n_estimators": 1058,
+  "subsample": 0.8,
+  "subsample_freq": 1,
+  "colsample_bytree": 0.8,
+  "reg_lambda": 1.0,
+  "verbose": -1,
+  "random_state": 42,
+  "deterministic": true,
+  "force_row_wise": true,
+  "n_jobs": 4
+ },
+ "lgb_clf": {
+  "objective": "binary",
+  "num_leaves": 15,
+  "min_child_samples": 20,
+  "learning_rate": 0.03,
+  "n_estimators": 160,
+  "subsample": 0.8,
+  "subsample_freq": 1,
+  "colsample_bytree": 0.8,
+  "reg_lambda": 1.0,
+  "verbose": -1,
+  "random_state": 42,
+  "deterministic": true,
+  "force_row_wise": true,
+  "n_jobs": 4
+ },
+ "ridge_alpha": 1000,
+ "logit_C": 1
+}
+                                              model                    key     MAE    RMSE    bias
+0                             ZIP median of train r            pred_zipmed  0.0593  0.0933 -0.0386
+1                                        Legal rule               pred_cap  0.0609  0.0841  0.0107
+2                         LightGBM (s03, train+val)                 M0_lgb  0.0492  0.0788 -0.0273
+3                            Ridge (s03, train+val)               M0_ridge  0.0491  0.0773 -0.0215
+4                LightGBM + recent-market (rolling)                 M1_lgb  0.0468  0.0750 -0.0217
+5                   Ridge + recent-market (rolling)               M1_ridge  0.0455  0.0705 -0.0098
+6   LightGBM + recent-market (frozen at 2026-01-01)           M1frozen_lgb  0.0481  0.0768 -0.0270
+7                    Ridge + recent-market (frozen)         M1frozen_ridge  0.0475  0.0751 -0.0192
+8                        LightGBM fit <2025-10, raw              M0pre_lgb  0.0500  0.0801 -0.0270
+9          LightGBM fit <2025-10, recal linear (Q4)    M0pre_lgb_recal_lin  0.0491  0.0783 -0.0219
+10          LightGBM fit <2025-10, recal shift (Q4)  M0pre_lgb_recal_shift  0.0502  0.0804 -0.0278
+11                          Ridge fit <2025-10, raw            M0pre_ridge  0.0493  0.0775 -0.0212
+12            Ridge fit <2025-10, recal linear (Q4)  M0pre_ridge_recal_lin  0.0499  0.0788 -0.0230
+13                LightGBM+recent fit <2025-10, raw              M1pre_lgb  0.0472  0.0757 -0.0196
+14  LightGBM+recent fit <2025-10, recal linear (Q4)    M1pre_lgb_recal_lin  0.0469  0.0746 -0.0157
+15   LightGBM+recent fit <2025-10, recal shift (Q4)  M1pre_lgb_recal_shift  0.0474  0.0761 -0.0211
+16                   Ridge+recent fit <2025-10, raw            M1pre_ridge  0.0457  0.0708 -0.0101
+17     Ridge+recent fit <2025-10, recal linear (Q4)  M1pre_ridge_recal_lin  0.0458  0.0716 -0.0134
+                                          model                    key     AUC  PR_AUC   brier  mean_prob  prevalence
+0                            LightGBM clf (s03)                 M0_clf  0.8147  0.5917  0.1607     0.1154      0.2267
+1                                Logistic (s03)               M0_logit  0.8137  0.6113  0.1404     0.1467      0.2267
+2               LightGBM clf + recent (rolling)                 M1_clf  0.8369  0.6234  0.1328     0.1660      0.2267
+3                   Logistic + recent (rolling)               M1_logit  0.8263  0.6455  0.1246     0.1964      0.2267
+4                LightGBM clf + recent (frozen)           M1frozen_clf  0.8364  0.6282  0.1364     0.1448      0.2267
+5                LightGBM clf fit <2025-10, raw              M0pre_clf  0.8005  0.5375  0.1672     0.1111      0.2267
+6         LightGBM clf fit <2025-10, Platt (Q4)  M0pre_clf_recal_platt  0.8005  0.5375  0.1569     0.1221      0.2267
+7         LightGBM clf+recent fit <2025-10, raw              M1pre_clf  0.8221  0.5846  0.1399     0.1605      0.2267
+8  LightGBM clf+recent fit <2025-10, Platt (Q4)  M1pre_clf_recal_platt  0.8221  0.5846  0.1408     0.1510      0.2267
+                                     group       n  obs_mean_r  bias_M0_lgb  bias_M1_lgb  bias_M1frozen_lgb  bias_M0pre_lgb  bias_M0pre_lgb_recal_lin  bias_M0pre_lgb_recal_shift  bias_M1pre_lgb_recal_lin  bias_M0_ridge  bias_M1_ridge
+0                1 Low-income/displacement  1892.0      0.0569      -0.0219      -0.0170            -0.0214         -0.0213                   -0.0165                     -0.0222                   -0.0114        -0.0165        -0.0069
+1                            2 Gentrifying  1211.0      0.0753      -0.0375      -0.0280            -0.0329         -0.0378                   -0.0328                     -0.0386                   -0.0235        -0.0387        -0.0219
+2                         3 Moderate/mixed  3462.0      0.0572      -0.0209      -0.0165            -0.0224         -0.0200                   -0.0150                     -0.0208                   -0.0096        -0.0139        -0.0052
+3                              4 Exclusive  2469.0      0.0785      -0.0362      -0.0301            -0.0354         -0.0366                   -0.0312                     -0.0374                   -0.0245        -0.0283        -0.0129
+4                                       NA   125.0      0.0565      -0.0094      -0.0083            -0.0143         -0.0094                   -0.0036                     -0.0102                   -0.0034        -0.0071        -0.0037
+5                  Advanced gentrification   583.0      0.0966      -0.0505      -0.0415            -0.0447         -0.0516                   -0.0460                     -0.0524                   -0.0367        -0.0519        -0.0262
+19                    San Francisco County  1052.0      0.1713      -0.0973      -0.0830            -0.0837         -0.1039                   -0.0964                     -0.1047                   -0.0824        -0.0860        -0.0270
+0   bias Gentrifying - bias Moderate/mixed     NaN         NaN      -0.0166      -0.0114            -0.0105         -0.0178                   -0.0178                     -0.0178                   -0.0139        -0.0248        -0.0167
+
+===== s07_bootstrap.py
+      metric                                                    model  estimate  iid_lo  iid_hi  zip_cluster_lo  zip_cluster_hi
+0        MAE                                           LightGBM (s03)    0.0492  0.0479  0.0505          0.0447          0.0541
+1        MAE                                              Ridge (s03)    0.0491  0.0479  0.0503          0.0448          0.0536
+2        MAE                                               ZIP median    0.0593  0.0579  0.0608          0.0529          0.0669
+3        MAE                                               Legal rule    0.0609  0.0597  0.0621          0.0568          0.0652
+4        MAE                              Ridge + recent-market (s06)    0.0455  0.0444  0.0466          0.0424          0.0488
+5        MAE                           LightGBM + recent-market (s06)    0.0468  0.0455  0.0480          0.0427          0.0511
+6        AUC                                       LightGBM clf (s03)    0.8147  0.8038  0.8247          0.7858          0.8415
+7        AUC                                           Logistic (s03)    0.8137  0.8032  0.8238          0.7825          0.8407
+8        AUC                                        ZIP over-cap rate    0.6816  0.6678  0.6950          0.6218          0.7333
+9        AUC                       LightGBM clf + recent-market (s06)    0.8369  0.8272  0.8462          0.8087          0.8623
+10  MAE diff                              LightGBM (s03) - ZIP median   -0.0101 -0.0107 -0.0096         -0.0129         -0.0077
+11  MAE diff                                 Ridge (s03) - ZIP median   -0.0102 -0.0108 -0.0097         -0.0133         -0.0074
+12  MAE diff                             LightGBM (s03) - Ridge (s03)    0.0001 -0.0003  0.0006         -0.0008          0.0009
+13  MAE diff                Ridge + recent-market (s06) - Ridge (s03)   -0.0036 -0.0040 -0.0032         -0.0053         -0.0022
+14  AUC diff                   LightGBM clf (s03) - ZIP over-cap rate    0.1331  0.1196  0.1457          0.0993          0.1766
+15  AUC diff                       Logistic (s03) - ZIP over-cap rate    0.1321  0.1184  0.1446          0.0999          0.1730
+16  AUC diff  LightGBM clf + recent-market (s06) - LightGBM clf (s03)    0.0222  0.0174  0.0274          0.0132          0.0303
+   seed  MAE_lgb  bias_lgb  AUC_lgb_clf  PRAUC_lgb_clf
+0    42   0.0492   -0.0273       0.8147         0.5917
+1     1   0.0489   -0.0264       0.8066         0.5808
+2     2   0.0492   -0.0274       0.8155         0.5992
+3     3   0.0489   -0.0270       0.8150         0.5947
+4     4   0.0490   -0.0268       0.8094         0.5804
+5     5   0.0486   -0.0266       0.8121         0.5810
+6  mean   0.0490   -0.0269       0.8122         0.5880
+7    sd   0.0002    0.0004       0.0036         0.0083

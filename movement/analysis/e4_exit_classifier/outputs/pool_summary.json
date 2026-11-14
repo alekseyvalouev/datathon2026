@@ -1,0 +1,44 @@
+{
+ "pool_exit_known_dest_n": 818,
+ "pool_exit_unknown_dest_n": 619,
+ "gold_exit_known_dest_n": 106,
+ "gold_exit_unknown_dest_n": 36,
+ "gold_within_bay_moves": 29,
+ "pr_correction": {
+  "LEFT": 0.4775910364145659,
+  "CONSIDERING": 0.6666666666666666
+ },
+ "pool_pred_counts": {
+  "OTHER": 11481,
+  "LEFT": 1084,
+  "CONSIDERING": 353
+ },
+ "out_of_state_states_pool": {
+  "TX": 52,
+  "NY": 51,
+  "OR": 25,
+  "WA": 18,
+  "IL": 15,
+  "FL": 14,
+  "NV": 12,
+  "AZ": 9,
+  "DC": 9,
+  "NJ": 8,
+  "OH": 8,
+  "VA": 8
+ },
+ "out_of_state_states_gold": {
+  "TX": 11,
+  "OR": 8,
+  "NY": 8,
+  "WA": 6,
+  "NV": 4,
+  "CO": 4,
+  "IL": 3,
+  "TN": 2,
+  "MT": 2,
+  "UT": 2,
+  "PA": 2,
+  "FL": 2
+ }
+}

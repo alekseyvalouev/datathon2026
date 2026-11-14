@@ -1,0 +1,157 @@
+
+===== s01_places.py
+grocery: excluded 49 of 2478 by name keyword
+clinic: excluded 83 of 2718 by name keyword
+pharmacy: excluded 27 of 1109 by name keyword
+grocery: excluded 10 of 679 by name keyword
+clinic: excluded 6 of 471 by name keyword
+pharmacy: excluded 13 of 583 by name keyword
+                                 0      1
+                          raw rows 147429
+                   unique place_id 147429
+not permanently/temporarily closed 132217
+ (place, service) rows after rules  40949
+              n_open  median_rating  share_rated  share_with_review_rows  n_closed_excluded
+svc                                                                                        
+afs             1816            3.0     0.490088                0.000000                516
+bank            1731            3.5     0.906412                0.000000                321
+clinic          2635            4.0     0.614801                0.023909                465
+clinic_broad    8953            4.5     0.451245                0.009606               1209
+foodbank         461            4.9     0.503254                0.000000                 43
+grocery         2429            4.3     0.941540                0.000000                669
+pharmacy        1082            3.8     0.791128                0.000000                570
+transit        21842            4.8     0.255608                0.000000               2703
+           n  n_checked  correct  strict_ok
+svc                                        
+afs        1          1        1          1
+bank       2          2        2          2
+clinic     6          6        6          3
+foodbank   5          5        4          2
+grocery    6          6        6          2
+pharmacy   6          6        4          4
+transit    4          4        4          4
+ALL       30         30       27         18
+
+===== s02_access.py
+tract matched 100.0%; typology joined for 97.8% of listings
+distance check (BallTree vs brute force): [('grocery', 300, 4.547473508864641e-13), ('clinic', 300, 9.094947017729282e-13), ('transit', 300, 4.547473508864641e-13)]
+                               0     1
+               FOR_RENT listings 74343
+           in the 9 Bay counties 74343
+                with coordinates 73774
+ rent in [500, 30000] (E2 range) 73747
+                  bedrooms known 73747
+                  final listings 73747
+distinct coordinates (buildings) 10541
+
+===== s03_compare.py
+
+== listing-weighted
+                                          n_listings  n_buildings  median_rent  med_d_clinic_m  med_d_grocery_m  med_d_transit_m  share_bus_400  share_grocery_800  share_clinic_1600  share_desert_any  share_desert_2of3  mean_nearest_rated_clinic_rating  bank_to_afs_ratio_1600
+group                                                                                                                                                                                                                                                                              
+ALL                                         73747.0      10541.0       3109.0         559.537          393.066          151.108          0.892              0.836              0.921             0.043              0.008                             3.855                   1.746
+LI-reachable (<=80% AMI)                    49926.0       7589.0       2717.0         589.228          412.207          156.534          0.879              0.846              0.914             0.043              0.005                             3.868                   1.557
+not LI-reachable                            23821.0       3897.0       4290.0         468.409          371.489          147.990          0.921              0.816              0.937             0.042              0.014                             3.828                   2.164
+VLI-reachable (<=50% AMI)                    5028.0       1765.0       1775.0         513.093          327.482          120.659          0.913              0.906              0.949             0.025              0.006                             3.956                   1.934
+not VLI-reachable                           68719.0       9261.0       3200.0         563.320          401.479          154.423          0.891              0.831              0.919             0.044              0.008                             3.848                   1.728
+a <=50% AMI reachable                        5028.0       1765.0       1775.0         513.093          327.482          120.659          0.913              0.906              0.949             0.025              0.006                             3.956                   1.934
+b 50-80% AMI reachable                      44898.0       6298.0       2801.5         603.942          417.630          162.057          0.875              0.840              0.909             0.045              0.005                             3.858                   1.503
+c not reachable at 80% AMI                  23821.0       3897.0       4290.0         468.409          371.489          147.990          0.921              0.816              0.937             0.042              0.014                             3.828                   2.164
+origin (SF/San Mateo/E2 top ZIPs)           14574.0       1946.0       3837.0         338.473          281.428          113.587          0.971              0.901              0.945             0.033              0.006                             3.819                   2.363
+rest of Bay                                 59173.0       8595.0       2970.0         603.963          425.620          170.338          0.873              0.821              0.915             0.045              0.009                             3.864                   1.460
+rest of Bay & LI-reachable (<=80% AMI)      42884.0       6502.0       2674.0         609.145          427.893          169.876          0.863              0.836              0.907             0.045              0.004                             3.901                   1.362
+rest of Bay & not LI-reachable              16289.0       2770.0       4121.0         580.105          416.853          173.068          0.901              0.780              0.936             0.047              0.019                             3.767                   1.796
+rest of Bay & VLI-reachable (<=50% AMI)      4328.0       1493.0       1755.0         560.229          354.655          127.337          0.901              0.896              0.943             0.029              0.006                             3.999                   1.393
+rest of Bay & not VLI-reachable             54845.0       7497.0       3047.0         606.794          431.846          173.389          0.871              0.815              0.913             0.047              0.009                             3.853                   1.467
+
+== building-weighted
+                                          n_listings  n_buildings  median_rent  med_d_clinic_m  med_d_grocery_m  med_d_transit_m  share_bus_400  share_grocery_800  share_clinic_1600  share_desert_any  share_desert_2of3  mean_nearest_rated_clinic_rating  bank_to_afs_ratio_1600
+group                                                                                                                                                                                                                                                                              
+ALL                                         10541.0      10541.0       3000.0         635.361          433.611          177.942          0.810              0.777              0.863             0.102              0.039                             3.811                   1.445
+LI-reachable (<=80% AMI)                     7589.0       7589.0       2595.0         594.209          394.400          167.444          0.848              0.825              0.892             0.066              0.021                             3.818                   1.372
+not LI-reachable                             3897.0       3897.0       4700.0         681.245          510.552          185.638          0.765              0.705              0.830             0.153              0.065                             3.814                   1.771
+VLI-reachable (<=50% AMI)                    1765.0       1765.0       1795.0         536.923          340.856          145.804          0.886              0.856              0.915             0.050              0.016                             3.773                   1.508
+not VLI-reachable                            9261.0       9261.0       3290.0         645.018          444.120          180.402          0.802              0.769              0.857             0.107              0.041                             3.824                   1.475
+a <=50% AMI reachable                        1765.0       1765.0       1795.0         536.923          340.856          145.804          0.886              0.856              0.915             0.050              0.016                             3.773                   1.508
+b 50-80% AMI reachable                       6298.0       6298.0       2752.5         601.825          402.876          169.593          0.844              0.822              0.889             0.067              0.021                             3.837                   1.393
+c not reachable at 80% AMI                   3897.0       3897.0       4700.0         681.245          510.552          185.638          0.765              0.705              0.830             0.153              0.065                             3.814                   1.771
+origin (SF/San Mateo/E2 top ZIPs)            1946.0       1946.0       3966.0         391.591          269.501          108.517          0.950              0.902              0.941             0.042              0.012                             3.807                   2.160
+rest of Bay                                  8595.0       8595.0       2895.0         689.025          472.881          199.515          0.779              0.749              0.845             0.115              0.045                             3.813                   1.100
+rest of Bay & LI-reachable (<=80% AMI)       6502.0       6502.0       2500.0         629.671          421.681          181.369          0.829              0.808              0.881             0.073              0.023                             3.830                   1.063
+rest of Bay & not LI-reachable               2770.0       2770.0       4495.0         815.727          621.630          240.212          0.692              0.632              0.789             0.193              0.086                             3.795                   1.501
+rest of Bay & VLI-reachable (<=50% AMI)      1493.0       1493.0       1795.0         585.782          372.305          161.891          0.868              0.841              0.904             0.057              0.017                             3.791                   0.964
+rest of Bay & not VLI-reachable              7497.0       7497.0       3099.0         700.837          488.374          205.083          0.768              0.738              0.838             0.122              0.048                             3.826                   1.152
+
+      weight                                                        group  n_reach  n_not  clinic_dist_ratio  grocery_dist_ratio  transit_dist_ratio  bus400_reach  bus400_not  desert_reach  desert_not  bus400_rel_diff  within_county_clinic_ratio_median  n_counties
+0   listing                                                    <=80% AMI    49926  23821              1.258               1.110               1.058         0.879       0.921         0.043       0.042           -0.045                              0.998         9.0
+1   listing                                                    <=50% AMI     5028  68719              0.911               0.816               0.781         0.913       0.891         0.025       0.044            0.025                              0.998         9.0
+2  building                                                    <=80% AMI     7589   3897              0.872               0.772               0.902         0.848       0.765         0.066       0.153            0.109                              0.747         9.0
+3  building                                                    <=50% AMI     1765   9261              0.832               0.767               0.808         0.886       0.802         0.050       0.107            0.104                              0.811         9.0
+4   listing  origin areas (all units) vs rest-of-Bay <=80% AMI-reachable    42884  14574              1.800               1.520               1.496         0.863       0.971         0.045       0.033           -0.112                                NaN         NaN
+5   listing  origin areas (all units) vs rest-of-Bay <=50% AMI-reachable     4328  14574              1.655               1.260               1.121         0.901       0.971         0.029       0.033           -0.073                                NaN         NaN
+6  building  origin areas (all units) vs rest-of-Bay <=80% AMI-reachable     6502   1946              1.608               1.565               1.671         0.829       0.950         0.073       0.042           -0.127                                NaN         NaN
+7  building  origin areas (all units) vs rest-of-Bay <=50% AMI-reachable     1493   1946              1.496               1.381               1.492         0.868       0.950         0.057       0.042           -0.086                                NaN         NaN
+
+===== s04_model.py
+buildings 10541 (blocks 348); train 7239 / test 3302; prevalence train 0.110 test 0.083
+                       model    weight  threshold  cv_auc_train     n  prevalence    auc  avg_precision     f1  precision  recall  flagged_share  brier  auc_lo  auc_hi
+0            B0_county_prior  building      0.121         0.720  3302       0.083  0.765          0.196  0.299      0.184   0.788          0.355  0.072   0.640   0.846
+1            B0_county_prior   listing      0.121           NaN  3302       0.026  0.832          0.131  0.144      0.079   0.828          0.276  0.031     NaN     NaN
+2  B1_logit_dist_city_center  building      0.194         0.794  3302       0.083  0.826          0.302  0.379      0.287   0.555          0.160  0.066   0.728   0.894
+3  B1_logit_dist_city_center   listing      0.194           NaN  3302       0.026  0.721          0.081  0.099      0.059   0.326          0.146  0.034     NaN     NaN
+4              M1_attributes  building      0.214         0.842  3302       0.083  0.859          0.407  0.429      0.333   0.602          0.150  0.061   0.800   0.897
+5              M1_attributes   listing      0.214           NaN  3302       0.026  0.834          0.230  0.297      0.230   0.417          0.048  0.024     NaN     NaN
+6     M2_attr+zillow_context  building      0.347         0.921  3302       0.083  0.920          0.596  0.572      0.542   0.606          0.093  0.050   0.875   0.953
+7     M2_attr+zillow_context   listing      0.347           NaN  3302       0.026  0.906          0.467  0.408      0.511   0.339          0.017  0.020     NaN     NaN
+8               M3_M2+latlon  building      0.492         0.922  3302       0.083  0.929          0.623  0.571      0.641   0.515          0.067  0.048   0.887   0.959
+9               M3_M2+latlon   listing      0.492           NaN  3302       0.026  0.909          0.448  0.412      0.690   0.294          0.011  0.020     NaN     NaN
+AUC(M2)-AUC(B1) 95% block-bootstrap: [0.033 0.092 0.177]
+   subgroup                        value                  model    n  n_desert  prevalence   auc  recall  precision   fpr  mean_pred
+     county               Alameda County M2_attr+zillow_context 1167        26       0.022 0.956   0.423      0.478 0.011      0.024
+     county          Contra Costa County M2_attr+zillow_context  359       117       0.326 0.732   0.615      0.537 0.256      0.298
+     county                 Marin County M2_attr+zillow_context   69        17       0.246 0.649   0.353      0.667 0.058      0.185
+     county                  Napa County M2_attr+zillow_context   81        16       0.198 0.976   0.750      0.923 0.015      0.165
+     county         San Francisco County M2_attr+zillow_context  129         0       0.000   NaN     NaN        NaN 0.000      0.002
+     county             San Mateo County M2_attr+zillow_context  219         0       0.000   NaN     NaN      0.000 0.046      0.051
+     county           Santa Clara County M2_attr+zillow_context  835        32       0.038 0.773   0.344      0.423 0.019      0.055
+     county                Solano County M2_attr+zillow_context  212        48       0.226 0.931   0.896      0.597 0.177      0.290
+     county                Sonoma County M2_attr+zillow_context  231        18       0.078 0.954   0.611      0.579 0.038      0.116
+typ_group_s    1 Low-income/displacement M2_attr+zillow_context  833        26       0.031 0.964   0.615      0.432 0.026      0.049
+typ_group_s                2 Gentrifying M2_attr+zillow_context  284         0       0.000   NaN     NaN      0.000 0.014      0.021
+typ_group_s             3 Moderate/mixed M2_attr+zillow_context 1067        71       0.067 0.893   0.592      0.483 0.045      0.089
+typ_group_s                  4 Exclusive M2_attr+zillow_context 1061       146       0.138 0.879   0.596      0.558 0.075      0.139
+typ_group_s             NA (no typology) M2_attr+zillow_context   57        31       0.544 0.942   0.677      0.955 0.038      0.318
+  rent_tier                  Q1 cheapest M2_attr+zillow_context  826        36       0.044 0.905   0.306      0.379 0.023      0.050
+  rent_tier                           Q2 M2_attr+zillow_context  832        50       0.060 0.912   0.520      0.605 0.022      0.061
+  rent_tier                           Q3 M2_attr+zillow_context  821        72       0.088 0.926   0.681      0.510 0.063      0.111
+  rent_tier                  Q4 priciest M2_attr+zillow_context  823       116       0.141 0.911   0.690      0.580 0.082      0.151
+   vli_bldg has <=50% AMI-reachable unit M2_attr+zillow_context  512        22       0.043 0.895   0.364      0.364 0.029      0.051
+   vli_bldg  no <=50% AMI-reachable unit M2_attr+zillow_context 2790       252       0.090 0.921   0.627      0.556 0.050      0.101
+             err              county         city zipcode  n_buildings  n_listings  mean_pred  fail_grocery  fail_clinic  fail_transit  med_d_grocery_100m  med_d_clinic_100m  med_d_transit_100m  med_rent_100  med_z_props_1km  med_d_city_km                  typology
+FN missed desert Contra Costa County    San Ramon   94582           14          40   0.184537             3            0            14               800.0             1100.0              1000.0        2400.0             60.0           18.0               4 Exclusive
+FN missed desert Contra Costa County      Antioch   94531           12          12   0.136556             2            0            12              1300.0             1100.0              1100.0        3400.0             92.5           22.9          3 Moderate/mixed
+FN missed desert      Alameda County       Dublin   94568            6          22   0.169658             5            1             1              2900.0             3000.0               400.0        3600.0             51.0           19.9               4 Exclusive
+FN missed desert Contra Costa County       Moraga   94556            4          10   0.204536             4            4             3              2000.0             3800.0               800.0        2600.0             44.0            8.2               4 Exclusive
+FN missed desert Contra Costa County Walnut Creek   94598            4           4   0.038807             4            0             0              1700.0              200.0               300.0        3100.0             86.0            1.9          3 Moderate/mixed
+FN missed desert        Marin County      Fairfax   94930            4           4   0.115568             0            4             0               500.0             3600.0               300.0        4600.0             81.0            5.3               4 Exclusive
+FN missed desert        Marin County  San Anselmo   94960            4           4   0.122436             0            2             2              1300.0             3000.0               800.0        7300.0             78.0            4.3               4 Exclusive
+FN missed desert  Santa Clara County     San Jose   95119            4           4   0.115030             3            0             3              1900.0             1000.0               900.0        4600.0             77.5           14.5               4 Exclusive
+  FP false alarm Contra Costa County     Danville   94506           11          11   0.612628             0            0             0               700.0              500.0               300.0        5400.0             53.0           17.9               4 Exclusive
+  FP false alarm       Solano County    Rio Vista   94571            9           9   0.713679             0            0             0               600.0              600.0               200.0        2500.0             44.0           32.0 1 Low-income/displacement
+  FP false alarm Contra Costa County      Antioch   94531            7           7   0.482757             0            0             0               900.0              800.0               400.0        3700.0             62.0           22.8          3 Moderate/mixed
+  FP false alarm Contra Costa County    San Ramon   94582            7           7   0.477118             0            0             0              1100.0             1100.0               300.0        4600.0             51.0           17.3               4 Exclusive
+  FP false alarm  Santa Clara County     Milpitas   95035            7           7   0.447174             0            0             0               600.0             1100.0               300.0        3900.0             38.0           11.7          3 Moderate/mixed
+  FP false alarm       Solano County      Vallejo   94591            7           7   0.606055             0            0             0              1400.0             2100.0               300.0        3100.0             50.0            4.9          3 Moderate/mixed
+  FP false alarm Contra Costa County    Bay Point   94565            6           6   0.598775             0            0             0               600.0             1000.0               400.0        3300.0             46.5            8.1               4 Exclusive
+  FP false alarm Contra Costa County    Lafayette   94549            6          19   0.628641             0            0             0               700.0              200.0               200.0        5100.0             32.0            6.6               4 Exclusive
+                  med_rent  z_props_1000  d_city_center  share_apt  n_listings  d_grocery  d_clinic  d_transit     n
+err                                                                                                                 
+FN missed desert    3200.0          67.0         9501.7        0.0         1.0     1609.9    1600.3      824.1   108
+FP false alarm      3970.0          49.0        11223.9        0.0         1.0      846.0     995.6      321.2   140
+ok                  2995.0         108.0         3134.8        1.0         1.0      414.9     578.4      168.8  3054
+                           formula    term    coef     se      p  odds_ratio     n
+            desert ~ lr + med_beds      lr  0.3015 0.1591 0.0580      1.3519 10541
+desert ~ lr + med_beds + C(county)      lr  0.9973 0.1533 0.0000      2.7109 10541
+          desert ~ lpp + C(county)     lpp  0.5984 0.1726 0.0005      1.8193 10541
+      desert ~ any_VLI + C(county) any_VLI -0.8537 0.1482 0.0000      0.4259 10541
+       desert ~ any_LI + C(county)  any_LI -1.4754 0.1081 0.0000      0.2287 10541

@@ -1,0 +1,20 @@
+downloading https://www2.census.gov/programs-surveys/acs/data/pums/2022/1-Year/csv_pus.zip
+downloading https://www2.census.gov/programs-surveys/acs/data/pums/2022/1-Year/csv_hus.zip
+  read psam_pusa.csv
+  read psam_pusb.csv
+  read psam_husa.csv
+  read psam_husb.csv
+2022 persons 399097 housing 164399
+downloading https://www2.census.gov/programs-surveys/acs/data/pums/2023/1-Year/csv_pus.zip
+downloading https://www2.census.gov/programs-surveys/acs/data/pums/2023/1-Year/csv_hus.zip
+  read psam_pusa.csv
+  read psam_pusb.csv
+  read psam_husa.csv
+  read psam_husb.csv
+2023 persons 399099 housing 164217
+downloading https://www2.census.gov/programs-surveys/acs/data/pums/2024/1-Year/csv_hus.zip
+  read psam_pusa.csv
+  read psam_pusb.csv
+  read psam_husa.csv
+  read psam_husb.csv
+2024 persons 399956 housing 164854

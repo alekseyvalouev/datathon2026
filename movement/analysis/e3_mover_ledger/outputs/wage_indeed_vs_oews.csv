@@ -1,0 +1,40 @@
+occ,occupation,scenario,hourly,metro,n_pay,med_mid
+cna,CNA / nursing assistant,Stay (in-place),26.96,Bay Area,73,26.135
+cna,CNA / nursing assistant,Sacramento,22.84,Sacramento,17,23.0
+caregiver,Caregiver / home health aide,Stay (in-place),17.28,Bay Area,393,22.0
+caregiver,Caregiver / home health aide,Sacramento,16.5,Sacramento,76,19.5
+caregiver,Caregiver / home health aide,Stockton,16.5,Stockton,17,18.5
+caregiver,Caregiver / home health aide,Fresno,16.5,Fresno,15,18.35
+med_asst,Medical assistant,Stay (in-place),28.75,Bay Area,97,27.725
+med_asst,Medical assistant,Sacramento,29.79,Sacramento,22,33.125
+med_asst,Medical assistant,Fresno,22.36,Fresno,27,26.305
+warehouse,Warehouse / material handler,Stay (in-place),23.27,Bay Area,375,22.6
+warehouse,Warehouse / material handler,Sacramento,22.08,Sacramento,128,22.5
+warehouse,Warehouse / material handler,Stockton,22.75,Stockton,71,22.5
+warehouse,Warehouse / material handler,Modesto,22.42,Modesto,32,22.744999999999997
+warehouse,Warehouse / material handler,Fresno,18.9,Fresno,47,21.0
+cashier,Cashier / retail sales,Stay (in-place),19.84,Bay Area,907,19.59
+cashier,Cashier / retail sales,Sacramento,17.69,Sacramento,222,18.0
+cashier,Cashier / retail sales,Stockton,17.47,Stockton,76,17.8625
+cashier,Cashier / retail sales,Modesto,17.54,Modesto,90,17.45
+cashier,Cashier / retail sales,Fresno,16.96,Fresno,107,17.52
+cook,Cook,Stay (in-place),22.13,Bay Area,396,24.5
+cook,Cook,Sacramento,21.27,Sacramento,94,23.5
+cook,Cook,Stockton,19.79,Stockton,26,23.5
+cook,Cook,Modesto,20.15,Modesto,23,23.5
+cook,Cook,Fresno,18.4,Fresno,25,22.0
+crew,Fast-food / restaurant crew,Stay (in-place),21.09,Bay Area,608,20.25
+crew,Fast-food / restaurant crew,Sacramento,20.61,Sacramento,175,20.0
+crew,Fast-food / restaurant crew,Stockton,20.07,Stockton,37,20.0
+crew,Fast-food / restaurant crew,Modesto,20.5,Modesto,48,20.0
+crew,Fast-food / restaurant crew,Fresno,18.98,Fresno,87,20.0
+janitor,Janitor / custodian / housekeeper,Stay (in-place),21.24,Bay Area,407,21.5
+janitor,Janitor / custodian / housekeeper,Sacramento,19.93,Sacramento,96,19.45
+janitor,Janitor / custodian / housekeeper,Stockton,19.3,Stockton,26,18.0
+janitor,Janitor / custodian / housekeeper,Modesto,19.82,Modesto,18,17.4
+janitor,Janitor / custodian / housekeeper,Fresno,18.26,Fresno,23,19.0
+security,Security guard,Stay (in-place),21.99,Bay Area,113,24.57
+security,Security guard,Sacramento,18.97,Sacramento,24,24.01
+driver,Delivery driver,Stay (in-place),24.43,Bay Area,266,24.0
+driver,Delivery driver,Sacramento,22.28,Sacramento,58,21.5
+driver,Delivery driver,Stockton,22.39,Stockton,21,22.42

@@ -1,0 +1,31 @@
+place_id,svc,name,category,all_categories,rating,reviews_count,correct,note
+ChIJ8TutmGaGj4ARJoiSsRR87_E,grocery,Cardenas Markets,Supermarket,"[""Supermarket"",""Mexican grocery store""]",3.8,2339,1,full-line Latino supermarket chain
+ChIJrwvEHwDrj4ARnKsOD4xDprE,grocery,Zam Zam Supermarket,Grocery store,"[""Grocery store""]",3.8,36,1,independent supermarket (name says supermarket); size unknown
+ChIJV5ZSWaejj4ARfAwd3dBBZ50,grocery,R & D Gas & Foodmart,Grocery store,"[""Grocery store""]",3.8,8,0,gas-station food mart = convenience store; USDA would not count it
+ChIJqYTWk6Z-hYARcn2Iv78nibM,grocery,Safeway,Grocery store,"[""Grocery store"",""Bakery"",""Butcher shop"",""Deli"",""E-commerce service"",""Florist"",""Grocery delivery service"",""Organic food store"",""Produce market"",""Supermarket""]",3.9,1737,1,Safeway supermarket
+ChIJnUya0sqVj4ARZJAJHpNpY1I,grocery,Chavez Markets Distribution,Grocery store,"[""Grocery store""]",3.4,5,0,name suggests a wholesale/distribution site not a retail store (uncertain)
+ChIJj-b6vZ-QhYARHWLxbcYxKr0,clinic,MarinHealth Cardiovascular Medicine | A UCSF Health Clinic,Medical clinic,"[""Medical clinic""]",4.8,386,1,"specialist (cardiology) clinic of a health system: a clinic, but not primary/urgent care (strict=0)"
+ChIJS8-U9xfLj4ARjv1hdk-bopY,clinic,South Bay Allergy & Asthma Group,Medical clinic,"[""Medical clinic"",""Allergist"",""Immunologist"",""Medical group""]",4.6,148,1,"allergy specialist medical group: clinic, not primary care (strict=0)"
+ChIJy7saJQpIhIARtJ3442sSbdw,clinic,Reiter And Love Md's,Medical clinic,"[""Medical clinic""]",0.0,0,1,physician practice (MDs); specialty unknown (strict=uncertain)
+ChIJ37mFfny7hYARXeMXTzIEGxY,clinic,Marin Pregnancy Clinic,Women's health clinic,"[""Women's health clinic"",""Free clinic"",""Obstetrician-gynecologist"",""Medical clinic"",""Walk-in clinic""]",4.7,12,1,"free/walk-in women's (pregnancy) clinic; likely pregnancy resource center, limited care (strict=0)"
+ChIJ__-_bXmAhYARqhB_7t3OPUg,clinic,Depilar System,Medical clinic,"[""Medical clinic""]",0.0,0,0,hair-removal (depilation) business mis-tagged Medical clinic; name filter missed it
+ChIJncZmAmS2j4ARuKIXyNMcwHs,pharmacy,Walgreens Pharmacy,Pharmacy,"[""Pharmacy"",""Medical supply store""]",2.6,38,1,Walgreens retail pharmacy
+ChIJq0BZBZmwj4ARL9oe-W9j7Dw,pharmacy,Walmart Pharmacy,Pharmacy,"[""Pharmacy"",""Herbal medicine store"",""Medical supply store"",""Parapharmacy"",""Vitamin & supplements store""]",3.4,33,1,Walmart retail pharmacy
+ChIJpd2NSeGQj4ARY75g2j_kh5g,pharmacy,Omnicare Pharmacy,Pharmacy,"[""Pharmacy""]",4.0,2,0,Omnicare = long-term-care / institutional pharmacy; not walk-in retail
+ChIJm-ILsYeAhYAR8j3hxJSOefc,pharmacy,CVS Pharmacy,Pharmacy,"[""Pharmacy""]",3.2,112,1,CVS retail pharmacy
+ChIJY6-YU9lHhIAR7xPrkkBtcAE,pharmacy,CVS Pharmacy,Pharmacy,"[""Pharmacy""]",3.8,24,1,CVS retail pharmacy
+ChIJ2UNiCaWwj4ARU0F2GsU7NKA,transit,RENGSTORFF and CENTRAL,Transport hub,"[""Transport hub""]",0.0,0,1,intersection-named stop (Transport hub tag = bus stop)
+ChIJpYOjtfIxjoARFGhlNE3N0dA,transit,Blossom Hill & Entrada Cedros,Bus stop,"[""Bus stop""]",5.0,2,1,bus stop
+ChIJz-MtB21KhIAR4g_4-EAV6aQ,transit,State Farm Dr & Enterprise Dr,Bus stop,"[""Bus stop""]",2.5,2,1,bus stop
+ChIJDxSb66_Lj4ARAvqcS-GxuIE,transit,Santa Clara Transit Center,Transport hub,"[""Transport hub""]",5.0,1,1,transit center
+ChIJk2vmMzOHhYARWdjaR0erVjM,transit,Presidio Ave & Clay St,Bus stop,"[""Bus stop""]",0.0,0,1,bus stop
+ChIJVVUxOpCAhYARPBj_5PgB5qM,foodbank,El Mercadito de la Voz - Food Distribution Center,Food bank,"[""Food bank""]",0.0,0,1,food distribution site
+ChIJ2cqAA9dghYARjUo277zverw,foodbank,Monument Crisis Center,Food bank,"[""Food bank""]",4.9,35,1,crisis center with food pantry
+ChIJkRJ5ebmAhYAR_iACE18BU8w,foodbank,Economic Opportunity Council Of San Francisco - Food Distribution Center,Food bank,"[""Food bank""]",4.0,1,1,food distribution site of a community org
+ChIJ_5fbZgDHj4ARlZK8rliKLRI,foodbank,劉月,Soup kitchen,"[""Soup kitchen""]",0.0,0,0,personal-name listing tagged Soup kitchen; no evidence of service (0 reviews)
+ChIJyUGliHVhhYARLTjYc4CYlIM,foodbank,Tippah Country Good Samaritan - Food Distribution Center,Food bank,"[""Food bank""]",5.0,1,0,"name refers to an out-of-state county (Mississippi) at a Bay Area coordinate; templated 'Food Distribution Center' entry, cannot verify"
+ChIJVe31uL1GjoAR1PRdPpuqg7k,afs,MoneyGram,Money transfer service,"[""Money transfer service""]",0.0,0,1,money transfer agent (fringe financial service)
+ChIJ67JDh1qRj4ARTUa61u7BDHk,afs,Vigo,Money transfer service,"[""Money transfer service"",""Money order service""]",0.0,0,1,remittance agent
+ChIJdVct0V6ej4ARqly3eoexsSg,bank,Chase Bank,Bank,"[""Bank"",""ATM""]",3.3,28,1,bank branch
+ChIJ484eER89hYARJr0tqiNq5no,afs,Coinstar Kiosk,Money transfer service,"[""Money transfer service""]",0.0,0,0,coin-counting kiosk; not check cashing / lending
+ChIJW_RsdoWXhYAR7cTWQUwYzdk,afs,Western Union,Money transfer service,"[""Money transfer service"",""Money order service""]",1.0,1,1,remittance agent

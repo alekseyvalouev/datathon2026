@@ -1,0 +1,9 @@
+svc,n,n_checked,correct,strict_ok
+afs,1,1,1,1
+bank,2,2,2,2
+clinic,6,6,6,3
+foodbank,5,5,4,2
+grocery,6,6,6,2
+pharmacy,6,6,4,4
+transit,4,4,4,4
+ALL,30,30,27,18

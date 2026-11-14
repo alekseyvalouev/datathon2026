@@ -1,0 +1,31 @@
+place_id,svc,name,category,all_categories,rating,reviews_count,correct,strict_ok,note
+ChIJ83UV3fUyjoARvUmspUixADE,grocery,Lee's Supermarket,Asian grocery store,"[""Asian grocery store"",""Supermarket""]",3.8,547,1,1,full-size Asian supermarket (547 reviews)
+ChIJBWRDUyl-j4ARbqKZH9F4ezA,grocery,Trader Joe's,Grocery store,"[""Grocery store"",""Cheese shop"",""Health food store"",""Liquor store"",""Natural goods store"",""Organic food store"",""Produce market"",""Supermarket"",""Wine store""]",4.6,2323,1,1,Trader Joe's
+ChIJsUzXZQq7j4ARGmwli3WIslI,grocery,Garden Market,Grocery store,"[""Grocery store""]",4.4,132,1,0,independent grocery; size unknown so not confirmed as USDA-type supermarket
+ChIJuUssgvSAhYARLAnuInD-ThM,grocery,May Sun Market,Asian grocery store,"[""Asian grocery store""]",3.9,17,1,0,small ethnic grocery (17 reviews)
+ChIJJ0jYofOAhYARFZxdHlcyesA,grocery,Fruit Garden,Asian grocery store,"[""Asian grocery store""]",4.0,1,1,0,fruit/produce shop; sells fresh food but not a full-line grocery
+ChIJ5RJoTy6Hj4ARxaEL2kmoQqY,grocery,Mi Carnal Market,Produce market,"[""Produce market""]",4.5,38,1,0,produce market; small
+ChIJ0SO78jPpj4ARmopLd9LLqsI,clinic,"Melissa Johnson, M.D.-Sutter East Bay Medical Foundation",Medical clinic,"[""Medical clinic"",""Doctor""]",,0,1,0,physician listing inside a large medical foundation; specialty not stated
+ChIJrzSfiOJHhIARy-ttd9liGPE,clinic,Edington Medical Group,Medical clinic,"[""Medical clinic""]",,0,1,0,medical group practice; specialty not stated
+ChIJux8lFXGej4ARzJ49Hd_bAQA,clinic,African-American Community Health Advisory Committee: Mills Health Center,Community health center,"[""Community health center""]",,0,1,1,county community health center
+ChIJBZtdPpbnj4ARrZwJHMvcUo4,clinic,Tri-Valley Family Medicine: Tan Lorena MD,Family practice physician,"[""Family practice physician""]",3.7,49,1,1,family medicine practice
+ChIJ72rH3FSij4AReB-jZ2NK3Xc,clinic,Redwood City Medical Center,Medical Center,"[""Medical Center"",""Hospital""]",4.6,1374,1,1,hospital / medical center (health-plan members)
+ChIJX4Lk0soMhYAR-ovZULFK3WU,clinic,Gastroenterology: Vallejo Care Center: Sutter Medical Foundation,Medical clinic,"[""Medical clinic""]",,0,1,0,gastroenterology specialty office of a health system
+ChIJoTtlvrp_j4ARJ9GqTGv-bZQ,pharmacy,FuzeRx,Pharmacy,"[""Pharmacy""]",4.0,1059,1,1,retail pharmacy (1k reviews)
+ChIJ37OgGZjnj4ARHosA2C6SjLg,pharmacy,COVID-19 Drive-Thru Testing at Walgreens,Pharmacy,"[""Pharmacy""]",,0,1,1,testing-site entry at a Walgreens store (store pharmacy co-located)
+ChIJV92oAUy3j4ARDy76mLwx2hQ,pharmacy,Safeway Pharmacy,Pharmacy,"[""Pharmacy"",""Drug store"",""Vitamin & supplements store""]",3.5,38,1,1,Safeway pharmacy
+ChIJBcl2apu6j4AREejma1zJcnU,pharmacy,Yee Freddie W,Pharmacy,"[""Pharmacy""]",,0,0,0,personal-name pharmacist record (0 reviews); cannot confirm a walk-in pharmacy
+ChIJZaZ3rPl9hYARFlwB29ZVTTw,pharmacy,Khajavi Sharmin,Pharmacy,"[""Pharmacy""]",,0,0,0,personal-name pharmacist record (0 reviews); cannot confirm a walk-in pharmacy
+ChIJ63mK6_h9hYARjwbxedpd7MU,pharmacy,Pharmacy | Kaiser Permanente Oakland Medical Center (Main Building),Pharmacy,"[""Pharmacy"",""Urology clinic""]",3.9,168,1,1,Kaiser medical-center pharmacy (members)
+ChIJy7VI-_VKhIARJ_ggYvgdSDs,transit,East Cotati Ave & Windmill Farms Dr,Bus stop,"[""Bus stop""]",,0,1,1,bus stop
+ChIJJWlZpvJ-hYARU-3arecKQnQ,transit,San Pablo Av & Parker St,Bus stop,"[""Bus stop""]",,0,1,1,bus stop
+ChIJTYCs4fCZhYARtpkoBP-pqfA,transit,Lincoln Ave & Mission Ave,Bus stop,"[""Bus stop""]",,0,1,1,bus stop
+ChIJkQSfc5-QhYARMm6e1dh4IJw,transit,Magnolia Ave & Bon Air Rd,Bus stop,"[""Bus stop""]",,0,1,1,bus stop
+ChIJTf8VEQAzjoARffeFbQwcqt0,foodbank,Tacos al vapor,Soup kitchen,"[""Soup kitchen""]",,0,0,0,taco restaurant mis-tagged Soup kitchen
+ChIJ10bVlI-AhYARzVdLxlcsT1c,foodbank,Glide Memorial Church - Food Distribution Center,Food bank,"[""Food bank""]",4.2,38,1,1,church food distribution (public meals/pantry)
+ChIJtWyTBi5-j4ARwCuCSsUBDtU,foodbank,Martin de Porres House of Hospitality,Soup kitchen,"[""Soup kitchen""]",4.7,189,1,1,free-meal soup kitchen
+ChIJpaaDRQm0hYARqcsR5L_7l4A,foodbank,Vintage Chateau Apartments - Food Distribution Center,Food bank,"[""Food bank""]",,0,1,0,distribution site at an apartment complex; likely residents-only
+ChIJbYKzTSSBhYARxGxUhcC6Uho,foodbank,San Francisco-Marin Food Bank,Food bank,"[""Food bank""]",,0,1,0,regional food bank warehouse/HQ; public pantries are elsewhere
+ChIJZV8c2uDGj4ARfA4tJID5JD0,bank,Wells Fargo Bank,Bank,"[""Bank"",""ATM""]",2.5,28,1,1,bank branch
+ChIJHbQLK-QyjoARBvhzhZ8PAQw,afs,Western Union,Money transfer service,"[""Money transfer service""]",2.5,8,1,1,remittance agent
+ChIJCbS7vXxXhYARBFilEQ0NyL0,bank,Wells Fargo Bank,Bank,"[""Bank"",""ATM""]",3.4,49,1,1,bank branch

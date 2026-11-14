@@ -1,0 +1,5 @@
+Hand verification: homeownership share among out-of-state Bay leavers (18-64, household pop.)
+  DuckDB SQL from raw extracts: n=2739, weighted N=314,473, share=0.4348, replicate SE=0.0136
+  Pipeline (03_estimate.py):    n=2739, share=0.4348, SE=0.0136
+  Match: True
+  Formula: share = sum(PWGTP*own)/sum(PWGTP); SE = sqrt(4/80 * sum_r (share_r - share)^2), r = PWGTP1..80

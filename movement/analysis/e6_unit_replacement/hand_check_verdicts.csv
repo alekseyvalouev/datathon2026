@@ -1,0 +1,81 @@
+var,verdict,note
+remodel,correct,unit described as remodeled/renovated/new finishes
+remodel,correct,unit described as remodeled/renovated/new finishes
+remodel,correct,unit described as remodeled/renovated/new finishes
+remodel,correct,unit described as remodeled/renovated/new finishes
+remodel,correct,unit described as remodeled/renovated/new finishes
+remodel,correct,unit described as remodeled/renovated/new finishes
+remodel,correct,unit described as remodeled/renovated/new finishes
+remodel,correct,unit described as remodeled/renovated/new finishes
+remodel,correct,unit described as remodeled/renovated/new finishes
+remodel,correct,unit described as remodeled/renovated/new finishes
+remodel,correct,unit described as remodeled/renovated/new finishes
+remodel,correct,unit described as remodeled/renovated/new finishes
+remodel,wrong,'meticulously maintained new appliances' - not a renovation claim
+remodel,correct,unit described as remodeled/renovated/new finishes
+remodel,correct,unit described as remodeled/renovated/new finishes
+remodel,correct,unit described as remodeled/renovated/new finishes
+remodel,correct,unit described as remodeled/renovated/new finishes
+remodel,correct,unit described as remodeled/renovated/new finishes
+remodel,correct,new carpet throughout: light refresh
+remodel,correct,upgraded kitchen ventilation: partial upgrade
+luxury,correct,building/unit marketed as luxury
+luxury,correct,building/unit marketed as luxury
+luxury,wrong,'the luxury of having space' - generic phrase
+luxury,correct,building/unit marketed as luxury
+luxury,correct,building/unit marketed as luxury
+luxury,correct,building/unit marketed as luxury
+luxury,correct,building/unit marketed as luxury
+luxury,correct,building/unit marketed as luxury
+luxury,correct,building/unit marketed as luxury
+luxury,wrong,'luxury vinyl plank' flooring material
+luxury,correct,building/unit marketed as luxury
+luxury,correct,building/unit marketed as luxury
+luxury,correct,building/unit marketed as luxury
+luxury,wrong,"'luxury remote control ceiling fans' - fixture, not positioning"
+luxury,correct,building/unit marketed as luxury
+luxury,correct,building/unit marketed as luxury
+luxury,correct,building/unit marketed as luxury
+luxury,correct,building/unit marketed as luxury
+luxury,correct,building/unit marketed as luxury
+luxury,correct,building/unit marketed as luxury
+concession_weeks,correct,free-rent concession parsed correctly
+concession_weeks,correct,free-rent concession parsed correctly
+concession_weeks,correct,free-rent concession parsed correctly
+concession_weeks,correct,free-rent concession parsed correctly
+concession_weeks,correct,free-rent concession parsed correctly
+concession_weeks,correct,free-rent concession parsed correctly
+concession_weeks,correct,free-rent concession parsed correctly
+concession_weeks,correct,free-rent concession parsed correctly
+concession_weeks,correct,free-rent concession parsed correctly
+concession_weeks,correct,free-rent concession parsed correctly
+concession_weeks,correct,free-rent concession parsed correctly
+concession_weeks,correct,free-rent concession parsed correctly
+concession_weeks,value_off,snippet says 8 weeks; parsed 8.67 from another 2-month mention in text (max taken)
+concession_weeks,value_off,2 weeks + 2 weeks additional = 4; parsed 2 (undercount)
+concession_weeks,correct,free-rent concession parsed correctly
+concession_weeks,correct,free-rent concession parsed correctly
+concession_weeks,correct,free-rent concession parsed correctly
+concession_weeks,correct,free-rent concession parsed correctly
+concession_weeks,correct,free-rent concession parsed correctly
+concession_weeks,correct,free-rent concession parsed correctly
+income_multiplier,correct,stated income multiple parsed correctly
+income_multiplier,correct,stated income multiple parsed correctly
+income_multiplier,correct,stated income multiple parsed correctly
+income_multiplier,correct,stated income multiple parsed correctly
+income_multiplier,correct,stated income multiple parsed correctly
+income_multiplier,correct,stated income multiple parsed correctly
+income_multiplier,correct,stated income multiple parsed correctly
+income_multiplier,correct,stated income multiple parsed correctly
+income_multiplier,correct,stated income multiple parsed correctly
+income_multiplier,correct,stated income multiple parsed correctly
+income_multiplier,correct,stated income multiple parsed correctly
+income_multiplier,correct,stated income multiple parsed correctly
+income_multiplier,correct,stated income multiple parsed correctly
+income_multiplier,correct,stated income multiple parsed correctly
+income_multiplier,correct,stated income multiple parsed correctly
+income_multiplier,correct,stated income multiple parsed correctly
+income_multiplier,correct,stated income multiple parsed correctly
+income_multiplier,correct,stated income multiple parsed correctly
+income_multiplier,correct,stated income multiple parsed correctly
+income_multiplier,correct,stated income multiple parsed correctly

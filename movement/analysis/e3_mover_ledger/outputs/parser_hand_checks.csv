@@ -1,0 +1,51 @@
+jobid,salary_formatted,expected_low,expected_high,parsed_low,parsed_high,parsed_unit,parsed_kind,match,note
+790a1a7ce13f3bb5,$17.28 an hour + tips,17.28,17.28,17.28,17.28,hour,point,True,tips excluded
+990627724a6885e6,$25.03 - $33.54 por hora,25.03,33.54,25.03,33.54,hour,range,True,Spanish
+1191461aa63e182c,$16.90 por hora,16.9,16.9,16.9,16.9,hour,point,True,CA min wage 2025
+cb2963eefbec090e,$16.90 - $50.00 por hora,16.9,50.0,16.9,50.0,hour,range,True,very wide range; mid less meaningful
+f26b5f971a601cd9,Desde $21 por hora,21.0,21.0,21.0,21.0,hour,from,True,open-ended 'from'
+c6223fcb2576ba42,$25.90 an hour,25.9,25.9,25.9,25.9,hour,point,True,
+d7bc0bf67db004b9,Up to $23 an hour,23.0,23.0,23.0,23.0,hour,upto,True,open-ended 'up to' (upper bound)
+75a2642c4f6d4b22,"From $95,000 a year",45.67307692307692,45.67307692307692,45.67307692307692,45.67307692307692,year,from,True,
+4231a7d545ba9104,Hasta $117.73 por hora,117.73,117.73,117.73,117.73,hour,upto,True,
+69ad1942bbe9cd7a,$250 - $800 a day,31.25,100.0,31.25,100.0,day,range,True,day rate; 8h/day assumed
+04890fcdc1225969,$16 an hour + tips,16.0,16.0,16.0,16.0,hour,point,True,tips excluded
+2276632bf9e13932,Desde $18 por hora,18.0,18.0,18.0,18.0,hour,from,True,
+86fe0e85610628b8,"$2,042 a week",51.05,51.05,51.05,51.05,week,point,True,travel-nurse style weekly pay
+0302ce81b27745da,"Up to $206,000 a year",99.03846153846153,99.03846153846153,99.03846153846153,99.03846153846153,year,upto,True,
+662ed451cc7f2d2d,"From $100,000 a year",48.07692307692308,48.07692307692308,48.07692307692308,48.07692307692308,year,from,True,
+415085eccbbbd67a,$16.00 - $17.75 an hour + tips,16.0,17.75,16.0,17.75,hour,range,True,
+5bbafd80bb41897a,$500 a week,12.5,12.5,12.5,12.5,week,point,True,DOUBT: likely part-time weekly pay; 40h assumption understates hourly
+8bdf03012823ec18,"$5,000 - $10,000 a month",28.846153846153843,57.692307692307686,28.846153846153843,57.692307692307686,month,range,True,
+a3d762e60fef7619,"$53,000 por año",25.48076923076923,25.48076923076923,25.48076923076923,25.48076923076923,year,point,True,
+2b0b669d2c1aedaa,"$900 - $1,400 a week",22.5,35.0,22.5,35.0,week,range,True,
+cff884ac0be68d60,"$52,000 a year",25.0,25.0,25.0,25.0,year,point,True,
+03d631f1c6a55905,$84.64 - $122.73 a day,10.58,15.34125,10.58,15.34125,day,range,True,DOUBT: probably a short shift/per-visit day rate
+95d9aeb985f3d463,$550 - $650 por día,68.75,81.25,68.75,81.25,day,range,True,
+2b323ce402aff4b9,"$87,840 - $109,800 a year",42.23076923076923,52.78846153846154,42.23076923076923,52.78846153846154,year,range,True,
+107854821423cc34,From $27.58 an hour,27.58,27.58,27.58,27.58,hour,from,True,
+4d7bd9e593898443,$16 an hour + tips,16.0,16.0,16.0,16.0,hour,point,True,
+b1ed89b299371b01,"Desde $55,000 por año",26.442307692307693,26.442307692307693,26.442307692307693,26.442307692307693,year,from,True,
+1844b2d0bf58b5de,$22 an hour,22.0,22.0,22.0,22.0,hour,point,True,
+b1bd03fc02842cc9,"$92,000 - $180,000 por año",44.23076923076923,86.53846153846153,44.23076923076923,86.53846153846153,year,range,True,
+d6e8890c077c89a4,$15.50 - $16.30 an hour + tips,15.5,16.3,15.5,16.3,hour,range,True,below CA min wage: sub-minimum tipped/locality
+2f61cac9344336f1,"$5,250 - $18,000 por mes",30.288461538461537,103.84615384615384,30.288461538461537,103.84615384615384,month,range,True,very wide range
+2a6eb0cdd1c100a5,From $20 an hour,20.0,20.0,20.0,20.0,hour,from,True,
+11764fefc6ea2fe0,"$4,000 - $7,000 a month",23.076923076923077,40.38461538461538,23.076923076923077,40.38461538461538,month,range,True,
+166ece0cba718702,"$800 - $2,000 por semana",20.0,50.0,20.0,50.0,week,range,True,
+5e969b6ccdcec77c,$22 - $25 an hour,22.0,25.0,22.0,25.0,hour,range,True,
+7d09776c00e2e2df,$600 - $800 a week,15.0,20.0,15.0,20.0,week,range,True,
+37b019327051727d,$21 por hora,21.0,21.0,21.0,21.0,hour,point,True,
+feeddd30b61acbb9,"$7,895.95 - $9,990.90 por mes",45.55355769230769,57.639807692307684,45.55355769230769,57.639807692307684,month,range,True,
+9196666fde688db5,"$1,500 por semana",37.5,37.5,37.5,37.5,week,point,True,
+db8bb65039c5d9f2,"Desde $85,000 por año",40.86538461538461,40.86538461538461,40.86538461538461,40.86538461538461,year,from,True,
+2aa662dd675b3d4b,"$150,000 - $170,000 por año",72.11538461538461,81.73076923076923,72.11538461538461,81.73076923076923,year,range,True,
+d666b866b6100e96,"$340,000 a year",163.46153846153845,163.46153846153845,163.46153846153845,163.46153846153845,year,point,True,
+a4d32cc8c63124bf,Up to $23 an hour,23.0,23.0,23.0,23.0,hour,upto,True,
+fd8771494c219d15,"$1,250 - $2,500 por semana",31.25,62.5,31.25,62.5,week,range,True,
+07c36e479124315a,"Up to $140,000 a year",67.3076923076923,67.3076923076923,67.3076923076923,67.3076923076923,year,upto,True,
+0a83afa8676794a5,From $0.60 per mile,,,,,,,True,per-mile pay: intentionally not converted
+1e205cf63174079c,$40 - $65 per class,,,,,,,True,per-class pay: intentionally not converted
+7ca80430938065f8,"$153,296 - $186,368 a year",73.7,89.6,73.7,89.6,year,range,True,
+60931c15eebdd221,"$62,502.70 por año",30.049374999999998,30.049374999999998,30.049374999999998,30.049374999999998,year,point,True,
+707f5ed257f84fa5,$26 - $30 an hour,26.0,30.0,26.0,30.0,hour,range,True,

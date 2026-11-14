@@ -1,0 +1,24 @@
+{
+ "n_postings": 138511,
+ "n_relo": 4571,
+ "n_relo_firm": 1611,
+ "bay_relo_rate_60plus": 0.08411169250330089,
+ "bay_n_60plus": 20449,
+ "bay_relo_rate_under25": 0.0009600877794541216,
+ "bay_n_under25": 7291,
+ "bay_relo_firm_rate_60plus": 0.023864247640471417,
+ "bay_relo_firm_rate_under25": 0.000548621588259498,
+ "bay_cb_rate_60plus": 0.047502577750773115,
+ "bay_cb_rate_under25": 0.00160740243766074,
+ "rest_relo_rate_60plus": 0.09344823371226012,
+ "rest_relo_rate_under25": 0.0010498865445185762,
+ "bay_overall": 0.044583073404034106,
+ "rest_overall": 0.026841109919155948,
+ "top5_relo_employers_statewide": {
+  "Apple": 1184,
+  "Northrop Grumman": 482,
+  "OpenAI": 106,
+  "Genentech": 70,
+  "Hadrian Automation": 67
+ }
+}

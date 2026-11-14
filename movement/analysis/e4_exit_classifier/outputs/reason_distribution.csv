@@ -1,0 +1,10 @@
+reason,pool_pred_n,pool_pred_share_of_exits,gold_n,gold_share_of_exits
+housing_cost,188,0.131,17,0.12
+jobs_wages,251,0.175,14,0.099
+cost_of_living_other,145,0.101,15,0.106
+family,22,0.015,10,0.07
+schools,113,0.079,7,0.049
+safety_quality_of_life,149,0.104,21,0.148
+remote_work,19,0.013,1,0.007
+other,145,0.101,23,0.162
+(no reason stated),841,0.585,66,0.465

@@ -1,0 +1,672 @@
+<title>Follow the People</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a long-read column (~66ch) with figures that widen to 1040px; chapters marked by the person each one follows. */
+:root {
+  --bg: #f5f6f8;
+  --surface: #ffffff;
+  --ink: #12161c;
+  --ink-2: #485160;
+  --muted: #7a8392;
+  --rule: #dfe3e9;
+  --grid: #eceef2;
+  --s1: #2a78d6;   /* stayers / region */
+  --s2: #eb6834;   /* leavers */
+  --s3: #1baf7a;   /* arrivals */
+  --seq-lo: #cde2fb;
+  --seq-hi: #0d366b;
+  --land: #eef0f3;
+  --land-bay: #e3e8ef;
+  --hl: #fde7dc;
+  --f-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --f-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --f-data: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #111317; --surface: #191c21; --ink: #eef0f3; --ink-2: #b9c0cb; --muted: #8b94a2;
+    --rule: #2b3038; --grid: #23272e; --s1: #3987e5; --s2: #d95926; --s3: #199e70;
+    --seq-lo: #1c3a63; --seq-hi: #cde2fb; --land: #1d2026; --land-bay: #252a32; --hl: #3a2418;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #111317; --surface: #191c21; --ink: #eef0f3; --ink-2: #b9c0cb; --muted: #8b94a2;
+  --rule: #2b3038; --grid: #23272e; --s1: #3987e5; --s2: #d95926; --s3: #199e70;
+  --seq-lo: #1c3a63; --seq-hi: #cde2fb; --land: #1d2026; --land-bay: #252a32; --hl: #3a2418;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: var(--f-body); font-size: 18px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 64px;
+}
+.col { max-width: 680px; margin-inline: auto; }
+.wide { max-width: 1040px; margin-inline: auto; }
+h1, h2, h3 { font-family: var(--f-display); text-wrap: balance; margin: 0; }
+p { margin: 0; }
+.flow { display: flex; flex-direction: column; gap: 20px; }
+a { color: var(--s1); }
+a:focus-visible, button:focus-visible, select:focus-visible { outline: 2px solid var(--s1); outline-offset: 2px; }
+
+/* hero */
+.hero { padding-block: 72px 40px; display: flex; flex-direction: column; gap: 28px; }
+.kicker { font-family: var(--f-data); font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.hero h1 { font-size: clamp(44px, 8vw, 92px); line-height: 0.95; font-weight: 800; font-stretch: 112%; letter-spacing: -0.02em; }
+.hero h1 .lv { color: var(--s2); }
+.thesis { font-size: 22px; line-height: 1.5; color: var(--ink); }
+.thesis em { font-style: normal; background: var(--hl); padding: 0 3px; }
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--rule); }
+.stat { padding: 18px 18px 20px 0; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.stat + .stat { padding-left: 18px; border-left: 1px solid var(--rule); }
+.stat b { font-family: var(--f-display); font-size: clamp(28px, 3.6vw, 38px); white-space: nowrap; font-weight: 750; font-stretch: 100%; line-height: 1; font-variant-numeric: tabular-nums; }
+.stat span { font-size: 14px; line-height: 1.4; color: var(--ink-2); font-family: var(--f-display); }
+.stat small { font-family: var(--f-data); font-size: 11px; color: var(--muted); letter-spacing: 0.04em; }
+@media (max-width: 760px) {
+  .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .stat:nth-child(3) { padding-left: 0; border-left: 0; }
+  .stat:nth-child(n+3) { border-top: 1px solid var(--rule); }
+}
+
+/* chapter nav */
+.toc { display: flex; flex-wrap: wrap; gap: 8px 22px; font-family: var(--f-display); font-size: 14px; padding-block: 8px; }
+.toc a { color: var(--ink-2); text-decoration: none; display: flex; gap: 6px; align-items: baseline; }
+.toc a:hover { color: var(--ink); }
+.toc a i { font-style: normal; font-family: var(--f-data); font-size: 11px; color: var(--muted); }
+
+/* chapters */
+.chapter { padding-block: 72px 8px; display: flex; flex-direction: column; gap: 28px; }
+.chap-head { display: flex; flex-direction: column; gap: 12px; border-top: 2px solid var(--ink); padding-top: 18px; }
+.chap-head .who { font-family: var(--f-data); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); display: flex; align-items: center; gap: 8px; }
+.chap-head .who::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--dot, var(--ink)); }
+.chap-head h2 { font-size: clamp(30px, 4.6vw, 46px); line-height: 1.05; font-weight: 780; font-stretch: 106%; letter-spacing: -0.01em; }
+.lede { font-size: 20px; color: var(--ink-2); }
+
+/* figures */
+figure { margin: 0; background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 22px 22px 16px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+figure h3 { font-size: 19px; font-weight: 700; line-height: 1.25; }
+figure .sub { font-family: var(--f-display); font-size: 14px; color: var(--ink-2); line-height: 1.45; }
+figcaption { font-family: var(--f-data); font-size: 11.5px; color: var(--muted); line-height: 1.5; border-top: 1px solid var(--grid); padding-top: 10px; }
+.chart { width: 100%; min-width: 0; position: relative; }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.chart text { font-family: var(--f-display); fill: var(--ink-2); }
+.chart .num { font-family: var(--f-data); font-variant-numeric: tabular-nums; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 18px; font-family: var(--f-display); font-size: 13px; color: var(--ink-2); }
+.legend span { display: inline-flex; align-items: center; gap: 7px; }
+.legend i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+.legend i.dot { border-radius: 50%; }
+.pair { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 20px; }
+.pair.even { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 860px) { .pair, .pair.even { grid-template-columns: minmax(0, 1fr); } }
+.controls { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; font-family: var(--f-display); font-size: 14px; color: var(--ink-2); }
+.controls label { display: inline-flex; gap: 8px; align-items: center; }
+select { font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--rule); border-radius: 5px; padding: 5px 8px; max-width: 100%; }
+details { font-family: var(--f-display); font-size: 13px; color: var(--ink-2); }
+details summary { cursor: pointer; color: var(--muted); }
+.tablewrap { overflow-x: auto; margin-top: 8px; }
+table { border-collapse: collapse; width: 100%; font-size: 13px; font-family: var(--f-display); }
+th, td { text-align: left; padding: 7px 10px 7px 0; border-bottom: 1px solid var(--grid); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; font-size: 12px; letter-spacing: 0.02em; }
+td.n, th.n { text-align: right; font-family: var(--f-data); font-variant-numeric: tabular-nums; padding-right: 0; padding-left: 10px; }
+.callout { border-left: 3px solid var(--s2); padding: 4px 0 4px 18px; font-size: 18px; color: var(--ink); }
+.callout b { font-family: var(--f-display); }
+.models { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+@media (max-width: 860px) { .models { grid-template-columns: minmax(0, 1fr); } }
+.model { border-top: 2px solid var(--ink); padding-top: 14px; display: flex; flex-direction: column; gap: 10px; font-family: var(--f-display); min-width: 0; }
+.model h3 { font-size: 17px; }
+.model .metric { font-family: var(--f-data); font-size: 13px; color: var(--ink-2); }
+.model .miss { font-size: 15px; line-height: 1.45; color: var(--ink); }
+.model .miss b { color: var(--s2); }
+.model small { font-family: var(--f-data); font-size: 11px; color: var(--muted); }
+.methods td:first-child { font-family: var(--f-data); white-space: nowrap; color: var(--ink); }
+.methods code { font-family: var(--f-data); font-size: 11.5px; color: var(--muted); }
+.caveats { columns: 2 300px; column-gap: 32px; font-size: 15px; color: var(--ink-2); padding-left: 18px; margin: 0; }
+.caveats li { break-inside: avoid; margin-bottom: 8px; }
+footer { margin-top: 64px; font-family: var(--f-data); font-size: 12px; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 16px; }
+#tip { position: fixed; z-index: 20; pointer-events: none; background: var(--surface); color: var(--ink); border: 1px solid var(--rule); border-radius: 6px; padding: 9px 11px; font-family: var(--f-display); font-size: 13px; line-height: 1.45; box-shadow: 0 6px 20px rgba(0,0,0,0.12); max-width: 260px; }
+#tip b { font-weight: 700; }
+#tip .num { font-family: var(--f-data); }
+@media (prefers-reduced-motion: no-preference) { .chart .mark { transition: opacity 0.15s; } }
+</style>
+
+<div id="tip" hidden></div>
+
+<header class="col hero">
+  <div class="kicker">San Francisco Bay Area · housing &amp; migration · 2011–2026</div>
+  <h1>Follow the <span class="lv">people</span>, not the place.</h1>
+  <p class="thesis">When a household leaves the Bay, two things happen that a regional average can't show. Its home is re-priced for a smaller, better-paid household that employers recruit in, and the household that left <em>trades rent for burden, long commutes and lower pay</em> somewhere else. In the averages, leavers and arrivals largely cancel out, so both stories disappear. Tracking people, units and flows brings them back.</p>
+  <div class="stats">
+    <div class="stat"><b>20.7%</b><span>of San Francisco turnovers priced the unit out of reach of a low-income household</span><small>E6 · Zillow, 2022–26</small></div>
+    <div class="stat"><b>90×</b><span>more often relocation help is offered on $60+/hr jobs than on jobs under $25/hr</span><small>E7 · Indeed</small></div>
+    <div class="stat"><b>+16 pts</b><span>more likely to pay half of income in rent after moving to the Central Valley</span><small>E9 · ACS PUMS</small></div>
+    <div class="stat"><b>35 of 40</b><span>low-wage job and city combinations where commuting back to the Bay leaves less than nothing</span><small>E10 · LODES</small></div>
+  </div>
+  <nav class="toc" aria-label="Chapters">
+    <a href="#averages"><i>1</i>The average</a>
+    <a href="#unit"><i>2</i>The home</a>
+    <a href="#arrivals"><i>3</i>The newcomer</a>
+    <a href="#leaver"><i>4</i>The leaver</a>
+    <a href="#unseen"><i>5</i>The unseen</a>
+    <a href="#methods"><i>·</i>Methods</a>
+  </nav>
+</header>
+
+<main>
+<!-- 1 -->
+<section class="chapter" id="averages">
+  <div class="col chap-head" style="--dot: var(--s1)">
+    <div class="who">Following the region</div>
+    <h2>The average hides two moves that cancel out</h2>
+  </div>
+  <div class="col flow">
+    <p class="lede">Between 2011 and 2021, average income per tax return in the nine Bay counties rose from $101k to $213k. We used IRS migration records to split that rise into three parts: income growth among people who stayed, the effect of removing leavers, and the effect of adding arrivals.</p>
+    <p>Leavers usually had lower incomes than stayers, so removing them pushed the average up in 8 of 9 counties. Arrivals reported even less per return, so adding them pulled it back down. Region-wide, the two moves net to −8% of the rise. A county average reports that net and hides how large each move is.</p>
+  </div>
+  <figure class="wide">
+    <h3>What leavers and arrivals did to average income, 2011 → 2021</h3>
+    <p class="sub">Contribution to the change in mean income per tax return, thousands of dollars. Bars right of zero raised the county's average.</p>
+    <div class="legend"><span><i style="background:var(--s2)"></i>Removing leavers</span><span><i style="background:var(--s3)"></i>Adding arrivals</span></div>
+    <div class="chart" id="c-decomp"></div>
+    <figcaption>Source: IRS SOI county-to-county migration, tax years 2011–2021 (E1). Both incomes come from the same year's return, so the comparison is consistent. Nominal dollars; averages are pulled up by top earners; flows under 10 returns are suppressed by the IRS.</figcaption>
+  </figure>
+</section>
+
+<!-- 2 -->
+<section class="chapter" id="unit">
+  <div class="col chap-head" style="--dot: var(--ink)">
+    <div class="who">Following the home</div>
+    <h2>Each turnover re-prices the home for someone else</h2>
+  </div>
+  <div class="col flow">
+    <p class="lede">Zillow's price histories let us follow the same rental unit across tenants. We built 23,306 pairs of consecutive listings on the same unit. When a tenant leaves, the next asking rent jumps, by the most in San Francisco and northern San Mateo County.</p>
+    <p>California's AB 1482 caps a sitting tenant's increase at 5% plus inflation, with a 10% maximum. The cap ends when the tenant leaves, so the size of the jump is what a household pays to rent back in. In 2026, 23% of turnovers rose faster than 10% a year. After subtracting move-in deals like "4 weeks free," about 83% of the premium is still there.</p>
+  </div>
+  <figure class="wide">
+    <h3>Rent jump when the same unit gets a new tenant, by ZIP code</h3>
+    <p class="sub">Median yearly rent change between consecutive listings of the same unit. Larger dots mean more turnovers. Hover or tap a dot for details.</p>
+    <div class="legend" id="map-legend"></div>
+    <div class="chart" id="c-map"></div>
+    <figcaption>Source: Zillow price histories, 1–6 years between listings, deduplicated (E2). ZIP codes with at least 20 turnovers. These are asking rents, not signed leases; some apartment listings stand for a floor plan rather than one unit.</figcaption>
+  </figure>
+  <div class="wide pair">
+    <figure>
+      <h3>Turnovers that moved a unit out of or into low-income reach</h3>
+      <p class="sub">Share of turnovers where the 3×-rent income requirement crossed 80% of area median income for the unit's household size.</p>
+      <div class="legend"><span><i style="background:var(--s2)"></i>Went out of reach</span><span><i style="background:var(--s1)"></i>Came into reach</span></div>
+      <div class="chart" id="c-gate"></div>
+      <figcaption>Source: E6, 12,870 turnovers since June 2022, using California HCD income limits. Region-wide the two cancel out (6.4% vs 6.4%), but the income limits themselves rise as higher earners move in.</figcaption>
+    </figure>
+    <div class="flow" style="align-self:center">
+      <p class="callout"><b>San Francisco loses low-income units almost one-way.</b> 20.7% of turnovers priced the unit out of low-income reach and only 0.7% brought one into reach. In 2026 the out-of-reach share was 28.7%.</p>
+      <p style="font-size:16px;color:var(--ink-2)">Studios and one-bedrooms lose reach most often. Of rentals that were sold within two years, the buyer needs about 1.7× the income of the last renter, plus a $195k down payment.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3 -->
+<section class="chapter" id="arrivals">
+  <div class="col chap-head" style="--dot: var(--s3)">
+    <div class="who">Following the newcomer</div>
+    <h2>Arrivals are smaller households, and employers help bring them in</h2>
+  </div>
+  <div class="col flow">
+    <p class="lede">IRS data seems to show arrivals as poorer than leavers: $144k vs $210k per tax return region-wide in 2021. Most of that gap comes from household size. Arrivals file smaller returns and are younger, and their incomes rise faster after the move.</p>
+    <p>Per person, the gap shrinks from 69% to 80% of leavers' income. Statewide, people moving into California file before age 35 at twice the rate of non-movers. Arrivals tend to be single renters who can afford the re-priced unit, and employers pay to bring many of them in.</p>
+  </div>
+  <div class="wide pair even">
+    <figure>
+      <h3>People per tax return, 2021</h3>
+      <p class="sub">Stayers, leavers and arrivals in the same year.</p>
+      <div class="legend"><span><i style="background:var(--s1)"></i>Stayers</span><span><i style="background:var(--s2)"></i>Leavers</span><span><i style="background:var(--s3)"></i>Arrivals</span></div>
+      <div class="chart" id="c-ppr"></div>
+      <figcaption>Source: IRS SOI migration, TY2021 (E5). Counts are tax returns, not households; people who arrived from abroad without a prior US return are missing.</figcaption>
+    </figure>
+    <figure>
+      <h3>Bay Area job postings that offer relocation help</h3>
+      <p class="sub">Share of postings by posted hourly pay.</p>
+      <div class="chart" id="c-relo"></div>
+      <figcaption>Source: Indeed postings, 2024–26 (E7). Regex hand-checked 59/60. The gap holds when hedged offers are dropped or each employer is weighted equally (Apple posted 928 of the Bay's 2,144 offers).</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 4 -->
+<section class="chapter" id="leaver">
+  <div class="col chap-head" style="--dot: var(--s2)">
+    <div class="who">Following the leaver</div>
+    <h2>Leavers trade rent for burden, distance and lower pay</h2>
+  </div>
+  <div class="col flow">
+    <p class="lede">The California Policy Lab finds that 75% of low-income movers stay in the Bay and 8% go to the Central Valley. Census microdata follows people who lived in the Bay a year earlier. We compared those who left with stayers who match them on age, education, race, sex, household type and origin county.</p>
+    <p>Central Valley leavers are the only group more likely to own a home. They are also much more likely to pay half their income in rent, to commute an hour or more, and to earn less. Many keep their Bay jobs: 41,799 Bay jobs are held by San Joaquin County residents, up from 25,088 in 2010.</p>
+  </div>
+  <figure class="wide">
+    <h3>Leavers compared with similar stayers</h3>
+    <p class="sub">Difference in percentage points, with 95% confidence intervals. The center line is matched stayers. Right of the line means more common among leavers.</p>
+    <div class="legend"><span><i class="dot" style="background:var(--s2)"></i>Moved to Sacramento or the Central Valley</span><span><i class="dot" style="background:var(--s1)"></i>Left California</span></div>
+    <div class="chart" id="c-pums"></div>
+    <figcaption>Source: ACS PUMS 1-year files 2022–24, all US states (E9). Adults 18–64 who lived in the Bay one year earlier; 130,735 stayers, 1,156 Central Valley leavers, 2,739 out-of-state leavers. Weighted to match stayers on characteristics fixed before the move; CIs from Census replicate weights. Outcomes are measured after the move, so this is a comparison, not a causal estimate.</figcaption>
+  </figure>
+  <div class="wide pair">
+    <figure>
+      <h3>Commuting back to the Bay from the Central Valley</h3>
+      <p class="sub">The 2024 home-to-work flows within 130 miles. Line width shows jobs.</p>
+      <div class="chart" id="c-flows"></div>
+      <figcaption>Source: Census LEHD LODES8 origin–destination data, 2024 (E10). Counts jobs, not people. Workers living outside the 9 counties hold 18.5% of Bay jobs, up from 14.8% in 2010.</figcaption>
+    </figure>
+    <figure>
+      <h3>One worker's monthly budget</h3>
+      <p class="sub">Full-time pay minus 1-bedroom rent, and minus commuting where the worker keeps the Bay job.</p>
+      <div class="controls">
+        <label for="sel-occ">Job <select id="sel-occ"></select></label>
+        <label for="sel-dest">Moves to <select id="sel-dest"></select></label>
+      </div>
+      <div class="chart" id="c-ledger"></div>
+      <figcaption>Source: E3 + E10. BLS OEWS median wages (May 2025), Zillow Bay rents and turnover premium, Zillow ZORI for destination rents. Commute cost uses the IRS mileage rate (full cost) or AAA fuel cost (fuel only). Taxes and childcare are not included.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 5 -->
+<section class="chapter" id="unseen">
+  <div class="col chap-head" style="--dot: var(--muted)">
+    <div class="who">Following the data</div>
+    <h2>The people worst off are the hardest to see</h2>
+  </div>
+  <div class="col flow">
+    <p class="lede">Stories about leaving the Bay online describe a different move from the one low-income families make. Each of our three predictive models was also weakest on the most vulnerable group.</p>
+  </div>
+  <figure class="wide">
+    <h3>Where people who leave the Bay end up</h3>
+    <p class="sub">Destination shares among movers who left the 9 counties.</p>
+    <div class="legend"><span><i style="background:var(--s2)"></i>Sacramento &amp; Central Valley</span><span><i style="background:var(--s3)"></i>Elsewhere in California</span><span><i style="background:var(--s1)"></i>Out of state or abroad</span></div>
+    <div class="chart" id="c-dest"></div>
+    <figcaption>Sources: California Policy Lab, Priced Out of the Bay (2026), low-income movers; Reddit exit stories labeled for E4 (106 items with a known destination). Reddit users are not a sample of low-income movers. The CPL "elsewhere in California" share is inferred by subtraction.</figcaption>
+  </figure>
+  <div class="wide models">
+    <div class="model">
+      <h3>Rent-jump model</h3>
+      <div class="metric">Ridge · MAE 0.049 vs 0.059 baseline · AUC 0.82</div>
+      <p class="miss">Under-predicts jumps most in <b>gentrifying tracts</b> (−3.7 pts vs −2.1 in stable tracts). Adding a recent-trend feature narrows the gap but does not close it.</p>
+      <small>E2 · test set: 9,159 relistings in 2026</small>
+    </div>
+    <div class="model">
+      <h3>Who-leaves model</h3>
+      <div class="metric">Gradient boosting · AUC 0.71 vs 0.50 base rate</div>
+      <p class="miss">Among the top 10% of risk scores it catches 41% of White leavers but only <b>25–28% of Asian, Black and Latino leavers</b>. 36% of Central Valley leavers score below the median.</p>
+      <small>E9 · test set: 40,846 people</small>
+    </div>
+    <div class="model">
+      <h3>Service-desert model</h3>
+      <div class="metric">Zillow features · AUC 0.92 vs 0.83 rule</div>
+      <p class="miss">Finds 69% of deserts among the most expensive rentals but only <b>31% among the cheapest</b>, the units low-income households can actually rent.</p>
+      <small>E8 · test set: held-out map blocks</small>
+    </div>
+  </div>
+  <div class="col flow">
+    <p class="callout"><b>A tool built to target help would miss the people this page is about.</b> Every model above should report results by group and be calibrated on recent data before it is used.</p>
+  </div>
+</section>
+
+<!-- methods -->
+<section class="chapter" id="methods">
+  <div class="col chap-head" style="--dot: var(--muted)">
+    <div class="who">Methods</div>
+    <h2>Ten experiments, one pipeline each</h2>
+  </div>
+  <div class="wide tablewrap">
+    <table class="methods">
+      <thead><tr><th>#</th><th>Question</th><th>Data</th><th>Main result</th></tr></thead>
+      <tbody>
+        <tr><td>E1</td><td>How much do moves change county averages?</td><td>IRS county migration 2011–21</td><td>Removing leavers +6%, adding arrivals −14% of the region's rise. <code>analysis/e1_composition</code></td></tr>
+        <tr><td>E2</td><td>How much does rent jump when a unit turns over?</td><td>Zillow price histories, Urban Displacement Project tracts</td><td>Median +4–6%/yr; 23% over the 10% cap in 2026; Ridge MAE 0.046 with trend feature. <code>analysis/e2_turnover_model</code></td></tr>
+        <tr><td>E3</td><td>What does a low-wage worker keep after rent?</td><td>Indeed, BLS OEWS, Zillow ZORI</td><td>Re-renting in the Bay is the worst option for every job; salary model MAE $9.49/h vs $16.45. <code>analysis/e3_mover_ledger</code></td></tr>
+        <tr><td>E4</td><td>What do online exit stories say?</td><td>Reddit posts &amp; 3.4M comments</td><td>91% of labeled exits leave the state; classifier macro-F1 0.53. Labels need human checks. <code>analysis/e4_exit_classifier</code></td></tr>
+        <tr><td>E5</td><td>Who replaces leavers?</td><td>IRS county &amp; state migration, ACS tables</td><td>Arrivals: 1.46 people per return vs 1.70 for leavers; younger; faster income growth. <code>analysis/e5_replacers_irs</code></td></tr>
+        <tr><td>E6</td><td>Does turnover price units out of low-income reach?</td><td>Zillow, CA HCD income limits</td><td>SF 20.7% lost vs 0.7% gained; buyer needs 1.7× the renter's income. <code>analysis/e6_unit_replacement</code></td></tr>
+        <tr><td>E7</td><td>Who do employers recruit in?</td><td>Indeed, Reddit arrival stories</td><td>Relocation help on 8.4% of $60+/h postings vs 0.1% under $25/h. <code>analysis/e7_pulled_in</code></td></tr>
+        <tr><td>E8</td><td>Where can low-income households still rent, and what's nearby?</td><td>Zillow, Google Maps places</td><td>Clinics 1.8× farther than in high-cost areas; desert model AUC 0.92. <code>analysis/e8_access</code></td></tr>
+        <tr><td>E9</td><td>How do leavers fare compared with similar stayers?</td><td>ACS PUMS 2022–24</td><td>Central Valley leavers: +16 pts severe rent burden, +9 pts long commutes, −$26k wages. <code>analysis/e9_pums_movers</code></td></tr>
+        <tr><td>E10</td><td>Do leavers keep Bay jobs?</td><td>Census LODES 2010–24</td><td>San Joaquin → Alameda: 41,799 jobs; commute cost erases rent savings in 35 of 40 cases. <code>analysis/e10_supercommute</code></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="wide">
+    <ul class="caveats">
+      <li>No public dataset follows the same person over time. We approximate it with flows (IRS, LODES), one-year migration questions (ACS) and same-unit histories (Zillow).</li>
+      <li>Zillow figures are asking rents. Move-in deals are visible only for current listings.</li>
+      <li>IRS figures are per tax return in nominal dollars, and new immigrants are missing.</li>
+      <li>ACS comparisons measure outcomes after the move. They describe differences, not causes.</li>
+      <li>Reddit labels were made by a language model, with two 30–50 item samples set aside for human checks.</li>
+      <li>Straight-line distances to services and free-flow drive times understate the burden of travel.</li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer class="wide">8th Datathon for Social Good · Data: Zillow, Indeed, Reddit and Google Maps via Bright Data; IRS SOI; U.S. Census ACS PUMS and LEHD LODES; BLS OEWS; California HCD; Urban Displacement Project; California Policy Lab. No addresses or usernames are shown.</footer>
+
+<script id="data" type="application/json">__DATA__</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script>
+(function () {
+  const D = JSON.parse(document.getElementById("data").textContent);
+  // d3 expects clockwise exterior rings; flip any county that came out inverted
+  D.counties.features.forEach(f => {
+    if (d3.geoArea(f) > 2 * Math.PI) f.geometry.coordinates.forEach(poly => poly.forEach(ring => ring.reverse()));
+  });
+  const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+  const tip = document.getElementById("tip");
+  function showTip(ev, html) {
+    tip.innerHTML = html; tip.hidden = false;
+    const r = tip.getBoundingClientRect();
+    let x = ev.clientX + 14, y = ev.clientY + 14;
+    if (x + r.width > window.innerWidth - 8) x = ev.clientX - r.width - 14;
+    if (y + r.height > window.innerHeight - 8) y = ev.clientY - r.height - 14;
+    tip.style.left = Math.max(8, x) + "px"; tip.style.top = Math.max(8, y) + "px";
+  }
+  const hideTip = () => { tip.hidden = true; };
+  const fmtK = v => (v < 0 ? "−" : "+") + "$" + Math.abs(v / 1000).toFixed(1) + "k";
+  const fmtD = v => (v < 0 ? "−$" : "$") + Math.abs(Math.round(v)).toLocaleString("en-US");
+  const pct = (v, d = 1) => (v * 100).toFixed(d) + "%";
+  const pp = v => (v >= 0 ? "+" : "−") + Math.abs(v * 100).toFixed(1) + " pts";
+
+  function svgIn(el, w, h) {
+    el.innerHTML = "";
+    return d3.select(el).append("svg").attr("viewBox", `0 0 ${w} ${h}`).attr("role", "img");
+  }
+  function width(el) { return Math.max(300, el.clientWidth); }
+  function hover(sel, html) {
+    sel.on("pointermove", (ev, d) => showTip(ev, html(d))).on("pointerleave", hideTip);
+  }
+
+  /* 1. Decomposition */
+  function drawDecomp() {
+    const el = document.getElementById("c-decomp"), W = width(el);
+    const narrow = W < 560;
+    const rows = D.e1.slice().sort((a, b) => (b.unit === "Bay Area") - (a.unit === "Bay Area") || a.share - b.share);
+    const rowH = 34, top = 28, lab = narrow ? 96 : 130, right = narrow ? 64 : 150;
+    const H = top + rows.length * rowH + 8;
+    const svg = svgIn(el, W, H).attr("aria-label", "Bar chart of exit and entry contributions by county");
+    const lo = Math.min(0, d3.min(rows, r => Math.min(r.exit, r.entry))), hi = Math.max(0, d3.max(rows, r => Math.max(r.exit, r.entry)));
+    const x = d3.scaleLinear().domain([lo * 1.05, hi * 1.05]).nice().range([lab, W - right]);
+    const g = svg.append("g");
+    x.ticks(narrow ? 4 : 6).forEach(t => {
+      g.append("line").attr("x1", x(t)).attr("x2", x(t)).attr("y1", top - 6).attr("y2", H - 8)
+        .attr("stroke", t === 0 ? css("--ink-2") : css("--grid")).attr("stroke-width", t === 0 ? 1 : 1);
+      g.append("text").attr("class", "num").attr("x", x(t)).attr("y", top - 12).attr("text-anchor", "middle")
+        .attr("font-size", 11).style("fill", css("--muted")).text((t > 0 ? "+" : t < 0 ? "−" : "") + Math.abs(t / 1000) + "k");
+    });
+    if (!narrow) {
+      svg.append("text").attr("x", W - right + 18).attr("y", top - 12).attr("font-size", 11).style("fill", css("--muted")).text("Total rise");
+      svg.append("text").attr("x", W - 4).attr("y", top - 12).attr("font-size", 11).attr("text-anchor", "end").style("fill", css("--muted")).text("Net from moves");
+    } else {
+      svg.append("text").attr("x", W - 4).attr("y", top - 12).attr("font-size", 11).attr("text-anchor", "end").style("fill", css("--muted")).text("Net");
+    }
+    const bh = 11;
+    rows.forEach((r, i) => {
+      const y0 = top + i * rowH + 6, isR = r.unit === "Bay Area";
+      if (isR) svg.append("rect").attr("x", 0).attr("y", y0 - 5).attr("width", W).attr("height", rowH - 2).attr("rx", 4).style("fill", css("--bg"));
+      svg.append("text").attr("x", 6).attr("y", y0 + bh + 2).attr("font-size", 13).attr("font-weight", isR ? 700 : 500)
+        .style("fill", css("--ink")).text(isR ? "9-county region" : r.unit);
+      [["exit", "--s2", 0], ["entry", "--s3", bh + 2]].forEach(([k, c, dy]) => {
+        const v = r[k];
+        svg.append("path").attr("class", "mark")
+          .attr("d", barPath(x(Math.min(0, v)), y0 + dy, Math.abs(x(v) - x(0)), bh, v >= 0 ? "right" : "left"))
+          .style("fill", css(c))
+          .on("pointermove", ev => showTip(ev, `<b>${isR ? "9-county region" : r.unit}</b><br>${k === "exit" ? "Removing leavers" : "Adding arrivals"}: <span class="num">${fmtK(v)}</span><br>Total rise 2011→21: <span class="num">${fmtK(r.change)}</span><br>Stayers' own growth: <span class="num">${fmtK(r.people)}</span>`))
+          .on("pointerleave", hideTip);
+      });
+      if (!narrow) svg.append("text").attr("class", "num").attr("x", W - right + 18).attr("y", y0 + bh + 2).attr("font-size", 12).style("fill", css("--ink-2")).text(fmtK(r.change));
+      svg.append("text").attr("class", "num").attr("x", W - 4).attr("y", y0 + bh + 2).attr("font-size", 12).attr("text-anchor", "end")
+        .attr("font-weight", isR ? 600 : 400).style("fill", css("--ink")).text((r.share > 0 ? "+" : "−") + Math.abs(r.share).toFixed(1) + "%");
+    });
+  }
+  function barPath(x, y, w, h, dir) {
+    const r = Math.min(4, w / 2, h / 2);
+    if (w <= 0) return "";
+    if (dir === "right") return `M${x},${y}H${x + w - r}Q${x + w},${y} ${x + w},${y + r}V${y + h - r}Q${x + w},${y + h} ${x + w - r},${y + h}H${x}Z`;
+    return `M${x + w},${y}H${x + r}Q${x},${y} ${x},${y + r}V${y + h - r}Q${x},${y + h} ${x + r},${y + h}H${x + w}Z`;
+  }
+  function barPathUp(x, y, w, h) {
+    const r = Math.min(4, w / 2, h);
+    if (h <= 0) return "";
+    return `M${x},${y + h}V${y + r}Q${x},${y} ${x + r},${y}H${x + w - r}Q${x + w},${y} ${x + w},${y + r}V${y + h}Z`;
+  }
+
+  /* 2. ZIP map */
+  const bayGeo = { type: "FeatureCollection", features: D.counties.features.filter(f => f.properties.bay) };
+  function drawMap() {
+    const el = document.getElementById("c-map"), W = width(el), H = Math.round(W * (W < 600 ? 1.15 : 0.78));
+    const svg = svgIn(el, W, H).attr("aria-label", "Map of turnover rent jumps by ZIP code").style("overflow", "hidden");
+    const proj = d3.geoMercator().fitExtent([[8, 8], [W - 8, H - 8]], bayGeo);
+    const path = d3.geoPath(proj);
+    svg.append("g").selectAll("path").data(D.counties.features).join("path").attr("d", path)
+      .style("fill", f => css(f.properties.bay ? "--land-bay" : "--land")).style("stroke", css("--surface")).attr("stroke-width", 1.2);
+    const ramp = d3.scaleSequential(d3.interpolateLab(css("--seq-lo"), css("--seq-hi"))).domain([0, 0.16]).clamp(true);
+    const r = d3.scaleSqrt().domain([20, 1000]).range([3.5, W < 600 ? 11 : 15]).clamp(true);
+    const zs = D.zips.slice().sort((a, b) => b.n - a.n);
+    svg.append("g").selectAll("circle").data(zs).join("circle").attr("class", "mark")
+      .attr("cx", d => proj([d.lon, d.lat])[0]).attr("cy", d => proj([d.lon, d.lat])[1]).attr("r", d => r(d.n))
+      .style("fill", d => ramp(d.jump)).style("stroke", css("--surface")).attr("stroke-width", 1.5)
+      .call(hover, d => `<b>ZIP ${d.zip}</b> · ${d.county}<br>Rent jump: <span class="num">${pct(d.jump)}</span>/yr<br>Extra rent vs. inflation: <span class="num">${fmtD(d.prem)}</span>/mo<br>Over the 10% cap: <span class="num">${pct(d.over, 0)}</span> of turnovers<br><span style="color:var(--muted)">${d.n} turnovers · median prior rent ${fmtD(d.rent)}</span>`);
+    const labels = [["San Francisco", -122.44, 37.765], ["Oakland", -122.25, 37.83], ["San Jose", -121.89, 37.31], ["Marin", -122.75, 38.07], ["Sonoma", -122.85, 38.5], ["Napa", -122.3, 38.45], ["Solano", -121.92, 38.28], ["Contra Costa", -121.93, 37.93], ["San Mateo", -122.33, 37.45], ["Santa Clara", -121.7, 37.2]];
+    svg.append("g").selectAll("text").data(labels).join("text").attr("x", d => proj([d[1], d[2]])[0]).attr("y", d => proj([d[1], d[2]])[1])
+      .attr("text-anchor", "middle").attr("font-size", W < 600 ? 10 : 12).attr("font-weight", 600)
+      .style("fill", css("--ink")).style("paint-order", "stroke").style("stroke", css("--surface")).attr("stroke-width", 3).style("pointer-events", "none")
+      .text(d => d[0]);
+    // legend
+    const lg = document.getElementById("map-legend");
+    const stops = [0, 0.04, 0.08, 0.12, 0.16];
+    lg.innerHTML = '<span>Yearly rent jump</span>' + stops.map((s, i) => `<span><i class="dot" style="background:${ramp(s)}"></i>${i === stops.length - 1 ? "16%+" : (s * 100) + "%"}</span>`).join("");
+  }
+
+  /* 2b. Income gate */
+  function drawGate() {
+    const el = document.getElementById("c-gate"), W = width(el);
+    const rows = D.e6.slice().sort((a, b) => b.net - a.net);
+    const lab = 104, rowH = 30, top = 22, H = top + rows.length * rowH;
+    const svg = svgIn(el, W, H).attr("aria-label", "Bars of lost and gained low-income reach by county");
+    const x = d3.scaleLinear().domain([0, 0.22]).range([lab, W - 44]);
+    [0, 0.05, 0.1, 0.15, 0.2].forEach(t => {
+      svg.append("line").attr("x1", x(t)).attr("x2", x(t)).attr("y1", top - 4).attr("y2", H).attr("stroke", t === 0 ? css("--ink-2") : css("--grid"));
+      svg.append("text").attr("class", "num").attr("x", x(t)).attr("y", top - 9).attr("text-anchor", "middle").attr("font-size", 11).style("fill", css("--muted")).text(t * 100 + "%");
+    });
+    rows.forEach((r, i) => {
+      const y0 = top + i * rowH + 4;
+      svg.append("text").attr("x", 0).attr("y", y0 + 15).attr("font-size", 13).style("fill", css("--ink")).text(r.county);
+      [["lost", "--s2", 0], ["gained", "--s1", 11]].forEach(([k, c, dy]) => {
+        svg.append("path").attr("class", "mark").attr("d", barPath(x(0), y0 + dy, x(r[k]) - x(0), 9, "right")).style("fill", css(c))
+          .on("pointermove", ev => showTip(ev, `<b>${r.county}</b> · ${r.n.toLocaleString()} turnovers<br>Went out of reach: <span class="num">${pct(r.lost)}</span><br>Came into reach: <span class="num">${pct(r.gained)}</span>`))
+          .on("pointerleave", hideTip);
+      });
+      if (r.lost > 0.1) svg.append("text").attr("class", "num").attr("x", x(r.lost) + 5).attr("y", y0 + 8.5).attr("font-size", 11).style("fill", css("--ink")).text(pct(r.lost));
+    });
+  }
+
+  /* 3a. persons per return */
+  function drawPPR() {
+    const el = document.getElementById("c-ppr"), W = width(el);
+    const units = ["Bay Area (9-county region)", "San Francisco", "Santa Clara", "Alameda"];
+    const names = { "Bay Area (9-county region)": "Region" };
+    const rows = units.map(u => D.e5.find(d => d.unit === u)).filter(Boolean);
+    const H = 230, top = 16, bottom = 40, left = 34;
+    const svg = svgIn(el, W, H).attr("aria-label", "Grouped bars of people per tax return");
+    const x0 = d3.scaleBand().domain(rows.map(d => d.unit)).range([left, W - 4]).paddingInner(0.28);
+    const x1 = d3.scaleBand().domain(["ppr_stay", "ppr_out", "ppr_in"]).range([0, x0.bandwidth()]).paddingInner(0.12);
+    const y = d3.scaleLinear().domain([0, 2.2]).range([H - bottom, top]);
+    [0, 0.5, 1, 1.5, 2].forEach(t => {
+      svg.append("line").attr("x1", left).attr("x2", W - 4).attr("y1", y(t)).attr("y2", y(t)).attr("stroke", t === 0 ? css("--ink-2") : css("--grid"));
+      svg.append("text").attr("class", "num").attr("x", left - 6).attr("y", y(t) + 4).attr("text-anchor", "end").attr("font-size", 11).style("fill", css("--muted")).text(t.toFixed(1));
+    });
+    const col = { ppr_stay: "--s1", ppr_out: "--s2", ppr_in: "--s3" }, nm = { ppr_stay: "Stayers", ppr_out: "Leavers", ppr_in: "Arrivals" };
+    rows.forEach(r => {
+      ["ppr_stay", "ppr_out", "ppr_in"].forEach(k => {
+        const bx = x0(r.unit) + x1(k), bw = x1.bandwidth();
+        svg.append("path").attr("class", "mark").attr("d", barPathUp(bx, y(r[k]), bw, y(0) - y(r[k]))).style("fill", css(col[k]))
+          .on("pointermove", ev => showTip(ev, `<b>${names[r.unit] || r.unit}</b> · ${nm[k]}<br><span class="num">${r[k].toFixed(2)}</span> people per return`))
+          .on("pointerleave", hideTip);
+      });
+      svg.append("text").attr("class", "num").attr("x", x0(r.unit) + x1("ppr_in") + x1.bandwidth() / 2).attr("y", y(r.ppr_in) - 5).attr("text-anchor", "middle").attr("font-size", 10.5).style("fill", css("--ink")).text(r.ppr_in.toFixed(2));
+      svg.append("text").attr("x", x0(r.unit) + x0.bandwidth() / 2).attr("y", H - bottom + 18).attr("text-anchor", "middle").attr("font-size", 12.5).style("fill", css("--ink")).text(names[r.unit] || r.unit);
+    });
+  }
+
+  /* 3b. relocation */
+  function drawRelo() {
+    const el = document.getElementById("c-relo"), W = width(el);
+    const tiers = ["<$25", "$25-40", "$40-60", "$60+"], lbl = { "<$25": "Under $25/hr", "$25-40": "$25–40", "$40-60": "$40–60", "$60+": "$60+/hr" };
+    const rows = tiers.map(t => D.e7.find(d => d.region === "Bay Area" && d.tier === t));
+    const H = 230, top = 22, bottom = 40, left = 34;
+    const svg = svgIn(el, W, H).attr("aria-label", "Relocation offer rate by pay tier");
+    const x = d3.scaleBand().domain(tiers).range([left, W - 4]).padding(0.34);
+    const y = d3.scaleLinear().domain([0, 0.1]).range([H - bottom, top]);
+    [0, 0.025, 0.05, 0.075, 0.1].forEach(t => {
+      svg.append("line").attr("x1", left).attr("x2", W - 4).attr("y1", y(t)).attr("y2", y(t)).attr("stroke", t === 0 ? css("--ink-2") : css("--grid"));
+      svg.append("text").attr("class", "num").attr("x", left - 6).attr("y", y(t) + 4).attr("text-anchor", "end").attr("font-size", 11).style("fill", css("--muted")).text((t * 100).toFixed(t ? 1 : 0).replace(".0", "") + "%");
+    });
+    rows.forEach(r => {
+      svg.append("path").attr("class", "mark").attr("d", barPathUp(x(r.tier), y(r.rate), x.bandwidth(), Math.max(1.5, y(0) - y(r.rate)))).style("fill", css("--s3"))
+        .on("pointermove", ev => showTip(ev, `<b>${lbl[r.tier]}</b><br><span class="num">${r.n_relo.toLocaleString()}</span> of <span class="num">${r.n.toLocaleString()}</span> postings (<span class="num">${pct(r.rate)}</span>)<br>Firm offers only: <span class="num">${pct(r.firm, 2)}</span>`))
+        .on("pointerleave", hideTip);
+      svg.append("text").attr("class", "num").attr("x", x(r.tier) + x.bandwidth() / 2).attr("y", y(r.rate) - 6).attr("text-anchor", "middle").attr("font-size", 11.5).style("fill", css("--ink")).text(pct(r.rate, r.rate < 0.01 ? 2 : 1));
+      svg.append("text").attr("x", x(r.tier) + x.bandwidth() / 2).attr("y", H - bottom + 18).attr("text-anchor", "middle").attr("font-size", 12.5).style("fill", css("--ink")).text(lbl[r.tier]);
+    });
+  }
+
+  /* 4a. PUMS dot + CI */
+  function drawPUMS() {
+    const el = document.getElementById("c-pums"), W = width(el), narrow = W < 600;
+    const outs = [["own", "Owns their home"], ["rent_burden50", "Renter paying ≥50% of income"], ["commute60", "Commute of 60+ minutes"], ["below_200pov", "Below 200% of poverty line"], ["employed", "Employed"], ["overcrowded", "Overcrowded (>1 person/room)"]];
+    const tr = [["left_saccv", "--s2", "Central Valley leavers"], ["left_ca", "--s1", "Left California"]];
+    const lab = narrow ? 150 : 230, rowH = 46, top = 26, H = top + outs.length * rowH + 4;
+    const svg = svgIn(el, W, H).attr("aria-label", "Dot plot of leaver vs stayer differences");
+    const x = d3.scaleLinear().domain([-0.1, 0.25]).range([lab, W - 16]);
+    [-0.1, -0.05, 0, 0.05, 0.1, 0.15, 0.2, 0.25].forEach(t => {
+      if (narrow && Math.round(t * 100) % 10 !== 0) return;
+      svg.append("line").attr("x1", x(t)).attr("x2", x(t)).attr("y1", top - 6).attr("y2", H - 4).attr("stroke", t === 0 ? css("--ink-2") : css("--grid"));
+      svg.append("text").attr("class", "num").attr("x", x(t)).attr("y", top - 12).attr("text-anchor", "middle").attr("font-size", 11).style("fill", css("--muted")).text(t === 0 ? "stayers" : (t > 0 ? "+" : "−") + Math.abs(Math.round(t * 100)));
+    });
+    outs.forEach(([o, name], i) => {
+      const yc = top + i * rowH + rowH / 2;
+      if (i % 2 === 0) svg.insert("rect", ":first-child").attr("x", 0).attr("y", yc - rowH / 2).attr("width", W).attr("height", rowH).style("fill", css("--bg")).attr("opacity", 0.6);
+      svg.append("text").attr("x", 4).attr("y", yc + 4).attr("font-size", narrow ? 12 : 13.5).style("fill", css("--ink")).text(name);
+      tr.forEach(([t, c, tn], j) => {
+        const d = D.e9.find(e => e.t === t && e.o === o); if (!d) return;
+        const yy = yc + (j === 0 ? -7 : 7);
+        svg.append("line").attr("x1", x(Math.max(-0.1, d.lo))).attr("x2", x(Math.min(0.25, d.hi))).attr("y1", yy).attr("y2", yy).attr("stroke", css(c)).attr("stroke-width", 2).attr("stroke-linecap", "round");
+        svg.append("circle").attr("class", "mark").attr("cx", x(d.d)).attr("cy", yy).attr("r", 5.5).style("fill", css(c)).style("stroke", css("--surface")).attr("stroke-width", 2)
+          .on("pointermove", ev => showTip(ev, `<b>${tn}</b> · ${name}<br>Difference: <span class="num">${pp(d.d)}</span> (95% CI ${pp(d.lo)} to ${pp(d.hi)})<br>Leavers <span class="num">${pct(d.leaver)}</span> · matched stayers <span class="num">${pct(d.stayer)}</span><br><span style="color:var(--muted)">n = ${d.n.toLocaleString()} leavers</span>`))
+          .on("pointerleave", hideTip);
+      });
+    });
+  }
+
+  /* 4b. flow map */
+  function drawFlows() {
+    const el = document.getElementById("c-flows"), W = width(el), H = Math.round(W * 0.92);
+    const ids = new Set(["06001", "06013", "06041", "06055", "06075", "06081", "06085", "06095", "06097", "06067", "06077", "06099", "06047", "06087"]);
+    const focus = { type: "FeatureCollection", features: D.counties.features.filter(f => ids.has(f.id)) };
+    const svg = svgIn(el, W, H).attr("aria-label", "Map of commute flows into Bay counties").style("overflow", "hidden");
+    const proj = d3.geoMercator().fitExtent([[6, 6], [W - 6, H - 6]], focus);
+    const path = d3.geoPath(proj);
+    svg.append("g").selectAll("path").data(D.counties.features).join("path").attr("d", path)
+      .style("fill", f => css(f.properties.bay ? "--land-bay" : "--land")).style("stroke", css("--surface")).attr("stroke-width", 1.2);
+    const cen = {}; D.counties.features.forEach(f => { cen[f.id] = proj(d3.geoCentroid(f)); });
+    cen["06001"] = proj([-122.05, 37.68]); cen["06085"] = proj([-121.95, 37.33]); cen["06075"] = proj([-122.43, 37.76]); cen["06081"] = proj([-122.3, 37.5]); cen["06013"] = proj([-122.0, 37.93]);
+    const pairs = D.e10_pairs.filter(p => !ids.has(p.h) || ["06067", "06077", "06099", "06047", "06087"].includes(p.h)).filter(p => cen[p.h] && cen[p.w]);
+    const wS = d3.scaleSqrt().domain([0, 42000]).range([0, W < 500 ? 9 : 13]);
+    const g = svg.append("g");
+    pairs.sort((a, b) => a.jobs - b.jobs).forEach(p => {
+      const [x1, y1] = cen[p.h], [x2, y2] = cen[p.w];
+      const mx = (x1 + x2) / 2, my = (y1 + y2) / 2, dx = x2 - x1, dy = y2 - y1;
+      const cx = mx - dy * 0.18, cy = my + dx * 0.18;
+      g.append("path").attr("class", "mark").attr("d", `M${x1},${y1}Q${cx},${cy} ${x2},${y2}`).style("fill", "none")
+        .style("stroke", css("--s2")).attr("stroke-width", wS(p.jobs)).attr("stroke-linecap", "round").attr("opacity", 0.78)
+        .on("pointermove", ev => showTip(ev, `<b>${p.hn} → ${p.wn}</b><br><span class="num">${p.jobs.toLocaleString()}</span> jobs in 2024 (2010: <span class="num">${p.jobs2010.toLocaleString()}</span>)<br><span class="num">${p.miles}</span> miles · ~<span class="num">${p.minutes}</span> min one way, no traffic`))
+        .on("pointerleave", hideTip);
+    });
+    [["06077", "San Joaquin"], ["06067", "Sacramento"], ["06099", "Stanislaus"], ["06087", "Santa Cruz"], ["06001", "Alameda"], ["06085", "Santa Clara"], ["06075", "SF"]].forEach(([id, n]) => {
+      if (!cen[id]) return;
+      svg.append("text").attr("x", cen[id][0]).attr("y", cen[id][1] - 9).attr("text-anchor", "middle").attr("font-size", 11.5).attr("font-weight", 600)
+        .style("fill", css("--ink")).style("paint-order", "stroke").style("stroke", css("--surface")).attr("stroke-width", 3).style("pointer-events", "none").text(n);
+    });
+    const top = pairs.slice().sort((a, b) => b.jobs - a.jobs)[0];
+    if (top) svg.append("text").attr("class", "num").attr("x", W - 8).attr("y", H - 10).attr("text-anchor", "end").attr("font-size", 11).style("fill", css("--muted"))
+      .text(`Widest: ${top.hn} → ${top.wn}, ${top.jobs.toLocaleString()} jobs`);
+  }
+
+  /* 4c. ledger */
+  const occs = [...new Set(D.ledger.map(d => d.occ))], dests = [...new Set(D.ledger.map(d => d.dest))];
+  const so = document.getElementById("sel-occ"), sd = document.getElementById("sel-dest");
+  occs.forEach(o => so.add(new Option(o, o))); dests.forEach(o => sd.add(new Option(o, o)));
+  so.value = occs.find(o => o.startsWith("Caregiver")) || occs[0]; sd.value = dests.includes("Stockton") ? "Stockton" : dests[0];
+  try { const s = JSON.parse(localStorage.getItem("ftp-ledger") || "null"); if (s && occs.includes(s.o)) so.value = s.o; if (s && dests.includes(s.d)) sd.value = s.d; } catch (e) {}
+  function drawLedger() {
+    try { localStorage.setItem("ftp-ledger", JSON.stringify({ o: so.value, d: sd.value })); } catch (e) {}
+    const d = D.ledger.find(r => r.occ === so.value && r.dest === sd.value); if (!d) return;
+    const el = document.getElementById("c-ledger"), W = width(el), narrow = W < 460;
+    const rows = [["Stay in current Bay unit", d.stay], ["Re-rent in the Bay", d.rerent], [`Move to ${d.dest}, local job`, d.move], [`Live in ${d.dest}, keep Bay job (fuel only)`, d.keep_fuel], [`Live in ${d.dest}, keep Bay job (full car cost)`, d.keep_irs]];
+    const lab = narrow ? 0 : 210, rowH = narrow ? 46 : 34, top = 22, H = top + rows.length * rowH + 22;
+    const svg = svgIn(el, W, H).attr("aria-label", "Monthly money left after housing and commuting");
+    const lo = Math.min(-500, d3.min(rows, r => r[1])), hi = Math.max(500, d3.max(rows, r => r[1]));
+    const x = d3.scaleLinear().domain([lo * 1.1, hi * 1.25]).range([lab + 4, W - 8]);
+    x.ticks(narrow ? 3 : 5).forEach(t => {
+      svg.append("line").attr("x1", x(t)).attr("x2", x(t)).attr("y1", top - 6).attr("y2", H - 22).attr("stroke", t === 0 ? css("--ink-2") : css("--grid"));
+      svg.append("text").attr("class", "num").attr("x", x(t)).attr("y", top - 11).attr("text-anchor", "middle").attr("font-size", 10.5).style("fill", css("--muted")).text(fmtD(t));
+    });
+    rows.forEach(([name, v], i) => {
+      const y0 = top + i * rowH + (narrow ? 18 : 8);
+      svg.append("text").attr("x", narrow ? 4 : 0).attr("y", narrow ? y0 - 5 : y0 + 12).attr("font-size", 12.5).style("fill", css("--ink")).text(name);
+      const neg = v < 0;
+      svg.append("path").attr("class", "mark").attr("d", barPath(x(Math.min(0, v)), y0, Math.abs(x(v) - x(0)), 16, neg ? "left" : "right"))
+        .style("fill", css(i < 2 ? "--s1" : "--s2"))
+        .on("pointermove", ev => showTip(ev, `<b>${name}</b><br>Left each month: <span class="num">${fmtD(v)}</span>${i >= 3 ? `<br>${d.hours} hours a month on the road` : ""}<br><span style="color:var(--muted)">Bay gross pay ${fmtD(d.gross)}/mo</span>`))
+        .on("pointerleave", hideTip);
+      svg.append("text").attr("class", "num").attr("x", neg ? x(v) - 6 : x(v) + 6).attr("y", y0 + 12).attr("text-anchor", neg ? "end" : "start").attr("font-size", 12).attr("font-weight", 500).style("fill", css("--ink")).text(fmtD(v));
+    });
+    svg.append("text").attr("x", W - 8).attr("y", H - 4).attr("text-anchor", "end").attr("font-size", 11).style("fill", css("--muted")).text(`Commute: ${d.hours} hours a month, no traffic`);
+  }
+  so.addEventListener("change", drawLedger); sd.addEventListener("change", drawLedger);
+
+  /* 5. destinations */
+  function drawDest() {
+    const el = document.getElementById("c-dest"), W = width(el), narrow = W < 560;
+    const get = (k, dest) => (D.e4.find(r => r.destination === dest) || {})[k] || 0;
+    const segs = [["sacramento_central_valley", "--s2", "Central Valley"], ["other_ca", "--s3", "Elsewhere in CA"], ["out_of_state_or_abroad", "--s1", "Out of state"]];
+    const rows = [["CPL_conditional_on_leaving_Bay", "Low-income movers (California Policy Lab)"], ["Reddit_gold_labeled_exits", "Reddit exit stories (labeled)"]];
+    const rowH = narrow ? 64 : 48, lab = narrow ? 0 : 280, top = 6, H = top + rows.length * rowH;
+    const svg = svgIn(el, W, H).attr("aria-label", "Segmented bars of destination shares");
+    const x = d3.scaleLinear().domain([0, 1]).range([lab, W - 2]);
+    rows.forEach(([k, name], i) => {
+      const y0 = top + i * rowH + (narrow ? 22 : 8);
+      svg.append("text").attr("x", 0).attr("y", narrow ? y0 - 7 : y0 + 19).attr("font-size", 13.5).attr("font-weight", 500).style("fill", css("--ink")).text(name);
+      const tot = d3.sum(segs, s => get(k, s[0]));
+      let acc = 0;
+      segs.forEach(([dest, c, sn]) => {
+        const v = get(k, dest) / tot, x0 = x(acc), w = x(acc + v) - x(acc);
+        svg.append("rect").attr("class", "mark").attr("x", x0 + (acc > 0 ? 1 : 0)).attr("y", y0).attr("width", Math.max(0, w - (acc > 0 ? 1 : 0))).attr("height", 28).attr("rx", 3).style("fill", css(c))
+          .on("pointermove", ev => showTip(ev, `<b>${name}</b><br>${sn}: <span class="num">${pct(v, 0)}</span>`)).on("pointerleave", hideTip);
+        if (w > 40) svg.append("text").attr("class", "num").attr("x", x0 + 8).attr("y", y0 + 19).attr("font-size", 12.5).attr("font-weight", 500).style("fill", "#ffffff").style("pointer-events", "none").text(pct(v, 0));
+        acc += v;
+      });
+    });
+  }
+
+  function drawAll() {
+    hideTip();
+    [drawDecomp, drawMap, drawGate, drawPPR, drawRelo, drawPUMS, drawFlows, drawLedger, drawDest].forEach(f => { try { f(); } catch (e) { console.error(f.name, e); } });
+  }
+  drawAll();
+  let t; window.addEventListener("resize", () => { clearTimeout(t); t = setTimeout(drawAll, 150); });
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", drawAll);
+  new MutationObserver(drawAll).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+  document.addEventListener("scroll", hideTip, { passive: true });
+})();
+</script>

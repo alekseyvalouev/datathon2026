@@ -1,0 +1,8 @@
+{
+ "n": 100,
+ "kappa_3class": 0.865,
+ "kappa_binary": 0.85,
+ "raw_agreement": 0.93,
+ "n_both_positive": 33,
+ "kappa_dest_bucket": 0.922
+}

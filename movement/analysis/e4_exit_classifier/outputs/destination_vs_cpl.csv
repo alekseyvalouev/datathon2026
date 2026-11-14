@@ -1,0 +1,5 @@
+destination,CPL_low_income_movers_all,CPL_conditional_on_leaving_Bay,Reddit_gold_labeled_exits,Reddit_gold_exits_plus_within_Bay_moves,Reddit_model_pool_exits
+other_bay_county,0.75,0.0,0.0,0.215,0.225
+sacramento_central_valley,0.08,0.32,0.066,0.052,0.056
+other_ca,0.05,0.2,0.028,0.022,0.148
+out_of_state_or_abroad,0.12,0.48,0.906,0.711,0.571

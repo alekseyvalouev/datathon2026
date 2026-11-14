@@ -1,0 +1,97 @@
+   split      n  ...  median_weeks  share_with_concession
+0   test   9159  ...      4.333333               0.107217
+1  train  12502  ...      4.333333               0.000240
+2    val   1645  ...      5.166667               0.052280
+
+[3 rows x 6 columns]
+                        subset     target     n  mean_r  median_r  over_cap_share                                     model     MAE    RMSE    bias     AUC  PR_AUC
+0                     all test     asking  9159  0.0653    0.0468          0.2267                                Legal rule  0.0609  0.0841  0.0107     NaN     NaN
+1                     all test     asking  9159  0.0653    0.0468          0.2267                      ZIP median (train r)  0.0593  0.0933 -0.0386     NaN     NaN
+2                     all test     asking  9159  0.0653    0.0468          0.2267                    Ridge (asking-trained)  0.0491  0.0773 -0.0215     NaN     NaN
+3                     all test     asking  9159  0.0653    0.0468          0.2267                 LightGBM (asking-trained)  0.0492  0.0788 -0.0273     NaN     NaN
+4                     all test     asking  9159  0.0653    0.0468          0.2267      LightGBM trained on effective target  0.0518  0.0825 -0.0337     NaN     NaN
+5                     all test     asking  9159  0.0653    0.0468          0.2267            LightGBM + concession features  0.0511  0.0806 -0.0303     NaN     NaN
+6                     all test     asking  9159  0.0653    0.0468          0.2267               Ridge + concession features  0.0533  0.0826 -0.0284     NaN     NaN
+7                     all test     asking  9159  0.0653    0.0468          0.2267  LightGBM asking pred x posted concession  0.0535  0.0851 -0.0338     NaN     NaN
+8                     all test     asking  9159  0.0653    0.0468          0.2267     Ridge asking pred x posted concession  0.0534  0.0836 -0.0281     NaN     NaN
+9                     all test     asking  9159  0.0653    0.0468          0.2267                         ZIP over-cap rate     NaN     NaN     NaN  0.6816  0.4144
+10                    all test     asking  9159  0.0653    0.0468          0.2267                 Logistic (asking-trained)     NaN     NaN     NaN  0.8137  0.6113
+11                    all test     asking  9159  0.0653    0.0468          0.2267             LightGBM clf (asking-trained)     NaN     NaN     NaN  0.8147  0.5917
+12                    all test     asking  9159  0.0653    0.0468          0.2267        LightGBM clf + concession features     NaN     NaN     NaN  0.8129  0.5953
+13                    all test     asking  9159  0.0653    0.0468          0.2267            Logistic + concession features     NaN     NaN     NaN  0.7623  0.5863
+14                    all test  effective  9159  0.0585    0.0425          0.2093                                Legal rule  0.0640  0.0875  0.0175     NaN     NaN
+15                    all test  effective  9159  0.0585    0.0425          0.2093                      ZIP median (train r)  0.0593  0.0924 -0.0318     NaN     NaN
+16                    all test  effective  9159  0.0585    0.0425          0.2093                    Ridge (asking-trained)  0.0501  0.0778 -0.0148     NaN     NaN
+17                    all test  effective  9159  0.0585    0.0425          0.2093                 LightGBM (asking-trained)  0.0499  0.0791 -0.0205     NaN     NaN
+18                    all test  effective  9159  0.0585    0.0425          0.2093      LightGBM trained on effective target  0.0515  0.0816 -0.0269     NaN     NaN
+19                    all test  effective  9159  0.0585    0.0425          0.2093            LightGBM + concession features  0.0480  0.0768 -0.0235     NaN     NaN
+20                    all test  effective  9159  0.0585    0.0425          0.2093               Ridge + concession features  0.0491  0.0771 -0.0217     NaN     NaN
+21                    all test  effective  9159  0.0585    0.0425          0.2093  LightGBM asking pred x posted concession  0.0488  0.0783 -0.0270     NaN     NaN
+22                    all test  effective  9159  0.0585    0.0425          0.2093     Ridge asking pred x posted concession  0.0487  0.0768 -0.0213     NaN     NaN
+23                    all test  effective  9159  0.0585    0.0425          0.2093                         ZIP over-cap rate     NaN     NaN     NaN  0.6895  0.3982
+24                    all test  effective  9159  0.0585    0.0425          0.2093                 Logistic (asking-trained)     NaN     NaN     NaN  0.8100  0.5869
+25                    all test  effective  9159  0.0585    0.0425          0.2093             LightGBM clf (asking-trained)     NaN     NaN     NaN  0.8135  0.5601
+26                    all test  effective  9159  0.0585    0.0425          0.2093        LightGBM clf + concession features     NaN     NaN     NaN  0.8141  0.5757
+27                    all test  effective  9159  0.0585    0.0425          0.2093            Logistic + concession features     NaN     NaN     NaN  0.8150  0.6126
+28  test pairs with concession     asking   982  0.0658    0.0560          0.2678                                Legal rule  0.0610  0.0787  0.0102     NaN     NaN
+29  test pairs with concession     asking   982  0.0658    0.0560          0.2678                      ZIP median (train r)  0.0656  0.0925 -0.0447     NaN     NaN
+30  test pairs with concession     asking   982  0.0658    0.0560          0.2678                    Ridge (asking-trained)  0.0576  0.0810 -0.0287     NaN     NaN
+31  test pairs with concession     asking   982  0.0658    0.0560          0.2678                 LightGBM (asking-trained)  0.0575  0.0797 -0.0310     NaN     NaN
+32  test pairs with concession     asking   982  0.0658    0.0560          0.2678      LightGBM trained on effective target  0.0627  0.0864 -0.0425     NaN     NaN
+33  test pairs with concession     asking   982  0.0658    0.0560          0.2678            LightGBM + concession features  0.0791  0.1009 -0.0701     NaN     NaN
+34  test pairs with concession     asking   982  0.0658    0.0560          0.2678               Ridge + concession features  0.0960  0.1194 -0.0901     NaN     NaN
+35  test pairs with concession     asking   982  0.0658    0.0560          0.2678  LightGBM asking pred x posted concession  0.0977  0.1264 -0.0917     NaN     NaN
+36  test pairs with concession     asking   982  0.0658    0.0560          0.2678     Ridge asking pred x posted concession  0.0974  0.1262 -0.0895     NaN     NaN
+37  test pairs with concession     asking   982  0.0658    0.0560          0.2678                         ZIP over-cap rate     NaN     NaN     NaN  0.6248  0.4138
+38  test pairs with concession     asking   982  0.0658    0.0560          0.2678                 Logistic (asking-trained)     NaN     NaN     NaN  0.7321  0.4887
+39  test pairs with concession     asking   982  0.0658    0.0560          0.2678             LightGBM clf (asking-trained)     NaN     NaN     NaN  0.7380  0.5218
+40  test pairs with concession     asking   982  0.0658    0.0560          0.2678        LightGBM clf + concession features     NaN     NaN     NaN  0.7332  0.5150
+41  test pairs with concession     asking   982  0.0658    0.0560          0.2678            Logistic + concession features     NaN     NaN     NaN  0.6150  0.4108
+42  test pairs with concession  effective   982  0.0029   -0.0036          0.1059                                Legal rule  0.0905  0.1080  0.0731     NaN     NaN
+43  test pairs with concession  effective   982  0.0029   -0.0036          0.1059                      ZIP median (train r)  0.0648  0.0831  0.0182     NaN     NaN
+44  test pairs with concession  effective   982  0.0029   -0.0036          0.1059                    Ridge (asking-trained)  0.0670  0.0853  0.0342     NaN     NaN
+45  test pairs with concession  effective   982  0.0029   -0.0036          0.1059                 LightGBM (asking-trained)  0.0641  0.0822  0.0319     NaN     NaN
+46  test pairs with concession  effective   982  0.0029   -0.0036          0.1059      LightGBM trained on effective target  0.0597  0.0778  0.0203     NaN     NaN
+47  test pairs with concession  effective   982  0.0029   -0.0036          0.1059            LightGBM + concession features  0.0505  0.0678 -0.0073     NaN     NaN
+48  test pairs with concession  effective   982  0.0029   -0.0036          0.1059               Ridge + concession features  0.0568  0.0772 -0.0272     NaN     NaN
+49  test pairs with concession  effective   982  0.0029   -0.0036          0.1059  LightGBM asking pred x posted concession  0.0538  0.0744 -0.0288     NaN     NaN
+50  test pairs with concession  effective   982  0.0029   -0.0036          0.1059     Ridge asking pred x posted concession  0.0540  0.0758 -0.0267     NaN     NaN
+51  test pairs with concession  effective   982  0.0029   -0.0036          0.1059                         ZIP over-cap rate     NaN     NaN     NaN  0.6567  0.2082
+52  test pairs with concession  effective   982  0.0029   -0.0036          0.1059                 Logistic (asking-trained)     NaN     NaN     NaN  0.6773  0.1981
+53  test pairs with concession  effective   982  0.0029   -0.0036          0.1059             LightGBM clf (asking-trained)     NaN     NaN     NaN  0.7146  0.2461
+54  test pairs with concession  effective   982  0.0029   -0.0036          0.1059        LightGBM clf + concession features     NaN     NaN     NaN  0.7142  0.3028
+55  test pairs with concession  effective   982  0.0029   -0.0036          0.1059            Logistic + concession features     NaN     NaN     NaN  0.7511  0.3512
+                                 0  ...                         3
+subset                    all test  ...  mgmt co, with concession
+n                             9159  ...                       876
+mean_r_ask                  0.0653  ...                    0.0657
+mean_r_eff                  0.0585  ...                    0.0004
+median_r_ask                0.0468  ...                    0.0575
+median_r_eff                0.0425  ...                   -0.0074
+mean_excess_over_cpi_ask    0.0393  ...                    0.0397
+mean_excess_over_cpi_eff    0.0325  ...                   -0.0256
+survival_excess_over_cpi    0.8285  ...                   -0.6456
+mean_premium_month_ask    262.4015  ...                  146.6744
+mean_premium_month_eff    231.8749  ...                 -147.4469
+median_premium_month_ask  117.7065  ...                  140.5943
+median_premium_month_eff   94.3037  ...                 -161.4175
+survival_mean_premium       0.8837  ...                   -1.0053
+over_cap_ask                0.2267  ...                    0.2717
+over_cap_eff                0.2093  ...                    0.1016
+
+[16 rows x 4 columns]
+   group_set                  group     n  share_next_current  share_concession  median_weeks  mean_r_ask  mean_r_eff  over_cap_ask  over_cap_eff  mean_premium_month_ask  mean_premium_month_eff  bias_lgb_vs_ask  bias_lgb_vs_eff  MAE_lgb_vs_ask  MAE_lgb_vs_eff  MAE_lgb_conc_vs_eff  MAE_lgb_adj_vs_eff  MAE_zipmed_vs_eff
+0       mgmt  individual / not mgmt  4165               0.752             0.025         4.167       0.059       0.058         0.181         0.178                 305.718                 300.449           -0.026           -0.025           0.046           0.046                0.045               0.046              0.054
+1       mgmt     management company  4994               0.891             0.175         4.333       0.071       0.059         0.265         0.235                 226.276                 174.684           -0.028           -0.017           0.052           0.053                0.050               0.051              0.064
+2   landlord          large mgmt co  3699               0.890             0.194         4.333       0.076       0.064         0.290         0.255                 260.501                 202.435           -0.031           -0.018           0.053           0.055                0.052               0.052              0.067
+3   landlord            not mgmt co  4165               0.752             0.025         4.167       0.059       0.058         0.181         0.178                 305.718                 300.449           -0.026           -0.025           0.046           0.046                0.045               0.046              0.054
+4   landlord          other mgmt co  1295               0.896             0.122         4.333       0.054       0.046         0.193         0.179                 128.514                  95.416           -0.021           -0.013           0.049           0.049                0.047               0.048              0.056
+5     county         Alameda County  2770               0.835             0.177         4.333       0.046       0.034         0.151         0.116                  61.601                   9.023           -0.019           -0.007           0.043           0.044                0.041               0.042              0.048
+6     county    Contra Costa County   990               0.792             0.086         4.333       0.036       0.031         0.094         0.082                  49.098                  25.404           -0.009           -0.003           0.035           0.037                0.035               0.035              0.041
+7     county           Marin County   175               0.771             0.023         6.167       0.052       0.050         0.154         0.154                 287.940                 278.814           -0.022           -0.020           0.048           0.049                0.049               0.048              0.051
+8     county            Napa County   152               0.770             0.145         4.333       0.014       0.004         0.046         0.046                 -65.611                -111.099            0.003            0.012           0.045           0.047                0.044               0.044              0.055
+9     county   San Francisco County  1052               0.833             0.050         4.000       0.171       0.167         0.709         0.693                1112.222                1088.832           -0.097           -0.093           0.109           0.109                0.106               0.109              0.149
+10    county       San Mateo County   932               0.841             0.052         2.000       0.083       0.081         0.342         0.334                 425.705                 412.737           -0.033           -0.031           0.052           0.052                0.051               0.051              0.067
+11    county     Santa Clara County  2245               0.840             0.100         2.000       0.061       0.057         0.184         0.173                 240.101                 217.002           -0.020           -0.016           0.040           0.040                0.040               0.040              0.044
+12    county          Solano County   425               0.793             0.071         4.333       0.025       0.020         0.031         0.031                  -2.812                 -17.336            0.001            0.006           0.029           0.030                0.029               0.029              0.036
+13    county          Sonoma County   418               0.840             0.062         4.333       0.039       0.034         0.096         0.096                  93.380                  76.001           -0.016           -0.011           0.038           0.040                0.039               0.037              0.042

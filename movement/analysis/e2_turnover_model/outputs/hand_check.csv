@@ -1,0 +1,31 @@
+zpid,homeType,county,ep,n_rental_episodes,prev_start,prev_last_p,next_start,next_first,gap_y,r,sql_matches_reparse,flags,verdict,manual_note
+2098824244,APARTMENT,Alameda County,2,5,2021-01-21,1495.0,2023-12-14,1495.0,2.89,0.0,True,,correct,
+18451872,APARTMENT,Contra Costa County,3,7,2021-04-04,1750.0,2023-01-30,1850.0,1.82,0.031,True,,correct,"APARTMENT homeType but has individual sale history -> a real condo-like unit, not a floor plan"
+2078329446,APARTMENT,Santa Clara County,1,2,2023-04-27,3032.0,2026-03-08,3306.0,2.86,0.031,True,,correct-with-caveat,revenue-managed complex: next_first $3306 re-priced to $3631 two days later; first ask is noisy
+2067349682,APARTMENT,Alameda County,4,5,2023-12-17,3700.0,2026-03-03,3780.0,2.21,0.01,True,,correct,
+2070938950,APARTMENT,Alameda County,2,3,2025-02-02,2325.0,2026-05-29,2697.0,1.32,0.119,True,,correct-with-caveat,daily algorithmic price changes in next episode (n_changes>15); first ask then drifts down ~4%
+2079225480,APARTMENT,Alameda County,1,3,2023-06-28,2465.0,2025-01-11,2512.0,1.54,0.012,True,,correct-with-caveat,daily algorithmic re-pricing in both episodes
+347329456,APARTMENT,San Mateo County,1,2,2024-04-08,3625.0,2026-09-12,4421.0,2.43,0.085,True,,correct,
+24821200,APARTMENT,Alameda County,2,3,2022-08-05,3900.0,2026-08-01,4200.0,3.99,0.019,True,,correct,APARTMENT homeType with own sale history (single unit)
+2053541568,APARTMENT,San Francisco County,1,3,2024-01-03,4650.0,2026-05-28,3150.0,2.4,-0.15,True,extreme ratio 0.68,questionable,"SF APARTMENT zpid: $4650 listed 2 days in 2024, $3150 in 2026; likely a different unit/floor plan or concession reusing the zpid"
+2059843796,APARTMENT,Alameda County,2,3,2023-05-12,3595.0,2026-09-03,3595.0,3.31,0.0,True,,correct,
+2085139243,APARTMENT,San Francisco County,1,3,2019-04-01,4830.0,2020-11-19,2995.0,1.64,-0.253,True,extreme ratio 0.62,correct,SF $4830 (2019) -> $2995 (Nov 2020): real COVID-era SF rent collapse; same unit relisted at $5700 in 2026
+439200585,APARTMENT,Sonoma County,1,3,2024-08-19,2250.0,2025-09-11,2250.0,1.06,0.0,True,,correct,
+2084979225,APARTMENT,Contra Costa County,4,5,2025-04-23,1900.0,2026-08-04,1950.0,1.28,0.02,True,,correct,
+2115433959,APARTMENT,Alameda County,1,2,2025-04-01,1750.0,2026-09-05,1750.0,1.43,0.0,True,,correct,
+2095928910,APARTMENT,Santa Clara County,2,4,2019-10-20,2600.0,2022-10-23,2700.0,3.01,0.013,True,prior episode spans 521d,correct-with-caveat,
+19650996,SINGLE_FAMILY,Santa Clara County,1,3,2023-01-23,4700.0,2024-05-30,5500.0,1.35,0.124,True,,correct,
+15740053,SINGLE_FAMILY,Solano County,2,5,2018-06-06,1800.0,2021-10-21,2300.0,3.38,0.075,True,,correct,
+15856224,SINGLE_FAMILY,Sonoma County,1,2,2013-07-06,2400.0,2017-09-19,2800.0,4.21,0.037,True,,correct,orphan 2021-03-21 removal after pair window; does not affect this pair
+24811992,SINGLE_FAMILY,Alameda County,1,2,2017-10-14,4500.0,2020-02-09,4500.0,2.32,0.0,True,,correct,flat $4500 over 2.3y; orphan 2021-03-24 removal after pair
+111710903,CONDO,San Francisco County,1,3,2018-01-04,4200.0,2019-06-01,4495.0,1.4,0.05,True,,correct,SF condo $4600 cut to $4200 (2018) -> $4495 (2019); the following pair shows the COVID dip to $3300
+19580875,SINGLE_FAMILY,Santa Clara County,2,4,2024-11-01,12250.0,2025-11-03,13000.0,1.0,0.061,True,,correct-with-caveat,"luxury SFH $12250 -> $13000 ask, but next episode then cut to $9995: first ask overstates the re-let rent"
+243210774,SINGLE_FAMILY,Santa Clara County,1,2,2022-10-12,3950.0,2026-07-30,4500.0,3.8,0.035,True,sold between tenancies (new owner); no 'Listing removed' in prior episode (rent-up not confirmed),correct-with-caveat,prior episode has no removal; unit sold 2026-07 then relisted (new owner) -> turnover coincides with sale
+2112421739,SINGLE_FAMILY,Alameda County,1,2,2013-06-08,1900.0,2019-04-16,2850.0,5.85,0.072,True,,correct,
+19673282,SINGLE_FAMILY,Santa Clara County,1,3,2017-08-28,3295.0,2021-07-21,3500.0,3.9,0.016,True,,correct,
+24774183,SINGLE_FAMILY,Alameda County,1,6,2017-12-09,4900.0,2021-04-04,5500.0,3.32,0.035,True,prior episode spans 1201d,correct-with-caveat,"orphan 'Listing removed' (no price) on 2021-03-24 extends end_d; target unaffected, gap_y wrong"
+15640780,CONDO,San Mateo County,2,4,2020-08-07,2300.0,2022-12-08,2200.0,2.34,-0.019,True,,correct,
+118259306,SINGLE_FAMILY,Contra Costa County,2,5,2019-03-30,3300.0,2022-08-27,3595.0,3.41,0.025,True,prior episode spans 689d,correct-with-caveat,orphan 'Listing removed' 2021-02-16 extends end_d; target unaffected
+2095886874,TOWNHOUSE,Alameda County,2,3,2023-03-21,2500.0,2026-05-20,2700.0,3.16,0.025,True,,correct,
+18281200,SINGLE_FAMILY,Contra Costa County,4,6,2021-12-23,2925.0,2026-07-17,3460.0,4.56,0.037,True,,correct,prior episode cut $3345 -> $2925 before removal; last_p correctly takes the final ask; 4.6y gap
+18493903,SINGLE_FAMILY,Contra Costa County,1,3,2023-09-18,3500.0,2025-07-23,3500.0,1.85,0.0,True,,correct,

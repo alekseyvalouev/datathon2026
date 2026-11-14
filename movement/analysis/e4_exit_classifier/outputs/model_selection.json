@@ -1,0 +1,37 @@
+{
+ "best": "hybrid_tfidf+minilm+rx_lr",
+ "selection": "5-fold CV macro-F1 on train+val",
+ "info": {
+  "naive_regex": {
+   "cv_macro_f1": 0.3860693525215266
+  },
+  "majority": {
+   "cv_macro_f1": 0.30706194263677994
+  },
+  "tfidf": {
+   "C": 0.3,
+   "cv_macro_f1": 0.41475218981373907,
+   "cv_sd": 0.038138374606495364
+  },
+  "emb_minilm": {
+   "C": 3,
+   "cv_macro_f1": 0.43554472032720304,
+   "cv_sd": 0.04565992960313801
+  },
+  "emb_mpnet": {
+   "C": 3,
+   "cv_macro_f1": 0.4278688369085599,
+   "cv_sd": 0.03683638435907249
+  },
+  "hybrid": {
+   "C": 1,
+   "cv_macro_f1": 0.5064381209099708,
+   "cv_sd": 0.05516637916938953
+  }
+ },
+ "sizes": {
+  "train": 559,
+  "val": 187,
+  "test": 187
+ }
+}

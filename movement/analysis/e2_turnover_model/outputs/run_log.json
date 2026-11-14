@@ -1,0 +1,72 @@
+{
+ "val": {
+  "lgb_reg_mae": 0.0401686504083942,
+  "lgb_reg_params": {
+   "objective": "l1",
+   "num_leaves": 63,
+   "min_child_samples": 20,
+   "learning_rate": 0.03,
+   "n_estimators": 645,
+   "subsample": 0.8,
+   "subsample_freq": 1,
+   "colsample_bytree": 0.8,
+   "reg_lambda": 1.0,
+   "verbose": -1,
+   "random_state": 42,
+   "deterministic": true,
+   "force_row_wise": true,
+   "n_jobs": 4
+  },
+  "lgb_clf_ap": 0.3611833019916111,
+  "lgb_clf_params": {
+   "objective": "binary",
+   "num_leaves": 31,
+   "min_child_samples": 20,
+   "learning_rate": 0.03,
+   "n_estimators": 53,
+   "subsample": 0.8,
+   "subsample_freq": 1,
+   "colsample_bytree": 0.8,
+   "reg_lambda": 1.0,
+   "verbose": -1,
+   "random_state": 42,
+   "deterministic": true,
+   "force_row_wise": true,
+   "n_jobs": 4
+  },
+  "ridge_mae": 0.043471635097929895,
+  "ridge_alpha": 1000,
+  "logit_ap": 0.2972481928529285,
+  "logit_C": 0.1,
+  "zipmed_mae": 0.04633340769494271
+ },
+ "thresholds_from_val": {
+  "lgb": 0.15558783879981583,
+  "logit": 0.18849975681637754,
+  "ziprate": 0.09747513568560738
+ },
+ "test": {
+  "n": 9159,
+  "prevalence": 0.22666229937766133,
+  "mean_r": 0.06527625067746154,
+  "median_r": 0.04684316063028349,
+  "lgb_logtarget_mae": 0.04935334715713148,
+  "lgb_trainonly_mae": 0.05021496643086767,
+  "lgb_trainonly_ap": 0.5614847249130703,
+  "train_mean_r": 0.03361452186502615,
+  "train_prev": 0.10291934685799109
+ },
+ "robustness": {
+  "median_r_next_first": 0.04684316063028349,
+  "median_r_next_last": 0.045097265304326006,
+  "share_over_cap_next_last": 0.22611638825199257
+ },
+ "zip": {
+  "n_zips": 256,
+  "n_zips_n20": 133,
+  "corr_pred_obs_median": 0.842341410501224,
+  "corr_pred_obs_share": 0.8048598896282397,
+  "overall_median_premium_month": 117.70646047509263,
+  "overall_mean_premium_month": 262.40154303187495
+ }
+}

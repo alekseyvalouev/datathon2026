@@ -1,0 +1,86 @@
+err,county,city,zipcode,n_buildings,n_listings,mean_pred,fail_grocery,fail_clinic,fail_transit,med_d_grocery_100m,med_d_clinic_100m,med_d_transit_100m,med_rent_100,med_z_props_1km,med_d_city_km,typology
+FN missed desert,Contra Costa County,San Ramon,94582,14,40,0.18453735129180263,3,0,14,800.0,1100.0,1000.0,2400.0,60.0,18.0,4 Exclusive
+FN missed desert,Contra Costa County,Antioch,94531,12,12,0.13655611101969425,2,0,12,1300.0,1100.0,1100.0,3400.0,92.5,22.9,3 Moderate/mixed
+FN missed desert,Alameda County,Dublin,94568,6,22,0.16965787543024188,5,1,1,2900.0,3000.0,400.0,3600.0,51.0,19.9,4 Exclusive
+FN missed desert,Contra Costa County,Moraga,94556,4,10,0.20453578767738878,4,4,3,2000.0,3800.0,800.0,2600.0,44.0,8.2,4 Exclusive
+FN missed desert,Contra Costa County,Walnut Creek,94598,4,4,0.03880706562006735,4,0,0,1700.0,200.0,300.0,3100.0,86.0,1.9,3 Moderate/mixed
+FN missed desert,Marin County,Fairfax,94930,4,4,0.11556835995773276,0,4,0,500.0,3600.0,300.0,4600.0,81.0,5.3,4 Exclusive
+FN missed desert,Marin County,San Anselmo,94960,4,4,0.12243618473220226,0,2,2,1300.0,3000.0,800.0,7300.0,78.0,4.3,4 Exclusive
+FN missed desert,Santa Clara County,San Jose,95119,4,4,0.11502997693253268,3,0,3,1900.0,1000.0,900.0,4600.0,77.5,14.5,4 Exclusive
+FN missed desert,Santa Clara County,San Jose,95125,4,29,0.024869925036940823,4,0,0,1700.0,1900.0,400.0,3900.0,91.5,5.5,4 Exclusive
+FN missed desert,Alameda County,Oakland,94611,3,3,0.053453069705464436,3,0,0,2200.0,2300.0,400.0,1500.0,88.0,6.3,4 Exclusive
+FN missed desert,Contra Costa County,Martinez,94553,3,3,0.07077821281647133,3,0,0,1600.0,900.0,200.0,1900.0,79.0,9.9,1 Low-income/displacement
+FN missed desert,Napa County,Napa,94558,3,3,0.19702187209400626,3,3,3,6800.0,18900.0,17600.0,3500.0,58.0,24.8,1 Low-income/displacement
+FN missed desert,Santa Clara County,Campbell,95008,3,3,0.02608615066740826,1,0,2,1200.0,800.0,900.0,4800.0,98.0,8.6,3 Moderate/mixed
+FN missed desert,Santa Clara County,San Jose,95136,3,3,0.009722654269621612,0,0,3,1100.0,2000.0,900.0,4300.0,138.0,6.4,3 Moderate/mixed
+FN missed desert,Solano County,Suisun City,94585,3,88,0.23661119971725916,0,0,3,400.0,2700.0,1100.0,2100.0,54.0,1.8,4 Exclusive
+FN missed desert,Alameda County,Castro Valley,94546,2,5,0.005665524581468505,0,0,2,900.0,700.0,800.0,2400.0,93.0,3.0,4 Exclusive
+FN missed desert,Contra Costa County,Antioch,94509,2,2,0.06993065322204156,0,0,2,700.0,700.0,900.0,3100.0,76.0,21.1,1 Low-income/displacement
+FN missed desert,Contra Costa County,Danville,94526,2,2,0.31787988001028256,2,0,2,2000.0,600.0,900.0,4000.0,46.0,13.7,4 Exclusive
+FN missed desert,Marin County,Novato,94949,2,3,0.07852242862990724,2,0,0,1700.0,2600.0,400.0,3500.0,47.5,8.2,3 Moderate/mixed
+FN missed desert,Santa Clara County,San Jose,95132,2,2,0.09697894893873649,2,0,0,1700.0,1900.0,500.0,4600.0,75.5,8.1,3 Moderate/mixed
+FN missed desert,Solano County,Vallejo,94591,2,61,0.28475533615883974,2,0,0,2200.0,1600.0,600.0,1800.0,35.0,5.6,4 Exclusive
+FN missed desert,Sonoma County,Sonoma,95476,2,2,0.24870196552887702,0,1,1,800.0,2700.0,500.0,3600.0,48.0,17.2,1 Low-income/displacement
+FN missed desert,Alameda County,Alameda,94502,1,1,0.17755776424177813,1,0,1,1700.0,500.0,1100.0,2900.0,24.0,9.6,4 Exclusive
+FN missed desert,Alameda County,Berkeley,94708,1,1,0.017870444452469613,1,0,0,1700.0,1700.0,100.0,1800.0,105.0,2.8,4 Exclusive
+FN missed desert,Alameda County,Fremont,94538,1,1,0.16017091293499,0,0,1,1300.0,1600.0,1300.0,2700.0,14.0,7.4,4 Exclusive
+FN missed desert,Alameda County,Fremont,94539,1,1,0.3358674384554894,0,0,1,1000.0,1100.0,800.0,5000.0,60.0,9.5,4 Exclusive
+FN missed desert,Contra Costa County,Alamo,94507,1,1,0.2539088022938694,1,0,1,1900.0,1800.0,900.0,3000.0,51.0,7.0,4 Exclusive
+FN missed desert,Contra Costa County,Concord,94518,1,1,0.3117353149127971,0,0,1,1000.0,1400.0,900.0,4500.0,63.0,4.2,3 Moderate/mixed
+FN missed desert,Contra Costa County,San Ramon,94583,1,1,0.13078432482979416,1,0,0,1900.0,2300.0,500.0,3200.0,47.0,13.6,4 Exclusive
+FN missed desert,Contra Costa County,Walnut Creek,94596,1,2,0.1840218208121169,1,0,0,1700.0,1100.0,200.0,3500.0,51.0,3.5,3 Moderate/mixed
+FN missed desert,Marin County,San Rafael,94903,1,66,0.02505805573850474,0,0,1,500.0,600.0,900.0,2800.0,45.0,4.3,3 Moderate/mixed
+FN missed desert,Napa County,Napa,94559,1,1,0.21668306386897201,0,0,1,1100.0,2300.0,900.0,4800.0,45.0,2.0,3 Moderate/mixed
+FN missed desert,Santa Clara County,Cupertino,95014,1,1,0.292158406090492,0,0,1,1200.0,1500.0,1000.0,6800.0,48.0,6.7,4 Exclusive
+FN missed desert,Santa Clara County,Palo Alto,94306,1,2,0.03911344013540742,1,0,0,1700.0,1000.0,200.0,4000.0,44.0,4.4,3 Moderate/mixed
+FN missed desert,Santa Clara County,San Jose,95118,1,1,0.0035329561413022788,0,0,1,800.0,1000.0,1000.0,7400.0,119.0,8.6,4 Exclusive
+FN missed desert,Santa Clara County,Santa Clara,95054,1,1,0.1249905539359385,1,0,0,1700.0,700.0,400.0,2500.0,54.0,4.8,3 Moderate/mixed
+FN missed desert,Santa Clara County,Saratoga,95070,1,1,0.06578104153748042,1,0,0,1600.0,1600.0,300.0,9000.0,100.0,9.6,4 Exclusive
+FN missed desert,Sonoma County,Petaluma,94952,1,1,0.17852689543082054,1,0,0,2000.0,1700.0,400.0,5800.0,45.0,25.9,4 Exclusive
+FN missed desert,Sonoma County,Rio Nido,95471,1,1,0.1759264417154478,1,0,0,3100.0,3100.0,300.0,1600.0,39.0,24.6,1 Low-income/displacement
+FN missed desert,Sonoma County,Santa Rosa,95404,1,1,0.21280146269916425,0,0,1,900.0,1800.0,900.0,4100.0,65.0,2.5,3 Moderate/mixed
+FN missed desert,Sonoma County,Santa Rosa,95405,1,1,0.30785844282665215,1,0,0,1700.0,900.0,400.0,5000.0,49.0,5.2,4 Exclusive
+FN missed desert,Sonoma County,Windsor,95492,1,1,0.1735416425935349,1,0,0,1600.0,1500.0,100.0,3400.0,51.0,13.7,3 Moderate/mixed
+FP false alarm,Contra Costa County,Danville,94506,11,11,0.6126279450461163,0,0,0,700.0,500.0,300.0,5400.0,53.0,17.9,4 Exclusive
+FP false alarm,Solano County,Rio Vista,94571,9,9,0.7136787164663002,0,0,0,600.0,600.0,200.0,2500.0,44.0,32.0,1 Low-income/displacement
+FP false alarm,Contra Costa County,Antioch,94531,7,7,0.48275659038080965,0,0,0,900.0,800.0,400.0,3700.0,62.0,22.8,3 Moderate/mixed
+FP false alarm,Contra Costa County,San Ramon,94582,7,7,0.4771177770668396,0,0,0,1100.0,1100.0,300.0,4600.0,51.0,17.3,4 Exclusive
+FP false alarm,Santa Clara County,Milpitas,95035,7,7,0.4471743659757483,0,0,0,600.0,1100.0,300.0,3900.0,38.0,11.7,3 Moderate/mixed
+FP false alarm,Solano County,Vallejo,94591,7,7,0.6060545141097767,0,0,0,1400.0,2100.0,300.0,3100.0,50.0,4.9,3 Moderate/mixed
+FP false alarm,Contra Costa County,Bay Point,94565,6,6,0.5987746565192974,0,0,0,600.0,1000.0,400.0,3300.0,46.5,8.1,4 Exclusive
+FP false alarm,Contra Costa County,Lafayette,94549,6,19,0.6286411156342043,0,0,0,700.0,200.0,200.0,5100.0,32.0,6.6,4 Exclusive
+FP false alarm,Solano County,Benicia,94510,6,6,0.566318586860695,0,0,0,1100.0,1000.0,300.0,4000.0,60.5,8.4,4 Exclusive
+FP false alarm,Alameda County,Fremont,94539,5,5,0.4743995759147655,0,0,0,600.0,1000.0,300.0,4000.0,36.0,10.6,4 Exclusive
+FP false alarm,Alameda County,Livermore,94551,5,5,0.46182770348519053,0,0,0,700.0,1900.0,300.0,3800.0,60.0,29.9,4 Exclusive
+FP false alarm,Contra Costa County,Pittsburg,94565,5,5,0.5294080901247611,0,0,0,900.0,2100.0,400.0,3700.0,64.0,7.8,4 Exclusive
+FP false alarm,Contra Costa County,Antioch,94509,4,4,0.4154748215995504,0,0,0,1200.0,600.0,300.0,4400.0,78.5,20.9,3 Moderate/mixed
+FP false alarm,Contra Costa County,Orinda,94563,4,4,0.6132660694086695,0,0,0,1200.0,500.0,400.0,3000.0,32.0,7.8,4 Exclusive
+FP false alarm,Contra Costa County,San Ramon,94583,4,4,0.49454539933571506,0,0,0,1200.0,1300.0,300.0,5000.0,61.0,15.2,3 Moderate/mixed
+FP false alarm,Sonoma County,Santa Rosa,95403,4,4,0.38575630431733915,0,0,0,1000.0,2000.0,400.0,4000.0,61.5,8.9,4 Exclusive
+FP false alarm,San Mateo County,Brisbane,94005,3,3,0.5599370470097345,0,0,0,300.0,2700.0,400.0,6000.0,26.0,9.6,3 Moderate/mixed
+FP false alarm,San Mateo County,Redwood City,94063,3,44,0.49571196299966974,0,0,0,1300.0,1000.0,300.0,7500.0,13.0,2.0,2 Gentrifying
+FP false alarm,San Mateo County,South San Francisco,94080,3,3,0.6187366492963494,0,0,0,600.0,700.0,100.0,5100.0,30.0,12.9,1 Low-income/displacement
+FP false alarm,Santa Clara County,San Jose,95139,3,3,0.5755796775724225,0,0,0,1000.0,2300.0,200.0,5000.0,44.0,16.7,3 Moderate/mixed
+FP false alarm,Solano County,Vacaville,95688,3,3,0.3928604242186117,0,0,0,300.0,300.0,100.0,2900.0,56.0,12.4,1 Low-income/displacement
+FP false alarm,Solano County,Vallejo,94589,3,3,0.5413504268435091,0,0,0,700.0,1500.0,500.0,3100.0,73.0,4.8,1 Low-income/displacement
+FP false alarm,Contra Costa County,Alamo,94507,2,2,0.6377702273039092,0,0,0,1200.0,900.0,300.0,7200.0,32.5,6.0,4 Exclusive
+FP false alarm,Contra Costa County,Danville,94526,2,2,0.5485133966915445,0,0,0,1400.0,1600.0,600.0,4600.0,44.5,12.8,4 Exclusive
+FP false alarm,Contra Costa County,Martinez,94553,2,2,0.3901860845320916,0,0,0,800.0,600.0,300.0,4000.0,77.0,9.6,4 Exclusive
+FP false alarm,Santa Clara County,San Jose,95134,2,2,0.5357590803297632,0,0,0,600.0,600.0,100.0,4700.0,39.5,6.5,3 Moderate/mixed
+FP false alarm,Alameda County,Fremont,94538,1,1,0.34755086969506593,0,0,0,400.0,1200.0,400.0,5000.0,49.0,6.5,4 Exclusive
+FP false alarm,Alameda County,San Leandro,94577,1,1,0.37511786372256206,0,0,0,700.0,700.0,300.0,4000.0,70.0,9.7,1 Low-income/displacement
+FP false alarm,Contra Costa County,Richmond,94801,1,1,0.5297523610034821,0,0,0,300.0,1700.0,200.0,5500.0,59.0,2.5,NA
+FP false alarm,Contra Costa County,Walnut Creek,94598,1,1,0.599750718680401,0,0,0,700.0,500.0,700.0,4900.0,48.0,5.0,3 Moderate/mixed
+FP false alarm,Marin County,Belvedere,94920,1,1,0.3588530019897881,0,0,0,1000.0,1900.0,700.0,25000.0,58.0,10.5,4 Exclusive
+FP false alarm,Marin County,Ross,94957,1,1,0.6353997153378107,0,0,0,1200.0,900.0,800.0,17500.0,33.0,3.3,4 Exclusive
+FP false alarm,Marin County,Tiburon,94920,1,1,0.48763346908648275,0,0,0,800.0,1200.0,500.0,18500.0,50.0,11.1,4 Exclusive
+FP false alarm,Napa County,American Canyon,94503,1,1,0.7643142667545163,0,0,0,1300.0,1300.0,600.0,4400.0,29.0,7.3,3 Moderate/mixed
+FP false alarm,San Mateo County,Half Moon Bay,94019,1,1,0.6481656674001613,0,0,0,1100.0,1200.0,300.0,9000.0,35.0,14.2,4 Exclusive
+FP false alarm,Santa Clara County,Palo Alto,94306,1,1,0.4276018396061962,0,0,0,1400.0,600.0,500.0,12000.0,56.0,3.3,3 Moderate/mixed
+FP false alarm,Santa Clara County,San Jose,95002,1,1,0.6948319903938764,0,0,0,700.0,600.0,0.0,3000.0,7.0,7.5,3 Moderate/mixed
+FP false alarm,Santa Clara County,Santa Clara,95054,1,1,0.34808317978931663,0,0,0,1300.0,300.0,100.0,1500.0,49.0,6.0,3 Moderate/mixed
+FP false alarm,Solano County,Suisun City,94585,1,1,0.5734997107737998,0,0,0,800.0,2400.0,800.0,3000.0,45.0,1.5,4 Exclusive
+FP false alarm,Sonoma County,Cloverdale,95425,1,1,0.9670997740732066,0,0,0,1400.0,2900.0,500.0,3500.0,1.0,45.0,1 Low-income/displacement
+FP false alarm,Sonoma County,Guerneville,95446,1,1,0.5216085647021674,0,0,0,800.0,700.0,300.0,3300.0,23.0,25.1,1 Low-income/displacement
+FP false alarm,Sonoma County,Sonoma,95476,1,1,0.5605328479375139,0,0,0,1300.0,2900.0,700.0,7000.0,29.0,18.3,1 Low-income/displacement
+FP false alarm,Sonoma County,Windsor,95492,1,1,0.712791621420109,0,0,0,400.0,2200.0,100.0,3800.0,32.0,16.5,3 Moderate/mixed
