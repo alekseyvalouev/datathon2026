@@ -1,0 +1,9 @@
+step,n
+units with any rental listing,59314
+status FOR_RENT at the 2026 crawl,44338
+"residential home type, has location",43847
+drop floor-plan duplicate zpids,22239
+tenancy starts (listings merged within 180 days),46381
+"unit-years at risk, 2019-2025",35854
+  distinct units,11748
+  tract features joined,35271

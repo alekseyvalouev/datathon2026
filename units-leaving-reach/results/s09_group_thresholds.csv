@@ -1,0 +1,11 @@
+grouping,group,recall_one_list,recall_group_lists,FPR_one_list,FPR_group_lists,precision_one_list,precision_group_lists
+Tract income (2018 tercile),high,0.807,0.588,0.186,0.052,0.709,0.864
+Tract income (2018 tercile),low,0.629,0.736,0.083,0.128,0.522,0.454
+Tract income (2018 tercile),middle,0.66,0.619,0.128,0.108,0.538,0.564
+Tract income (2018 tercile),ALL,0.72,0.637,0.122,0.108,0.604,0.605
+Tract tenure,majority owner,0.827,0.656,0.181,0.078,0.506,0.654
+Tract tenure,majority renter,0.67,0.73,0.086,0.111,0.684,0.646
+Tract tenure,ALL,0.72,0.709,0.122,0.102,0.604,0.643
+Home type,apartment,0.674,0.803,0.086,0.152,0.651,0.557
+Home type,house/condo/townhouse,0.88,0.627,0.318,0.084,0.509,0.736
+Home type,ALL,0.72,0.763,0.122,0.141,0.604,0.583

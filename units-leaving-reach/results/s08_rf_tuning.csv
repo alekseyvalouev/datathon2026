@@ -1,0 +1,37 @@
+features,max_features,min_samples_leaf,val_AUC
+unit+headroom+market,sqrt,1,0.8896
+unit+headroom+market,sqrt,5,0.8953
+unit+headroom+market,sqrt,20,0.8905
+unit+headroom+market,sqrt,50,0.8896
+unit+headroom+market,0.33,1,0.8912
+unit+headroom+market,0.33,5,0.8972
+unit+headroom+market,0.33,20,0.8952
+unit+headroom+market,0.33,50,0.8928
+unit+headroom+market,0.5,1,0.8868
+unit+headroom+market,0.5,5,0.8986
+unit+headroom+market,0.5,20,0.8962
+unit+headroom+market,0.5,50,0.8936
++ tract (displacement workstream),sqrt,1,0.9034
++ tract (displacement workstream),sqrt,5,0.8992
++ tract (displacement workstream),sqrt,20,0.8988
++ tract (displacement workstream),sqrt,50,0.8936
++ tract (displacement workstream),0.33,1,0.9053
++ tract (displacement workstream),0.33,5,0.9053
++ tract (displacement workstream),0.33,20,0.9029
++ tract (displacement workstream),0.33,50,0.9006
++ tract (displacement workstream),0.5,1,0.9042
++ tract (displacement workstream),0.5,5,0.9061
++ tract (displacement workstream),0.5,20,0.9028
++ tract (displacement workstream),0.5,50,0.9007
++ tract + city jobs (all workstreams),sqrt,1,0.9007
++ tract + city jobs (all workstreams),sqrt,5,0.9001
++ tract + city jobs (all workstreams),sqrt,20,0.8973
++ tract + city jobs (all workstreams),sqrt,50,0.8933
++ tract + city jobs (all workstreams),0.33,1,0.9027
++ tract + city jobs (all workstreams),0.33,5,0.9034
++ tract + city jobs (all workstreams),0.33,20,0.9026
++ tract + city jobs (all workstreams),0.33,50,0.8999
++ tract + city jobs (all workstreams),0.5,1,0.9008
++ tract + city jobs (all workstreams),0.5,5,0.9064
++ tract + city jobs (all workstreams),0.5,20,0.9042
++ tract + city jobs (all workstreams),0.5,50,0.9016

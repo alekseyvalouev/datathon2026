@@ -1,0 +1,51 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pay vs rent burden</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<style>
+:root{--paper:#f5f3ef;--ink:#1c1d22;--muted:#6f7076;--rule:#d6d3cd;--rust:#8a392d}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif}
+.fig{width:1288px;padding:44px 55px 40px}
+.eyebrow{color:var(--rust);font-size:18px;font-weight:700;letter-spacing:.2em;text-transform:uppercase}
+h1{margin:18px 0 10px;font-size:42px;line-height:1.1;font-weight:500;letter-spacing:-.01em}
+.sub{margin:0 0 26px;font-size:19px;line-height:1.4;color:var(--muted);max-width:60em}
+.row{display:grid;grid-template-columns:372px 108px 1fr 196px 88px;column-gap:20px;align-items:center;
+     border-bottom:1px solid var(--rule);font-variant-numeric:tabular-nums}
+.head{color:var(--muted);font-size:17px;padding-bottom:12px}
+.head .c,.head .r{white-space:nowrap}
+.grp{color:var(--rust);font-size:15px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
+     padding:26px 0 10px;border-bottom:1px solid var(--rule)}
+.body{font-size:23px;font-weight:500;height:52px}
+.r{text-align:right}.c{text-align:center}
+.pay{font-weight:600}
+.lvl{font-size:18px;font-weight:400;color:var(--muted)}
+.chg{font-weight:600;color:var(--rust)}
+.chg.ns{color:var(--muted);font-weight:500}
+.chg.down{color:var(--ink)}
+.track{position:relative;height:20px}
+.track i{position:absolute;top:0;height:100%;background:var(--rust)}
+.track i.down{background:var(--ink)}
+.track::after{content:"";position:absolute;top:-8px;bottom:-8px;left:var(--zero);width:1.5px;background:var(--ink)}
+.foot{display:flex;justify-content:space-between;gap:40px;margin-top:22px;color:var(--muted);font-size:16px;line-height:1.45}
+.foot p{margin:0}
+.key{display:flex;gap:22px;white-space:nowrap}
+.key span::before{content:"";display:inline-block;width:22px;height:11px;margin-right:9px;background:var(--rust)}
+.key span.k2::before{background:var(--ink)}
+</style></head><body><div class="fig">
+<div class="eyebrow">Pay vs rent burden, 2018–19 to 2023–24</div>
+<h1>Pay rose in every job. Outside tech, rent burden rose anyway</h1>
+<p class="sub">Full-time workers who rent in the nine Bay Area counties. Rent-burdened means the household spends 30% or more of its income on rent.</p>
+<div class="row head"><div>Occupation</div><div class="r">Median pay</div><div class="c">← fewer rent-burdened · 0 · more →</div><div class="r">Share burdened</div><div class="r">Change</div></div>
+<div class="grp">AI-positioned</div>
+<div class="row body"><div>Software, AI and data engineering</div><div class="r pay">+38%</div><div class="track" style="--zero:22.22%"><i style="left:22.22%;width:7.19%"></i></div><div class="r lvl">10% → 11%</div><div class="r chg ns">+0.6 pts</div></div>
+<div class="row body"><div>Product and design</div><div class="r pay">+31%</div><div class="track" style="--zero:22.22%"><i style="left:22.22%;width:7.69%"></i></div><div class="r lvl">19% → 20%</div><div class="r chg ns">+0.7 pts</div></div>
+<div class="grp">AI-exposed</div>
+<div class="row body"><div>Customer support</div><div class="r pay">+22%</div><div class="track" style="--zero:22.22%"><i style="left:22.22%;width:29.00%"></i></div><div class="r lvl">34% → 37%</div><div class="r chg ns">+2.6 pts</div></div>
+<div class="row body"><div>Frontline service</div><div class="r pay">+21%</div><div class="track" style="--zero:22.22%"><i style="left:22.22%;width:50.63%"></i></div><div class="r lvl">41% → 45%</div><div class="r chg">+4.6 pts</div></div>
+<div class="row body"><div>Junior professional</div><div class="r pay">+23%</div><div class="track" style="--zero:22.22%"><i style="left:22.22%;width:61.25%"></i></div><div class="r lvl">19% → 24%</div><div class="r chg">+5.5 pts</div></div>
+<div class="row body"><div>Clerical and admin</div><div class="r pay">+18%</div><div class="track" style="--zero:22.22%"><i style="left:22.22%;width:69.07%"></i></div><div class="r lvl">32% → 38%</div><div class="r chg">+6.2 pts</div></div>
+<div class="grp">All occupations</div>
+<div class="row body"><div>Every full-time worker who rents</div><div class="r pay">+27%</div><div class="track" style="--zero:22.22%"><i style="left:22.22%;width:34.55%"></i></div><div class="r lvl">27% → 30%</div><div class="r chg">+3.1 pts</div></div>
+<div class="foot"><p>Source: ACS PUMS 1-year files, 2018–19 and 2023–24 pooled. Pay is the median wage of full-time, year-round workers, not adjusted for inflation. Grey changes are within sampling error.</p></div>
+</div></body></html>

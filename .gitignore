@@ -27,3 +27,7 @@ __pycache__/
 
 # OS
 .DS_Store
+
+# Design-tool scratch (screenshots, logs) and local Pages build output
+.hallmark/
+_site/

@@ -1,0 +1,4 @@
+model,AUC,PR_AUC,mean_pred,prevalence
+LightGBM classifier,0.8147,0.5917,0.1154,0.2267
+Logistic regression (L2),0.8137,0.6114,0.1467,0.2267
+Random forest classifier,0.8204,0.596,0.1713,0.2267

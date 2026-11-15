@@ -1,0 +1,243 @@
+zipcode,n,city,county,losses,missed,caught,false_alarms,leave_rate,mean_pred,share_apartment,median_headroom_losses,missed_share,eligible,selected
+94612,169,Oakland,Alameda County,41,19,22,10,0.243,0.079,0.982,0.101,0.463,True,True
+94109,143,San Francisco,San Francisco County,45,17,28,1,0.315,0.114,0.972,0.187,0.378,True,True
+94115,33,San Francisco,San Francisco County,20,12,8,2,0.606,0.179,0.939,0.228,0.6,True,True
+94080,34,South San Francisco,San Mateo County,22,11,11,2,0.647,0.178,0.853,0.111,0.5,True,False
+94133,18,San Francisco,San Francisco County,16,11,5,0,0.889,0.14,0.944,0.274,0.688,True,False
+94704,134,Berkeley,Alameda County,18,11,7,19,0.134,0.089,0.993,0.106,0.611,True,False
+94110,32,San Francisco,San Francisco County,19,10,9,2,0.594,0.163,0.906,0.219,0.526,True,False
+94002,59,Belmont,San Mateo County,15,9,6,1,0.254,0.076,0.932,0.145,0.6,True,False
+94025,68,Menlo Park,San Mateo County,28,9,19,6,0.412,0.156,0.926,0.11,0.321,True,False
+94501,89,Alameda,Alameda County,19,9,10,1,0.213,0.074,0.978,0.051,0.474,True,False
+95051,92,Santa Clara,Santa Clara County,26,9,17,3,0.283,0.119,0.859,0.13,0.346,True,False
+94536,96,Fremont,Alameda County,24,8,16,18,0.25,0.186,0.812,0.079,0.333,True,False
+95123,111,San Jose,Santa Clara County,21,8,13,5,0.189,0.102,0.838,0.079,0.381,True,False
+94403,71,San Mateo,San Mateo County,21,7,14,4,0.296,0.13,1.0,0.113,0.333,True,False
+95112,142,San Jose,Santa Clara County,20,7,13,5,0.141,0.061,0.944,0.075,0.35,True,False
+94117,19,San Francisco,San Francisco County,15,6,9,0,0.789,0.278,1.0,0.22,0.4,True,False
+94609,53,Oakland,Alameda County,16,6,10,3,0.302,0.114,0.887,0.078,0.375,True,False
+94107,73,San Francisco,San Francisco County,63,16,47,1,0.863,0.364,0.945,0.126,0.254,False,False
+94103,84,San Francisco,San Francisco County,48,12,36,5,0.571,0.225,0.964,0.117,0.25,False,False
+94404,80,Foster City,San Mateo County,37,8,29,11,0.462,0.227,0.975,0.103,0.216,False,False
+94538,178,Fremont,Alameda County,46,8,38,11,0.258,0.149,0.955,0.058,0.174,False,False
+94114,11,San Francisco,San Francisco County,10,6,4,1,0.909,0.311,0.909,0.243,0.6,False,False
+94131,14,San Francisco,San Francisco County,9,6,3,0,0.643,0.19,1.0,0.236,0.667,False,False
+94596,70,Walnut Creek,Contra Costa County,9,6,3,4,0.129,0.057,0.943,0.066,0.667,False,False
+94040,55,Mountain View,Santa Clara County,9,5,4,3,0.164,0.073,0.982,0.159,0.556,False,False
+94086,86,Sunnyvale,Santa Clara County,18,5,13,5,0.209,0.114,0.942,0.092,0.278,False,False
+94102,66,San Francisco,San Francisco County,10,5,5,4,0.152,0.065,0.955,0.194,0.5,False,False
+94123,26,San Francisco,San Francisco County,23,5,18,0,0.885,0.401,1.0,0.122,0.217,False,False
+94606,98,Oakland,Alameda County,6,5,1,2,0.061,0.028,0.929,0.086,0.833,False,False
+95050,64,Santa Clara,Santa Clara County,11,5,6,2,0.172,0.052,0.922,0.131,0.455,False,False
+95113,43,San Jose,Santa Clara County,7,5,2,2,0.163,0.054,0.977,0.104,0.714,False,False
+95126,117,San Jose,Santa Clara County,10,5,5,6,0.085,0.061,0.932,0.089,0.5,False,False
+94105,33,San Francisco,San Francisco County,33,4,29,0,1.0,0.557,0.848,0.081,0.121,False,False
+94590,67,Vallejo,Solano County,6,4,2,6,0.09,0.059,0.821,0.199,0.667,False,False
+95110,70,San Jose,Santa Clara County,9,4,5,7,0.129,0.091,0.886,0.127,0.444,False,False
+94010,31,Burlingame,San Mateo County,8,3,5,3,0.258,0.128,0.903,0.101,0.375,False,False
+94043,34,Mountain View,Santa Clara County,13,3,10,6,0.382,0.223,0.706,0.066,0.231,False,False
+94523,60,Pleasant Hill,Contra Costa County,6,3,3,3,0.1,0.053,0.95,0.112,0.5,False,False
+94544,96,Hayward,Alameda County,10,3,7,6,0.104,0.069,0.938,0.072,0.3,False,False
+94588,48,Pleasanton,Alameda County,9,3,6,5,0.188,0.139,0.854,0.075,0.333,False,False
+94607,107,Oakland,Alameda County,16,3,13,13,0.15,0.099,0.935,0.058,0.188,False,False
+94608,73,Emeryville,Alameda County,11,3,8,5,0.151,0.088,0.959,0.062,0.273,False,False
+94611,55,Oakland,Alameda County,8,3,5,4,0.145,0.08,0.982,0.106,0.375,False,False
+95014,58,Cupertino,Santa Clara County,28,3,25,12,0.483,0.306,0.793,0.093,0.107,False,False
+95134,86,San Jose,Santa Clara County,23,3,20,22,0.267,0.218,0.977,0.104,0.13,False,False
+94014,19,Daly City,San Mateo County,7,2,5,0,0.368,0.134,0.737,0.139,0.286,False,False
+94066,23,San Bruno,San Mateo County,8,2,6,1,0.348,0.147,0.826,0.111,0.25,False,False
+94108,24,San Francisco,San Francisco County,9,2,7,1,0.375,0.135,1.0,0.147,0.222,False,False
+94112,9,San Francisco,San Francisco County,5,2,3,1,0.556,0.253,0.778,0.183,0.4,False,False
+94134,9,San Francisco,San Francisco County,7,2,5,0,0.778,0.262,0.556,0.132,0.286,False,False
+94566,39,Pleasanton,Alameda County,4,2,2,5,0.103,0.08,0.821,0.076,0.5,False,False
+94587,57,Union City,Alameda County,5,2,3,9,0.088,0.114,0.825,0.091,0.4,False,False
+94603,20,Oakland,Alameda County,2,2,0,4,0.1,0.083,0.35,0.169,1.0,False,False
+94952,11,Petaluma,Sonoma County,4,2,2,2,0.364,0.152,0.727,0.126,0.5,False,False
+95132,11,San Jose,Santa Clara County,2,2,0,2,0.182,0.102,0.545,0.138,1.0,False,False
+95133,27,San Jose,Santa Clara County,6,2,4,4,0.222,0.138,0.704,0.075,0.333,False,False
+95136,48,San Jose,Santa Clara County,4,2,2,6,0.083,0.086,0.812,0.128,0.5,False,False
+95403,40,Santa Rosa,Sonoma County,7,2,5,3,0.175,0.141,0.6,0.089,0.286,False,False
+95404,38,Santa Rosa,Sonoma County,3,2,1,4,0.079,0.082,0.763,0.051,0.667,False,False
+94015,22,Daly City,San Mateo County,2,1,1,1,0.091,0.054,1.0,0.173,0.5,False,False
+94024,3,Los Altos,Santa Clara County,2,1,1,0,0.667,0.262,0.667,0.144,0.5,False,False
+94061,24,Redwood City,San Mateo County,7,1,6,2,0.292,0.175,0.667,0.066,0.143,False,False
+94062,11,Redwood City,San Mateo County,2,1,1,0,0.182,0.087,0.909,0.143,0.5,False,False
+94063,59,Redwood City,San Mateo County,24,1,23,12,0.407,0.255,0.932,0.086,0.042,False,False
+94070,10,San Carlos,San Mateo County,9,1,8,0,0.9,0.489,0.7,0.13,0.111,False,False
+94085,30,Sunnyvale,Santa Clara County,8,1,7,2,0.267,0.182,0.767,0.045,0.125,False,False
+94087,64,Sunnyvale,Santa Clara County,9,1,8,3,0.141,0.111,0.891,0.054,0.111,False,False
+94089,27,Sunnyvale,Santa Clara County,8,1,7,6,0.296,0.243,0.815,0.075,0.125,False,False
+94116,8,San Francisco,San Francisco County,3,1,2,0,0.375,0.163,0.875,0.156,0.333,False,False
+94118,10,San Francisco,San Francisco County,5,1,4,1,0.5,0.228,1.0,0.169,0.2,False,False
+94121,4,San Francisco,San Francisco County,2,1,1,0,0.5,0.102,1.0,0.29,0.5,False,False
+94122,26,San Francisco,San Francisco County,6,1,5,1,0.231,0.102,1.0,0.101,0.167,False,False
+94124,1,San Francisco,San Francisco County,1,1,0,0,1.0,0.04,1.0,0.267,1.0,False,False
+94127,4,San Francisco,San Francisco County,1,1,0,0,0.25,0.018,1.0,0.417,1.0,False,False
+94301,16,Palo Alto,Santa Clara County,5,1,4,1,0.312,0.128,1.0,0.091,0.2,False,False
+94306,23,Palo Alto,Santa Clara County,3,1,2,4,0.13,0.137,0.913,0.015,0.333,False,False
+94401,32,San Mateo,San Mateo County,8,1,7,3,0.25,0.151,0.812,0.08,0.125,False,False
+94402,27,San Mateo,San Mateo County,15,1,14,4,0.556,0.302,1.0,0.099,0.067,False,False
+94515,5,Calistoga,Napa County,2,1,1,2,0.4,0.289,0.4,0.073,0.5,False,False
+94519,14,Concord,Contra Costa County,2,1,1,2,0.143,0.116,0.357,0.193,0.5,False,False
+94520,88,Concord,Contra Costa County,1,1,0,3,0.011,0.029,0.852,0.111,1.0,False,False
+94533,63,Fairfield,Solano County,5,1,4,8,0.079,0.094,0.683,0.024,0.2,False,False
+94539,11,Fremont,Alameda County,5,1,4,3,0.455,0.329,0.455,0.128,0.2,False,False
+94541,66,Hayward,Alameda County,5,1,4,7,0.076,0.079,0.788,0.075,0.2,False,False
+94547,7,Hercules,Contra Costa County,2,1,1,2,0.286,0.175,0.429,0.128,0.5,False,False
+94555,18,Fremont,Alameda County,8,1,7,3,0.444,0.403,0.444,0.045,0.125,False,False
+94558,60,Napa,Napa County,4,1,3,10,0.067,0.125,0.7,0.062,0.25,False,False
+94568,80,Dublin,Alameda County,14,1,13,16,0.175,0.215,0.725,0.072,0.071,False,False
+94598,13,Walnut Creek,Contra Costa County,1,1,0,0,0.077,0.025,0.769,0.072,1.0,False,False
+94602,24,Oakland,Alameda County,2,1,1,1,0.083,0.053,0.875,0.105,0.5,False,False
+94702,18,Berkeley,Alameda County,1,1,0,2,0.056,0.076,0.944,0.159,1.0,False,False
+94703,44,Berkeley,Alameda County,4,1,3,1,0.091,0.056,0.955,0.057,0.25,False,False
+94705,20,Berkeley,Alameda County,5,1,4,1,0.25,0.121,1.0,0.053,0.2,False,False
+94708,3,Berkeley,Alameda County,2,1,1,0,0.667,0.238,1.0,0.106,0.5,False,False
+94710,7,Berkeley,Alameda County,4,1,3,1,0.571,0.315,1.0,0.045,0.25,False,False
+94804,16,Richmond,Contra Costa County,1,1,0,0,0.062,0.033,0.625,0.124,1.0,False,False
+94806,40,San Pablo,Contra Costa County,1,1,0,3,0.025,0.062,0.875,0.111,1.0,False,False
+94903,34,San Rafael,Marin County,3,1,2,5,0.088,0.114,0.882,0.096,0.333,False,False
+94939,6,Larkspur,Marin County,1,1,0,1,0.167,0.083,1.0,0.263,1.0,False,False
+94954,28,Petaluma,Sonoma County,7,1,6,7,0.25,0.252,0.857,0.044,0.143,False,False
+95008,66,Campbell,Santa Clara County,9,1,8,3,0.136,0.111,0.803,0.121,0.111,False,False
+95030,8,Los Gatos,Santa Clara County,2,1,1,2,0.25,0.187,0.75,0.169,0.5,False,False
+95032,21,Los Gatos,Santa Clara County,7,1,6,1,0.333,0.21,0.714,0.06,0.143,False,False
+95035,64,Milpitas,Santa Clara County,15,1,14,8,0.234,0.171,0.625,0.103,0.067,False,False
+95054,21,Santa Clara,Santa Clara County,6,1,5,4,0.286,0.189,0.81,0.091,0.167,False,False
+95117,30,San Jose,Santa Clara County,2,1,1,2,0.067,0.047,0.867,0.175,0.5,False,False
+95124,18,San Jose,Santa Clara County,5,1,4,6,0.278,0.235,0.333,0.146,0.2,False,False
+95128,52,San Jose,Santa Clara County,5,1,4,3,0.096,0.066,0.885,0.087,0.2,False,False
+95476,15,Sonoma,Sonoma County,2,1,1,3,0.133,0.105,0.533,0.246,0.5,False,False
+95687,68,Vacaville,Solano County,5,1,4,15,0.074,0.126,0.662,0.044,0.2,False,False
+94005,2,Brisbane,San Mateo County,0,0,0,0,0.0,0.016,1.0,,,False,False
+94018,3,El Granada,San Mateo County,0,0,0,1,0.0,0.097,0.667,,,False,False
+94019,3,Half Moon Bay,San Mateo County,0,0,0,0,0.0,0.039,0.667,,,False,False
+94020,3,La Honda,San Mateo County,1,0,1,1,0.333,0.204,0.333,0.114,0.0,False,False
+94022,2,Los Altos,Santa Clara County,1,0,1,0,0.5,0.149,0.5,0.156,0.0,False,False
+94030,13,Millbrae,San Mateo County,2,0,2,3,0.154,0.2,0.769,0.119,0.0,False,False
+94038,1,Moss Beach,San Mateo County,0,0,0,0,0.0,0.026,0.0,,,False,False
+94041,19,Mountain View,Santa Clara County,9,0,9,3,0.474,0.312,0.737,0.058,0.0,False,False
+94044,5,Pacifica,San Mateo County,3,0,3,1,0.6,0.509,0.8,0.049,0.0,False,False
+94065,17,Redwood City,San Mateo County,8,0,8,5,0.471,0.32,1.0,0.1,0.0,False,False
+94104,1,San Francisco,San Francisco County,1,0,1,0,1.0,0.3,0.0,0.084,0.0,False,False
+94111,2,San Francisco,San Francisco County,1,0,1,0,0.5,0.123,1.0,0.219,0.0,False,False
+94129,1,San Francisco,San Francisco County,1,0,1,0,1.0,0.151,1.0,0.293,0.0,False,False
+94132,4,San Francisco,San Francisco County,0,0,0,2,0.0,0.107,0.75,,,False,False
+94158,15,San Francisco,San Francisco County,15,0,15,0,1.0,0.699,0.867,0.059,0.0,False,False
+94303,10,East Palo Alto,San Mateo County,5,0,5,2,0.5,0.345,0.5,0.103,0.0,False,False
+94502,1,Alameda,Alameda County,0,0,0,1,0.0,0.178,0.0,,,False,False
+94503,6,American Canyon,Napa County,0,0,0,1,0.0,0.152,0.333,,,False,False
+94505,8,Discovery Bay,Contra Costa County,1,0,1,2,0.125,0.195,0.0,0.224,0.0,False,False
+94506,1,Danville,Contra Costa County,0,0,0,1,0.0,0.629,0.0,,,False,False
+94507,1,Alamo,Contra Costa County,1,0,1,0,1.0,0.494,1.0,0.01,0.0,False,False
+94508,1,Angwin,Napa County,0,0,0,1,0.0,0.206,0.0,,,False,False
+94509,58,Antioch,Contra Costa County,1,0,1,2,0.017,0.038,0.638,0.051,0.0,False,False
+94510,17,Benicia,Solano County,3,0,3,5,0.176,0.202,0.765,0.03,0.0,False,False
+94513,31,Brentwood,Contra Costa County,2,0,2,5,0.065,0.119,0.129,0.081,0.0,False,False
+94517,3,Clayton,Contra Costa County,0,0,0,0,0.0,0.088,0.0,,,False,False
+94518,11,Concord,Contra Costa County,0,0,0,2,0.0,0.084,0.636,,,False,False
+94521,17,Concord,Contra Costa County,1,0,1,0,0.059,0.05,0.765,0.026,0.0,False,False
+94525,7,Crockett,Contra Costa County,0,0,0,0,0.0,0.024,0.714,,,False,False
+94526,14,Danville,Contra Costa County,6,0,6,2,0.429,0.29,0.714,0.081,0.0,False,False
+94530,19,El Cerrito,Contra Costa County,3,0,3,2,0.158,0.156,0.895,0.028,0.0,False,False
+94531,23,Antioch,Contra Costa County,0,0,0,6,0.0,0.123,0.174,,,False,False
+94534,19,Fairfield,Solano County,8,0,8,3,0.421,0.247,0.842,0.056,0.0,False,False
+94542,10,Hayward,Alameda County,0,0,0,1,0.0,0.058,0.7,,,False,False
+94545,14,Hayward,Alameda County,4,0,4,2,0.286,0.182,0.571,0.068,0.0,False,False
+94546,34,Castro Valley,Alameda County,6,0,6,2,0.176,0.159,0.676,0.049,0.0,False,False
+94549,9,Lafayette,Contra Costa County,3,0,3,1,0.333,0.241,0.778,0.098,0.0,False,False
+94550,36,Livermore,Alameda County,4,0,4,11,0.111,0.202,0.833,0.055,0.0,False,False
+94551,21,Livermore,Alameda County,4,0,4,2,0.19,0.13,0.714,0.049,0.0,False,False
+94552,6,Castro Valley,Alameda County,1,0,1,3,0.167,0.391,0.0,0.006,0.0,False,False
+94553,36,Martinez,Contra Costa County,0,0,0,3,0.0,0.063,0.806,,,False,False
+94556,6,Moraga,Contra Costa County,1,0,1,0,0.167,0.175,0.833,0.006,0.0,False,False
+94559,31,Napa,Napa County,1,0,1,6,0.032,0.119,0.71,0.03,0.0,False,False
+94560,14,Newark,Alameda County,8,0,8,3,0.571,0.395,0.429,0.036,0.0,False,False
+94561,14,Oakley,Contra Costa County,1,0,1,2,0.071,0.11,0.286,0.001,0.0,False,False
+94563,3,Orinda,Contra Costa County,1,0,1,0,0.333,0.137,0.333,0.113,0.0,False,False
+94564,9,Pinole,Contra Costa County,0,0,0,2,0.0,0.104,0.444,,,False,False
+94565,74,Pittsburg,Contra Costa County,0,0,0,6,0.0,0.044,0.662,,,False,False
+94571,5,Rio Vista,Solano County,0,0,0,0,0.0,0.057,0.4,,,False,False
+94572,4,Rodeo,Contra Costa County,0,0,0,0,0.0,0.011,1.0,,,False,False
+94574,8,Saint Helena,Napa County,0,0,0,4,0.0,0.194,0.5,,,False,False
+94577,51,San Leandro,Alameda County,2,0,2,4,0.039,0.062,0.804,0.08,0.0,False,False
+94578,40,San Leandro,Alameda County,0,0,0,1,0.0,0.027,0.9,,,False,False
+94579,2,San Leandro,Alameda County,0,0,0,0,0.0,0.059,0.0,,,False,False
+94580,9,San Lorenzo,Alameda County,0,0,0,1,0.0,0.043,0.889,,,False,False
+94582,13,San Ramon,Contra Costa County,3,0,3,0,0.231,0.16,0.615,0.019,0.0,False,False
+94583,28,San Ramon,Contra Costa County,1,0,1,0,0.036,0.062,0.857,0.083,0.0,False,False
+94585,11,Suisun City,Solano County,2,0,2,5,0.182,0.232,0.455,0.101,0.0,False,False
+94589,27,Vallejo,Solano County,1,0,1,1,0.037,0.042,0.444,0.03,0.0,False,False
+94591,36,Vallejo,Solano County,4,0,4,2,0.111,0.092,0.611,0.024,0.0,False,False
+94595,4,Walnut Creek,Contra Costa County,0,0,0,1,0.0,0.175,0.5,,,False,False
+94597,31,Walnut Creek,Contra Costa County,3,0,3,6,0.097,0.13,0.806,0.025,0.0,False,False
+94599,3,Yountville,Napa County,1,0,1,1,0.333,0.233,0.333,0.135,0.0,False,False
+94601,43,Oakland,Alameda County,0,0,0,1,0.0,0.023,0.884,,,False,False
+94605,38,Oakland,Alameda County,0,0,0,3,0.0,0.039,0.921,,,False,False
+94610,42,Oakland,Alameda County,1,0,1,3,0.024,0.052,0.905,0.104,0.0,False,False
+94618,5,Oakland,Alameda County,1,0,1,1,0.2,0.106,0.8,0.193,0.0,False,False
+94619,19,Oakland,Alameda County,1,0,1,2,0.053,0.094,0.737,0.076,0.0,False,False
+94621,17,Oakland,Alameda County,1,0,1,2,0.059,0.075,0.765,0.147,0.0,False,False
+94706,6,Albany,Alameda County,0,0,0,0,0.0,0.02,0.833,,,False,False
+94707,3,Berkeley,Contra Costa County,0,0,0,0,0.0,0.027,1.0,,,False,False
+94709,35,Berkeley,Alameda County,2,0,2,10,0.057,0.131,0.971,0.013,0.0,False,False
+94801,15,Richmond,Contra Costa County,0,0,0,2,0.0,0.042,0.733,,,False,False
+94803,13,El Sobrante,Contra Costa County,3,0,3,1,0.231,0.106,0.692,0.042,0.0,False,False
+94805,3,Richmond,Contra Costa County,0,0,0,0,0.0,0.014,1.0,,,False,False
+94901,29,San Rafael,Marin County,0,0,0,3,0.0,0.047,0.897,,,False,False
+94904,3,Greenbrae,Marin County,0,0,0,0,0.0,0.081,0.667,,,False,False
+94920,5,Tiburon,Marin County,1,0,1,2,0.2,0.342,0.8,0.236,0.0,False,False
+94922,1,Bodega,Sonoma County,0,0,0,1,0.0,0.15,0.0,,,False,False
+94923,1,Bodega Bay,Sonoma County,0,0,0,1,0.0,0.312,0.0,,,False,False
+94925,9,Corte Madera,Marin County,3,0,3,1,0.333,0.238,0.778,0.059,0.0,False,False
+94928,52,Rohnert Park,Sonoma County,3,0,3,4,0.058,0.067,0.865,0.022,0.0,False,False
+94930,3,Fairfax,Marin County,0,0,0,0,0.0,0.041,0.667,,,False,False
+94931,3,Cotati,Sonoma County,1,0,1,0,0.333,0.239,0.667,0.014,0.0,False,False
+94933,1,Forest Knolls,Marin County,0,0,0,1,0.0,0.55,0.0,,,False,False
+94938,1,Lagunitas,Marin County,0,0,0,0,0.0,0.019,1.0,,,False,False
+94941,13,Mill Valley,Marin County,2,0,2,2,0.154,0.123,1.0,0.05,0.0,False,False
+94945,2,Novato,Marin County,0,0,0,0,0.0,0.012,0.5,,,False,False
+94947,9,Novato,Marin County,0,0,0,1,0.0,0.111,0.444,,,False,False
+94949,5,Novato,Marin County,1,0,1,1,0.2,0.214,0.8,0.049,0.0,False,False
+94951,2,Penngrove,Sonoma County,0,0,0,1,0.0,0.137,0.5,,,False,False
+94960,1,San Anselmo,Marin County,0,0,0,0,0.0,0.056,0.0,,,False,False
+95020,17,Gilroy,Santa Clara County,1,0,1,2,0.059,0.08,0.529,0.068,0.0,False,False
+95033,2,Los Gatos,Santa Clara County,0,0,0,0,0.0,0.081,0.0,,,False,False
+95037,20,Morgan Hill,Santa Clara County,4,0,4,4,0.2,0.204,0.4,0.078,0.0,False,False
+95046,1,San Martin,Santa Clara County,0,0,0,0,0.0,0.016,1.0,,,False,False
+95070,5,Saratoga,Santa Clara County,3,0,3,0,0.6,0.375,0.2,0.103,0.0,False,False
+95111,17,San Jose,Santa Clara County,2,0,2,2,0.118,0.13,0.529,0.079,0.0,False,False
+95116,16,San Jose,Santa Clara County,1,0,1,2,0.062,0.084,0.688,0.066,0.0,False,False
+95118,10,San Jose,Santa Clara County,1,0,1,3,0.1,0.228,0.6,0.048,0.0,False,False
+95119,3,San Jose,Santa Clara County,0,0,0,3,0.0,0.567,0.0,,,False,False
+95120,5,San Jose,Santa Clara County,3,0,3,2,0.6,0.566,0.0,0.151,0.0,False,False
+95121,14,San Jose,Santa Clara County,2,0,2,1,0.143,0.164,0.643,0.085,0.0,False,False
+95122,12,San Jose,Santa Clara County,0,0,0,1,0.0,0.052,0.917,,,False,False
+95125,28,San Jose,Santa Clara County,3,0,3,2,0.107,0.069,0.786,0.131,0.0,False,False
+95127,21,San Jose,Santa Clara County,2,0,2,2,0.095,0.091,0.476,0.075,0.0,False,False
+95129,46,San Jose,Santa Clara County,2,0,2,3,0.043,0.043,0.935,0.106,0.0,False,False
+95130,14,San Jose,Santa Clara County,4,0,4,0,0.286,0.197,0.571,0.06,0.0,False,False
+95131,27,San Jose,Santa Clara County,6,0,6,2,0.222,0.127,0.704,0.041,0.0,False,False
+95135,3,San Jose,Santa Clara County,0,0,0,2,0.0,0.153,0.0,,,False,False
+95138,8,San Jose,Santa Clara County,0,0,0,1,0.0,0.078,0.75,,,False,False
+95139,3,San Jose,Santa Clara County,0,0,0,2,0.0,0.143,0.0,,,False,False
+95148,6,San Jose,Santa Clara County,0,0,0,2,0.0,0.196,0.5,,,False,False
+95377,1,Tracy,Alameda County,0,0,0,0,0.0,0.073,0.0,,,False,False
+95401,31,Santa Rosa,Sonoma County,0,0,0,0,0.0,0.031,0.871,,,False,False
+95405,30,Santa Rosa,Sonoma County,0,0,0,3,0.0,0.062,0.733,,,False,False
+95407,24,Santa Rosa,Sonoma County,1,0,1,5,0.042,0.115,0.667,0.01,0.0,False,False
+95409,18,Santa Rosa,Sonoma County,1,0,1,4,0.056,0.156,0.389,0.046,0.0,False,False
+95421,1,Cazadero,Sonoma County,0,0,0,0,0.0,0.039,0.0,,,False,False
+95425,4,Cloverdale,Sonoma County,0,0,0,0,0.0,0.023,0.75,,,False,False
+95436,4,Forestville,Sonoma County,0,0,0,0,0.0,0.023,0.25,,,False,False
+95446,5,Guerneville,Sonoma County,0,0,0,1,0.0,0.087,0.0,,,False,False
+95448,3,Healdsburg,Sonoma County,1,0,1,0,0.333,0.289,0.333,0.014,0.0,False,False
+95450,1,Jenner,Sonoma County,1,0,1,0,1.0,0.302,0.0,0.042,0.0,False,False
+95452,3,Kenwood,Sonoma County,1,0,1,1,0.333,0.336,0.0,0.03,0.0,False,False
+95465,1,Occidental,Sonoma County,0,0,0,0,0.0,0.016,0.0,,,False,False
+95471,1,Rio Nido,Sonoma County,0,0,0,0,0.0,0.015,1.0,,,False,False
+95472,5,Sebastopol,Sonoma County,0,0,0,0,0.0,0.037,0.6,,,False,False
+95492,7,Windsor,Sonoma County,1,0,1,1,0.143,0.101,0.429,0.074,0.0,False,False
+95618,1,Davis,Solano County,1,0,1,0,1.0,0.425,0.0,0.086,0.0,False,False
+95620,5,Dixon,Solano County,1,0,1,0,0.2,0.198,0.0,0.094,0.0,False,False
+95688,28,Vacaville,Solano County,3,0,3,8,0.107,0.162,0.714,0.065,0.0,False,False

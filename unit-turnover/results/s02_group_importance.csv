@@ -1,0 +1,6 @@
+group,n_features,auc_drop
+last listing,6,0.0499
+tenancy history,6,0.0456
+unit,20,0.0143
+market,4,0.0059
+tract,12,-0.0009

@@ -1,0 +1,5 @@
+outcome,n,median_headroom,median_req_growth,median_rent_change,median_ann_growth,median_over_line_by,median_gap_years,share_apartment,share_large_landlord,median_prev_rent,mean_score
+caught (TP),1010,0.066,0.029,0.077,0.076,0.1,2.151,0.725,0.452,3400.0,0.482
+correctly cleared (TN),4744,0.33,0.185,0.04,0.039,-0.213,1.819,0.879,0.381,2385.0,0.029
+false alarm (FP),661,0.092,0.041,0.02,0.016,-0.05,2.146,0.595,0.319,3200.0,0.321
+missed (FN),392,0.211,0.115,0.148,0.161,0.056,1.811,0.903,0.543,2795.0,0.067

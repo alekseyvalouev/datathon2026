@@ -1,0 +1,7 @@
+model,features,params,val_AUC,AUC,AUC_lo,AUC_hi,PR_AUC,Brier,mean_pred,prevalence,budget_flagged,budget_precision,budget_recall,caught_top20pct,positives,seed_AUC_mean,seed_AUC_sd
+LightGBM,unit+headroom+market,"{'num_leaves': 15, 'min_child_samples': 20}",0.9031,0.8958,0.8873,0.9048,0.6987,0.1094,0.1319,0.206,0.245,0.5989,0.7126,900,1402,0.8965,0.0017
+Random forest,unit+headroom+market,"{'max_features': 0.5, 'min_samples_leaf': 5}",0.8986,0.8943,0.8855,0.903,0.6973,0.1077,0.14,0.206,0.2299,0.616,0.6876,889,1402,0.8943,0.0009
+LightGBM,+ tract (displacement workstream),"{'num_leaves': 15, 'min_child_samples': 20}",0.9091,0.9005,0.8923,0.9087,0.7195,0.1084,0.1277,0.206,0.2339,0.6244,0.709,913,1402,0.8992,0.0012
+Random forest,+ tract (displacement workstream),"{'max_features': 0.5, 'min_samples_leaf': 5}",0.9061,0.8971,0.8883,0.9055,0.7064,0.1075,0.135,0.206,0.2345,0.6184,0.704,897,1402,0.8971,0.0007
+LightGBM,+ tract + city jobs (all workstreams),"{'num_leaves': 15, 'min_child_samples': 50}",0.9097,0.8997,0.8913,0.908,0.7169,0.109,0.1269,0.206,0.2455,0.6044,0.7204,913,1402,0.9001,0.0012
+Random forest,+ tract + city jobs (all workstreams),"{'max_features': 0.5, 'min_samples_leaf': 5}",0.9064,0.8973,0.8883,0.9056,0.7067,0.1075,0.1345,0.206,0.2387,0.6203,0.719,901,1402,0.8978,0.0003

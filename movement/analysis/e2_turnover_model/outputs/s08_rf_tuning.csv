@@ -1,0 +1,19 @@
+task,max_features,min_samples_leaf,val_MAE,secs,val_PR_AUC
+regression,0.2,5,0.0424,0.821,
+regression,0.2,20,0.0421,0.8635,
+regression,0.2,50,0.0423,0.607,
+regression,0.33,5,0.0429,1.4298,
+regression,0.33,20,0.0427,1.0469,
+regression,0.33,50,0.0423,0.828,
+regression,0.5,5,0.0434,2.0049,
+regression,0.5,20,0.043,1.5453,
+regression,0.5,50,0.0427,1.2369,
+over-cap classifier,sqrt,1,,,0.3598
+over-cap classifier,sqrt,5,,,0.3508
+over-cap classifier,sqrt,20,,,0.3346
+over-cap classifier,0.33,1,,,0.3435
+over-cap classifier,0.33,5,,,0.3615
+over-cap classifier,0.33,20,,,0.3388
+over-cap classifier,0.5,1,,,0.321
+over-cap classifier,0.5,5,,,0.3377
+over-cap classifier,0.5,20,,,0.3335

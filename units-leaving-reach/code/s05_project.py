@@ -144,6 +144,14 @@ def main():
                 lines=lines, obs_by_year=obs_by_year,
                 fields=["lon", "lat", "county", "beds", "latest_rent", "lost_year", "latest_relist_year", "p[scenario][year]"])
     json.dump(dict(meta=meta, units=units), open(os.path.join(VIZ, "units.json"), "w"), separators=(",", ":"))
+
+    # ---- per-unit table for the neighbourhood roll-up (s09): exact coordinates stay local, never go on the page
+    ut = last[["zpid", "county", "city", "zipcode", "tract", "lat", "lon", "beds", "homeType", "next_last", "thr", "y", "year"]].copy()
+    for si, s_ in enumerate(("frozen", "trend")):
+        for Y in YEARS:
+            ut[f"p_{s_}_{Y}"] = ut.zpid.map(dict(zip(stock.zpid, pr[(s_, Y)])))
+            ut[f"thr_{Y}"] = ut.zpid.map(dict(zip(stock.zpid, probs[(s_, Y, "thr")])))
+    ut.to_parquet(os.path.join(RES, "s05_unit_projections.parquet"), index=False)
     print("units", len(units), "stock", len(stock), "json KB", os.path.getsize(os.path.join(VIZ, "units.json")) // 1024)
 
 if __name__ == "__main__":
