@@ -69,6 +69,8 @@ def market_index():
     con = duckdb.connect(DB, read_only=True)
     r = con.execute("""select distinct county, zipcode, lat, lon, least(coalesce(beds,0),4) b, homeType='APARTMENT' apt,
                        start_d, first_p from rep where first_p between 500 and 30000""").df(); con.close()
+    # fixed row order: DuckDB returns rows in arbitrary order, which changes float sums in the last bits
+    r = r.sort_values(["county", "zipcode", "start_d", "lat", "lon", "b", "apt", "first_p"], kind="mergesort").reset_index(drop=True)
     r["lp"] = np.log(r.first_p)
     cell = r[r.start_d < TRAIN_END].groupby(["zipcode", "b", "apt"]).lp.mean().rename("cm")
     r = r.join(cell, on=["zipcode", "b", "apt"]).dropna(subset=["cm"])

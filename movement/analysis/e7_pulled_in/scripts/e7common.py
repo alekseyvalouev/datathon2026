@@ -6,12 +6,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 ANALYSIS = ROOT.parent
 REPO = ANALYSIS.parent
-RAW_REDDIT = REPO / "reddit_posts-003.csv"
+import os  # noqa: E402
+DATA_DIR = Path(os.environ.get("DATATHON_DATA") or REPO.parent / "data")   # see scripts/setup_data.sh
+RAW_REDDIT = DATA_DIR / "reddit_posts.csv"
 INDEED_DB = ANALYSIS / "cache" / "indeed.duckdb"
 E3 = ANALYSIS / "e3_mover_ledger"
 E4 = ANALYSIS / "e4_exit_classifier"
 E2 = ANALYSIS / "e2_turnover_model"
-GM_DIR = REPO / "data" / "[For Students] 8th Datathon For Social Good"
+GM_DIR = DATA_DIR / "datathon_pack"
 DATA, OUT, FIGS, LABELS = ROOT / "data", ROOT / "outputs", ROOT / "figs", ROOT / "labels"
 for d in (DATA, OUT, FIGS, LABELS, LABELS / "raw"):
     d.mkdir(exist_ok=True)

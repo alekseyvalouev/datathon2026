@@ -4,7 +4,8 @@ import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
-DATA = os.path.join(ROOT, "data/[For Students] 8th Datathon For Social Good")
+DATA_DIR = os.environ.get("DATATHON_DATA") or os.path.join(os.path.dirname(ROOT), "data")   # see scripts/setup_data.sh
+DATA = os.path.join(DATA_DIR, "datathon_pack")
 PLACES_CSV = os.path.join(DATA, "google maps dataset/google_maps.csv")
 REVIEWS_CSV = os.path.join(DATA, "google maps reviews dataset/google_maps_reviews.csv")
 DB = os.path.join(ROOT, "analysis/cache/zillow.duckdb")

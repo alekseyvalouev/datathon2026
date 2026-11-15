@@ -2,5 +2,5 @@ model,features,val_AUC,params,n_trees
 LightGBM,unit+headroom+market,0.9030779569892473,"{'num_leaves': 15, 'min_child_samples': 20}",201.0
 LightGBM,+ tract (displacement workstream),0.9090927419354838,"{'num_leaves': 15, 'min_child_samples': 20}",141.0
 LightGBM,+ tract + city jobs (all workstreams),0.9096774193548386,"{'num_leaves': 15, 'min_child_samples': 50}",135.0
-Logistic (L2),all,0.8929905913978495,C=10,
+Logistic (L2),all,0.8929704301075269,C=10,
 "Logistic, headroom only",headroom + gap,0.889690860215054,C=0.1,

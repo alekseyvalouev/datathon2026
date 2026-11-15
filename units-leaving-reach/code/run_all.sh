@@ -1,19 +1,24 @@
 #!/usr/bin/env bash
-# units-leaving-reach: raw data -> every reported number. ~2 minutes after the upstream steps exist.
-# Upstream (run once, each from raw data; see their READMEs):
-#   python3 analysis/common/build_zillow.py                 # raw Zillow CSVs -> analysis/cache/zillow.duckdb
-#   python3 analysis/e2_turnover_model/run_all.py           # same-unit turnover pairs + UDP tract join
-#   python3 analysis/e6_unit_replacement/run_all.py         # CA HCD income limits 2022-2026
-#   bash datathon2026/displacement-early-warning/code/run_all.sh   # tract features + backtest risk score
-#   ai-labor-distribution/code (asset_t3.py)                # city job mix from Indeed postings
+# units-leaving-reach: every reported number and the map page. About 2 minutes once its inputs exist.
+# Inputs (see code/common.py): three tables rebuilt by the movement workstream, three committed result tables of
+# displacement-early-warning and ai-labor-distribution. From the repo root, the movement steps are:
+#   python3 movement/analysis/common/build_zillow.py         # raw Zillow CSVs -> movement/analysis/cache/zillow.duckdb
+#   python3 movement/analysis/e2_turnover_model/run_all.py   # same-unit turnover pairs + UDP tract join
+#   python3 movement/analysis/e6_unit_replacement/run_all.py # CA HCD income limits 2022-2026
+# or simply: bash scripts/reproduce.sh
 set -euo pipefail
+# Single-threaded linear algebra: multithreaded BLAS changes logistic-regression results in the 5th decimal
+# from run to run. With this, reruns reproduce every table byte for byte.
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1
 cd "$(dirname "$0")"
-UP=../../..
-for f in analysis/e2_turnover_model/outputs/sample.parquet analysis/e6_unit_replacement/outputs/income_limits_bay.csv \
-         datathon2026/displacement-early-warning/results/e5_tract_table.csv \
-         datathon2026/displacement-early-warning/results/e2_predictions.csv \
-         datathon2026/ai-labor-distribution/results/asset_city_jobs_housing.csv; do
-  [ -f "$UP/$f" ] || { echo "missing upstream input: $f (see header of this script)"; exit 1; }
+REPO=../..
+for f in movement/analysis/cache/zillow.duckdb \
+         movement/analysis/e2_turnover_model/outputs/sample.parquet \
+         movement/analysis/e6_unit_replacement/outputs/income_limits_bay.csv \
+         displacement-early-warning/results/e5_tract_table.csv \
+         displacement-early-warning/results/e2_predictions.csv \
+         ai-labor-distribution/results/asset_city_jobs_housing.csv; do
+  [ -f "$REPO/$f" ] || { echo "missing input: $f (see the header of this script)"; exit 1; }
 done
 python3 s01_build.py
 python3 s02_hand_check.py
