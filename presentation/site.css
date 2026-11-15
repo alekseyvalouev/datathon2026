@@ -221,3 +221,25 @@ mark { background: var(--ink); color: var(--on-ink); padding: 0 0.14em; -webkit-
 .mapfig h3 { font-size: var(--step-3); line-height: 1.06; }
 .mapfig__img { display: block; overflow-x: auto; }
 .mapfig__img img { display: block; width: 100%; min-width: 44rem; height: auto; }
+
+/* line chart: affordable listings over time */
+.cover .cover__title { font: 700 var(--step-2)/1.15 var(--sans); letter-spacing: -0.02em; color: inherit; max-width: 20ch; margin-bottom: 1rem; }
+.lcwrap { position: relative; margin-bottom: 1.75rem; }
+.lc { display: block; width: 100%; height: auto; overflow: visible; touch-action: pan-y; }
+.lc__grid { stroke: var(--rule); stroke-width: 1; }
+.lc__base { stroke: var(--ink); }
+.lc__tick { font: 500 11px var(--sans); fill: var(--muted); font-variant-numeric: tabular-nums; }
+.lc__line { fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.lc__dot { stroke: var(--paper); stroke-width: 2; }
+.lc__lab { font: 500 12px var(--sans); fill: var(--ink-2); }
+.lc__val { font-weight: 700; fill: var(--ink); }
+.lc__cross { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 3 3; pointer-events: none; }
+.c-ink { stroke: var(--ink); fill: var(--ink); background: var(--ink); }
+.c-brick { stroke: var(--brick); fill: var(--brick); background: var(--brick); }
+.c-taupe { stroke: #847c72; fill: #847c72; background: #847c72; }
+.lc__line.c-ink, .lc__line.c-brick, .lc__line.c-taupe { fill: none; }
+.lc__tip { position: absolute; top: 0; width: 150px; padding: 0.5rem 0.65rem; background: var(--ink); color: var(--on-ink); font-size: 0.8125rem; line-height: 1.5; pointer-events: none; }
+.lc__tip b, .lc__tip span { display: flex; align-items: center; gap: 0.4rem; }
+.lc__tip i { width: 8px; height: 8px; border-radius: 50%; outline: 1px solid var(--on-ink-2); }
+.lc__tip em { margin-left: auto; font-style: normal; font-weight: 700; font-variant-numeric: tabular-nums; }
+.lc__cross[hidden] { display: none; }
