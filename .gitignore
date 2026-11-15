@@ -6,6 +6,11 @@
 
 # Large source/intermediate datasets
 **/data/
+*.duckdb
+**/cache/
+**/raw/
+**/external/
+**/work/
 indeed_job_listings*.csv
 reddit_posts*.csv
 zillow*.csv

@@ -21,7 +21,7 @@ def main():
     con = duckdb.connect(DB, read_only=True)
     rows, raw = [], []
     for r in s.itertuples():
-        ev = con.execute("select d, event, p from ev where zpid=? and rental order by d", [str(r.zpid)]).df()
+        ev = con.execute("select d, event, p from ev where zpid=? and rental order by d, k desc", [str(r.zpid)]).df()
         prev = ev[(ev.d >= r.start_d) & (ev.d <= r.end_d) & ev.p.notna() & (ev.event != "Listing removed")]
         nxt = ev[(ev.d == r.next_start) & (ev.event == "Listed for rent")]
         raw_last = prev.p.iloc[-1] if len(prev) else np.nan

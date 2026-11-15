@@ -12,7 +12,11 @@ for y in (2023, 2024, 2025, 2026):
 for f, u in DL.items():
     p = os.path.join(RAW, f)
     if not os.path.exists(p):
-        print("downloading", u); urllib.request.urlretrieve(u, p)
+        print("downloading", u)
+        # some hosts (Freddie Mac, CA HCD) return 403 to Python's default user agent
+        req = urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0 (compatible; datathon-reproduction)"})
+        with urllib.request.urlopen(req, timeout=120) as r, open(p, "wb") as fh:
+            fh.write(r.read())
 steps = [("s00_extract_text.py", False), ("s01_income_limits.py", True), ("s02_income_gate.py", False),
          ("s03_tenure.py", False), ("s04_text.py", False), ("s05_hand_check_sample.py", False)]
 for s, isolated in steps:

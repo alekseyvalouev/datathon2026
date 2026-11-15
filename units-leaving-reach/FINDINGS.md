@@ -21,21 +21,21 @@ Every number below traces to a CSV in `results/` written by a script in `code/`.
 ## Headline numbers
 | | Finding | Source |
 |---|---|---|
-| **0.90 vs 0.85** | Test AUC, LightGBM 0.900 [0.891, 0.909] against the legal-max rule 0.848 [0.838, 0.860]. Gain +0.051 [0.045, 0.058], 6,808 pairs re-listed in 2026 | `s03_test_metrics`, `s03_comparisons` |
-| **914 vs 819** | Of 1,403 units that left reach in 2026, how many each method catches when both flag the same 20% of units (1,361) | `s03_test_predictions` |
+| **0.90 vs 0.85** | Test AUC, LightGBM 0.900 [0.891, 0.908] against the legal-max rule 0.848 [0.837, 0.860]. Gain +0.051 [0.045, 0.058], 6,807 pairs re-listed in 2026 | `s03_test_metrics`, `s03_comparisons` |
+| **913 vs 818** | Of 1,402 units that left reach in 2026, how many each method catches when both flag the same 20% of units (1,361) | `s03_test_predictions` |
 | **0.46** | Test AUC of the UDP "low-income or gentrifying tract" rule. It ranks loss of reach backwards | `s03_test_metrics` |
 | **0.62 vs 0.79** | Share of losses caught at a 20% budget in low-income vs exclusive UDP tracts; with a separate 20% list per typology group, 0.76 vs 0.65 | `s03_subgroups`, `s04_budget_allocation` |
 
 ## 1. The label [s01, hand check]
-- **Population.** Movement E2's 23,306 same-unit turnover pairs, restricted to re-listings from June 2022 on (the first year of parsed income limits). We keep the 12,011 units whose previous rent a household at **80% of area median income** could qualify for. Qualifying means income ≥ 3× rent, with household size = bedrooms + 1, using the CA HCD limit in force at re-listing.
+- **Population.** Movement E2's 23,306 same-unit turnover pairs, restricted to re-listings from June 2022 on (the first year of parsed income limits). We keep the 12,010 units whose previous rent a household at **80% of area median income** could qualify for. Qualifying means income ≥ 3× rent, with household size = bedrooms + 1, using the CA HCD limit in force at re-listing.
 - **Label.** The unit **left reach** if the next tenancy's **settled asking rent** is above that same limit. Holding the limit fixed isolates the price move.
   - The settled ask is the last ask of the re-listing episode, after any cuts.
   - The hand check found first asks that crossed the line and were cut back below it within weeks, so the first ask is only a robustness check.
-- **Rates.** 18.9% overall (2,275 of 12,011; 20.5% under the first-ask label). Train (re-listed before July 2025) 17.8%, n=4,061. Validation (second half of 2025) 13.1%, n=1,142. **Test (2026) 20.6%, n=6,808.**
+- **Rates.** 18.9% overall (2,274 of 12,010; 20.5% under the first-ask label). Train (re-listed before July 2025) 17.8%, n=4,061. Validation (second half of 2025) 13.1%, n=1,142. **Test (2026) 20.6%, n=6,807.**
 - **By county:** San Francisco 55% and San Mateo 37% in 2026, against 7–11% in Contra Costa, Napa, Marin, Solano and Sonoma.
 - **Hand check (30 pairs).**
   - Every price, label and join reproduces from the raw events (30/30).
-  - By reading: 22 correct, 5 correct with caveats, 3 questionable. All 3 questionable are very large jumps that look like zpid reuse.
+  - By reading: 23 correct, 5 correct with caveats, 2 questionable. Both questionable cases are very large jumps that look like zpid reuse.
   - Dropping jumps above 30%/yr leaves the result unchanged (§5).
 
 ## 2. Model against baselines [s03]
@@ -44,24 +44,24 @@ Validation was used to tune the models and set thresholds. Final models were ref
 | Model | Test AUC [95%] | PR-AUC | Recall at 20% budget | Precision at 20% budget |
 |---|---|---|---|---|
 | Majority class (never leaves) | 0.500 | 0.206 | — | — |
-| UDP typology rule (low-income or gentrifying tract) | **0.456** [0.442, 0.470] | 0.194 | — | — |
-| ZIP-trend rule (ZIP median turnover change vs growth needed to cross) | 0.844 [0.833, 0.855] | 0.608 | 0.593 | 0.564 |
-| **Legal-max rule** (would cross if rent rose 10%/yr, the AB 1482 maximum) | 0.848 [0.838, 0.860] | 0.625 | 0.604 | 0.583 |
-| Logistic, headroom only | 0.862 [0.852, 0.872] | 0.616 | 0.594 | 0.597 |
-| Logistic (L2), all features | 0.893 [0.885, 0.902] | 0.703 | 0.661 | 0.636 |
-| LightGBM, unit + headroom + market | 0.896 [0.888, 0.905] | 0.699 | 0.713 | 0.599 |
-| LightGBM, + tract features | 0.901 [0.892, 0.909] | 0.720 | 0.709 | 0.625 |
-| **LightGBM, + tract + city jobs (main)** | **0.900** [0.891, 0.909] | 0.717 | 0.721 | 0.605 |
+| UDP typology rule (low-income or gentrifying tract) | **0.456** [0.443, 0.469] | 0.194 | — | — |
+| ZIP-trend rule (ZIP median turnover change vs growth needed to cross) | 0.844 [0.833, 0.856] | 0.607 | 0.593 | 0.564 |
+| **Legal-max rule** (would cross if rent rose 10%/yr, the AB 1482 maximum) | 0.848 [0.837, 0.860] | 0.624 | 0.603 | 0.582 |
+| Logistic, headroom only | 0.861 [0.851, 0.872] | 0.615 | 0.594 | 0.597 |
+| Logistic (L2), all features | 0.893 [0.885, 0.902] | 0.702 | 0.660 | 0.636 |
+| LightGBM, unit + headroom + market | 0.896 [0.887, 0.905] | 0.699 | 0.713 | 0.599 |
+| LightGBM, + tract features | 0.900 [0.892, 0.909] | 0.719 | 0.709 | 0.624 |
+| **LightGBM, + tract + city jobs (main)** | **0.900** [0.891, 0.908] | 0.717 | 0.720 | 0.604 |
 
-- **How the budget columns were set.** "Budget" columns use a threshold at the 80th percentile of *validation* scores. Because 2026 scores shifted, that flags 21–25% of test units depending on the model. At exactly 20% of test units, the model catches 914 losses and the rule 819.
+- **How the budget columns were set.** "Budget" columns use a threshold at the 80th percentile of *validation* scores. Because 2026 scores shifted, that flags 21–25% of test units depending on the model. At exactly 20% of test units, the model catches 913 losses and the rule 818.
 - **Gains against baselines** (paired bootstrap, 1,000 draws):
   - vs legal-max rule: +0.051 [0.045, 0.058]
   - vs headroom-only logistic: +0.038 [0.033, 0.044]
   - vs logistic with all features: +0.007 [0.002, 0.011]
 - **What the model uses.** Shuffling a feature group drops test AUC by:
-  - headroom (how far below the line and the yearly growth needed to cross): 0.26
+  - headroom (how far below the line and the yearly growth needed to cross): 0.27
   - market (county rent index, ZIP turnover history): 0.030
-  - tract: 0.013
+  - tract: 0.014
   - unit: 0.008
   - city jobs: 0.002
 - **Calibration is poor in 2026.** In the top decile, mean prediction is 0.62 against 0.81 observed; deciles 5–7 under-predict by 2–3×. Validation prevalence (13%) was lower than test (21%), so recalibrating on validation cannot fix this. **Use the score as a ranking, not a probability.**
@@ -85,14 +85,14 @@ Validation was used to tune the models and set thresholds. Final models were ref
 | UDP low-income | 1,474 | 15.1% | 0.895 | 0.62 | 0.52 | 0.54 |
 | UDP gentrifying | 971 | 18.8% | 0.913 | 0.62 | 0.54 | 0.47 |
 | UDP moderate | 2,647 | 19.4% | 0.895 | 0.73 | 0.63 | 0.67 |
-| UDP exclusive | 1,640 | 28.5% | 0.905 | 0.79 | 0.64 | 0.64 |
-| Majority-renter tract | 4,402 | 21.8% | 0.912 | 0.67 | 0.53 | 0.50 |
+| UDP exclusive | 1,639 | 28.5% | 0.905 | 0.79 | 0.64 | 0.63 |
+| Majority-renter tract | 4,401 | 21.8% | 0.912 | 0.67 | 0.53 | 0.50 |
 | Majority-owner tract | 2,330 | 18.3% | 0.903 | 0.83 | 0.77 | 0.85 |
 | Low-income tract (2018 tercile) | 2,742 | 12.6% | 0.896 | 0.63 | 0.56 | 0.58 |
-| High-income tract | 1,737 | 36.1% | 0.899 | 0.81 | 0.63 | 0.61 |
+| High-income tract | 1,736 | 36.1% | 0.899 | 0.81 | 0.63 | 0.61 |
 | Majority people of color | 4,899 | 19.9% | 0.907 | 0.71 | 0.60 | 0.59 |
-| Majority white | 1,833 | 22.5% | 0.886 | 0.74 | 0.62 | 0.66 |
-| Apartment | 5,648 | 19.2% | 0.910 | 0.67 | 0.53 | 0.54 |
+| Majority white | 1,832 | 22.4% | 0.886 | 0.74 | 0.62 | 0.66 |
+| Apartment | 5,647 | 19.2% | 0.910 | 0.67 | 0.53 | 0.53 |
 | House / condo / townhouse | 1,160 | 27.2% | 0.881 | 0.88 | 0.85 | 0.90 |
 | Large manager (200+ units) | 2,690 | 24.9% | 0.897 | 0.68 | 0.53 | 0.50 |
 
@@ -102,8 +102,8 @@ Validation was used to tune the models and set thresholds. Final models were ref
 
 | Policy | Units flagged | Losses caught | Recall: low-income / gentrifying / moderate / exclusive |
 |---|---|---|---|
-| One regional top-20% list | 1,672 | 1,011 (72%) | 0.62 / 0.62 / 0.73 / 0.79 |
-| Top 20% inside each UDP group | 1,490 | 938 (67%) | **0.76 / 0.68** / 0.64 / 0.65 |
+| One regional top-20% list | 1,671 | 1,010 (72%) | 0.62 / 0.62 / 0.73 / 0.79 |
+| Top 20% inside each UDP group | 1,489 | 937 (67%) | **0.76 / 0.68** / 0.64 / 0.65 |
 
 Per-group lists even out recall at a cost of 73 losses caught and lower precision in low-income tracts (0.46 vs 0.55). That trade-off is a policy choice; the model doesn't settle it.
 
@@ -116,12 +116,12 @@ Per-group lists even out recall at a cost of 73 losses caught and lower precisio
 ## 5. Robustness [s04]
 | Check | Test n | Leave rate | Model AUC | Rule AUC | Gain [95%] |
 |---|---|---|---|---|---|
-| Main | 6,808 | 20.6% | 0.900 | 0.848 | +0.051 [0.044, 0.057] |
-| First ask instead of settled ask | 6,808 | 21.0% | 0.901 | 0.856 | +0.045 [0.040, 0.051] |
-| Drop jumps > 30%/yr (likely unit swaps) | 6,680 | 19.8% | 0.907 | 0.868 | +0.039 [0.035, 0.044] |
+| Main | 6,807 | 20.6% | 0.900 | 0.848 | +0.051 [0.045, 0.058] |
+| First ask instead of settled ask | 6,807 | 21.0% | 0.901 | 0.856 | +0.045 [0.039, 0.050] |
+| Drop jumps > 30%/yr (likely unit swaps) | 6,679 | 19.8% | 0.907 | 0.868 | +0.039 [0.034, 0.044] |
 | 50% AMI line (very low income) | 1,113 | 55.9% | 0.795 | 0.747 | +0.048 [0.030, 0.068] |
-| 2.5× income rule | 8,193 | 10.8% | 0.949 | 0.878 | +0.071 [0.061, 0.080] |
-| Units never seen in train or validation | 4,966 | 22.3% | 0.901 | 0.860 | +0.041 [0.035, 0.048] |
+| 2.5× income rule | 8,192 | 10.8% | 0.949 | 0.878 | +0.071 [0.062, 0.080] |
+| Units never seen in train or validation | 4,965 | 22.3% | 0.901 | 0.860 | +0.041 [0.035, 0.048] |
 
 **Leave-one-county-out:** the county is excluded from training *and* from the ZIP and county history encodings, then tested on its 2026 pairs.
 - **Model ahead:** Alameda +0.016 [0.007, 0.024], Marin +0.048 [0.006, 0.104], San Francisco +0.038 [0.024, 0.052].

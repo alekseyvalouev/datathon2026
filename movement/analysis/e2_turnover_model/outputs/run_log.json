@@ -42,31 +42,31 @@
  },
  "thresholds_from_val": {
   "lgb": 0.15558783879981583,
-  "logit": 0.18849975681637754,
+  "logit": 0.18849975681637757,
   "ziprate": 0.09747513568560738
  },
  "test": {
   "n": 9159,
   "prevalence": 0.22666229937766133,
-  "mean_r": 0.06527625067746154,
-  "median_r": 0.04684316063028349,
-  "lgb_logtarget_mae": 0.04935334715713148,
-  "lgb_trainonly_mae": 0.05021496643086767,
-  "lgb_trainonly_ap": 0.5614847249130703,
+  "mean_r": 0.06526811667206936,
+  "median_r": 0.04684058641242017,
+  "lgb_logtarget_mae": 0.04935974116175986,
+  "lgb_trainonly_mae": 0.05021768846144712,
+  "lgb_trainonly_ap": 0.5615716040430271,
   "train_mean_r": 0.03361452186502615,
   "train_prev": 0.10291934685799109
  },
  "robustness": {
-  "median_r_next_first": 0.04684316063028349,
-  "median_r_next_last": 0.045097265304326006,
+  "median_r_next_first": 0.04684058641242017,
+  "median_r_next_last": 0.04507712452533186,
   "share_over_cap_next_last": 0.22611638825199257
  },
  "zip": {
   "n_zips": 256,
   "n_zips_n20": 133,
   "corr_pred_obs_median": 0.842341410501224,
-  "corr_pred_obs_share": 0.8048598896282397,
-  "overall_median_premium_month": 117.70646047509263,
-  "overall_mean_premium_month": 262.40154303187495
+  "corr_pred_obs_share": 0.8048119660782865,
+  "overall_median_premium_month": 117.40714675611343,
+  "overall_mean_premium_month": 262.2836771758804
  }
 }

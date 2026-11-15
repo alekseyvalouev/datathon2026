@@ -3,7 +3,10 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-RAW_CSV = ROOT.parents[1] / "reddit_posts-003.csv"
+import os  # noqa: E402
+# Raw data lives outside git: DATATHON_DATA, default <repo>/data (see scripts/setup_data.sh)
+DATA_DIR = Path(os.environ.get("DATATHON_DATA") or ROOT.parents[2] / "data")
+RAW_CSV = DATA_DIR / "reddit_posts.csv"
 DATA = ROOT / "data"
 LABELS = ROOT / "labels"
 OUT = ROOT / "outputs"

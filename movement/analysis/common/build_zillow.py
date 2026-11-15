@@ -7,11 +7,13 @@ Usage: python3 analysis/common/build_zillow.py
 """
 import duckdb, os
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-D = os.path.join(ROOT, "data/[For Students] 8th Datathon For Social Good/zillow housing dataset/")
-FILES = [D + "Zillow_part1.csv", os.path.join(ROOT, "zillow_part2-005.csv"), D + "zillow_part3.csv"]
+# Raw data lives outside git: DATATHON_DATA, default <repo>/data, laid out by scripts/setup_data.sh
+DATA_DIR = os.environ.get("DATATHON_DATA") or os.path.join(os.path.dirname(ROOT), "data")
+FILES = [os.path.join(DATA_DIR, "zillow", f) for f in ("Zillow_part1.csv", "zillow_part2.csv", "zillow_part3.csv")]
 COLS = ("zpid,city,county,zipcode,state,homeStatus,homeType,price,zestimate,rentZestimate,bedrooms,bathrooms,"
         "livingArea,yearBuilt,latitude,longitude,lastSoldPrice,dateSold,daysOnZillow,priceHistory,taxHistory,"
         "isNonOwnerOccupied,countyFIPS,is_flipped_within_12_months,listing_provided_by,is_listed_by_management_company")
+os.makedirs(os.path.join(ROOT, "analysis/cache"), exist_ok=True)
 con = duckdb.connect(os.path.join(ROOT, "analysis/cache/zillow.duckdb"))
 parts = []
 for i, f in enumerate(FILES):
@@ -24,17 +26,22 @@ con.execute("""create or replace table ev as
 select zpid, county, city, zipcode, homeStatus, homeType, try_cast(bedrooms as double) beds,
   try_cast(bathrooms as double) baths, try_cast(livingArea as double) sqft, try_cast(yearBuilt as int) yearBuilt,
   try_cast(latitude as double) lat, try_cast(longitude as double) lon,
-  e->>'date' as d, e->>'event' as event, try_cast(e->>'price' as double) as p, (e->>'postingIsRental')='true' as rental
-from (select *, unnest(from_json(priceHistory, '["JSON"]')) e from z where priceHistory like '[%')""")
+  e->>'date' as d, e->>'event' as event, try_cast(e->>'price' as double) as p, (e->>'postingIsRental')='true' as rental,
+  k, (e->>'date') || '#' || lpad((1000000 - k)::varchar, 7, '0') as sk
+from (select *, unnest(h) e, generate_subscripts(h, 1) k
+      from (select *, from_json(priceHistory, '["JSON"]') h from z where priceHistory like '[%'))""")
+# k = position in Zillow's priceHistory (newest first), so on the same date a smaller k is the later event.
+# sk sorts events in time with that tie-break; without it, same-day events were ordered arbitrarily and
+# 71 of 145,870 rental episodes could get a different last price on each build.
 con.execute("""create or replace table rep as
 with r as (select *, sum(case when event='Listed for rent' then 1 else 0 end) over (partition by zpid order by d,
-             case event when 'Listed for rent' then 0 else 1 end rows unbounded preceding) ep from ev where rental),
+             case event when 'Listed for rent' then 0 else 1 end, k desc rows unbounded preceding) ep from ev where rental),
 e as (select zpid, any_value(county) county, any_value(city) city, any_value(zipcode) zipcode, any_value(homeType) homeType,
        any_value(beds) beds, any_value(baths) baths, any_value(sqft) sqft, any_value(yearBuilt) yearBuilt,
        any_value(lat) lat, any_value(lon) lon, ep,
        min(d) filter (where event='Listed for rent') start_d, max(d) end_d,
-       arg_max(p, d) filter (where p is not null and event<>'Listing removed') last_p,
-       arg_min(p, d) filter (where event='Listed for rent') first_p,
+       arg_max(p, sk) filter (where p is not null and event<>'Listing removed') last_p,
+       arg_min(p, sk) filter (where event='Listed for rent') first_p,
        count(*) filter (where event='Price change') n_changes
       from r where ep>0 group by zpid, ep)
 select * from e where start_d is not null and last_p between 500 and 30000""")

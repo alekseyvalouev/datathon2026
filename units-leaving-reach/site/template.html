@@ -230,7 +230,7 @@ footer { font-size: 12px; color: var(--ink-3); }
     <div>
       <h3>How the projection works</h3>
       <ul>
-        <li>A LightGBM classifier trained on 12,011 observed turnovers scores each unit's chance of leaving reach if it turns over in a given year. On held-out 2026 re-listings it scored AUC 0.90, against 0.85 for a rule based on the legal 10% rent-increase cap.</li>
+        <li>A LightGBM classifier trained on <span id="nPairs">12,010</span> observed turnovers scores each unit's chance of leaving reach if it turns over in a given year. On held-out 2026 re-listings it scored AUC 0.90, against 0.85 for a rule based on the legal 10% rent-increase cap.</li>
         <li>Chance out of reach by year Y = 1 − ∏ (1 − turnover rate × that year's score), using the turnover-rate slider.</li>
         <li>Income limits grow at each county's 2022–26 rate (capped at 6% a year). County rents either keep their trailing 2026 trend or freeze.</li>
       </ul>
@@ -238,7 +238,7 @@ footer { font-size: 12px; color: var(--ink-3); }
     <div>
       <h3>Read with care</h3>
       <ul>
-        <li>Dots are the 9,404 units Zillow showed listed for rent at least twice, rounded to about 100 m. Units that never return to market are not here.</li>
+        <li>Dots are the <span id="nUnits">9,403</span> units Zillow showed listed for rent at least twice, rounded to about 100 m. Units that never return to market are not here.</li>
         <li>On 2026 data the model under-predicted for apartments, renter-majority tracts and large landlords, so projections there are likely low.</li>
         <li>Each year is scored from the unit's last observed rent. A unit that turns over and stays in reach would start from a new rent, which the projection ignores. Treat the maps as scenarios, not forecasts for any single building.</li>
       </ul>
@@ -486,6 +486,8 @@ playBtn.addEventListener("click", () => {
   }, 900);
 });
 document.getElementById("sfLine").textContent = "$" + fmt(DATA.meta.lines["San Francisco"]["2026"]["2"]);
+document.getElementById("nPairs").textContent = fmt(DATA.meta.n_pairs);
+document.getElementById("nUnits").textContent = fmt(units.length);
 
 // ---------- theme + resize
 function rethemed() { readColors(); render(); }

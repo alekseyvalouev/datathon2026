@@ -1,12 +1,12 @@
 policy,group,n,flagged,recall,precision,units_caught,units_flagged
-regional,ALL,6808,0.246,0.721,0.605,1011,1672
-regional,exclusive,1640,0.343,0.791,0.657,370,563
+regional,ALL,6807,0.245,0.72,0.604,1010,1671
+regional,exclusive,1639,0.343,0.79,0.657,369,562
 regional,gentrifying,971,0.173,0.623,0.679,114,168
 regional,low_income,1474,0.171,0.622,0.548,138,252
 regional,moderate,2647,0.247,0.73,0.573,375,655
 regional,unmatched,76,0.447,0.875,0.412,14,34
-within_group,ALL,6808,0.219,0.669,0.63,938,1490
-within_group,exclusive,1640,0.24,0.652,0.776,305,393
+within_group,ALL,6807,0.219,0.668,0.629,937,1489
+within_group,exclusive,1639,0.239,0.651,0.776,304,392
 within_group,gentrifying,971,0.198,0.678,0.646,124,192
 within_group,low_income,1474,0.246,0.757,0.463,168,363
 within_group,moderate,2647,0.195,0.644,0.641,331,516

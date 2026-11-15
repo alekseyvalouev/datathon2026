@@ -9,21 +9,23 @@ Predicts, at re-listing, whether a Bay Area rental that a household at 80% of ar
 Results, nulls and limits are in **[FINDINGS.md](FINDINGS.md)**. The label and join audit is in [memos/hand_check.md](memos/hand_check.md).
 
 ## Reproduce
+From the repo root, after `bash scripts/setup_data.sh <downloads folder>` (see the repo README):
 ```bash
-# upstream, once (each from raw data):
-python3 analysis/common/build_zillow.py
-python3 analysis/e2_turnover_model/run_all.py
-python3 analysis/e6_unit_replacement/run_all.py
-bash datathon2026/displacement-early-warning/code/run_all.sh
-# ai-labor-distribution/code/asset_t3.py writes results/asset_city_jobs_housing.csv
-
-# this workstream (~1 min):
-bash datathon2026/units-leaving-reach/code/run_all.sh
+bash scripts/reproduce.sh      # Zillow cache -> movement E2, E6 -> this workstream (~10 min)
 ```
-Dependencies: python3, pandas, numpy, scikit-learn 1.7, lightgbm 4.7, duckdb, matplotlib, pyarrow. The pipeline is deterministic: fixed seeds, `deterministic=True` LightGBM, and stable row order.
+That runs, in order:
+```bash
+python3 movement/analysis/common/build_zillow.py          # raw Zillow CSVs -> movement/analysis/cache/zillow.duckdb
+python3 movement/analysis/e2_turnover_model/run_all.py    # same-unit turnover pairs + UDP tract join
+python3 movement/analysis/e6_unit_replacement/run_all.py  # CA HCD income limits 2022-2026
+bash units-leaving-reach/code/run_all.sh                  # this workstream (~2 min)
+```
+Tract features and the backtest risk score (`displacement-early-warning/results/`) and the city job mix (`ai-labor-distribution/results/asset_city_jobs_housing.csv`) are read from those workstreams’ committed result tables.
+
+Dependencies: `requirements.txt` at the repo root. The pipeline is deterministic: fixed seeds, `deterministic=True` LightGBM and stable row order. Two independent rebuilds from raw data inside this repo produced byte-identical tables.
 
 ## Map page
-`site/out-of-reach-atlas.html` (built by `code/s05_project.py` → `s06_geo.py` → `s07_build_page.py`, all run by `run_all.sh`) is a year slider over a map of the 9,404 tracked units:
+`site/out-of-reach-atlas.html` (built by `code/s05_project.py` → `s06_geo.py` → `s07_build_page.py`, all run by `run_all.sh`) is a year slider over a map of the 9,403 tracked units:
 - **2022–2026:** what the listings recorded.
 - **2027–2031:** model projections under two rent scenarios and an adjustable annual turnover rate.
 

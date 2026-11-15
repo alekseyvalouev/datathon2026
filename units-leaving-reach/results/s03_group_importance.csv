@@ -1,6 +1,6 @@
 group,n_features,auc_drop,sd
-headroom,3,0.2635,0.0042
-market,7,0.0298,0.0007
-tract,19,0.0133,0.001
-unit,30,0.0081,0.0011
-city jobs,4,0.0022,0.0003
+headroom,3,0.2668,0.0056
+market,7,0.0304,0.001
+tract,19,0.0142,0.0009
+unit,30,0.0084,0.0004
+city jobs,4,0.0021,0.0002

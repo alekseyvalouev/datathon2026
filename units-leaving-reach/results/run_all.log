@@ -1,13 +1,14 @@
+==== units-leaving-reach
                                                step     n
                          movement E2 turnover pairs 23306
                     bedrooms known (household size) 23277
 re-listed 2022-06 or later (income limit available) 17993
-    previous rent within 80% AMI reach (population) 12011
-                    of which: tract features joined 11878
-                      of which: city job mix joined 11580
+    previous rent within 80% AMI reach (population) 12010
+                    of which: tract features joined 11877
+                      of which: city job mix joined 11579
        size   sum   mean
 split                   
-test   6808  1403  0.206
+test   6807  1402  0.206
 train  4061   722  0.178
 val    1142   150  0.131
 last_ok            1.0
@@ -78,35 +79,35 @@ tract county matches listing county: 0.9997
                LightGBM                  unit+headroom+market 0.903078 {'num_leaves': 15, 'min_child_samples': 20}    201.0
                LightGBM     + tract (displacement workstream) 0.909093 {'num_leaves': 15, 'min_child_samples': 20}    141.0
                LightGBM + tract + city jobs (all workstreams) 0.909677 {'num_leaves': 15, 'min_child_samples': 50}    135.0
-          Logistic (L2)                                   all 0.892991                                        C=10      NaN
+          Logistic (L2)                                   all 0.892970                                        C=10      NaN
 Logistic, headroom only                        headroom + gap 0.889691                                       C=0.1      NaN
 
-TEST (n=6808, prevalence 0.206)
+TEST (n=6807, prevalence 0.206)
                                                                   n  prevalence    AUC  AUC_lo  AUC_hi  PR_AUC  precision  recall     F1    FPR  budget_flagged  budget_precision  budget_recall
 model                                                                                                                                                                                           
-Majority class (never leaves reach)                            6808       0.206  0.500     NaN     NaN   0.206        NaN   0.000  0.000  0.000             NaN               NaN            NaN
-UDP typology rule (low-income or gentrifying tract)            6808       0.206  0.456   0.442   0.470   0.194      0.166   0.289  0.210  0.377             NaN               NaN            NaN
-Legal-max rule: crosses if rent rises at AB 1482 max (10%/yr)  6808       0.206  0.848   0.838   0.860   0.625      0.428   0.806  0.559  0.280           0.214             0.583          0.604
-ZIP-trend rule: ZIP median turnover change vs growth needed    6808       0.206  0.844   0.833   0.855   0.608      0.690   0.408  0.513  0.048           0.217             0.564          0.593
-Logistic, headroom only                                        6808       0.206  0.862   0.852   0.872   0.616      0.637   0.510  0.566  0.075           0.205             0.597          0.594
-Logistic (L2) [all features]                                   6808       0.206  0.893   0.885   0.902   0.703      0.646   0.647  0.647  0.092           0.214             0.636          0.661
-LightGBM [unit+headroom+market]                                6808       0.206  0.896   0.888   0.905   0.699      0.598   0.716  0.651  0.125           0.245             0.599          0.713
-LightGBM [+ tract (displacement workstream)]                   6808       0.206  0.901   0.892   0.909   0.720      0.741   0.534  0.621  0.048           0.234             0.625          0.709
-LightGBM [+ tract + city jobs (all workstreams)]               6808       0.206  0.900   0.891   0.909   0.717      0.748   0.520  0.614  0.046           0.246             0.605          0.721
+Majority class (never leaves reach)                            6807       0.206  0.500     NaN     NaN   0.206        NaN   0.000  0.000  0.000             NaN               NaN            NaN
+UDP typology rule (low-income or gentrifying tract)            6807       0.206  0.456   0.443   0.469   0.194      0.166   0.289  0.211  0.377             NaN               NaN            NaN
+Legal-max rule: crosses if rent rises at AB 1482 max (10%/yr)  6807       0.206  0.848   0.837   0.860   0.624      0.428   0.806  0.559  0.280           0.213             0.582          0.603
+ZIP-trend rule: ZIP median turnover change vs growth needed    6807       0.206  0.844   0.833   0.856   0.607      0.689   0.408  0.513  0.048           0.217             0.564          0.593
+Logistic, headroom only                                        6807       0.206  0.861   0.851   0.872   0.615      0.637   0.509  0.566  0.075           0.205             0.597          0.594
+Logistic (L2) [all features]                                   6807       0.206  0.893   0.885   0.902   0.702      0.646   0.647  0.646  0.092           0.214             0.636          0.660
+LightGBM [unit+headroom+market]                                6807       0.206  0.896   0.887   0.905   0.699      0.597   0.715  0.651  0.125           0.245             0.599          0.713
+LightGBM [+ tract (displacement workstream)]                   6807       0.206  0.900   0.892   0.909   0.719      0.741   0.534  0.620  0.048           0.234             0.624          0.709
+LightGBM [+ tract + city jobs (all workstreams)]               6807       0.206  0.900   0.891   0.908   0.717      0.748   0.520  0.613  0.046           0.245             0.604          0.720
 
                                                 a                                                             b  AUC_a  AUC_b    diff      lo     hi
-LightGBM [+ tract + city jobs (all workstreams)] Legal-max rule: crosses if rent rises at AB 1482 max (10%/yr) 0.8998 0.8484  0.0513  0.0445 0.0576
-LightGBM [+ tract + city jobs (all workstreams)]                                       Logistic, headroom only 0.8998 0.8616  0.0382  0.0327 0.0439
-LightGBM [+ tract + city jobs (all workstreams)]                                  Logistic (L2) [all features] 0.8998 0.8932  0.0066  0.0023 0.0107
-    LightGBM [+ tract (displacement workstream)]                               LightGBM [unit+headroom+market] 0.9005 0.8958  0.0047  0.0022 0.0068
-LightGBM [+ tract + city jobs (all workstreams)]                  LightGBM [+ tract (displacement workstream)] 0.8998 0.9005 -0.0007 -0.0019 0.0005
+LightGBM [+ tract + city jobs (all workstreams)] Legal-max rule: crosses if rent rises at AB 1482 max (10%/yr) 0.8997 0.8483  0.0514  0.0450 0.0580
+LightGBM [+ tract + city jobs (all workstreams)]                                       Logistic, headroom only 0.8997 0.8615  0.0382  0.0326 0.0439
+LightGBM [+ tract + city jobs (all workstreams)]                                  Logistic (L2) [all features] 0.8997 0.8931  0.0066  0.0024 0.0110
+    LightGBM [+ tract (displacement workstream)]                               LightGBM [unit+headroom+market] 0.9005 0.8958  0.0047  0.0022 0.0071
+LightGBM [+ tract + city jobs (all workstreams)]                  LightGBM [+ tract (displacement workstream)] 0.8997 0.9005 -0.0007 -0.0020 0.0005
 
      group  n_features  auc_drop     sd
- headroom           3    0.2635 0.0042
-   market           7    0.0298 0.0007
-    tract          19    0.0133 0.0010
-     unit          30    0.0081 0.0011
-city jobs           4    0.0022 0.0003
+ headroom           3    0.2668 0.0056
+   market           7    0.0304 0.0010
+    tract          19    0.0142 0.0009
+     unit          30    0.0084 0.0004
+city jobs           4    0.0021 0.0002
 req_growth    0.415
 headroom      0.091
 ami_share0    0.062
@@ -121,7 +122,7 @@ per_col_18    0.016
 ppsf          0.015
 
                     grouping                      group    n  positives  prevalence   AUC  recall   FPR  precision  budget_recall  budget_flagged  mean_pred  rule_AUC  rule_budget_recall
-         UDP typology group                  exclusive 1640        468       0.285 0.905   0.632 0.064      0.798          0.791           0.343      0.181     0.835               0.643
+         UDP typology group                  exclusive 1639        467       0.285 0.905   0.632 0.064      0.797          0.790           0.343      0.180     0.835               0.642
          UDP typology group                gentrifying  971        183       0.188 0.913   0.415 0.014      0.874          0.623           0.173      0.089     0.857               0.536
          UDP typology group                 low_income 1474        222       0.151 0.895   0.342 0.024      0.717          0.622           0.171      0.081     0.833               0.523
          UDP typology group                   moderate 2647        514       0.194 0.895   0.529 0.054      0.703          0.730           0.247      0.130     0.862               0.632
@@ -131,92 +132,94 @@ ppsf          0.015
                      County                      Marin  121         11       0.091 0.882   0.818 0.073      0.529          0.818           0.215      0.118     0.840               0.818
                      County                       Napa  114          8       0.070 0.853   0.375 0.123      0.188          0.750           0.272      0.141     0.807               0.625
                      County              San Francisco  670        368       0.549 0.919   0.497 0.010      0.984          0.668           0.400      0.218     0.867               0.416
-                     County                  San Mateo  624        231       0.370 0.898   0.532 0.036      0.898          0.749           0.378      0.180     0.881               0.597
+                     County                  San Mateo  623        230       0.369 0.898   0.530 0.036      0.897          0.748           0.377      0.179     0.881               0.596
                      County                Santa Clara 1790        339       0.189 0.911   0.552 0.039      0.766          0.758           0.241      0.124     0.902               0.646
                      County                     Solano  347         39       0.112 0.916   0.667 0.058      0.591          0.846           0.248      0.115     0.884               0.846
                      County                     Sonoma  329         33       0.100 0.899   0.606 0.081      0.455          0.758           0.201      0.110     0.910               0.818
                Tract tenure             majority owner 2330        427       0.183 0.903   0.663 0.080      0.649          0.827           0.299      0.156     0.876               0.773
-               Tract tenure            majority renter 4402        960       0.218 0.912   0.455 0.023      0.849          0.671           0.214      0.110     0.851               0.531
+               Tract tenure            majority renter 4401        959       0.218 0.912   0.455 0.023      0.848          0.670           0.214      0.110     0.851               0.531
                Tract tenure                  unmatched   76         16       0.211 0.815   0.625 0.250      0.400          0.875           0.447      0.232     0.798               0.438
                  Tract race   majority people of color 4899        975       0.199 0.907   0.501 0.035      0.778          0.712           0.229      0.117     0.861               0.599
-                 Tract race             majority white 1833        412       0.225 0.886   0.563 0.065      0.716          0.735           0.280      0.148     0.817               0.621
+                 Tract race             majority white 1832        411       0.224 0.886   0.562 0.065      0.715          0.735           0.280      0.148     0.817               0.620
                  Tract race                  unmatched   76         16       0.211 0.815   0.625 0.250      0.400          0.875           0.447      0.232     0.798               0.438
-Tract income (2018 tercile)                       high 1737        627       0.361 0.899   0.646 0.076      0.828          0.807           0.410      0.222     0.841               0.633
+Tract income (2018 tercile)                       high 1736        626       0.361 0.899   0.645 0.076      0.828          0.807           0.410      0.221     0.840               0.633
 Tract income (2018 tercile)                        low 2742        345       0.126 0.896   0.339 0.023      0.680          0.629           0.152      0.073     0.844               0.562
 Tract income (2018 tercile)                     middle 2253        415       0.184 0.878   0.477 0.050      0.683          0.660           0.226      0.116     0.840               0.600
 Tract income (2018 tercile)                        nan   76         16       0.211 0.815   0.625 0.250      0.400          0.875           0.447      0.232     0.798               0.438
-                  Home type                  apartment 5648       1087       0.192 0.910   0.454 0.026      0.804          0.674           0.199      0.103     0.851               0.533
+                  Home type                  apartment 5647       1086       0.192 0.910   0.453 0.026      0.804          0.674           0.199      0.102     0.851               0.532
                   Home type      house/condo/townhouse 1160        316       0.272 0.881   0.750 0.149      0.653          0.880           0.471      0.246     0.858               0.848
                    Landlord large manager (200+ units) 2690        670       0.249 0.897   0.475 0.031      0.837          0.682           0.248      0.125     0.854               0.530
-                   Landlord                      other 4118        733       0.178 0.907   0.562 0.054      0.691          0.756           0.244      0.129     0.855               0.671
+                   Landlord                      other 4117        732       0.178 0.907   0.561 0.054      0.691          0.755           0.244      0.128     0.854               0.671
     Headroom below the line                     15-30% 2060        336       0.163 0.799   0.173 0.013      0.716          0.360           0.126      0.073     0.664               0.214
     Headroom below the line                      5-15% 1343        573       0.427 0.770   0.541 0.149      0.729          0.832           0.621      0.265     0.671               0.642
-    Headroom below the line                        <5%  553        404       0.731 0.735   0.894 0.691      0.778          0.998           0.995      0.544     0.625               1.000
+    Headroom below the line                        <5%  552        403       0.730 0.734   0.893 0.691      0.778          0.998           0.995      0.543     0.624               1.000
     Headroom below the line                       >30% 2852         90       0.032 0.864   0.011 0.002      0.167          0.111           0.010      0.020     0.682               0.033
 
         n  mean_pred  observed
 dec                          
 0    681      0.009     0.001
 1    681      0.011     0.006
-2    681      0.013     0.015
-3    680      0.017     0.022
+2    680      0.013     0.015
+3    681      0.017     0.022
 4    681      0.023     0.065
-5    681      0.037     0.119
-6    680      0.069     0.199
-7    681      0.145     0.292
-8    681      0.324     0.537
-9    681      0.622     0.805
+5    680      0.037     0.119
+6    681      0.069     0.198
+7    680      0.145     0.293
+8    681      0.323     0.536
+9    681      0.621     0.805
                                      check    n  prevalence  model_AUC  rule_AUC  diff_lo  diff_hi   gain
-           main (settled ask, 80% AMI, 3x) 6808       0.206      0.900     0.848    0.044    0.057  0.051
-       R1 first ask instead of settled ask 6808       0.210      0.901     0.856    0.039    0.051  0.045
-R1 drop jumps > 30%/yr (likely unit swaps) 6680       0.198      0.907     0.868    0.035    0.044  0.039
+           main (settled ask, 80% AMI, 3x) 6807       0.206      0.900     0.848    0.045    0.057  0.051
+       R1 first ask instead of settled ask 6807       0.209      0.901     0.856    0.039    0.050  0.045
+R1 drop jumps > 30%/yr (likely unit swaps) 6679       0.198      0.907     0.868    0.034    0.044  0.039
          R1 50% AMI (very low income) line 1113       0.559      0.795     0.747    0.030    0.068  0.048
-                       R1 2.5x income rule 8193       0.108      0.949     0.878    0.061    0.080  0.071
-     R2 test units never seen in train/val 4966       0.223      0.901     0.860    0.035    0.048  0.041
+                       R1 2.5x income rule 8192       0.108      0.949     0.878    0.062    0.080  0.071
+     R2 test units never seen in train/val 4965       0.223      0.901     0.860    0.035    0.048  0.041
                        R3 hold out Alameda 2048       0.156      0.887     0.871    0.007    0.024  0.016
                   R3 hold out Contra Costa  765       0.071      0.889     0.903   -0.027   -0.002 -0.014
                          R3 hold out Marin  121       0.091      0.888     0.840    0.006    0.104  0.048
                           R3 hold out Napa  114       0.070      0.879     0.807   -0.037    0.223  0.072
                  R3 hold out San Francisco  670       0.549      0.905     0.867    0.024    0.052  0.038
-                     R3 hold out San Mateo  624       0.370      0.896     0.881   -0.000    0.030  0.015
+                     R3 hold out San Mateo  623       0.369      0.896     0.881   -0.001    0.029  0.015
                    R3 hold out Santa Clara 1790       0.189      0.908     0.902   -0.002    0.015  0.007
                         R3 hold out Solano  347       0.112      0.917     0.884   -0.002    0.072  0.032
                         R3 hold out Sonoma  329       0.100      0.893     0.910   -0.039    0.005 -0.017
 
                                           mean     std     min     max
 features                                                             
-+ tract (displacement workstream)      0.8992  0.0012  0.8975  0.9011
-+ tract + city jobs (all workstreams)  0.9002  0.0013  0.8987  0.9031
-unit+headroom+market                   0.8966  0.0018  0.8940  0.8992
++ tract (displacement workstream)      0.8992  0.0012  0.8974  0.9010
++ tract + city jobs (all workstreams)  0.9001  0.0013  0.8986  0.9031
+unit+headroom+market                   0.8965  0.0018  0.8940  0.8991
 gain tract                             0.0027  0.0019 -0.0015  0.0045
 gain city jobs                         0.0009  0.0018 -0.0013  0.0051
 gain both                              0.0036  0.0023  0.0003  0.0085
 
        policy       group    n  flagged  recall  precision  units_caught  units_flagged
-    regional         ALL 6808    0.246   0.721      0.605          1011           1672
-    regional   exclusive 1640    0.343   0.791      0.657           370            563
+    regional         ALL 6807    0.245   0.720      0.604          1010           1671
+    regional   exclusive 1639    0.343   0.790      0.657           369            562
     regional gentrifying  971    0.173   0.623      0.679           114            168
     regional  low_income 1474    0.171   0.622      0.548           138            252
     regional    moderate 2647    0.247   0.730      0.573           375            655
     regional   unmatched   76    0.447   0.875      0.412            14             34
-within_group         ALL 6808    0.219   0.669      0.630           938           1490
-within_group   exclusive 1640    0.240   0.652      0.776           305            393
+within_group         ALL 6807    0.219   0.668      0.629           937           1489
+within_group   exclusive 1639    0.239   0.651      0.776           304            392
 within_group gentrifying  971    0.198   0.678      0.646           124            192
 within_group  low_income 1474    0.246   0.757      0.463           168            363
 within_group    moderate 2647    0.195   0.644      0.641           331            516
 within_group   unmatched   76    0.342   0.625      0.385            10             26
 scenario  year  mean_p_if_turnover  share_p_over_50  median_line
-  frozen  2027               0.081            0.028     3581.065
-  frozen  2028               0.074            0.020     3777.946
-  frozen  2029               0.069            0.016     3985.651
-  frozen  2030               0.068            0.012     4204.776
-  frozen  2031               0.068            0.009     4435.947
-   trend  2027               0.157            0.076     3581.065
-   trend  2028               0.152            0.093     3777.946
-   trend  2029               0.147            0.083     3985.651
-   trend  2030               0.139            0.068     4204.776
-   trend  2031               0.132            0.055     4435.947
+  frozen  2027               0.079            0.027     3581.065
+  frozen  2028               0.070            0.017     3777.946
+  frozen  2029               0.065            0.014     3985.651
+  frozen  2030               0.062            0.010     4204.776
+  frozen  2031               0.063            0.006     4435.947
+   trend  2027               0.154            0.072     3581.065
+   trend  2028               0.147            0.088     3777.946
+   trend  2029               0.143            0.077     3985.651
+   trend  2030               0.136            0.066     4204.776
+   trend  2031               0.132            0.056     4435.947
 observed 2026 leave rate: 0.206 | in-sample mean prediction 2026: 0.195
-units 9404 stock 7439 json KB 886
+units 9403 stock 7439 json KB 886
 17 features, 62 KB
-/Users/mileshua/coding/saas2026datathon/datathon2026/units-leaving-reach/site/out-of-reach-atlas.html 981 KB
+<repo>/units-leaving-reach/site/out-of-reach-atlas.html 980 KB
+
+done (model). Compare with the committed tables:  git status --short -- '*.csv' '*.json'

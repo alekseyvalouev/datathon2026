@@ -1,0 +1,25 @@
+<section id="model-fairness" class="tone">
+<div class="head">
+<h2 class="title">It still under-serves renter, low-income and apartment units</h2>
+</div>
+<div style="display:grid; grid-template-columns:1fr 560px; gap:80px;">
+<div class="col" style="gap:16px;">
+<p class="cap">Share of units that left reach caught when flagging the riskiest 20%</p>
+<div class="key"><div class="sw"><span class="sw-box"></span>Model (top bar)</div><div class="sw"><span class="sw-box mute"></span>Legal-cap rule</div></div>
+<div class="bars" style="gap:18px;">
+<div class="bar-row" style="grid-template-columns:330px 1fr 160px;"><p class="bar-lab">Low-income tracts</p><div style="display:flex; flex-direction:column; gap:4px;"><div class="bar-track" style="height:22px;"><div class="bar-fill" style="height:22px; width:62%;"></div></div><div class="bar-track" style="height:22px;"><div class="bar-fill mutefill" style="height:22px; width:52%;"></div></div></div><p class="val pt">0.62 / 0.52</p></div>
+<div class="bar-row" style="grid-template-columns:330px 1fr 160px;"><p class="bar-lab">Exclusive tracts</p><div style="display:flex; flex-direction:column; gap:4px;"><div class="bar-track" style="height:22px;"><div class="bar-fill" style="height:22px; width:79%;"></div></div><div class="bar-track" style="height:22px;"><div class="bar-fill mutefill" style="height:22px; width:64%;"></div></div></div><p class="val">0.79 / 0.64</p></div>
+<div class="bar-row" style="grid-template-columns:330px 1fr 160px;"><p class="bar-lab">Majority-renter tracts</p><div style="display:flex; flex-direction:column; gap:4px;"><div class="bar-track" style="height:22px;"><div class="bar-fill" style="height:22px; width:67%;"></div></div><div class="bar-track" style="height:22px;"><div class="bar-fill mutefill" style="height:22px; width:53%;"></div></div></div><p class="val pt">0.67 / 0.53</p></div>
+<div class="bar-row" style="grid-template-columns:330px 1fr 160px;"><p class="bar-lab">Majority-owner tracts</p><div style="display:flex; flex-direction:column; gap:4px;"><div class="bar-track" style="height:22px;"><div class="bar-fill" style="height:22px; width:83%;"></div></div><div class="bar-track" style="height:22px;"><div class="bar-fill mutefill" style="height:22px; width:77%;"></div></div></div><p class="val">0.83 / 0.77</p></div>
+<div class="bar-row" style="grid-template-columns:330px 1fr 160px;"><p class="bar-lab">Apartments</p><div style="display:flex; flex-direction:column; gap:4px;"><div class="bar-track" style="height:22px;"><div class="bar-fill" style="height:22px; width:67%;"></div></div><div class="bar-track" style="height:22px;"><div class="bar-fill mutefill" style="height:22px; width:53%;"></div></div></div><p class="val pt">0.67 / 0.53</p></div>
+<div class="bar-row" style="grid-template-columns:330px 1fr 160px;"><p class="bar-lab">Houses and condos</p><div style="display:flex; flex-direction:column; gap:4px;"><div class="bar-track" style="height:22px;"><div class="bar-fill" style="height:22px; width:88%;"></div></div><div class="bar-track" style="height:22px;"><div class="bar-fill mutefill" style="height:22px; width:85%;"></div></div></div><p class="val">0.88 / 0.85</p></div>
+</div>
+</div>
+<div class="col" style="gap:40px;">
+<div class="card"><p class="card-h">Why</p><p class="card-b">Ranking is even across groups (AUC 0.88–0.92). But 2026 rents in apartments and large-landlord buildings jumped past anything in training, and the model predicts about half the real rate there.</p></div>
+<div class="card" style="border-top:4px solid var(--accent); padding-top:20px;"><p class="card-h">A policy choice, not a fix</p><p class="card-b">A separate top-20% list for each tract type raises low-income-tract recall from 0.62 to 0.76, and costs 5 points of regional recall (0.72 to 0.67).</p></div>
+</div>
+</div>
+<div class="foot"><span>2026 test set; tract types from the UDP typology; budget threshold set on late-2025 scores</span><div class="foot-r"><span>Model: who it misses</span><span class="pg"></span></div></div>
+<aside>Here’s who the model misses. It ranks equally well within every group, but when you flag a fixed 20 percent of units, it catches fewer of the losses in low-income tracts, renter tracts and apartments than in wealthy, owner and house-heavy areas. The reason is that 2026 rents in apartments and big-landlord buildings rose faster than anything it trained on, so it under-predicts there. It still beats the rule in every group. If you give each tract type its own list, low-income recall jumps to 0.76 at a small regional cost. That’s a choice for whoever uses it, and we show the trade-off rather than hide it.</aside>
+</section>

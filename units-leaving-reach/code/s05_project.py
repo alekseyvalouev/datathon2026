@@ -27,6 +27,8 @@ def market_index():
     con = duckdb.connect(DB, read_only=True)
     r = con.execute("""select distinct county, zipcode, lat, lon, least(coalesce(beds,0),4) b, homeType='APARTMENT' apt,
                        start_d, first_p from rep where first_p between 500 and 30000""").df(); con.close()
+    # fixed row order: DuckDB returns rows in arbitrary order, which changes float sums in the last bits
+    r = r.sort_values(["county", "zipcode", "start_d", "lat", "lon", "b", "apt", "first_p"], kind="mergesort").reset_index(drop=True)
     r["lp"] = np.log(r.first_p)
     cell = r[r.start_d < TRAIN_END].groupby(["zipcode", "b", "apt"]).lp.mean().rename("cm")
     r = r.join(cell, on=["zipcode", "b", "apt"]).dropna(subset=["cm"])
@@ -138,7 +140,7 @@ def main():
     lines = {c.replace(" County", ""): {str(Y): {str(h): round(g[("LI", c, h)][0] * (1 + g[("LI", c, h)][1]) ** (Y - 2026) / 36)
                                                   for h in range(1, 6)} for Y in [2026] + YEARS} for c in COUNTIES}
     obs_by_year = df.groupby("year").agg(relistings=("y", "size"), left_reach=("y", "sum")).reset_index().to_dict("records")
-    meta = dict(years_obs=[2022, 2023, 2024, 2025, 2026], years_proj=YEARS, n_units=len(last), n_stock=len(stock),
+    meta = dict(years_obs=[2022, 2023, 2024, 2025, 2026], years_proj=YEARS, n_units=len(last), n_stock=len(stock), n_pairs=len(df),
                 lines=lines, obs_by_year=obs_by_year,
                 fields=["lon", "lat", "county", "beds", "latest_rent", "lost_year", "latest_relist_year", "p[scenario][year]"])
     json.dump(dict(meta=meta, units=units), open(os.path.join(VIZ, "units.json"), "w"), separators=(",", ":"))
