@@ -1,0 +1,7 @@
+features,mean,std,min,max
++ tract (displacement workstream),0.8992,0.0012,0.8975,0.9011
++ tract + city jobs (all workstreams),0.9002,0.0013,0.8987,0.9031
+unit+headroom+market,0.8966,0.0018,0.894,0.8992
+gain tract,0.0027,0.0019,-0.0015,0.0045
+gain city jobs,0.0009,0.0018,-0.0013,0.0051
+gain both,0.0036,0.0023,0.0003,0.0085

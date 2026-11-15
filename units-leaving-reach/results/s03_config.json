@@ -1,0 +1,30 @@
+{
+ "main": "LightGBM [+ tract + city jobs (all workstreams)]",
+ "best_rule": "Legal-max rule: crosses if rent rises at AB 1482 max (10%/yr)",
+ "f1_threshold": 0.3403508410152929,
+ "budget_threshold": 0.1459818220867849,
+ "lgb_params": {
+  "unit+headroom+market": [
+   {
+    "num_leaves": 15,
+    "min_child_samples": 20
+   },
+   201
+  ],
+  "+ tract (displacement workstream)": [
+   {
+    "num_leaves": 15,
+    "min_child_samples": 20
+   },
+   141
+  ],
+  "+ tract + city jobs (all workstreams)": [
+   {
+    "num_leaves": 15,
+    "min_child_samples": 50
+   },
+   135
+  ]
+ },
+ "logit_C": 10
+}
