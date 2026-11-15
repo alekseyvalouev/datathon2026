@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Priced out of reach: Bay Area turnovers and who they move</title>
+<meta name="description" content="How the Bay Area's boom moves people out through rents, and a model that flags which affordable rentals a turnover will price out of reach next.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Geist:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="deck.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav proof">
+  <div class="container nav__row">
+    <a class="wordmark" href="#cover" aria-label="Back to the cover">Datathon for Social Good</a>
+    <nav aria-label="Deck sections">
+      <ul class="nav__links">
+        <li><a href="#thesis">Findings</a></li>
+        <li><a href="#model">Model</a></li>
+        <li><a href="#limits">Limits</a></li>
+        <li class="nav__keep"><a href="../units-leaving-reach/site/out-of-reach-atlas.html">Atlas</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="hero proof" id="cover">
+  <div class="container">
+    <div class="hero__grid">
+      <div class="hero__text">
+        <h1>Priced out of reach</h1>
+        <p class="lead">How the Bay Area’s boom moves people out through rents.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#thesis">Read the findings</a>
+          <a class="btn" href="../units-leaving-reach/site/out-of-reach-atlas.html">Open the atlas</a>
+        </div>
+        <p class="hero__meta">Advanced Track, San Francisco Bay Area, November 2026.</p>
+      </div>
+      <div>
+        <figure class="sheet crop">
+          <div class="shot shot--atlas" data-slot="hero" data-kind="product" data-alt="The Out of Reach Atlas map at 2026: tracked rentals across the nine counties, red where a unit has left reach">
+            <img src="images/screens/atlas-map-home-desktop-part.png" width="1486" height="1516" alt="Map of the nine Bay Area counties, grey dots for rentals still in low-income reach and red dots for rentals that have left it" fetchpriority="high">
+          </div>
+        </figure>
+      </div>
+    </div>
+    <div class="reach" role="img" aria-label="The reach line: a San Francisco one-bedroom is in reach of a household at 80% of area median income up to $3,736 a month in 2026">
+      <span>In reach</span><i></i><span class="num">Reach line: $3,736 a month, San Francisco one-bedroom, 2026</span><i></i><span>Out of reach</span>
+    </div>
+  </div>
+</section>
+<section class="slide slide--l ink" id="thesis" aria-labelledby="h-thesis"><div class="container">
+<h2 id="h-thesis" class="statement huge">Rents push people out, not layoffs.</h2>
+<p class="lead" style="margin-top: var(--space-lg)">Averages, the standard displacement map and our own models are weakest exactly where the people being pushed out are.</p>
+<ul class="strands"><li>AI and jobs: who gains</li><li>Movement: who leaves, who arrives</li><li>Displacement risk: where pressure lands</li><li>Who decides: the hearing room</li></ul>
+</div></section>
+<section class="slide " id="data" aria-labelledby="h-data"><div class="container"><div class="head"><h2 id="h-data">Eleven sources, nine counties</h2></div><table class="table table--lg"><thead><tr><th>Source</th><th>Scale</th></tr></thead><tbody>
+<tr><td>Zillow listings</td><td>148,005 properties</td></tr>
+<tr><td>Indeed postings</td><td>45,850 postings</td></tr>
+<tr><td>Reddit and Glassdoor</td><td>230,520 posts, 95,464 reviews</td></tr>
+<tr><td>Google Maps places</td><td>About 100,000 services</td></tr>
+<tr><td>IRS, ACS PUMS, LODES</td><td>Flows and microdata, 2010 to 2024</td></tr>
+<tr><td>CA WARN, HCD limits</td><td>5,392 layoff notices</td></tr>
+<tr><td>UDP typology, SF Planning</td><td>1,550 tracts, 73,002 comments</td></tr>
+</tbody></table><div class="foot"><p>All code runs from raw data to every reported number.</p></div></div></section>
+<section class="slide band" id="prize" aria-labelledby="h-prize"><div class="container"><div class="head"><h2 id="h-prize">AI-positioned jobs pay double</h2><p class="lead">New hiring widens the gap.</p></div><div class="cols cols--wide"><div class="stack"><p class="label">New-hire pay divided by current workers’ pay, same occupation</p><ul class="bars " style="--g:62.5"><li><span>Data engineering</span><span class="bar"><i style="--v:95"></i></span><span class="val">1.52</span></li><li><span>Product and design</span><span class="bar"><i style="--v:93.1"></i></span><span class="val">1.49</span></li><li><span>AI and ML roles</span><span class="bar"><i style="--v:84.4"></i></span><span class="val">1.35</span></li><li><span>Software engineering</span><span class="bar"><i style="--v:72.5"></i></span><span class="val">1.16</span></li><li><span>Frontline service</span><span class="bar bar--base"><i style="--v:57.5"></i></span><span class="val">0.92</span></li><li><span>Junior professional</span><span class="bar bar--base"><i style="--v:56.9"></i></span><span class="val">0.91</span></li><li><span>Customer support</span><span class="bar bar--base"><i style="--v:55.6"></i></span><span class="val">0.89</span></li><li><span>Clerical and admin</span><span class="bar bar--base"><i style="--v:53.1"></i></span><span class="val">0.85</span></li></ul><p class="guide">Parity, 1.00</p></div><div class="stack"><div class="fig"><b>$178k</b><span>median pay, against $81k in exposed clerical work</span></div><div class="fig"><b>3.8×</b><span>more hiring per current worker</span></div></div></div><div class="foot"><p>Indeed postings against ACS PUMS incumbents. Ratios are upper bounds.</p></div></div></section>
+<section class="slide " id="channels" aria-labelledby="h-channels"><div class="container"><div class="head"><h2 id="h-channels">Two channels, two groups outside</h2><p class="lead">An index of 1.0 is parity with a group’s share of workers.</p></div><table class="table table--lg"><thead><tr><th>Group</th><th class="n">Share of workers</th><th class="n">AI-job index</th><th class="n">Capital-income index</th></tr></thead><tbody>
+<tr><td>White</td><td class="n">36.5%</td><td class="n">0.82</td><td class="n">1.94</td></tr>
+<tr><td>Asian</td><td class="n">29.3%</td><td class="n">1.99</td><td class="n">0.67</td></tr>
+<tr><td>Hispanic</td><td class="n">23.6%</td><td class="n">0.24</td><td class="n">0.22</td></tr>
+<tr><td>Black</td><td class="n">5.1%</td><td class="n">0.36</td><td class="n">0.24</td></tr>
+</tbody></table>
+<p class="lead" style="margin-top: var(--space-xl); max-width: 65ch">And no measurable bust: layoff notices show no trend over 13&nbsp;quarters (p&nbsp;=&nbsp;0.66).</p><div class="foot"><p>ACS PUMS 2019 to 2023 and 2024; CA EDD WARN. Capital income excludes RSUs and capital gains.</p></div></div></section>
+<section class="slide " id="wedge" aria-labelledby="h-wedge"><div class="container"><div class="head"><h2 id="h-wedge">Median pay cannot rent here</h2><p class="lead">Cities where the median posted salary covers the median rent at 30% of income.</p></div><ul class="rows">
+<li><h3>Clerical and admin</h3><b class="big">0 of 25 cities</b></li>
+<li><h3>Customer support</h3><b class="big">0 of 22 cities</b></li>
+<li><h3>Frontline service</h3><b class="big">0 of 66 cities</b></li>
+<li><h3>AI and machine learning</h3><b class="big">16 of 23 cities</b></li>
+</ul><div class="foot"><p>Indeed postings against Zillow rent estimates, by city. Renting the median home takes about $168,000 a year.</p></div></div></section>
+<section class="slide band" id="turnover" aria-labelledby="h-turnover"><div class="container"><div class="head"><h2 id="h-turnover">A vacancy re-prices the home</h2><p class="lead">The same unit, matched across 23,306 listing pairs.</p></div><div class="tiles">
+<div class="tile tile--lead"><b class="big huge">20.7%</b><p>of San Francisco turnovers moved a unit out of low-income reach. Only 0.7% moved one into reach.</p></div>
+<div class="tile"><b class="big">23%</b><p>of 2026 turnovers beat the 10% cap, which skips vacant units.</p></div>
+<div class="tile tile--half"><b class="big">8.4%</b><p>of postings at $60 an hour offer relocation help; 0.1% under $25.</p></div>
+<div class="tile tile--half"><b class="big">1.46</b><p>people per tax return among arrivals, against 1.70 among leavers.</p></div>
+</div><div class="foot"><p>Zillow; HCD income limits; Indeed; IRS SOI.</p></div></div></section>
+<section class="slide " id="pressure" aria-labelledby="h-pressure"><div class="container"><div class="head"><h2 id="h-pressure">The standard map misses it</h2><p class="lead">Year-2000 census data predicted which tracts lost low-income households.</p></div><div class="cols"><div><figure class="sheet crop"><div class="shot shot--map" data-slot="warning-map" data-kind="product" data-alt="The early-warning page map of tracts that lost low-income households between 2000 and 2018"><img src="images/screens/warning-map-home-desktop-part.png" width="1924" height="1213" alt="Bay Area tract map: 292 tracts ended 2018 with fewer low-income households than in 2000" loading="lazy"></div></figure></div>
+<div class="stack"><p class="label">Test AUC, 388 held-out tracts</p><ul class="bars " style="--g:50"><li><span>Our census model</span><span class="bar"><i style="--v:78"></i></span><span class="val">0.78</span></li><li><span>Renter share alone</span><span class="bar bar--base"><i style="--v:66"></i></span><span class="val">0.66</span></li><li><span>UDP vulnerability flag</span><span class="bar bar--base"><i style="--v:52"></i></span><span class="val">0.52</span></li></ul><p class="guide">Coin flip, 0.50</p><p>After 2018 the flag ranks rent growth backwards (AUC 0.38).</p></div></div><div class="foot"><p>Urban Displacement Project typology, 1,550 tracts, against Zillow; incomes in 2018 dollars.</p></div></div></section>
+<section class="slide slide--s" id="leavers" aria-labelledby="h-leavers"><div class="container"><div class="head"><h2 id="h-leavers">Leaving trades rent for burden</h2><p class="lead">Central Valley leavers against similar people who stayed.</p></div><div class="figs">
+<div class="fig"><b>+16.0</b><span>points more paying half their income or more in rent</span></div>
+<div class="fig"><b>+9.3</b><span>points more commuting an hour or longer</span></div>
+<div class="fig"><b>−$26k</b><span>in annual wages</span></div>
+<div class="fig"><b>+5.4</b><span>points more owning a home, the one gain</span></div>
+</div>
+<p class="lead" style="margin-top: var(--space-2xl); max-width: 60ch">Commuting back to the Bay job leaves less than nothing in 35 of 40 job and city cases.</p><div class="foot"><p>Matched on pre-move traits, ACS PUMS 2022 to 2024. Comparisons, not causal effects.</p></div></div></section>
+<section class="slide band" id="invisible" aria-labelledby="h-invisible"><div class="container"><div class="head"><h2 id="h-invisible">Averages cancel; hearings rarely refuse</h2><p class="lead">Two reasons the pattern stays out of sight.</p></div><div class="cols"><div><figure class="sheet crop pad"><div class="shot shot--decomp" data-slot="decomp" data-kind="product" data-alt="Follow the People chart: what leavers and arrivals did to average income by county, 2011 to 2021"><img src="images/screens/people-decomp-home-desktop-part.png" width="1988" height="752" alt="Bar chart by county: removing leavers raised average income, adding arrivals lowered it" loading="lazy"></div></figure><p class="caption">Orange: removing leavers. Green: adding arrivals. Thousands of dollars per tax return.</p></div>
+<div class="stack"><div class="fig"><b>−8%</b><span>net effect of migration on the region’s rise in average income, 2011 to 2021</span></div><div class="fig"><b>90%</b><span>of 1,803 contested San Francisco housing projects were approved</span></div></div></div><div class="foot"><p>IRS SOI county migration; SF Planning Commission minutes 1998 to 2026 (Sahn, CC BY 4.0).</p></div></div></section>
+<section class="slide " id="pattern" aria-labelledby="h-pattern"><div class="container"><div class="head"><h2 id="h-pattern">Every model fails the vulnerable first</h2><p class="lead">Each row is a held-out test.</p></div><table class="table table--lg"><thead><tr><th>Model</th><th>Where it fails</th></tr></thead><tbody>
+<tr><td>Tract displacement backtest</td><td>72% of losses caught in renter tracts, 21% in owner tracts</td></tr>
+<tr><td>Who leaves the Bay</td><td>41% of White leavers flagged, 25% to 28% of others</td></tr>
+<tr><td>Rent jump at turnover</td><td>Under-predicts gentrifying tracts by 2 to 4 points</td></tr>
+<tr><td>Service deserts</td><td>31% found among the cheapest units, 69% among the priciest</td></tr>
+<tr><td>Public-comment stance</td><td>40% accuracy on tenant-association speakers</td></tr>
+</tbody></table><div class="foot"><p>So the main model reports who it misses.</p></div></div></section>
+<section class="slide slide--l proof" id="model" aria-labelledby="h-model"><div class="container"><div class="head"><h2 id="h-model">Will the next rent cross?</h2><p class="lead">Scored at re-listing.</p></div><div class="cross-fig" role="img" aria-label="Diagram: a unit's last rent sits under the reach line of $3,736 a month for a San Francisco one-bedroom in 2026; its settled rent after the turnover sits above it">
+<span class="mark mark--in">Last rent, in reach</span><span class="mark mark--out">Settled rent, out of reach</span>
+<span class="readout num">Reach line: $3,736 a month</span></div>
+<ol class="steps">
+<li><h3>Its last rent was within reach</h3><p>Affordable at 80% of area median income.</p></li>
+<li><h3>The tenant leaves</h3><p>Rent control no longer applies.</p></li>
+<li class="cross"><h3>The settled rent crosses the line</h3><p>18.9% of 12,011 units; 55% in San Francisco in 2026.</p></li>
+</ol></div></section>
+<section class="slide slide--l" id="split" aria-labelledby="h-split"><div class="container"><div class="head"><h2 id="h-split">Split by time, checked by hand</h2><p class="lead">2026 was scored once.</p></div><div class="cols"><div class="stack"><ul class="bars "><li><span>Same-unit turnovers</span><span class="bar bar--base"><i style="--v:100"></i></span><span class="val">23,306</span></li><li><span>Since June 2022</span><span class="bar bar--base"><i style="--v:77.2"></i></span><span class="val">17,993</span></li><li><span>In reach before turnover</span><span class="bar"><i style="--v:51.5"></i></span><span class="val">12,011</span></li><li><span>Left reach</span><span class="bar"><i style="--v:9.8"></i></span><span class="val">2,275</span></li></ul><ul class="bars "><li><span>Train: to mid-2025</span><span class="bar bar--base"><i style="--v:17.4"></i></span><span class="val">4,061</span></li><li><span>Tune: late 2025</span><span class="bar bar--base"><i style="--v:4.9"></i></span><span class="val">1,142</span></li><li><span>Test: 2026</span><span class="bar"><i style="--v:29.2"></i></span><span class="val">6,808</span></li></ul></div><div class="stack"><div class="fig"><b>30 of 30</b><span>random units reproduced by hand</span></div><p>Reading them changed the label: first asks were often cut back, so we use the settled ask.</p></div></div></div></section>
+<section class="slide band" id="results" aria-labelledby="h-results"><div class="container"><div class="head"><h2 id="h-results">The model beats the legal rule</h2><p class="lead">Test AUC on 6,808 re-listings in 2026.</p></div><div class="cols cols--wide"><div class="stack"><ul class="bars " style="--g:50"><li><span>Our model, gradient boosting</span><span class="bar"><i style="--v:90"></i></span><span class="val">0.90</span></li><li><span>Logistic, same features</span><span class="bar bar--base"><i style="--v:89.3"></i></span><span class="val">0.89</span></li><li><span>Distance to line only</span><span class="bar bar--base"><i style="--v:86.2"></i></span><span class="val">0.86</span></li><li><span>Legal-cap rule, 10% a year</span><span class="bar bar--base"><i style="--v:84.8"></i></span><span class="val">0.85</span></li><li><span>ZIP rent-trend rule</span><span class="bar bar--base"><i style="--v:84.4"></i></span><span class="val">0.84</span></li><li><span>UDP map</span><span class="bar bar--base"><i style="--v:45.6"></i></span><span class="val">0.46</span></li></ul><p class="guide">Coin flip, 0.50</p></div><div class="stack"><div class="fig"><b>+95</b><span>more losses caught than the rule at the same 20% budget</span></div><div class="fig"><b>+0.05</b><span>AUC over the rule, 95% interval 0.045 to 0.058</span></div></div></div><div class="foot"><p>Paired bootstrap, 1,000 draws.</p></div></div></section>
+<section class="slide " id="fairness" aria-labelledby="h-fairness"><div class="container"><div class="head"><h2 id="h-fairness">Who the model still misses</h2><p class="lead">Losses caught when flagging the riskiest 20%.</p></div><div class="cols cols--wide"><div class="stack"><div class="key"><span><i></i>Model</span><span><i class="base"></i>Legal-cap rule</span></div><ul class="bars bars--pair"><li><span>Low-income tracts</span><span class="pair"><span class="bar"><i style="--v:62"></i></span><span class="bar bar--base"><i style="--v:52"></i></span></span><span class="val">0.62 / 0.52</span></li><li><span>Exclusive tracts</span><span class="pair"><span class="bar"><i style="--v:79"></i></span><span class="bar bar--base"><i style="--v:64"></i></span></span><span class="val">0.79 / 0.64</span></li><li><span>Majority-renter tracts</span><span class="pair"><span class="bar"><i style="--v:67"></i></span><span class="bar bar--base"><i style="--v:53"></i></span></span><span class="val">0.67 / 0.53</span></li><li><span>Majority-owner tracts</span><span class="pair"><span class="bar"><i style="--v:83"></i></span><span class="bar bar--base"><i style="--v:77"></i></span></span><span class="val">0.83 / 0.77</span></li><li><span>Apartments</span><span class="pair"><span class="bar"><i style="--v:67"></i></span><span class="bar bar--base"><i style="--v:53"></i></span></span><span class="val">0.67 / 0.53</span></li><li><span>Houses and condos</span><span class="pair"><span class="bar"><i style="--v:88"></i></span><span class="bar bar--base"><i style="--v:85"></i></span></span><span class="val">0.88 / 0.85</span></li></ul></div><div class="stack"><p>Ranking is even across groups, but 2026 apartment rents outran the training data.</p><p>Separate lists lift low-income recall to 0.76 and cost 5 points regionally.</p></div></div><div class="foot"><p>2026 test set; tract types from the UDP typology.</p></div></div></section>
+<section class="slide slide--l" id="atlas" aria-labelledby="h-atlas"><div class="container"><div class="head"><h2 id="h-atlas">By 2031, up to 2,903 units</h2><p class="lead">The model, run forward from 1,965 units in 2026.</p></div><figure class="sheet crop"><div class="shot shot--2031" data-slot="atlas" data-kind="product" data-alt="The Out of Reach Atlas: map, cumulative units out of reach and share by county"><img src="images/screens/atlas-2031.png" width="2480" height="1746" alt="The Out of Reach Atlas scrubbed to 2031: 2,903 tracked units out of reach, with the share by county" loading="lazy"></div></figure>
+<div class="after"><p class="lead">2,459 units if rents freeze after 2026, 2,903 at the 2026 pace.</p><a class="btn" href="../units-leaving-reach/site/out-of-reach-atlas.html">Open the atlas</a></div><div class="foot"><p>Assumes 20% of units change tenants a year.</p></div></div></section>
+<section class="slide band" id="limits" aria-labelledby="h-limits"><div class="container"><div class="head"><h2 id="h-limits">Mostly headroom arithmetic</h2><p class="lead">Four limits on the model.</p></div><div class="tiles">
+<div class="tile tile--half"><h3>Joining the workstreams barely helped</h3><p>Tract and city-job features add +0.004 AUC across 10 seeds.</p></div>
+<div class="tile tile--half"><h3>Scores are not probabilities</h3><p>The riskiest tenth was predicted at 62% and observed at 81%.</p></div>
+<div class="tile tile--half"><h3>Outer counties favor the simple rule</h3><p>The model loses to it in Contra Costa (−0.014) and Sonoma (−0.017).</p></div>
+<div class="tile tile--half"><h3>Asking rents, not signed leases</h3><p>Dropping implausible jumps keeps the gain (+0.039).</p></div>
+</div><div class="foot"><p>Every number is in units-leaving-reach/FINDINGS.md.</p></div></div></section>
+<section class="slide slide--l" id="close" aria-labelledby="h-close"><div class="container">
+<h2 id="h-close" class="statement huge">Watch the turnover, not the average.</h2>
+<ul class="rows" style="margin-top: var(--space-3xl)">
+<li><h3>Acquisition programs</h3><p>Rank buildings to buy before the next re-listing prices them out.</p></li>
+<li><h3>Tenant organizations</h3><p>Aim outreach at the units most likely to leave reach this year.</p></li>
+<li><h3>Researchers and agencies</h3><p>Follow units and people, and report who each model misses.</p></li>
+</ul>
+</div></section>
+</main>
+<footer class="footer proof"><div class="container">
+<p class="footer__mark">Priced out of reach</p>
+<div class="footer__grid">
+<div class="stack"><p>By <span class="fill" data-fill="team">team names to be added</span></p><small>Planning Commission minutes: Sahn, CC BY 4.0. Typology: Urban Displacement Project.</small></div>
+<ul class="footer__links">
+<li><a href="../units-leaving-reach/site/out-of-reach-atlas.html">Out of Reach Atlas</a></li>
+<li><a href="../displacement-early-warning/site/index.html">Displacement early warning</a></li>
+<li><a href="../movement/site/follow-the-people.html">Follow the people</a></li>
+<li><a href="https://github.com/alekseyvalouev/datathon2026/blob/main/units-leaving-reach/FINDINGS.md">Model findings</a></li>
+<li><a href="https://github.com/alekseyvalouev/datathon2026">Code and workstreams</a></li>
+<li><a href="https://github.com/alekseyvalouev/datathon2026/blob/main/presentation/notes.md">Speaker notes</a></li>
+</ul>
+</div></div></footer>
+<script>(() => { const s = [...document.querySelectorAll('main > section')]; addEventListener('keydown', (e) => { if (e.altKey || e.ctrlKey || e.metaKey || /INPUT|TEXTAREA|SELECT/.test(e.target.tagName)) return; const d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0; if (!d) return; const y = scrollY + 80; let i = s.findIndex((x) => x.offsetTop > y) - 1; if (i < -1) i = s.length - 1; const t = s[Math.max(0, Math.min(s.length - 1, i + d))]; if (t) { e.preventDefault(); t.scrollIntoView(); } }); })();</script>
+<script>window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(`[data-slot="${k}"]`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };
+document.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && !i.naturalWidth) i.remove(); else i.addEventListener('error', () => i.remove(), { once: true }); });</script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Priced Out of Reach: Bay Area turnovers and who they move</title>
+<meta name="description" content="Debunking the myth that layoffs drive the exodus of low-income earners in the Bay Area. A model flags which affordable rentals the next turnover will price out of reach.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="hero dark">
+  <header class="wrap top">
+    <a href="#main">Datathon for Social Good, Advanced Track</a>
+    <nav aria-label="Page sections">
+      <ul>
+        <li><a href="#turnover">Problem</a></li>
+        <li><a href="#model">Model</a></li>
+        <li class="keep"><a href="../units-leaving-reach/site/out-of-reach-atlas.html">Atlas</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <h1><span>Priced Out</span><span>of Reach</span></h1>
+      <p class="reach"><span><b class="num">The reach line: $3,736 a month.</b> The most a household at 80% of area median income can pay for a San Francisco one-bedroom in 2026.</span></p>
+      <p class="lead">Debunking the myth that layoffs drive the exodus of low-income earners in the Bay Area. Our model flags which rentals the next turnover will carry over that line.</p>
+      <div class="hero__actions">
+        <a class="btn btn--solid" href="#model">See the model</a>
+        <a class="btn" href="../units-leaving-reach/site/out-of-reach-atlas.html">Open the atlas</a>
+      </div>
+    </div>
+    <figure class="hero__map">
+      <div class="stage" id="stage">
+        <canvas id="atlas-map" role="img" aria-label="Animated map of the nine Bay Area counties from 2022 to 2031. Each dot is a cluster of tracked rentals: grey while still in reach, red as the share out of reach grows. Units out of reach rise from 62 in 2022 to 1,965 in 2026 and a projected 2,903 in 2031."></canvas>
+        <div class="readout" aria-hidden="true">
+          <p class="yr" id="a-yr">2031</p>
+          <p class="st proj" id="a-st">Projected by the model</p>
+          <p class="ct" id="a-ct">2,903 units out of reach</p>
+        </div>
+        <div class="tl" aria-hidden="true">
+          <div class="tl__track"><div class="tl__fill" id="a-fill"></div></div>
+          <div class="tl__yrs"><span>2022</span><span>2026</span><span>2031</span></div>
+        </div>
+      </div>
+      <figcaption>
+        <span>Of 9,404 tracked rentals, 1,965 left reach by 2026. Run forward, the model puts 2,903 out of reach by 2031.</span>
+        <button class="replay" id="a-replay" type="button">Replay</button>
+      </figcaption>
+    </figure>
+  </div>
+</div>
+
+<main id="main">
+
+<section class="sec" id="thesis" aria-labelledby="h-thesis">
+  <div class="wrap thesis">
+    <div data-reveal>
+      <h2 id="h-thesis" class="statement"><mark class="num">0.7%</mark> of clerical, customer support and frontline service jobs on Indeed could afford to rent a median Bay Area home. <em>But salary isn’t the issue.</em></h2>
+      <p class="lead">Pay rose and layoffs stayed rare, yet affordable listings nearly vanished. Even for ML and AI roles, the median salary affords rent in just 70% of Bay Area cities.</p>
+    </div>
+    <div class="cover" data-reveal>
+      <h3>Rental listings affordable on median pay, 2012 to 2026</h3>
+      <ul>
+        <li><span>Customer support</span><b class="num"><small>11.8% to</small> 1.8%</b></li>
+        <li><span>Clerical and admin</span><b class="num"><small>8.3% to</small> 1.3%</b></li>
+        <li><span>Frontline service</span><b class="num"><small>1.4% to</small> 0.3%</b></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec brick" id="turnover" aria-labelledby="h-turnover">
+  <div class="wrap cross">
+    <div class="xfig is-out" id="xfig" role="img" aria-label="Diagram of one example unit. Its last rent, $3,450 a month, sits under the reach line of $3,736. After the tenant leaves, the asking rent settles at $4,100, above the line and out of reach.">
+      <p class="xfig__status" aria-hidden="true"><span class="s-in">In reach</span><span class="s-out">Out of reach</span></p>
+      <div class="xfig__line" aria-hidden="true"><span class="num">Reach line, $3,736</span></div>
+      <div class="xfig__mark xfig__mark--was" aria-hidden="true"><div><small>Last rent</small><strong>$3,450</strong></div><i></i></div>
+      <div class="xfig__mark xfig__mark--now" aria-hidden="true"><div><small>Asking rent</small><strong id="xrent">$4,100</strong></div><i></i></div>
+      <span class="xfig__zone" aria-hidden="true">Example unit, illustrative rents</span>
+    </div>
+    <div data-reveal>
+      <h2 id="h-turnover">A turnover resets the rent</h2>
+      <p class="lead">California hard caps rent hikes at 10% a year, but the rule does not apply to vacant units. <b>71%</b> of 2026 turnovers in San Francisco raised the rent faster than the cap.</p>
+      <p class="lead">When turnovers happen there, <mark class="num">20.7%</mark> of homes move from affordable to unaffordable for low-income renters.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="model" aria-labelledby="h-model">
+  <div class="wrap">
+    <div class="head" data-reveal>
+      <h2 id="h-model">The model: will this turnover push rent out of reach?</h2>
+      <p class="lead">Gradient boosted trees score each home when its tenants leave. It predicts with 0.90 AUC, higher than any existing approach.</p>
+    </div>
+
+    <div class="spec">
+      <dl class="sheet" data-reveal>
+        <div><dt>Target</dt><dd><b>Left reach:</b> the next tenancy’s settled asking rent is above the 80% AMI limit (income at least 3× rent, household size bedrooms + 1). Of 17,993 homes re-listed 2022 to 2026, 12,010 were affordable before turnover and 2,274 were not after.</dd></div>
+        <div><dt>Algorithm</dt><dd><b>Gradient boosted trees</b> (LightGBM), the standard on structured, tabular data and strong on non-linear relationships. 135 trees of 15 leaves.</dd></div>
+        <div><dt>Features</dt><dd><b>63 features:</b> rent, unit size, landlord, affordability, neighborhood income, age, past displacement and city job mix, joined per home.</dd></div>
+        <div><dt>Split</dt><dd><b>By time.</b> Train to mid-2025 (4,061), tune on late 2025 (1,142), then score 2026 (6,807) once.</dd></div>
+      </dl>
+
+      <div class="viz" data-reveal>
+        <h3>What the model leans on</h3>
+        <p>Drop in test AUC when one feature group is shuffled.</p>
+        <ul class="chart chart--groups">
+          <li><span class="lab">Headroom, 3<small>How far below the line, growth needed to cross</small></span><span class="bar"><i style="--v:1;--i:0"></i></span><span class="val">0.26</span></li>
+          <li><span class="lab">Market, 7<small>County rent index, ZIP turnover history</small></span><span class="bar"><i style="--v:.113;--i:1"></i></span><span class="val">0.030</span></li>
+          <li><span class="lab">Tract, 19<small>Census profile, displacement typology</small></span><span class="bar"><i style="--v:.05;--i:2"></i></span><span class="val">0.013</span></li>
+          <li><span class="lab">Unit, 30<small>Size, age, home type, landlord scale</small></span><span class="bar"><i style="--v:.031;--i:3"></i></span><span class="val">0.008</span></li>
+          <li><span class="lab">City jobs, 4<small>Share of AI-positioned and exposed postings</small></span><span class="bar"><i style="--v:.008;--i:4"></i></span><span class="val">0.002</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="results">
+      <div data-reveal>
+        <div class="key"><span>Test AUC on 6,807 re-listings from 2026</span><span><i></i>Coin flip, 0.50</span></div>
+        <ul class="chart chart--auc">
+          <li><span class="lab">Our model</span><span class="bar"><i style="--v:.900;--i:0"></i></span><span class="val">0.900</span></li>
+          <li><span class="lab">Legal-cap rule, 10% a year</span><span class="bar bar--base"><i style="--v:.848;--i:1"></i></span><span class="val dimmed">0.848</span></li>
+          <li><span class="lab">ZIP rent-trend rule</span><span class="bar bar--base"><i style="--v:.844;--i:2"></i></span><span class="val dimmed">0.844</span></li>
+          <li><span class="lab">Urban Displacement Project at-risk map</span><span class="bar bar--rival"><i style="--v:.456;--i:3"></i></span><span class="val dimmed">0.456</span></li>
+        </ul>
+      </div>
+      <div class="prose" data-reveal>
+        <p>Flagging the same 20% of units, the model catches <strong>913</strong> of the 1,402 that left reach in 2026; the legal rule catches <strong>818</strong>.</p>
+        <p>The Urban Displacement Project map ranks units worse than a coin flip: the rentals most at risk are the last affordable ones in wealthy neighborhoods.</p>
+      </div>
+    </div>
+
+    <figure class="mapfig" data-reveal>
+      <h3>Three neighborhoods predicted to be majority unaffordable by 2031</h3>
+      <a class="mapfig__img" href="images/neighborhoods-2031.jpg"><img src="images/neighborhoods-2031.jpg" width="2400" height="937" loading="lazy" alt="Maps of Cupertino, SoMa in San Francisco, and Foster City, with each tracked rental drawn as a dot shaded by its chance of being out of reach by 2031. Share of units out of reach: Cupertino 45% observed in 2026, 67% projected in 2031; SoMa 46% and 67%; Foster City 39% and 60%."></a>
+    </figure>
+  </div>
+</section>
+
+<section class="sec sec--limits dark" id="limits" aria-labelledby="h-limits">
+  <div class="wrap">
+    <figure class="mapfig" data-reveal>
+      <h2 id="h-limits">Limitation: the model underpredicts low-income neighborhoods</h2>
+      <a class="mapfig__img" href="images/missed-losses.jpg"><img src="images/missed-losses.jpg" width="2400" height="1177" loading="lazy" alt="Maps of Downtown Oakland, Nob Hill and Polk Gulch, and the Western Addition, with each unit that left reach in 2026 drawn as a dot shaded by whether the model missed it. Across the Bay Area the model missed 28% of losses; it missed 46% in Downtown Oakland (19 of 41), 38% in Nob Hill and Polk Gulch (17 of 45) and 60% in the Western Addition (12 of 20). Low-income rents jumped in 2026: 18% of turnovers there raised rent by more than 10% a year, up from 9% in the training years."></a>
+    </figure>
+  </div>
+</section>
+
+<section class="sec close brick" aria-labelledby="h-close">
+  <div class="wrap">
+    <div class="thesis">
+      <h2 id="h-close" class="statement" data-reveal>Affordable housing is becoming <mark>more rare</mark> and <mark>less affordable.</mark></h2>
+      <div class="cover" data-reveal>
+        <h3>Workers who leave the Bay Area are hurt too</h3>
+        <ul>
+          <li><span>Rent over half of income</span><b class="num">+16%</b></li>
+          <li><span>Hour-long commutes</span><b class="num">+9.3%</b></li>
+          <li><span>Annual wages</span><b class="num">−$26k</b></li>
+        </ul>
+      </div>
+    </div>
+    <div class="close__after" data-reveal>
+      <p class="lead">Use the model to predict at-risk buildings and buy them before they turn over. Programs like the Small Sites Program support these efforts.</p>
+      <a class="btn btn--solid" href="../units-leaving-reach/site/out-of-reach-atlas.html">Open the atlas</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot dark">
+  <div class="wrap foot__grid">
+    <p>By <span class="by">Linden Wang, Sharlena Nguyen, Miles Hua, Aleksey Valouev</span>. San Francisco Bay Area, November 2026.</p>
+    <ul class="foot__links">
+      <li><a href="https://github.com/alekseyvalouev/datathon2026/blob/main/units-leaving-reach/FINDINGS.md">Model findings</a></li>
+      <li><a href="https://github.com/alekseyvalouev/datathon2026">Code</a></li>
+      <li><a href="deck.html">Full deck</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="atlas-data.js"></script>
+<script>
+(() => {
+  const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // reveals
+  const els = document.querySelectorAll('[data-reveal]');
+  if (still || !('IntersectionObserver' in window)) els.forEach((e) => e.classList.add('in'));
+  else {
+    const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -12% 0px' });
+    els.forEach((e) => io.observe(e));
+  }
+
+  // the crossing: the asking rent rises across the reach line once, when the figure scrolls into view
+  const fig = document.getElementById('xfig'), rent = document.getElementById('xrent');
+  if (!still && 'IntersectionObserver' in window) {
+    const FROM = 3450, TO = 4100, LINE = 3736;
+    const set = (m) => {
+      const value = Math.round((FROM + (TO - FROM) * m) / 10) * 10;
+      fig.style.setProperty('--m', m.toFixed(4));
+      fig.classList.toggle('is-out', value > LINE);
+      rent.textContent = '$' + value.toLocaleString('en-US');
+    };
+    set(0);
+    const io = new IntersectionObserver((es) => {
+      if (!es[0].isIntersecting) return;
+      io.disconnect();
+      const t0 = performance.now() + 500, dur = 2200;
+      const tick = (t) => { const p = Math.min(1, Math.max(0, (t - t0) / dur)); set(p * p * (3 - 2 * p)); if (p < 1) requestAnimationFrame(tick); };
+      requestAnimationFrame(tick);
+    }, { threshold: 0.6 });
+    io.observe(fig);
+  }
+
+  // the atlas run: tracked units leaving reach, 2022 to 2031
+  const A = window.ATLAS, cv = document.getElementById('atlas-map');
+  if (!A || !cv) return;
+  const B = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', d = (ch) => B.indexOf(ch);
+  const G = 0.025, X0 = -123.6, Y0 = 36.9, S = A.cells, T = A.totals, cells = [];
+  for (let i = 0; i < S.length; i += 15) {
+    const v = []; for (let j = 5; j < 15; j++) v.push(d(S[i + j]) / 61);
+    cells.push({ lo: X0 + (d(S[i]) * 62 + d(S[i + 1])) * G, la: Y0 + (d(S[i + 2]) * 62 + d(S[i + 3])) * G, n: d(S[i + 4]), v });
+  }
+  const polys = A.outline.split('|').map((p) => p.split(' ').map((q) => { const a = q.split(','); return [X0 + a[0] / 100, Y0 + a[1] / 100]; }));
+  const x = cv.getContext('2d'), L0 = -123.62, L1 = -121.2, A0 = 36.86, A1 = 38.9, cs = Math.cos(37.9 * Math.PI / 180);
+  const yrEl = document.getElementById('a-yr'), stEl = document.getElementById('a-st'), ctEl = document.getElementById('a-ct'), fill = document.getElementById('a-fill');
+  let W, H, k, ox, oy, now = 2031;
+  const size = () => {
+    const r = Math.min(2, devicePixelRatio || 1); W = cv.clientWidth; H = cv.clientHeight;
+    cv.width = W * r; cv.height = H * r; x.setTransform(r, 0, 0, r, 0, 0);
+    const pad = W * 0.02, mh = H - pad * 2 - Math.max(40, W * 0.05);
+    k = Math.min((W - pad * 2) / ((L1 - L0) * cs), mh / (A1 - A0));
+    const mw = (L1 - L0) * cs * k; ox = (W - mw) / 2 + W * 0.04; oy = pad;
+  };
+  const P = (lo, la) => [ox + (lo - L0) * cs * k, oy + (A1 - la) * k];
+  const R = [[112, 46, 37], [150, 62, 50], [198, 104, 84], [236, 178, 156]];
+  const col = (v, a) => { const t = Math.min(0.999, Math.max(0, v)) * 3, i = Math.floor(t), f = t - i, c = R[i].map((q, j) => Math.round(q + (R[i + 1][j] - q) * f)); return `rgba(${c[0]},${c[1]},${c[2]},${a})`; };
+  const draw = (yf) => {
+    now = yf;
+    x.clearRect(0, 0, W, H);
+    x.fillStyle = '#23272e'; x.strokeStyle = '#30353d'; x.lineWidth = 1;
+    for (const p of polys) { x.beginPath(); p.forEach((q, i) => { const s = P(q[0], q[1]); i ? x.lineTo(s[0], s[1]) : x.moveTo(s[0], s[1]); }); x.closePath(); x.fill(); x.stroke(); }
+    const i0 = Math.min(8, Math.floor(yf - 2022)), f = Math.min(1, yf - 2022 - i0), rs = k / 266;
+    for (const c of cells) {
+      const v = c.v[i0] * (1 - f) + c.v[i0 + 1] * f, s = P(c.lo, c.la), r = (2.2 + Math.sqrt(c.n) * 1.25) * rs;
+      x.beginPath(); x.arc(s[0], s[1], Math.max(1.2, r), 0, 6.283);
+      x.fillStyle = v < 0.01 ? 'rgba(150,154,160,.55)' : col(v, 0.5 + 0.5 * Math.min(1, v * 1.5)); x.fill();
+    }
+    const yr = Math.min(2031, Math.floor(yf + 1e-6)), tot = T[i0] * (1 - f) + T[i0 + 1] * f;
+    yrEl.textContent = yr;
+    stEl.textContent = yr > 2026 ? 'Projected by the model' : 'Observed in listings';
+    stEl.classList.toggle('proj', yr > 2026);
+    ctEl.textContent = Math.round(tot).toLocaleString('en-US') + ' units out of reach';
+    fill.style.setProperty('--t', ((yf - 2022) / 9).toFixed(4));
+  };
+  let raf = 0;
+  const play = () => {
+    cancelAnimationFrame(raf);
+    const t0 = performance.now() + 900, per = 1000;
+    const tick = (t) => { const yf = Math.max(2022, Math.min(2031, 2022 + (t - t0) / per)); draw(yf); if (yf < 2031) raf = requestAnimationFrame(tick); };
+    draw(2022); raf = requestAnimationFrame(tick);
+  };
+  size(); draw(2031);
+  addEventListener('resize', () => { size(); draw(now); });
+  const replay = document.getElementById('a-replay');
+  if (still) replay.hidden = true;
+  else {
+    replay.addEventListener('click', play);
+    draw(2022);
+    const seen = new IntersectionObserver((es) => { if (es[0].isIntersecting) { seen.disconnect(); play(); } }, { threshold: 0.45 });
+    seen.observe(cv);
+  }
+})();
+</script>
+</body>
+</html>

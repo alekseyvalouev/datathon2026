@@ -1,0 +1,64 @@
+name: Publish site to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "presentation/**"
+      - "units-leaving-reach/site/**"
+      - "displacement-early-warning/site/**"
+      - "movement/site/**"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # The presentation links to the workstream sites with ../ paths, so the
+      # published tree mirrors the repo layout and the root redirects into it.
+      - name: Assemble site
+        run: |
+          mkdir -p _site/presentation
+          cp presentation/*.html presentation/*.css presentation/*.js _site/presentation/
+          cp -r presentation/images _site/presentation/images
+          for d in units-leaving-reach displacement-early-warning movement; do
+            mkdir -p "_site/$d/site"
+            find "$d/site" -maxdepth 1 -type f \( -name '*.html' -o -name '*.json' -o -name '*.js' -o -name '*.css' \) \
+              ! -name 'template.html' -exec cp {} "_site/$d/site/" \;
+          done
+          cat > _site/index.html <<'EOF'
+          <!doctype html>
+          <meta charset="utf-8">
+          <title>Priced Out of Reach</title>
+          <meta http-equiv="refresh" content="0; url=presentation/">
+          <link rel="canonical" href="presentation/">
+          <a href="presentation/">Priced Out of Reach</a>
+          EOF
+          touch _site/.nojekyll
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
