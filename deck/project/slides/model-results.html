@@ -1,0 +1,25 @@
+<section id="model-results">
+<div class="head">
+<h2 class="title">The model beats the legal-cap rule, and the standard map ranks risk backwards</h2>
+</div>
+<div style="display:grid; grid-template-columns:1fr 520px; gap:80px;">
+<div class="col" style="gap:16px;">
+<p class="cap">Test AUC, 6,808 re-listings in 2026 (1.0 = perfect ranking, 0.5 = coin flip)</p>
+<div class="bars">
+<div class="bar-row" style="grid-template-columns:420px 1fr 100px;"><p class="bar-lab strong">Our model (gradient boosting)</p><div class="bar-track"><div class="bar-fill" style="width:90%;"></div></div><p class="val strong">0.90</p></div>
+<div class="bar-row" style="grid-template-columns:420px 1fr 100px;"><p class="bar-lab">Logistic, same features</p><div class="bar-track"><div class="bar-fill mutefill" style="width:89.3%;"></div></div><p class="val">0.89</p></div>
+<div class="bar-row" style="grid-template-columns:420px 1fr 100px;"><p class="bar-lab">Logistic, distance to line only</p><div class="bar-track"><div class="bar-fill mutefill" style="width:86.2%;"></div></div><p class="val">0.86</p></div>
+<div class="bar-row" style="grid-template-columns:420px 1fr 100px;"><p class="bar-lab">Legal-cap rule (10%/yr)</p><div class="bar-track"><div class="bar-fill mutefill" style="width:84.8%;"></div></div><p class="val">0.85</p></div>
+<div class="bar-row" style="grid-template-columns:420px 1fr 100px;"><p class="bar-lab">ZIP rent-trend rule</p><div class="bar-track"><div class="bar-fill mutefill" style="width:84.4%;"></div></div><p class="val">0.84</p></div>
+<div class="bar-row" style="grid-template-columns:420px 1fr 100px;"><p class="bar-lab">UDP map: low-income or gentrifying tract</p><div class="bar-track"><div class="bar-fill hotfill" style="width:45.6%;"></div></div><p class="val pt">0.46</p></div>
+</div>
+<p class="small">The UDP map scores below a coin flip. Still-affordable units in wealthy tracts sit closer to the line (21% below it vs 28–30%), so they cross more often.</p>
+</div>
+<div class="col" style="gap:48px;">
+<div class="stat"><p class="num">+95</p><p class="lab">more losses caught than the legal-cap rule when both flag the same 20% of units: 914 vs 819 of 1,403</p></div>
+<div class="stat"><p class="num">+0.05</p><p class="lab">AUC over the rule (95% interval 0.045–0.058). Holds on unseen units, without suspect rent jumps, and at 50% of median income</p></div>
+</div>
+</div>
+<div class="foot"><span>Paired bootstrap, 1,000 draws. Tuned on late 2025; test scored once.</span><div class="foot-r"><span>Model: results on 2026</span><span class="pg"></span></div></div>
+<aside>Results on 2026, which the model never saw. It ranks units at AUC 0.90. The strongest simple rule, which asks whether the unit would cross the line if rent rose at the legal 10 percent maximum, gets 0.85. If an outreach program can contact 20 percent of units, our model finds 95 more of the units that actually leave reach. The standard displacement map scores below a coin flip, because the affordable units most at risk are the last ones in wealthy neighborhoods, sitting just under the line. Most of the model’s power comes from that distance to the line combined with market history.</aside>
+</section>
